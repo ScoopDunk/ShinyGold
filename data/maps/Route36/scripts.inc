@@ -95,7 +95,7 @@ Route36_EventScript_PsychicMark::
 	end
 
 Route36_EventScript_Schoolboy306::
-	trainerbattle_single TRAINER_SCHOOLBOY_306, Route36_Text_Schoolboy306Intro, Route36_Text_Schoolboy306Defeat
+	trainerbattle_single TRAINER_SCHOOLBOY_ALAN, Route36_Text_Schoolboy306Intro, Route36_Text_Schoolboy306Defeat
 	call_if_set 0x1310, Route36_EventScript_Schoolboy306_1
 	setvar 0x700C, 16
 	setvar 0x700D, 0
@@ -112,27 +112,27 @@ Route36_EventScript_Schoolboy306_1::
 	call_if_set 0x115F, Route36_EventScript_Schoolboy306_3
 	call_if_set 0x110A, Route36_EventScript_Schoolboy306_4
 	call_if_set FLAG_BADGE05_GET, Route36_EventScript_Schoolboy306_5
-	trainerbattle_earlyrival TRAINER_SCHOOLBOY_306, 0, Route36_Text_Schoolboy306Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SCHOOLBOY_ALAN, 0, Route36_Text_Schoolboy306Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route36_EventScript_Schoolboy306_2::
-	trainerbattle_earlyrival TRAINER_SCHOOLBOY_660, 0, Route36_Text_Schoolboy306Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SCHOOLBOY_ALAN_2, 0, Route36_Text_Schoolboy306Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route36_EventScript_Schoolboy306_3::
-	trainerbattle_earlyrival TRAINER_SCHOOLBOY_661, 0, Route36_Text_Schoolboy306Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SCHOOLBOY_ALAN_3, 0, Route36_Text_Schoolboy306Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route36_EventScript_Schoolboy306_4::
-	trainerbattle_earlyrival TRAINER_SCHOOLBOY_662, 0, Route36_Text_Schoolboy306Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SCHOOLBOY_ALAN_4, 0, Route36_Text_Schoolboy306Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route36_EventScript_Schoolboy306_5::
-	trainerbattle_earlyrival TRAINER_SCHOOLBOY_667, 0, Route36_Text_Schoolboy306Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SCHOOLBOY_ALAN_5, 0, Route36_Text_Schoolboy306Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 

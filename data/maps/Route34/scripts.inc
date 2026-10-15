@@ -60,7 +60,7 @@ Route34_EventScript_OfficerKeith::
 	end
 
 Route34_EventScript_Camper148::
-	trainerbattle_single TRAINER_CAMPER_148, Route34_Text_Camper148Intro, Route34_Text_Camper148Defeat
+	trainerbattle_single TRAINER_CAMPER_TODD, Route34_Text_Camper148Intro, Route34_Text_Camper148Defeat
 	call_if_set 0x1306, Route34_EventScript_Camper148_1
 	setvar 0x700C, 6
 	setvar 0x700D, 0
@@ -77,32 +77,32 @@ Route34_EventScript_Camper148_1::
 	call_if_set 0x115F, Route34_EventScript_Camper148_3
 	call_if_set 0x110A, Route34_EventScript_Camper148_4
 	call_if_set FLAG_BADGE05_GET, Route34_EventScript_Camper148_5
-	trainerbattle_earlyrival TRAINER_CAMPER_148, 0, Route34_Text_Camper148Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_CAMPER_TODD, 0, Route34_Text_Camper148Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route34_EventScript_Camper148_2::
-	trainerbattle_earlyrival TRAINER_CAMPER_672, 0, Route34_Text_Camper148Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_CAMPER_TODD_2, 0, Route34_Text_Camper148Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route34_EventScript_Camper148_3::
-	trainerbattle_earlyrival TRAINER_CAMPER_673, 0, Route34_Text_Camper148Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_CAMPER_TODD_3, 0, Route34_Text_Camper148Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route34_EventScript_Camper148_4::
-	trainerbattle_earlyrival TRAINER_CAMPER_674, 0, Route34_Text_Camper148Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_CAMPER_TODD_4, 0, Route34_Text_Camper148Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route34_EventScript_Camper148_5::
-	trainerbattle_earlyrival TRAINER_CAMPER_675, 0, Route34_Text_Camper148Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_CAMPER_TODD_5, 0, Route34_Text_Camper148Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route34_EventScript_Picnicker152::
-	trainerbattle_single TRAINER_PICNICKER_152, Route34_Text_Picnicker152Intro, Route34_Text_Picnicker152Defeat
+	trainerbattle_single TRAINER_PICNICKER_GINA, Route34_Text_Picnicker152Intro, Route34_Text_Picnicker152Defeat
 	call_if_set 0x1307, Route34_EventScript_Picnicker152_1
 	setvar 0x700C, 7
 	setvar 0x700D, 0
@@ -119,27 +119,27 @@ Route34_EventScript_Picnicker152_1::
 	call_if_set 0x115F, Route34_EventScript_Picnicker152_3
 	call_if_set 0x110A, Route34_EventScript_Picnicker152_4
 	call_if_set FLAG_BADGE05_GET, Route34_EventScript_Picnicker152_5
-	trainerbattle_earlyrival TRAINER_PICNICKER_152, 0, Route34_Text_Picnicker152Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_GINA, 0, Route34_Text_Picnicker152Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route34_EventScript_Picnicker152_2::
-	trainerbattle_earlyrival TRAINER_PICNICKER_668, 0, Route34_Text_Picnicker152Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_GINA_5, 0, Route34_Text_Picnicker152Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route34_EventScript_Picnicker152_3::
-	trainerbattle_earlyrival TRAINER_PICNICKER_632, 0, Route34_Text_Picnicker152Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_GINA_4, 0, Route34_Text_Picnicker152Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route34_EventScript_Picnicker152_4::
-	trainerbattle_earlyrival TRAINER_PICNICKER_631, 0, Route34_Text_Picnicker152Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_GINA_3, 0, Route34_Text_Picnicker152Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route34_EventScript_Picnicker152_5::
-	trainerbattle_earlyrival TRAINER_PICNICKER_630, 0, Route34_Text_Picnicker152Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_GINA_2, 0, Route34_Text_Picnicker152Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 

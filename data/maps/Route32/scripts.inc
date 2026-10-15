@@ -98,7 +98,7 @@ Route32_EventScript_YoungsterAlbert::
 	end
 
 Route32_EventScript_Picnicker153::
-	trainerbattle_single TRAINER_PICNICKER_153, Route32_Text_Picnicker153Intro, Route32_Text_Picnicker153Defeat
+	trainerbattle_single TRAINER_PICNICKER_LIZ, Route32_Text_Picnicker153Intro, Route32_Text_Picnicker153Defeat
 	call_if_set 0x1304, Route32_EventScript_Picnicker153_1
 	setvar 0x700C, 4
 	setvar 0x700D, 0
@@ -115,27 +115,27 @@ Route32_EventScript_Picnicker153_1::
 	call_if_set 0x110A, Route32_EventScript_Picnicker153_3
 	call_if_set FLAG_BADGE05_GET, Route32_EventScript_Picnicker153_4
 	call_if_set FLAG_BADGE04_GET, Route32_EventScript_Picnicker153_5
-	trainerbattle_earlyrival TRAINER_PICNICKER_153, 0, Route32_Text_Picnicker153Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_LIZ, 0, Route32_Text_Picnicker153Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route32_EventScript_Picnicker153_2::
-	trainerbattle_earlyrival TRAINER_PICNICKER_679, 0, Route32_Text_Picnicker153Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_LIZ_3, 0, Route32_Text_Picnicker153Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route32_EventScript_Picnicker153_3::
-	trainerbattle_earlyrival TRAINER_PICNICKER_682, 0, Route32_Text_Picnicker153Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_LIZ_4, 0, Route32_Text_Picnicker153Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route32_EventScript_Picnicker153_4::
-	trainerbattle_earlyrival TRAINER_PICNICKER_686, 0, Route32_Text_Picnicker153Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_LIZ_5, 0, Route32_Text_Picnicker153Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route32_EventScript_Picnicker153_5::
-	trainerbattle_earlyrival TRAINER_PICNICKER_621, 0, Route32_Text_Picnicker153Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_LIZ_2, 0, Route32_Text_Picnicker153Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
@@ -165,7 +165,7 @@ Route32_EventScript_YoungsterGordon::
 	end
 
 Route32_EventScript_Fisherman146::
-	trainerbattle_single TRAINER_FISHERMAN_146, Route32_Text_Fisherman146Intro, Route32_Text_Fisherman146Defeat
+	trainerbattle_single TRAINER_FISHERMAN_RALPH, Route32_Text_Fisherman146Intro, Route32_Text_Fisherman146Defeat
 	call_if_set 0x1303, Route32_EventScript_Fisherman146_1
 	setvar 0x700C, 3
 	setvar 0x700D, 0
@@ -182,27 +182,27 @@ Route32_EventScript_Fisherman146_1::
 	call_if_set FLAG_BADGE07_GET, Route32_EventScript_Fisherman146_3
 	call_if_set FLAG_BADGE05_GET, Route32_EventScript_Fisherman146_4
 	call_if_set FLAG_BADGE04_GET, Route32_EventScript_Fisherman146_5
-	trainerbattle_earlyrival TRAINER_FISHERMAN_146, 0, Route32_Text_Fisherman146Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_FISHERMAN_RALPH, 0, Route32_Text_Fisherman146Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route32_EventScript_Fisherman146_2::
-	trainerbattle_earlyrival TRAINER_FISHERMAN_687, 0, Route32_Text_Fisherman146Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_FISHERMAN_RALPH_5, 0, Route32_Text_Fisherman146Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route32_EventScript_Fisherman146_3::
-	trainerbattle_earlyrival TRAINER_FISHERMAN_629, 0, Route32_Text_Fisherman146Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_FISHERMAN_RALPH_4, 0, Route32_Text_Fisherman146Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route32_EventScript_Fisherman146_4::
-	trainerbattle_earlyrival TRAINER_FISHERMAN_628, 0, Route32_Text_Fisherman146Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_FISHERMAN_RALPH_3, 0, Route32_Text_Fisherman146Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route32_EventScript_Fisherman146_5::
-	trainerbattle_earlyrival TRAINER_FISHERMAN_627, 0, Route32_Text_Fisherman146Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_FISHERMAN_RALPH_2, 0, Route32_Text_Fisherman146Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 

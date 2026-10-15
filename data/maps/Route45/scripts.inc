@@ -54,7 +54,7 @@ Route45_EventScript_CooltrainerRyan::
 	end
 
 Route45_EventScript_Hiker172::
-	trainerbattle_single TRAINER_HIKER_172, Route45_Text_Hiker172Intro, Route45_Text_Hiker172Defeat
+	trainerbattle_single TRAINER_HIKER_PARRY_3, Route45_Text_Hiker172Intro, Route45_Text_Hiker172Defeat
 	call_if_set 0x1324, Route45_EventScript_Hiker172_1
 	setvar 0x700C, 36
 	setvar 0x700D, 0
@@ -70,22 +70,22 @@ Route45_EventScript_Hiker172_1::
 	call_if_set 0x8888, Route45_EventScript_Hiker172_2
 	call_if_set 0x115F, Route45_EventScript_Hiker172_3
 	call_if_set FLAG_BADGE07_GET, Route45_EventScript_Hiker172_4
-	trainerbattle_earlyrival TRAINER_HIKER_172, 0, Route45_Text_Hiker172Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_HIKER_PARRY_3, 0, Route45_Text_Hiker172Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route45_EventScript_Hiker172_2::
-	trainerbattle_earlyrival TRAINER_HIKER_94, 0, Route45_Text_Hiker172Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_HIKER_PARRY_2, 0, Route45_Text_Hiker172Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route45_EventScript_Hiker172_3::
-	trainerbattle_earlyrival TRAINER_HIKER_602, 0, Route45_Text_Hiker172Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_HIKER_PARRY_4, 0, Route45_Text_Hiker172Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route45_EventScript_Hiker172_4::
-	trainerbattle_earlyrival TRAINER_HIKER_90, 0, Route45_Text_Hiker172Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_HIKER_PARRY, 0, Route45_Text_Hiker172Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
@@ -103,7 +103,7 @@ Route45_EventScript_ItemXSpecial::
 	end
 
 Route45_EventScript_BlackBelt316::
-	trainerbattle_single TRAINER_BLACK_BELT_316, Route45_Text_BlackBelt316Intro, Route45_Text_BlackBelt316Defeat
+	trainerbattle_single TRAINER_BLACK_BELT_KENJI, Route45_Text_BlackBelt316Intro, Route45_Text_BlackBelt316Defeat
 	call_if_set 0x1323, Route45_EventScript_BlackBelt316_1
 	setvar 0x700C, 35
 	setvar 0x700D, 0
@@ -120,27 +120,27 @@ Route45_EventScript_BlackBelt316_1::
 	call_if_set 0x115F, Route45_EventScript_BlackBelt316_3
 	call_if_set FLAG_BADGE07_GET, Route45_EventScript_BlackBelt316_4
 	call_if_set 0x110A, Route45_EventScript_BlackBelt316_5
-	trainerbattle_earlyrival TRAINER_BLACK_BELT_316, 0, Route45_Text_BlackBelt316Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BLACK_BELT_KENJI, 0, Route45_Text_BlackBelt316Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route45_EventScript_BlackBelt316_2::
-	trainerbattle_earlyrival TRAINER_BLACK_BELT_605, 0, Route45_Text_BlackBelt316Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BLACK_BELT_KENJI_2, 0, Route45_Text_BlackBelt316Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route45_EventScript_BlackBelt316_3::
-	trainerbattle_earlyrival TRAINER_BLACK_BELT_607, 0, Route45_Text_BlackBelt316Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BLACK_BELT_KENJI_4, 0, Route45_Text_BlackBelt316Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route45_EventScript_BlackBelt316_4::
-	trainerbattle_earlyrival TRAINER_BLACK_BELT_608, 0, Route45_Text_BlackBelt316Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BLACK_BELT_KENJI_5, 0, Route45_Text_BlackBelt316Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route45_EventScript_BlackBelt316_5::
-	trainerbattle_earlyrival TRAINER_BLACK_BELT_609, 0, Route45_Text_BlackBelt316Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BLACK_BELT_KENJI_6, 0, Route45_Text_BlackBelt316Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 

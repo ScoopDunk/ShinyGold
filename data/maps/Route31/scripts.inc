@@ -71,7 +71,7 @@ Route31_EventScript_Youngster::
 	end
 
 Route31_EventScript_BugCatcher309::
-	trainerbattle_single TRAINER_BUG_CATCHER_309, Route31_Text_BugCatcher309Intro, Route31_Text_BugCatcher309Defeat
+	trainerbattle_single TRAINER_BUG_CATCHER_WADE, Route31_Text_BugCatcher309Intro, Route31_Text_BugCatcher309Defeat
 	call_if_set 0x1302, Route31_EventScript_BugCatcher309_1
 	setvar 0x700C, 2
 	setvar 0x700D, 0
@@ -88,27 +88,27 @@ Route31_EventScript_BugCatcher309_1::
 	call_if_set 0x110A, Route31_EventScript_BugCatcher309_3
 	call_if_set FLAG_BADGE05_GET, Route31_EventScript_BugCatcher309_4
 	call_if_set FLAG_BADGE02_GET, Route31_EventScript_BugCatcher309_5
-	trainerbattle_earlyrival TRAINER_BUG_CATCHER_309, 0, Route31_Text_BugCatcher309Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BUG_CATCHER_WADE, 0, Route31_Text_BugCatcher309Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route31_EventScript_BugCatcher309_2::
-	trainerbattle_earlyrival TRAINER_BUG_CATCHER_688, 0, Route31_Text_BugCatcher309Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BUG_CATCHER_WADE_4, 0, Route31_Text_BugCatcher309Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route31_EventScript_BugCatcher309_3::
-	trainerbattle_earlyrival TRAINER_BUG_CATCHER_689, 0, Route31_Text_BugCatcher309Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BUG_CATCHER_WADE_5, 0, Route31_Text_BugCatcher309Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route31_EventScript_BugCatcher309_4::
-	trainerbattle_earlyrival TRAINER_BUG_CATCHER_681, 0, Route31_Text_BugCatcher309Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BUG_CATCHER_WADE_3, 0, Route31_Text_BugCatcher309Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route31_EventScript_BugCatcher309_5::
-	trainerbattle_earlyrival TRAINER_BUG_CATCHER_680, 0, Route31_Text_BugCatcher309Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BUG_CATCHER_WADE_2, 0, Route31_Text_BugCatcher309Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 

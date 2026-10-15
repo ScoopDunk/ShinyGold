@@ -50,7 +50,7 @@ Route38_EventScript_BirdKeeperToby::
 	end
 
 Route38_EventScript_Lass122::
-	trainerbattle_single TRAINER_LASS_122, Route38_Text_Lass122Intro, Route38_Text_Lass122Defeat
+	trainerbattle_single TRAINER_LASS_DANA, Route38_Text_Lass122Intro, Route38_Text_Lass122Defeat
 	call_if_set 0x1313, Route38_EventScript_Lass122_1
 	setvar 0x700C, 19
 	setvar 0x700D, 0
@@ -67,27 +67,27 @@ Route38_EventScript_Lass122_1::
 	call_if_set 0x115F, Route38_EventScript_Lass122_3
 	call_if_set 0x110A, Route38_EventScript_Lass122_4
 	call_if_set FLAG_BADGE05_GET, Route38_EventScript_Lass122_5
-	trainerbattle_earlyrival TRAINER_LASS_122, 0, Route38_Text_Lass122Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_LASS_DANA, 0, Route38_Text_Lass122Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route38_EventScript_Lass122_2::
-	trainerbattle_earlyrival TRAINER_LASS_652, 0, Route38_Text_Lass122Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_LASS_DANA_4, 0, Route38_Text_Lass122Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route38_EventScript_Lass122_3::
-	trainerbattle_earlyrival TRAINER_LASS_655, 0, Route38_Text_Lass122Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_LASS_DANA_5, 0, Route38_Text_Lass122Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route38_EventScript_Lass122_4::
-	trainerbattle_earlyrival TRAINER_LASS_502, 0, Route38_Text_Lass122Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_LASS_DANA_3, 0, Route38_Text_Lass122Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route38_EventScript_Lass122_5::
-	trainerbattle_earlyrival TRAINER_LASS_501, 0, Route38_Text_Lass122Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_LASS_DANA_2, 0, Route38_Text_Lass122Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
@@ -97,7 +97,7 @@ Route38_EventScript_BeautyValerie::
 	end
 
 Route38_EventScript_Schoolboy285::
-	trainerbattle_single TRAINER_SCHOOLBOY_285, Route38_Text_Schoolboy285Intro, Route38_Text_Schoolboy285Defeat
+	trainerbattle_single TRAINER_SCHOOLBOY_CHAD, Route38_Text_Schoolboy285Intro, Route38_Text_Schoolboy285Defeat
 	call_if_set 0x1314, Route38_EventScript_Schoolboy285_1
 	setvar 0x700C, 20
 	setvar 0x700D, 0
@@ -114,26 +114,26 @@ Route38_EventScript_Schoolboy285_1::
 	call_if_set 0x115F, Route38_EventScript_Schoolboy285_3
 	call_if_set 0x110A, Route38_EventScript_Schoolboy285_4
 	call_if_set FLAG_BADGE05_GET, Route38_EventScript_Schoolboy285_5
-	trainerbattle_earlyrival TRAINER_SCHOOLBOY_285, 0, Route38_Text_Schoolboy285Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SCHOOLBOY_CHAD, 0, Route38_Text_Schoolboy285Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route38_EventScript_Schoolboy285_2::
-	trainerbattle_earlyrival TRAINER_SCHOOLBOY_649, 0, Route38_Text_Schoolboy285Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SCHOOLBOY_CHAD_2, 0, Route38_Text_Schoolboy285Defeat, Route35_Text_Juggler228Victory
 	end
 
 Route38_EventScript_Schoolboy285_3::
-	trainerbattle_earlyrival TRAINER_SCHOOLBOY_650, 0, Route38_Text_Schoolboy285Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SCHOOLBOY_CHAD_3, 0, Route38_Text_Schoolboy285Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route38_EventScript_Schoolboy285_4::
-	trainerbattle_earlyrival TRAINER_SCHOOLBOY_651, 0, Route38_Text_Schoolboy285Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SCHOOLBOY_CHAD_4, 0, Route38_Text_Schoolboy285Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route38_EventScript_Schoolboy285_5::
-	trainerbattle_earlyrival TRAINER_SCHOOLBOY_654, 0, Route38_Text_Schoolboy285Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SCHOOLBOY_CHAD_5, 0, Route38_Text_Schoolboy285Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 

@@ -41,7 +41,7 @@ Route27_EventScript_PsychicGilbert::
 	end
 
 Route27_EventScript_BirdKeeper549::
-	trainerbattle_single TRAINER_BIRD_KEEPER_549, Route27_Text_BirdKeeper549Intro, Route27_Text_BirdKeeper549Defeat
+	trainerbattle_single TRAINER_BIRD_KEEPER_JOSE_3, Route27_Text_BirdKeeper549Intro, Route27_Text_BirdKeeper549Defeat
 	call_if_set 0x1326, Route27_EventScript_BirdKeeper549_1
 	setvar 0x700C, 38
 	setvar 0x700D, 0
@@ -57,22 +57,22 @@ Route27_EventScript_BirdKeeper549_1::
 	call_if_set 0x8888, Route27_EventScript_BirdKeeper549_2
 	call_if_set 0x1177, Route27_EventScript_BirdKeeper549_3
 	call_if_set 0x115F, Route27_EventScript_BirdKeeper549_4
-	trainerbattle_earlyrival TRAINER_BIRD_KEEPER_549, 0, Route27_Text_BirdKeeper549Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BIRD_KEEPER_JOSE_3, 0, Route27_Text_BirdKeeper549Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route27_EventScript_BirdKeeper549_2::
-	trainerbattle_earlyrival TRAINER_BIRD_KEEPER_97, 0, Route27_Text_BirdKeeper549Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BIRD_KEEPER_JOSE_2, 0, Route27_Text_BirdKeeper549Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route27_EventScript_BirdKeeper549_3::
-	trainerbattle_earlyrival TRAINER_BIRD_KEEPER_96, 0, Route27_Text_BirdKeeper549Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BIRD_KEEPER_JOSE, 0, Route27_Text_BirdKeeper549Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route27_EventScript_BirdKeeper549_4::
-	trainerbattle_earlyrival TRAINER_BIRD_KEEPER_690, 0, Route27_Text_BirdKeeper549Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BIRD_KEEPER_JOSE_4, 0, Route27_Text_BirdKeeper549Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
@@ -86,7 +86,7 @@ Route27_EventScript_CooltrainerBrian::
 	end
 
 Route27_EventScript_Cooltrainer222::
-	trainerbattle_single TRAINER_COOLTRAINER_222, Route27_Text_Cooltrainer222Intro, Route27_Text_Cooltrainer222Defeat
+	trainerbattle_single TRAINER_COOLTRAINER_REENA_4, Route27_Text_Cooltrainer222Intro, Route27_Text_Cooltrainer222Defeat
 	call_if_set 0x1328, Route27_EventScript_Cooltrainer222_1
 	setvar 0x700C, 40
 	setvar 0x700D, 0
@@ -103,27 +103,27 @@ Route27_EventScript_Cooltrainer222_1::
 	call_if_set 0x1177, Route27_EventScript_Cooltrainer222_3
 	call_if_set 0x115F, Route27_EventScript_Cooltrainer222_4
 	call_if_set FLAG_BADGE07_GET, Route27_EventScript_Cooltrainer222_5
-	trainerbattle_earlyrival TRAINER_COOLTRAINER_222, 0, Route27_Text_Cooltrainer222Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_COOLTRAINER_REENA_4, 0, Route27_Text_Cooltrainer222Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route27_EventScript_Cooltrainer222_2::
-	trainerbattle_earlyrival TRAINER_COOLTRAINER_140, 0, Route27_Text_Cooltrainer222Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_COOLTRAINER_REENA_3, 0, Route27_Text_Cooltrainer222Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route27_EventScript_Cooltrainer222_3::
-	trainerbattle_earlyrival TRAINER_COOLTRAINER_136, 0, Route27_Text_Cooltrainer222Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_COOLTRAINER_REENA_2, 0, Route27_Text_Cooltrainer222Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route27_EventScript_Cooltrainer222_4::
-	trainerbattle_earlyrival TRAINER_COOLTRAINER_121, 0, Route27_Text_Cooltrainer222Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_COOLTRAINER_REENA, 0, Route27_Text_Cooltrainer222Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route27_EventScript_Cooltrainer222_5::
-	trainerbattle_earlyrival TRAINER_COOLTRAINER_635, 0, Route27_Text_Cooltrainer222Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_COOLTRAINER_REENA_5, 0, Route27_Text_Cooltrainer222Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 

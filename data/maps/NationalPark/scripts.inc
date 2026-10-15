@@ -32,7 +32,7 @@ NationalPark_EventScript_WorkerF_1::
 	end
 
 NationalPark_EventScript_Pokefan145::
-	trainerbattle_single TRAINER_POKEFAN_145, NationalPark_Text_Pokefan145Intro, NationalPark_Text_Pokefan145Defeat
+	trainerbattle_single TRAINER_POKEFAN_BEVERLY, NationalPark_Text_Pokefan145Intro, NationalPark_Text_Pokefan145Defeat
 	call_if_set 0x1311, NationalPark_EventScript_Pokefan145_1
 	setvar 0x700C, 17
 	setvar 0x700D, 0
@@ -49,27 +49,27 @@ NationalPark_EventScript_Pokefan145_1::
 	call_if_set 0x115F, NationalPark_EventScript_Pokefan145_3
 	call_if_set FLAG_BADGE07_GET, NationalPark_EventScript_Pokefan145_4
 	call_if_set FLAG_BADGE05_GET, NationalPark_EventScript_Pokefan145_5
-	trainerbattle_earlyrival TRAINER_POKEFAN_145, 0, NationalPark_Text_Pokefan145Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_POKEFAN_BEVERLY, 0, NationalPark_Text_Pokefan145Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 NationalPark_EventScript_Pokefan145_2::
-	trainerbattle_earlyrival TRAINER_POKEFAN_659, 0, NationalPark_Text_Pokefan145Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_POKEFAN_BEVERLY_5, 0, NationalPark_Text_Pokefan145Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 NationalPark_EventScript_Pokefan145_3::
-	trainerbattle_earlyrival TRAINER_POKEFAN_626, 0, NationalPark_Text_Pokefan145Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_POKEFAN_BEVERLY_4, 0, NationalPark_Text_Pokefan145Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 NationalPark_EventScript_Pokefan145_4::
-	trainerbattle_earlyrival TRAINER_POKEFAN_625, 0, NationalPark_Text_Pokefan145Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_POKEFAN_BEVERLY_3, 0, NationalPark_Text_Pokefan145Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 NationalPark_EventScript_Pokefan145_5::
-	trainerbattle_earlyrival TRAINER_POKEFAN_624, 0, NationalPark_Text_Pokefan145Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_POKEFAN_BEVERLY_2, 0, NationalPark_Text_Pokefan145Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
@@ -78,7 +78,7 @@ NationalPark_EventScript_Lass::
 	end
 
 NationalPark_EventScript_Schoolboy480::
-	trainerbattle_single TRAINER_SCHOOLBOY_480, NationalPark_Text_Schoolboy480Intro, NationalPark_Text_Schoolboy480Defeat
+	trainerbattle_single TRAINER_SCHOOLBOY_JACK, NationalPark_Text_Schoolboy480Intro, NationalPark_Text_Schoolboy480Defeat
 	call_if_set 0x1312, NationalPark_EventScript_Schoolboy480_1
 	setvar 0x700C, 18
 	setvar 0x700D, 0
@@ -95,27 +95,27 @@ NationalPark_EventScript_Schoolboy480_1::
 	call_if_set 0x8888, NationalPark_EventScript_Schoolboy480_3
 	call_if_set FLAG_BADGE07_GET, NationalPark_EventScript_Schoolboy480_4
 	call_if_set FLAG_BADGE05_GET, NationalPark_EventScript_Schoolboy480_5
-	trainerbattle_earlyrival TRAINER_SCHOOLBOY_480, 0, NationalPark_Text_Schoolboy480Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SCHOOLBOY_JACK, 0, NationalPark_Text_Schoolboy480Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 NationalPark_EventScript_Schoolboy480_2::
-	trainerbattle_earlyrival TRAINER_SCHOOLBOY_658, 0, NationalPark_Text_Schoolboy480Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SCHOOLBOY_JACK_2, 0, NationalPark_Text_Schoolboy480Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 NationalPark_EventScript_Schoolboy480_3::
-	trainerbattle_earlyrival TRAINER_SCHOOLBOY_671, 0, NationalPark_Text_Schoolboy480Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SCHOOLBOY_JACK_5, 0, NationalPark_Text_Schoolboy480Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 NationalPark_EventScript_Schoolboy480_4::
-	trainerbattle_earlyrival TRAINER_SCHOOLBOY_670, 0, NationalPark_Text_Schoolboy480Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SCHOOLBOY_JACK_4, 0, NationalPark_Text_Schoolboy480Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 NationalPark_EventScript_Schoolboy480_5::
-	trainerbattle_earlyrival TRAINER_SCHOOLBOY_669, 0, NationalPark_Text_Schoolboy480Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SCHOOLBOY_JACK_3, 0, NationalPark_Text_Schoolboy480Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 

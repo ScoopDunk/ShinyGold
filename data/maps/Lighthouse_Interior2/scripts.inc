@@ -11,7 +11,7 @@ Lighthouse_Interior2_EventScript_Sailor::
 	end
 
 Lighthouse_Interior2_EventScript_Sailor261::
-	trainerbattle_single TRAINER_SAILOR_261, Lighthouse_Interior2_Text_Sailor261Intro, Lighthouse_Interior2_Text_Sailor261Defeat
+	trainerbattle_single TRAINER_SAILOR_HUEY_2, Lighthouse_Interior2_Text_Sailor261Intro, Lighthouse_Interior2_Text_Sailor261Defeat
 	call_if_set 0x1317, Lighthouse_Interior2_EventScript_Sailor261_1
 	setvar 0x700C, 23
 	setvar 0x700D, 0
@@ -28,27 +28,27 @@ Lighthouse_Interior2_EventScript_Sailor261_1::
 	call_if_set 0x115F, Lighthouse_Interior2_EventScript_Sailor261_3
 	call_if_set FLAG_BADGE07_GET, Lighthouse_Interior2_EventScript_Sailor261_4
 	call_if_set 0x110A, Lighthouse_Interior2_EventScript_Sailor261_5
-	trainerbattle_earlyrival TRAINER_SAILOR_261, 0, Lighthouse_Interior2_Text_Sailor261Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SAILOR_HUEY_2, 0, Lighthouse_Interior2_Text_Sailor261Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Lighthouse_Interior2_EventScript_Sailor261_2::
-	trainerbattle_earlyrival TRAINER_SAILOR_637, 0, Lighthouse_Interior2_Text_Sailor261Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SAILOR_HUEY_4, 0, Lighthouse_Interior2_Text_Sailor261Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Lighthouse_Interior2_EventScript_Sailor261_3::
-	trainerbattle_earlyrival TRAINER_SAILOR_638, 0, Lighthouse_Interior2_Text_Sailor261Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SAILOR_HUEY_5, 0, Lighthouse_Interior2_Text_Sailor261Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Lighthouse_Interior2_EventScript_Sailor261_4::
-	trainerbattle_earlyrival TRAINER_SAILOR_639, 0, Lighthouse_Interior2_Text_Sailor261Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SAILOR_HUEY_6, 0, Lighthouse_Interior2_Text_Sailor261Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Lighthouse_Interior2_EventScript_Sailor261_5::
-	trainerbattle_earlyrival TRAINER_SAILOR_636, 0, Lighthouse_Interior2_Text_Sailor261Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_SAILOR_HUEY_3, 0, Lighthouse_Interior2_Text_Sailor261Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 

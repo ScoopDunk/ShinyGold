@@ -76,7 +76,7 @@ Route26_EventScript_CooltrainerJoyce::
 	end
 
 Route26_EventScript_Cooltrainer302::
-	trainerbattle_single TRAINER_COOLTRAINER_302, Route26_Text_Cooltrainer302Intro, Route26_Text_Cooltrainer302Defeat
+	trainerbattle_single TRAINER_COOLTRAINER_GAVEN_3, Route26_Text_Cooltrainer302Intro, Route26_Text_Cooltrainer302Defeat
 	call_if_set 0x1327, Route26_EventScript_Cooltrainer302_1
 	setvar 0x700C, 39
 	setvar 0x700D, 0
@@ -93,27 +93,27 @@ Route26_EventScript_Cooltrainer302_1::
 	call_if_set 0x1177, Route26_EventScript_Cooltrainer302_3
 	call_if_set 0x115F, Route26_EventScript_Cooltrainer302_4
 	call_if_set FLAG_BADGE07_GET, Route26_EventScript_Cooltrainer302_5
-	trainerbattle_earlyrival TRAINER_COOLTRAINER_302, 0, Route26_Text_Cooltrainer302Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_COOLTRAINER_GAVEN_3, 0, Route26_Text_Cooltrainer302Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route26_EventScript_Cooltrainer302_2::
-	trainerbattle_earlyrival TRAINER_COOLTRAINER_112, 0, Route26_Text_Cooltrainer302Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_COOLTRAINER_GAVEN_2, 0, Route26_Text_Cooltrainer302Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route26_EventScript_Cooltrainer302_3::
-	trainerbattle_earlyrival TRAINER_COOLTRAINER_104, 0, Route26_Text_Cooltrainer302Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_COOLTRAINER_GAVEN, 0, Route26_Text_Cooltrainer302Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route26_EventScript_Cooltrainer302_4::
-	trainerbattle_earlyrival TRAINER_COOLTRAINER_657, 0, Route26_Text_Cooltrainer302Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_COOLTRAINER_GAVEN_5, 0, Route26_Text_Cooltrainer302Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route26_EventScript_Cooltrainer302_5::
-	trainerbattle_earlyrival TRAINER_COOLTRAINER_656, 0, Route26_Text_Cooltrainer302Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_COOLTRAINER_GAVEN_4, 0, Route26_Text_Cooltrainer302Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
@@ -127,7 +127,7 @@ Route26_EventScript_ItemMaxElixir::
 	end
 
 Route26_EventScript_Cooltrainer518::
-	trainerbattle_single TRAINER_COOLTRAINER_518, Route26_Text_Cooltrainer518Intro, Route26_Text_Cooltrainer518Defeat
+	trainerbattle_single TRAINER_COOLTRAINER_BETH, Route26_Text_Cooltrainer518Intro, Route26_Text_Cooltrainer518Defeat
 	call_if_set 0x1325, Route26_EventScript_Cooltrainer518_1
 	setvar 0x700C, 37
 	setvar 0x700D, 0
@@ -142,17 +142,17 @@ Route26_EventScript_Cooltrainer518_1::
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
 	call_if_set 0x1177, Route26_EventScript_Cooltrainer518_2
 	call_if_set 0x115F, Route26_EventScript_Cooltrainer518_3
-	trainerbattle_earlyrival TRAINER_COOLTRAINER_518, 0, Route26_Text_Cooltrainer518Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_COOLTRAINER_BETH, 0, Route26_Text_Cooltrainer518Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route26_EventScript_Cooltrainer518_2::
-	trainerbattle_earlyrival TRAINER_COOLTRAINER_692, 0, Route26_Text_Cooltrainer518Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_COOLTRAINER_BETH_3, 0, Route26_Text_Cooltrainer518Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route26_EventScript_Cooltrainer518_3::
-	trainerbattle_earlyrival TRAINER_COOLTRAINER_691, 0, Route26_Text_Cooltrainer518Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_COOLTRAINER_BETH_2, 0, Route26_Text_Cooltrainer518Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
