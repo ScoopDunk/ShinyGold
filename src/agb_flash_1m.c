@@ -20,22 +20,11 @@ u16 IdentifyFlash(void)
 
     flashId = ReadFlashId();
 
+    // ShinyGold: the flash chip is not identified. The first chip type in sSetupInfos (Macronix MX29L010)
+    // is always used and flash is always reported as present, whatever ID the chip returns.
+    (void)flashId;
     setupInfo = sSetupInfos;
-    result = 1;
-
-    for (;;)
-    {
-        if ((*setupInfo)->type.ids.separate.makerId == 0)
-            break;
-
-        if (flashId == (*setupInfo)->type.ids.joined)
-        {
-            result = 0;
-            break;
-        }
-
-        setupInfo++;
-    }
+    result = 0;
 
     ProgramFlashByte = (*setupInfo)->programFlashByte;
     ProgramFlashSector = (*setupInfo)->programFlashSector;

@@ -76,6 +76,8 @@ static void SetUpStartMenu_Link(void);
 static void SetUpStartMenu_UnionRoom(void);
 static void SetUpStartMenu_SafariZone(void);
 static void SetUpStartMenu_NormalField(void);
+
+#define SG_FLAG_HIDE_START_MENU_BAG 0x856 // ShinyGold
 static bool8 StartCB_HandleInput(void);
 static void StartMenu_FadeScreenIfLeavingOverworld(void);
 static bool8 StartMenuPokedexSanityCheck(void);
@@ -216,7 +218,9 @@ static void SetUpStartMenu_NormalField(void)
         AppendToStartMenuItems(STARTMENU_POKEDEX);
     if (FlagGet(FLAG_SYS_POKEMON_GET) == TRUE)
         AppendToStartMenuItems(STARTMENU_POKEMON);
-    AppendToStartMenuItems(STARTMENU_BAG);
+    // ShinyGold: flag 0x856 hides the BAG
+    if (FlagGet(SG_FLAG_HIDE_START_MENU_BAG) != TRUE)
+        AppendToStartMenuItems(STARTMENU_BAG);
     AppendToStartMenuItems(STARTMENU_PLAYER);
     AppendToStartMenuItems(STARTMENU_SAVE);
     AppendToStartMenuItems(STARTMENU_OPTION);

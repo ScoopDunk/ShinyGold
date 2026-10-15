@@ -58,6 +58,7 @@ void ZeroBoxMonAt(u8 boxId, u8 monPosition);
 void CB2_ReturnToPokeStorage(void);
 void ResetPokemonStorageSystem(void);
 u8 StorageGetCurrentBox(void);
+u8 CountPartyAliveNonEggMonsExcept(u8 slotToIgnore);
 void DrawTextWindowAndBufferTiles(const u8 *string, void *dst, u8 zero1, u8 zero2, u8 *buffer, s32 bytesToBuffer);
 
 #endif // GUARD_POKEMON_STORAGE_SYSTEM_H

@@ -502,6 +502,25 @@ static const struct MenuAction sMultichoiceList_Exit[] = {
     { gOtherText_Exit }
 };
 
+// ShinyGold: new multichoice lists. The texts of many vanilla lists were also changed (see strings.c).
+static const u8 sText_SG_Normal[] = _("NORMAL");
+static const u8 sText_SG_Black[] = _("BLACK");
+static const u8 sText_SG_Pink[] = _("PINK");
+static const u8 sText_SG_Sepia[] = _("SEPIA");
+
+static const struct MenuAction sMultichoiceList_SG_NormalBlackPinkSepia[] = {
+    { sText_SG_Normal },
+    { sText_SG_Black },
+    { sText_SG_Pink },
+    { sText_SG_Sepia }
+};
+
+// ShinyGold bug: the hack's table points MULTICHOICE_SG_66-69 to misaligned (odd) addresses of
+// one-item lists like this one, so they show garbage there. None of them is used by a script.
+static const struct MenuAction sMultichoiceList_SG_Empty[] = {
+    { gText_EmptyLinkService1 }
+};
+
 static const struct MultichoiceListStruct sMultichoiceLists[] = {
     [MULTICHOICE_YES_NO]                                     = MULTICHOICE(sMultichoiceList_YesNo),
     [MULTICHOICE_EEVEELUTIONS]                               = MULTICHOICE(sMultichoiceList_Eeveelutions),
@@ -568,6 +587,12 @@ static const struct MultichoiceListStruct sMultichoiceLists[] = {
     [MULTICHOICE_62]                                         = MULTICHOICE(sMultichoiceList_62),
     [MULTICHOICE_JOIN_OR_LEAD]                               = MULTICHOICE(sMultichoiceList_JoinOrLead),
     [MULTICHOICE_TRAINER_TOWER_MODE]                         = MULTICHOICE(sMultichoiceList_TrainerTowerMode),
+    // ShinyGold
+    [MULTICHOICE_SG_65]                                      = MULTICHOICE(sMultichoiceList_SG_NormalBlackPinkSepia),
+    [MULTICHOICE_SG_66]                                      = MULTICHOICE(sMultichoiceList_SG_Empty),
+    [MULTICHOICE_SG_67]                                      = MULTICHOICE(sMultichoiceList_SG_Empty),
+    [MULTICHOICE_SG_68]                                      = MULTICHOICE(sMultichoiceList_SG_Empty),
+    [MULTICHOICE_SG_69]                                      = MULTICHOICE(sMultichoiceList_SG_Empty),
 };
 
 // From Cool to Berries goes unused

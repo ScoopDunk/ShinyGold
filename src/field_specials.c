@@ -41,6 +41,7 @@
 #include "constants/menu.h"
 #include "constants/event_objects.h"
 #include "constants/metatile_labels.h"
+#include "save_block_ext.h"
 
 static EWRAM_DATA u8 sElevatorCurrentFloorWindowId = 0;
 static EWRAM_DATA u16 sElevatorScroll = 0;
@@ -2068,6 +2069,7 @@ bool8 BufferTMHMMoveName(void)
 void RunMassageCooldownStepCounter(void)
 {
     u16 count = VarGet(VAR_MASSAGE_COOLDOWN_STEP_COUNTER);
+    SaveBlockExt_UpdateStepCounter(); // ShinyGold
     if (count < 500)
         VarSet(VAR_MASSAGE_COOLDOWN_STEP_COUNTER, count + 1);
 }

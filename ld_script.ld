@@ -213,6 +213,7 @@ SECTIONS {
         src/cable_car_util.o(.text);
         src/save.o(.text);
         src/save_block_ext.o(.text);
+        src/force_shiny.o(.text);
         src/mystery_event_script.o(.text);
         src/field_effect_helpers.o(.text);
         src/battle_anim_sound_tasks.o(.text);

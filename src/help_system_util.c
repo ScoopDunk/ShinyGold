@@ -8,6 +8,7 @@
 #include "strings.h"
 #include "constants/songs.h"
 #include "save_block_ext.h"
+#include "force_shiny.h"
 
 #define ZERO 0
 
@@ -27,12 +28,13 @@ struct HelpSystemVideoState
 };
 
 // ShinyGold: The help system is disabled (see RunHelpSystemCallback), which frees most of the 16 KB buffer
-// it used to back up BG char block 3. gSaveBlockExt (save_block_ext.o, placed right before this object
-// by sym_ewram.txt) takes the first sizeof(struct SaveBlockExt) bytes of that space, so every other
-// EWRAM address is unchanged. The save failed screen still backs up char block 3: the part that does
-// not fit here goes to a range of gDecompressionBuffer that the save failed screen does not use.
+// it used to back up BG char block 3. The new EWRAM variables of ShinyGold (save_block_ext.o and
+// force_shiny.o, placed right before this object by sym_ewram.txt) take the start of that space, so
+// every other EWRAM address is unchanged. The save failed screen still backs up char block 3: the part
+// that does not fit here goes to a range of gDecompressionBuffer that the save failed screen does not use.
 // (The hack kept its data inside this buffer too, but the save failed screen overwrote it.)
-static EWRAM_DATA u8 sMapTilesBackup[BG_CHAR_SIZE - sizeof(struct SaveBlockExt)] = {0};
+#define SHINYGOLD_EWRAM_SIZE (sizeof(gSaveBlockExt) + sizeof(gForceShinyMons))
+static EWRAM_DATA u8 sMapTilesBackup[BG_CHAR_SIZE - SHINYGOLD_EWRAM_SIZE] = {0};
 #define MAP_TILES_BACKUP2_OFFSET 0x2320 // save_failed_screen.c uses gDecompressionBuffer 0x20-0x231F and 0x3800-0x3CFF
 #define sMapTilesBackup2 (gDecompressionBuffer + MAP_TILES_BACKUP2_OFFSET)
 STATIC_ASSERT(MAP_TILES_BACKUP2_OFFSET + BG_CHAR_SIZE - sizeof(sMapTilesBackup) <= 0x3800, MapTilesBackup2Fits);

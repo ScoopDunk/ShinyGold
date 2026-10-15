@@ -7,6 +7,7 @@
 #include "constants/songs.h"
 #include "constants/sound.h"
 #include "task.h"
+#include "event_data.h"
 
 struct Fanfare
 {
@@ -563,6 +564,44 @@ static void RestoreBGMVolumeAfterPokemonCry(void)
 {
     if (FuncIsActiveTask(Task_DuckBGMForPokemonCry) != TRUE)
         CreateTask(Task_DuckBGMForPokemonCry, 80);
+}
+
+// ShinyGold: scripts can replace up to three songs with other songs. The songs to replace are in
+// vars 0x7030-0x7032 (0xFFFF = unused) and their replacements in vars 0x7033-0x7035.
+// Called by m4aSongNumStart, so it applies to everything that starts a song.
+#define VAR_SWAP_SONG_FROM(i) (0x7030 + (i))
+#define VAR_SWAP_SONG_TO(i)   (0x7033 + (i))
+
+static u16 GetSongReplacement(u8 i, u16 songNum)
+{
+    u16 *to = GetVarPointer(VAR_SWAP_SONG_TO(i));
+    return to != NULL ? *to : songNum;
+}
+
+u16 GetSwappedSongNum(u16 songNum)
+{
+    u16 *from;
+
+    from = GetVarPointer(VAR_SWAP_SONG_FROM(0));
+    if (from != NULL && *from != 0xFFFF && *from == songNum)
+        return GetSongReplacement(0, songNum);
+
+    from = GetVarPointer(VAR_SWAP_SONG_FROM(1));
+    if (from != NULL && *from != 0xFFFF)
+    {
+        // ShinyGold bug, kept for accuracy: when the second slot is in use but does not match, the
+        // third slot is not checked. Since unused vars read 0 (not 0xFFFF), the third slot only
+        // works while var 0x7031 is 0xFFFF.
+        if (*from == songNum)
+            return GetSongReplacement(1, songNum);
+        return songNum;
+    }
+
+    from = GetVarPointer(VAR_SWAP_SONG_FROM(2));
+    if (from != NULL && *from != 0xFFFF && *from == songNum)
+        return GetSongReplacement(2, songNum);
+
+    return songNum;
 }
 
 void PlayBGM(u16 songNum)
