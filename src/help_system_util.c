@@ -7,6 +7,7 @@
 #include "list_menu.h"
 #include "strings.h"
 #include "constants/songs.h"
+#include "save_block_ext.h"
 
 #define ZERO 0
 
@@ -25,7 +26,16 @@ struct HelpSystemVideoState
     /*0x15*/ u8 state;
 };
 
-static EWRAM_DATA u8 sMapTilesBackup[BG_CHAR_SIZE] = {0};
+// ShinyGold: The help system is disabled (see RunHelpSystemCallback), which frees most of the 16 KB buffer
+// it used to back up BG char block 3. gSaveBlockExt (save_block_ext.o, placed right before this object
+// by sym_ewram.txt) takes the first sizeof(struct SaveBlockExt) bytes of that space, so every other
+// EWRAM address is unchanged. The save failed screen still backs up char block 3: the part that does
+// not fit here goes to a range of gDecompressionBuffer that the save failed screen does not use.
+// (The hack kept its data inside this buffer too, but the save failed screen overwrote it.)
+static EWRAM_DATA u8 sMapTilesBackup[BG_CHAR_SIZE - sizeof(struct SaveBlockExt)] = {0};
+#define MAP_TILES_BACKUP2_OFFSET 0x2320 // save_failed_screen.c uses gDecompressionBuffer 0x20-0x231F and 0x3800-0x3CFF
+#define sMapTilesBackup2 (gDecompressionBuffer + MAP_TILES_BACKUP2_OFFSET)
+STATIC_ASSERT(MAP_TILES_BACKUP2_OFFSET + BG_CHAR_SIZE - sizeof(sMapTilesBackup) <= 0x3800, MapTilesBackup2Fits);
 EWRAM_DATA u8 gDisableHelpSystemVolumeReduce = 0;
 EWRAM_DATA bool8 gHelpSystemToggleWithRButtonDisabled = FALSE;
 static EWRAM_DATA u8 sDelayTimer = 0;
@@ -45,7 +55,8 @@ u8 RunHelpSystemCallback(void)
     {
     case 0:
         sInHelpSystem = 0;
-        if (gSaveBlock2Ptr->optionsButtonMode != OPTIONS_BUTTON_MODE_HELP)
+        // ShinyGold: the help system is disabled (was: if (gSaveBlock2Ptr->optionsButtonMode != OPTIONS_BUTTON_MODE_HELP))
+        if (TRUE)
             return 0;
         if (JOY_NEW(R_BUTTON) && gHelpSystemToggleWithRButtonDisabled == TRUE)
             return 0;
@@ -161,7 +172,9 @@ void SaveMapGPURegs(void)
 
 void SaveMapTiles(void)
 {
-    RequestDma3Copy((void *)BG_CHAR_ADDR(3), sMapTilesBackup, BG_CHAR_SIZE, DMA3_16BIT);
+    // ShinyGold: split backup, see sMapTilesBackup
+    RequestDma3Copy((void *)BG_CHAR_ADDR(3), sMapTilesBackup, sizeof(sMapTilesBackup), DMA3_16BIT);
+    RequestDma3Copy((void *)BG_CHAR_ADDR(3) + sizeof(sMapTilesBackup), sMapTilesBackup2, BG_CHAR_SIZE - sizeof(sMapTilesBackup), DMA3_16BIT);
 }
 
 void SaveMapTextColors(void)
@@ -190,7 +203,9 @@ void RestoreGPURegs(void)
 
 void RestoreMapTiles(void)
 {
-    RequestDma3Copy(sMapTilesBackup, (void *)BG_CHAR_ADDR(3), BG_CHAR_SIZE, DMA3_16BIT);
+    // ShinyGold: split backup, see sMapTilesBackup
+    RequestDma3Copy(sMapTilesBackup, (void *)BG_CHAR_ADDR(3), sizeof(sMapTilesBackup), DMA3_16BIT);
+    RequestDma3Copy(sMapTilesBackup2, (void *)BG_CHAR_ADDR(3) + sizeof(sMapTilesBackup), BG_CHAR_SIZE - sizeof(sMapTilesBackup), DMA3_16BIT);
 }
 
 void RestoreMapTextColors(void)

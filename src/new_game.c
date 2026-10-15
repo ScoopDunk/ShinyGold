@@ -29,6 +29,7 @@
 #include "berry_powder.h"
 #include "pokemon_jump.h"
 #include "event_scripts.h"
+#include "save_block_ext.h"
 
 // this file's functions
 static void ResetMiniGamesResults(void);
@@ -81,7 +82,8 @@ static void ClearBattleTower(void)
 
 static void WarpToPlayersRoom(void)
 {
-    SetWarpDestination(MAP_GROUP(MAP_PALLET_TOWN_PLAYERS_HOUSE_2F), MAP_NUM(MAP_PALLET_TOWN_PLAYERS_HOUSE_2F), -1, 6, 6);
+    // ShinyGold: the player starts at x = 1 (was 6) in their room (map 4.1)
+    SetWarpDestination(MAP_GROUP(MAP_NEW_BARK_TOWN_INTERIOR2), MAP_NUM(MAP_NEW_BARK_TOWN_INTERIOR2), -1, 1, 6);
     WarpIntoMap();
 }
 
@@ -148,6 +150,7 @@ void NewGameInitData(void)
     WarpToPlayersRoom();
     RunScriptImmediately(EventScript_ResetAllMapFlags);
     StringCopy(gSaveBlock1Ptr->rivalName, rivalName);
+    ClearSaveBlockExt(); // ShinyGold
     ResetTrainerTowerResults();
 }
 
