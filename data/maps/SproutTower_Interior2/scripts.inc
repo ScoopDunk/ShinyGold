@@ -71,13 +71,13 @@ KalmCityNousar_Interior3_EventScript_Trigger1::
 
 KalmCityNousar_Interior3_EventScript_Trigger2::
 	@ ShinyGold: overlapping data duplicated from 0x087435C0
-	warp MAP_SPROUT_TOWER_INTERIOR1, 1, 0xFF02, 0x39FF
+	warp MAP_SPROUT_TOWER_INTERIOR1, 2, 0xFF02, 0x39FF
 	end
 
 @ ShinyGold: moved from data/maps/KalmCityNousar_Interior3/scripts.inc (map removed)
 KalmCityNousar_Interior3_EventScript_Trigger3::
 	@ ShinyGold: overlapping data duplicated from 0x087435D7
-	warp MAP_SPROUT_TOWER_INTERIOR1, 2, 0xFF02, 0xFFFF
+	warp MAP_SPROUT_TOWER_INTERIOR1, 3, 0xFF02, 0xFFFF
 	.byte 0xFF @ invalid opcode (script stops)
 
 KalmCityNousar_Interior3_EventScript_Trigger4::
