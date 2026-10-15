@@ -304,9 +304,9 @@ const struct CompressedSpriteSheet gTrainerFrontPicTable[] =
 
 const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
 {
-    TRAINER_PAL(AQUA_LEADER_ARCHIE, gTrainerPalette_AquaLeaderArchie),
-    TRAINER_PAL(AQUA_GRUNT_M, gTrainerPalette_AquaGruntM),
-    TRAINER_PAL(AQUA_GRUNT_F, gTrainerPalette_AquaGruntF),
+    TRAINER_PAL(AQUA_LEADER_ARCHIE, gTrainerPalette_RocketGruntM), // ShinyGold: shares another palette (was gTrainerPalette_AquaLeaderArchie)
+    TRAINER_PAL(AQUA_GRUNT_M, gTrainerPalette_RichBoy), // ShinyGold: shares another palette (was gTrainerPalette_AquaGruntM)
+    TRAINER_PAL(AQUA_GRUNT_F, gTrainerPalette_RocketGruntM), // ShinyGold: shares another palette (was gTrainerPalette_AquaGruntF)
     TRAINER_PAL(RS_AROMA_LADY, gTrainerPalette_RSAromaLady),
     TRAINER_PAL(RS_RUIN_MANIAC, gTrainerPalette_RSRuinManiac),
     TRAINER_PAL(INTERVIEWER, gTrainerPalette_Interviewer),
@@ -318,13 +318,13 @@ const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
     TRAINER_PAL(RS_LADY, gTrainerPalette_RSLady),
     TRAINER_PAL(RS_BEAUTY, gTrainerPalette_RSBeauty),
     TRAINER_PAL(RICH_BOY, gTrainerPalette_RichBoy),
-    TRAINER_PAL(RS_POKEMANIAC, gTrainerPalette_RSPokeManiac),
+    TRAINER_PAL(RS_POKEMANIAC, gTrainerPalette_OldCouple), // ShinyGold: shares another palette (was gTrainerPalette_RSPokeManiac)
     TRAINER_PAL(RS_SWIMMER_M, gTrainerPalette_RSSwimmerM),
     TRAINER_PAL(RS_BLACK_BELT, gTrainerPalette_RSBlackBelt),
     TRAINER_PAL(GUITARIST, gTrainerPalette_Guitarist),
-    TRAINER_PAL(KINDLER, gTrainerPalette_Kindler),
+    TRAINER_PAL(KINDLER, gTrainerPalette_CooltrainerM), // ShinyGold: shares another palette (was gTrainerPalette_Kindler)
     TRAINER_PAL(RS_CAMPER, gTrainerPalette_RSCamper),
-    TRAINER_PAL(BUG_MANIAC, gTrainerPalette_BugManiac),
+    TRAINER_PAL(BUG_MANIAC, gTrainerPalette_Collector), // ShinyGold: shares another palette (was gTrainerPalette_BugManiac)
     TRAINER_PAL(RS_PSYCHIC_M, gTrainerPalette_RSPsychicM),
     TRAINER_PAL(RS_PSYCHIC_F, gTrainerPalette_RSPsychicF),
     TRAINER_PAL(RS_GENTLEMAN, gTrainerPalette_RSGentleman),
@@ -332,7 +332,7 @@ const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
     TRAINER_PAL(ELITE_FOUR_PHOEBE, gTrainerPalette_EliteFourPhoebe),
     TRAINER_PAL(LEADER_ROXANNE, gTrainerPalette_LeaderRoxanne),
     TRAINER_PAL(LEADER_BRAWLY, gTrainerPalette_LeaderBrawly),
-    TRAINER_PAL(LEADER_TATE_AND_LIZA, gTrainerPalette_LeaderTateAndLiza),
+    TRAINER_PAL(LEADER_TATE_AND_LIZA, gTrainerPalette_Collector), // ShinyGold: shares another palette (was gTrainerPalette_LeaderTateAndLiza)
     TRAINER_PAL(SCHOOL_KID_M, gTrainerPalette_SchoolKidM),
     TRAINER_PAL(SCHOOL_KID_F, gTrainerPalette_SchoolKidF),
     TRAINER_PAL(SR_AND_JR, gTrainerPalette_SrAndJr),
@@ -342,7 +342,7 @@ const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
     TRAINER_PAL(EXPERT_F, gTrainerPalette_ExpertF),
     TRAINER_PAL(RS_YOUNGSTER, gTrainerPalette_RSYoungster),
     TRAINER_PAL(CHAMPION_STEVEN, gTrainerPalette_ChampionSteven),
-    TRAINER_PAL(RS_FISHERMAN, gTrainerPalette_RSFisherman),
+    TRAINER_PAL(RS_FISHERMAN, gTrainerPalette_Collector), // ShinyGold: shares another palette (was gTrainerPalette_RSFisherman)
     TRAINER_PAL(CYCLING_TRIATHLETE_M, gTrainerPalette_CyclingTriathleteM),
     TRAINER_PAL(CYCLING_TRIATHLETE_F, gTrainerPalette_CyclingTriathleteF),
     TRAINER_PAL(RUNNING_TRIATHLETE_M, gTrainerPalette_RunningTriathleteM),
@@ -357,28 +357,28 @@ const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
     TRAINER_PAL(RS_SWIMMER_F, gTrainerPalette_RSSwimmerF),
     TRAINER_PAL(RS_PICNICKER, gTrainerPalette_RSPicnicker),
     TRAINER_PAL(RS_TWINS, gTrainerPalette_RSTwins),
-    TRAINER_PAL(RS_SAILOR, gTrainerPalette_RSSailor),
+    TRAINER_PAL(RS_SAILOR, gTrainerPalette_EliteFourLorelei), // ShinyGold: shares another palette (was gTrainerPalette_RSSailor)
     TRAINER_PAL(COLLECTOR, gTrainerPalette_Collector),
     TRAINER_PAL(WALLY, gTrainerPalette_Wally),
     TRAINER_PAL(RS_BRENDAN_1, gTrainerPalette_RSBrendan1),
     TRAINER_PAL(RS_MAY_1, gTrainerPalette_RSMay1),
     TRAINER_PAL(RS_POKEMON_BREEDER_M, gTrainerPalette_RSPokemonBreederM),
     TRAINER_PAL(RS_POKEMON_BREEDER_F, gTrainerPalette_RSPokemonBreederF),
-    TRAINER_PAL(RS_POKEMON_RANGER_M, gTrainerPalette_RSPokemonRangerM),
+    TRAINER_PAL(RS_POKEMON_RANGER_M, gTrainerPalette_CooltrainerF), // ShinyGold: shares another palette (was gTrainerPalette_RSPokemonRangerM)
     TRAINER_PAL(RS_POKEMON_RANGER_F, gTrainerPalette_RSPokemonRangerF),
-    TRAINER_PAL(MAGMA_LEADER_MAXIE, gTrainerPalette_MagmaLeaderMaxie),
-    TRAINER_PAL(MAGMA_GRUNT_M, gTrainerPalette_MagmaGruntM),
-    TRAINER_PAL(MAGMA_GRUNT_F, gTrainerPalette_MagmaGruntF),
+    TRAINER_PAL(MAGMA_LEADER_MAXIE, gTrainerPalette_Collector), // ShinyGold: shares another palette (was gTrainerPalette_MagmaLeaderMaxie)
+    TRAINER_PAL(MAGMA_GRUNT_M, gTrainerPalette_RSBirdKeeper), // ShinyGold: shares another palette (was gTrainerPalette_MagmaGruntM)
+    TRAINER_PAL(MAGMA_GRUNT_F, gTrainerPalette_Collector), // ShinyGold: shares another palette (was gTrainerPalette_MagmaGruntF)
     TRAINER_PAL(RS_LASS, gTrainerPalette_RSLass),
     TRAINER_PAL(RS_BUG_CATCHER, gTrainerPalette_RSBugCatcher),
     TRAINER_PAL(RS_HIKER, gTrainerPalette_RSHiker),
     TRAINER_PAL(RS_YOUNG_COUPLE, gTrainerPalette_RSYoungCouple),
-    TRAINER_PAL(OLD_COUPLE, gTrainerPalette_OldCouple),
-    TRAINER_PAL(RS_SIS_AND_BRO, gTrainerPalette_RSSisAndBro),
+    TRAINER_PAL(OLD_COUPLE, gTrainerPalette_EliteFourLorelei), // ShinyGold: shares another palette (was gTrainerPalette_OldCouple)
+    TRAINER_PAL(RS_SIS_AND_BRO, gTrainerPalette_EliteFourLance), // ShinyGold: shares another palette (was gTrainerPalette_RSSisAndBro)
     TRAINER_PAL(AQUA_ADMIN_M, gTrainerPalette_AquaAdminM),
     TRAINER_PAL(AQUA_ADMIN_F, gTrainerPalette_AquaAdminF),
     TRAINER_PAL(MAGMA_ADMIN_M, gTrainerPalette_MagmaAdminM),
-    TRAINER_PAL(MAGMA_ADMIN_F, gTrainerPalette_MagmaAdminF),
+    TRAINER_PAL(MAGMA_ADMIN_F, gTrainerPalette_SwimmerF), // ShinyGold: shares another palette (was gTrainerPalette_MagmaAdminF)
     TRAINER_PAL(LEADER_WATTSON, gTrainerPalette_LeaderWattson),
     TRAINER_PAL(LEADER_FLANNERY, gTrainerPalette_LeaderFlannery),
     TRAINER_PAL(LEADER_NORMAN, gTrainerPalette_LeaderNorman),
@@ -392,7 +392,7 @@ const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
     TRAINER_PAL(SAILOR, gTrainerPalette_Sailor),
     TRAINER_PAL(CAMPER, gTrainerPalette_Camper),
     TRAINER_PAL(PICNICKER, gTrainerPalette_Picnicker),
-    TRAINER_PAL(POKEMANIAC, gTrainerPalette_PokeManiac),
+    TRAINER_PAL(POKEMANIAC, gTrainerPalette_RocketGruntF), // ShinyGold: shares another palette (was gTrainerPalette_PokeManiac)
     TRAINER_PAL(SUPER_NERD, gTrainerPalette_SuperNerd),
     TRAINER_PAL(HIKER, gTrainerPalette_Hiker),
     TRAINER_PAL(BIKER, gTrainerPalette_Biker),
@@ -400,7 +400,7 @@ const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
     TRAINER_PAL(ENGINEER, gTrainerPalette_Engineer),
     TRAINER_PAL(FISHERMAN, gTrainerPalette_Fisherman),
     TRAINER_PAL(SWIMMER_M, gTrainerPalette_SwimmerM),
-    TRAINER_PAL(CUE_BALL, gTrainerPalette_CueBall),
+    TRAINER_PAL(CUE_BALL, gTrainerPalette_EliteFourLance), // ShinyGold: shares another palette (was gTrainerPalette_CueBall)
     TRAINER_PAL(GAMER, gTrainerPalette_Gamer),
     TRAINER_PAL(BEAUTY, gTrainerPalette_Beauty),
     TRAINER_PAL(SWIMMER_F, gTrainerPalette_SwimmerF),
@@ -415,16 +415,16 @@ const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
     TRAINER_PAL(LEADER_GIOVANNI, gTrainerPalette_LeaderGiovanni),
     TRAINER_PAL(ROCKET_GRUNT_M, gTrainerPalette_RocketGruntM),
     TRAINER_PAL(COOLTRAINER_M, gTrainerPalette_CooltrainerM),
-    TRAINER_PAL(COOLTRAINER_F, gTrainerPalette_CooltrainerF),
-    TRAINER_PAL(ELITE_FOUR_LORELEI, gTrainerPalette_EliteFourLorelei),
+    TRAINER_PAL(COOLTRAINER_F, gTrainerPalette_Collector), // ShinyGold: shares another palette (was gTrainerPalette_CooltrainerF)
+    TRAINER_PAL(ELITE_FOUR_LORELEI, gTrainerPalette_RocketGruntM), // ShinyGold: shares another palette (was gTrainerPalette_EliteFourLorelei)
     TRAINER_PAL(ELITE_FOUR_BRUNO, gTrainerPalette_EliteFourBruno),
-    TRAINER_PAL(ELITE_FOUR_AGATHA, gTrainerPalette_EliteFourAgatha),
-    TRAINER_PAL(ELITE_FOUR_LANCE, gTrainerPalette_EliteFourLance),
+    TRAINER_PAL(ELITE_FOUR_AGATHA, gTrainerPalette_LeaderKoga), // ShinyGold: shares another palette (was gTrainerPalette_EliteFourAgatha)
+    TRAINER_PAL(ELITE_FOUR_LANCE, gTrainerPalette_RSGentleman), // ShinyGold: shares another palette (was gTrainerPalette_EliteFourLance)
     TRAINER_PAL(LEADER_BROCK, gTrainerPalette_LeaderBrock),
     TRAINER_PAL(LEADER_MISTY, gTrainerPalette_LeaderMisty),
     TRAINER_PAL(LEADER_LT_SURGE, gTrainerPalette_LeaderLtSurge),
     TRAINER_PAL(LEADER_ERIKA, gTrainerPalette_LeaderErika),
-    TRAINER_PAL(LEADER_KOGA, gTrainerPalette_LeaderKoga),
+    TRAINER_PAL(LEADER_KOGA, gTrainerPalette_EliteFourLorelei), // ShinyGold: shares another palette (was gTrainerPalette_LeaderKoga)
     TRAINER_PAL(LEADER_BLAINE, gTrainerPalette_LeaderBlaine),
     TRAINER_PAL(LEADER_SABRINA, gTrainerPalette_LeaderSabrina),
     TRAINER_PAL(GENTLEMAN, gTrainerPalette_Gentleman),
@@ -434,12 +434,12 @@ const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
     TRAINER_PAL(TWINS, gTrainerPalette_Twins),
     TRAINER_PAL(COOL_COUPLE, gTrainerPalette_CoolCouple),
     TRAINER_PAL(YOUNG_COUPLE, gTrainerPalette_YoungCouple),
-    TRAINER_PAL(CRUSH_KIN, gTrainerPalette_CrushKin),
+    TRAINER_PAL(CRUSH_KIN, gTrainerPalette_RocketGruntM), // ShinyGold: shares another palette (was gTrainerPalette_CrushKin)
     TRAINER_PAL(SIS_AND_BRO, gTrainerPalette_SisAndBro),
     TRAINER_PAL(PROFESSOR_OAK, gTrainerPalette_ProfessorOak),
     TRAINER_PAL(RS_BRENDAN_2, gTrainerPalette_RSBrendan2),
     TRAINER_PAL(RS_MAY_2, gTrainerPalette_RSMay2),
-    TRAINER_PAL(RED, gTrainerPalette_Red),
+    TRAINER_PAL(RED, gTrainerPalette_Guitarist), // ShinyGold: shares another palette (was gTrainerPalette_Red)
     TRAINER_PAL(LEAF, gTrainerPalette_Leaf),
     TRAINER_PAL(ROCKET_GRUNT_F, gTrainerPalette_RocketGruntF),
     TRAINER_PAL(PSYCHIC_F, gTrainerPalette_PsychicF),
