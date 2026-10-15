@@ -1,0 +1,52 @@
+BlackthornCity_Interior1_MapScripts::
+	.byte 0
+
+BlackthornCity_Interior1_EventScript_BaldingMan::
+	lock
+	faceplayer
+	msgbox BlackthornCity_Interior1_Text_BaldingMan_1, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, 1, BlackthornCity_Interior1_EventScript_BaldingMan_1
+	goto BlackthornCity_Interior1_EventScript_BaldingMan_2
+
+BlackthornCity_Interior1_EventScript_BaldingMan_1::
+	msgbox BlackthornCity_Interior1_Text_BaldingMan_2
+	special ChoosePartyMon
+	waitstate
+	goto_if_ge VAR_0x8004, 6, BlackthornCity_Interior1_EventScript_BaldingMan_2
+	special IsSelectedMonEgg
+	goto_if_eq VAR_RESULT, 1, BlackthornCity_Interior1_EventScript_BaldingMan_3
+	special GetNumMovesSelectedMonHas
+	goto_if_eq VAR_RESULT, 1, BlackthornCity_Interior1_EventScript_BaldingMan_4
+	msgbox BlackthornCity_Interior1_Text_BaldingMan_3
+	fadescreen FADE_TO_BLACK
+	special SelectMoveDeleterMove
+	fadescreen FADE_FROM_BLACK
+	goto_if_eq VAR_0x8005, 4, BlackthornCity_Interior1_EventScript_BaldingMan_1
+	special BufferMoveDeleterNicknameAndMove
+	msgbox BlackthornCity_Interior1_Text_BaldingMan_4, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, 1, BlackthornCity_Interior1_EventScript_BaldingMan_5
+	goto BlackthornCity_Interior1_EventScript_BaldingMan_2
+
+BlackthornCity_Interior1_EventScript_BaldingMan_2::
+	msgbox BlackthornCity_Interior1_Text_BaldingMan_5
+	release
+	end
+
+BlackthornCity_Interior1_EventScript_BaldingMan_3::
+	msgbox BlackthornCity_Interior1_Text_BaldingMan_6
+	release
+	end
+
+BlackthornCity_Interior1_EventScript_BaldingMan_4::
+	special BufferMoveDeleterNicknameAndMove
+	msgbox BlackthornCity_Interior1_Text_BaldingMan_7
+	release
+	end
+
+BlackthornCity_Interior1_EventScript_BaldingMan_5::
+	special MoveDeleterForgetMove
+	playfanfare MUS_MOVE_DELETED
+	waitfanfare
+	msgbox BlackthornCity_Interior1_Text_BaldingMan_8
+	release
+	end

@@ -1,40 +1,25 @@
-Route18_Text_WiltonIntro::
-    .string "I always check every grassy area\n"
-    .string "for new POKéMON.$"
+Route18_Text_BirdKeeperBobIntro::
+	.string "CYCLING ROAD is a quick shortcut to\n"
+	.string "CELADON.$"
 
-Route18_Text_WiltonDefeat::
-    .string "Tch!$"
+Route18_Text_BirdKeeperBobDefeat::
+	.string "...Whew!$"
 
-Route18_Text_WiltonPostBattle::
-    .string "I wish I had a BIKE!$"
+Route18_Text_BirdKeeperBob::
+	.string "If you don’t have a BICYCLE, you’re\n"
+	.string "not allowed to use the shortcut.$"
 
-Route18_Text_RamiroIntro::
-    .string "Kurukkoo!\n"
-    .string "How do you like my birdcall?$"
+Route18_Text_BirdKeeperBorisIntro::
+	.string "If you’re looking for POKéMON, you\n"
+	.string "have to look in the tall grass.$"
 
-Route18_Text_RamiroDefeat::
-    .string "I had to bug you!$"
+Route18_Text_BirdKeeperBorisDefeat::
+	.string "Ayieee!$"
 
-Route18_Text_RamiroPostBattle::
-    .string "I collect sea POKéMON on weekends\n"
-    .string "because the sea is so close.$"
+Route18_Text_BirdKeeperBoris::
+	.string "Since you’re so strong, it must be\n"
+	.string "fun to battle.$"
 
-Route18_Text_JacobIntro::
-    .string "This is my turf!\n"
-    .string "Get out of here!$"
-
-Route18_Text_JacobDefeat::
-    .string "Darn!$"
-
-Route18_Text_JacobPostBattle::
-    .string "This is my fave area for catching\n"
-    .string "POKéMON.$"
-
-Route18_Text_RouteSign::
-    .string "ROUTE 18\n"
-    .string "CELADON CITY - FUCHSIA CITY$"
-
-Route18_Text_CyclingRoadSign::
-    .string "CYCLING ROAD\n"
-    .string "No pedestrians permitted!$"
-
+Route18_Text_Sign::
+	.string "ROUTE 18\n"
+	.string "CELADON CITY - FUCHSIA CITY$"

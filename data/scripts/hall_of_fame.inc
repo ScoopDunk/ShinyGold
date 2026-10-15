@@ -1,9 +1,10 @@
+@ ShinyGold: modified in place by the hack
 EventScript_SetDefeatedEliteFourFlagsVars::
-	clearflag FLAG_HIDE_POSTGAME_GOSSIPERS
-	call EventScript_ResetEliteFour
+	clearflag 0x09D
+	call SG_EventScript_SetDefeatedEliteFourFlagsVars_1
 	special Script_UpdateTrainerFanClubGameClear
 	specialvar VAR_RESULT, IsNationalPokedexEnabled
-	call_if_eq VAR_RESULT, FALSE, EventScript_SetReadyTryGiveNationalDexScene
+	call_if_eq VAR_RESULT, 0, EventScript_SetReadyTryGiveNationalDexScene
 	call EventScript_ResetLegendaries
 	return
 
@@ -27,11 +28,11 @@ EventScript_ResetEliteFour::
 	clearflag FLAG_DEFEATED_AGATHA
 	clearflag FLAG_DEFEATED_LANCE
 	clearflag FLAG_DEFEATED_CHAMP
-	cleartrainerflag TRAINER_CHAMPION_FIRST_SQUIRTLE
-	cleartrainerflag TRAINER_CHAMPION_FIRST_BULBASAUR
-	cleartrainerflag TRAINER_CHAMPION_FIRST_CHARMANDER
-	cleartrainerflag TRAINER_CHAMPION_REMATCH_SQUIRTLE
-	cleartrainerflag TRAINER_CHAMPION_REMATCH_BULBASAUR
-	cleartrainerflag TRAINER_CHAMPION_REMATCH_CHARMANDER
+	cleartrainerflag TRAINER_ELITETRAINER_LANCE
+	cleartrainerflag TRAINER_RIVAL_TERRY_13
+	cleartrainerflag TRAINER_RIVAL_TERRY_14
+	cleartrainerflag TRAINER_RIVAL_TERRY_15
+	cleartrainerflag TRAINER_RIVAL_TERRY_16
+	cleartrainerflag TRAINER_RIVAL_TERRY_17
 	setvar VAR_MAP_SCENE_POKEMON_LEAGUE, 0
 	return

@@ -1,0 +1,103 @@
+GoldenrodCity_Interior16_MapScripts::
+	@ ShinyGold: map script header pointer was NULL
+	.byte 0
+
+GoldenrodCity_Interior16_EventScript_LassCarrie::
+	trainerbattle_single TRAINER_LASS_CARRIE, GoldenrodCity_Interior16_Text_LassCarrieIntro, GoldenrodCity_Interior16_Text_LassCarrieDefeat
+	msgbox GoldenrodCity_Interior16_Text_LassCarrie, MSGBOX_AUTOCLOSE
+	end
+
+GoldenrodCity_Interior16_EventScript_BeautyVictoria::
+	trainerbattle_single TRAINER_BEAUTY_VICTORIA, GoldenrodCity_Interior16_Text_BeautyVictoriaIntro, GoldenrodCity_Interior16_Text_BeautyVictoriaDefeat
+	msgbox GoldenrodCity_Interior16_Text_BeautyVictoria, MSGBOX_AUTOCLOSE
+	end
+
+GoldenrodCity_Interior16_EventScript_LassBridget::
+	trainerbattle_single TRAINER_LASS_BRIDGET, GoldenrodCity_Interior16_Text_LassBridgetIntro, GoldenrodCity_Interior16_Text_LassBridgetDefeat
+	msgbox GoldenrodCity_Interior16_Text_LassBridget, MSGBOX_AUTOCLOSE
+	end
+
+GoldenrodCity_Interior16_EventScript_BeautySamantha::
+	trainerbattle_single TRAINER_BEAUTY_SAMANTHA, GoldenrodCity_Interior16_Text_BeautySamanthaIntro, GoldenrodCity_Interior16_Text_BeautySamanthaDefeat
+	msgbox GoldenrodCity_Interior16_Text_BeautySamantha, MSGBOX_AUTOCLOSE
+	end
+
+GoldenrodCity_Interior16_EventScript_CrushGirl::
+	call_if_set FLAG_BADGE04_GET, GoldenrodCity_Interior16_EventScript_CrushGirl_1
+	call_if_set 0x1093, GoldenrodCity_Interior16_EventScript_CrushGirl_2
+	setvar VAR_0x8004, 2
+	setvar VAR_0x8005, 2
+	special UpdatePickStateFromSpecialVar8005
+	trainerbattle_single TRAINER_LEADER_WHITNEY_2, GoldenrodCity_Interior16_Text_CrushGirlIntro, GoldenrodCity_Interior16_Text_CrushGirlDefeat, GoldenrodCity_Interior16_EventScript_CrushGirlContinue, NO_MUSIC
+	msgbox GoldenrodCity_Interior16_Text_CrushGirl_1, MSGBOX_NPC
+	end
+
+GoldenrodCity_Interior16_EventScript_CrushGirl_1::
+	msgbox GoldenrodCity_Interior16_Text_CrushGirl_2, MSGBOX_NPC
+	end
+
+GoldenrodCity_Interior16_EventScript_CrushGirl_2::
+	msgbox GoldenrodCity_Interior16_Text_CrushGirl_3, MSGBOX_NPC
+	msgbox GoldenrodCity_Interior16_Text_CrushGirl_4, MSGBOX_NPC
+	msgbox GoldenrodCity_Interior16_Text_CrushGirl_5, MSGBOX_NPC
+	giveitem ITEM_TM45
+	msgbox GoldenrodCity_Interior16_Text_CrushGirl_6, MSGBOX_NPC
+	setflag FLAG_BADGE04_GET
+	end
+
+GoldenrodCity_Interior16_EventScript_CrushGirlContinue::
+	setflag 0x1092
+	msgbox GoldenrodCity_Interior16_Text_CrushGirl_1, MSGBOX_NPC
+	end
+
+GoldenrodCity_Interior16_EventScript_GymGuy::
+	call_if_set FLAG_BADGE04_GET, GoldenrodCity_Interior16_EventScript_GymGuy_1
+	msgbox GoldenrodCity_Interior16_Text_GymGuy_1, MSGBOX_NPC
+	end
+
+GoldenrodCity_Interior16_EventScript_GymGuy_1::
+	msgbox GoldenrodCity_Interior16_Text_GymGuy_2, MSGBOX_NPC
+	end
+
+GoldenrodCity_Interior16_EventScript_Trigger::
+	call_if_set 0x1093, GoldenrodCity_Interior16_EventScript_Trigger_1
+	call_if_set 0x1092, GoldenrodCity_Interior16_EventScript_Trigger_2
+	release
+	end
+
+GoldenrodCity_Interior16_EventScript_Trigger_1::
+	release
+	end
+
+GoldenrodCity_Interior16_EventScript_Trigger_2::
+	setflag 0x1093
+	applymovement 3, GoldenrodCity_Interior16_Movement_Trigger_1
+	delay 16
+	msgbox GoldenrodCity_Interior16_Text_Trigger, MSGBOX_NPC
+	applymovement 3, GoldenrodCity_Interior16_Movement_Trigger_2
+	end
+
+GoldenrodCity_Interior16_Movement_Trigger_1::
+	emote_exclamation_mark
+	walk_left
+	face_up
+	step_end
+
+GoldenrodCity_Interior16_Movement_Trigger_2::
+	walk_right
+	face_left
+	step_end
+
+GoldenrodCity_Interior16_EventScript_Sign1::
+	call_if_set 0x1095, GoldenrodCity_Interior16_EventScript_Sign1_1
+	call_if_set FLAG_BADGE04_GET, GoldenrodCity_Interior16_EventScript_Sign1_2
+	msgbox GoldenrodCity_Interior16_Text_Sign1_1, MSGBOX_NPC
+	end
+
+GoldenrodCity_Interior16_EventScript_Sign1_1::
+	msgbox GoldenrodCity_Interior16_Text_Sign1_2, MSGBOX_AUTOCLOSE
+	end
+
+GoldenrodCity_Interior16_EventScript_Sign1_2::
+	msgbox GoldenrodCity_Interior16_Text_Sign1_3, MSGBOX_NPC
+	end

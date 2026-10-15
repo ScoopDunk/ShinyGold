@@ -1,6 +1,30 @@
 Route11_MapScripts::
 	.byte 0
 
-Route11_EventScript_DiglettsCaveSign::
-	msgbox Route11_Text_DiglettsCave, MSGBOX_SIGN
+Route11_EventScript_PsychicFidel::
+	trainerbattle_single TRAINER_PSYCHIC_FIDEL, Route11_Text_PsychicFidelIntro, Route11_Text_PsychicFidelDefeat
+	msgbox Route11_Text_PsychicFidel, MSGBOX_AUTOCLOSE
+	end
+
+Route11_EventScript_YoungsterJason::
+	trainerbattle_single TRAINER_YOUNGSTER_JASON, Route11_Text_YoungsterJasonIntro, Route11_Text_YoungsterJasonDefeat
+	msgbox Route11_Text_YoungsterJason, MSGBOX_AUTOCLOSE
+	end
+
+Route11_EventScript_ItemRevive::
+	finditem ITEM_REVIVE
+	end
+
+Route11_EventScript_YoungsterOwen::
+	trainerbattle_single TRAINER_YOUNGSTER_OWEN, Route11_Text_YoungsterOwenIntro, Route11_Text_YoungsterOwenDefeat
+	msgbox Route11_Text_YoungsterOwen, MSGBOX_AUTOCLOSE
+	end
+
+Route11_EventScript_PsychicHerman::
+	trainerbattle_single TRAINER_PSYCHIC_HERMAN, Route11_Text_PsychicHermanIntro, Route11_Text_PsychicHermanIntro
+	msgbox Route11_Text_PsychicHerman, MSGBOX_AUTOCLOSE
+	end
+
+Route11_EventScript_Sign1::
+	msgbox Route11_Text_Sign1, MSGBOX_AUTOCLOSE
 	end

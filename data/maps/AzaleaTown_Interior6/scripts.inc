@@ -1,0 +1,108 @@
+AzaleaTown_Interior6_MapScripts::
+	@ ShinyGold: map script header pointer was NULL
+	.byte 0
+
+AzaleaTown_Interior6_EventScript_BugCatcherAl::
+	trainerbattle_single TRAINER_BUG_CATCHER_AL, AzaleaTown_Interior6_Text_BugCatcherAlIntro, AzaleaTown_Interior6_Text_BugCatcherAlDefeat
+	msgbox AzaleaTown_Interior6_Text_BugCatcherAl, MSGBOX_AUTOCLOSE
+	end
+
+AzaleaTown_Interior6_EventScript_BugCatcherJosh::
+	trainerbattle_single TRAINER_BUG_CATCHER_JOSH, AzaleaTown_Interior6_Text_BugCatcherJoshIntro, AzaleaTown_Interior6_Text_BugCatcherJoshDefeat
+	msgbox AzaleaTown_Interior6_Text_BugCatcherJosh, MSGBOX_AUTOCLOSE
+	end
+
+AzaleaTown_Interior6_EventScript_BugCatcherBenny::
+	trainerbattle_single TRAINER_BUG_CATCHER_BENNY, AzaleaTown_Interior6_Text_BugCatcherBennyIntro, AzaleaTown_Interior6_Text_BugCatcherBennyDefeat
+	msgbox AzaleaTown_Interior6_Text_BugCatcherBenny, MSGBOX_AUTOCLOSE
+	end
+
+AzaleaTown_Interior6_EventScript_Camper::
+	setflag 0x1067
+	setvar VAR_0x8004, 2
+	setvar VAR_0x8005, 2
+	special UpdatePickStateFromSpecialVar8005
+	trainerbattle_single TRAINER_LEADER_BUGSY, AzaleaTown_Interior6_Text_CamperIntro, AzaleaTown_Interior6_Text_CamperDefeat, AzaleaTown_Interior6_EventScript_CamperContinue, NO_MUSIC
+	msgbox AzaleaTown_Interior6_Text_Camper_1, MSGBOX_NPC
+	end
+
+AzaleaTown_Interior6_EventScript_CamperContinue::
+	setflag FLAG_BADGE02_GET
+	msgbox AzaleaTown_Interior6_Text_Camper_2, MSGBOX_NPC
+	giveitem ITEM_TM49
+	msgbox AzaleaTown_Interior6_Text_Camper_3, MSGBOX_NPC
+	end
+
+AzaleaTown_Interior6_EventScript_GymGuy::
+	call_if_set FLAG_BADGE02_GET, AzaleaTown_Interior6_EventScript_GymGuy_1
+	msgbox AzaleaTown_Interior6_Text_GymGuy_1, MSGBOX_NPC
+	end
+
+AzaleaTown_Interior6_EventScript_GymGuy_1::
+	msgbox AzaleaTown_Interior6_Text_GymGuy_2, MSGBOX_NPC
+	end
+
+AzaleaTown_Interior6_EventScript_TeachyTvHost::
+	faceplayer
+	call_if_set FLAG_BADGE02_GET, AzaleaTown_Interior6_EventScript_TeachyTvHost_1
+	call_if_set 0x1066, AzaleaTown_Interior6_EventScript_TeachyTvHost_2
+	msgbox AzaleaTown_Interior6_Text_TeachyTvHost_1, MSGBOX_YESNO
+	call_if_eq VAR_RESULT, 1, AzaleaTown_Interior6_EventScript_TeachyTvHost_3
+	msgbox AzaleaTown_Interior6_Text_TeachyTvHost_2, MSGBOX_NPC
+	applymovement LOCALID_PLAYER, AzaleaTown_Interior6_Movement_TeachyTvHost_1
+	applymovement 6, AzaleaTown_Interior6_Movement_TeachyTvHost_2
+	delay 80
+	setflag 0x1067
+	end
+
+AzaleaTown_Interior6_EventScript_TeachyTvHost_1::
+	msgbox AzaleaTown_Interior6_Text_TeachyTvHost_3, MSGBOX_NPC
+	end
+
+AzaleaTown_Interior6_EventScript_TeachyTvHost_2::
+	msgbox AzaleaTown_Interior6_Text_TeachyTvHost_4, MSGBOX_NPC
+	end
+
+AzaleaTown_Interior6_EventScript_TeachyTvHost_3::
+	msgbox AzaleaTown_Interior6_Text_TeachyTvHost_5, MSGBOX_NPC
+	call Route44_EventScript_TeachyTvHost_1
+	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_CARLOS_2, 0, AzaleaTown_Interior6_Text_TeachyTvHostDefeat, AzaleaTown_Interior6_Text_TeachyTvHostDefeat
+	msgbox AzaleaTown_Interior6_Text_TeachyTvHost_6, MSGBOX_NPC
+	call Route44_EventScript_TeachyTvHost_2
+	setflag 0x1066
+	end
+
+AzaleaTown_Interior6_Movement_TeachyTvHost_1::
+	walk_down
+	face_right
+	step_end
+
+AzaleaTown_Interior6_Movement_TeachyTvHost_2::
+	walk_down
+	walk_right
+	walk_right
+	walk_down
+	walk_down
+	set_invisible
+	walk_down
+	walk_down
+	step_end
+
+AzaleaTown_Interior6_EventScript_TwinsAmyAndMay::
+	trainerbattle_single TRAINER_TWINS_AMY_AND_MAY, AzaleaTown_Interior6_Text_TwinsAmyAndMayIntro, AzaleaTown_Interior6_Text_TwinsAmyAndMayDefeat
+	msgbox AzaleaTown_Interior6_Text_TwinsAmyAndMay, MSGBOX_AUTOCLOSE
+	end
+
+AzaleaTown_Interior6_EventScript_TwinsAmyAndMay2::
+	trainerbattle_single TRAINER_TWINS_AMY_AND_MAY, AzaleaTown_Interior6_Text_TwinsAmyAndMay2Intro, AzaleaTown_Interior6_Text_TwinsAmyAndMayDefeat
+	msgbox AzaleaTown_Interior6_Text_TwinsAmyAndMay2, MSGBOX_AUTOCLOSE
+	end
+
+AzaleaTown_Interior6_EventScript_Sign1::
+	call_if_set FLAG_BADGE02_GET, AzaleaTown_Interior6_EventScript_Sign1_1
+	msgbox AzaleaTown_Interior6_Text_Sign1_1, MSGBOX_AUTOCLOSE
+	end
+
+AzaleaTown_Interior6_EventScript_Sign1_1::
+	msgbox AzaleaTown_Interior6_Text_Sign1_2, MSGBOX_AUTOCLOSE
+	end

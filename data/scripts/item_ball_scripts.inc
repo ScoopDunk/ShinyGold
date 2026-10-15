@@ -650,8 +650,9 @@ FiveIsland_LostCave_Room11_EventScript_ItemLaxIncense::
 	finditem ITEM_LAX_INCENSE
 	end
 
+@ ShinyGold: modified in place by the hack
 FiveIsland_LostCave_Room12_EventScript_ItemSeaIncense::
-	finditem ITEM_SEA_INCENSE
+	finditem ITEM_ANTIDOTE
 	end
 
 FiveIsland_LostCave_Room13_EventScript_ItemMaxRevive::

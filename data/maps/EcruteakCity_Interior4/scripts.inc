@@ -1,0 +1,84 @@
+EcruteakCity_Interior4_MapScripts::
+	@ ShinyGold: map script header pointer was NULL
+	.byte 0
+
+EcruteakCity_Interior4_EventScript_Rocker::
+	msgbox EcruteakCity_Interior4_Text_Rocker, MSGBOX_NPC
+	end
+
+EcruteakCity_Interior4_EventScript_Gentleman::
+	call_if_set 0x10A4, EcruteakCity_Interior4_EventScript_Gentleman_1
+	msgbox EcruteakCity_Interior4_Text_Gentleman_1, MSGBOX_NPC
+	end
+
+EcruteakCity_Interior4_EventScript_Gentleman_1::
+	call_if_set 0x10A5, EcruteakCity_Interior4_EventScript_Gentleman_2
+	msgbox EcruteakCity_Interior4_Text_Gentleman_1, MSGBOX_NPC
+	end
+
+EcruteakCity_Interior4_EventScript_Gentleman_2::
+	call_if_set 0x10A6, EcruteakCity_Interior4_EventScript_Gentleman_3
+	msgbox EcruteakCity_Interior4_Text_Gentleman_1, MSGBOX_NPC
+	end
+
+EcruteakCity_Interior4_EventScript_Gentleman_3::
+	call_if_set 0x10A7, EcruteakCity_Interior4_EventScript_Gentleman_4
+	msgbox EcruteakCity_Interior4_Text_Gentleman_1, MSGBOX_NPC
+	end
+
+EcruteakCity_Interior4_EventScript_Gentleman_4::
+	call_if_set 0x10A8, EcruteakCity_Interior4_EventScript_Gentleman_5
+	msgbox EcruteakCity_Interior4_Text_Gentleman_1, MSGBOX_NPC
+	end
+
+EcruteakCity_Interior4_EventScript_Gentleman_5::
+	call_if_set 0x10A9, EcruteakCity_Interior4_EventScript_Gentleman_6
+	msgbox EcruteakCity_Interior4_Text_Gentleman_2, MSGBOX_NPC
+	giveitem ITEM_HM03
+	msgbox EcruteakCity_Interior4_Text_Gentleman_3, MSGBOX_NPC
+	setflag 0x10A9
+	end
+
+EcruteakCity_Interior4_EventScript_Gentleman_6::
+	msgbox EcruteakCity_Interior4_Text_Gentleman_4, MSGBOX_NPC
+	end
+
+EcruteakCity_Interior4_EventScript_OldWoman::
+	msgbox EcruteakCity_Interior4_Text_OldWoman, MSGBOX_NPC
+	end
+
+EcruteakCity_Interior4_EventScript_Machoke::
+	msgbox EcruteakCity_Interior4_Text_Machoke, MSGBOX_NPC
+	waitse
+	playmoncry SPECIES_MACHOKE, 0x201
+	.byte 0xFF @ invalid opcode (script stops)
+
+EcruteakCity_Interior4_EventScript_Woman2::
+	setflag 0x10A4
+	trainerbattle_single TRAINER_KIMONO_GIRL_NAOKO, EcruteakCity_Interior4_Text_Woman2Intro, EcruteakCity_Interior4_Text_Woman2Defeat
+	msgbox EcruteakCity_Interior4_Text_Woman2, MSGBOX_AUTOCLOSE
+	end
+
+EcruteakCity_Interior4_EventScript_Woman22::
+	setflag 0x10A5
+	trainerbattle_single TRAINER_KIMONO_GIRL_SAYO, EcruteakCity_Interior4_Text_Woman22Intro, EcruteakCity_Interior4_Text_Woman22Defeat
+	msgbox EcruteakCity_Interior4_Text_Woman22, MSGBOX_AUTOCLOSE
+	end
+
+EcruteakCity_Interior4_EventScript_Woman23::
+	setflag 0x10A6
+	trainerbattle_single TRAINER_KIMONO_GIRL_ZUKI, EcruteakCity_Interior4_Text_Woman23Intro, EcruteakCity_Interior4_Text_Woman23Defeat
+	msgbox EcruteakCity_Interior4_Text_Woman23, MSGBOX_AUTOCLOSE
+	end
+
+EcruteakCity_Interior4_EventScript_Woman24::
+	setflag 0x10A7
+	trainerbattle_single TRAINER_KIMONO_GIRL_KUNI, EcruteakCity_Interior4_Text_Woman24Intro, EcruteakCity_Interior4_Text_Woman24Defeat
+	msgbox EcruteakCity_Interior4_Text_Woman24, MSGBOX_AUTOCLOSE
+	end
+
+EcruteakCity_Interior4_EventScript_Woman25::
+	setflag 0x10A8
+	trainerbattle_single TRAINER_KIMONO_GIRL_MIKI, EcruteakCity_Interior4_Text_Woman25Intro, EcruteakCity_Interior4_Text_Woman25Defeat
+	msgbox EcruteakCity_Interior4_Text_Woman25, MSGBOX_AUTOCLOSE
+	end

@@ -1,0 +1,101 @@
+OlivineCity_Interior3_MapScripts::
+	@ ShinyGold: map script header pointer was NULL
+	.byte 0
+
+OlivineCity_Interior3_EventScript_GymGuy::
+	call_if_set FLAG_BADGE06_GET, OlivineCity_Interior3_EventScript_GymGuy_1
+	call_if_set 0x10CF, OlivineCity_Interior3_EventScript_GymGuy_2
+	msgbox OlivineCity_Interior3_Text_GymGuy_1, MSGBOX_NPC
+	end
+
+OlivineCity_Interior3_EventScript_GymGuy_1::
+	msgbox OlivineCity_Interior3_Text_GymGuy_2, MSGBOX_NPC
+	end
+
+OlivineCity_Interior3_EventScript_GymGuy_2::
+	msgbox OlivineCity_Interior3_Text_GymGuy_3, MSGBOX_NPC
+	end
+
+OlivineCity_Interior3_EventScript_Lass::
+	setvar VAR_0x8004, 2
+	setvar VAR_0x8005, 2
+	special UpdatePickStateFromSpecialVar8005
+	trainerbattle_single TRAINER_LEADER_JASMINE_2, OlivineCity_Interior3_Text_LassIntro, OlivineCity_Interior3_Text_LassDefeat, OlivineCity_Interior3_EventScript_LassContinue, NO_MUSIC
+	msgbox OlivineCity_Interior3_Text_Lass_1, MSGBOX_NPC
+	end
+
+OlivineCity_Interior3_EventScript_LassContinue::
+	setflag FLAG_BADGE06_GET
+	msgbox OlivineCity_Interior3_Text_Lass_2, MSGBOX_NPC
+	giveitem ITEM_TM23
+	msgbox OlivineCity_Interior3_Text_Lass_3, MSGBOX_NPC
+	end
+
+OlivineCity_Interior3_EventScript_TeachyTvHost::
+	setflag 0x10D1
+	msgbox OlivineCity_Interior3_Text_TeachyTvHost, MSGBOX_NPC
+	applymovement LOCALID_PLAYER, OlivineCity_Interior3_Movement_TeachyTvHost_1
+	applymovement 3, OlivineCity_Interior3_Movement_TeachyTvHost_2
+	delay 48
+	end
+
+OlivineCity_Interior3_Movement_TeachyTvHost_1::
+	walk_left
+	face_right
+	step_end
+
+OlivineCity_Interior3_Movement_TeachyTvHost_2::
+	walk_down
+	set_invisible
+	walk_down
+	walk_down
+	step_end
+
+OlivineCity_Interior3_EventScript_HikerJitou::
+	trainerbattle_single TRAINER_HIKER_JITOU, OlivineCity_Interior3_Text_HikerJitouIntro, OlivineCity_Interior3_Text_HikerJitouDefeat
+	msgbox OlivineCity_Interior3_Text_HikerJitou, MSGBOX_AUTOCLOSE
+	end
+
+OlivineCity_Interior3_EventScript_Trigger1::
+	call_if_unset 0x10CF, OlivineCity_Interior3_EventScript_Trigger1_1
+	call_if_set 0x10D1, OlivineCity_Interior3_EventScript_Trigger1_1
+	applymovement LOCALID_PLAYER, OlivineCity_Interior3_Movement_Trigger1
+	delay 32
+	call OlivineCity_Interior3_EventScript_TeachyTvHost
+	end
+
+OlivineCity_Interior3_EventScript_Trigger1_1::
+	release
+	end
+
+OlivineCity_Interior3_Movement_Trigger1::
+	walk_right
+	face_up
+	step_end
+
+OlivineCity_Interior3_EventScript_Trigger2::
+	call_if_unset 0x10CF, OlivineCity_Interior3_EventScript_Trigger1_1
+	call_if_set 0x10D1, OlivineCity_Interior3_EventScript_Trigger1_1
+	applymovement LOCALID_PLAYER, OlivineCity_Interior3_Movement_Trigger2
+	delay 32
+	call OlivineCity_Interior3_EventScript_TeachyTvHost
+	end
+
+OlivineCity_Interior3_Movement_Trigger2::
+	walk_left
+	face_up
+	step_end
+
+OlivineCity_Interior3_EventScript_Sign1::
+	call_if_set FLAG_BADGE06_GET, OlivineCity_Interior3_EventScript_Sign1_1
+	call_if_set 0x10CF, OlivineCity_Interior3_EventScript_Sign1_2
+	msgbox OlivineCity_Interior3_Text_Sign1_1, MSGBOX_NPC
+	end
+
+OlivineCity_Interior3_EventScript_Sign1_1::
+	msgbox OlivineCity_Interior3_Text_Sign1_2, MSGBOX_NPC
+	end
+
+OlivineCity_Interior3_EventScript_Sign1_2::
+	msgbox OlivineCity_Interior3_Text_Sign1_3, MSGBOX_NPC
+	end

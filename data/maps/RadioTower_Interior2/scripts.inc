@@ -1,0 +1,67 @@
+RadioTower_Interior2_MapScripts::
+	@ ShinyGold: map script header pointer was NULL
+	.byte 0
+
+RadioTower_Interior2_EventScript_Youngster::
+	msgbox RadioTower_Interior2_Text_Youngster, MSGBOX_NPC
+	end
+
+RadioTower_Interior2_EventScript_Jigglypuff::
+	msgbox RadioTower_Interior2_Text_Jigglypuff, MSGBOX_NPC
+	waitse
+	playmoncry SPECIES_JIGGLYPUFF, 0x201
+	.byte 0xFF @ invalid opcode (script stops)
+
+RadioTower_Interior2_EventScript_Policeman::
+	msgbox RadioTower_Interior2_Text_Policeman, MSGBOX_NPC
+	end
+
+RadioTower_Interior2_EventScript_Woman2::
+	call_if_set 0x110B, RadioTower_Interior2_EventScript_Woman2_1
+	msgbox RadioTower_Interior2_Text_Woman2_1, MSGBOX_NPC
+	end
+
+RadioTower_Interior2_EventScript_Woman2_1::
+	msgbox RadioTower_Interior2_Text_Woman2_2, MSGBOX_NPC
+	end
+
+RadioTower_Interior2_EventScript_TeamRocketGrunt23::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_23, RadioTower_Interior2_Text_TeamRocketGrunt23Intro, RadioTower_Interior2_Text_TeamRocketGrunt23Defeat
+	msgbox RadioTower_Interior2_Text_TeamRocketGrunt23, MSGBOX_AUTOCLOSE
+	end
+
+RadioTower_Interior2_EventScript_TeamRocketGrunt35::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_35, RadioTower_Interior2_Text_TeamRocketGrunt35Intro, RadioTower_Interior2_Text_TeamRocketGrunt35Defeat
+	msgbox RadioTower_Interior2_Text_TeamRocketGrunt35, MSGBOX_AUTOCLOSE
+	end
+
+RadioTower_Interior2_EventScript_TeamRocketGrunt33::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_33, RadioTower_Interior2_Text_TeamRocketGrunt33Intro, RadioTower_Interior2_Text_TeamRocketGrunt33Defeat
+	msgbox RadioTower_Interior2_Text_TeamRocketGrunt33, MSGBOX_AUTOCLOSE
+	end
+
+RadioTower_Interior2_EventScript_TeamRocketGrunt2::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_2, RadioTower_Interior2_Text_TeamRocketGrunt2Intro, RadioTower_Interior2_Text_TeamRocketGrunt2Defeat
+	msgbox RadioTower_Interior2_Text_TeamRocketGrunt2, MSGBOX_AUTOCLOSE
+	end
+
+RadioTower_Interior2_EventScript_TeamRocketGrunt21::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_21, RadioTower_Interior2_Text_TeamRocketGrunt21Intro, RadioTower_Interior2_Text_TeamRocketGrunt21Defeat
+	msgbox RadioTower_Interior2_Text_TeamRocketGrunt21, MSGBOX_AUTOCLOSE
+	end
+
+RadioTower_Interior2_EventScript_Policeman2::
+	msgbox RadioTower_Interior2_Text_Policeman2, MSGBOX_NPC
+	end
+
+RadioTower_Interior2_EventScript_Sign1::
+	msgbox RadioTower_Interior2_Text_Sign1, MSGBOX_AUTOCLOSE
+	end
+
+RadioTower_Interior2_EventScript_Sign2::
+	msgbox RadioTower_Interior2_Text_Sign2, MSGBOX_AUTOCLOSE
+	end
+
+RadioTower_Interior2_EventScript_Sign3::
+	msgbox RadioTower_Interior2_Text_Sign3, MSGBOX_AUTOCLOSE
+	end

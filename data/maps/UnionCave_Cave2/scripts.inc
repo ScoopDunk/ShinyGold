@@ -1,0 +1,48 @@
+UnionCave_Cave2_MapScripts::
+	.byte 0
+
+UnionCave_Cave2_EventScript_ItemXDefend::
+	finditem ITEM_X_DEFEND
+	end
+
+UnionCave_Cave2_EventScript_ItemTm39::
+	finditem ITEM_TM39
+	end
+
+UnionCave_Cave2_EventScript_PokemaniacSouda::
+	trainerbattle_single TRAINER_POKEMANIAC_SOUDA, UnionCave_Cave2_Text_PokemaniacSoudaIntro, UnionCave_Cave2_Text_PokemaniacSoudaDefeat
+	msgbox UnionCave_Cave2_Text_PokemaniacSouda, MSGBOX_AUTOCLOSE
+	end
+
+UnionCave_Cave2_EventScript_PokemaniacAndrew::
+	trainerbattle_single TRAINER_POKEMANIAC_ANDREW, UnionCave_Cave2_Text_PokemaniacAndrewIntro, UnionCave_Cave2_Text_PokemaniacAndrewDefeat
+	msgbox UnionCave_Cave2_Text_PokemaniacAndrew, MSGBOX_AUTOCLOSE
+	end
+
+UnionCave_Cave2_EventScript_PokemaniacCalvin::
+	trainerbattle_single TRAINER_POKEMANIAC_CALVIN, UnionCave_Cave2_Text_PokemaniacCalvinIntro, UnionCave_Cave2_Text_PokemaniacCalvinDefeat
+	msgbox UnionCave_Cave2_Text_PokemaniacCalvin, MSGBOX_AUTOCLOSE
+	end
+
+UnionCave_Cave2_EventScript_HikerPhillip::
+	trainerbattle_single TRAINER_HIKER_PHILLIP, UnionCave_Cave2_Text_HikerPhillipIntro, UnionCave_Cave2_Text_HikerPhillipDefeat
+	msgbox UnionCave_Cave2_Text_HikerPhillip, MSGBOX_AUTOCLOSE
+	end
+
+UnionCave_Cave2_EventScript_HikerLeonard::
+	trainerbattle_single TRAINER_HIKER_LEONARD, UnionCave_Cave2_Text_HikerLeonardIntro, UnionCave_Cave2_Text_HikerLeonardDefeat
+	msgbox UnionCave_Cave2_Text_HikerLeonard, MSGBOX_AUTOCLOSE
+	end
+
+UnionCave_Cave2_EventScript_Trigger1::
+	special GetQuestLogState
+	call_if_eq VAR_RESULT, 2, EventScript_ReleaseEnd
+	special QuestLog_CutRecording
+	call_if_lt VAR_MASSAGE_COOLDOWN_STEP_COUNTER, 0x1F4, UnionCave_Cave2_EventScript_Trigger1_1
+	clearflag 0x10BA
+	special DaisyMassageServices
+	end
+
+UnionCave_Cave2_EventScript_Trigger1_1::
+	release
+	end

@@ -1,0 +1,23 @@
+SSAqua_Interior16_MapScripts::
+	.byte 0
+
+SSAqua_Interior16_EventScript_BurglarDuncan::
+	trainerbattle_single TRAINER_BURGLAR_DUNCAN, SSAqua_Interior16_Text_BurglarDuncanIntro, SSAqua_Interior16_Text_BurglarDuncanDefeat
+	msgbox SSAqua_Interior16_Text_BurglarDuncan, MSGBOX_AUTOCLOSE
+	end
+
+SSAqua_Interior16_EventScript_Gentleman::
+	msgbox SSAqua_Interior16_Text_Gentleman, MSGBOX_NPC
+	end
+
+SSAqua_Interior16_EventScript_SuperNerdShawn::
+	trainerbattle_single TRAINER_SUPER_NERD_SHAWN, SSAqua_Interior16_Text_SuperNerdShawnIntro, SSAqua_Interior16_Text_SuperNerdShawnDefeat
+	call_if_set 0x11A3, SSAqua_Interior16_EventScript_SuperNerdShawn_1
+	msgbox SSAqua_Interior16_Text_SuperNerdShawn, MSGBOX_AUTOCLOSE
+	end
+
+SSAqua_Interior16_EventScript_SuperNerdShawn_1::
+	msgbox SSAqua_Interior16_Text_SuperNerdShawnIntro, MSGBOX_NPC
+	trainerbattle_earlyrival TRAINER_SUPER_NERD_SHAWN, 0, SSAqua_Interior16_Text_SuperNerdShawnDefeat, SSAqua_Interior3_Text_FishermanJonahVictory
+	clearflag 0x11A3
+	end

@@ -1,8 +1,8 @@
 @ Flavor text for interacting with various background objects
 
+@ ShinyGold: modified in place by the hack
 Text_Bookshelf::
-	.string "It's crammed full of POKéMON\n"
-	.string "books.$"
+	.string "It’s full of difficult books.$"
 
 Text_NothingButPokemonBooks::
 	.string "ほんだなに　ならんでいるのは\n"
@@ -52,17 +52,18 @@ Text_Food::
 	.string "It should be packed with all kinds\n"
 	.string "of delicious things to eat.$"
 
+@ ShinyGold: modified in place by the hack
 Text_Blueprints::
-	.string "It's a blueprint of some sort.\n"
-	.string "It's filled with diagrams and text.$"
+	.string "What is this webpage?$"
 
 Text_Painting::
 	.string "It's a pretty picture of a POKéMON.\n"
 	.string "It looks like it's feeling good.$"
 
+@ ShinyGold: modified in place by the hack
 Text_PowerPlantMachine::
-	.string "What could this machine be?\n"
-	.string "Better not mess around with it!$"
+	.string "Seems like a kind of healing machine.\n"
+	.string "Not working though…$"
 
 Text_Telephone::
 	.string "It's a telephone.\n"

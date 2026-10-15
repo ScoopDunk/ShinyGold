@@ -1,0 +1,122 @@
+VioletCity_Interior8_MapScripts::
+	@ ShinyGold: map script header pointer was NULL
+	.byte 0
+
+VioletCity_Interior8_EventScript_GymGuy::
+	call_if_set FLAG_BADGE01_GET, VioletCity_Interior8_EventScript_GymGuy_1
+	msgbox VioletCity_Interior8_Text_GymGuy_1, MSGBOX_NPC
+	end
+
+VioletCity_Interior8_EventScript_GymGuy_1::
+	msgbox VioletCity_Interior8_Text_GymGuy_2, MSGBOX_NPC
+	end
+
+VioletCity_Interior8_EventScript_BirdKeeperRod::
+	trainerbattle_single TRAINER_BIRD_KEEPER_ROD, VioletCity_Interior8_Text_BirdKeeperRodIntro, VioletCity_Interior8_Text_BirdKeeperRodDefeat
+	msgbox VioletCity_Interior8_Text_BirdKeeperRod, MSGBOX_AUTOCLOSE
+	end
+
+VioletCity_Interior8_EventScript_BirdKeeperAbe::
+	trainerbattle_single TRAINER_BIRD_KEEPER_ABE, VioletCity_Interior8_Text_BirdKeeperAbeIntro, VioletCity_Interior8_Text_BirdKeeperAbeDefeat
+	msgbox VioletCity_Interior8_Text_BirdKeeperAbe, MSGBOX_AUTOCLOSE
+	end
+
+VioletCity_Interior8_EventScript_Koga::
+	setvar VAR_0x8004, 2
+	setvar VAR_0x8005, 2
+	special UpdatePickStateFromSpecialVar8005
+	trainerbattle_single TRAINER_LEADER_FALKNER_2, VioletCity_Interior8_Text_KogaIntro, PewterCity_Gym_Text_BrockDefeat, VioletCity_Interior8_EventScript_KogaContinue, NO_MUSIC
+	msgbox VioletCity_Interior8_Text_Koga_1, MSGBOX_NPC
+	end
+
+VioletCity_Interior8_EventScript_KogaContinue::
+	setflag FLAG_BADGE01_GET
+	msgbox VioletCity_Interior8_Text_Koga_2, MSGBOX_NPC
+	giveitem ITEM_TM31
+	msgbox VioletCity_Interior8_Text_Koga_3, MSGBOX_NPC
+	end
+
+VioletCity_Interior8_EventScript_Trigger1::
+	call_if_set 0x1041, VioletCity_Interior8_EventScript_Trigger1_1
+	applymovement LOCALID_PLAYER, VioletCity_Interior8_Movement_Trigger1_1
+	delay 16
+	applymovement 4, VioletCity_Interior8_Movement_Trigger1_2
+	delay 48
+	msgbox VioletCity_Interior8_Text_Trigger1_1, MSGBOX_NPC
+	call Route44_EventScript_TeachyTvHost_1
+	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_CARLOS, 0, VioletCity_Interior8_Text_Trigger1Defeat, VioletCity_Interior8_Text_Trigger1Defeat
+	call Route44_EventScript_TeachyTvHost_2
+	msgbox VioletCity_Interior8_Text_Trigger1_2, MSGBOX_NPC
+	applymovement 4, VioletCity_Interior8_Movement_Trigger1_3
+	delay 48
+	setflag 0x1041
+	end
+
+VioletCity_Interior8_EventScript_Trigger1_1::
+	release
+	end
+
+VioletCity_Interior8_Movement_Trigger1_1::
+	walk_right
+	walk_up
+	step_end
+
+VioletCity_Interior8_Movement_Trigger1_2::
+	walk_down
+	walk_down
+	step_end
+
+VioletCity_Interior8_Movement_Trigger1_3::
+	walk_right
+	walk_down
+	walk_down
+	walk_left
+	face_down_fast
+	set_invisible
+	walk_down
+	walk_down
+	step_end
+
+VioletCity_Interior8_EventScript_Trigger2::
+	call_if_set 0x1041, VioletCity_Interior8_EventScript_Trigger1_1
+	applymovement 4, VioletCity_Interior8_Movement_Trigger1_2
+	delay 48
+	msgbox VioletCity_Interior8_Text_Trigger1_1, MSGBOX_NPC
+	call Route44_EventScript_TeachyTvHost_1
+	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_CARLOS, 0, VioletCity_Interior8_Text_Trigger1Defeat, VioletCity_Interior8_Text_Trigger1Defeat
+	call Route44_EventScript_TeachyTvHost_2
+	msgbox VioletCity_Interior8_Text_Trigger1_2, MSGBOX_NPC
+	applymovement 4, VioletCity_Interior8_Movement_Trigger1_3
+	delay 48
+	setflag 0x1041
+	end
+
+VioletCity_Interior8_EventScript_Trigger3::
+	call_if_set 0x1041, VioletCity_Interior8_EventScript_Trigger1_1
+	applymovement LOCALID_PLAYER, VioletCity_Interior8_Movement_Trigger3
+	delay 16
+	applymovement 4, VioletCity_Interior8_Movement_Trigger1_2
+	delay 48
+	msgbox VioletCity_Interior8_Text_Trigger1_1, MSGBOX_NPC
+	call Route44_EventScript_TeachyTvHost_1
+	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_CARLOS, 0, VioletCity_Interior8_Text_Trigger1Defeat, VioletCity_Interior8_Text_Trigger1Defeat
+	call Route44_EventScript_TeachyTvHost_2
+	msgbox VioletCity_Interior8_Text_Trigger1_2, MSGBOX_NPC
+	applymovement 4, VioletCity_Interior8_Movement_Trigger1_3
+	delay 48
+	setflag 0x1041
+	end
+
+VioletCity_Interior8_Movement_Trigger3::
+	walk_left
+	walk_up
+	step_end
+
+VioletCity_Interior8_EventScript_Sign1::
+	call_if_set FLAG_BADGE01_GET, VioletCity_Interior8_EventScript_Sign1_1
+	msgbox VioletCity_Interior8_Text_Sign1_1, MSGBOX_AUTOCLOSE
+	end
+
+VioletCity_Interior8_EventScript_Sign1_1::
+	msgbox VioletCity_Interior8_Text_Sign1_2, MSGBOX_AUTOCLOSE
+	end

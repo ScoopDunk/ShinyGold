@@ -1,0 +1,169 @@
+KalmCityNousar_Interior2_MapScripts::
+	.byte 0
+
+KalmCityNousar_Interior2_EventScript_Scientist::
+	lock
+	faceplayer
+	showmoneybox 0, 0
+	msgbox KalmCityNousar_Interior2_Text_Scientist_1, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, 0, KalmCityNousar_Interior2_EventScript_Scientist_1
+	checkmoney 0x7D0
+	goto_if_eq VAR_RESULT, 0, KalmCityNousar_Interior2_EventScript_Scientist_2
+	removemoney 0x7D0
+	updatemoneybox
+	msgbox KalmCityNousar_Interior2_Text_Scientist_2
+	closemessage
+	hidemoneybox
+	random 10
+	switch VAR_RESULT
+	case 0, KalmCityNousar_Interior2_EventScript_Scientist_3
+	case 1, KalmCityNousar_Interior2_EventScript_Scientist_4
+	case 2, KalmCityNousar_Interior2_EventScript_Scientist_5
+	case 3, KalmCityNousar_Interior2_EventScript_Scientist_6
+	case 4, KalmCityNousar_Interior2_EventScript_Scientist_7
+	case 5, KalmCityNousar_Interior2_EventScript_Scientist_8
+	case 6, KalmCityNousar_Interior2_EventScript_Scientist_9
+	case 7, KalmCityNousar_Interior2_EventScript_Scientist_10
+	case 8, KalmCityNousar_Interior2_EventScript_Scientist_11
+	case 9, KalmCityNousar_Interior2_EventScript_Scientist_12
+	end
+
+KalmCityNousar_Interior2_EventScript_Scientist_1::
+	msgbox KalmCityNousar_Interior2_Text_Scientist_3, MSGBOX_NPC
+	hidemoneybox
+	release
+	end
+
+KalmCityNousar_Interior2_EventScript_Scientist_2::
+	msgbox KalmCityNousar_Interior2_Text_Scientist_4, MSGBOX_NPC
+	hidemoneybox
+	release
+	end
+
+KalmCityNousar_Interior2_EventScript_Scientist_3::
+	giveegg SPECIES_BULBASAUR
+	playfanfare MUS_OBTAIN_KEY_ITEM
+	message KalmCityNousar_Interior2_Text_Scientist_5
+	waitfanfare
+	waitmessage
+	msgbox KalmCityNousar_Interior2_Text_Scientist_6, MSGBOX_AUTOCLOSE
+	release
+	end
+
+KalmCityNousar_Interior2_EventScript_Scientist_4::
+	giveegg SPECIES_CHARMANDER
+	playfanfare MUS_OBTAIN_KEY_ITEM
+	message KalmCityNousar_Interior2_Text_Scientist_5
+	waitfanfare
+	waitmessage
+	msgbox KalmCityNousar_Interior2_Text_Scientist_6, MSGBOX_AUTOCLOSE
+	release
+	end
+
+KalmCityNousar_Interior2_EventScript_Scientist_5::
+	giveegg SPECIES_SQUIRTLE
+	playfanfare MUS_OBTAIN_KEY_ITEM
+	message KalmCityNousar_Interior2_Text_Scientist_5
+	waitfanfare
+	waitmessage
+	msgbox KalmCityNousar_Interior2_Text_Scientist_6, MSGBOX_AUTOCLOSE
+	release
+	end
+
+KalmCityNousar_Interior2_EventScript_Scientist_6::
+	giveegg SPECIES_CHIKORITA
+	playfanfare MUS_OBTAIN_KEY_ITEM
+	message KalmCityNousar_Interior2_Text_Scientist_5
+	waitfanfare
+	waitmessage
+	msgbox KalmCityNousar_Interior2_Text_Scientist_6, MSGBOX_AUTOCLOSE
+	release
+	end
+
+KalmCityNousar_Interior2_EventScript_Scientist_7::
+	giveegg SPECIES_CYNDAQUIL
+	playfanfare MUS_OBTAIN_KEY_ITEM
+	message KalmCityNousar_Interior2_Text_Scientist_5
+	waitfanfare
+	waitmessage
+	msgbox KalmCityNousar_Interior2_Text_Scientist_6, MSGBOX_AUTOCLOSE
+	release
+	end
+
+KalmCityNousar_Interior2_EventScript_Scientist_8::
+	giveegg SPECIES_TOTODILE
+	playfanfare MUS_OBTAIN_KEY_ITEM
+	message KalmCityNousar_Interior2_Text_Scientist_5
+	waitfanfare
+	waitmessage
+	msgbox KalmCityNousar_Interior2_Text_Scientist_6, MSGBOX_AUTOCLOSE
+	release
+	end
+
+KalmCityNousar_Interior2_EventScript_Scientist_9::
+	giveegg SPECIES_TREECKO
+	playfanfare MUS_OBTAIN_KEY_ITEM
+	message KalmCityNousar_Interior2_Text_Scientist_5
+	waitfanfare
+	waitmessage
+	msgbox KalmCityNousar_Interior2_Text_Scientist_6, MSGBOX_AUTOCLOSE
+	release
+	end
+
+KalmCityNousar_Interior2_EventScript_Scientist_10::
+	giveegg SPECIES_TORCHIC
+	playfanfare MUS_OBTAIN_KEY_ITEM
+	message KalmCityNousar_Interior2_Text_Scientist_5
+	waitfanfare
+	waitmessage
+	msgbox KalmCityNousar_Interior2_Text_Scientist_6, MSGBOX_AUTOCLOSE
+	release
+	end
+
+KalmCityNousar_Interior2_EventScript_Scientist_11::
+	giveegg SPECIES_MUDKIP
+	playfanfare MUS_OBTAIN_KEY_ITEM
+	message KalmCityNousar_Interior2_Text_Scientist_5
+	waitfanfare
+	waitmessage
+	msgbox KalmCityNousar_Interior2_Text_Scientist_6, MSGBOX_AUTOCLOSE
+	release
+	end
+
+KalmCityNousar_Interior2_EventScript_Scientist_12::
+	giveegg SPECIES_EEVEE
+	playfanfare MUS_OBTAIN_KEY_ITEM
+	message KalmCityNousar_Interior2_Text_Scientist_5
+	waitfanfare
+	waitmessage
+	msgbox KalmCityNousar_Interior2_Text_Scientist_6, MSGBOX_AUTOCLOSE
+	release
+	end
+
+KalmCityNousar_Interior2_EventScript_Scientist2::
+	msgbox KalmCityNousar_Interior2_Text_Scientist2, MSGBOX_NPC
+	end
+
+KalmCityNousar_Interior2_EventScript_WorkerF::
+	msgbox KalmCityNousar_Interior2_Text_WorkerF, MSGBOX_NPC
+	end
+
+KalmCityNousar_Interior2_EventScript_WorkerF2::
+	msgbox KalmCityNousar_Interior2_Text_WorkerF2, MSGBOX_NPC
+	end
+
+KalmCityNousar_Interior2_EventScript_Scientist3::
+	msgbox KalmCityNousar_Interior2_Text_Scientist3, MSGBOX_NPC
+	end
+
+KalmCityNousar_Interior2_EventScript_Picnicker::
+	msgbox KalmCityNousar_Interior2_Text_Picnicker, MSGBOX_NPC
+	end
+
+KalmCityNousar_Interior2_EventScript_BlackBelt::
+	msgbox KalmCityNousar_Interior2_Text_BlackBelt, MSGBOX_NPC
+	end
+
+KalmCityNousar_Interior2_EventScript_Woman3::
+	msgbox KalmCityNousar_Interior2_Text_Woman3, MSGBOX_NPC
+	end
