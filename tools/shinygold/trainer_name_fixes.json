@@ -1,0 +1,3623 @@
+{
+ "fixes": {
+  "79": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_3",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_3",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "80": {
+   "const": "TRAINER_SUPER_NERD_PAT",
+   "old_const": "TRAINER_SUPER_NERD_PAT",
+   "name": "PAT",
+   "was": "PAT!",
+   "why": "removed stray trailing characters"
+  },
+  "81": {
+   "const": "TRAINER_CAMPER_LLOYD",
+   "old_const": "TRAINER_CAMPER_LLOYD",
+   "name": "LLOYD",
+   "was": "LLOYD!",
+   "why": "removed stray trailing characters"
+  },
+  "82": {
+   "const": "TRAINER_SCHOOLBOY_DUDLEY",
+   "old_const": "TRAINER_SCHOOLBOY_DUDLEY",
+   "name": "DUDLEY",
+   "was": "DUDLEY!",
+   "why": "removed stray trailing characters"
+  },
+  "84": {
+   "const": "TRAINER_PICNICKER_CINDY",
+   "old_const": "TRAINER_PICNICKER_CINDY",
+   "name": "CINDY",
+   "was": "CINDY!",
+   "why": "removed stray trailing characters"
+  },
+  "85": {
+   "const": "TRAINER_CAMPER_BARRY",
+   "old_const": "TRAINER_CAMPER_BARRY",
+   "name": "BARRY",
+   "was": "BARRY!",
+   "why": "removed stray trailing characters"
+  },
+  "86": {
+   "const": "TRAINER_COOLTRAINER_FIRIA",
+   "old_const": "TRAINER_COOLTRAINER_FIRIA",
+   "name": "FIRIA",
+   "was": "FIRIA!",
+   "why": "removed stray trailing characters"
+  },
+  "87": {
+   "const": "TRAINER_PSYCHIC_ZAHAAD",
+   "old_const": "TRAINER_PSYCHIC_ZAHAAD",
+   "name": "ZAHAAD",
+   "was": "ZAHAAD!",
+   "why": "removed stray trailing characters"
+  },
+  "88": {
+   "const": "TRAINER_BEAUTY_SERA",
+   "old_const": "TRAINER_BEAUTY_SERA",
+   "name": "SERA",
+   "was": "SERA!",
+   "why": "removed stray trailing characters"
+  },
+  "89": {
+   "const": "TRAINER_YOUNGSTER_JOEY_2",
+   "old_const": "TRAINER_YOUNGSTER_89",
+   "name": "JOEY",
+   "was": " 1TRAINER/1",
+   "why": "G/S phone contact #1, rematch tier 1"
+  },
+  "90": {
+   "const": "TRAINER_HIKER_PARRY",
+   "old_const": "TRAINER_HIKER_90",
+   "name": "PARRY",
+   "was": "24TRAINER/2",
+   "why": "G/S phone contact #24, rematch tier 2"
+  },
+  "92": {
+   "const": "TRAINER_YOUNGSTER_TIMMY",
+   "old_const": "TRAINER_YOUNGSTER_TIMMY",
+   "name": "TIMMY",
+   "was": "TIMMY!",
+   "why": "removed stray trailing characters"
+  },
+  "93": {
+   "const": "TRAINER_YOUNGSTER_MIKEY",
+   "old_const": "TRAINER_YOUNGSTER_MIKEY",
+   "name": "MIKEY",
+   "was": "MIKEY!",
+   "why": "removed stray trailing characters"
+  },
+  "94": {
+   "const": "TRAINER_HIKER_PARRY_2",
+   "old_const": "TRAINER_HIKER_94",
+   "name": "PARRY",
+   "was": "24TRAINER/4",
+   "why": "G/S phone contact #24, rematch tier 4"
+  },
+  "95": {
+   "const": "TRAINER_BUG_CATCHER_ARNIE",
+   "old_const": "TRAINER_BUG_CATCHER_95",
+   "name": "ARNIE",
+   "was": " 9TRAINER/1",
+   "why": "G/S phone contact #9, rematch tier 1"
+  },
+  "96": {
+   "const": "TRAINER_BIRD_KEEPER_JOSE",
+   "old_const": "TRAINER_BIRD_KEEPER_96",
+   "name": "JOSE",
+   "was": "26TRAINER/3",
+   "why": "G/S phone contact #26, rematch tier 3"
+  },
+  "97": {
+   "const": "TRAINER_BIRD_KEEPER_JOSE_2",
+   "old_const": "TRAINER_BIRD_KEEPER_97",
+   "name": "JOSE",
+   "was": "26TRAINER/4",
+   "why": "G/S phone contact #26, rematch tier 4"
+  },
+  "98": {
+   "const": "TRAINER_YOUNGSTER_ALBERT",
+   "old_const": "TRAINER_YOUNGSTER_ALBERT",
+   "name": "ALBERT",
+   "was": "ALBERT!",
+   "why": "removed stray trailing characters"
+  },
+  "99": {
+   "const": "TRAINER_BIRD_KEEPER_VANCE",
+   "old_const": "TRAINER_BIRD_KEEPER_99",
+   "name": "VANCE",
+   "was": "22TRAINER/1",
+   "why": "G/S phone contact #22, rematch tier 1"
+  },
+  "100": {
+   "const": "TRAINER_OFFICER_DIRK",
+   "old_const": "TRAINER_OFFICER_DIRK",
+   "name": "DIRK",
+   "was": "DIRK!",
+   "why": "removed stray trailing characters"
+  },
+  "101": {
+   "const": "TRAINER_YOUNGSTER_JOEY_3",
+   "old_const": "TRAINER_YOUNGSTER_101",
+   "name": "JOEY",
+   "was": " 1TRAINER/2",
+   "why": "G/S phone contact #1, rematch tier 2"
+  },
+  "102": {
+   "const": "TRAINER_BUG_CATCHER_DON",
+   "old_const": "TRAINER_BUG_CATCHER_DON",
+   "name": "DON",
+   "was": "DON!",
+   "why": "removed stray trailing characters"
+  },
+  "103": {
+   "const": "TRAINER_SUPER_NERD_TOM",
+   "old_const": "TRAINER_SUPER_NERD_TOM",
+   "name": "TOM",
+   "was": "TOM!",
+   "why": "removed stray trailing characters"
+  },
+  "104": {
+   "const": "TRAINER_COOLTRAINER_GAVEN",
+   "old_const": "TRAINER_COOLTRAINER_104",
+   "name": "GAVEN",
+   "was": "27TRAINER/4",
+   "why": "G/S phone contact #27, rematch tier 4"
+  },
+  "105": {
+   "const": "TRAINER_BUG_CATCHER_BENNY",
+   "old_const": "TRAINER_BUG_CATCHER_BENNY",
+   "name": "BENNY",
+   "was": "BENNY!",
+   "why": "removed stray trailing characters"
+  },
+  "106": {
+   "const": "TRAINER_YOUNGSTER_SAMUEL",
+   "old_const": "TRAINER_YOUNGSTER_SAMUEL",
+   "name": "SAMUEL",
+   "was": "SAMUEL!",
+   "why": "removed stray trailing characters"
+  },
+  "107": {
+   "const": "TRAINER_BUG_CATCHER_AL",
+   "old_const": "TRAINER_BUG_CATCHER_AL",
+   "name": "AL",
+   "was": "AL!",
+   "why": "removed stray trailing characters"
+  },
+  "108": {
+   "const": "TRAINER_YOUNGSTER_IAN",
+   "old_const": "TRAINER_YOUNGSTER_IAN",
+   "name": "IAN",
+   "was": "IAN!",
+   "why": "removed stray trailing characters"
+  },
+  "109": {
+   "const": "TRAINER_HIKER_BENJAMIN",
+   "old_const": "TRAINER_HIKER_BENJAMIN",
+   "name": "BENJAMIN",
+   "was": "BENJAMIN!",
+   "why": "removed stray trailing characters"
+  },
+  "110": {
+   "const": "TRAINER_SUPER_NERD_TERU",
+   "old_const": "TRAINER_SUPER_NERD_TERU",
+   "name": "TERU",
+   "was": "TERU!",
+   "why": "removed stray trailing characters"
+  },
+  "111": {
+   "const": "TRAINER_COOLTRAINER_NICK",
+   "old_const": "TRAINER_COOLTRAINER_NICK",
+   "name": "NICK",
+   "was": "NICK!",
+   "why": "removed stray trailing characters"
+  },
+  "112": {
+   "const": "TRAINER_COOLTRAINER_GAVEN_2",
+   "old_const": "TRAINER_COOLTRAINER_112",
+   "name": "GAVEN",
+   "was": "27TRAINER/5",
+   "why": "G/S phone contact #27, rematch tier 5"
+  },
+  "113": {
+   "const": "TRAINER_LASS_LAURA",
+   "old_const": "TRAINER_LASS_LAURA",
+   "name": "LAURA",
+   "was": "LAURA!",
+   "why": "removed stray trailing characters"
+  },
+  "114": {
+   "const": "TRAINER_YOUNGSTER_JASON",
+   "old_const": "TRAINER_YOUNGSTER_JASON",
+   "name": "JASON",
+   "was": "JASON!",
+   "why": "removed stray trailing characters"
+  },
+  "115": {
+   "const": "TRAINER_COOLTRAINER_PAUL",
+   "old_const": "TRAINER_COOLTRAINER_PAUL",
+   "name": "PAUL",
+   "was": "PAUL!",
+   "why": "removed stray trailing characters"
+  },
+  "116": {
+   "const": "TRAINER_PICNICKER_ERIN",
+   "old_const": "TRAINER_PICNICKER_116",
+   "name": "ERIN",
+   "was": "16TRAINER/1",
+   "why": "G/S phone contact #16, rematch tier 1"
+  },
+  "117": {
+   "const": "TRAINER_LASS_KRISE",
+   "old_const": "TRAINER_LASS_KRISE",
+   "name": "KRISE",
+   "was": "KRISE!",
+   "why": "removed stray trailing characters"
+  },
+  "118": {
+   "const": "TRAINER_LASS_RAINA",
+   "old_const": "TRAINER_LASS_RAINA",
+   "name": "RAINA",
+   "was": "RAINA!",
+   "why": "removed stray trailing characters"
+  },
+  "119": {
+   "const": "TRAINER_LASS_BRIDGET",
+   "old_const": "TRAINER_LASS_BRIDGET",
+   "name": "BRIDGET",
+   "was": "BRIDGET!",
+   "why": "removed stray trailing characters"
+  },
+  "120": {
+   "const": "TRAINER_LASS_SANAE",
+   "old_const": "TRAINER_LASS_SANAE",
+   "name": "SANAE",
+   "was": "SANAE!",
+   "why": "removed stray trailing characters"
+  },
+  "121": {
+   "const": "TRAINER_COOLTRAINER_REENA",
+   "old_const": "TRAINER_COOLTRAINER_121",
+   "name": "REENA",
+   "was": "28TRAINER/3",
+   "why": "G/S phone contact #28, rematch tier 3"
+  },
+  "122": {
+   "const": "TRAINER_LASS_DANA",
+   "old_const": "TRAINER_LASS_122",
+   "name": "DANA",
+   "was": "13TRAINER/1",
+   "why": "G/S phone contact #13, rematch tier 1"
+  },
+  "123": {
+   "const": "TRAINER_COOLTRAINER_MEGAN",
+   "old_const": "TRAINER_COOLTRAINER_MEGAN",
+   "name": "MEGAN",
+   "was": "MEGAN!",
+   "why": "removed stray trailing characters"
+  },
+  "124": {
+   "const": "TRAINER_HIKER_LEONARD",
+   "old_const": "TRAINER_HIKER_LEONARD",
+   "name": "LEONARD",
+   "was": "LEONARD!",
+   "why": "removed stray trailing characters"
+  },
+  "125": {
+   "const": "TRAINER_COOLTRAINER_KELLY",
+   "old_const": "TRAINER_COOLTRAINER_KELLY",
+   "name": "KELLY",
+   "was": "KELLY!",
+   "why": "removed stray trailing characters"
+  },
+  "126": {
+   "const": "TRAINER_CAMPER_ELLIOT",
+   "old_const": "TRAINER_CAMPER_ELLIOT",
+   "name": "ELLIOT",
+   "was": "ELLIOT!",
+   "why": "removed stray trailing characters"
+  },
+  "127": {
+   "const": "TRAINER_POKEMANIAC_ANDREW",
+   "old_const": "TRAINER_POKEMANIAC_ANDREW",
+   "name": "ANDREW",
+   "was": "ANDREW!",
+   "why": "removed stray trailing characters"
+  },
+  "128": {
+   "const": "TRAINER_COOLTRAINER_LOIS",
+   "old_const": "TRAINER_COOLTRAINER_LOIS",
+   "name": "LOIS",
+   "was": "LOIS!",
+   "why": "removed stray trailing characters"
+  },
+  "129": {
+   "const": "TRAINER_SAILOR_EUGENE",
+   "old_const": "TRAINER_SAILOR_EUGENE",
+   "name": "EUGENE",
+   "was": "EUGENE!",
+   "why": "removed stray trailing characters"
+  },
+  "130": {
+   "const": "TRAINER_LASS_MEGAN",
+   "old_const": "TRAINER_LASS_MEGAN",
+   "name": "MEGAN",
+   "was": "MEGAN      ",
+   "why": "removed stray trailing characters"
+  },
+  "131": {
+   "const": "TRAINER_COOLTRAINER_CYBIL",
+   "old_const": "TRAINER_COOLTRAINER_CYBIL",
+   "name": "CYBIL",
+   "was": "CYBIL!",
+   "why": "removed stray trailing characters"
+  },
+  "132": {
+   "const": "TRAINER_COOLTRAINER_JOYCE",
+   "old_const": "TRAINER_COOLTRAINER_JOYCE",
+   "name": "JOYCE",
+   "was": "JOYCE!",
+   "why": "removed stray trailing characters"
+  },
+  "133": {
+   "const": "TRAINER_FIREBREATHER_WALT",
+   "old_const": "TRAINER_FIREBREATHER_WALT",
+   "name": "WALT",
+   "was": "WALT!",
+   "why": "removed stray trailing characters"
+  },
+  "134": {
+   "const": "TRAINER_COOLTRAINER_CODY",
+   "old_const": "TRAINER_COOLTRAINER_CODY",
+   "name": "CODY",
+   "was": "CODY!",
+   "why": "removed stray trailing characters"
+  },
+  "135": {
+   "const": "TRAINER_COOLTRAINER_JAKE",
+   "old_const": "TRAINER_COOLTRAINER_JAKE",
+   "name": "JAKE",
+   "was": "JAKE!",
+   "why": "removed stray trailing characters"
+  },
+  "136": {
+   "const": "TRAINER_COOLTRAINER_REENA_2",
+   "old_const": "TRAINER_COOLTRAINER_136",
+   "name": "REENA",
+   "was": "28TRAINER/4",
+   "why": "G/S phone contact #28, rematch tier 4"
+  },
+  "137": {
+   "const": "TRAINER_SAGE_LI",
+   "old_const": "TRAINER_SAGE_LI",
+   "name": "LI",
+   "was": "LI!",
+   "why": "removed stray trailing characters"
+  },
+  "138": {
+   "const": "TRAINER_SAILOR_KENT",
+   "old_const": "TRAINER_SAILOR_KENT",
+   "name": "KENT",
+   "was": "KENT!",
+   "why": "removed stray trailing characters"
+  },
+  "140": {
+   "const": "TRAINER_COOLTRAINER_REENA_3",
+   "old_const": "TRAINER_COOLTRAINER_140",
+   "name": "REENA",
+   "was": "28TRAINER/5",
+   "why": "G/S phone contact #28, rematch tier 5"
+  },
+  "141": {
+   "const": "TRAINER_SAILOR_JEFF",
+   "old_const": "TRAINER_SAILOR_JEFF",
+   "name": "JEFF",
+   "was": "JEFF!",
+   "why": "removed stray trailing characters"
+  },
+  "142": {
+   "const": "TRAINER_CAMPER_ELLIOT_2",
+   "old_const": "TRAINER_CAMPER_142",
+   "name": "ELLIOT",
+   "was": "-EDIT-",
+   "why": "exact G/S party match (Camper)"
+  },
+  "143": {
+   "const": "TRAINER_MEDIUM_REBECCA",
+   "old_const": "TRAINER_MEDIUM_REBECCA",
+   "name": "REBECCA",
+   "was": "REBECCA!",
+   "why": "removed stray trailing characters"
+  },
+  "144": {
+   "const": "TRAINER_CAMPER_ETHAN",
+   "old_const": "TRAINER_CAMPER_ETHAN",
+   "name": "ETHAN",
+   "was": "ETHAN      ",
+   "why": "removed stray trailing characters"
+  },
+  "145": {
+   "const": "TRAINER_POKEFAN_BEVERLY",
+   "old_const": "TRAINER_POKEFAN_145",
+   "name": "BEVERLY",
+   "was": "11TRAINER/1",
+   "why": "G/S phone contact #11, rematch tier 1"
+  },
+  "146": {
+   "const": "TRAINER_FISHERMAN_RALPH",
+   "old_const": "TRAINER_FISHERMAN_146",
+   "name": "RALPH",
+   "was": " 3TRAINER/1",
+   "why": "G/S phone contact #3, rematch tier 1"
+  },
+  "147": {
+   "const": "TRAINER_POKEMANIAC_MARCO",
+   "old_const": "TRAINER_POKEMANIAC_MARCO",
+   "name": "MARCO",
+   "was": "MARCO!",
+   "why": "removed stray trailing characters"
+  },
+  "148": {
+   "const": "TRAINER_CAMPER_TODD",
+   "old_const": "TRAINER_CAMPER_148",
+   "name": "TODD",
+   "was": " 6TRAINER/1",
+   "why": "G/S phone contact #6, rematch tier 1"
+  },
+  "149": {
+   "const": "TRAINER_COOLTRAINER_GWEN",
+   "old_const": "TRAINER_COOLTRAINER_GWEN",
+   "name": "GWEN",
+   "was": "GWEN!",
+   "why": "removed stray trailing characters"
+  },
+  "150": {
+   "const": "TRAINER_PICNICKER_DIANA",
+   "old_const": "TRAINER_PICNICKER_DIANA",
+   "name": "DIANA",
+   "was": "DIANA      ",
+   "why": "removed stray trailing characters"
+  },
+  "151": {
+   "const": "TRAINER_MEDIUM_DORIS",
+   "old_const": "TRAINER_MEDIUM_DORIS",
+   "name": "DORIS",
+   "was": "DORIS!",
+   "why": "removed stray trailing characters"
+  },
+  "152": {
+   "const": "TRAINER_PICNICKER_GINA",
+   "old_const": "TRAINER_PICNICKER_152",
+   "name": "GINA",
+   "was": " 7TRAINER/1",
+   "why": "G/S phone contact #7, rematch tier 1"
+  },
+  "153": {
+   "const": "TRAINER_PICNICKER_LIZ",
+   "old_const": "TRAINER_PICNICKER_153",
+   "name": "LIZ",
+   "was": " 4TRAINER/1",
+   "why": "G/S phone contact #4, rematch tier 1"
+  },
+  "154": {
+   "const": "TRAINER_POKEFAN_DEREK",
+   "old_const": "TRAINER_POKEFAN_154",
+   "name": "DEREK",
+   "was": "15TRAINER/1",
+   "why": "G/S phone contact #15, rematch tier 1"
+  },
+  "155": {
+   "const": "TRAINER_PICNICKER_CAITLIN",
+   "old_const": "TRAINER_PICNICKER_CAITLIN",
+   "name": "CAITLIN",
+   "was": "CAITLIN    ",
+   "why": "removed stray trailing characters"
+  },
+  "157": {
+   "const": "TRAINER_PICNICKER_EDNA",
+   "old_const": "TRAINER_PICNICKER_EDNA",
+   "name": "EDNA",
+   "was": "EDNA!",
+   "why": "removed stray trailing characters"
+  },
+  "158": {
+   "const": "TRAINER_CAMPER_IVAN",
+   "old_const": "TRAINER_CAMPER_IVAN",
+   "name": "IVAN",
+   "was": "IVAN!",
+   "why": "removed stray trailing characters"
+  },
+  "159": {
+   "const": "TRAINER_LASS_ELLEN",
+   "old_const": "TRAINER_LASS_ELLEN",
+   "name": "ELLEN",
+   "was": "ELLEN!",
+   "why": "removed stray trailing characters"
+  },
+  "160": {
+   "const": "TRAINER_SCHOOLBOY_JOE",
+   "old_const": "TRAINER_SCHOOLBOY_JOE",
+   "name": "JOE",
+   "was": "JOE!",
+   "why": "removed stray trailing characters"
+  },
+  "161": {
+   "const": "TRAINER_SAGE_PING_2",
+   "old_const": "TRAINER_SAGE_PING_2",
+   "name": "PING",
+   "was": "PING!",
+   "why": "removed stray trailing characters"
+  },
+  "162": {
+   "const": "TRAINER_POKEMANIAC_DONALD",
+   "old_const": "TRAINER_POKEMANIAC_DONALD",
+   "name": "DONALD",
+   "was": "DONALD!",
+   "why": "removed stray trailing characters"
+  },
+  "163": {
+   "const": "TRAINER_HIKER_ANTHONY",
+   "old_const": "TRAINER_HIKER_163",
+   "name": "ANTHONY",
+   "was": " 5TRAINER/1",
+   "why": "G/S phone contact #5, rematch tier 1"
+  },
+  "164": {
+   "const": "TRAINER_SAILOR_ERNEST",
+   "old_const": "TRAINER_SAILOR_ERNEST",
+   "name": "ERNEST",
+   "was": "ERNEST!",
+   "why": "removed stray trailing characters"
+  },
+  "165": {
+   "const": "TRAINER_GENTLEMAN_PRESTON",
+   "old_const": "TRAINER_GENTLEMAN_PRESTON",
+   "name": "PRESTON",
+   "was": "PRESTON!",
+   "why": "removed stray trailing characters"
+  },
+  "166": {
+   "const": "TRAINER_POKEMANIAC_WINSTON",
+   "old_const": "TRAINER_POKEMANIAC_WINSTON",
+   "name": "WINSTON",
+   "was": "WINSTON    ",
+   "why": "removed stray trailing characters"
+  },
+  "167": {
+   "const": "TRAINER_CAMPER_SPENCER",
+   "old_const": "TRAINER_CAMPER_SPENCER",
+   "name": "SPENCER",
+   "was": "SPENCER!",
+   "why": "removed stray trailing characters"
+  },
+  "168": {
+   "const": "TRAINER_POKEMANIAC_SHANE",
+   "old_const": "TRAINER_POKEMANIAC_SHANE",
+   "name": "SHANE",
+   "was": "SHANE!",
+   "why": "removed stray trailing characters"
+  },
+  "169": {
+   "const": "TRAINER_SUPER_NERD_ERIC",
+   "old_const": "TRAINER_SUPER_NERD_ERIC",
+   "name": "ERIC",
+   "was": "ERIC!",
+   "why": "removed stray trailing characters"
+  },
+  "170": {
+   "const": "TRAINER_BOARDER_RONALD",
+   "old_const": "TRAINER_BOARDER_RONALD",
+   "name": "RONALD",
+   "was": "RONALD!",
+   "why": "removed stray trailing characters"
+  },
+  "172": {
+   "const": "TRAINER_HIKER_PARRY_3",
+   "old_const": "TRAINER_HIKER_172",
+   "name": "PARRY",
+   "was": "24TRAINER/1",
+   "why": "G/S phone contact #24, rematch tier 1"
+  },
+  "173": {
+   "const": "TRAINER_SUPER_NERD_LESLIE",
+   "old_const": "TRAINER_SUPER_NERD_LESLIE",
+   "name": "LESLIE",
+   "was": "LESLIE     ",
+   "why": "removed stray trailing characters"
+  },
+  "174": {
+   "const": "TRAINER_BOARDER_DOUGLAS",
+   "old_const": "TRAINER_BOARDER_DOUGLAS",
+   "name": "DOUGLAS",
+   "was": "DOUGLAS!",
+   "why": "removed stray trailing characters"
+  },
+  "175": {
+   "const": "TRAINER_SAILOR_KENNETH",
+   "old_const": "TRAINER_SAILOR_KENNETH",
+   "name": "KENNETH",
+   "was": "KENNETH!",
+   "why": "removed stray trailing characters"
+  },
+  "176": {
+   "const": "TRAINER_BOARDER_BRAD",
+   "old_const": "TRAINER_BOARDER_BRAD",
+   "name": "BRAD",
+   "was": "BRAD!",
+   "why": "removed stray trailing characters"
+  },
+  "177": {
+   "const": "TRAINER_COOLTRAINER_AARON",
+   "old_const": "TRAINER_COOLTRAINER_AARON",
+   "name": "AARON",
+   "was": "AARON!",
+   "why": "removed stray trailing characters"
+  },
+  "178": {
+   "const": "TRAINER_FISHERMAN_MARVIN",
+   "old_const": "TRAINER_FISHERMAN_MARVIN",
+   "name": "MARVIN",
+   "was": "MARVIN!",
+   "why": "removed stray trailing characters"
+  },
+  "179": {
+   "const": "TRAINER_SUPER_NERD_DEREK",
+   "old_const": "TRAINER_SUPER_NERD_DEREK",
+   "name": "DEREK",
+   "was": "DEREK      ",
+   "why": "removed stray trailing characters"
+  },
+  "180": {
+   "const": "TRAINER_COOLTRAINER_RYAN",
+   "old_const": "TRAINER_COOLTRAINER_RYAN",
+   "name": "RYAN",
+   "was": "RYAN!",
+   "why": "removed stray trailing characters"
+  },
+  "181": {
+   "const": "TRAINER_HIKER_RUSELL",
+   "old_const": "TRAINER_HIKER_RUSELL",
+   "name": "RUSELL",
+   "was": "RUSELL!",
+   "why": "removed stray trailing characters"
+  },
+  "182": {
+   "const": "TRAINER_HIKER_NOLAND",
+   "old_const": "TRAINER_HIKER_NOLAND",
+   "name": "NOLAND",
+   "was": "NOLAND!",
+   "why": "removed stray trailing characters"
+  },
+  "183": {
+   "const": "TRAINER_HIKER_NOB",
+   "old_const": "TRAINER_HIKER_NOB",
+   "name": "NOB",
+   "was": "NOB        ",
+   "why": "removed stray trailing characters"
+  },
+  "184": {
+   "const": "TRAINER_HIKER_WAYNE",
+   "old_const": "TRAINER_HIKER_WAYNE",
+   "name": "WAYNE",
+   "was": "WAYNE      ",
+   "why": "removed stray trailing characters"
+  },
+  "185": {
+   "const": "TRAINER_LEADER_LEONARD",
+   "old_const": "TRAINER_LEADER_185",
+   "name": "LEONARD",
+   "was": "-EDIT-",
+   "why": "exact G/S party match (Hiker)"
+  },
+  "186": {
+   "const": "TRAINER_HIKER_PHILLIP",
+   "old_const": "TRAINER_HIKER_PHILLIP",
+   "name": "PHILLIP",
+   "was": "PHILLIP!",
+   "why": "removed stray trailing characters"
+  },
+  "187": {
+   "const": "TRAINER_PKMN_TRAINER_CLARK",
+   "old_const": "TRAINER_PKMN_TRAINER_187",
+   "name": "CLARK",
+   "was": "-EDIT-",
+   "why": "vanilla FireRed name of this trainer slot"
+  },
+  "188": {
+   "const": "TRAINER_POKEMANIAC_BRENT",
+   "old_const": "TRAINER_POKEMANIAC_188",
+   "name": "BRENT",
+   "was": "20TRAINER/1",
+   "why": "G/S phone contact #20, rematch tier 1"
+  },
+  "191": {
+   "const": "TRAINER_HIKER_TIMOTHY",
+   "old_const": "TRAINER_HIKER_TIMOTHY",
+   "name": "TIMOTHY",
+   "was": "TIMOTHY!",
+   "why": "removed stray trailing characters"
+  },
+  "192": {
+   "const": "TRAINER_HIKER_YUZO",
+   "old_const": "TRAINER_HIKER_YUZO",
+   "name": "YUZO",
+   "was": "YUZO!",
+   "why": "removed stray trailing characters"
+  },
+  "193": {
+   "const": "TRAINER_HIKER_MICHAEL",
+   "old_const": "TRAINER_HIKER_MICHAEL",
+   "name": "MICHAEL",
+   "was": "MICHAEL!",
+   "why": "removed stray trailing characters"
+  },
+  "201": {
+   "const": "TRAINER_BIKER_HIDEO",
+   "old_const": "TRAINER_BIKER_HIDEO",
+   "name": "HIDEO",
+   "was": "HIDEO      ",
+   "why": "removed stray trailing characters"
+  },
+  "203": {
+   "const": "TRAINER_BIKER_BILLY",
+   "old_const": "TRAINER_BIKER_BILLY",
+   "name": "BILLY",
+   "was": "BILLY      ",
+   "why": "removed stray trailing characters"
+  },
+  "210": {
+   "const": "TRAINER_FIREBREATHER_BILL",
+   "old_const": "TRAINER_FIREBREATHER_BILL",
+   "name": "BILL",
+   "was": "BILL!",
+   "why": "removed stray trailing characters"
+  },
+  "212": {
+   "const": "TRAINER_COOLTRAINER_BLAKE",
+   "old_const": "TRAINER_COOLTRAINER_BLAKE",
+   "name": "BLAKE",
+   "was": "BLAKE!",
+   "why": "removed stray trailing characters"
+  },
+  "213": {
+   "const": "TRAINER_FIREBREATHER_NED",
+   "old_const": "TRAINER_FIREBREATHER_NED",
+   "name": "NED",
+   "was": "NED!",
+   "why": "removed stray trailing characters"
+  },
+  "214": {
+   "const": "TRAINER_BURGLAR_RAMON",
+   "old_const": "TRAINER_BURGLAR_RAMON",
+   "name": "RAMON",
+   "was": "RAMON      ",
+   "why": "removed stray trailing characters"
+  },
+  "215": {
+   "const": "TRAINER_BURGLAR_EDDIE",
+   "old_const": "TRAINER_BURGLAR_EDDIE",
+   "name": "EDDIE",
+   "was": "EDDIE!",
+   "why": "removed stray trailing characters"
+  },
+  "216": {
+   "const": "TRAINER_SCHOOLBOY_NATE",
+   "old_const": "TRAINER_SCHOOLBOY_NATE",
+   "name": "NATE",
+   "was": "NATE!",
+   "why": "removed stray trailing characters"
+  },
+  "217": {
+   "const": "TRAINER_BIKER_ZEKE",
+   "old_const": "TRAINER_BIKER_ZEKE",
+   "name": "ZEKE",
+   "was": "ZEKE!",
+   "why": "removed stray trailing characters"
+  },
+  "218": {
+   "const": "TRAINER_BURGLAR_SIMON",
+   "old_const": "TRAINER_BURGLAR_SIMON",
+   "name": "SIMON",
+   "was": "SIMON      ",
+   "why": "removed stray trailing characters"
+  },
+  "219": {
+   "const": "TRAINER_SCHOOLBOY_RICKY",
+   "old_const": "TRAINER_SCHOOLBOY_RICKY",
+   "name": "RICKY",
+   "was": "RICKY!",
+   "why": "removed stray trailing characters"
+  },
+  "220": {
+   "const": "TRAINER_SUPER_NERD_SAM",
+   "old_const": "TRAINER_SUPER_NERD_SAM",
+   "name": "SAM",
+   "was": "SAM!",
+   "why": "removed stray trailing characters"
+  },
+  "221": {
+   "const": "TRAINER_ENGINEER_BRAXTON",
+   "old_const": "TRAINER_ENGINEER_BRAXTON",
+   "name": "BRAXTON",
+   "was": "BRAXTON    ",
+   "why": "removed stray trailing characters"
+  },
+  "222": {
+   "const": "TRAINER_COOLTRAINER_REENA_4",
+   "old_const": "TRAINER_COOLTRAINER_222",
+   "name": "REENA",
+   "was": "28TRAINER/1",
+   "why": "G/S phone contact #28, rematch tier 1"
+  },
+  "223": {
+   "const": "TRAINER_BURGLAR_DUNCAN",
+   "old_const": "TRAINER_BURGLAR_DUNCAN",
+   "name": "DUNCAN",
+   "was": "DUNCAN!",
+   "why": "removed stray trailing characters"
+  },
+  "224": {
+   "const": "TRAINER_FISHERMAN_SCOTT",
+   "old_const": "TRAINER_FISHERMAN_SCOTT",
+   "name": "SCOTT",
+   "was": "SCOTT!",
+   "why": "removed stray trailing characters"
+  },
+  "225": {
+   "const": "TRAINER_FIREBREATHER_LYLE",
+   "old_const": "TRAINER_FIREBREATHER_LYLE",
+   "name": "LYLE",
+   "was": "LYLE!",
+   "why": "removed stray trailing characters"
+  },
+  "226": {
+   "const": "TRAINER_FISHERMAN_HENRY",
+   "old_const": "TRAINER_FISHERMAN_HENRY",
+   "name": "HENRY",
+   "was": "HENRY!",
+   "why": "removed stray trailing characters"
+  },
+  "227": {
+   "const": "TRAINER_FISHERMAN_HANK",
+   "old_const": "TRAINER_FISHERMAN_HANK",
+   "name": "HANK",
+   "was": "HANK       ",
+   "why": "removed stray trailing characters"
+  },
+  "228": {
+   "const": "TRAINER_JUGGLER_IRWIN",
+   "old_const": "TRAINER_JUGGLER_228",
+   "name": "IRWIN",
+   "was": " 8TRAINER/1",
+   "why": "G/S phone contact #8, rematch tier 1"
+  },
+  "229": {
+   "const": "TRAINER_FISHERMAN_JUSTIN",
+   "old_const": "TRAINER_FISHERMAN_JUSTIN",
+   "name": "JUSTIN",
+   "was": "JUSTIN!",
+   "why": "removed stray trailing characters"
+  },
+  "230": {
+   "const": "TRAINER_FISHERMAN_EDGAR",
+   "old_const": "TRAINER_FISHERMAN_EDGAR",
+   "name": "EDGAR",
+   "was": "EDGAR!",
+   "why": "removed stray trailing characters"
+  },
+  "231": {
+   "const": "TRAINER_POKEFAN_JOSHUA",
+   "old_const": "TRAINER_POKEFAN_JOSHUA",
+   "name": "JOSHUA",
+   "was": "JOSHUA!",
+   "why": "removed stray trailing characters"
+  },
+  "232": {
+   "const": "TRAINER_COOLTRAINER_IRENE",
+   "old_const": "TRAINER_COOLTRAINER_IRENE",
+   "name": "IRENE",
+   "was": "IRENE!",
+   "why": "removed stray trailing characters"
+  },
+  "233": {
+   "const": "TRAINER_COOLTRAINER_JENN",
+   "old_const": "TRAINER_COOLTRAINER_JENN",
+   "name": "JENN",
+   "was": "JENN!",
+   "why": "removed stray trailing characters"
+  },
+  "234": {
+   "const": "TRAINER_COOLTRAINER_KATE",
+   "old_const": "TRAINER_COOLTRAINER_KATE",
+   "name": "KATE",
+   "was": "KATE!",
+   "why": "removed stray trailing characters"
+  },
+  "235": {
+   "const": "TRAINER_SWIMMER_M_SIMON",
+   "old_const": "TRAINER_SWIMMER_M_SIMON",
+   "name": "SIMON",
+   "was": "SIMON!",
+   "why": "removed stray trailing characters"
+  },
+  "236": {
+   "const": "TRAINER_SWIMMER_M_RANDALL",
+   "old_const": "TRAINER_SWIMMER_M_RANDALL",
+   "name": "RANDALL",
+   "was": "RANDALL!",
+   "why": "removed stray trailing characters"
+  },
+  "237": {
+   "const": "TRAINER_SWIMMER_M_KIRK",
+   "old_const": "TRAINER_SWIMMER_M_KIRK",
+   "name": "KIRK",
+   "was": "KIRK!",
+   "why": "removed stray trailing characters"
+  },
+  "238": {
+   "const": "TRAINER_FISHERMAN_RAYMOND",
+   "old_const": "TRAINER_FISHERMAN_RAYMOND",
+   "name": "RAYMOND",
+   "was": "RAYMOND!",
+   "why": "removed stray trailing characters"
+  },
+  "239": {
+   "const": "TRAINER_SWIMMER_M_CHARLIE",
+   "old_const": "TRAINER_SWIMMER_M_CHARLIE",
+   "name": "CHARLIE",
+   "was": "CHARLIE!",
+   "why": "removed stray trailing characters"
+  },
+  "240": {
+   "const": "TRAINER_POKEMANIAC_ETHAN",
+   "old_const": "TRAINER_POKEMANIAC_ETHAN",
+   "name": "ETHAN",
+   "was": "ETHAN!",
+   "why": "removed stray trailing characters"
+  },
+  "241": {
+   "const": "TRAINER_HIKER_BAILEY",
+   "old_const": "TRAINER_HIKER_BAILEY",
+   "name": "BAILEY",
+   "was": "BAILEY!",
+   "why": "removed stray trailing characters"
+  },
+  "242": {
+   "const": "TRAINER_BIKER_JOEL",
+   "old_const": "TRAINER_BIKER_JOEL",
+   "name": "JOEL",
+   "was": "JOEL!",
+   "why": "removed stray trailing characters"
+  },
+  "243": {
+   "const": "TRAINER_SWIMMER_M_DEAN",
+   "old_const": "TRAINER_SWIMMER_M_DEAN",
+   "name": "DEAN",
+   "was": "DEAN       ",
+   "why": "removed stray trailing characters"
+  },
+  "244": {
+   "const": "TRAINER_FISHERMAN_WILTON",
+   "old_const": "TRAINER_FISHERMAN_244",
+   "name": "WILTON",
+   "was": "21TRAINER/1",
+   "why": "G/S phone contact #21, rematch tier 1"
+  },
+  "245": {
+   "const": "TRAINER_FISHERMAN_MARTIN",
+   "old_const": "TRAINER_FISHERMAN_MARTIN",
+   "name": "MARTIN",
+   "was": "MARTIN!",
+   "why": "removed stray trailing characters"
+  },
+  "246": {
+   "const": "TRAINER_SWIMMER_M_JACK",
+   "old_const": "TRAINER_SWIMMER_M_JACK",
+   "name": "JACK",
+   "was": "JACK       ",
+   "why": "removed stray trailing characters"
+  },
+  "247": {
+   "const": "TRAINER_CAMPER_DEAN",
+   "old_const": "TRAINER_CAMPER_DEAN",
+   "name": "DEAN",
+   "was": "DEAN!",
+   "why": "removed stray trailing characters"
+  },
+  "248": {
+   "const": "TRAINER_SAILOR_STANLY",
+   "old_const": "TRAINER_SAILOR_STANLY",
+   "name": "STANLY",
+   "was": "STANLY!",
+   "why": "removed stray trailing characters"
+  },
+  "249": {
+   "const": "TRAINER_POKEFAN_JEREMY",
+   "old_const": "TRAINER_POKEFAN_JEREMY",
+   "name": "JEREMY",
+   "was": "JEREMY!",
+   "why": "removed stray trailing characters"
+  },
+  "250": {
+   "const": "TRAINER_HIKER_SIDNEY",
+   "old_const": "TRAINER_HIKER_SIDNEY",
+   "name": "SIDNEY",
+   "was": "SIDNEY!",
+   "why": "removed stray trailing characters"
+  },
+  "251": {
+   "const": "TRAINER_PICNICKER_HEIDI",
+   "old_const": "TRAINER_PICNICKER_HEIDI",
+   "name": "HEIDI",
+   "was": "HEIDI!",
+   "why": "removed stray trailing characters"
+  },
+  "252": {
+   "const": "TRAINER_BUG_CATCHER_ROB",
+   "old_const": "TRAINER_BUG_CATCHER_ROB",
+   "name": "ROB",
+   "was": "ROB!",
+   "why": "removed stray trailing characters"
+  },
+  "253": {
+   "const": "TRAINER_BIRD_KEEPER_ROY",
+   "old_const": "TRAINER_BIRD_KEEPER_ROY",
+   "name": "ROY",
+   "was": "ROY!",
+   "why": "removed stray trailing characters"
+  },
+  "254": {
+   "const": "TRAINER_CUE_BALL_ZEEK",
+   "old_const": "TRAINER_CUE_BALL_ZEEK",
+   "name": "ZEEK",
+   "was": "ZEEK       ",
+   "why": "removed stray trailing characters"
+  },
+  "255": {
+   "const": "TRAINER_BURGLAR_CORY",
+   "old_const": "TRAINER_BURGLAR_CORY",
+   "name": "CORY",
+   "was": "CORY!",
+   "why": "removed stray trailing characters"
+  },
+  "256": {
+   "const": "TRAINER_TEACHER_HILLARY",
+   "old_const": "TRAINER_TEACHER_HILLARY",
+   "name": "HILLARY",
+   "was": "HILLARY!",
+   "why": "removed stray trailing characters"
+  },
+  "257": {
+   "const": "TRAINER_SUPER_NERD_SHAWN",
+   "old_const": "TRAINER_SUPER_NERD_SHAWN",
+   "name": "SHAWN",
+   "was": "SHAWN!",
+   "why": "removed stray trailing characters"
+  },
+  "258": {
+   "const": "TRAINER_SWIMMER_F_SUSIE",
+   "old_const": "TRAINER_SWIMMER_F_SUSIE",
+   "name": "SUSIE",
+   "was": "SUSIE!",
+   "why": "removed stray trailing characters"
+  },
+  "259": {
+   "const": "TRAINER_SWIMMER_F_WENDY",
+   "old_const": "TRAINER_SWIMMER_F_WENDY",
+   "name": "WENDY",
+   "was": "WENDY!",
+   "why": "removed stray trailing characters"
+  },
+  "260": {
+   "const": "TRAINER_SWIMMER_F_KARA",
+   "old_const": "TRAINER_SWIMMER_F_KARA",
+   "name": "KARA",
+   "was": "KARA!",
+   "why": "removed stray trailing characters"
+  },
+  "261": {
+   "const": "TRAINER_SAILOR_HUEY_2",
+   "old_const": "TRAINER_SAILOR_261",
+   "name": "HUEY",
+   "was": "17TRAINER/1",
+   "why": "G/S phone contact #17, rematch tier 1"
+  },
+  "262": {
+   "const": "TRAINER_JUGGLER_FRITZ",
+   "old_const": "TRAINER_JUGGLER_FRITZ",
+   "name": "FRITZ",
+   "was": "FRITZ!",
+   "why": "removed stray trailing characters"
+  },
+  "264": {
+   "const": "TRAINER_BEAUTY_CASSIE",
+   "old_const": "TRAINER_BEAUTY_CASSIE",
+   "name": "CASSIE",
+   "was": "CASSIE!",
+   "why": "removed stray trailing characters"
+  },
+  "265": {
+   "const": "TRAINER_SWIMMER_M_PARKER",
+   "old_const": "TRAINER_SWIMMER_M_PARKER",
+   "name": "PARKER",
+   "was": "PARKER!",
+   "why": "removed stray trailing characters"
+  },
+  "266": {
+   "const": "TRAINER_BEAUTY_SAMANTHA",
+   "old_const": "TRAINER_BEAUTY_SAMANTHA",
+   "name": "SAMANTHA",
+   "was": "SAMANTHA!",
+   "why": "removed stray trailing characters"
+  },
+  "267": {
+   "const": "TRAINER_BEAUTY_LORI",
+   "old_const": "TRAINER_BEAUTY_LORI",
+   "name": "LORI",
+   "was": "LORI       ",
+   "why": "removed stray trailing characters"
+  },
+  "268": {
+   "const": "TRAINER_BEAUTY_VICTORIA",
+   "old_const": "TRAINER_BEAUTY_VICTORIA",
+   "name": "VICTORIA",
+   "was": "VICTORIA!",
+   "why": "removed stray trailing characters"
+  },
+  "270": {
+   "const": "TRAINER_SWIMMER_F_DIANA",
+   "old_const": "TRAINER_SWIMMER_F_DIANA",
+   "name": "DIANA",
+   "was": "DIANA!",
+   "why": "removed stray trailing characters"
+  },
+  "271": {
+   "const": "TRAINER_SWIMMER_F_KAYLEE",
+   "old_const": "TRAINER_SWIMMER_F_KAYLEE",
+   "name": "KAYLEE",
+   "was": "KAYLEE!",
+   "why": "removed stray trailing characters"
+  },
+  "272": {
+   "const": "TRAINER_SWIMMER_F_PAULA",
+   "old_const": "TRAINER_SWIMMER_F_PAULA",
+   "name": "PAULA",
+   "was": "PAULA!",
+   "why": "removed stray trailing characters"
+  },
+  "273": {
+   "const": "TRAINER_COOLTRAINER_LOLA",
+   "old_const": "TRAINER_COOLTRAINER_LOLA",
+   "name": "LOLA",
+   "was": "LOLA!",
+   "why": "removed stray trailing characters"
+  },
+  "274": {
+   "const": "TRAINER_BEAUTY_VALERIE",
+   "old_const": "TRAINER_BEAUTY_VALERIE",
+   "name": "VALERIE",
+   "was": "VALERIE!",
+   "why": "removed stray trailing characters"
+  },
+  "275": {
+   "const": "TRAINER_COOLTRAINER_CAROL",
+   "old_const": "TRAINER_COOLTRAINER_CAROL",
+   "name": "CAROL",
+   "was": "CAROL!",
+   "why": "removed stray trailing characters"
+  },
+  "276": {
+   "const": "TRAINER_BIRD_KEEPER_THEO",
+   "old_const": "TRAINER_BIRD_KEEPER_THEO",
+   "name": "THEO",
+   "was": "THEO!",
+   "why": "removed stray trailing characters"
+  },
+  "277": {
+   "const": "TRAINER_PSYCHIC_RODNEY",
+   "old_const": "TRAINER_PSYCHIC_RODNEY",
+   "name": "RODNEY",
+   "was": "RODNEY!",
+   "why": "removed stray trailing characters"
+  },
+  "278": {
+   "const": "TRAINER_COOLTRAINER_SEAN",
+   "old_const": "TRAINER_COOLTRAINER_SEAN",
+   "name": "SEAN",
+   "was": "SEAN!",
+   "why": "removed stray trailing characters"
+  },
+  "279": {
+   "const": "TRAINER_LASS_SHANNON",
+   "old_const": "TRAINER_LASS_SHANNON",
+   "name": "SHANNON",
+   "was": "SHANNON!",
+   "why": "removed stray trailing characters"
+  },
+  "280": {
+   "const": "TRAINER_FISHERMAN_JONAH",
+   "old_const": "TRAINER_FISHERMAN_JONAH",
+   "name": "JONAH",
+   "was": "JONAH!",
+   "why": "removed stray trailing characters"
+  },
+  "281": {
+   "const": "TRAINER_PSYCHIC_NORMAN",
+   "old_const": "TRAINER_PSYCHIC_NORMAN",
+   "name": "NORMAN",
+   "was": "NORMAN!",
+   "why": "removed stray trailing characters"
+  },
+  "282": {
+   "const": "TRAINER_PSYCHIC_MARK",
+   "old_const": "TRAINER_PSYCHIC_MARK",
+   "name": "MARK",
+   "was": "MARK!",
+   "why": "removed stray trailing characters"
+  },
+  "283": {
+   "const": "TRAINER_PSYCHIC_PRESTON",
+   "old_const": "TRAINER_PSYCHIC_PRESTON",
+   "name": "PRESTON",
+   "was": "PRESTON    ",
+   "why": "removed stray trailing characters"
+  },
+  "284": {
+   "const": "TRAINER_PSYCHIC_GILBERT",
+   "old_const": "TRAINER_PSYCHIC_GILBERT",
+   "name": "GILBERT",
+   "was": "GILBERT!",
+   "why": "removed stray trailing characters"
+  },
+  "285": {
+   "const": "TRAINER_SCHOOLBOY_CHAD",
+   "old_const": "TRAINER_SCHOOLBOY_285",
+   "name": "CHAD",
+   "was": "14TRAINER/1",
+   "why": "G/S phone contact #14, rematch tier 1"
+  },
+  "286": {
+   "const": "TRAINER_SWIMMER_F_BRIANA",
+   "old_const": "TRAINER_SWIMMER_F_BRIANA",
+   "name": "BRIANA",
+   "was": "BRIANA!",
+   "why": "removed stray trailing characters"
+  },
+  "287": {
+   "const": "TRAINER_JUGGLER_HORTON",
+   "old_const": "TRAINER_JUGGLER_HORTON",
+   "name": "HORTON",
+   "was": "HORTON!",
+   "why": "removed stray trailing characters"
+  },
+  "288": {
+   "const": "TRAINER_GUITARIST_VINCENT",
+   "old_const": "TRAINER_GUITARIST_VINCENT",
+   "name": "VINCENT",
+   "was": "VINCENT!",
+   "why": "removed stray trailing characters"
+  },
+  "289": {
+   "const": "TRAINER_PSYCHIC_PHIL",
+   "old_const": "TRAINER_PSYCHIC_PHIL",
+   "name": "PHIL",
+   "was": "PHIL!",
+   "why": "removed stray trailing characters"
+  },
+  "290": {
+   "const": "TRAINER_JUGGLER_GREGORY",
+   "old_const": "TRAINER_JUGGLER_GREGORY",
+   "name": "GREGORY",
+   "was": "GREGORY    ",
+   "why": "removed stray trailing characters"
+  },
+  "292": {
+   "const": "TRAINER_JUGGLER_KAYDEN",
+   "old_const": "TRAINER_JUGGLER_KAYDEN",
+   "name": "KAYDEN",
+   "was": "KAYDEN     ",
+   "why": "removed stray trailing characters"
+  },
+  "293": {
+   "const": "TRAINER_SCHOOLBOY_TOMMY",
+   "old_const": "TRAINER_SCHOOLBOY_TOMMY",
+   "name": "TOMMY",
+   "was": "TOMMY!",
+   "why": "removed stray trailing characters"
+  },
+  "294": {
+   "const": "TRAINER_MEDIUM_ERIS",
+   "old_const": "TRAINER_MEDIUM_ERIS",
+   "name": "ERIS",
+   "was": "ERIS!",
+   "why": "removed stray trailing characters"
+  },
+  "295": {
+   "const": "TRAINER_PSYCHIC_JARED",
+   "old_const": "TRAINER_PSYCHIC_JARED",
+   "name": "JARED",
+   "was": "JARED!",
+   "why": "removed stray trailing characters"
+  },
+  "296": {
+   "const": "TRAINER_TAMER_JASON",
+   "old_const": "TRAINER_TAMER_JASON",
+   "name": "JASON",
+   "was": "JASON      ",
+   "why": "removed stray trailing characters"
+  },
+  "297": {
+   "const": "TRAINER_YOUNGSTER_FABRICIO",
+   "old_const": "TRAINER_YOUNGSTER_FABRICIO",
+   "name": "FABRICIO",
+   "was": "FABRICIO!",
+   "why": "removed stray trailing characters"
+  },
+  "298": {
+   "const": "TRAINER_MEDIUM_SARINA",
+   "old_const": "TRAINER_MEDIUM_SARINA",
+   "name": "SARINA",
+   "was": "SARINA!",
+   "why": "removed stray trailing characters"
+  },
+  "299": {
+   "const": "TRAINER_POKEFAN_GEORGIA",
+   "old_const": "TRAINER_POKEFAN_GEORGIA",
+   "name": "GEORGIA",
+   "was": "GEORGIA!",
+   "why": "removed stray trailing characters"
+  },
+  "300": {
+   "const": "TRAINER_BIRD_KEEPER_ROD",
+   "old_const": "TRAINER_BIRD_KEEPER_ROD",
+   "name": "ROD",
+   "was": "ROD!",
+   "why": "removed stray trailing characters"
+  },
+  "301": {
+   "const": "TRAINER_SWIMMER_M_GEORGE",
+   "old_const": "TRAINER_SWIMMER_M_GEORGE",
+   "name": "GEORGE",
+   "was": "GEORGE!",
+   "why": "removed stray trailing characters"
+  },
+  "302": {
+   "const": "TRAINER_COOLTRAINER_GAVEN_3",
+   "old_const": "TRAINER_COOLTRAINER_302",
+   "name": "GAVEN",
+   "was": "27TRAINER/1",
+   "why": "G/S phone contact #27, rematch tier 1"
+  },
+  "303": {
+   "const": "TRAINER_BIRD_KEEPER_DONALD",
+   "old_const": "TRAINER_BIRD_KEEPER_DONALD",
+   "name": "DONALD",
+   "was": "DONALD     ",
+   "why": "removed stray trailing characters"
+  },
+  "304": {
+   "const": "TRAINER_BIRD_KEEPER_BRYAN",
+   "old_const": "TRAINER_BIRD_KEEPER_BRYAN",
+   "name": "BRYAN",
+   "was": "BRYAN!",
+   "why": "removed stray trailing characters"
+  },
+  "305": {
+   "const": "TRAINER_BIKER_DWAYNE",
+   "old_const": "TRAINER_BIKER_DWAYNE",
+   "name": "DWAYNE",
+   "was": "DWAYNE!",
+   "why": "removed stray trailing characters"
+  },
+  "306": {
+   "const": "TRAINER_SCHOOLBOY_ALAN",
+   "old_const": "TRAINER_SCHOOLBOY_306",
+   "name": "ALAN",
+   "was": "10TRAINER/1",
+   "why": "G/S phone contact #10, rematch tier 1"
+  },
+  "307": {
+   "const": "TRAINER_CAMPER_RAOUL",
+   "old_const": "TRAINER_CAMPER_RAOUL",
+   "name": "RAOUL",
+   "was": "RAOUL!",
+   "why": "removed stray trailing characters"
+  },
+  "308": {
+   "const": "TRAINER_BIRD_KEEPER_RAMIRO",
+   "old_const": "TRAINER_BIRD_KEEPER_RAMIRO",
+   "name": "RAMIRO",
+   "was": "RAMIRO     ",
+   "why": "removed stray trailing characters"
+  },
+  "309": {
+   "const": "TRAINER_BUG_CATCHER_WADE",
+   "old_const": "TRAINER_BUG_CATCHER_309",
+   "name": "WADE",
+   "was": " 2TRAINER/1",
+   "why": "G/S phone contact #2, rematch tier 1"
+  },
+  "310": {
+   "const": "TRAINER_BIRD_KEEPER_PETER",
+   "old_const": "TRAINER_BIRD_KEEPER_PETER",
+   "name": "PETER",
+   "was": "PETER!",
+   "why": "removed stray trailing characters"
+  },
+  "311": {
+   "const": "TRAINER_FISHERMAN_STEPHEN",
+   "old_const": "TRAINER_FISHERMAN_STEPHEN",
+   "name": "STEPHEN",
+   "was": "STEPHEN!",
+   "why": "removed stray trailing characters"
+  },
+  "312": {
+   "const": "TRAINER_BUG_CATCHER_KEN",
+   "old_const": "TRAINER_BUG_CATCHER_KEN",
+   "name": "KEN",
+   "was": "KEN!",
+   "why": "removed stray trailing characters"
+  },
+  "313": {
+   "const": "TRAINER_BIRD_KEEPER_TOBY",
+   "old_const": "TRAINER_BIRD_KEEPER_TOBY",
+   "name": "TOBY",
+   "was": "TOBY!",
+   "why": "removed stray trailing characters"
+  },
+  "314": {
+   "const": "TRAINER_HIKER_KENNY",
+   "old_const": "TRAINER_HIKER_KENNY",
+   "name": "KENNY",
+   "was": "KENNY!",
+   "why": "removed stray trailing characters"
+  },
+  "315": {
+   "const": "TRAINER_BIKER_ROWDY",
+   "old_const": "TRAINER_BIKER_ROWDY",
+   "name": "ROWDY",
+   "was": "ROWDY!",
+   "why": "removed stray trailing characters"
+  },
+  "316": {
+   "const": "TRAINER_BLACK_BELT_KENJI",
+   "old_const": "TRAINER_BLACK_BELT_316",
+   "name": "KENJI",
+   "was": "23TRAINER/1",
+   "why": "G/S phone contact #23, rematch tier 1"
+  },
+  "317": {
+   "const": "TRAINER_BLACK_BELT_KIYO",
+   "old_const": "TRAINER_BLACK_BELT_KIYO",
+   "name": "KIYO",
+   "was": "KIYO!",
+   "why": "removed stray trailing characters"
+  },
+  "318": {
+   "const": "TRAINER_BIRD_KEEPER_DENIS",
+   "old_const": "TRAINER_BIRD_KEEPER_DENIS",
+   "name": "DENIS",
+   "was": "DENIS!",
+   "why": "removed stray trailing characters"
+  },
+  "319": {
+   "const": "TRAINER_BLACK_BELT_NOB",
+   "old_const": "TRAINER_BLACK_BELT_NOB",
+   "name": "NOB",
+   "was": "NOB!",
+   "why": "removed stray trailing characters"
+  },
+  "320": {
+   "const": "TRAINER_BLACK_BELT_AARON",
+   "old_const": "TRAINER_BLACK_BELT_AARON",
+   "name": "AARON",
+   "was": "AARON      ",
+   "why": "removed stray trailing characters"
+  },
+  "321": {
+   "const": "TRAINER_BLACK_BELT_LUNG",
+   "old_const": "TRAINER_BLACK_BELT_LUNG",
+   "name": "LUNG",
+   "was": "LUNG!",
+   "why": "removed stray trailing characters"
+  },
+  "322": {
+   "const": "TRAINER_DRAGON_TAMER_MIKAHIL",
+   "old_const": "TRAINER_DRAGON_TAMER_MIKAHIL",
+   "name": "MIKAHIL",
+   "was": "MIKAHIL!",
+   "why": "removed stray trailing characters"
+  },
+  "323": {
+   "const": "TRAINER_BLACK_BELT_KIYO_2",
+   "old_const": "TRAINER_BLACK_BELT_KIYO_2",
+   "name": "KIYO",
+   "was": "KIYO       ",
+   "why": "removed stray trailing characters"
+  },
+  "324": {
+   "const": "TRAINER_BLACK_BELT_WAI",
+   "old_const": "TRAINER_BLACK_BELT_WAI",
+   "name": "WAI",
+   "was": "WAI!",
+   "why": "removed stray trailing characters"
+  },
+  "325": {
+   "const": "TRAINER_HIKER_ERIK",
+   "old_const": "TRAINER_HIKER_ERIK",
+   "name": "ERIK",
+   "was": "ERIK!",
+   "why": "removed stray trailing characters"
+  },
+  "329": {
+   "const": "TRAINER_RIVAL_SILVER_7",
+   "old_const": "TRAINER_RIVAL_329",
+   "name": "SILVER",
+   "was": "-EDIT-",
+   "why": "rival class (name is replaced by the rival name in battle)"
+  },
+  "332": {
+   "const": "TRAINER_RIVAL_TERRY",
+   "old_const": "TRAINER_RIVAL_TERRY",
+   "name": "TERRY",
+   "was": "TERRY      ",
+   "why": "removed stray trailing characters"
+  },
+  "333": {
+   "const": "TRAINER_RIVAL_TERRY_2",
+   "old_const": "TRAINER_RIVAL_TERRY_2",
+   "name": "TERRY",
+   "was": "TERRY      ",
+   "why": "removed stray trailing characters"
+  },
+  "334": {
+   "const": "TRAINER_RIVAL_TERRY_3",
+   "old_const": "TRAINER_RIVAL_TERRY_3",
+   "name": "TERRY",
+   "was": "TERRY      ",
+   "why": "removed stray trailing characters"
+  },
+  "335": {
+   "const": "TRAINER_SAGE_GEN",
+   "old_const": "TRAINER_SAGE_GEN",
+   "name": "GEN",
+   "was": "GEN!",
+   "why": "removed stray trailing characters"
+  },
+  "336": {
+   "const": "TRAINER_LEADER_CONNOR",
+   "old_const": "TRAINER_LEADER_336",
+   "name": "CONNOR",
+   "was": "-EDIT-",
+   "why": "vanilla FireRed name of this trainer slot"
+  },
+  "337": {
+   "const": "TRAINER_SCIENTIST_JED",
+   "old_const": "TRAINER_SCIENTIST_JED",
+   "name": "JED",
+   "was": "JED!",
+   "why": "removed stray trailing characters"
+  },
+  "339": {
+   "const": "TRAINER_SCIENTIST_MITCH",
+   "old_const": "TRAINER_SCIENTIST_MITCH",
+   "name": "MITCH",
+   "was": "MITCH!",
+   "why": "removed stray trailing characters"
+  },
+  "342": {
+   "const": "TRAINER_SCIENTIST_ROSS",
+   "old_const": "TRAINER_SCIENTIST_ROSS",
+   "name": "ROSS",
+   "was": "ROSS!",
+   "why": "removed stray trailing characters"
+  },
+  "343": {
+   "const": "TRAINER_SCIENTIST_PARKER",
+   "old_const": "TRAINER_SCIENTIST_PARKER",
+   "name": "PARKER",
+   "was": "PARKER     ",
+   "why": "removed stray trailing characters"
+  },
+  "345": {
+   "const": "TRAINER_SCIENTIST_TRAVIS",
+   "old_const": "TRAINER_SCIENTIST_TRAVIS",
+   "name": "TRAVIS",
+   "was": "TRAVIS     ",
+   "why": "removed stray trailing characters"
+  },
+  "346": {
+   "const": "TRAINER_SCIENTIST_MARC",
+   "old_const": "TRAINER_SCIENTIST_MARC",
+   "name": "MARC",
+   "was": "MARC!",
+   "why": "removed stray trailing characters"
+  },
+  "347": {
+   "const": "TRAINER_SCIENTIST_RICH",
+   "old_const": "TRAINER_SCIENTIST_RICH",
+   "name": "RICH",
+   "was": "RICH!",
+   "why": "removed stray trailing characters"
+  },
+  "348": {
+   "const": "TRAINER_TEAM_ROCKET_EXECUTIVE",
+   "old_const": "TRAINER_TEAM_ROCKET_EXECUTIVE",
+   "name": "EXECUTIVE",
+   "was": "EXECUTIVE!",
+   "why": "removed stray trailing characters"
+  },
+  "349": {
+   "const": "TRAINER_SCHOOLBOY_BILLY",
+   "old_const": "TRAINER_SCHOOLBOY_BILLY",
+   "name": "BILLY",
+   "was": "BILLY!",
+   "why": "removed stray trailing characters"
+  },
+  "351": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_4",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_4",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "352": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_5",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_5",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "353": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_6",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_6",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "354": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_7",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_7",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "355": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_8",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_8",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "356": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_9",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_9",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "357": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_10",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_10",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "358": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_11",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_11",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "359": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_12",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_12",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "360": {
+   "const": "TRAINER_PKMN_TRAINER_GRUNT",
+   "old_const": "TRAINER_PKMN_TRAINER_360",
+   "name": "GRUNT",
+   "was": "-EDIT-",
+   "why": "vanilla FireRed name of this trainer slot"
+  },
+  "361": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_13",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_13",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "362": {
+   "const": "TRAINER_CLASS25_GRUNT",
+   "old_const": "TRAINER_CLASS25_362",
+   "name": "GRUNT",
+   "was": "-EDIT-",
+   "why": "vanilla FireRed name of this trainer slot"
+  },
+  "364": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_14",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_14",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "365": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_15",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_15",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "366": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_16",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_16",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "367": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_17",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_17",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "368": {
+   "const": "TRAINER_ROCKET_DUO_GRUNT",
+   "old_const": "TRAINER_ROCKET_DUO_368",
+   "name": "GRUNT",
+   "was": "",
+   "why": "vanilla FireRed name of this trainer slot"
+  },
+  "369": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_18",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_18",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "370": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_19",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_19",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "371": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_20",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_20",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "372": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_21",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_21",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "373": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_22",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_22",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "374": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_23",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_23",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "375": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_24",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_24",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "376": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_25",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_25",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "377": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_26",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_26",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "378": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_27",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_27",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "379": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_28",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_28",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "380": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_29",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_29",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "381": {
+   "const": "TRAINER_TEAM_ROCKET_EXECUTIVE_2",
+   "old_const": "TRAINER_TEAM_ROCKET_EXECUTIVE_2",
+   "name": "EXECUTIVE",
+   "was": "EXECUTIVE!",
+   "why": "removed stray trailing characters"
+  },
+  "383": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_30",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_30",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "384": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_31",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_31",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "385": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_32",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_32",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "386": {
+   "const": "TRAINER_TEAM_ROCKET_EXECUTIVE_3",
+   "old_const": "TRAINER_TEAM_ROCKET_EXECUTIVE_3",
+   "name": "EXECUTIVE",
+   "was": "EXECUTIVE!",
+   "why": "removed stray trailing characters"
+  },
+  "387": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_33",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_33",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "388": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_34",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_34",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "389": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_35",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_35",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "390": {
+   "const": "TRAINER_TEAM_ROCKET_EXECUTIVE_4",
+   "old_const": "TRAINER_TEAM_ROCKET_EXECUTIVE_4",
+   "name": "EXECUTIVE",
+   "was": "EXECUTIVE!",
+   "why": "removed stray trailing characters"
+  },
+  "391": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_36",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_36",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "405": {
+   "const": "TRAINER_PKMN_THIEF_ASHLEE_3",
+   "old_const": "TRAINER_PKMN_THIEF_ASHLEE_3",
+   "name": "ASHLEE",
+   "was": "ASHLEE   ",
+   "why": "removed stray trailing characters"
+  },
+  "421": {
+   "const": "TRAINER_GENTLEMAN_THOMAS",
+   "old_const": "TRAINER_GENTLEMAN_THOMAS",
+   "name": "THOMAS",
+   "was": "THOMAS     ",
+   "why": "removed stray trailing characters"
+  },
+  "422": {
+   "const": "TRAINER_GENTLEMAN_GREGORY",
+   "old_const": "TRAINER_GENTLEMAN_GREGORY",
+   "name": "GREGORY",
+   "was": "GREGORY!",
+   "why": "removed stray trailing characters"
+  },
+  "423": {
+   "const": "TRAINER_GENTLEMAN_TUCKER",
+   "old_const": "TRAINER_GENTLEMAN_TUCKER",
+   "name": "TUCKER",
+   "was": "TUCKER     ",
+   "why": "removed stray trailing characters"
+  },
+  "424": {
+   "const": "TRAINER_GENTLEMAN_NORTON",
+   "old_const": "TRAINER_GENTLEMAN_NORTON",
+   "name": "NORTON",
+   "was": "NORTON     ",
+   "why": "removed stray trailing characters"
+  },
+  "425": {
+   "const": "TRAINER_PICNICKER_CARRIE",
+   "old_const": "TRAINER_PICNICKER_CARRIE",
+   "name": "CARRIE",
+   "was": "CARRIE!",
+   "why": "removed stray trailing characters"
+  },
+  "426": {
+   "const": "TRAINER_SCHOOLBOY_KIPP",
+   "old_const": "TRAINER_SCHOOLBOY_KIPP",
+   "name": "KIPP",
+   "was": "KIPP!",
+   "why": "removed stray trailing characters"
+  },
+  "427": {
+   "const": "TRAINER_CHAMPION_SILVER",
+   "old_const": "TRAINER_CHAMPION_427",
+   "name": "SILVER",
+   "was": "",
+   "why": "rival class"
+  },
+  "428": {
+   "const": "TRAINER_CHAMPION_SILVER_2",
+   "old_const": "TRAINER_CHAMPION_428",
+   "name": "SILVER",
+   "was": "",
+   "why": "rival class"
+  },
+  "429": {
+   "const": "TRAINER_CHAMPION_SILVER_3",
+   "old_const": "TRAINER_CHAMPION_429",
+   "name": "SILVER",
+   "was": "",
+   "why": "rival class"
+  },
+  "430": {
+   "const": "TRAINER_CHAMPION_SILVER_4",
+   "old_const": "TRAINER_CHAMPION_430",
+   "name": "SILVER",
+   "was": "",
+   "why": "rival class"
+  },
+  "431": {
+   "const": "TRAINER_CHAMPION_SILVER_5",
+   "old_const": "TRAINER_CHAMPION_431",
+   "name": "SILVER",
+   "was": "",
+   "why": "rival class"
+  },
+  "435": {
+   "const": "TRAINER_RIVAL_TERRY_10",
+   "old_const": "TRAINER_RIVAL_TERRY_10",
+   "name": "TERRY",
+   "was": "TERRY      ",
+   "why": "removed stray trailing characters"
+  },
+  "437": {
+   "const": "TRAINER_RIVAL_TERRY_12",
+   "old_const": "TRAINER_RIVAL_TERRY_12",
+   "name": "TERRY",
+   "was": "TERRY      ",
+   "why": "removed stray trailing characters"
+  },
+  "439": {
+   "const": "TRAINER_RIVAL_TERRY_13",
+   "old_const": "TRAINER_RIVAL_TERRY_13",
+   "name": "TERRY",
+   "was": "TERRY      ",
+   "why": "removed stray trailing characters"
+  },
+  "440": {
+   "const": "TRAINER_RIVAL_TERRY_14",
+   "old_const": "TRAINER_RIVAL_TERRY_14",
+   "name": "TERRY",
+   "was": "TERRY      ",
+   "why": "removed stray trailing characters"
+  },
+  "441": {
+   "const": "TRAINER_SAGE_JIN",
+   "old_const": "TRAINER_SAGE_JIN",
+   "name": "JIN",
+   "was": "JIN!",
+   "why": "removed stray trailing characters"
+  },
+  "442": {
+   "const": "TRAINER_SAGE_NEAL",
+   "old_const": "TRAINER_SAGE_NEAL",
+   "name": "NEAL",
+   "was": "NEAL!",
+   "why": "removed stray trailing characters"
+  },
+  "443": {
+   "const": "TRAINER_MEDIUM_HOPE",
+   "old_const": "TRAINER_MEDIUM_HOPE",
+   "name": "HOPE",
+   "was": "HOPE       ",
+   "why": "removed stray trailing characters"
+  },
+  "444": {
+   "const": "TRAINER_MEDIUM_PAULA",
+   "old_const": "TRAINER_MEDIUM_PAULA",
+   "name": "PAULA",
+   "was": "PAULA      ",
+   "why": "removed stray trailing characters"
+  },
+  "445": {
+   "const": "TRAINER_SAGE_TROY",
+   "old_const": "TRAINER_SAGE_TROY",
+   "name": "TROY",
+   "was": "TROY!",
+   "why": "removed stray trailing characters"
+  },
+  "446": {
+   "const": "TRAINER_MEDIUM_JODY",
+   "old_const": "TRAINER_MEDIUM_JODY",
+   "name": "JODY",
+   "was": "JODY       ",
+   "why": "removed stray trailing characters"
+  },
+  "447": {
+   "const": "TRAINER_MEDIUM_TAMMY",
+   "old_const": "TRAINER_MEDIUM_TAMMY",
+   "name": "TAMMY",
+   "was": "TAMMY      ",
+   "why": "removed stray trailing characters"
+  },
+  "448": {
+   "const": "TRAINER_MEDIUM_RUTH",
+   "old_const": "TRAINER_MEDIUM_RUTH",
+   "name": "RUTH",
+   "was": "RUTH       ",
+   "why": "removed stray trailing characters"
+  },
+  "449": {
+   "const": "TRAINER_MEDIUM_KARINA",
+   "old_const": "TRAINER_MEDIUM_KARINA",
+   "name": "KARINA",
+   "was": "KARINA     ",
+   "why": "removed stray trailing characters"
+  },
+  "450": {
+   "const": "TRAINER_MEDIUM_JANAE",
+   "old_const": "TRAINER_MEDIUM_JANAE",
+   "name": "JANAE",
+   "was": "JANAE      ",
+   "why": "removed stray trailing characters"
+  },
+  "451": {
+   "const": "TRAINER_SAGE_CHOW",
+   "old_const": "TRAINER_SAGE_CHOW",
+   "name": "CHOW",
+   "was": "CHOW!",
+   "why": "removed stray trailing characters"
+  },
+  "452": {
+   "const": "TRAINER_MEDIUM_EMILIA",
+   "old_const": "TRAINER_MEDIUM_EMILIA",
+   "name": "EMILIA",
+   "was": "EMILIA     ",
+   "why": "removed stray trailing characters"
+  },
+  "453": {
+   "const": "TRAINER_MEDIUM_JENNIFER",
+   "old_const": "TRAINER_MEDIUM_JENNIFER",
+   "name": "JENNIFER",
+   "was": "JENNIFER   ",
+   "why": "removed stray trailing characters"
+  },
+  "462": {
+   "const": "TRAINER_MEDIUM_GRACE",
+   "old_const": "TRAINER_MEDIUM_GRACE",
+   "name": "GRACE",
+   "was": "GRACE!",
+   "why": "removed stray trailing characters"
+  },
+  "463": {
+   "const": "TRAINER_MEDIUM_STACY",
+   "old_const": "TRAINER_MEDIUM_STACY",
+   "name": "STACY",
+   "was": "STACY      ",
+   "why": "removed stray trailing characters"
+  },
+  "464": {
+   "const": "TRAINER_SAGE_NICO",
+   "old_const": "TRAINER_SAGE_NICO",
+   "name": "NICO",
+   "was": "NICO!",
+   "why": "removed stray trailing characters"
+  },
+  "465": {
+   "const": "TRAINER_FISHERMAN_CHRIS",
+   "old_const": "TRAINER_FISHERMAN_465",
+   "name": "CHRIS",
+   "was": "18TRAINER/1",
+   "why": "G/S phone contact #18, rematch tier 1"
+  },
+  "466": {
+   "const": "TRAINER_COOLTRAINER_KEVIN",
+   "old_const": "TRAINER_COOLTRAINER_KEVIN",
+   "name": "KEVIN",
+   "was": "KEVIN!",
+   "why": "removed stray trailing characters"
+  },
+  "467": {
+   "const": "TRAINER_PKMN_TRAINER_SUSIE",
+   "old_const": "TRAINER_PKMN_TRAINER_467",
+   "name": "SUSIE",
+   "was": "",
+   "why": "vanilla FireRed name of this trainer slot"
+  },
+  "468": {
+   "const": "TRAINER_PICNICKER_VALERIE",
+   "old_const": "TRAINER_PICNICKER_VALERIE",
+   "name": "VALERIE",
+   "was": "VALERIE    ",
+   "why": "removed stray trailing characters"
+  },
+  "469": {
+   "const": "TRAINER_HIKER_GABRIEL",
+   "old_const": "TRAINER_HIKER_GABRIEL",
+   "name": "GABRIEL",
+   "was": "GABRIEL!",
+   "why": "removed stray trailing characters"
+  },
+  "470": {
+   "const": "TRAINER_SAGE_VIRGIL",
+   "old_const": "TRAINER_SAGE_470",
+   "name": "VIRGIL",
+   "was": "-EDIT-",
+   "why": "vanilla FireRed name of this trainer slot"
+  },
+  "471": {
+   "const": "TRAINER_CAMPER_FLINT",
+   "old_const": "TRAINER_CAMPER_FLINT",
+   "name": "FLINT",
+   "was": "FLINT      ",
+   "why": "removed stray trailing characters"
+  },
+  "472": {
+   "const": "TRAINER_PICNICKER_TIFFANY",
+   "old_const": "TRAINER_PICNICKER_472",
+   "name": "TIFFANY",
+   "was": "19TRAINER/1",
+   "why": "G/S phone contact #19, rematch tier 1"
+  },
+  "473": {
+   "const": "TRAINER_CAMPER_SID",
+   "old_const": "TRAINER_CAMPER_SID",
+   "name": "SID",
+   "was": "SID!",
+   "why": "removed stray trailing characters"
+  },
+  "474": {
+   "const": "TRAINER_HIKER_TIM",
+   "old_const": "TRAINER_HIKER_TIM",
+   "name": "TIM",
+   "was": "TIM!",
+   "why": "removed stray trailing characters"
+  },
+  "475": {
+   "const": "TRAINER_ROCKET_DUO_JESS_AND_JAMIE_6",
+   "old_const": "TRAINER_ROCKET_DUO_475",
+   "name": "JESS&JAMIE",
+   "was": "",
+   "why": "Team Rocket duo party; same name as the hack's other ROCKET DUO trainer"
+  },
+  "476": {
+   "const": "TRAINER_PICNICKER_LEAH",
+   "old_const": "TRAINER_PICNICKER_LEAH",
+   "name": "LEAH",
+   "was": "LEAH       ",
+   "why": "removed stray trailing characters"
+  },
+  "477": {
+   "const": "TRAINER_CAMPER_JUSTIN",
+   "old_const": "TRAINER_CAMPER_JUSTIN",
+   "name": "JUSTIN",
+   "was": "JUSTIN     ",
+   "why": "removed stray trailing characters"
+  },
+  "478": {
+   "const": "TRAINER_LASS_MICHELLE",
+   "old_const": "TRAINER_LASS_MICHELLE",
+   "name": "MICHELLE",
+   "was": "MICHELLE!",
+   "why": "removed stray trailing characters"
+  },
+  "479": {
+   "const": "TRAINER_BEAUTY_JULIA",
+   "old_const": "TRAINER_BEAUTY_JULIA",
+   "name": "JULIA",
+   "was": "JULIA!",
+   "why": "removed stray trailing characters"
+  },
+  "480": {
+   "const": "TRAINER_SCHOOLBOY_JACK",
+   "old_const": "TRAINER_SCHOOLBOY_480",
+   "name": "JACK",
+   "was": "12TRAINER/1",
+   "why": "G/S phone contact #12, rematch tier 1"
+  },
+  "481": {
+   "const": "TRAINER_PICNICKER_CELIA",
+   "old_const": "TRAINER_PICNICKER_CELIA",
+   "name": "CELIA",
+   "was": "CELIA      ",
+   "why": "removed stray trailing characters"
+  },
+  "482": {
+   "const": "TRAINER_GENTLEMAN_BROOKS",
+   "old_const": "TRAINER_GENTLEMAN_BROOKS",
+   "name": "BROOKS",
+   "was": "BROOKS     ",
+   "why": "removed stray trailing characters"
+  },
+  "483": {
+   "const": "TRAINER_GENTLEMAN_LAMAR",
+   "old_const": "TRAINER_GENTLEMAN_LAMAR",
+   "name": "LAMAR",
+   "was": "LAMAR      ",
+   "why": "removed stray trailing characters"
+  },
+  "484": {
+   "const": "TRAINER_TWINS_AMY_AND_MAY",
+   "old_const": "TRAINER_TWINS_AMY_AND_MAY",
+   "name": "AMY & MAY",
+   "was": "AMY & MAY!",
+   "why": "removed stray trailing characters"
+  },
+  "485": {
+   "const": "TRAINER_LEADER_ANN_AND_ANNE",
+   "old_const": "TRAINER_LEADER_485",
+   "name": "ANN & ANNE",
+   "was": "-EDIT-",
+   "why": "exact G/S party match (Twins)"
+  },
+  "486": {
+   "const": "TRAINER_TWINS_ANN_AND_ANNE",
+   "old_const": "TRAINER_TWINS_ANN_AND_ANNE",
+   "name": "ANN & ANNE",
+   "was": "ANN & ANNE!",
+   "why": "removed stray trailing characters"
+  },
+  "487": {
+   "const": "TRAINER_TWINS_MEG_AND_PEG",
+   "old_const": "TRAINER_TWINS_MEG_AND_PEG",
+   "name": "MEG & PEG",
+   "was": "MEG & PEG!",
+   "why": "removed stray trailing characters"
+  },
+  "488": {
+   "const": "TRAINER_TWINS_JO_AND_ZOE",
+   "old_const": "TRAINER_TWINS_JO_AND_ZOE",
+   "name": "JO & ZOE",
+   "was": "JO & ZOE!",
+   "why": "removed stray trailing characters"
+  },
+  "489": {
+   "const": "TRAINER_YOUNG_COUPLE_LEA_AND_JED",
+   "old_const": "TRAINER_YOUNG_COUPLE_LEA_AND_JED",
+   "name": "LEA & JED",
+   "was": "LEA & JED  ",
+   "why": "removed stray trailing characters"
+  },
+  "490": {
+   "const": "TRAINER_SIS_AND_BRO_LIA_AND_LUC",
+   "old_const": "TRAINER_SIS_AND_BRO_LIA_AND_LUC",
+   "name": "LIA & LUC",
+   "was": "LIA & LUC  ",
+   "why": "removed stray trailing characters"
+  },
+  "491": {
+   "const": "TRAINER_SIS_AND_BRO_LIL_AND_IAN",
+   "old_const": "TRAINER_SIS_AND_BRO_LIL_AND_IAN",
+   "name": "LIL & IAN",
+   "was": "LIL & IAN  ",
+   "why": "removed stray trailing characters"
+  },
+  "498": {
+   "const": "TRAINER_YOUNGSTER_JOEY_4",
+   "old_const": "TRAINER_YOUNGSTER_498",
+   "name": "JOEY",
+   "was": " 1TRAINER/3",
+   "why": "G/S phone contact #1, rematch tier 3"
+  },
+  "499": {
+   "const": "TRAINER_YOUNGSTER_JOEY_5",
+   "old_const": "TRAINER_YOUNGSTER_499",
+   "name": "JOEY",
+   "was": " 1TRAINER/4",
+   "why": "G/S phone contact #1, rematch tier 4"
+  },
+  "500": {
+   "const": "TRAINER_BUG_CATCHER_ARNIE_2",
+   "old_const": "TRAINER_BUG_CATCHER_500",
+   "name": "ARNIE",
+   "was": " 9TRAINER/2",
+   "why": "G/S phone contact #9, rematch tier 2"
+  },
+  "501": {
+   "const": "TRAINER_LASS_DANA_2",
+   "old_const": "TRAINER_LASS_501",
+   "name": "DANA",
+   "was": "13TRAINER/2",
+   "why": "G/S phone contact #13, rematch tier 2"
+  },
+  "502": {
+   "const": "TRAINER_LASS_DANA_3",
+   "old_const": "TRAINER_LASS_502",
+   "name": "DANA",
+   "was": "13TRAINER/3",
+   "why": "G/S phone contact #13, rematch tier 3"
+  },
+  "503": {
+   "const": "TRAINER_BIKER_GLENN",
+   "old_const": "TRAINER_BIKER_GLENN",
+   "name": "GLENN",
+   "was": "GLENN!",
+   "why": "removed stray trailing characters"
+  },
+  "504": {
+   "const": "TRAINER_BIKER_CHARLES",
+   "old_const": "TRAINER_BIKER_CHARLES",
+   "name": "CHARLES",
+   "was": "CHARLES!",
+   "why": "removed stray trailing characters"
+  },
+  "505": {
+   "const": "TRAINER_BIRD_KEEPER_BORIS",
+   "old_const": "TRAINER_BIRD_KEEPER_BORIS",
+   "name": "BORIS",
+   "was": "BORIS!",
+   "why": "removed stray trailing characters"
+  },
+  "506": {
+   "const": "TRAINER_BUG_CATCHER_ARNIE_3",
+   "old_const": "TRAINER_BUG_CATCHER_506",
+   "name": "ARNIE",
+   "was": " 9TRAINER/3",
+   "why": "G/S phone contact #9, rematch tier 3"
+  },
+  "507": {
+   "const": "TRAINER_PICNICKER_ERIN_2",
+   "old_const": "TRAINER_PICNICKER_507",
+   "name": "ERIN",
+   "was": "16TRAINER/2",
+   "why": "G/S phone contact #16, rematch tier 2"
+  },
+  "508": {
+   "const": "TRAINER_PICNICKER_ERIN_3",
+   "old_const": "TRAINER_PICNICKER_508",
+   "name": "ERIN",
+   "was": "16TRAINER/3",
+   "why": "G/S phone contact #16, rematch tier 3"
+  },
+  "509": {
+   "const": "TRAINER_BUG_CATCHER_ARNIE_4",
+   "old_const": "TRAINER_BUG_CATCHER_509",
+   "name": "ARNIE",
+   "was": " 9TRAINER/4",
+   "why": "G/S phone contact #9, rematch tier 4"
+  },
+  "510": {
+   "const": "TRAINER_HIKER_FRANKLIN",
+   "old_const": "TRAINER_HIKER_FRANKLIN",
+   "name": "FRANKLIN",
+   "was": "FRANKLIN   ",
+   "why": "removed stray trailing characters"
+  },
+  "516": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_37",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_37",
+   "name": "GRUNT",
+   "was": "GRUNT      ",
+   "why": "removed stray trailing characters"
+  },
+  "517": {
+   "const": "TRAINER_PKMN_TRAINER_JACLYN",
+   "old_const": "TRAINER_PKMN_TRAINER_517",
+   "name": "JACLYN",
+   "was": "-EDIT-",
+   "why": "vanilla FireRed name of this trainer slot"
+  },
+  "518": {
+   "const": "TRAINER_COOLTRAINER_BETH",
+   "old_const": "TRAINER_COOLTRAINER_518",
+   "name": "BETH",
+   "was": "25TRAINER/1",
+   "why": "G/S phone contact #25, rematch tier 1"
+  },
+  "519": {
+   "const": "TRAINER_FISHERMAN_KYLE",
+   "old_const": "TRAINER_FISHERMAN_KYLE",
+   "name": "KYLE",
+   "was": "KYLE!",
+   "why": "removed stray trailing characters"
+  },
+  "520": {
+   "const": "TRAINER_FISHERMAN_BARNEY",
+   "old_const": "TRAINER_FISHERMAN_BARNEY",
+   "name": "BARNEY",
+   "was": "BARNEY!",
+   "why": "removed stray trailing characters"
+  },
+  "521": {
+   "const": "TRAINER_PKMN_RANGER_NICOLAS_3",
+   "old_const": "TRAINER_PKMN_RANGER_521",
+   "name": "NICOLAS",
+   "was": "-EDIT-",
+   "why": "vanilla FireRed name of this trainer slot"
+  },
+  "522": {
+   "const": "TRAINER_PKMN_RANGER_MADELINE_3",
+   "old_const": "TRAINER_PKMN_RANGER_522",
+   "name": "MADELINE",
+   "was": "-EDIT-",
+   "why": "vanilla FireRed name of this trainer slot"
+  },
+  "523": {
+   "const": "TRAINER_AROMA_LADY_NIKKI",
+   "old_const": "TRAINER_AROMA_LADY_NIKKI",
+   "name": "NIKKI",
+   "was": "NIKKI      ",
+   "why": "removed stray trailing characters"
+  },
+  "524": {
+   "const": "TRAINER_PSYCHIC_HERMAN",
+   "old_const": "TRAINER_PSYCHIC_HERMAN",
+   "name": "HERMAN",
+   "was": "HERMAN!",
+   "why": "removed stray trailing characters"
+  },
+  "525": {
+   "const": "TRAINER_LADY_JACKI",
+   "old_const": "TRAINER_LADY_JACKI",
+   "name": "JACKI",
+   "was": "JACKI      ",
+   "why": "removed stray trailing characters"
+  },
+  "526": {
+   "const": "TRAINER_PAINTER_DAISY",
+   "old_const": "TRAINER_PAINTER_DAISY",
+   "name": "DAISY",
+   "was": "DAISY      ",
+   "why": "removed stray trailing characters"
+  },
+  "527": {
+   "const": "TRAINER_BIKER_GOON_4",
+   "old_const": "TRAINER_BIKER_527",
+   "name": "GOON",
+   "was": "-EDIT-",
+   "why": "vanilla FireRed name of this trainer slot"
+  },
+  "528": {
+   "const": "TRAINER_BIKER_GOON",
+   "old_const": "TRAINER_BIKER_GOON",
+   "name": "GOON",
+   "was": "GOON       ",
+   "why": "removed stray trailing characters"
+  },
+  "529": {
+   "const": "TRAINER_BIKER_GOON_5",
+   "old_const": "TRAINER_BIKER_529",
+   "name": "GOON",
+   "was": "-EDIT-",
+   "why": "vanilla FireRed name of this trainer slot"
+  },
+  "531": {
+   "const": "TRAINER_BUG_CATCHER_ANTHONY",
+   "old_const": "TRAINER_BUG_CATCHER_ANTHONY",
+   "name": "ANTHONY",
+   "was": "ANTHONY    ",
+   "why": "removed stray trailing characters"
+  },
+  "532": {
+   "const": "TRAINER_BUG_CATCHER_ED",
+   "old_const": "TRAINER_BUG_CATCHER_ED",
+   "name": "ED",
+   "was": "ED!",
+   "why": "removed stray trailing characters"
+  },
+  "533": {
+   "const": "TRAINER_TWINS_ELI_AND_ANNE",
+   "old_const": "TRAINER_TWINS_ELI_AND_ANNE",
+   "name": "ELI & ANNE",
+   "was": "ELI & ANNE ",
+   "why": "removed stray trailing characters"
+  },
+  "534": {
+   "const": "TRAINER_LASS_LINDA",
+   "old_const": "TRAINER_LASS_LINDA",
+   "name": "LINDA",
+   "was": "LINDA!",
+   "why": "removed stray trailing characters"
+  },
+  "536": {
+   "const": "TRAINER_TEAM_ROCKET_EXECUTIVE_5",
+   "old_const": "TRAINER_TEAM_ROCKET_EXECUTIVE_5",
+   "name": "EXECUTIVE",
+   "was": "EXECUTIVE!",
+   "why": "removed stray trailing characters"
+  },
+  "537": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_38",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_38",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "539": {
+   "const": "TRAINER_POKEFAN_ALEX",
+   "old_const": "TRAINER_POKEFAN_ALEX",
+   "name": "ALEX",
+   "was": "ALEX!",
+   "why": "removed stray trailing characters"
+  },
+  "540": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_39",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_39",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "541": {
+   "const": "TRAINER_TEAM_ROCKET_EXECUTIVE_6",
+   "old_const": "TRAINER_TEAM_ROCKET_EXECUTIVE_6",
+   "name": "EXECUTIVE",
+   "was": "EXECUTIVE!",
+   "why": "removed stray trailing characters"
+  },
+  "542": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_40",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_40",
+   "name": "GRUNT",
+   "was": "GRUNT!",
+   "why": "removed stray trailing characters"
+  },
+  "543": {
+   "const": "TRAINER_TEAM_ROCKET_ADMIN_3",
+   "old_const": "TRAINER_TEAM_ROCKET_543",
+   "name": "ADMIN",
+   "was": "-EDIT-",
+   "why": "vanilla FireRed name of this trainer slot"
+  },
+  "544": {
+   "const": "TRAINER_LEADER_ADMIN",
+   "old_const": "TRAINER_LEADER_544",
+   "name": "ADMIN",
+   "was": "-EDIT-",
+   "why": "vanilla FireRed name of this trainer slot"
+  },
+  "545": {
+   "const": "TRAINER_SCIENTIST_GIDEON_2",
+   "old_const": "TRAINER_SCIENTIST_545",
+   "name": "GIDEON",
+   "was": "-EDIT-",
+   "why": "vanilla FireRed name of this trainer slot"
+  },
+  "546": {
+   "const": "TRAINER_POKEFAN_CARTER",
+   "old_const": "TRAINER_POKEFAN_CARTER",
+   "name": "CARTER",
+   "was": "CARTER!",
+   "why": "removed stray trailing characters"
+  },
+  "547": {
+   "const": "TRAINER_SWIMMER_F_MARIA",
+   "old_const": "TRAINER_SWIMMER_F_MARIA",
+   "name": "MARIA",
+   "was": "MARIA      ",
+   "why": "removed stray trailing characters"
+  },
+  "548": {
+   "const": "TRAINER_SCHOOLBOY_JOHNNY",
+   "old_const": "TRAINER_SCHOOLBOY_JOHNNY",
+   "name": "JOHNNY",
+   "was": "JOHNNY!",
+   "why": "removed stray trailing characters"
+  },
+  "549": {
+   "const": "TRAINER_BIRD_KEEPER_JOSE_3",
+   "old_const": "TRAINER_BIRD_KEEPER_549",
+   "name": "JOSE",
+   "was": "26TRAINER/1",
+   "why": "G/S phone contact #26, rematch tier 1"
+  },
+  "550": {
+   "const": "TRAINER_LASS_ALICE",
+   "old_const": "TRAINER_LASS_ALICE",
+   "name": "ALICE",
+   "was": "ALICE!",
+   "why": "removed stray trailing characters"
+  },
+  "551": {
+   "const": "TRAINER_FISHERMAN_TOMMY",
+   "old_const": "TRAINER_FISHERMAN_TOMMY",
+   "name": "TOMMY",
+   "was": "TOMMY      ",
+   "why": "removed stray trailing characters"
+  },
+  "552": {
+   "const": "TRAINER_CRUSH_GIRL_TANYA",
+   "old_const": "TRAINER_CRUSH_GIRL_TANYA",
+   "name": "TANYA",
+   "was": "TANYA      ",
+   "why": "removed stray trailing characters"
+  },
+  "553": {
+   "const": "TRAINER_BLACK_BELT_SHEA",
+   "old_const": "TRAINER_BLACK_BELT_SHEA",
+   "name": "SHEA",
+   "was": "SHEA       ",
+   "why": "removed stray trailing characters"
+  },
+  "554": {
+   "const": "TRAINER_BLACK_BELT_HUGH",
+   "old_const": "TRAINER_BLACK_BELT_HUGH",
+   "name": "HUGH",
+   "was": "HUGH       ",
+   "why": "removed stray trailing characters"
+  },
+  "555": {
+   "const": "TRAINER_FISHERMAN_PHIL",
+   "old_const": "TRAINER_FISHERMAN_PHIL",
+   "name": "PHIL",
+   "was": "PHIL!",
+   "why": "removed stray trailing characters"
+  },
+  "556": {
+   "const": "TRAINER_PICNICKER_CLAIRE",
+   "old_const": "TRAINER_PICNICKER_CLAIRE",
+   "name": "CLAIRE",
+   "was": "CLAIRE     ",
+   "why": "removed stray trailing characters"
+  },
+  "557": {
+   "const": "TRAINER_CRUSH_KIN_MIK_AND_KIA",
+   "old_const": "TRAINER_CRUSH_KIN_MIK_AND_KIA",
+   "name": "MIK & KIA",
+   "was": "MIK & KIA  ",
+   "why": "removed stray trailing characters"
+  },
+  "558": {
+   "const": "TRAINER_LASS_REMI",
+   "old_const": "TRAINER_LASS_REMI",
+   "name": "REMI",
+   "was": "REMI!",
+   "why": "removed stray trailing characters"
+  },
+  "559": {
+   "const": "TRAINER_TUBER_ALEXIS",
+   "old_const": "TRAINER_TUBER_ALEXIS",
+   "name": "ALEXIS",
+   "was": "ALEXIS     ",
+   "why": "removed stray trailing characters"
+  },
+  "560": {
+   "const": "TRAINER_TWINS_JOY_AND_MEG",
+   "old_const": "TRAINER_TWINS_JOY_AND_MEG",
+   "name": "JOY & MEG",
+   "was": "JOY & MEG  ",
+   "why": "removed stray trailing characters"
+  },
+  "561": {
+   "const": "TRAINER_SWIMMER_F_TISHA",
+   "old_const": "TRAINER_SWIMMER_F_TISHA",
+   "name": "TISHA",
+   "was": "TISHA      ",
+   "why": "removed stray trailing characters"
+  },
+  "562": {
+   "const": "TRAINER_PAINTER_CELINA",
+   "old_const": "TRAINER_PAINTER_CELINA",
+   "name": "CELINA",
+   "was": "CELINA     ",
+   "why": "removed stray trailing characters"
+  },
+  "563": {
+   "const": "TRAINER_PAINTER_RAYNA",
+   "old_const": "TRAINER_PAINTER_RAYNA",
+   "name": "RAYNA",
+   "was": "RAYNA      ",
+   "why": "removed stray trailing characters"
+  },
+  "564": {
+   "const": "TRAINER_COOLTRAINER_REZO",
+   "old_const": "TRAINER_COOLTRAINER_REZO",
+   "name": "REZO",
+   "was": "REZO!",
+   "why": "removed stray trailing characters"
+  },
+  "565": {
+   "const": "TRAINER_YOUNGSTER_DESTIN",
+   "old_const": "TRAINER_YOUNGSTER_DESTIN",
+   "name": "DESTIN",
+   "was": "DESTIN     ",
+   "why": "removed stray trailing characters"
+  },
+  "566": {
+   "const": "TRAINER_BLACK_BELT_RANDY",
+   "old_const": "TRAINER_BLACK_BELT_RANDY",
+   "name": "RANDY",
+   "was": "RANDY!",
+   "why": "removed stray trailing characters"
+  },
+  "567": {
+   "const": "TRAINER_COOLTRAINER_REIKA",
+   "old_const": "TRAINER_COOLTRAINER_REIKA",
+   "name": "REIKA",
+   "was": "REIKA!",
+   "why": "removed stray trailing characters"
+  },
+  "568": {
+   "const": "TRAINER_TEAM_ROCKET_GRUNT_41",
+   "old_const": "TRAINER_TEAM_ROCKET_GRUNT_41",
+   "name": "GRUNT",
+   "was": "GRUNT      ",
+   "why": "removed stray trailing characters"
+  },
+  "569": {
+   "const": "TRAINER_BIKER_LARK",
+   "old_const": "TRAINER_BIKER_LARK",
+   "name": "LARK",
+   "was": "LARK!",
+   "why": "removed stray trailing characters"
+  },
+  "570": {
+   "const": "TRAINER_BIRD_KEEPER_MILO",
+   "old_const": "TRAINER_BIRD_KEEPER_MILO",
+   "name": "MILO",
+   "was": "MILO       ",
+   "why": "removed stray trailing characters"
+  },
+  "571": {
+   "const": "TRAINER_BIRD_KEEPER_CHAZ",
+   "old_const": "TRAINER_BIRD_KEEPER_CHAZ",
+   "name": "CHAZ",
+   "was": "CHAZ       ",
+   "why": "removed stray trailing characters"
+  },
+  "572": {
+   "const": "TRAINER_BIRD_KEEPER_HAROLD",
+   "old_const": "TRAINER_BIRD_KEEPER_HAROLD",
+   "name": "HAROLD",
+   "was": "HAROLD     ",
+   "why": "removed stray trailing characters"
+  },
+  "573": {
+   "const": "TRAINER_FISHERMAN_TYLOR",
+   "old_const": "TRAINER_FISHERMAN_TYLOR",
+   "name": "TYLOR",
+   "was": "TYLOR      ",
+   "why": "removed stray trailing characters"
+  },
+  "574": {
+   "const": "TRAINER_SWIMMER_M_MYMO",
+   "old_const": "TRAINER_SWIMMER_M_MYMO",
+   "name": "MYMO",
+   "was": "MYMO       ",
+   "why": "removed stray trailing characters"
+  },
+  "575": {
+   "const": "TRAINER_SWIMMER_F_NICOLE",
+   "old_const": "TRAINER_SWIMMER_F_NICOLE",
+   "name": "NICOLE",
+   "was": "NICOLE     ",
+   "why": "removed stray trailing characters"
+  },
+  "576": {
+   "const": "TRAINER_SIS_AND_BRO_AVA_AND_GEB",
+   "old_const": "TRAINER_SIS_AND_BRO_AVA_AND_GEB",
+   "name": "AVA & GEB",
+   "was": "AVA & GEB  ",
+   "why": "removed stray trailing characters"
+  },
+  "577": {
+   "const": "TRAINER_AROMA_LADY_ROSE",
+   "old_const": "TRAINER_AROMA_LADY_ROSE",
+   "name": "ROSE",
+   "was": "ROSE       ",
+   "why": "removed stray trailing characters"
+  },
+  "578": {
+   "const": "TRAINER_SWIMMER_M_SAMIR",
+   "old_const": "TRAINER_SWIMMER_M_SAMIR",
+   "name": "SAMIR",
+   "was": "SAMIR      ",
+   "why": "removed stray trailing characters"
+  },
+  "579": {
+   "const": "TRAINER_SWIMMER_F_DENISE_2",
+   "old_const": "TRAINER_SWIMMER_F_DENISE_2",
+   "name": "DENISE",
+   "was": "DENISE     ",
+   "why": "removed stray trailing characters"
+  },
+  "580": {
+   "const": "TRAINER_TWINS_MIU_AND_MIA",
+   "old_const": "TRAINER_TWINS_MIU_AND_MIA",
+   "name": "MIU & MIA",
+   "was": "MIU & MIA  ",
+   "why": "removed stray trailing characters"
+  },
+  "581": {
+   "const": "TRAINER_HIKER_EARL",
+   "old_const": "TRAINER_HIKER_EARL",
+   "name": "EARL",
+   "was": "EARL       ",
+   "why": "removed stray trailing characters"
+  },
+  "582": {
+   "const": "TRAINER_RUIN_MANIAC_FOSTER",
+   "old_const": "TRAINER_RUIN_MANIAC_FOSTER",
+   "name": "FOSTER",
+   "was": "FOSTER     ",
+   "why": "removed stray trailing characters"
+  },
+  "583": {
+   "const": "TRAINER_RUIN_MANIAC_LARRY",
+   "old_const": "TRAINER_RUIN_MANIAC_LARRY",
+   "name": "LARRY",
+   "was": "LARRY      ",
+   "why": "removed stray trailing characters"
+  },
+  "584": {
+   "const": "TRAINER_HIKER_DARYL",
+   "old_const": "TRAINER_HIKER_DARYL",
+   "name": "DARYL",
+   "was": "DARYL      ",
+   "why": "removed stray trailing characters"
+  },
+  "585": {
+   "const": "TRAINER_POKEMANIAC_HECTOR",
+   "old_const": "TRAINER_POKEMANIAC_HECTOR",
+   "name": "HECTOR",
+   "was": "HECTOR     ",
+   "why": "removed stray trailing characters"
+  },
+  "586": {
+   "const": "TRAINER_PSYCHIC_DARIO",
+   "old_const": "TRAINER_PSYCHIC_DARIO",
+   "name": "DARIO",
+   "was": "DARIO      ",
+   "why": "removed stray trailing characters"
+  },
+  "587": {
+   "const": "TRAINER_PSYCHIC_RODETTE",
+   "old_const": "TRAINER_PSYCHIC_RODETTE",
+   "name": "RODETTE",
+   "was": "RODETTE    ",
+   "why": "removed stray trailing characters"
+  },
+  "588": {
+   "const": "TRAINER_AROMA_LADY_MIAH",
+   "old_const": "TRAINER_AROMA_LADY_MIAH",
+   "name": "MIAH",
+   "was": "MIAH       ",
+   "why": "removed stray trailing characters"
+  },
+  "589": {
+   "const": "TRAINER_YOUNG_COUPLE_EVE_AND_JON",
+   "old_const": "TRAINER_YOUNG_COUPLE_EVE_AND_JON",
+   "name": "EVE & JON",
+   "was": "EVE & JON  ",
+   "why": "removed stray trailing characters"
+  },
+  "590": {
+   "const": "TRAINER_ROCKET_DUO_MASON",
+   "old_const": "TRAINER_ROCKET_DUO_590",
+   "name": "MASON",
+   "was": "-EDIT-",
+   "why": "vanilla FireRed name of this trainer slot"
+  },
+  "591": {
+   "const": "TRAINER_CRUSH_GIRL_CYNDY",
+   "old_const": "TRAINER_CRUSH_GIRL_CYNDY",
+   "name": "CYNDY",
+   "was": "CYNDY      ",
+   "why": "removed stray trailing characters"
+  },
+  "592": {
+   "const": "TRAINER_CRUSH_GIRL_JOCELYN",
+   "old_const": "TRAINER_CRUSH_GIRL_JOCELYN",
+   "name": "JOCELYN",
+   "was": "JOCELYN    ",
+   "why": "removed stray trailing characters"
+  },
+  "593": {
+   "const": "TRAINER_TAMER_EVAN",
+   "old_const": "TRAINER_TAMER_EVAN",
+   "name": "EVAN",
+   "was": "EVAN       ",
+   "why": "removed stray trailing characters"
+  },
+  "594": {
+   "const": "TRAINER_POKEMANIAC_MARK",
+   "old_const": "TRAINER_POKEMANIAC_MARK",
+   "name": "MARK",
+   "was": "MARK       ",
+   "why": "removed stray trailing characters"
+  },
+  "595": {
+   "const": "TRAINER_PKMN_RANGER_LOGAN_2",
+   "old_const": "TRAINER_PKMN_RANGER_595",
+   "name": "LOGAN",
+   "was": "-EDIT-",
+   "why": "vanilla FireRed name of this trainer slot"
+  },
+  "597": {
+   "const": "TRAINER_PKMN_RANGER_BETH",
+   "old_const": "TRAINER_PKMN_RANGER_BETH",
+   "name": "BETH",
+   "was": "BETH       ",
+   "why": "removed stray trailing characters"
+  },
+  "602": {
+   "const": "TRAINER_HIKER_PARRY_4",
+   "old_const": "TRAINER_HIKER_602",
+   "name": "PARRY",
+   "was": "24TRAINER/3",
+   "why": "G/S phone contact #24, rematch tier 3"
+  },
+  "603": {
+   "const": "TRAINER_HIKER_PARRY_5",
+   "old_const": "TRAINER_HIKER_603",
+   "name": "PARRY",
+   "was": "-EDIT-",
+   "why": "G/S Hiker Parry (Route 45 phone contact) party"
+  },
+  "605": {
+   "const": "TRAINER_BLACK_BELT_KENJI_2",
+   "old_const": "TRAINER_BLACK_BELT_605",
+   "name": "KENJI",
+   "was": "23TRAINER/5",
+   "why": "G/S phone contact #23, rematch tier 5"
+  },
+  "606": {
+   "const": "TRAINER_BLACK_BELT_KENJI_3",
+   "old_const": "TRAINER_BLACK_BELT_EDITG",
+   "name": "KENJI",
+   "was": "-EDITG-",
+   "why": "G/S Black Belt Kenji rematch party"
+  },
+  "607": {
+   "const": "TRAINER_BLACK_BELT_KENJI_4",
+   "old_const": "TRAINER_BLACK_BELT_607",
+   "name": "KENJI",
+   "was": "23TRAINER/4",
+   "why": "G/S phone contact #23, rematch tier 4"
+  },
+  "608": {
+   "const": "TRAINER_BLACK_BELT_KENJI_5",
+   "old_const": "TRAINER_BLACK_BELT_608",
+   "name": "KENJI",
+   "was": "23TRAINER/3",
+   "why": "G/S phone contact #23, rematch tier 3"
+  },
+  "609": {
+   "const": "TRAINER_BLACK_BELT_KENJI_6",
+   "old_const": "TRAINER_BLACK_BELT_609",
+   "name": "KENJI",
+   "was": "23TRAINER/2",
+   "why": "G/S phone contact #23, rematch tier 2"
+  },
+  "610": {
+   "const": "TRAINER_BIRD_KEEPER_VANCE_2",
+   "old_const": "TRAINER_BIRD_KEEPER_610",
+   "name": "VANCE",
+   "was": "22TRAINER/5",
+   "why": "G/S phone contact #22, rematch tier 5"
+  },
+  "611": {
+   "const": "TRAINER_BIRD_KEEPER_VANCE_3",
+   "old_const": "TRAINER_BIRD_KEEPER_611",
+   "name": "VANCE",
+   "was": "22TRAINER/4",
+   "why": "G/S phone contact #22, rematch tier 4"
+  },
+  "612": {
+   "const": "TRAINER_FISHERMAN_WILTON_2",
+   "old_const": "TRAINER_FISHERMAN_612",
+   "name": "WILTON",
+   "was": "21TRAINER/5",
+   "why": "G/S phone contact #21, rematch tier 5"
+  },
+  "613": {
+   "const": "TRAINER_FISHERMAN_WILTON_3",
+   "old_const": "TRAINER_FISHERMAN_613",
+   "name": "WILTON",
+   "was": "21TRAINER/4",
+   "why": "G/S phone contact #21, rematch tier 4"
+  },
+  "614": {
+   "const": "TRAINER_FISHERMAN_WILTON_4",
+   "old_const": "TRAINER_FISHERMAN_614",
+   "name": "WILTON",
+   "was": "21TRAINER/3",
+   "why": "G/S phone contact #21, rematch tier 3"
+  },
+  "615": {
+   "const": "TRAINER_POKEMANIAC_BRENT_2",
+   "old_const": "TRAINER_POKEMANIAC_615",
+   "name": "BRENT",
+   "was": "20TRAINER/5",
+   "why": "G/S phone contact #20, rematch tier 5"
+  },
+  "616": {
+   "const": "TRAINER_POKEMANIAC_BRENT_3",
+   "old_const": "TRAINER_POKEMANIAC_616",
+   "name": "BRENT",
+   "was": "20TRAINER/4",
+   "why": "G/S phone contact #20, rematch tier 4"
+  },
+  "617": {
+   "const": "TRAINER_POKEMANIAC_BRENT_4",
+   "old_const": "TRAINER_POKEMANIAC_617",
+   "name": "BRENT",
+   "was": "20TRAINER/3",
+   "why": "G/S phone contact #20, rematch tier 3"
+  },
+  "618": {
+   "const": "TRAINER_PICNICKER_TIFFANY_2",
+   "old_const": "TRAINER_PICNICKER_618",
+   "name": "TIFFANY",
+   "was": "19TRAINER/5",
+   "why": "G/S phone contact #19, rematch tier 5"
+  },
+  "619": {
+   "const": "TRAINER_PICNICKER_TIFFANY_3",
+   "old_const": "TRAINER_PICNICKER_619",
+   "name": "TIFFANY",
+   "was": "19TRAINER/4",
+   "why": "G/S phone contact #19, rematch tier 4"
+  },
+  "620": {
+   "const": "TRAINER_FISHERMAN_CHRIS_2",
+   "old_const": "TRAINER_FISHERMAN_620",
+   "name": "CHRIS",
+   "was": "18TRAINER/5",
+   "why": "G/S phone contact #18, rematch tier 5"
+  },
+  "621": {
+   "const": "TRAINER_PICNICKER_LIZ_2",
+   "old_const": "TRAINER_PICNICKER_621",
+   "name": "LIZ",
+   "was": " 4TRAINER/2",
+   "why": "G/S phone contact #4, rematch tier 2"
+  },
+  "622": {
+   "const": "TRAINER_FISHERMAN_CHRIS_3",
+   "old_const": "TRAINER_FISHERMAN_622",
+   "name": "CHRIS",
+   "was": "18TRAINER/4",
+   "why": "G/S phone contact #18, rematch tier 4"
+  },
+  "623": {
+   "const": "TRAINER_FISHERMAN_CHRIS_4",
+   "old_const": "TRAINER_FISHERMAN_623",
+   "name": "CHRIS",
+   "was": "18TRAINER/3",
+   "why": "G/S phone contact #18, rematch tier 3"
+  },
+  "624": {
+   "const": "TRAINER_POKEFAN_BEVERLY_2",
+   "old_const": "TRAINER_POKEFAN_624",
+   "name": "BEVERLY",
+   "was": "11TRAINER/2",
+   "why": "G/S phone contact #11, rematch tier 2"
+  },
+  "625": {
+   "const": "TRAINER_POKEFAN_BEVERLY_3",
+   "old_const": "TRAINER_POKEFAN_625",
+   "name": "BEVERLY",
+   "was": "11TRAINER/3",
+   "why": "G/S phone contact #11, rematch tier 3"
+  },
+  "626": {
+   "const": "TRAINER_POKEFAN_BEVERLY_4",
+   "old_const": "TRAINER_POKEFAN_626",
+   "name": "BEVERLY",
+   "was": "11TRAINER/4",
+   "why": "G/S phone contact #11, rematch tier 4"
+  },
+  "627": {
+   "const": "TRAINER_FISHERMAN_RALPH_2",
+   "old_const": "TRAINER_FISHERMAN_627",
+   "name": "RALPH",
+   "was": " 3TRAINER/2",
+   "why": "G/S phone contact #3, rematch tier 2"
+  },
+  "628": {
+   "const": "TRAINER_FISHERMAN_RALPH_3",
+   "old_const": "TRAINER_FISHERMAN_628",
+   "name": "RALPH",
+   "was": " 3TRAINER/3",
+   "why": "G/S phone contact #3, rematch tier 3"
+  },
+  "629": {
+   "const": "TRAINER_FISHERMAN_RALPH_4",
+   "old_const": "TRAINER_FISHERMAN_629",
+   "name": "RALPH",
+   "was": " 3TRAINER/4",
+   "why": "G/S phone contact #3, rematch tier 4"
+  },
+  "630": {
+   "const": "TRAINER_PICNICKER_GINA_2",
+   "old_const": "TRAINER_PICNICKER_630",
+   "name": "GINA",
+   "was": " 7TRAINER/2",
+   "why": "G/S phone contact #7, rematch tier 2"
+  },
+  "631": {
+   "const": "TRAINER_PICNICKER_GINA_3",
+   "old_const": "TRAINER_PICNICKER_631",
+   "name": "GINA",
+   "was": " 7TRAINER/3",
+   "why": "G/S phone contact #7, rematch tier 3"
+  },
+  "632": {
+   "const": "TRAINER_PICNICKER_GINA_4",
+   "old_const": "TRAINER_PICNICKER_632",
+   "name": "GINA",
+   "was": " 7TRAINER/4",
+   "why": "G/S phone contact #7, rematch tier 4"
+  },
+  "633": {
+   "const": "TRAINER_BIRD_KEEPER_VANCE_4",
+   "old_const": "TRAINER_BIRD_KEEPER_633",
+   "name": "VANCE",
+   "was": "22TRAINER/2",
+   "why": "G/S phone contact #22, rematch tier 2"
+  },
+  "634": {
+   "const": "TRAINER_BIRD_KEEPER_VANCE_5",
+   "old_const": "TRAINER_BIRD_KEEPER_634",
+   "name": "VANCE",
+   "was": "22TRAINER/3",
+   "why": "G/S phone contact #22, rematch tier 3"
+  },
+  "635": {
+   "const": "TRAINER_COOLTRAINER_REENA_5",
+   "old_const": "TRAINER_COOLTRAINER_635",
+   "name": "REENA",
+   "was": "28TRAINER/2",
+   "why": "G/S phone contact #28, rematch tier 2"
+  },
+  "636": {
+   "const": "TRAINER_SAILOR_HUEY_3",
+   "old_const": "TRAINER_SAILOR_636",
+   "name": "HUEY",
+   "was": "17TRAINER/2",
+   "why": "G/S phone contact #17, rematch tier 2"
+  },
+  "637": {
+   "const": "TRAINER_SAILOR_HUEY_4",
+   "old_const": "TRAINER_SAILOR_637",
+   "name": "HUEY",
+   "was": "17TRAINER/5",
+   "why": "G/S phone contact #17, rematch tier 5"
+  },
+  "638": {
+   "const": "TRAINER_SAILOR_HUEY_5",
+   "old_const": "TRAINER_SAILOR_638",
+   "name": "HUEY",
+   "was": "17TRAINER/4",
+   "why": "G/S phone contact #17, rematch tier 4"
+  },
+  "639": {
+   "const": "TRAINER_SAILOR_HUEY_6",
+   "old_const": "TRAINER_SAILOR_639",
+   "name": "HUEY",
+   "was": "17TRAINER/3",
+   "why": "G/S phone contact #17, rematch tier 3"
+  },
+  "640": {
+   "const": "TRAINER_POKEFAN_DEREK_2",
+   "old_const": "TRAINER_POKEFAN_640",
+   "name": "DEREK",
+   "was": "15TRAINER/2",
+   "why": "G/S phone contact #15, rematch tier 2"
+  },
+  "641": {
+   "const": "TRAINER_POKEFAN_DEREK_3",
+   "old_const": "TRAINER_POKEFAN_641",
+   "name": "DEREK",
+   "was": "15TRAINER/3",
+   "why": "G/S phone contact #15, rematch tier 3"
+  },
+  "642": {
+   "const": "TRAINER_POKEFAN_DEREK_4",
+   "old_const": "TRAINER_POKEFAN_642",
+   "name": "DEREK",
+   "was": "15TRAINER/4",
+   "why": "G/S phone contact #15, rematch tier 4"
+  },
+  "643": {
+   "const": "TRAINER_FISHERMAN_CHRIS_5",
+   "old_const": "TRAINER_FISHERMAN_643",
+   "name": "CHRIS",
+   "was": "18TRAINER/2",
+   "why": "G/S phone contact #18, rematch tier 2"
+  },
+  "644": {
+   "const": "TRAINER_PICNICKER_ERIN_4",
+   "old_const": "TRAINER_PICNICKER_644",
+   "name": "ERIN",
+   "was": "16TRAINER/5",
+   "why": "G/S phone contact #16, rematch tier 5"
+  },
+  "645": {
+   "const": "TRAINER_HIKER_ANTHONY_2",
+   "old_const": "TRAINER_HIKER_645",
+   "name": "ANTHONY",
+   "was": " 5TRAINER/2",
+   "why": "G/S phone contact #5, rematch tier 2"
+  },
+  "646": {
+   "const": "TRAINER_PICNICKER_ERIN_5",
+   "old_const": "TRAINER_PICNICKER_646",
+   "name": "ERIN",
+   "was": "16TRAINER/4",
+   "why": "G/S phone contact #16, rematch tier 4"
+  },
+  "647": {
+   "const": "TRAINER_POKEMANIAC_BRENT_5",
+   "old_const": "TRAINER_POKEMANIAC_647",
+   "name": "BRENT",
+   "was": "20TRAINER/2",
+   "why": "G/S phone contact #20, rematch tier 2"
+  },
+  "648": {
+   "const": "TRAINER_POKEFAN_DEREK_5",
+   "old_const": "TRAINER_POKEFAN_648",
+   "name": "DEREK",
+   "was": "15TRAINER/5",
+   "why": "G/S phone contact #15, rematch tier 5"
+  },
+  "649": {
+   "const": "TRAINER_SCHOOLBOY_CHAD_2",
+   "old_const": "TRAINER_SCHOOLBOY_649",
+   "name": "CHAD",
+   "was": "14TRAINER/5",
+   "why": "G/S phone contact #14, rematch tier 5"
+  },
+  "650": {
+   "const": "TRAINER_SCHOOLBOY_CHAD_3",
+   "old_const": "TRAINER_SCHOOLBOY_650",
+   "name": "CHAD",
+   "was": "14TRAINER/4",
+   "why": "G/S phone contact #14, rematch tier 4"
+  },
+  "651": {
+   "const": "TRAINER_SCHOOLBOY_CHAD_4",
+   "old_const": "TRAINER_SCHOOLBOY_651",
+   "name": "CHAD",
+   "was": "14TRAINER/3",
+   "why": "G/S phone contact #14, rematch tier 3"
+  },
+  "652": {
+   "const": "TRAINER_LASS_DANA_4",
+   "old_const": "TRAINER_LASS_652",
+   "name": "DANA",
+   "was": "13TRAINER/5",
+   "why": "G/S phone contact #13, rematch tier 5"
+  },
+  "653": {
+   "const": "TRAINER_JUGGLER_IRWIN_2",
+   "old_const": "TRAINER_JUGGLER_653",
+   "name": "IRWIN",
+   "was": " 8TRAINER/2",
+   "why": "G/S phone contact #8, rematch tier 2"
+  },
+  "654": {
+   "const": "TRAINER_SCHOOLBOY_CHAD_5",
+   "old_const": "TRAINER_SCHOOLBOY_654",
+   "name": "CHAD",
+   "was": "14TRAINER/2",
+   "why": "G/S phone contact #14, rematch tier 2"
+  },
+  "655": {
+   "const": "TRAINER_LASS_DANA_5",
+   "old_const": "TRAINER_LASS_655",
+   "name": "DANA",
+   "was": "13TRAINER/4",
+   "why": "G/S phone contact #13, rematch tier 4"
+  },
+  "656": {
+   "const": "TRAINER_COOLTRAINER_GAVEN_4",
+   "old_const": "TRAINER_COOLTRAINER_656",
+   "name": "GAVEN",
+   "was": "27TRAINER/2",
+   "why": "G/S phone contact #27, rematch tier 2"
+  },
+  "657": {
+   "const": "TRAINER_COOLTRAINER_GAVEN_5",
+   "old_const": "TRAINER_COOLTRAINER_657",
+   "name": "GAVEN",
+   "was": "27TRAINER/3",
+   "why": "G/S phone contact #27, rematch tier 3"
+  },
+  "658": {
+   "const": "TRAINER_SCHOOLBOY_JACK_2",
+   "old_const": "TRAINER_SCHOOLBOY_658",
+   "name": "JACK",
+   "was": "12TRAINER/5",
+   "why": "G/S phone contact #12, rematch tier 5"
+  },
+  "659": {
+   "const": "TRAINER_POKEFAN_BEVERLY_5",
+   "old_const": "TRAINER_POKEFAN_659",
+   "name": "BEVERLY",
+   "was": "11TRAINER/5",
+   "why": "G/S phone contact #11, rematch tier 5"
+  },
+  "660": {
+   "const": "TRAINER_SCHOOLBOY_ALAN_2",
+   "old_const": "TRAINER_SCHOOLBOY_660",
+   "name": "ALAN",
+   "was": "10TRAINER/5",
+   "why": "G/S phone contact #10, rematch tier 5"
+  },
+  "661": {
+   "const": "TRAINER_SCHOOLBOY_ALAN_3",
+   "old_const": "TRAINER_SCHOOLBOY_661",
+   "name": "ALAN",
+   "was": "10TRAINER/4",
+   "why": "G/S phone contact #10, rematch tier 4"
+  },
+  "662": {
+   "const": "TRAINER_SCHOOLBOY_ALAN_4",
+   "old_const": "TRAINER_SCHOOLBOY_662",
+   "name": "ALAN",
+   "was": "10TRAINER/3",
+   "why": "G/S phone contact #10, rematch tier 3"
+  },
+  "663": {
+   "const": "TRAINER_BUG_CATCHER_ARNIE_5",
+   "old_const": "TRAINER_BUG_CATCHER_663",
+   "name": "ARNIE",
+   "was": " 9TRAINER/5",
+   "why": "G/S phone contact #9, rematch tier 5"
+  },
+  "664": {
+   "const": "TRAINER_JUGGLER_IRWIN_3",
+   "old_const": "TRAINER_JUGGLER_664",
+   "name": "IRWIN",
+   "was": " 8TRAINER/5",
+   "why": "G/S phone contact #8, rematch tier 5"
+  },
+  "665": {
+   "const": "TRAINER_JUGGLER_IRWIN_4",
+   "old_const": "TRAINER_JUGGLER_665",
+   "name": "IRWIN",
+   "was": " 8TRAINER/4",
+   "why": "G/S phone contact #8, rematch tier 4"
+  },
+  "666": {
+   "const": "TRAINER_JUGGLER_IRWIN_5",
+   "old_const": "TRAINER_JUGGLER_666",
+   "name": "IRWIN",
+   "was": " 8TRAINER/3",
+   "why": "G/S phone contact #8, rematch tier 3"
+  },
+  "667": {
+   "const": "TRAINER_SCHOOLBOY_ALAN_5",
+   "old_const": "TRAINER_SCHOOLBOY_667",
+   "name": "ALAN",
+   "was": "10TRAINER/2",
+   "why": "G/S phone contact #10, rematch tier 2"
+  },
+  "668": {
+   "const": "TRAINER_PICNICKER_GINA_5",
+   "old_const": "TRAINER_PICNICKER_668",
+   "name": "GINA",
+   "was": " 7TRAINER/5",
+   "why": "G/S phone contact #7, rematch tier 5"
+  },
+  "669": {
+   "const": "TRAINER_SCHOOLBOY_JACK_3",
+   "old_const": "TRAINER_SCHOOLBOY_669",
+   "name": "JACK",
+   "was": "12TRAINER/2",
+   "why": "G/S phone contact #12, rematch tier 2"
+  },
+  "670": {
+   "const": "TRAINER_SCHOOLBOY_JACK_4",
+   "old_const": "TRAINER_SCHOOLBOY_670",
+   "name": "JACK",
+   "was": "12TRAINER/3",
+   "why": "G/S phone contact #12, rematch tier 3"
+  },
+  "671": {
+   "const": "TRAINER_SCHOOLBOY_JACK_5",
+   "old_const": "TRAINER_SCHOOLBOY_671",
+   "name": "JACK",
+   "was": "12TRAINER/4",
+   "why": "G/S phone contact #12, rematch tier 4"
+  },
+  "672": {
+   "const": "TRAINER_CAMPER_TODD_2",
+   "old_const": "TRAINER_CAMPER_672",
+   "name": "TODD",
+   "was": " 6TRAINER/5",
+   "why": "G/S phone contact #6, rematch tier 5"
+  },
+  "673": {
+   "const": "TRAINER_CAMPER_TODD_3",
+   "old_const": "TRAINER_CAMPER_673",
+   "name": "TODD",
+   "was": " 6TRAINER/4",
+   "why": "G/S phone contact #6, rematch tier 4"
+  },
+  "674": {
+   "const": "TRAINER_CAMPER_TODD_4",
+   "old_const": "TRAINER_CAMPER_674",
+   "name": "TODD",
+   "was": " 6TRAINER/3",
+   "why": "G/S phone contact #6, rematch tier 3"
+  },
+  "675": {
+   "const": "TRAINER_CAMPER_TODD_5",
+   "old_const": "TRAINER_CAMPER_675",
+   "name": "TODD",
+   "was": " 6TRAINER/2",
+   "why": "G/S phone contact #6, rematch tier 2"
+  },
+  "676": {
+   "const": "TRAINER_HIKER_ANTHONY_3",
+   "old_const": "TRAINER_HIKER_676",
+   "name": "ANTHONY",
+   "was": " 5TRAINER/5",
+   "why": "G/S phone contact #5, rematch tier 5"
+  },
+  "677": {
+   "const": "TRAINER_HIKER_ANTHONY_4",
+   "old_const": "TRAINER_HIKER_677",
+   "name": "ANTHONY",
+   "was": " 5TRAINER/4",
+   "why": "G/S phone contact #5, rematch tier 4"
+  },
+  "678": {
+   "const": "TRAINER_HIKER_ANTHONY_5",
+   "old_const": "TRAINER_HIKER_678",
+   "name": "ANTHONY",
+   "was": " 5TRAINER/3",
+   "why": "G/S phone contact #5, rematch tier 3"
+  },
+  "679": {
+   "const": "TRAINER_PICNICKER_LIZ_3",
+   "old_const": "TRAINER_PICNICKER_679",
+   "name": "LIZ",
+   "was": " 4TRAINER/5",
+   "why": "G/S phone contact #4, rematch tier 5"
+  },
+  "680": {
+   "const": "TRAINER_BUG_CATCHER_WADE_2",
+   "old_const": "TRAINER_BUG_CATCHER_680",
+   "name": "WADE",
+   "was": " 2TRAINER/2",
+   "why": "G/S phone contact #2, rematch tier 2"
+  },
+  "681": {
+   "const": "TRAINER_BUG_CATCHER_WADE_3",
+   "old_const": "TRAINER_BUG_CATCHER_681",
+   "name": "WADE",
+   "was": " 2TRAINER/3",
+   "why": "G/S phone contact #2, rematch tier 3"
+  },
+  "682": {
+   "const": "TRAINER_PICNICKER_LIZ_4",
+   "old_const": "TRAINER_PICNICKER_682",
+   "name": "LIZ",
+   "was": " 4TRAINER/4",
+   "why": "G/S phone contact #4, rematch tier 4"
+  },
+  "683": {
+   "const": "TRAINER_FISHERMAN_WILTON_5",
+   "old_const": "TRAINER_FISHERMAN_683",
+   "name": "WILTON",
+   "was": "21TRAINER/2",
+   "why": "G/S phone contact #21, rematch tier 2"
+  },
+  "684": {
+   "const": "TRAINER_PICNICKER_TIFFANY_4",
+   "old_const": "TRAINER_PICNICKER_684",
+   "name": "TIFFANY",
+   "was": "19TRAINER/2",
+   "why": "G/S phone contact #19, rematch tier 2"
+  },
+  "685": {
+   "const": "TRAINER_PICNICKER_TIFFANY_5",
+   "old_const": "TRAINER_PICNICKER_685",
+   "name": "TIFFANY",
+   "was": "19TRAINER/3",
+   "why": "G/S phone contact #19, rematch tier 3"
+  },
+  "686": {
+   "const": "TRAINER_PICNICKER_LIZ_5",
+   "old_const": "TRAINER_PICNICKER_686",
+   "name": "LIZ",
+   "was": " 4TRAINER/3",
+   "why": "G/S phone contact #4, rematch tier 3"
+  },
+  "687": {
+   "const": "TRAINER_FISHERMAN_RALPH_5",
+   "old_const": "TRAINER_FISHERMAN_687",
+   "name": "RALPH",
+   "was": " 3TRAINER/5",
+   "why": "G/S phone contact #3, rematch tier 5"
+  },
+  "688": {
+   "const": "TRAINER_BUG_CATCHER_WADE_4",
+   "old_const": "TRAINER_BUG_CATCHER_688",
+   "name": "WADE",
+   "was": " 2TRAINER/5",
+   "why": "G/S phone contact #2, rematch tier 5"
+  },
+  "689": {
+   "const": "TRAINER_BUG_CATCHER_WADE_5",
+   "old_const": "TRAINER_BUG_CATCHER_689",
+   "name": "WADE",
+   "was": " 2TRAINER/4",
+   "why": "G/S phone contact #2, rematch tier 4"
+  },
+  "690": {
+   "const": "TRAINER_BIRD_KEEPER_JOSE_4",
+   "old_const": "TRAINER_BIRD_KEEPER_690",
+   "name": "JOSE",
+   "was": "26TRAINER/2",
+   "why": "G/S phone contact #26, rematch tier 2"
+  },
+  "691": {
+   "const": "TRAINER_COOLTRAINER_BETH_2",
+   "old_const": "TRAINER_COOLTRAINER_691",
+   "name": "BETH",
+   "was": "25TRAINER/2",
+   "why": "G/S phone contact #25, rematch tier 2"
+  },
+  "692": {
+   "const": "TRAINER_COOLTRAINER_BETH_3",
+   "old_const": "TRAINER_COOLTRAINER_692",
+   "name": "BETH",
+   "was": "25TRAINER/3",
+   "why": "G/S phone contact #25, rematch tier 3"
+  },
+  "693": {
+   "const": "TRAINER_YOUNGSTER_JOEY_6",
+   "old_const": "TRAINER_YOUNGSTER_693",
+   "name": "JOEY",
+   "was": " 1TRAINER/5",
+   "why": "G/S phone contact #1, rematch tier 5"
+  }
+ }
+}
