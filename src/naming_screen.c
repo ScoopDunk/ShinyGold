@@ -289,6 +289,7 @@ static const struct NamingScreenTemplate *const sNamingScreenTemplates[];
 static const u16 sPCIconOff_Gfx[] = INCBIN_U16("graphics/naming_screen/pc_icon_off.4bpp");
 static const u16 sPCIconOn_Gfx[] = INCBIN_U16("graphics/naming_screen/pc_icon_on.4bpp");
 static const u16 sRival_Gfx[] = INCBIN_U16("graphics/naming_screen/rival.4bpp");
+extern const u16 gObjectEventPal_NpcWhite[];
 
 static const u8 *const sTransferredToPCMessages[] =
 {
@@ -1443,7 +1444,7 @@ static void NamingScreen_CreateRivalIcon(void)
         sRival_Gfx, 0x900, GFXTAG_RIVAL
     };
     const struct SpritePalette palette = {
-        gNamingScreenRival_Pal, PALTAG_RIVAL
+        gObjectEventPal_NpcWhite, PALTAG_RIVAL // ShinyGold: was gNamingScreenRival_Pal
     };
     struct SpriteTemplate template;
     const struct SubspriteTable * tables_p;
