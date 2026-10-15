@@ -1,237 +1,180 @@
 ViridianCity_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, ViridianCity_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, ViridianCity_OnFrame
 	.byte 0
 
-ViridianCity_OnTransition::
-	setworldmapflag FLAG_WORLD_MAP_VIRIDIAN_CITY
-	call_if_eq VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 0, ViridianCity_EventScript_SetOldManBlockingRoad
-	call_if_eq VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 1, ViridianCity_EventScript_SetOldManStandingByRoad
-	call_if_ge VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 2, ViridianCity_EventScript_SetOldManNormal
-	call_if_eq VAR_MAP_SCENE_VIRIDIAN_CITY_GYM_DOOR, 0, ViridianCity_EventScript_TryUnlockGym
+ViridianCity_OnFrame::
+	map_script_2 0x7042, 0, ViridianCity_EventScript_FrameScene
+	.2byte 0
+
+ViridianCity_EventScript_FrameScene::
+	setflag 0x1361
+	setvar 0x7042, 1
+	call NewBarkTown_EventScript_FrameScene_1
 	end
 
-ViridianCity_EventScript_SetOldManNormal::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_OLD_MAN_1
-	return
+ViridianCity_EventScript_FatMan::
+	goto EventScript_DreamEaterTutor
 
-ViridianCity_EventScript_SetOldManStandingByRoad::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_OLD_MAN_1
-	setobjectxyperm LOCALID_TUTORIAL_MAN, 21, 8
-	setobjectmovementtype LOCALID_TUTORIAL_MAN, MOVEMENT_TYPE_LOOK_AROUND
-	return
-
-ViridianCity_EventScript_SetOldManBlockingRoad::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_OLD_MAN_LYING_DOWN
-	setobjectxyperm LOCALID_TUTORIAL_MAN, 21, 11
-	setobjectmovementtype LOCALID_TUTORIAL_MAN, MOVEMENT_TYPE_FACE_DOWN
-	return
-
-ViridianCity_EventScript_TryUnlockGym::
-	goto_if_unset FLAG_BADGE02_GET, EventScript_Return
-	goto_if_unset FLAG_BADGE03_GET, EventScript_Return
-	goto_if_unset FLAG_BADGE04_GET, EventScript_Return
-	goto_if_unset FLAG_BADGE05_GET, EventScript_Return
-	goto_if_unset FLAG_BADGE06_GET, EventScript_Return
-	goto_if_unset FLAG_BADGE07_GET, EventScript_Return
-	setvar VAR_MAP_SCENE_VIRIDIAN_CITY_GYM_DOOR, 1
-	return
-
-ViridianCity_EventScript_GymDoorLocked::
-	lockall
-	textcolor NPC_TEXT_COLOR_NEUTRAL
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
-	waitmovement 0
-	delay 20
-	msgbox ViridianCity_Text_GymDoorsAreLocked
-	closemessage
-	applymovement LOCALID_PLAYER, ViridianCity_Movement_JumpDownLedge
-	waitmovement 0
-	releaseall
-	end
-
-ViridianCity_Movement_JumpDownLedge::
-	jump_2_down
-	step_end
-
-ViridianCity_EventScript_CitySign::
-	msgbox ViridianCity_Text_CitySign, MSGBOX_SIGN
-	end
-
-ViridianCity_EventScript_TrainerTips1::
-	msgbox ViridianCity_Text_CatchMonsForEasierBattles, MSGBOX_SIGN
-	end
-
-ViridianCity_EventScript_TrainerTips2::
-	msgbox ViridianCity_Text_MovesLimitedByPP, MSGBOX_SIGN
-	end
-
-ViridianCity_EventScript_GymSign::
-	msgbox ViridianCity_Text_GymSign, MSGBOX_SIGN
-	end
-
-ViridianCity_EventScript_GymDoor::
-	msgbox ViridianCity_Text_GymDoorsAreLocked, MSGBOX_SIGN
-	end
-
-ViridianCity_EventScript_Boy::
-	msgbox ViridianCity_Text_CanCarryMonsAnywhere, MSGBOX_NPC
-	end
-
-@ Other old man, not the tutorial old man
-ViridianCity_EventScript_OldMan::
+ViridianCity_EventScript_OldMan1::
 	lock
 	faceplayer
-	goto_if_eq VAR_MAP_SCENE_VIRIDIAN_CITY_GYM_DOOR, 1, ViridianCity_EventScript_OldManGymLeaderReturned
-	msgbox ViridianCity_Text_GymClosedWonderWhoLeaderIs
-	closemessage
-	applymovement LOCALID_VIRIDIAN_OLD_MAN, Common_Movement_FaceOriginalDirection
-	waitmovement 0
+	goto_if_set 0x055, ViridianCity_EventScript_OldMan1_1
+	msgbox ViridianCity_Text_OldMan1_1, MSGBOX_AUTOCLOSE
 	release
 	end
 
-ViridianCity_EventScript_OldManGymLeaderReturned::
-	msgbox ViridianCity_Text_ViridiansGymLeaderReturned
+ViridianCity_EventScript_OldMan1_1::
+	msgbox ViridianCity_Text_OldMan1_2, MSGBOX_AUTOCLOSE
 	release
 	end
 
-ViridianCity_EventScript_TutorialOldMan::
+ViridianCity_EventScript_Vars::
 	lock
 	faceplayer
-	goto_if_set FLAG_BADGE01_GET, ViridianCity_EventScript_AskIfTeachyTVHelpful
-	goto_if_ge VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 2, ViridianCity_EventScript_TutorialCompleted
-	goto_if_eq VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 1, ViridianCity_EventScript_TutorialStart
-	goto_if_eq VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 0, ViridianCity_EventScript_TutorialNotReady
+	goto_if_set FLAG_BADGE01_GET, ViridianCity_EventScript_Vars_1
+	goto_if_ge 0x4051, 2, ViridianCity_EventScript_Vars_2
+	goto_if_eq 0x4051, 1, ViridianCity_EventScript_Vars_3
+	goto_if_eq 0x4051, 0, ViridianCity_EventScript_Vars_4
 	end
 
-ViridianCity_EventScript_AskIfTeachyTVHelpful::
-	msgbox ViridianCity_Text_HowsTeachyTVHelping, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, ViridianCity_EventScript_TeachyTVNotHelpful
-	msgbox ViridianCity_Text_MyGrandsonOnTheShow
+ViridianCity_EventScript_Vars_1::
+	msgbox ViridianCity_Text_Vars_1, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, 0, ViridianCity_EventScript_Vars_5
+	msgbox ViridianCity_Text_Vars_2
 	release
 	end
 
-ViridianCity_EventScript_TeachyTVNotHelpful::
-	msgbox ViridianCity_Text_TooBusyForTeachyTV
+ViridianCity_EventScript_Vars_2::
+	msgbox ViridianCity_Text_Vars_3
 	release
 	end
 
-ViridianCity_EventScript_TutorialCompleted::
-	msgbox ViridianCity_Text_WeakenMonsFirstToCatch
+ViridianCity_EventScript_Vars_3::
+	call ViridianCity_EventScript_Vars_6
 	release
 	end
 
-ViridianCity_EventScript_TutorialStart::
-	call ViridianCity_EventScript_DoTutorialBattle
+ViridianCity_EventScript_Vars_4::
+	msgbox ViridianCity_Text_Vars_4
+	closemessage
 	release
 	end
 
-@ Unused
-ViridianCity_EventScript_WatchToLearnBasics::
-	msgbox ViridianCity_Text_WatchThatToLearnBasics
+ViridianCity_EventScript_Vars_5::
+	msgbox ViridianCity_Text_Vars_5
 	release
 	end
 
-@ Unused. Starts battle after the post battle text, which is odd.
-ViridianCity_EventScript_TutorialUnused::
-	msgbox ViridianCity_Text_ThatWasEducationalTakeThis
+ViridianCity_EventScript_Vars_6::
+	msgbox ViridianCity_Text_Vars_6
+	closemessage
 	goto_if_questlog EventScript_ReleaseEnd
 	special QuestLog_CutRecording
 	special StartOldManTutorialBattle
 	waitstate
-	release
-	end
+	lock
+	faceplayer
+	msgbox ViridianCity_Text_Vars_7
+	setvar 0x4051, 2
+	giveitem ITEM_TEACHY_TV
+	msgbox ViridianCity_Text_Vars_8
+	return
 
-ViridianCity_EventScript_TutorialNotReady::
-	msgbox ViridianCity_Text_ThisIsPrivateProperty
-	closemessage
-	release
+ViridianCity_EventScript_OldMan12::
+	msgbox ViridianCity_Text_OldMan12, MSGBOX_NPC
 	end
 
 ViridianCity_EventScript_Youngster::
 	lock
 	faceplayer
-	msgbox ViridianCity_Text_WantToKnowAboutCaterpillarMons, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, ViridianCity_EventScript_YoungsterExplainCaterpillars
-	goto_if_eq VAR_RESULT, NO, ViridianCity_EventScript_YoungsterDeclineExplanation
+	msgbox ViridianCity_Text_Youngster_1, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, 1, ViridianCity_EventScript_Youngster_1
+	goto_if_eq VAR_RESULT, 0, ViridianCity_EventScript_Youngster_2
 	end
 
-ViridianCity_EventScript_YoungsterExplainCaterpillars::
-	msgbox ViridianCity_Text_ExplainCaterpieWeedle
+ViridianCity_EventScript_Youngster_1::
+	msgbox ViridianCity_Text_Youngster_2
 	release
 	end
 
-ViridianCity_EventScript_YoungsterDeclineExplanation::
-	msgbox ViridianCity_Text_OhOkayThen
+ViridianCity_EventScript_Youngster_2::
+	msgbox ViridianCity_Text_Youngster_3
 	release
 	end
 
-ViridianCity_EventScript_Woman::
-	lock
-	faceplayer
-	goto_if_eq VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 0, ViridianCity_EventScript_WomanRoadBlocked
-	msgbox ViridianCity_Text_GoShoppingInPewterOccasionally
-	release
+ViridianCity_EventScript_Boy::
+	msgbox ViridianCity_Text_Boy, MSGBOX_NPC
 	end
 
-ViridianCity_EventScript_WomanRoadBlocked::
-	msgbox ViridianCity_Text_GrandpaHasntHadCoffeeYet
-	closemessage
-	applymovement LOCALID_VIRIDIAN_WOMAN, Common_Movement_FaceOriginalDirection
-	waitmovement 0
-	release
-	end
-
-ViridianCity_EventScript_DreamEaterTutor::
-	goto EventScript_DreamEaterTutor
-	end
-
-ViridianCity_EventScript_RoadBlocked::
+ViridianCity_EventScript_Trigger1::
 	lockall
 	textcolor NPC_TEXT_COLOR_MALE
-	msgbox ViridianCity_Text_ThisIsPrivateProperty
+	msgbox ViridianCity_Text_Vars_4
 	closemessage
-	applymovement LOCALID_PLAYER, ViridianCity_Movement_WalkDown
+	applymovement LOCALID_PLAYER, ViridianCity_Movement_Trigger1
 	waitmovement 0
 	releaseall
 	end
 
-ViridianCity_Movement_WalkDown::
+ViridianCity_Movement_Trigger1::
 	walk_down
 	step_end
 
-ViridianCity_EventScript_TutorialTriggerLeft::
+ViridianCity_EventScript_Trigger2::
+	lockall
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	waitmovement 0
+	delay 20
+	msgbox ViridianCity_Text_Trigger2
+	closemessage
+	applymovement LOCALID_PLAYER, ViridianCity_Movement_Trigger2
+	waitmovement 0
+	releaseall
+	end
+
+ViridianCity_Movement_Trigger2::
+	jump_2_down
+	step_end
+
+ViridianCity_EventScript_Trigger3::
 	lockall
 	textcolor NPC_TEXT_COLOR_MALE
-	applymovement LOCALID_TUTORIAL_MAN, Common_Movement_WalkInPlaceFasterLeft
+	applymovement 4, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	call ViridianCity_EventScript_DoTutorialBattle
+	call ViridianCity_EventScript_Vars_6
 	release
 	end
 
-ViridianCity_EventScript_TutorialTriggerRight::
+ViridianCity_EventScript_Trigger4::
 	lockall
 	textcolor NPC_TEXT_COLOR_MALE
-	applymovement LOCALID_TUTORIAL_MAN, Common_Movement_WalkInPlaceFasterRight
+	applymovement 4, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
-	call ViridianCity_EventScript_DoTutorialBattle
+	call ViridianCity_EventScript_Vars_6
 	release
 	end
 
-ViridianCity_EventScript_DoTutorialBattle::
-	msgbox ViridianCity_Text_ShowYouHowToCatchMons
-	closemessage
-	goto_if_questlog EventScript_ReleaseEnd
-	special QuestLog_CutRecording
-	special StartOldManTutorialBattle
-	waitstate
-	lock
-	faceplayer
-	msgbox ViridianCity_Text_ThatWasEducationalTakeThis
-	setvar VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 2
-	giveitem ITEM_TEACHY_TV
-	msgbox ViridianCity_Text_WatchThatToLearnBasics
-	return
+ViridianCity_EventScript_Sign1::
+	msgbox ViridianCity_Text_Sign1, MSGBOX_SIGN
+	end
+
+ViridianCity_EventScript_Sign2::
+	msgbox ViridianCity_Text_Sign2, MSGBOX_SIGN
+	end
+
+ViridianCity_EventScript_Sign3::
+	msgbox ViridianCity_Text_Sign3, MSGBOX_SIGN
+	end
+
+ViridianCity_EventScript_Sign4::
+	msgbox ViridianCity_Text_Sign4, MSGBOX_SIGN
+	end
+
+ViridianCity_EventScript_Sign5::
+	msgbox ViridianCity_Text_Trigger2, MSGBOX_SIGN
+	end

@@ -1,0 +1,221 @@
+Unused_PokemonTower_7F_MapScripts::
+	.byte 0
+
+Unused_PokemonTower_7F_EventScript_MrFuji::
+	lock
+	faceplayer
+	setvar VAR_0x8004, 14
+	setvar VAR_0x8005, 2
+	special UpdatePickStateFromSpecialVar8005
+	setflag 0x034
+	clearflag 0x035
+	setflag 0x23C
+	msgbox Unused_PokemonTower_7F_Text_MrFuji
+	closemessage
+	warp MAP_LAVENDER_TOWN_INTERIOR3, 4, 7
+	waitstate
+	release
+	end
+
+Unused_PokemonTower_7F_EventScript_TeamRocketGrunt18::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_18, Unused_PokemonTower_7F_Text_TeamRocketGrunt18Intro, Unused_PokemonTower_7F_Text_TeamRocketGrunt18Defeat, Unused_PokemonTower_7F_EventScript_TeamRocketGrunt18Continue
+	msgbox Unused_PokemonTower_7F_Text_TeamRocketGrunt18, MSGBOX_AUTOCLOSE
+	end
+
+Unused_PokemonTower_7F_EventScript_TeamRocketGrunt18Continue::
+	msgbox Unused_PokemonTower_7F_Text_TeamRocketGrunt18
+	closemessage
+	getplayerxy VAR_0x8004, VAR_0x8005
+	goto_if_eq VAR_0x8004, 10, Unused_PokemonTower_7F_EventScript_TeamRocketGrunt18_1
+	goto_if_eq VAR_0x8004, 11, Unused_PokemonTower_7F_EventScript_TeamRocketGrunt18_2
+	goto_if_eq VAR_0x8004, 9, Unused_PokemonTower_7F_EventScript_TeamRocketGrunt18_3
+	applymovement 2, Unused_PokemonTower_7F_Movement_TeamRocketGrunt18_1
+	waitmovement 0
+	goto Unused_PokemonTower_7F_EventScript_TeamRocketGrunt18_4
+
+Unused_PokemonTower_7F_EventScript_TeamRocketGrunt18_1::
+	applymovement 2, Unused_PokemonTower_7F_Movement_TeamRocketGrunt18_2
+	waitmovement 0
+	goto Unused_PokemonTower_7F_EventScript_TeamRocketGrunt18_4
+
+Unused_PokemonTower_7F_EventScript_TeamRocketGrunt18_2::
+	applymovement 2, Unused_PokemonTower_7F_Movement_TeamRocketGrunt18_3
+	waitmovement 0
+	goto Unused_PokemonTower_7F_EventScript_TeamRocketGrunt18_4
+
+Unused_PokemonTower_7F_EventScript_TeamRocketGrunt18_3::
+	applymovement 2, Unused_PokemonTower_7F_Movement_TeamRocketGrunt18_4
+	waitmovement 0
+	playse SE_EXIT
+	delay 25
+	goto Unused_PokemonTower_7F_EventScript_TeamRocketGrunt18_4
+
+Unused_PokemonTower_7F_EventScript_TeamRocketGrunt18_4::
+	removeobject 2
+	release
+	end
+
+Unused_PokemonTower_7F_Movement_TeamRocketGrunt18_1::
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+Unused_PokemonTower_7F_Movement_TeamRocketGrunt18_2::
+	walk_down
+	walk_right
+	walk_down
+	walk_down
+	walk_down
+	walk_right
+	walk_down
+	walk_down
+	step_end
+
+Unused_PokemonTower_7F_Movement_TeamRocketGrunt18_3::
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_right
+	walk_down
+	walk_down
+	step_end
+
+Unused_PokemonTower_7F_Movement_TeamRocketGrunt18_4::
+	walk_right
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_right
+	walk_down
+	walk_down
+	walk_in_place_faster_left
+	step_end
+
+Unused_PokemonTower_7F_EventScript_TeamRocketGrunt19::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_19, Unused_PokemonTower_7F_Text_TeamRocketGrunt19Intro, Unused_PokemonTower_7F_Text_TeamRocketGrunt19Defeat, Unused_PokemonTower_7F_EventScript_TeamRocketGrunt19Continue
+	msgbox Unused_PokemonTower_7F_Text_TeamRocketGrunt19, MSGBOX_AUTOCLOSE
+	end
+
+Unused_PokemonTower_7F_EventScript_TeamRocketGrunt19Continue::
+	setvar VAR_0x8004, 14
+	setvar VAR_0x8005, 1
+	special SetFlavorTextFlagFromSpecialVars
+	msgbox Unused_PokemonTower_7F_Text_TeamRocketGrunt19
+	closemessage
+	getplayerxy VAR_0x8004, VAR_0x8005
+	goto_if_eq VAR_0x8004, 12, Unused_PokemonTower_7F_EventScript_TeamRocketGrunt19_1
+	goto_if_eq VAR_0x8004, 13, Unused_PokemonTower_7F_EventScript_TeamRocketGrunt19_2
+	applymovement 3, Unused_PokemonTower_7F_Movement_TeamRocketGrunt19_1
+	waitmovement 0
+	goto Unused_PokemonTower_7F_EventScript_TeamRocketGrunt19_3
+
+Unused_PokemonTower_7F_EventScript_TeamRocketGrunt19_1::
+	applymovement 3, Unused_PokemonTower_7F_Movement_TeamRocketGrunt19_2
+	waitmovement 0
+	goto Unused_PokemonTower_7F_EventScript_TeamRocketGrunt19_3
+
+Unused_PokemonTower_7F_EventScript_TeamRocketGrunt19_2::
+	applymovement 3, Unused_PokemonTower_7F_Movement_TeamRocketGrunt19_3
+	waitmovement 0
+	goto Unused_PokemonTower_7F_EventScript_TeamRocketGrunt19_3
+
+Unused_PokemonTower_7F_EventScript_TeamRocketGrunt19_3::
+	removeobject 3
+	release
+	end
+
+Unused_PokemonTower_7F_Movement_TeamRocketGrunt19_1::
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+Unused_PokemonTower_7F_Movement_TeamRocketGrunt19_2::
+	walk_down
+	walk_down
+	walk_down
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+Unused_PokemonTower_7F_Movement_TeamRocketGrunt19_3::
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+Unused_PokemonTower_7F_EventScript_TeamRocketGrunt20::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_20, Unused_PokemonTower_7F_Text_TeamRocketGrunt20Intro, Unused_PokemonTower_7F_Text_TeamRocketGrunt20Defeat, Unused_PokemonTower_7F_EventScript_TeamRocketGrunt20Continue
+	msgbox Unused_PokemonTower_7F_Text_TeamRocketGrunt20, MSGBOX_AUTOCLOSE
+	end
+
+Unused_PokemonTower_7F_EventScript_TeamRocketGrunt20Continue::
+	msgbox Unused_PokemonTower_7F_Text_TeamRocketGrunt20
+	closemessage
+	getplayerxy VAR_0x8004, VAR_0x8005
+	goto_if_eq VAR_0x8004, 10, Unused_PokemonTower_7F_EventScript_TeamRocketGrunt20_1
+	goto_if_eq VAR_0x8004, 9, Unused_PokemonTower_7F_EventScript_TeamRocketGrunt20_2
+	applymovement 4, Unused_PokemonTower_7F_Movement_TeamRocketGrunt20_1
+	waitmovement 0
+	goto Unused_PokemonTower_7F_EventScript_TeamRocketGrunt20_3
+
+Unused_PokemonTower_7F_EventScript_TeamRocketGrunt20_1::
+	applymovement 4, Unused_PokemonTower_7F_Movement_TeamRocketGrunt20_2
+	waitmovement 0
+	goto Unused_PokemonTower_7F_EventScript_TeamRocketGrunt20_3
+
+Unused_PokemonTower_7F_EventScript_TeamRocketGrunt20_2::
+	applymovement 4, Unused_PokemonTower_7F_Movement_TeamRocketGrunt20_3
+	waitmovement 0
+	goto Unused_PokemonTower_7F_EventScript_TeamRocketGrunt20_3
+
+Unused_PokemonTower_7F_EventScript_TeamRocketGrunt20_3::
+	removeobject 4
+	release
+	end
+
+Unused_PokemonTower_7F_Movement_TeamRocketGrunt20_1::
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+Unused_PokemonTower_7F_Movement_TeamRocketGrunt20_2::
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_right
+	walk_down
+	step_end
+
+Unused_PokemonTower_7F_Movement_TeamRocketGrunt20_3::
+	walk_right
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end

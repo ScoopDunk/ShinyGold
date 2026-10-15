@@ -1,0 +1,34 @@
+Route40_MapScripts::
+	.byte 0
+
+Route40_EventScript_ItemHyperPotion::
+	finditem ITEM_HYPER_POTION
+	end
+
+Route40_EventScript_CrushGirl::
+	msgbox Route40_Text_CrushGirl, MSGBOX_NPC
+	end
+
+Route40_EventScript_SwimmerMSimon::
+	trainerbattle_single TRAINER_SWIMMER_M_SIMON, Route40_Text_SwimmerMSimonIntro, Route40_Text_SwimmerMSimonDefeat
+	msgbox Route40_Text_SwimmerMSimon, MSGBOX_AUTOCLOSE
+	end
+
+Route40_EventScript_SwimmerFElaine::
+	trainerbattle_single TRAINER_SWIMMER_F_ELAINE, Route40_Text_SwimmerFElaineIntro, Route40_Text_SwimmerFElaineDefeat
+	msgbox Route40_Text_SwimmerFElaine, MSGBOX_AUTOCLOSE
+	end
+
+Route40_EventScript_SwimmerFPaula::
+	trainerbattle_single TRAINER_SWIMMER_F_PAULA, Route40_Text_SwimmerFPaulaIntro, Route40_Text_SwimmerFPaulaDefeat
+	msgbox Route40_Text_SwimmerFPaula, MSGBOX_AUTOCLOSE
+	end
+
+Route40_EventScript_SwimmerMRandall::
+	trainerbattle_single TRAINER_SWIMMER_M_RANDALL, Route40_Text_SwimmerMRandallIntro, Route40_Text_SwimmerMRandallDefeat
+	msgbox Route40_Text_SwimmerMRandall, MSGBOX_AUTOCLOSE
+	end
+
+Route40_EventScript_Sign::
+	msgbox Route40_Text_Sign, MSGBOX_AUTOCLOSE
+	end

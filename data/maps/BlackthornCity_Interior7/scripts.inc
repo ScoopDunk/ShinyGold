@@ -1,0 +1,139 @@
+BlackthornCity_Interior7_MapScripts::
+	@ ShinyGold: map script header pointer was NULL
+	.byte 0
+
+BlackthornCity_Interior7_EventScript_CooltrainerPaul::
+	trainerbattle_single TRAINER_COOLTRAINER_PAUL, BlackthornCity_Interior7_Text_CooltrainerPaulIntro, BlackthornCity_Interior7_Text_CooltrainerPaulDefeat
+	msgbox BlackthornCity_Interior7_Text_CooltrainerPaul, MSGBOX_AUTOCLOSE
+	end
+
+BlackthornCity_Interior7_EventScript_CooltrainerMike::
+	trainerbattle_single TRAINER_COOLTRAINER_MIKE, BlackthornCity_Interior7_Text_CooltrainerMikeIntro, BlackthornCity_Interior7_Text_CooltrainerMikeDefeat
+	msgbox BlackthornCity_Interior7_Text_CooltrainerMike, MSGBOX_AUTOCLOSE
+	end
+
+BlackthornCity_Interior7_EventScript_CooltrainerLola::
+	trainerbattle_single TRAINER_COOLTRAINER_LOLA, BlackthornCity_Interior7_Text_CooltrainerLolaIntro, BlackthornCity_Interior7_Text_CooltrainerLolaDefeat
+	msgbox BlackthornCity_Interior7_Text_CooltrainerLola, MSGBOX_AUTOCLOSE
+	end
+
+BlackthornCity_Interior7_EventScript_LeaderClair::
+	setvar VAR_0x8004, 2
+	setvar VAR_0x8005, 2
+	special UpdatePickStateFromSpecialVar8005
+	trainerbattle_single TRAINER_LEADER_CLAIR, BlackthornCity_Interior7_Text_LeaderClairIntro, BlackthornCity_Interior7_Text_LeaderClairDefeat, BlackthornCity_Interior7_EventScript_LeaderClairContinue, NO_MUSIC
+	call_if_set FLAG_BADGE07_GET, BlackthornCity_Interior7_EventScript_LeaderClair_1
+	msgbox BlackthornCity_Interior7_Text_LeaderClair_1, MSGBOX_NPC
+	end
+
+BlackthornCity_Interior7_EventScript_LeaderClairContinue::
+	setflag 0x114A
+	msgbox BlackthornCity_Interior7_Text_LeaderClair_2, MSGBOX_NPC
+	end
+
+BlackthornCity_Interior7_EventScript_LeaderClair_1::
+	msgbox DragonsDen_Cave4_Text_ItemDragonFang_4, MSGBOX_NPC
+	end
+
+BlackthornCity_Interior7_EventScript_GymGuy::
+	call_if_set 0x114A, BlackthornCity_Interior7_EventScript_GymGuy_1
+	msgbox BlackthornCity_Interior7_Text_GymGuy_1, MSGBOX_NPC
+	end
+
+BlackthornCity_Interior7_EventScript_GymGuy_1::
+	msgbox BlackthornCity_Interior7_Text_GymGuy_2, MSGBOX_NPC
+	end
+
+BlackthornCity_Interior7_EventScript_Trigger1::
+	call_if_set 0x1141, BlackthornCity_Interior7_EventScript_Trigger1_1
+	call_if_set 0x1142, BlackthornCity_Interior7_EventScript_Trigger1_1
+	applymovement LOCALID_PLAYER, BlackthornCity_Interior7_Movement_Trigger1
+	delay 80
+	release
+	end
+
+BlackthornCity_Interior7_EventScript_Trigger1_1::
+	release
+	end
+
+BlackthornCity_Interior7_Movement_Trigger1::
+	jump_up
+	jump_up
+	jump_2_up
+	step_end
+
+BlackthornCity_Interior7_EventScript_Trigger2::
+	call_if_set 0x1143, BlackthornCity_Interior7_EventScript_Trigger1_1
+	applymovement LOCALID_PLAYER, BlackthornCity_Interior7_Movement_Trigger2
+	delay 48
+	release
+	end
+
+BlackthornCity_Interior7_Movement_Trigger2::
+	jump_up
+	jump_up
+	step_end
+
+BlackthornCity_Interior7_EventScript_Trigger3::
+	call_if_set 0x1144, BlackthornCity_Interior7_EventScript_Trigger1_1
+	applymovement LOCALID_PLAYER, BlackthornCity_Interior7_Movement_Trigger3
+	delay 48
+	release
+	end
+
+BlackthornCity_Interior7_Movement_Trigger3::
+	jump_left
+	jump_left
+	step_end
+
+BlackthornCity_Interior7_EventScript_Trigger4::
+	call_if_set 0x1141, BlackthornCity_Interior7_EventScript_Trigger1_1
+	call_if_set 0x1142, BlackthornCity_Interior7_EventScript_Trigger1_1
+	applymovement LOCALID_PLAYER, BlackthornCity_Interior7_Movement_Trigger4
+	delay 80
+	release
+	end
+
+BlackthornCity_Interior7_Movement_Trigger4::
+	jump_2_down
+	jump_down
+	jump_down
+	step_end
+
+BlackthornCity_Interior7_EventScript_Trigger5::
+	call_if_set 0x1143, BlackthornCity_Interior7_EventScript_Trigger1_1
+	applymovement LOCALID_PLAYER, BlackthornCity_Interior7_Movement_Trigger5
+	delay 48
+	release
+	end
+
+BlackthornCity_Interior7_Movement_Trigger5::
+	jump_down
+	jump_down
+	step_end
+
+BlackthornCity_Interior7_EventScript_Trigger6::
+	call_if_set 0x1144, BlackthornCity_Interior7_EventScript_Trigger1_1
+	applymovement LOCALID_PLAYER, BlackthornCity_Interior7_Movement_Trigger6
+	delay 48
+	release
+	end
+
+BlackthornCity_Interior7_Movement_Trigger6::
+	jump_right
+	jump_right
+	step_end
+
+BlackthornCity_Interior7_EventScript_Sign1::
+	call_if_set 0x1149, BlackthornCity_Interior7_EventScript_Sign1_1
+	call_if_set FLAG_BADGE07_GET, BlackthornCity_Interior7_EventScript_Sign1_2
+	msgbox BlackthornCity_Interior7_Text_Sign1_1, MSGBOX_AUTOCLOSE
+	end
+
+BlackthornCity_Interior7_EventScript_Sign1_1::
+	msgbox BlackthornCity_Interior7_Text_Sign1_2, MSGBOX_AUTOCLOSE
+	end
+
+BlackthornCity_Interior7_EventScript_Sign1_2::
+	msgbox BlackthornCity_Interior7_Text_Sign1_3, MSGBOX_AUTOCLOSE
+	end

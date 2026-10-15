@@ -20,23 +20,23 @@ CeladonCity_GameCorner_Text_PrintIsReadyCheckTrainerCard::
 	.string "Your POKéMON print is ready!\n"
 	.string "Check your TRAINER CARD.$"
 
+@ ShinyGold: modified in place by the hack
 FourIsland_House2_Text_WishICouldShowOffStickers::
-	.string "Giggle…\n"
-	.string "I collected a ton of STICKERS.\l"
-	.string "I wish I could show them off…$"
+	.string "Sigh...\n"
+	.string "I wonder when DAD will return...$"
 
+@ ShinyGold: modified in place by the hack
 FourIsland_House2_Text_GiveYouStickerIfYouBrag::
-	.string "Oh, excellent!\n"
-	.string "You've come to the right place!\p"
-	.string "Look, look! See? See?\n"
-	.string "These are my STICKERS!\l"
-	.string "Look how many I got!\p"
-	.string "I bet you want some.\n"
-	.string "I bet you do!\p"
-	.string "I'll give a STICKER if you can tell\n"
-	.string "me something awesome about\l"
-	.string "yourself.\p"
-	.string "What will you brag about?$"
+	.string "Oh? You wanted to see DAD, the\n"
+	.string "photographer?\p"
+	.string "Too bad he left for the main land\n"
+	.string "for his work…\p"
+	.string "But don’t look so down, I can\n"
+	.string "help too!\p"
+	.string "I have some nice photos, to put\n"
+	.string "them in your trainer card, as\l"
+	.string "STICKERS, if you tell me\l"
+	.string "something awesome…$"
 
 FourIsland_House2_Text_BragAboutSomethingForMe::
 	.string "Brag about something for me.\n"

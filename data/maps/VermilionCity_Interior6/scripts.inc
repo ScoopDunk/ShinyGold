@@ -1,0 +1,8 @@
+VermilionCity_Interior6_MapScripts::
+	@ ShinyGold: map script header pointer was NULL
+	.byte 0
+
+VermilionCity_Interior6_EventScript_PsychicRodette2::
+	trainerbattle_single TRAINER_PSYCHIC_RODETTE_2, VermilionCity_Interior6_Text_PsychicRodette2Intro, VermilionCity_Interior6_Text_PsychicRodette2Defeat
+	msgbox VermilionCity_Interior1_Text_YoungsterDestin2, MSGBOX_AUTOCLOSE
+	end

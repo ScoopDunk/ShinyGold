@@ -1,0 +1,90 @@
+BlackthornCity_Interior8_MapScripts::
+	@ ShinyGold: map script header pointer was NULL
+	.byte 0
+
+BlackthornCity_Interior8_EventScript_CooltrainerFran::
+	trainerbattle_single TRAINER_COOLTRAINER_FRAN, BlackthornCity_Interior8_Text_CooltrainerFranIntro, BlackthornCity_Interior8_Text_CooltrainerFranDefeat
+	msgbox BlackthornCity_Interior8_Text_CooltrainerFran, MSGBOX_AUTOCLOSE
+	end
+
+BlackthornCity_Interior8_EventScript_CooltrainerCody::
+	trainerbattle_single TRAINER_COOLTRAINER_CODY, BlackthornCity_Interior8_Text_CooltrainerCodyIntro, BlackthornCity_Interior8_Text_CooltrainerCodyDefeat
+	msgbox BlackthornCity_Interior8_Text_CooltrainerCody, MSGBOX_AUTOCLOSE
+	end
+
+BlackthornCity_Interior8_EventScript_Trigger1::
+	call_if_unset 0x044, BlackthornCity_Interior8_EventScript_Trigger1_1
+	clearflag 0x1141
+	call BlackthornCity_Interior8_EventScript_Trigger1_1
+	end
+
+BlackthornCity_Interior8_EventScript_Trigger1_1::
+	call_if_unset 0x045, BlackthornCity_Interior8_EventScript_Trigger1_2
+	clearflag 0x1142
+	call BlackthornCity_Interior8_EventScript_Trigger1_2
+	end
+
+BlackthornCity_Interior8_EventScript_Trigger1_2::
+	call_if_unset 0x046, BlackthornCity_Interior8_EventScript_Trigger1_3
+	call_if_unset 0x1147, BlackthornCity_Interior8_EventScript_Trigger1_4
+	clearflag 0x1145
+	call BlackthornCity_Interior8_EventScript_Trigger1_3
+	end
+
+BlackthornCity_Interior8_EventScript_Trigger1_3::
+	call_if_unset 0x047, BlackthornCity_EventScript_Trigger1_1
+	call_if_unset 0x1148, BlackthornCity_Interior8_EventScript_Trigger1_5
+	clearflag 0x1146
+	call BlackthornCity_EventScript_Trigger1_1
+	end
+
+BlackthornCity_Interior8_EventScript_Trigger1_4::
+	clearflag 0x1144
+	call BlackthornCity_Interior8_EventScript_Trigger1_3
+	end
+
+BlackthornCity_Interior8_EventScript_Trigger1_5::
+	clearflag 0x1143
+	call BlackthornCity_EventScript_Trigger1_1
+	end
+
+BlackthornCity_Interior8_EventScript_Trigger3::
+	call BlackthornCity_Interior8_EventScript_Trigger1
+	release
+	end
+
+BlackthornCity_Interior8_EventScript_Trigger6::
+	call_if_set 0x047, BlackthornCity_Interior8_EventScript_Trigger3
+	clearflag 0x1148
+	call BlackthornCity_Interior8_EventScript_Trigger1
+	release
+	end
+
+BlackthornCity_Interior8_EventScript_Trigger7::
+	call_if_set 0x047, BlackthornCity_Interior8_EventScript_Trigger3
+	setflag 0x1148
+	call BlackthornCity_Interior8_EventScript_Trigger1
+	release
+	end
+
+BlackthornCity_Interior8_EventScript_Trigger11::
+	call_if_set 0x047, BlackthornCity_Interior8_EventScript_Trigger11_1
+	clearflag 0x1148
+	release
+	end
+
+BlackthornCity_Interior8_EventScript_Trigger11_1::
+	release
+	end
+
+BlackthornCity_Interior8_EventScript_Trigger12::
+	call_if_set 0x046, BlackthornCity_Interior8_EventScript_Trigger11_1
+	clearflag 0x1147
+	release
+	end
+
+BlackthornCity_Interior8_EventScript_Trigger13::
+	call_if_set 0x046, BlackthornCity_Interior8_EventScript_Trigger11_1
+	setflag 0x1147
+	release
+	end

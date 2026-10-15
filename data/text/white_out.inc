@@ -25,16 +25,17 @@ Text_HadQuiteAnExperienceTakeRest::
 	.string "Maybe you should take a quick\n"
 	.string "rest.$"
 
+@ ShinyGold: modified in place by the hack
 Text_MomExplainHPGetPotions::
 	.string "MOM: Oh, good! You and your\n"
 	.string "POKéMON are looking great.\p"
-	.string "I just heard from PROF. OAK.\p"
-	.string "He said that POKéMON's energy is\n"
+	.string "I just heard from PROF. ELM.\p"
+	.string "He said that POKéMON’s energy is\n"
 	.string "measured in HP.\p"
 	.string "If your POKéMON lose their HP,\n"
 	.string "you can restore them at any\l"
 	.string "POKéMON CENTER.\p"
-	.string "If you're going to travel far away,\n"
+	.string "If you’re going to travel far away,\n"
 	.string "the smart TRAINER stocks up on\l"
 	.string "POTIONS at the POKéMON MART.\p"
 	.string "Make me proud, honey!\p"

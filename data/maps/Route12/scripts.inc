@@ -3,57 +3,49 @@ Route12_MapScripts::
 	.byte 0
 
 Route12_OnResume::
-	call_if_set FLAG_SYS_SPECIAL_WILD_BATTLE, Route12_EventScript_TryRemoveSnorlax
+	call_if_set FLAG_SYS_SPECIAL_WILD_BATTLE, Route12_EventScript_OnResume_1
 	end
 
-Route12_EventScript_TryRemoveSnorlax::
+Route12_EventScript_OnResume_1::
 	removeobject VAR_LAST_TALKED
 	return
 
-Route12_EventScript_Snorlax::
-	lock
-	faceplayer
-	goto_if_unset FLAG_GOT_POKE_FLUTE, Route12_EventScript_SnorlaxNoPokeFlute
-	goto_if_questlog EventScript_ReleaseEnd
-	special QuestLog_CutRecording
-	msgbox Text_WantToUsePokeFlute, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, Route12_EventScript_DontUsePokeFlute
-	call EventScript_AwakenSnorlax
-	setwildbattle SPECIES_SNORLAX, 30
-	waitse
-	playmoncry SPECIES_SNORLAX, CRY_MODE_ENCOUNTER
-	delay 40
-	waitmoncry
-	setflag FLAG_HIDE_ROUTE_12_SNORLAX
-	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
-	setflag FLAG_WOKE_UP_ROUTE_12_SNORLAX
-	dowildbattle
-	clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
-	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Route12_EventScript_FoughtSnorlax
-	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route12_EventScript_FoughtSnorlax
-	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Route12_EventScript_FoughtSnorlax
-	release
+Route12_EventScript_FishermanKyle::
+	trainerbattle_single TRAINER_FISHERMAN_KYLE, Route12_Text_FishermanKyleIntro, Route12_Text_FishermanKyleDefeat
+	msgbox Route12_Text_FishermanKyle, MSGBOX_AUTOCLOSE
 	end
 
-Route12_EventScript_DontUsePokeFlute::
-	release
+Route12_EventScript_FishermanMartin::
+	trainerbattle_single TRAINER_FISHERMAN_MARTIN, Route12_Text_FishermanMartinIntro, Route12_Text_FishermanMartinDefeat
+	msgbox Route12_Text_FishermanMartin, MSGBOX_AUTOCLOSE
 	end
 
-Route12_EventScript_FoughtSnorlax::
-	msgbox Text_SnorlaxReturnedToMountains
-	release
+Route12_EventScript_FishermanStephen::
+	trainerbattle_single TRAINER_FISHERMAN_STEPHEN, Route12_Text_FishermanStephenIntro, Route12_Text_FishermanStephenDefeat
+	msgbox Route12_Text_FishermanStephen, MSGBOX_AUTOCLOSE
 	end
 
-Route12_EventScript_SnorlaxNoPokeFlute::
-	msgbox Route12_Text_MonSprawledOutInSlumber
-	release
+Route12_EventScript_FishermanBarney::
+	trainerbattle_single TRAINER_FISHERMAN_BARNEY, Route12_Text_FishermanBarneyIntro, Route12_Text_FishermanBarneyDefeat
+	msgbox Route12_Text_FishermanBarney, MSGBOX_AUTOCLOSE
 	end
 
-Route12_EventScript_RouteSign::
-	msgbox Route12_Text_RouteSign, MSGBOX_SIGN
+Route12_EventScript_ItemCalcium::
+	finditem ITEM_CALCIUM
 	end
 
-Route12_EventScript_FishingSign::
-	msgbox Route12_Text_SportfishingArea, MSGBOX_SIGN
+Route12_EventScript_ItemNugget::
+	finditem ITEM_NUGGET
+	end
+
+Route12_EventScript_ItemElixir::
+	finditem ITEM_ELIXIR
+	end
+
+Route12_EventScript_Sign1::
+	msgbox Route12_Text_Sign1, MSGBOX_AUTOCLOSE
+	end
+
+Route12_EventScript_Sign2::
+	msgbox Route12_Text_Sign2, MSGBOX_AUTOCLOSE
 	end

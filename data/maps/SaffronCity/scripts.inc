@@ -1,124 +1,110 @@
 SaffronCity_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, SaffronCity_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, SaffronCity_OnFrame
 	.byte 0
 
-SaffronCity_OnTransition::
-	setworldmapflag FLAG_WORLD_MAP_SAFFRON_CITY
-	call_if_unset FLAG_RESCUED_MR_FUJI, SaffronCity_EventScript_MoveDoorGuardGrunt
+SaffronCity_OnFrame::
+	map_script_2 0x704B, 0, SaffronCity_EventScript_FrameScene
+	.2byte 0
+
+SaffronCity_EventScript_FrameScene::
+	setflag 0x136A
+	setvar 0x704B, 1
+	call NewBarkTown_EventScript_FrameScene_1
 	end
 
-SaffronCity_EventScript_MoveDoorGuardGrunt::
-	setobjectxyperm LOCALID_SAFFRON_DOOR_GUARD_GRUNT, 33, 31
-	return
-
-SaffronCity_EventScript_RocketGrunt1::
-	msgbox SaffronCity_Text_WhatDoYouWantGetLost, MSGBOX_NPC
+SaffronCity_EventScript_BaldingMan::
+	msgbox SaffronCity_Text_BaldingMan, MSGBOX_NPC
 	end
 
-SaffronCity_EventScript_RocketGrunt2::
-	msgbox SaffronCity_Text_BossTakeTownForTeamRocket, MSGBOX_NPC
-	end
-
-SaffronCity_EventScript_RocketGrunt3::
-	msgbox SaffronCity_Text_DontGetDefiantOrIllHurtYou, MSGBOX_NPC
-	end
-
-SaffronCity_EventScript_RocketGrunt4::
-	msgbox SaffronCity_Text_SaffronBelongsToTeamRocket, MSGBOX_NPC
-	end
-
-SaffronCity_EventScript_RocketGrunt5::
-	msgbox SaffronCity_Text_CriminalLifeMakesMeFeelAlive, MSGBOX_NPC
-	end
-
-SaffronCity_EventScript_RocketGrunt6::
-	msgbox SaffronCity_Text_WatchWhereYoureWalking, MSGBOX_NPC
-	end
-
-SaffronCity_EventScript_RocketGrunt7::
-	msgbox SaffronCity_Text_WeCanExploitMonsAroundWorld, MSGBOX_NPC
-	end
-
-SaffronCity_EventScript_DoorGuardGrunt::
-	lock
-	goto_if_set FLAG_RESCUED_MR_FUJI, SaffronCity_EventScript_DoorGuardAsleep
-	applymovement LOCALID_SAFFRON_DOOR_GUARD_GRUNT, Common_Movement_FacePlayer
-	waitmovement 0
-	msgbox SaffronCity_Text_ImASecurityGuard
-	release
-	end
-
-SaffronCity_EventScript_DoorGuardAsleep::
-	textcolor NPC_TEXT_COLOR_NEUTRAL
-	msgbox SaffronCity_Text_HesTakingASnooze
-	release
+SaffronCity_EventScript_CrushGirl_2::
+	msgbox SaffronCity_Text_CrushGirl, MSGBOX_NPC
 	end
 
 SaffronCity_EventScript_WorkerM::
-	msgbox SaffronCity_Text_YouBeatTeamRocket, MSGBOX_NPC
+	msgbox SaffronCity_Text_WorkerM, MSGBOX_NPC
 	end
 
-SaffronCity_EventScript_Youngster::
-	msgbox SaffronCity_Text_SafeToGoOutAgain, MSGBOX_NPC
+SaffronCity_EventScript_Woman2::
+	call_if_set 0x1185, SaffronCity_EventScript_Woman2_1
+	msgbox SaffronCity_Text_Woman2_1, MSGBOX_NPC
 	end
 
-SaffronCity_EventScript_Lass::
-	msgbox SaffronCity_Text_PeopleComingBackToSaffron, MSGBOX_NPC
+SaffronCity_EventScript_Woman2_1::
+	msgbox SaffronCity_Text_Woman2_2, MSGBOX_NPC
 	end
 
 SaffronCity_EventScript_Boy::
-	msgbox SaffronCity_Text_FlewHereOnPidgeot, MSGBOX_NPC
+	msgbox SaffronCity_Text_Boy, MSGBOX_NPC
 	end
 
-SaffronCity_EventScript_Pidgeot::
-	lock
-	faceplayer
-	waitse
-	playmoncry SPECIES_PIDGEOT, CRY_MODE_NORMAL
-	msgbox SaffronCity_Text_Pidgeot
-	waitmoncry
+SaffronCity_EventScript_FatMan::
+	goto_if_set 0x1185, SaffronCity_EventScript_FatMan_1
+	msgbox SaffronCity_Text_FatMan_1, MSGBOX_NPC
+	end
+
+SaffronCity_EventScript_FatMan_1::
+	msgbox SaffronCity_Text_FatMan_2, MSGBOX_NPC
+	end
+
+SaffronCity_EventScript_WorkerF::
+	msgbox SaffronCity_Text_WorkerF, MSGBOX_NPC
+	end
+
+SaffronCity_EventScript_BlackBelt::
+	msgbox SaffronCity_Text_BlackBelt, MSGBOX_NPC
+	end
+
+SaffronCity_EventScript_LaprasDoll::
+	msgbox SaffronCity_Text_LaprasDoll, MSGBOX_AUTOCLOSE
+	end
+
+SaffronCity_EventScript_Trigger1::
+	call_if_set 0x118E, SaffronCity_EventScript_Trigger1_1
+	call_if_set 0x118D, SaffronCity_EventScript_Trigger1_2
+	setflag 0x118B
+	setflag 0x118C
 	release
 	end
 
-SaffronCity_EventScript_Man::
-	msgbox SaffronCity_Text_SawRocketBossEscaping, MSGBOX_NPC
+SaffronCity_EventScript_Trigger1_1::
+	setflag 0x118B
+	clearflag 0x118C
+	release
 	end
 
-SaffronCity_EventScript_CitySign::
-	msgbox SaffronCity_Text_CitySign, MSGBOX_SIGN
+SaffronCity_EventScript_Trigger1_2::
+	setflag 0x118A
+	clearflag 0x118B
+	release
 	end
 
-SaffronCity_EventScript_DojoSign::
-	msgbox SaffronCity_Text_FightingDojo, MSGBOX_SIGN
+SaffronCity_EventScript_Trigger2::
+	call_if_set 0x1185, SaffronCity_EventScript_Trigger2_1
+	setflag 0x11D0
+	release
 	end
 
-SaffronCity_EventScript_GymSign::
-	lockall
-	famechecker FAMECHECKER_SABRINA, 0
-	msgbox SaffronCity_Text_GymSign
-	releaseall
+SaffronCity_EventScript_Trigger2_1::
+	clearflag 0x11D0
+	release
 	end
 
-SaffronCity_EventScript_TrainerTips1::
-	msgbox SaffronCity_Text_FullHealCuresStatus, MSGBOX_SIGN
+SaffronCity_EventScript_Sign2::
+	msgbox SaffronCity_Text_Sign2, MSGBOX_AUTOCLOSE
 	end
 
-SaffronCity_EventScript_TrainerTips2::
-	msgbox SaffronCity_Text_GreatBallImprovedCatchRate, MSGBOX_SIGN
+SaffronCity_EventScript_Sign3::
+	msgbox SaffronCity_Text_Sign3, MSGBOX_AUTOCLOSE
 	end
 
-SaffronCity_EventScript_SilphCoSign::
-	msgbox SaffronCity_Text_SilphCoSign, MSGBOX_SIGN
+SaffronCity_EventScript_Sign4::
+	msgbox SaffronCity_Text_Sign4, MSGBOX_AUTOCLOSE
 	end
 
-SaffronCity_EventScript_MrPsychicsHouseSign::
-	msgbox SaffronCity_Text_MrPsychicsHouse, MSGBOX_SIGN
+SaffronCity_EventScript_Sign5::
+	msgbox SaffronCity_Text_Sign5, MSGBOX_AUTOCLOSE
 	end
 
-SaffronCity_EventScript_SilphProductSign::
-	msgbox SaffronCity_Text_SilphsLatestProduct, MSGBOX_SIGN
-	end
-
-SaffronCity_EventScript_TrainerFanClubSign::
-	msgbox SaffronCity_Text_TrainerFanClubSign, MSGBOX_SIGN
+SaffronCity_EventScript_Sign6::
+	msgbox SaffronCity_Text_Sign6, MSGBOX_AUTOCLOSE
 	end

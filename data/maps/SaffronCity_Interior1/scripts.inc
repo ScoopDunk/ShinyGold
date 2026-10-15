@@ -1,0 +1,15 @@
+SaffronCity_Interior1_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, SaffronCity_Interior1_OnTransition
+	.byte 0
+
+SaffronCity_Interior1_OnTransition::
+	setworldmapflag FLAG_WORLD_MAP_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL
+	end
+
+SaffronCity_Interior1_EventScript_ItemFullRestore::
+	finditem ITEM_FULL_RESTORE
+	end
+
+SaffronCity_Interior1_EventScript_ItemXSpecial::
+	finditem ITEM_X_SPECIAL
+	end

@@ -12,85 +12,21 @@ UnionRoom_OnResume::
 	setflag FLAG_HIDE_UNION_ROOM_PLAYER_6
 	setflag FLAG_HIDE_UNION_ROOM_PLAYER_7
 	setflag FLAG_HIDE_UNION_ROOM_PLAYER_8
-	removeobject LOCALID_UNION_ROOM_PLAYER_1
-	removeobject LOCALID_UNION_ROOM_PLAYER_2
-	removeobject LOCALID_UNION_ROOM_PLAYER_3
-	removeobject LOCALID_UNION_ROOM_PLAYER_4
-	removeobject LOCALID_UNION_ROOM_PLAYER_5
-	removeobject LOCALID_UNION_ROOM_PLAYER_6
-	removeobject LOCALID_UNION_ROOM_PLAYER_7
-	removeobject LOCALID_UNION_ROOM_PLAYER_8
+	removeobject 9
+	removeobject 8
+	removeobject 7
+	removeobject 2
+	removeobject 6
+	removeobject 5
+	removeobject 4
+	removeobject 3
 	special RunUnionRoom
 	end
 
 UnionRoom_OnTransition::
 	end
 
-UnionRoom_EventScript_Player1::
-	lock
-	faceplayer
-	setvar VAR_RESULT, 1
-	waitstate
-	release
-	end
-
-UnionRoom_EventScript_Player2::
-	lock
-	faceplayer
-	setvar VAR_RESULT, 2
-	waitstate
-	release
-	end
-
-UnionRoom_EventScript_Player3::
-	lock
-	faceplayer
-	setvar VAR_RESULT, 3
-	waitstate
-	release
-	end
-
-UnionRoom_EventScript_Player4::
-	lock
-	faceplayer
-	setvar VAR_RESULT, 4
-	waitstate
-	release
-	end
-
-UnionRoom_EventScript_Player5::
-	lock
-	faceplayer
-	setvar VAR_RESULT, 5
-	waitstate
-	release
-	end
-
-UnionRoom_EventScript_Player6::
-	lock
-	faceplayer
-	setvar VAR_RESULT, 6
-	waitstate
-	release
-	end
-
-UnionRoom_EventScript_Player7::
-	lock
-	faceplayer
-	setvar VAR_RESULT, 7
-	waitstate
-	release
-	end
-
-UnionRoom_EventScript_Player8::
-	lock
-	faceplayer
-	setvar VAR_RESULT, 8
-	waitstate
-	release
-	end
-
-UnionRoom_EventScript_Attendant::
+UnionRoom_EventScript_UnionRoomReceptionist::
 	lock
 	faceplayer
 	setvar VAR_RESULT, 9
@@ -98,9 +34,66 @@ UnionRoom_EventScript_Attendant::
 	release
 	end
 
-UnionRoom_EventScript_Unused::
-	lockall
-	setvar VAR_RESULT, 10
+UnionRoom_EventScript_Npc::
+	lock
+	faceplayer
+	setvar VAR_RESULT, 4
 	waitstate
-	releaseall
+	release
+	end
+
+UnionRoom_EventScript_Npc2::
+	lock
+	faceplayer
+	setvar VAR_RESULT, 8
+	waitstate
+	release
+	end
+
+UnionRoom_EventScript_Npc3::
+	lock
+	faceplayer
+	setvar VAR_RESULT, 7
+	waitstate
+	release
+	end
+
+UnionRoom_EventScript_Npc4::
+	lock
+	faceplayer
+	setvar VAR_RESULT, 6
+	waitstate
+	release
+	end
+
+UnionRoom_EventScript_Npc5::
+	lock
+	faceplayer
+	setvar VAR_RESULT, 5
+	waitstate
+	release
+	end
+
+UnionRoom_EventScript_Npc6::
+	lock
+	faceplayer
+	setvar VAR_RESULT, 3
+	waitstate
+	release
+	end
+
+UnionRoom_EventScript_Npc7::
+	lock
+	faceplayer
+	setvar VAR_RESULT, 2
+	waitstate
+	release
+	end
+
+UnionRoom_EventScript_Vars::
+	lock
+	faceplayer
+	setvar VAR_RESULT, 1
+	waitstate
+	release
 	end

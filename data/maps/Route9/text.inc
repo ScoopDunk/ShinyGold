@@ -1,106 +1,72 @@
-Route9_Text_AliciaIntro::
-    .string "You have POKéMON with you!\n"
-    .string "You're mine!$"
+Route9_Text_PicnickerEdnaIntro::
+	.string "People shouldn’t leave any litter\n"
+	.string "behind.$"
 
-Route9_Text_AliciaDefeat::
-    .string "You deceived me…$"
+Route9_Text_PicnickerEdnaDefeat::
+	.string "Ohhh... I lost...$"
 
-Route9_Text_AliciaPostBattle::
-    .string "The tunnel coming up is pitch-black\n"
-    .string "inside.\p"
-    .string "You'll need FLASH to get through\n"
-    .string "there.$"
+Route9_Text_PicnickerEdna::
+	.string "Conserving energy is important, but\n"
+	.string "the environment is even more vital.$"
 
-Route9_Text_ChrisIntro::
-    .string "Who's that walking there with those\n"
-    .string "good-looking POKéMON?$"
+Route9_Text_CamperDeanIntro::
+	.string "I came to explore ROCK TUNNEL.$"
 
-Route9_Text_ChrisDefeat::
-    .string "Out like a light!$"
+Route9_Text_CamperDeanDefeat::
+	.string "Whoa! Danger, man.$"
 
-Route9_Text_ChrisPostBattle::
-    .string "Keep walking!$"
+Route9_Text_CamperDean::
+	.string "My POKéMON were hurt before even\n"
+	.string "entering ROCK TUNNEL.\p"
+	.string "I’d better take them to a POKéMON\n"
+	.string "CENTER right away.$"
 
-Route9_Text_DrewIntro::
-    .string "I'm taking the ROCK TUNNEL to\n"
-    .string "go to LAVENDER…$"
+Route9_Text_HikerTimIntro::
+	.string "She’ll be coming ’round MT.SILVER\n"
+	.string "when she comes...\p"
+	.string "MT.SILVER is in JOHTO, right?$"
 
-Route9_Text_DrewDefeat::
-    .string "Can't measure up…$"
+Route9_Text_HikerTimDefeat::
+	.string "I was too busy singing...$"
 
-Route9_Text_DrewPostBattle::
-    .string "Are you off to ROCK TUNNEL, too?$"
+Route9_Text_HikerTim::
+	.string "Battles are about concentration.$"
 
-Route9_Text_CaitlinIntro::
-    .string "Don't you dare patronize me!$"
+Route9_Text_HikerSidneyIntro::
+	.string "I’ll tell you a secret.\p"
+	.string "But first, we battle!$"
 
-Route9_Text_CaitlinDefeat::
-    .string "No!\n"
-    .string "You're too much.$"
+Route9_Text_HikerSidneyDefeat::
+	.string "Oh, dang!\n"
+	.string "I lost that...$"
 
-Route9_Text_CaitlinPostBattle::
-    .string "You're obviously talented.\n"
-    .string "Good luck to you!$"
+Route9_Text_HikerSidney::
+	.string "The POWER PLANT is across a small\n"
+	.string "river.$"
 
-Route9_Text_JeremyIntro::
-    .string "Bwahaha!\n"
-    .string "Great! I was bored, eh!$"
+Route9_Text_PicnickerHeidiIntro::
+	.string "Have you ever been to a picnic?\n"
+	.string "They’re so much fun!$"
 
-Route9_Text_JeremyDefeat::
-    .string "Keep it coming, eh!\p"
-    .string "Oh wait.\n"
-    .string "I'm out of POKéMON!$"
+Route9_Text_PicnickerHeidiDefeat::
+	.string "Ohhhh!$"
 
-Route9_Text_JeremyPostBattle::
-    .string "You sure had guts standing up to\n"
-    .string "me there, eh?$"
+Route9_Text_PicnickerHeidi::
+	.string "We bake lots of goodies and share\n"
+	.string "them all around.\l"
+	.string "They’re delicious!$"
 
-Route9_Text_BriceIntro::
-    .string "Hahaha!\n"
-    .string "Aren't you a little toughie!$"
+Route9_Text_CamperSidIntro::
+	.string "Hey, you!\n"
+	.string "Don’t litter!$"
 
-Route9_Text_BriceDefeat::
-    .string "What's that?$"
+Route9_Text_CamperSidDefeat::
+	.string "I was just pointing out...$"
 
-Route9_Text_BricePostBattle::
-    .string "Hahaha!\n"
-    .string "Kids should be tough!$"
+Route9_Text_CamperSid::
+	.string "Sorry. You weren’t littering.\n"
+	.string "It was my mistake.$"
 
-Route9_Text_BrentIntro::
-    .string "I got up early every day to raise\n"
-    .string "my POKéMON from cocoons!$"
-
-Route9_Text_BrentDefeat::
-    .string "WHAT?\p"
-    .string "What a total waste of time!$"
-
-Route9_Text_BrentPostBattle::
-    .string "I have to collect more than bugs\n"
-    .string "to get stronger…$"
-
-Route9_Text_AlanIntro::
-    .string "Hahahaha!\n"
-    .string "Bring it on!$"
-
-Route9_Text_AlanDefeat::
-    .string "Hahahaha!\n"
-    .string "You beat me fair!$"
-
-Route9_Text_AlanPostBattle::
-    .string "Hahahaha!\n"
-    .string "Us hearty guys always laugh!$"
-
-Route9_Text_ConnerIntro::
-    .string "Go, my super BUG POKéMON!$"
-
-Route9_Text_ConnerDefeat::
-    .string "My bugs…$"
-
-Route9_Text_ConnerPostBattle::
-    .string "If you don't like BUG POKéMON,\n"
-    .string "you bug me!$"
-
-Route9_Text_RouteSign::
-    .string "ROUTE 9\n"
-    .string "CERULEAN CITY - ROCK TUNNEL$"
-
+Route9_Text_Sign::
+	.string "ROUTE 9\n"
+	.string "CERULEAN CITY - ROCK TUNNEL$"

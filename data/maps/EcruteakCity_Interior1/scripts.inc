@@ -1,0 +1,128 @@
+EcruteakCity_Interior1_MapScripts::
+	@ ShinyGold: map script header pointer was NULL
+	.byte 0
+
+EcruteakCity_Interior1_EventScript_RsBrendan::
+	call_if_set 0x10AB, EcruteakCity_Interior1_EventScript_RsBrendan_1
+	call EcruteakCity_Interior1_EventScript_RsBrendan_2
+	end
+
+EcruteakCity_Interior1_EventScript_RsBrendan_1::
+	release
+	end
+
+EcruteakCity_Interior1_EventScript_RsBrendan_2::
+	applymovement 1, EcruteakCity_Interior1_Movement_RsBrendan_1
+	delay 32
+	applymovement 1, EcruteakCity_Interior1_Movement_RsBrendan_2
+	delay 64
+	playbgm MUS_ENCOUNTER_RIVAL, 51
+	applymovement 1, EcruteakCity_Interior1_Movement_RsBrendan_3
+	delay 32
+	msgbox EcruteakCity_Interior1_Text_RsBrendan_1, MSGBOX_NPC
+	call_if_eq VAR_STARTER_MON, 0, EcruteakCity_Interior1_EventScript_RsBrendan_3
+	call_if_eq VAR_STARTER_MON, 1, EcruteakCity_Interior1_EventScript_RsBrendan_4
+	call_if_eq VAR_STARTER_MON, 2, EcruteakCity_Interior1_EventScript_RsBrendan_5
+	end
+
+EcruteakCity_Interior1_EventScript_RsBrendan_3::
+	trainerbattle_earlyrival TRAINER_RIVAL_TERRY_4, 0, EcruteakCity_Interior1_Text_RsBrendanDefeat, EcruteakCity_Interior1_Text_RsBrendanDefeat
+	goto EcruteakCity_Interior1_EventScript_RsBrendan_6
+
+EcruteakCity_Interior1_EventScript_RsBrendan_4::
+	trainerbattle_earlyrival TRAINER_RIVAL_TERRY_5, 0, EcruteakCity_Interior1_Text_RsBrendanDefeat, EcruteakCity_Interior1_Text_RsBrendanDefeat
+	goto EcruteakCity_Interior1_EventScript_RsBrendan_6
+
+EcruteakCity_Interior1_EventScript_RsBrendan_5::
+	trainerbattle_earlyrival TRAINER_RIVAL_TERRY_6, 0, EcruteakCity_Interior1_Text_RsBrendanDefeat, EcruteakCity_Interior1_Text_RsBrendanDefeat
+	goto EcruteakCity_Interior1_EventScript_RsBrendan_6
+
+EcruteakCity_Interior1_Movement_RsBrendan_1::
+	face_left
+	face_left
+	face_left
+	face_left
+	face_right
+	face_right
+	face_right
+	face_right
+	face_up
+	face_up
+	face_up
+	face_up
+	face_down_fast
+	step_end
+
+EcruteakCity_Interior1_Movement_RsBrendan_2::
+	emote_exclamation_mark
+	step_end
+
+EcruteakCity_Interior1_Movement_RsBrendan_3::
+	walk_down
+	step_end
+
+EcruteakCity_Interior1_EventScript_RsBrendan_6::
+	setflag 0x10AB
+	msgbox EcruteakCity_Interior1_Text_RsBrendan_2, MSGBOX_NPC
+	applymovement 1, EcruteakCity_Interior1_Movement_RsBrendan_4
+	delay 48
+	end
+
+EcruteakCity_Interior1_Movement_RsBrendan_4::
+	walk_right
+	walk_down
+	walk_down
+	walk_left
+	face_down_fast
+	set_invisible
+	walk_down
+	walk_down
+	step_end
+
+EcruteakCity_Interior1_EventScript_FirebreatherNed::
+	trainerbattle_single TRAINER_FIREBREATHER_NED, EcruteakCity_Interior1_Text_FirebreatherNedIntro, EcruteakCity_Interior1_Text_FirebreatherNedDefeat
+	msgbox EcruteakCity_Interior1_Text_FirebreatherNed, MSGBOX_AUTOCLOSE
+	end
+
+EcruteakCity_Interior1_EventScript_FirebreatherDick::
+	trainerbattle_single TRAINER_FIREBREATHER_DICK, EcruteakCity_Interior1_Text_FirebreatherDickIntro, EcruteakCity_Interior1_Text_FirebreatherDickDefeat
+	msgbox EcruteakCity_Interior1_Text_FirebreatherDick, MSGBOX_AUTOCLOSE
+	end
+
+EcruteakCity_Interior1_EventScript_ItemBurnHeal::
+	finditem ITEM_BURN_HEAL
+	end
+
+EcruteakCity_Interior1_EventScript_ItemXSpeed::
+	finditem ITEM_X_SPEED
+	end
+
+EcruteakCity_Interior1_EventScript_ItemEther::
+	finditem ITEM_ETHER
+	end
+
+EcruteakCity_Interior1_EventScript_Trigger1::
+	call_if_set 0x10AB, EcruteakCity_Interior1_EventScript_RsBrendan_1
+	applymovement LOCALID_PLAYER, EcruteakCity_Interior1_Movement_Trigger1
+	delay 48
+	call EcruteakCity_Interior1_EventScript_RsBrendan_2
+	end
+
+EcruteakCity_Interior1_Movement_Trigger1::
+	walk_right
+	walk_up
+	face_up
+	step_end
+
+EcruteakCity_Interior1_EventScript_Trigger3::
+	call_if_set 0x10AB, EcruteakCity_Interior1_EventScript_RsBrendan_1
+	applymovement LOCALID_PLAYER, EcruteakCity_Interior1_Movement_Trigger3
+	delay 48
+	call EcruteakCity_Interior1_EventScript_RsBrendan_2
+	end
+
+EcruteakCity_Interior1_Movement_Trigger3::
+	walk_left
+	walk_up
+	face_up
+	step_end

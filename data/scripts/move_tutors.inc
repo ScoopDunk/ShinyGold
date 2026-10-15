@@ -154,21 +154,21 @@ EventScript_MegaKickTaught::
 	release
 	end
 
+@ ShinyGold: modified in place by the hack
 EventScript_DreamEaterTutor::
 	lock
 	faceplayer
-	goto_if_set FLAG_TUTOR_DREAM_EATER, EventScript_DreamEaterTaught
-	msgbox Text_DreamEaterTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, EventScript_DreamEaterDeclined
+	goto_if_set 0x039, EventScript_DreamEaterTaught
+	msgbox SG_Text_DreamEaterTutor, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, 0, EventScript_DreamEaterDeclined
 	call EventScript_CanOnlyBeLearnedOnce
-	goto_if_eq VAR_RESULT, NO, EventScript_DreamEaterDeclined
+	goto_if_eq VAR_RESULT, 0, EventScript_DreamEaterDeclined
 	msgbox Text_DreamEaterWhichMon
-	setvar VAR_0x8005, MOVETUTOR_DREAM_EATER
+	setvar VAR_0x8005, 10
 	call EventScript_ChooseMoveTutorMon
-	goto_if_eq VAR_RESULT, FALSE, EventScript_DreamEaterDeclined
-	setflag FLAG_TUTOR_DREAM_EATER
+	goto_if_eq VAR_RESULT, 0, EventScript_DreamEaterDeclined
+	setflag 0x039
 	goto EventScript_DreamEaterTaught
-	end
 
 EventScript_DreamEaterDeclined::
 	msgbox Text_DreamEaterDeclined
@@ -462,22 +462,22 @@ CapeBrinkTutor_EventScript_ChooseMon::
 	end
 
 CapeBrinkTutor_EventScript_JumpInPlaceDown::
-	applymovement LOCALID_CAPE_BRINK_TUTOR, Movement_JumpInPlaceDown
+	applymovement 1, Movement_JumpInPlaceDown
 	waitmovement 0
 	return
 
 CapeBrinkTutor_EventScript_JumpInPlaceUp::
-	applymovement LOCALID_CAPE_BRINK_TUTOR, Movement_JumpInPlaceUp
+	applymovement 1, Movement_JumpInPlaceUp
 	waitmovement 0
 	return
 
 CapeBrinkTutor_EventScript_JumpInPlaceLeft::
-	applymovement LOCALID_CAPE_BRINK_TUTOR, Movement_JumpInPlaceLeft
+	applymovement 1, Movement_JumpInPlaceLeft
 	waitmovement 0
 	return
 
 CapeBrinkTutor_EventScript_JumpInPlaceRight::
-	applymovement LOCALID_CAPE_BRINK_TUTOR, Movement_JumpInPlaceRight
+	applymovement 1, Movement_JumpInPlaceRight
 	waitmovement 0
 	return
 
