@@ -1,0 +1,61 @@
+MahoganyTown_Interior5_MapScripts::
+	@ ShinyGold: map script header pointer was NULL
+	.byte 0
+
+MahoganyTown_Interior5_EventScript_BoarderDouglas::
+	trainerbattle_single TRAINER_BOARDER_DOUGLAS, MahoganyTown_Interior5_Text_BoarderDouglasIntro, MahoganyTown_Interior5_Text_BoarderDouglasDefeat
+	msgbox MahoganyTown_Interior5_Text_BoarderDouglas, MSGBOX_AUTOCLOSE
+	end
+
+MahoganyTown_Interior5_EventScript_SkierClarissa::
+	trainerbattle_single TRAINER_SKIER_CLARISSA, MahoganyTown_Interior5_Text_SkierClarissaIntro, MahoganyTown_Interior5_Text_SkierClarissaDefeat
+	msgbox MahoganyTown_Interior5_Text_SkierClarissa, MSGBOX_AUTOCLOSE
+	end
+
+MahoganyTown_Interior5_EventScript_BoarderRonald::
+	trainerbattle_single TRAINER_BOARDER_RONALD, MahoganyTown_Interior5_Text_BoarderRonaldIntro, MahoganyTown_Interior5_Text_BoarderRonaldDefeat
+	msgbox MahoganyTown_Interior5_Text_BoarderRonald, MSGBOX_AUTOCLOSE
+	end
+
+MahoganyTown_Interior5_EventScript_GymGuy::
+	call_if_set FLAG_BADGE08_GET, MahoganyTown_Interior5_EventScript_GymGuy_1
+	msgbox MahoganyTown_Interior5_Text_GymGuy_1, MSGBOX_NPC
+	end
+
+MahoganyTown_Interior5_EventScript_GymGuy_1::
+	msgbox MahoganyTown_Interior5_Text_GymGuy_2, MSGBOX_NPC
+	end
+
+MahoganyTown_Interior5_EventScript_SkierRoxanne::
+	trainerbattle_single TRAINER_SKIER_ROXANNE, MahoganyTown_Interior5_Text_SkierRoxanneIntro, MahoganyTown_Interior5_Text_SkierRoxanneDefeat
+	msgbox MahoganyTown_Interior5_Text_SkierRoxanne, MSGBOX_AUTOCLOSE
+	end
+
+MahoganyTown_Interior5_EventScript_BoarderBrad::
+	trainerbattle_single TRAINER_BOARDER_BRAD, MahoganyTown_Interior5_Text_BoarderBradIntro, MahoganyTown_Interior5_Text_BoarderBradDefeat
+	msgbox MahoganyTown_Interior5_Text_BoarderBrad, MSGBOX_AUTOCLOSE
+	end
+
+MahoganyTown_Interior5_EventScript_LeaderPryce::
+	setvar VAR_0x8004, 2
+	setvar VAR_0x8005, 2
+	special UpdatePickStateFromSpecialVar8005
+	trainerbattle_single TRAINER_LEADER_PRYCE, MahoganyTown_Interior5_Text_LeaderPryceIntro, MahoganyTown_Interior5_Text_LeaderPryceDefeat, MahoganyTown_Interior5_EventScript_LeaderPryceContinue, NO_MUSIC
+	msgbox MahoganyTown_Interior5_Text_LeaderPryce_1, MSGBOX_NPC
+	.byte 0xFF @ invalid opcode (script stops)
+
+MahoganyTown_Interior5_EventScript_LeaderPryceContinue::
+	setflag FLAG_BADGE08_GET
+	msgbox MahoganyTown_Interior5_Text_LeaderPryce_2, MSGBOX_NPC
+	giveitem ITEM_TM16
+	msgbox MahoganyTown_Interior5_Text_LeaderPryce_3, MSGBOX_NPC
+	end
+
+MahoganyTown_Interior5_EventScript_Sign1::
+	call_if_set FLAG_BADGE08_GET, MahoganyTown_Interior5_EventScript_Sign1_1
+	msgbox MahoganyTown_Interior5_Text_Sign1_1, MSGBOX_NPC
+	end
+
+MahoganyTown_Interior5_EventScript_Sign1_1::
+	msgbox MahoganyTown_Interior5_Text_Sign1_2, MSGBOX_NPC
+	end

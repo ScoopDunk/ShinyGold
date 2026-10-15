@@ -1,0 +1,76 @@
+IndigoPlateau_Interior3_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, IndigoPlateau_Interior3_OnResume
+	map_script MAP_SCRIPT_ON_LOAD, IndigoPlateau_Interior3_OnLoad
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, IndigoPlateau_Interior3_OnWarp
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, IndigoPlateau_Interior3_OnFrame
+	.byte 0
+
+IndigoPlateau_Interior3_OnResume::
+	setvar VAR_0x8004, 2
+	call PokemonLeague_EventScript_DoLightingEffect
+	end
+
+IndigoPlateau_Interior3_OnLoad::
+	call_if_set 0x4BA, IndigoPlateau_Interior3_EventScript_OnLoad_1
+	call_if_eq 0x4068, 3, IndigoPlateau_Interior3_EventScript_OnLoad_2
+	end
+
+IndigoPlateau_Interior3_EventScript_OnLoad_1::
+	call PokemonLeague_EventScript_SetDoorOpen
+	return
+
+IndigoPlateau_Interior3_EventScript_OnLoad_2::
+	call PokemonLeague_EventScript_CloseEntry
+	return
+
+IndigoPlateau_Interior3_OnWarp::
+	map_script_2 VAR_TEMP_1, 0, IndigoPlateau_Interior3_EventScript_WarpScene
+	.2byte 0
+
+IndigoPlateau_Interior3_EventScript_WarpScene::
+	turnobject LOCALID_PLAYER, DIR_NORTH
+	end
+
+IndigoPlateau_Interior3_OnFrame::
+	map_script_2 0x4068, 2, IndigoPlateau_Interior3_EventScript_FrameScene
+	.2byte 0
+
+IndigoPlateau_Interior3_EventScript_FrameScene::
+	lockall
+	call PokemonLeague_EventScript_EnterRoom
+	setvar 0x4068, 3
+	releaseall
+	end
+
+IndigoPlateau_Interior3_EventScript_Bruno::
+	call_if_set 0x4BA, IndigoPlateau_Interior3_EventScript_Bruno_1
+	msgbox IndigoPlateau_Interior3_Text_Bruno_1, MSGBOX_NPC
+	setflag FLAG_TEMP_3
+	setflag FLAG_TEMP_5
+	goto_if_set 0x115B, IndigoPlateau_Interior3_EventScript_Bruno_2
+	goto_if_unset 0x115B, IndigoPlateau_Interior3_EventScript_Bruno_3
+	end
+
+IndigoPlateau_Interior3_EventScript_Bruno_1::
+	msgbox IndigoPlateau_Interior3_Text_Bruno_2, MSGBOX_NPC
+	end
+
+IndigoPlateau_Interior3_EventScript_Bruno_2::
+	trainerbattle_earlyrival TRAINER_LEADER_BLAINE_2, 0, IndigoPlateau_Interior3_Text_BrunoDefeat, IndigoPlateau_Interior3_Text_BrunoVictory
+	setflag 0x4BA
+	call PokemonLeague_EventScript_OpenDoor
+	msgbox IndigoPlateau_Interior3_Text_Bruno_2, MSGBOX_NPC
+	return
+
+IndigoPlateau_Interior3_EventScript_Bruno_3::
+	trainerbattle_earlyrival TRAINER_ELITETRAINER_BRUNO, 0, IndigoPlateau_Interior3_Text_BrunoDefeat, IndigoPlateau_Interior3_Text_BrunoVictory
+	setflag 0x4BA
+	call PokemonLeague_EventScript_OpenDoor
+	msgbox IndigoPlateau_Interior3_Text_Bruno_2, MSGBOX_NPC
+	return
+
+IndigoPlateau_Interior3_EventScript_Trigger::
+	clearflag 0x115C
+	setflag 0x115D
+	release
+	end

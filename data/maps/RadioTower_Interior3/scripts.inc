@@ -1,0 +1,86 @@
+RadioTower_Interior3_MapScripts::
+	@ ShinyGold: map script header pointer was NULL
+	.byte 0
+
+RadioTower_Interior3_EventScript_TeamRocketGrunt25::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_25, RadioTower_Interior3_Text_TeamRocketGrunt25Intro, RadioTower_Interior3_Text_TeamRocketGrunt25Defeat
+	msgbox RadioTower_Interior3_Text_TeamRocketGrunt25, MSGBOX_AUTOCLOSE
+	end
+
+RadioTower_Interior3_EventScript_OldManLyingDown::
+	checkitem ITEM_BASEMENT_KEY
+	call_if_eq VAR_RESULT, 1, RadioTower_Interior3_EventScript_OldManLyingDown_1
+	msgbox RadioTower_Interior3_Text_OldManLyingDown_1, MSGBOX_NPC
+	end
+
+RadioTower_Interior3_EventScript_OldManLyingDown_1::
+	msgbox RadioTower_Interior3_Text_OldManLyingDown_1, MSGBOX_NPC
+	msgbox RadioTower_Interior3_Text_OldManLyingDown_2, MSGBOX_NPC
+	setflag 0x1122
+	warp MAP_RADIO_TOWER_INTERIOR3, 3, 0x26C, 0xFFFF
+	.byte 0xFF @ invalid opcode (script stops)
+
+RadioTower_Interior3_EventScript_TeamRocketGrunt13::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_13, RadioTower_Interior3_Text_TeamRocketGrunt13Intro, RadioTower_Interior3_Text_TeamRocketGrunt13Defeat
+	msgbox RadioTower_Interior3_Text_TeamRocketGrunt13, MSGBOX_AUTOCLOSE
+	end
+
+RadioTower_Interior3_EventScript_Scientist::
+	call_if_set 0x1123, RadioTower_Interior3_EventScript_Scientist_1
+	msgbox RadioTower_Interior3_Text_Scientist_1, MSGBOX_NPC
+	end
+
+RadioTower_Interior3_EventScript_Scientist_1::
+	msgbox RadioTower_Interior3_Text_Scientist_2, MSGBOX_NPC
+	end
+
+RadioTower_Interior3_EventScript_ScientistMarc::
+	trainerbattle_single TRAINER_SCIENTIST_MARC, RadioTower_Interior3_Text_ScientistMarcIntro, RadioTower_Interior3_Text_ScientistMarcDefeat
+	msgbox RadioTower_Interior3_Text_ScientistMarc, MSGBOX_AUTOCLOSE
+	end
+
+RadioTower_Interior3_EventScript_WorkerM::
+	msgbox RadioTower_Interior3_Text_WorkerM, MSGBOX_NPC
+	end
+
+RadioTower_Interior3_EventScript_WorkerF::
+	call_if_set 0x1126, RadioTower_Interior3_EventScript_WorkerF_1
+	call_if_set 0x1123, RadioTower_Interior3_EventScript_WorkerF_2
+	msgbox RadioTower_Interior3_Text_WorkerF_1, MSGBOX_NPC
+	end
+
+RadioTower_Interior3_EventScript_WorkerF_1::
+	msgbox RadioTower_Interior3_Text_WorkerF_2, MSGBOX_NPC
+	end
+
+RadioTower_Interior3_EventScript_WorkerF_2::
+	setflag 0x1126
+	msgbox RadioTower_Interior3_Text_WorkerF_3, MSGBOX_NPC
+	lock
+	faceplayer
+	giveitem ITEM_TM11
+	msgbox RadioTower_Interior3_Text_WorkerF_4, MSGBOX_NPC
+	end
+
+RadioTower_Interior3_EventScript_TeamRocketGrunt39::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_39, RadioTower_Interior3_Text_TeamRocketGrunt39Intro, RadioTower_Interior3_Text_TeamRocketGrunt39Defeat
+	msgbox RadioTower_Interior3_Text_TeamRocketGrunt39, MSGBOX_AUTOCLOSE
+	end
+
+RadioTower_Interior3_EventScript_Trigger::
+	call_if_set 0x1123, RadioTower_Interior3_EventScript_Trigger_1
+	setflag 0x1124
+	release
+	end
+
+RadioTower_Interior3_EventScript_Trigger_1::
+	release
+	end
+
+RadioTower_Interior3_EventScript_Sign1::
+	msgbox RadioTower_Interior3_Text_Sign1, MSGBOX_AUTOCLOSE
+	end
+
+RadioTower_Interior3_EventScript_Sign2::
+	msgbox RadioTower_Interior3_Text_Sign2, MSGBOX_AUTOCLOSE
+	end

@@ -1,0 +1,33 @@
+GreenRoute_Area1_MapScripts::
+	.byte 0
+
+GreenRoute_Area1_EventScript_LassCamila::
+	trainerbattle_single TRAINER_LASS_CAMILA, SixIsland_WaterPath_Text_RoseIntro, SixIsland_WaterPath_Text_RoseDefeat
+	msgbox SixIsland_WaterPath_Text_RosePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+GreenRoute_Area1_EventScript_JugglerRonger::
+	trainerbattle_single TRAINER_JUGGLER_RONGER, SixIsland_WaterPath_Text_EdwardIntro, SixIsland_WaterPath_Text_EdwardDefeat
+	msgbox SixIsland_WaterPath_Text_EdwardPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+GreenRoute_Area1_EventScript_HikerHayden::
+	trainerbattle_single TRAINER_HIKER_HAYDEN, SixIsland_WaterPath_Text_EarlIntro, SixIsland_WaterPath_Text_EarlDefeat
+	msgbox SixIsland_WaterPath_Text_EarlPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+GreenRoute_Area1_EventScript_ItemSunStone::
+	finditem ITEM_SUN_STONE
+	end
+
+GreenRoute_Area1_EventScript_ItemSeaIncense::
+	finditem ITEM_SEA_INCENSE
+	end
+
+GreenRoute_Area1_EventScript_Sign1::
+	msgbox GreenRoute_Area1_Text_Sign1, MSGBOX_AUTOCLOSE
+	end
+
+GreenRoute_Area1_EventScript_Sign3::
+	msgbox GreenRoute_Area1_Text_Sign3, MSGBOX_SIGN
+	end

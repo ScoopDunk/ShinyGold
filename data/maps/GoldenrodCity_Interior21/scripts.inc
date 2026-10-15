@@ -1,0 +1,51 @@
+GoldenrodCity_Interior21_MapScripts::
+	.byte 0
+
+GoldenrodCity_Interior21_EventScript_LittleGirl::
+	msgbox GoldenrodCity_Interior21_Text_LittleGirl, MSGBOX_NPC
+	end
+
+GoldenrodCity_Interior21_EventScript_BaldingMan::
+	msgbox GoldenrodCity_Interior21_Text_BaldingMan, MSGBOX_NPC
+	end
+
+GoldenrodCity_Interior21_EventScript_Woman3::
+	msgbox GoldenrodCity_Interior21_Text_Woman3_1, MSGBOX_NPC
+	specialvar VAR_RESULT, GetLeadMonFriendship
+	switch VAR_RESULT
+	call_if_eq VAR_0x8000, 0, GoldenrodCity_Interior21_EventScript_Woman3_1
+	call_if_eq VAR_0x8000, 1, GoldenrodCity_Interior21_EventScript_Woman3_2
+	call_if_eq VAR_0x8000, 2, GoldenrodCity_Interior21_EventScript_Woman3_3
+	call_if_eq VAR_0x8000, 3, GoldenrodCity_Interior21_EventScript_Woman3_4
+	call_if_eq VAR_0x8000, 4, GoldenrodCity_Interior21_EventScript_Woman3_5
+	call_if_eq VAR_0x8000, 5, GoldenrodCity_Interior21_EventScript_Woman3_6
+	call_if_eq VAR_0x8000, 6, GoldenrodCity_Interior21_EventScript_Woman3_7
+	end
+
+GoldenrodCity_Interior21_EventScript_Woman3_1::
+	msgbox GoldenrodCity_Interior21_Text_Woman3_2, MSGBOX_NPC
+	end
+
+GoldenrodCity_Interior21_EventScript_Woman3_2::
+	msgbox GoldenrodCity_Interior21_Text_Woman3_3, MSGBOX_NPC
+	end
+
+GoldenrodCity_Interior21_EventScript_Woman3_3::
+	msgbox GoldenrodCity_Interior21_Text_Woman3_4, MSGBOX_NPC
+	end
+
+GoldenrodCity_Interior21_EventScript_Woman3_4::
+	msgbox GoldenrodCity_Interior21_Text_Woman3_5, MSGBOX_NPC
+	end
+
+GoldenrodCity_Interior21_EventScript_Woman3_5::
+	msgbox GoldenrodCity_Interior21_Text_Woman3_6, MSGBOX_NPC
+	end
+
+GoldenrodCity_Interior21_EventScript_Woman3_6::
+	msgbox GoldenrodCity_Interior21_Text_Woman3_7, MSGBOX_NPC
+	end
+
+GoldenrodCity_Interior21_EventScript_Woman3_7::
+	msgbox GoldenrodCity_Interior21_Text_Woman3_8, MSGBOX_NPC
+	end

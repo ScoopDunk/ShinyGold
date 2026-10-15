@@ -1,0 +1,39 @@
+EcruteakCity_Interior12_MapScripts::
+	.byte 0
+
+EcruteakCity_Interior12_EventScript_RedSurf::
+	call_if_set 0x10A3, EcruteakCity_Interior12_EventScript_RedSurf_1
+	faceplayer
+	msgbox EcruteakCity_Interior12_Text_RedSurf_1, MSGBOX_YESNO
+	call_if_eq VAR_RESULT, 1, EcruteakCity_Interior12_EventScript_RedSurf_2
+	msgbox EcruteakCity_Interior12_Text_RedSurf_2, MSGBOX_NPC
+	end
+
+EcruteakCity_Interior12_EventScript_RedSurf_1::
+	msgbox EcruteakCity_Interior12_Text_RedSurf_3, MSGBOX_NPC
+	end
+
+EcruteakCity_Interior12_EventScript_RedSurf_2::
+	msgbox EcruteakCity_Interior12_Text_RedSurf_4, MSGBOX_NPC
+	giveitem ITEM_ITEMFINDER
+	msgbox EcruteakCity_Interior12_Text_RedSurf_3, MSGBOX_NPC
+	setflag 0x10A3
+	end
+
+EcruteakCity_Interior12_EventScript_Clipboard::
+	msgbox EcruteakCity_Interior12_Text_Clipboard_1, MSGBOX_AUTOCLOSE
+	msgbox EcruteakCity_Interior12_Text_Clipboard_2, MSGBOX_YESNO
+	call_if_eq VAR_RESULT, 1, EcruteakCity_Interior12_EventScript_Clipboard_1
+	release
+	end
+
+EcruteakCity_Interior12_EventScript_Clipboard_1::
+	msgbox EcruteakCity_Interior12_Text_Clipboard_3, MSGBOX_AUTOCLOSE
+	msgbox EcruteakCity_Interior12_Text_Clipboard_4, MSGBOX_YESNO
+	call_if_eq VAR_RESULT, 1, EcruteakCity_Interior12_EventScript_Clipboard_2
+	release
+	end
+
+EcruteakCity_Interior12_EventScript_Clipboard_2::
+	msgbox EcruteakCity_Interior12_Text_Clipboard_5, MSGBOX_AUTOCLOSE
+	end

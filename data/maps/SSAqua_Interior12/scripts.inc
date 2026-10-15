@@ -1,0 +1,38 @@
+SSAqua_Interior12_MapScripts::
+	.byte 0
+
+SSAqua_Interior12_EventScript_PokemaniacEthan::
+	trainerbattle_single TRAINER_POKEMANIAC_ETHAN, SSAqua_Interior12_Text_PokemaniacEthanIntro, SSAqua_Interior12_Text_PokemaniacEthanDefeat
+	call_if_set 0x1197, SSAqua_Interior12_EventScript_PokemaniacEthan_1
+	msgbox SSAqua_Interior12_Text_PokemaniacEthan, MSGBOX_AUTOCLOSE
+	end
+
+SSAqua_Interior12_EventScript_PokemaniacEthan_1::
+	msgbox SSAqua_Interior12_Text_PokemaniacEthanIntro, MSGBOX_NPC
+	trainerbattle_earlyrival TRAINER_POKEMANIAC_ETHAN, 0, SSAqua_Interior12_Text_PokemaniacEthanDefeat, SSAqua_Interior3_Text_FishermanJonahVictory
+	clearflag 0x1197
+	end
+
+SSAqua_Interior12_EventScript_CooltrainerSean::
+	trainerbattle_single TRAINER_COOLTRAINER_SEAN, SSAqua_Interior12_Text_CooltrainerSeanIntro, SSAqua_Interior12_Text_CooltrainerSeanDefeat
+	call_if_set 0x11A2, SSAqua_Interior12_EventScript_CooltrainerSean_1
+	msgbox SSAqua_Interior12_Text_CooltrainerSean, MSGBOX_AUTOCLOSE
+	end
+
+SSAqua_Interior12_EventScript_CooltrainerSean_1::
+	msgbox SSAqua_Interior12_Text_CooltrainerSeanIntro, MSGBOX_NPC
+	trainerbattle_earlyrival TRAINER_COOLTRAINER_SEAN, 0, SSAqua_Interior12_Text_CooltrainerSeanDefeat, SSAqua_Interior3_Text_FishermanJonahVictory
+	clearflag 0x11A2
+	end
+
+SSAqua_Interior12_EventScript_CooltrainerCarol::
+	trainerbattle_single TRAINER_COOLTRAINER_CAROL, SSAqua_Interior12_Text_CooltrainerCarolIntro, SSAqua_Interior12_Text_CooltrainerCarolDefeat
+	call_if_set 0x11A1, SSAqua_Interior12_EventScript_CooltrainerCarol_1
+	msgbox SSAqua_Interior12_Text_CooltrainerCarol, MSGBOX_AUTOCLOSE
+	end
+
+SSAqua_Interior12_EventScript_CooltrainerCarol_1::
+	msgbox SSAqua_Interior12_Text_CooltrainerCarolIntro, MSGBOX_NPC
+	trainerbattle_earlyrival TRAINER_COOLTRAINER_CAROL, 0, SSAqua_Interior12_Text_CooltrainerCarolDefeat, SSAqua_Interior3_Text_FishermanJonahVictory
+	clearflag 0x11A1
+	end

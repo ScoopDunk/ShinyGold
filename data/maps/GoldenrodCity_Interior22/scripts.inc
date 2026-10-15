@@ -1,0 +1,32 @@
+GoldenrodCity_Interior22_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, GoldenrodCity_Interior22_OnTransition
+	.byte 0
+
+GoldenrodCity_Interior22_OnTransition::
+	special UpdateLoreleiDollCollection
+	end
+
+GoldenrodCity_Interior22_EventScript_WorkerM::
+	call_if_set 0x10C1, GoldenrodCity_Interior22_EventScript_WorkerM_1
+	faceplayer
+	msgbox GoldenrodCity_Interior22_Text_WorkerM_1, MSGBOX_YESNO
+	call_if_eq VAR_RESULT, 1, GoldenrodCity_Interior22_EventScript_WorkerM_2
+	msgbox GoldenrodCity_Interior22_Text_WorkerM_2, MSGBOX_NPC
+	end
+
+GoldenrodCity_Interior22_EventScript_WorkerM_1::
+	msgbox GoldenrodCity_Interior22_Text_WorkerM_3, MSGBOX_NPC
+	end
+
+GoldenrodCity_Interior22_EventScript_WorkerM_2::
+	msgbox GoldenrodCity_Interior22_Text_WorkerM_4, MSGBOX_NPC
+	giveitem ITEM_BICYCLE
+	msgbox GoldenrodCity_Interior22_Text_WorkerM_3, MSGBOX_NPC
+	setflag 0x10C1
+	end
+
+GoldenrodCity_Interior22_EventScript_Wigglytuff::
+	lock
+	msgbox GoldenrodCity_Interior22_Text_Wigglytuff
+	release
+	end

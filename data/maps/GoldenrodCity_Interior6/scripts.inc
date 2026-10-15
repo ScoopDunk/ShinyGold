@@ -1,0 +1,36 @@
+GoldenrodCity_Interior6_MapScripts::
+	@ ShinyGold: map script header pointer was NULL
+	.byte 0
+
+GoldenrodCity_Interior6_EventScript_Picnicker::
+	call_if_set FLAG_BADGE04_GET, GoldenrodCity_Interior6_EventScript_Picnicker_1
+	msgbox GoldenrodCity_Interior6_Text_Picnicker_1, MSGBOX_NPC
+	end
+
+GoldenrodCity_Interior6_EventScript_Picnicker_1::
+	msgbox GoldenrodCity_Interior6_Text_Picnicker_2, MSGBOX_NPC
+	end
+
+GoldenrodCity_Interior6_EventScript_Woman2::
+	call_if_set 0x1094, GoldenrodCity_Interior6_EventScript_Woman2_1
+	call_if_set FLAG_BADGE04_GET, GoldenrodCity_Interior6_EventScript_Woman2_2
+	applymovement 4, GoldenrodCity_Interior6_Movement_Woman2
+	msgbox GoldenrodCity_Interior6_Text_Woman2_1, MSGBOX_AUTOCLOSE
+	end
+
+GoldenrodCity_Interior6_EventScript_Woman2_1::
+	applymovement 4, GoldenrodCity_Interior6_Movement_Woman2
+	msgbox GoldenrodCity_Interior6_Text_Woman2_1, MSGBOX_AUTOCLOSE
+	end
+
+GoldenrodCity_Interior6_EventScript_Woman2_2::
+	msgbox GoldenrodCity_Interior6_Text_Woman2_2, MSGBOX_NPC
+	giveitem ITEM_WAILMER_PAIL
+	applymovement 4, GoldenrodCity_Interior6_Movement_Woman2
+	msgbox GoldenrodCity_Interior6_Text_Woman2_1, MSGBOX_AUTOCLOSE
+	setflag 0x1094
+	end
+
+GoldenrodCity_Interior6_Movement_Woman2::
+	face_left
+	step_end

@@ -95,8 +95,9 @@ EventScript_RockSmashNoEncounter::
 	releaseall
 	end
 
+@ ShinyGold: modified in place by the hack
 Movement_BreakRock::
-	rock_smash_break
+	face_down
 	step_end
 
 EventScript_CantSmashRock::

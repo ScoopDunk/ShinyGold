@@ -15,20 +15,22 @@ EventScript_AfterWhiteOutHealMsgPreBrock::
 	msgbox Text_MonsHealedShouldBuyPotions
 	return
 
+@ ShinyGold: modified in place by the hack
 EventScript_AfterWhiteOutHealMsg::
-	msgbox Text_MonsHealed
-	return
+	loadword 155, 0x9081A5F
+	call 0x00C76903
+	call_if_set 0x1023, SG_EventScript_AfterWhiteOutHealMsg_1
+	call_if_set 0x1015, SG_EventScript_AfterWhiteOutHealMsg_2
+	call SG_EventScript_AfterWhiteOutHealMsg_1
+	end
 
+@ ShinyGold: modified in place by the hack
 EventScript_AfterWhiteOutMomHeal::
-	lockall
-	textcolor NPC_TEXT_COLOR_FEMALE
-	applymovement LOCALID_MOM, Common_Movement_WalkInPlaceFasterDown
-	waitmovement 0
-	msgbox Text_HadQuiteAnExperienceTakeRest
-	call EventScript_OutOfCenterPartyHeal
-	msgbox Text_MomExplainHPGetPotions
-	fadedefaultbgm
-	releaseall
+	@ ShinyGold: overlapping data duplicated from 0x081A8DD8
+	textcolor NPC_TEXT_COLOR_MALE
+	call_if_set 0x1023, SG_EventScript_AfterWhiteOutHealMsg_1
+	call_if_set 0x1015, SG_EventScript_AfterWhiteOutHealMsg_2
+	call SG_EventScript_AfterWhiteOutHealMsg_1
 	end
 
 EventScript_FieldPoison::

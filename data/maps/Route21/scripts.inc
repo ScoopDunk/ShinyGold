@@ -1,0 +1,17 @@
+Route21_MapScripts::
+	.byte 0
+
+Route21_EventScript_SwimmerFNikki::
+	trainerbattle_single TRAINER_SWIMMER_F_NIKKI, Route21_Text_SwimmerFNikkiIntro, Route21_Text_SwimmerFNikkiDefeat
+	msgbox Route21_Text_SwimmerFNikki, MSGBOX_AUTOCLOSE
+	end
+
+Route21_EventScript_FishermanArnold::
+	trainerbattle_single TRAINER_FISHERMAN_ARNOLD, Route21_Text_FishermanArnoldIntro, Route21_Text_FishermanArnoldDefeat
+	msgbox Route21_Text_FishermanArnold, MSGBOX_AUTOCLOSE
+	end
+
+Route21_EventScript_SwimmerMSeth::
+	trainerbattle_single TRAINER_SWIMMER_M_SETH, Route21_Text_SwimmerMSethIntro, Route21_Text_SwimmerMSethDefeat
+	msgbox Route21_Text_SwimmerMSeth, MSGBOX_AUTOCLOSE
+	end

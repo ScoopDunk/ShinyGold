@@ -1,0 +1,16 @@
+SSAqua_Interior10_MapScripts::
+	.byte 0
+
+SSAqua_Interior10_EventScript_CamperElliot::
+	trainerbattle_single TRAINER_CAMPER_ELLIOT, SSAqua_Interior10_Text_CamperElliotIntro, SSAqua_Interior10_Text_CamperElliotDefeat
+	msgbox SSAqua_Interior10_Text_CamperElliot, MSGBOX_AUTOCLOSE
+	end
+
+SSAqua_Interior10_EventScript_BirdKeeper96::
+	trainerbattle_single TRAINER_BIRD_KEEPER_96, SSAqua_Interior10_Text_BirdKeeper96Intro, SSAqua_Interior10_Text_BirdKeeper96Defeat
+	msgbox SSAqua_Interior10_Text_BirdKeeper96, MSGBOX_AUTOCLOSE
+	end
+
+SSAqua_Interior10_EventScript_Woman2::
+	msgbox SSAqua_Interior10_Text_Woman2, MSGBOX_NPC
+	end

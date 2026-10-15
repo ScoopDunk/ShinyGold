@@ -1,32 +1,22 @@
 Route20_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, Route20_OnTransition
+	@ ShinyGold: map script header pointer was NULL
 	.byte 0
 
-Route20_OnTransition::
-	call_if_unset FLAG_STOPPED_SEAFOAM_B3F_CURRENT, Route20_EventScript_ResetSeafoamBouldersForB3F
-	call_if_unset FLAG_STOPPED_SEAFOAM_B4F_CURRENT, Route20_EventScript_ResetSeafoamBouldersForB4F
+Route20_EventScript_SwimmerFNicole2::
+	trainerbattle_single TRAINER_SWIMMER_F_NICOLE_2, Route20_Text_SwimmerFNicole2Intro, Route20_Text_SwimmerFNicole2Defeat
+	msgbox Route20_Text_SwimmerFNicole2, MSGBOX_AUTOCLOSE
 	end
 
-Route20_EventScript_ResetSeafoamBouldersForB3F::
-	clearflag FLAG_HIDE_SEAFOAM_1F_BOULDER_1
-	clearflag FLAG_HIDE_SEAFOAM_1F_BOULDER_2
-	setflag FLAG_HIDE_SEAFOAM_B1F_BOULDER_1
-	setflag FLAG_HIDE_SEAFOAM_B1F_BOULDER_2
-	setflag FLAG_HIDE_SEAFOAM_B2F_BOULDER_1
-	setflag FLAG_HIDE_SEAFOAM_B2F_BOULDER_2
-	setflag FLAG_HIDE_SEAFOAM_B3F_BOULDER_1
-	setflag FLAG_HIDE_SEAFOAM_B3F_BOULDER_2
-	return
+Route20_EventScript_SwimmerFLori::
+	trainerbattle_single TRAINER_SWIMMER_F_LORI, Route20_Text_SwimmerFLoriIntro, Route20_Text_SwimmerFLoriDefeat
+	msgbox Route20_Text_SwimmerFLori, MSGBOX_AUTOCLOSE
+	end
 
-Route20_EventScript_ResetSeafoamBouldersForB4F::
-	clearflag FLAG_HIDE_SEAFOAM_B3F_BOULDER_3
-	clearflag FLAG_HIDE_SEAFOAM_B3F_BOULDER_4
-	clearflag FLAG_HIDE_SEAFOAM_B3F_BOULDER_5
-	clearflag FLAG_HIDE_SEAFOAM_B3F_BOULDER_6
-	setflag FLAG_HIDE_SEAFOAM_B4F_BOULDER_1
-	setflag FLAG_HIDE_SEAFOAM_B4F_BOULDER_2
-	return
+Route20_EventScript_SwimmerMCameron::
+	trainerbattle_single TRAINER_SWIMMER_M_CAMERON, Route20_Text_SwimmerMCameronIntro, Route20_Text_SwimmerMCameronDefeat
+	msgbox Route20_Text_SwimmerMCameron, MSGBOX_AUTOCLOSE
+	end
 
-Route20_EventScript_SeafoamIslandsSign::
-	msgbox Route20_Text_SeafoamIslands, MSGBOX_SIGN
+Route20_EventScript_Sign1::
+	msgbox Route20_Text_Sign1, MSGBOX_SIGN
 	end

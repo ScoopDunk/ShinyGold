@@ -1,139 +1,229 @@
 FuchsiaCity_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, FuchsiaCity_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, FuchsiaCity_OnFrame
 	.byte 0
 
-FuchsiaCity_OnTransition::
-	setworldmapflag FLAG_WORLD_MAP_FUCHSIA_CITY
-	call_if_set FLAG_GOT_DOME_FOSSIL, FuchsiaCity_EventScript_SetOmanyteGfx
-	call_if_unset FLAG_GOT_DOME_FOSSIL, FuchsiaCity_EventScript_SetKabutoGfx
+FuchsiaCity_OnFrame::
+	map_script_2 0x7048, 0, FuchsiaCity_EventScript_FrameScene
+	.2byte 0
+
+FuchsiaCity_EventScript_FrameScene::
+	call CeruleanCity_EventScript_Trigger1
+	setflag 0x1367
+	setvar 0x7048, 1
+	call NewBarkTown_EventScript_FrameScene_1
 	end
 
-FuchsiaCity_EventScript_SetOmanyteGfx::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_OMANYTE
-	return
-
-FuchsiaCity_EventScript_SetKabutoGfx::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_KABUTO
-	return
-
-FuchsiaCity_EventScript_LittleBoy::
-	msgbox FuchsiaCity_Text_DidYouTrySafariGame, MSGBOX_NPC
+FuchsiaCity_EventScript_Camper::
+	msgbox FuchsiaCity_Text_Camper, MSGBOX_NPC
 	end
 
-FuchsiaCity_EventScript_OldMan::
-	msgbox FuchsiaCity_Text_SafariZoneZooInFront, MSGBOX_NPC
+FuchsiaCity_EventScript_Woman2::
+	msgbox FuchsiaCity_Text_Woman2, MSGBOX_NPC
 	end
 
-FuchsiaCity_EventScript_Erik::
-	msgbox FuchsiaCity_Text_WheresSara, MSGBOX_NPC
+FuchsiaCity_EventScript_ItemRepeatBall::
+	finditem ITEM_REPEAT_BALL
 	end
 
-FuchsiaCity_EventScript_Youngster::
-	msgbox FuchsiaCity_Text_ItemBallInThere, MSGBOX_NPC
+FuchsiaCity_EventScript_BaldingMan::
+	msgbox FuchsiaCity_Text_BaldingMan, MSGBOX_NPC
 	end
 
-FuchsiaCity_EventScript_Lass::
-	lock
-	faceplayer
-	famechecker FAMECHECKER_KOGA, 3
-	msgbox FuchsiaCity_Text_MyFatherIsGymLeader
+FuchsiaCity_EventScript_ItemFullRestore::
+	finditem ITEM_FULL_RESTORE
+	end
+
+FuchsiaCity_EventScript_CutTree::
+	call_if_set 0x11F5, EventScript_CutTree
+	call_if_set 0x11F3, FuchsiaCity_EventScript_CutTree_1
+	call EventScript_CutTree
+	end
+
+FuchsiaCity_EventScript_CutTree_1::
+	msgbox FuchsiaCity_Text_CutTree, MSGBOX_AUTOCLOSE
+	end
+
+FuchsiaCity_EventScript_CutTree2::
+	call_if_set 0x11F5, EventScript_CutTree
+	call_if_set 0x11F6, FuchsiaCity_EventScript_CutTree2_1
+	call_if_set 0x11F3, FuchsiaCity_EventScript_CutTree2_2
+	call EventScript_CutTree
+
+FuchsiaCity_EventScript_CutTree2_2::
+	msgbox FuchsiaCity_Text_CutTree, MSGBOX_AUTOCLOSE
+	setflag 0x11F6
 	release
 	end
 
-FuchsiaCity_EventScript_CitySign::
-	msgbox FuchsiaCity_Text_CitySign, MSGBOX_SIGN
+FuchsiaCity_EventScript_CutTree2_1::
+	msgbox FuchsiaCity_Text_CutTree2_1, MSGBOX_AUTOCLOSE
+	delay 80
+	msgbox FuchsiaCity_Text_CutTree2_2, MSGBOX_NPC
+	applymovement 8, FuchsiaCity_Movement_CutTree2_1
+	delay 160
+	msgbox FuchsiaCity_Text_CutTree2_3, MSGBOX_NPC
+	msgbox FuchsiaCity_Text_CutTree2_4, MSGBOX_NPC
+	delay 16
+	msgbox FuchsiaCity_Text_CutTree2_5, MSGBOX_NPC
+	setobjectxy 7, 46, 0
+	applymovement LOCALID_PLAYER, FuchsiaCity_Movement_CutTree2_2
+	delay 16
+	msgbox FuchsiaCity_Text_CutTree2_6, MSGBOX_NPC
+	applymovement 8, FuchsiaCity_Movement_CutTree2_3
+	delay 1
+	delay 32
+	special StartDroughtWeatherBlend
+	delay 80
+	special StartDroughtWeatherBlend
+	delay 112
+	applymovement 8, FuchsiaCity_Movement_CutTree2_4
+	delay 1
+	msgbox FuchsiaCity_Text_CutTree2_7, MSGBOX_NPC
+	applymovement 8, FuchsiaCity_Movement_CutTree2_5
+	applymovement LOCALID_PLAYER, FuchsiaCity_Movement_CutTree2_6
+	delay 128
+	delay 80
+	warp MAP_ROUTE15_INTERIOR1, 1, 0x26C, 227
+	.byte 0xD8 @ invalid opcode (script stops)
+
+FuchsiaCity_Movement_CutTree2_1::
+	walk_up
+	walk_up
+	walk_up
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	step_end
+
+FuchsiaCity_Movement_CutTree2_2::
+	walk_down
+	step_end
+
+FuchsiaCity_Movement_CutTree2_3::
+	face_down_fast
+	step_end
+
+FuchsiaCity_Movement_CutTree2_4::
+	face_up
+	step_end
+
+FuchsiaCity_Movement_CutTree2_5::
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	set_invisible
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+FuchsiaCity_Movement_CutTree2_6::
+	walk_fast_down
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+FuchsiaCity_EventScript_Trigger1::
+	call_if_set 0x11F3, FuchsiaCity_EventScript_Trigger1_1
+	setflag 0x11F2
+	setflag 0x11F4
+	release
 	end
 
-FuchsiaCity_EventScript_SafariZoneSign::
-	msgbox FuchsiaCity_Text_SafariZoneSign, MSGBOX_SIGN
+FuchsiaCity_EventScript_Trigger1_1::
+	release
 	end
 
-FuchsiaCity_EventScript_SafariGameSign::
-	msgbox FuchsiaCity_Text_SafariGameSign, MSGBOX_SIGN
+FuchsiaCity_EventScript_Trigger4::
+	call_if_set 0x11F5, FuchsiaCity_EventScript_Trigger4_1
+	call_if_set 0x11F3, FuchsiaCity_EventScript_Trigger4_2
+	release
 	end
 
-FuchsiaCity_EventScript_WardensHomeSign::
-	msgbox FuchsiaCity_Text_WardensHomeSign, MSGBOX_SIGN
+FuchsiaCity_EventScript_Trigger4_1::
+	release
 	end
 
-@ Unused
-FuchsiaCity_EventScript_SafariZoneOfficeSign::
-	msgbox FuchsiaCity_Text_SafariZoneOfficeSign, MSGBOX_SIGN
+FuchsiaCity_EventScript_Trigger4_2::
+	msgbox FuchsiaCity_Text_Trigger4, MSGBOX_NPC
+	applymovement LOCALID_PLAYER, FuchsiaCity_Movement_Trigger4
+	delay 16
 	end
 
-FuchsiaCity_EventScript_GymSign::
-	lockall
-	famechecker FAMECHECKER_KOGA, 0
-	msgbox FuchsiaCity_Text_GymSign
-	releaseall
+FuchsiaCity_Movement_Trigger4::
+	walk_down
+	step_end
+
+FuchsiaCity_EventScript_Sign1::
+	msgbox FuchsiaCity_Text_Sign1, MSGBOX_AUTOCLOSE
 	end
 
-FuchsiaCity_EventScript_ChanseySign::
-	lockall
-	setvar VAR_0x8004, SPECIES_CHANSEY
-	special SetSeenMon
-	showmonpic SPECIES_CHANSEY, 10, 3
-	msgbox FuchsiaCity_Text_ChanseySign
-	hidemonpic
-	releaseall
+FuchsiaCity_EventScript_Sign2::
+	msgbox FuchsiaCity_Text_Sign2, MSGBOX_AUTOCLOSE
 	end
 
-FuchsiaCity_EventScript_VoltorbSign::
-	lockall
-	setvar VAR_0x8004, SPECIES_VOLTORB
-	special SetSeenMon
-	showmonpic SPECIES_VOLTORB, 10, 3
-	msgbox FuchsiaCity_Text_VoltorbSign
-	hidemonpic
-	releaseall
+FuchsiaCity_EventScript_Sign3::
+	msgbox FuchsiaCity_Text_Sign3, MSGBOX_AUTOCLOSE
 	end
 
-FuchsiaCity_EventScript_KangaskhanSign::
-	lockall
-	setvar VAR_0x8004, SPECIES_KANGASKHAN
-	special SetSeenMon
-	showmonpic SPECIES_KANGASKHAN, 10, 3
-	msgbox FuchsiaCity_Text_KangaskhanSign
-	hidemonpic
-	releaseall
+FuchsiaCity_EventScript_Sign4::
+	msgbox FuchsiaCity_Text_Sign4, MSGBOX_AUTOCLOSE
 	end
 
-FuchsiaCity_EventScript_SlowpokeSign::
-	lockall
-	setvar VAR_0x8004, SPECIES_SLOWPOKE
-	special SetSeenMon
-	showmonpic SPECIES_SLOWPOKE, 10, 3
-	msgbox FuchsiaCity_Text_SlowpokeSign
-	hidemonpic
-	releaseall
+FuchsiaCity_EventScript_Sign5::
+	msgbox FuchsiaCity_Text_Sign5, MSGBOX_AUTOCLOSE
 	end
 
-FuchsiaCity_EventScript_LaprasSign::
-	lockall
-	setvar VAR_0x8004, SPECIES_LAPRAS
-	special SetSeenMon
-	showmonpic SPECIES_LAPRAS, 10, 3
-	msgbox FuchsiaCity_Text_LaprasSign
-	hidemonpic
-	releaseall
-	end
-
-FuchsiaCity_EventScript_FossilMonSign::
-	lockall
-	goto_if_set FLAG_GOT_DOME_FOSSIL, FuchsiaCity_EventScript_OmanyteSign
-	setvar VAR_0x8004, SPECIES_KABUTO
-	special SetSeenMon
-	showmonpic SPECIES_KABUTO, 10, 3
-	msgbox FuchsiaCity_Text_KabutoSign
-	hidemonpic
-	releaseall
-	end
-
-FuchsiaCity_EventScript_OmanyteSign::
-	setvar VAR_0x8004, SPECIES_OMANYTE
-	special SetSeenMon
-	showmonpic SPECIES_OMANYTE, 10, 3
-	msgbox FuchsiaCity_Text_OmanyteSign
-	hidemonpic
-	releaseall
+FuchsiaCity_EventScript_Sign7::
+	msgbox FuchsiaCity_Text_Sign7, MSGBOX_AUTOCLOSE
 	end

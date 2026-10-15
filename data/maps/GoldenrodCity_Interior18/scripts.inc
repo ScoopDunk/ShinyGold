@@ -1,0 +1,107 @@
+GoldenrodCity_Interior18_MapScripts::
+	@ ShinyGold: map script header pointer was NULL
+	.byte 0
+
+GoldenrodCity_Interior18_EventScript_RocketF::
+	msgbox GoldenrodCity_Interior18_Text_RocketF_1, MSGBOX_NPC
+	msgbox GoldenrodCity_Interior18_Text_RocketF_2, MSGBOX_NPC
+	applymovement 2, GoldenrodCity_Interior18_Movement_RocketF_1
+	applymovement 1, GoldenrodCity_Interior18_Movement_RocketF_2
+	delay 32
+	msgbox GoldenrodCity_Interior18_Text_RocketF_3
+	msgbox GoldenrodCity_Interior18_Text_RocketF_4
+	applymovement LOCALID_PLAYER, GoldenrodCity_Interior18_Movement_RocketF_3
+	delay 48
+	applymovement 2, GoldenrodCity_Interior18_Movement_RocketF_4
+	applymovement 1, GoldenrodCity_Interior18_Movement_RocketF_4
+	msgbox GoldenrodCity_Interior18_Text_RocketF_5, MSGBOX_NPC
+	trainerbattle_earlyrival TRAINER_ROCKET_DUO_JESS_AND_JAMIE, 0, GoldenrodCity_Interior18_Text_RocketFDefeat, GoldenrodCity_Interior18_Text_RocketFVictory
+	setflag 0x111F
+	applymovement 2, GoldenrodCity_Interior18_Movement_RocketF_1
+	applymovement 1, GoldenrodCity_Interior18_Movement_RocketF_2
+	delay 32
+	msgbox GoldenrodCity_Interior18_Text_RocketF_6
+	msgbox GoldenrodCity_Interior18_Text_RocketF_7
+	applymovement 2, GoldenrodCity_Interior18_Movement_RocketF_4
+	applymovement 1, GoldenrodCity_Interior18_Movement_RocketF_4
+	msgbox GoldenrodCity_Interior18_Text_RocketF_8, MSGBOX_NPC
+	msgbox GoldenrodCity_Interior18_Text_RocketF_9, MSGBOX_NPC
+	msgbox GoldenrodCity_Interior18_Text_RocketF_10, MSGBOX_NPC
+	applymovement 2, GoldenrodCity_Interior18_Movement_RocketF_5
+	applymovement 1, GoldenrodCity_Interior18_Movement_RocketF_5
+	delay 96
+	end
+
+GoldenrodCity_Interior18_Movement_RocketF_1::
+	face_down_fast
+	step_end
+
+GoldenrodCity_Interior18_Movement_RocketF_2::
+	face_up
+	step_end
+
+GoldenrodCity_Interior18_Movement_RocketF_3::
+	emote_smile
+	step_end
+
+GoldenrodCity_Interior18_Movement_RocketF_4::
+	face_left
+	step_end
+
+GoldenrodCity_Interior18_Movement_RocketF_5::
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	set_invisible
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+GoldenrodCity_Interior18_EventScript_ItemMaxEther::
+	finditem ITEM_MAX_ETHER
+	end
+
+GoldenrodCity_Interior18_EventScript_TeamRocketGrunt31::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_31, GoldenrodCity_Interior18_Text_TeamRocketGrunt31Intro, GoldenrodCity_Interior18_Text_TeamRocketGrunt31Defeat
+	msgbox GoldenrodCity_Interior18_Text_TeamRocketGrunt31, MSGBOX_AUTOCLOSE
+	end
+
+GoldenrodCity_Interior18_EventScript_ItemTm09::
+	finditem ITEM_TM09
+	end
+
+GoldenrodCity_Interior18_EventScript_TeamRocketGrunt38::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_38, GoldenrodCity_Interior18_Text_TeamRocketGrunt38Intro, GoldenrodCity_Interior18_Text_TeamRocketGrunt38Defeat
+	msgbox GoldenrodCity_Interior18_Text_TeamRocketGrunt38, MSGBOX_AUTOCLOSE
+	end
+
+GoldenrodCity_Interior18_EventScript_TeamRocketGrunt40::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_40, GoldenrodCity_Interior18_Text_TeamRocketGrunt40Intro, GoldenrodCity_Interior18_Text_TeamRocketGrunt40Defeat
+	msgbox GoldenrodCity_Interior18_Text_TeamRocketGrunt40, MSGBOX_AUTOCLOSE
+	end
+
+GoldenrodCity_Interior18_EventScript_Gentleman::
+	call_if_set 0x1120, GoldenrodCity_Interior18_EventScript_Gentleman_1
+	msgbox GoldenrodCity_Interior18_Text_Gentleman_1, MSGBOX_NPC
+	lock
+	faceplayer
+	giveitem ITEM_BASEMENT_KEY
+	msgbox GoldenrodCity_Interior18_Text_Gentleman_2, MSGBOX_NPC
+	msgbox GoldenrodCity_Interior18_Text_Gentleman_3, MSGBOX_NPC
+	setflag 0x1120
+	release
+	end
+
+GoldenrodCity_Interior18_EventScript_Gentleman_1::
+	msgbox GoldenrodCity_Interior18_Text_Gentleman_3, MSGBOX_NPC
+	end
+
+GoldenrodCity_Interior18_EventScript_Trigger1::
+	setflag 0x1121
+	call RadioTower_Interior1_EventScript_Trigger2
+	end

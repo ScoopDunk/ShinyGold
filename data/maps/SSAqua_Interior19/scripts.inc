@@ -1,0 +1,26 @@
+SSAqua_Interior19_MapScripts::
+	.byte 0
+
+SSAqua_Interior19_EventScript_BeautyCassie::
+	trainerbattle_single TRAINER_BEAUTY_CASSIE, SSAqua_Interior19_Text_BeautyCassieIntro, SSAqua_Interior19_Text_BeautyCassieDefeat
+	call_if_set 0x11A5, SSAqua_Interior19_EventScript_BeautyCassie_1
+	msgbox SSAqua_Interior19_Text_BeautyCassie, MSGBOX_AUTOCLOSE
+	end
+
+SSAqua_Interior19_EventScript_BeautyCassie_1::
+	msgbox SSAqua_Interior19_Text_BeautyCassieIntro, MSGBOX_NPC
+	trainerbattle_earlyrival TRAINER_BEAUTY_CASSIE, 0, SSAqua_Interior19_Text_BeautyCassieDefeat, SSAqua_Interior3_Text_FishermanJonahVictory
+	clearflag 0x11A5
+	end
+
+SSAqua_Interior19_EventScript_GuitaristClyde::
+	trainerbattle_single TRAINER_GUITARIST_CLYDE, SSAqua_Interior19_Text_GuitaristClydeIntro, SSAqua_Interior19_Text_GuitaristClydeDefeat
+	call_if_set 0x119A, SSAqua_Interior19_EventScript_GuitaristClyde_1
+	msgbox SSAqua_Interior19_Text_GuitaristClyde, MSGBOX_AUTOCLOSE
+	end
+
+SSAqua_Interior19_EventScript_GuitaristClyde_1::
+	msgbox SSAqua_Interior19_Text_GuitaristClydeIntro, MSGBOX_NPC
+	trainerbattle_earlyrival TRAINER_GUITARIST_CLYDE, 0, SSAqua_Interior19_Text_GuitaristClydeDefeat, SSAqua_Interior3_Text_FishermanJonahVictory
+	clearflag 0x119A
+	end

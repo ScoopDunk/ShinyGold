@@ -1,17 +1,18 @@
+@ ShinyGold: modified in place by the hack
 CeladonCity_GameCorner_EventScript_PhotoPrinter::
 	lockall
 	showmoneybox 0, 0
 	msgbox CeladonCity_GameCorner_Text_TryPokemonPrinter, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_EventScript_DeclinePhoto
+	goto_if_eq VAR_RESULT, 0, CeladonCity_GameCorner_EventScript_DeclinePhoto
 	checkmoney 50
-	goto_if_eq VAR_RESULT, FALSE, CeladonCity_GameCorner_EventScript_NotEnoughMoneyForPhoto
+	goto_if_eq VAR_RESULT, 0, CeladonCity_GameCorner_EventScript_NotEnoughMoneyForPhoto
 	playse SE_SHOP
 	removemoney 50
 	updatemoneybox
 	waitse
 	message CeladonCity_GameCorner_Text_ChoosePrintType
 	waitmessage
-	multichoice 21, 0, MULTICHOICE_TRAINER_CARD_ICON_TINT, TRUE
+	multichoice 21, 0, MULTICHOICE_SG_65, 1
 	switch VAR_RESULT
 	case 0, CeladonCity_GameCorner_EventScript_PrintTypeNormal
 	case 1, CeladonCity_GameCorner_EventScript_PrintTypeBlack
@@ -72,12 +73,12 @@ FourIsland_House2_EventScript_StickerMan::
 FourIsland_House2_EventScript_MeetStickerMan::
 	setflag FLAG_MET_STICKER_MAN
 	msgbox FourIsland_House2_Text_WishICouldShowOffStickers
-	applymovement LOCALID_STICKER_MAN, Common_Movement_FacePlayer
+	applymovement 1, Common_Movement_FacePlayer
 	waitmovement 0
 	playse SE_PIN
-	applymovement LOCALID_STICKER_MAN, Common_Movement_ExclamationMark
+	applymovement 1, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_STICKER_MAN, Common_Movement_Delay48
+	applymovement 1, Common_Movement_Delay48
 	waitmovement 0
 	goto_if_eq VAR_0x8008, 0, FourIsland_House2_EventScript_StickerManNothingToBrag
 	message FourIsland_House2_Text_GiveYouStickerIfYouBrag
@@ -86,7 +87,7 @@ FourIsland_House2_EventScript_MeetStickerMan::
 	end
 
 FourIsland_House2_EventScript_StickerManAskForBrag::
-	applymovement LOCALID_STICKER_MAN, Common_Movement_FacePlayer
+	applymovement 1, Common_Movement_FacePlayer
 	waitmovement 0
 	goto_if_questlog EventScript_ReleaseEnd
 	special QuestLog_CutRecording

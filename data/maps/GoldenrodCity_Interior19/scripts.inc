@@ -1,0 +1,8 @@
+GoldenrodCity_Interior19_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, GoldenrodCity_Interior19_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+GoldenrodCity_Interior19_OnTransition::
+	setrespawn HEAL_LOCATION_GOLDENROD_CITY
+	end

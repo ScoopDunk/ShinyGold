@@ -1,0 +1,7 @@
+SSAqua_Interior9_MapScripts::
+	.byte 0
+
+SSAqua_Interior9_EventScript_HikerNoland::
+	trainerbattle_single TRAINER_HIKER_NOLAND, SSAqua_Interior9_Text_HikerNolandIntro, SSAqua_Interior9_Text_HikerNolandDefeat
+	msgbox SSAqua_Interior9_Text_HikerNoland, MSGBOX_AUTOCLOSE
+	end

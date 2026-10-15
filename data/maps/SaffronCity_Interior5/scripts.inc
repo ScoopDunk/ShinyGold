@@ -1,0 +1,75 @@
+SaffronCity_Interior5_MapScripts::
+	.byte 0
+
+SaffronCity_Interior5_EventScript_MediumRebecca::
+	trainerbattle_single TRAINER_MEDIUM_REBECCA, SaffronCity_Interior5_Text_MediumRebeccaIntro, SaffronCity_Interior5_Text_MediumRebeccaDefeat
+	msgbox SaffronCity_Interior5_Text_MediumRebecca, MSGBOX_AUTOCLOSE
+	end
+
+SaffronCity_Interior5_EventScript_PsychicJared::
+	trainerbattle_single TRAINER_PSYCHIC_JARED, SaffronCity_Interior5_Text_PsychicJaredIntro, SaffronCity_Interior5_Text_PsychicJaredDefeat
+	msgbox SaffronCity_Interior5_Text_PsychicJared, MSGBOX_AUTOCLOSE
+	end
+
+SaffronCity_Interior5_EventScript_MediumDoris::
+	trainerbattle_single TRAINER_MEDIUM_DORIS, SaffronCity_Interior5_Text_MediumDorisIntro, SaffronCity_Interior5_Text_MediumDorisDefeat
+	msgbox SaffronCity_Interior5_Text_MediumDoris, MSGBOX_AUTOCLOSE
+	end
+
+SaffronCity_Interior5_EventScript_MediumGrace::
+	trainerbattle_single TRAINER_MEDIUM_GRACE, SaffronCity_Interior5_Text_MediumGraceIntro, SaffronCity_Interior5_Text_MediumGraceDefeat
+	msgbox SaffronCity_Interior5_Text_MediumGrace, MSGBOX_AUTOCLOSE
+	end
+
+SaffronCity_Interior5_EventScript_MediumStacy::
+	trainerbattle_single TRAINER_MEDIUM_STACY, SaffronCity_Interior5_Text_MediumStacyIntro, SaffronCity_Interior5_Text_MediumStacyDefeat
+	msgbox SaffronCity_Interior5_Text_MediumStacy, MSGBOX_AUTOCLOSE
+	end
+
+SaffronCity_Interior5_EventScript_PsychicFranklin::
+	trainerbattle_single TRAINER_PSYCHIC_FRANKLIN, SaffronCity_Interior5_Text_PsychicFranklinIntro, SaffronCity_Interior5_Text_PsychicFranklinDefeat
+	msgbox SaffronCity_Interior5_Text_PsychicFranklin, MSGBOX_AUTOCLOSE
+	end
+
+SaffronCity_Interior5_EventScript_LeaderSabrina::
+	setvar VAR_0x8004, 2
+	setvar VAR_0x8005, 2
+	special UpdatePickStateFromSpecialVar8005
+	call Unused_CeruleanCity_Gym_EventScript_LeaderMisty_1
+	trainerbattle_single TRAINER_LEADER_SABRINA, SaffronCity_Interior5_Text_LeaderSabrinaIntro, SaffronCity_Interior5_Text_LeaderSabrinaDefeat, SaffronCity_Interior5_EventScript_LeaderSabrinaContinue, NO_MUSIC
+	msgbox SaffronCity_Interior5_Text_LeaderSabrina_1, MSGBOX_NPC
+	end
+
+SaffronCity_Interior5_EventScript_LeaderSabrinaContinue::
+	setflag 0x117F
+	call LavenderTown_EventScript_Trigger6_3
+	msgbox SaffronCity_Interior5_Text_LeaderSabrina_2, MSGBOX_NPC
+	delay 16
+	msgbox SaffronCity_Interior5_Text_LeaderSabrina_3, MSGBOX_NPC
+	end
+
+SaffronCity_Interior5_EventScript_PsychicNorman::
+	trainerbattle_single TRAINER_PSYCHIC_NORMAN, SaffronCity_Interior5_Text_PsychicNormanIntro, SaffronCity_Interior5_Text_PsychicNormanDefeat
+	setvar VAR_0x8004, 7
+	setvar VAR_0x8005, 5
+	special SetFlavorTextFlagFromSpecialVars
+	msgbox SaffronCity_Interior5_Text_PsychicNorman, MSGBOX_AUTOCLOSE
+	end
+
+SaffronCity_Interior5_EventScript_GymGuy::
+	call_if_set 0x117F, SaffronCity_Interior5_EventScript_GymGuy_1
+	msgbox SaffronCity_Interior5_Text_GymGuy_1, MSGBOX_NPC
+	end
+
+SaffronCity_Interior5_EventScript_GymGuy_1::
+	msgbox SaffronCity_Interior5_Text_GymGuy_2, MSGBOX_NPC
+	end
+
+SaffronCity_Interior5_EventScript_Sign1::
+	call_if_set 0x117F, SaffronCity_Interior5_EventScript_Sign1_1
+	msgbox SaffronCity_Interior5_Text_Sign1_1, MSGBOX_AUTOCLOSE
+	end
+
+SaffronCity_Interior5_EventScript_Sign1_1::
+	msgbox SaffronCity_Interior5_Text_Sign1_2, MSGBOX_AUTOCLOSE
+	end
