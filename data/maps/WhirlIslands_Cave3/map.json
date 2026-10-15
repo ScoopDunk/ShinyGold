@@ -1,0 +1,212 @@
+{
+  "id": "MAP_WHIRL_ISLANDS_CAVE3",
+  "name": "WhirlIslands_Cave3",
+  "layout": "LAYOUT_WHIRL_ISLANDS_CAVE3",
+  "music": "MUS_MT_MOON",
+  "region_map_section": "MAPSEC_WHIRL_ISLANDS",
+  "requires_flash": true,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "floor_number": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+      "x": 31,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x081BE00C",
+      "flag": "FLAG_TEMP_12"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 32,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08787330",
+      "flag": "0x218"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 19,
+      "y": 18,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08787320",
+      "flag": "0x219"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 22,
+      "y": 38,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08787370",
+      "flag": "0x21D"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 42,
+      "y": 25,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08787340",
+      "flag": "0x21A"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_RED_NORMAL",
+      "x": 38,
+      "y": 36,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08787360",
+      "flag": "0x21C"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_RED_NORMAL",
+      "x": 32,
+      "y": 33,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08787350",
+      "flag": "0x21B"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_RED_NORMAL",
+      "x": 3,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08787300",
+      "flag": "0x216"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 23,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08787310",
+      "flag": "0x217"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 41,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS_CAVE7",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 46,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_WHIRL_ISLANDS_CAVE7",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS_CAVE8",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 6,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS_CAVE5",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 30,
+      "y": 29,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS_CAVE2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 37,
+      "y": 44,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS_CAVE6",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 27,
+      "y": 43,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS_CAVE1",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 2,
+      "y": 40,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS_CAVE1",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 18,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS_CAVE5",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

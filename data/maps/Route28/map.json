@@ -1,0 +1,98 @@
+{
+  "id": "MAP_ROUTE28",
+  "name": "Route28",
+  "layout": "LAYOUT_ROUTE28",
+  "music": "MUS_VICTORY_ROAD",
+  "region_map_section": "MAPSEC_ROUTE_28",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "floor_number": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_MT_SILVER",
+      "offset": -15,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
+      "x": 33,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "0x081AC517",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 32,
+      "y": 7,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE26_INTERIOR2",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE28_INTERIOR1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 34,
+      "y": 3,
+      "elevation": 3,
+      "dest_map": "MAP_BLUE_ROUTE",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 35,
+      "y": 3,
+      "elevation": 3,
+      "dest_map": "MAP_BLUE_ROUTE",
+      "dest_warp_id": "4"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 33,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "0x08168B37"
+    },
+    {
+      "type": "sign",
+      "x": 32,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "0x08168B2E"
+    },
+    {
+      "type": "hidden_item",
+      "x": 33,
+      "y": 2,
+      "elevation": 3,
+      "item": "ITEM_ULTRA_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_SIX_ISLAND_GREEN_PATH_ULTRA_BALL",
+      "quantity": 1,
+      "underfoot": false
+    }
+  ]
+}

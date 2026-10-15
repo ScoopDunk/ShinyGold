@@ -1,0 +1,94 @@
+{
+  "id": "MAP_NATIONAL_PARK_INTERIOR2",
+  "name": "NationalPark_Interior2",
+  "layout": "LAYOUT_NATIONAL_PARK_INTERIOR2",
+  "music": "MUS_POKE_JUMP",
+  "region_map_section": "MAPSEC_NATIONAL_PARK",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "floor_number": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_RED_SURF",
+      "x": 7,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08171841",
+      "flag": "0",
+      "explicit_local_id": 2
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_FISHER",
+      "x": 14,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x087821F0",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_MG_DELIVERYMAN",
+      "x": 7,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08771040",
+      "flag": "0x1099"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_MG_DELIVERYMAN",
+      "x": 9,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08771030",
+      "flag": "0x1098"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 16,
+      "y": 10,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE36",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 7,
+      "y": 10,
+      "elevation": 3,
+      "dest_map": "MAP_NATIONAL_PARK",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

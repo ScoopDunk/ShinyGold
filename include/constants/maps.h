@@ -3,6 +3,7 @@
 
 #include "constants/map_groups.h"
 #include "constants/map_types.h"
+#include "constants/map_compat.h"
 
 // Warps using this map will instead use the warp data stored in gSaveBlock1Ptr->dynamicWarp.
 // Used for warps that need to change destinations, e.g. when stepping off an elevator.

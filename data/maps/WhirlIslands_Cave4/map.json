@@ -1,0 +1,55 @@
+{
+  "id": "MAP_WHIRL_ISLANDS_CAVE4",
+  "name": "WhirlIslands_Cave4",
+  "layout": "LAYOUT_WHIRL_ISLANDS_CAVE4",
+  "music": "MUS_MT_MOON",
+  "region_map_section": "MAPSEC_WHIRL_ISLANDS",
+  "requires_flash": true,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "floor_number": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_LUGIA",
+      "x": 7,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08822C9C",
+      "flag": "0x112C"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 7,
+      "y": 13,
+      "elevation": 3,
+      "dest_map": "MAP_WHIRL_ISLANDS_CAVE5",
+      "dest_warp_id": "2"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 14,
+      "y": 0,
+      "elevation": 0,
+      "item": "0x3BAB",
+      "flag": "0x3FE",
+      "quantity": 8,
+      "underfoot": false
+    }
+  ]
+}

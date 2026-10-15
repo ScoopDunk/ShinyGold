@@ -1,0 +1,121 @@
+{
+  "id": "MAP_ROUTE26_INTERIOR2",
+  "name": "Route26_Interior2",
+  "layout": "LAYOUT_ROUTE26_INTERIOR2",
+  "music": "MUS_VICTORY_ROAD",
+  "region_map_section": "MAPSEC_ROUTE_26",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "floor_number": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_MG_DELIVERYMAN",
+      "x": 15,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08801410",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_MG_DELIVERYMAN",
+      "x": 19,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08801420",
+      "flag": "0x11EF"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_MG_DELIVERYMAN",
+      "x": 13,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08801430",
+      "flag": "0x08B"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 17,
+      "y": 20,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE26",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 25,
+      "y": 10,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE22",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE28",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_VICTORY_ROAD_CAVE1",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 15,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x08801360"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 8,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0888FAC0"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 8,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0888FAE0"
+    }
+  ],
+  "bg_events": []
+}

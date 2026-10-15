@@ -39,7 +39,8 @@
 	.endm
 
 	@ Defines an object event template for map data, to be used by a clone object. Mirrors the struct layout of ObjectEventTemplate in include/global.fieldmap.h
-	.macro clone_event index:req, gfx:req, x:req, y:req, target_local_id:req, target_map_id:req
+	@ 'event_flag' is optional: TrySpawnObjectEvents checks the clone template's own flagId before the clone is resolved.
+	.macro clone_event index:req, gfx:req, x:req, y:req, target_local_id:req, target_map_id:req, event_flag=0
 	.byte \index
 	.byte \gfx
 	.byte OBJ_KIND_CLONE
@@ -49,7 +50,9 @@
 	.space 3  @ Padding
 	.2byte \target_map_id & 0xFF  @ map num
 	.2byte \target_map_id >> 8    @ map group
-	.space 8  @ Padding
+	.space 4  @ Script (unused for clones)
+	.2byte \event_flag
+	.space 2  @ Padding
 	inc _num_npcs
 	.endm
 
@@ -136,6 +139,7 @@
 
 	@ Directions for connecting maps
 	@ The map.json files will only have e.g. "down" as direction data, and this will be appended to "connection_" by the connection macro
+	.equiv connection_none, CONNECTION_NONE  @ ShinyGold: the hack has a few connections with direction 0 (ignored by the engine)
 	.equiv connection_down, CONNECTION_SOUTH
 	.equiv connection_up, CONNECTION_NORTH
 	.equiv connection_left, CONNECTION_WEST

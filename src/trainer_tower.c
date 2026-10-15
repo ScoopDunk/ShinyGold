@@ -15,6 +15,7 @@
 #include "constants/items.h"
 #include "constants/songs.h"
 #include "constants/layouts.h"
+#include "constants/maps.h" // ShinyGold: vanilla LAYOUT_ name aliases (constants/map_compat.h)
 #include "constants/trainers.h"
 #include "constants/event_objects.h"
 #include "constants/trainer_tower.h"
