@@ -68,7 +68,7 @@ EventScript_SetViridianGymTrainers::
 	settrainerflag TRAINER_TAMER_JASON
 	settrainerflag TRAINER_TAMER_COLE
 	settrainerflag TRAINER_BLACK_BELT_ATSUSHI
-	settrainerflag TRAINER_BLACK_BELT_KIYO
+	settrainerflag TRAINER_BLACK_BELT_KIYO_2
 	settrainerflag TRAINER_BLACK_BELT_TAKASHI
 	settrainerflag TRAINER_COOLTRAINER_SAMUEL
 	settrainerflag TRAINER_COOLTRAINER_YUJI

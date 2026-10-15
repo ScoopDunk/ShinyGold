@@ -1,35 +1,37 @@
 static const struct InGameTrade sInGameTrades[] = {
     [INGAME_TRADE_MR_MIME] = 
     {
-        .nickname = _("MIMIEN"),
-        .species = SPECIES_MR_MIME,
+        // ShinyGold: trade rewritten by the hack
+        .nickname = _("ROCKY"),
+        .species = SPECIES_ONIX,
         .ivs = {20, 15, 17, 24, 23, 22},
         .abilityNum = 0,
         .otId = 1985,
         .conditions = {5, 5, 5, 30, 5},
         .personality = 0x00009cae,
-        .heldItem = ITEM_NONE,
+        .heldItem = ITEM_PERSIM_BERRY,
         .mailNum = 255,
-        .otName = _("REYLEY"),
+        .otName = _("KYLE"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_ABRA
+        .requestedSpecies = SPECIES_BELLSPROUT
     }, 
     [INGAME_TRADE_JYNX] = 
     {
-        .nickname = _("ZYNX"),
-        .species = SPECIES_JYNX,
+        // ShinyGold: trade rewritten by the hack
+        .nickname = _("MUSCLE"),
+        .species = SPECIES_MACHOP,
         .ivs = {18, 17, 18, 22, 25, 21},
         .abilityNum = 0,
         .otId = 36728,
         .conditions = {5, 30, 5, 5, 5},
         .personality = 0x498a2e1d,
-        .heldItem = ITEM_FAB_MAIL,
+        .heldItem = ITEM_SITRUS_BERRY,
         .mailNum = 0,
-        .otName = _("DONTAE"),
+        .otName = _("MIKE"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_POLIWHIRL
+        .requestedSpecies = SPECIES_DROWZEE
     }, 
     [INGAME_TRADE_NIDORAN] = 
     {
@@ -65,71 +67,54 @@ static const struct InGameTrade sInGameTrades[] = {
     }, 
     [INGAME_TRADE_FARFETCHD] = 
     {
-        .nickname = _("CH'DING"),
-        .species = SPECIES_FARFETCHD,
+        // ShinyGold: trade rewritten by the hack
+        .nickname = _("VOLTY"),
+        .species = SPECIES_VOLTORB,
         .ivs = {20, 25, 21, 24, 15, 20},
         .abilityNum = 0,
         .otId = 8810,
         .conditions = {30, 5, 5, 5, 5},
         .personality = 0x151943d7,
-        .heldItem = ITEM_STICK,
+        .heldItem = ITEM_CHERI_BERRY,
         .mailNum = 255,
-        .otName = _("ELYSSA"),
+        .otName = _("TIM"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_SPEAROW
+        .requestedSpecies = SPECIES_KRABBY
     }, 
     [INGAME_TRADE_NIDORINOA] = 
     {
-#if defined(FIRERED)
-        .nickname = _("NINA"),
-        .species = SPECIES_NIDORINA,
+        // ShinyGold: trade rewritten by the hack
+        .nickname = _("AEROY"),
+        .species = SPECIES_AERODACTYL,
         .ivs = {22, 25, 18, 19, 22, 15},
         .abilityNum = 0,
         .otId = 13637,
         .conditions = {5, 5, 30, 5, 5},
         .personality = 0x00eeca15,
-        .heldItem = ITEM_NONE,
+        .heldItem = ITEM_SITRUS_BERRY,
         .mailNum = 255,
-        .otName = _("TURNER"),
+        .otName = _("KIM"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_NIDORINO
-#elif defined(LEAFGREEN)
-        .nickname = _("NINO"),
-        .species = SPECIES_NIDORINO,
-        .ivs = {19, 18, 25, 22, 15, 22},
-        .abilityNum = 0,
-        .otId = 13637,
-        .conditions = {5, 5, 5, 5, 30},
-        .personality = 0x00eeca19,
-        .heldItem = ITEM_NONE,
-        .mailNum = 255,
-        .otName = _("TURNER"),
-        .otGender = MALE,
-        .sheen = 10,
-        .requestedSpecies = SPECIES_NIDORINA
-#endif
+        .requestedSpecies = SPECIES_CHANSEY
     }, 
     [INGAME_TRADE_LICKITUNG] = 
     {
-        .nickname = _("MARC"),
-        .species = SPECIES_LICKITUNG,
+        // ShinyGold: trade rewritten by the hack
+        .nickname = _("DON"),
+        .species = SPECIES_RHYDON,
         .ivs = {24, 19, 21, 15, 23, 21},
         .abilityNum = 0,
         .otId = 1239,
         .conditions = {5, 5, 5, 5, 30},
         .personality = 0x451308ab,
-        .heldItem = ITEM_NONE,
+        .heldItem = ITEM_PERSIM_BERRY,
         .mailNum = 255,
-        .otName = _("HADEN"),
+        .otName = _("EMY"),
         .otGender = MALE,
         .sheen = 10,
-#if defined(FIRERED)
-        .requestedSpecies = SPECIES_GOLDUCK
-#elif defined(LEAFGREEN)
-        .requestedSpecies = SPECIES_SLOWBRO
-#endif
+        .requestedSpecies = SPECIES_DRAGONAIR
     }, 
     [INGAME_TRADE_ELECTRODE] = 
     {
