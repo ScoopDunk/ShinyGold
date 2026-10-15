@@ -1,6 +1,0 @@
-Unused_Route12_NorthEntrance_1F_MapScripts::
-	.byte 0
-
-Unused_Route12_NorthEntrance_1F_EventScript_Policeman::
-	msgbox Unused_Route12_NorthEntrance_1F_Text_Policeman, MSGBOX_NPC
-	end

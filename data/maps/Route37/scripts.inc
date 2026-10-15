@@ -82,3 +82,27 @@ Route37_EventScript_Sign2::
 	releaseall
 	special DaisyMassageServices
 	end
+
+@ ShinyGold: moved from data/maps/GreenPlains/scripts.inc (map removed)
+GreenPlains_EventScript_Sign3::
+	special GetQuestLogState
+	call_if_eq VAR_RESULT, 2, EventScript_ReleaseEnd
+	special QuestLog_CutRecording
+	call_if_lt VAR_MASSAGE_COOLDOWN_STEP_COUNTER, 0x1F4, GreenPlains_EventScript_Sign3_1
+	msgbox GreenPlains_Text_Sign3_1, MSGBOX_NPC
+	giveitem ITEM_DEEP_SEA_TOOTH
+	releaseall
+	special DaisyMassageServices
+	end
+
+@ ShinyGold: moved from data/maps/GreenPlains/scripts.inc (map removed)
+GreenPlains_EventScript_Sign4::
+	special GetQuestLogState
+	call_if_eq VAR_RESULT, 2, EventScript_ReleaseEnd
+	special QuestLog_CutRecording
+	call_if_lt VAR_MASSAGE_COOLDOWN_STEP_COUNTER, 0x1F4, GreenPlains_EventScript_Sign3_1
+	msgbox GreenPlains_Text_Sign4, MSGBOX_NPC
+	giveitem ITEM_BLUE_SCARF
+	releaseall
+	special DaisyMassageServices
+	end

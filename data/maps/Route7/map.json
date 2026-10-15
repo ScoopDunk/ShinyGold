@@ -37,13 +37,6 @@
   ],
   "warp_events": [
     {
-      "x": 8,
-      "y": 21,
-      "elevation": 0,
-      "dest_map": "MAP_MAIDENS_PEAK_DIS_INTERIOR1",
-      "dest_warp_id": "1"
-    },
-    {
       "x": 16,
       "y": 10,
       "elevation": 3,

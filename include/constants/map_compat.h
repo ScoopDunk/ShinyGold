@@ -6,10 +6,33 @@
 // scripts and data that still use a vanilla MAP_/LAYOUT_/HEAL_LOCATION_ name get the map/layout/heal
 // location with the SAME group/num (resp. id) as in vanilla FireRed, so behavior is unchanged.
 
+// Maps that were removed for the pure Gold/Silver build.  Vanilla engine code that still names them keeps
+// compiling; MAP_REMOVED is a group/num pair no map uses, so comparisons with it are simply false.
+#define MAP_REMOVED                                      (0x7E | (0x7E << 8))
+
+// Hack map names of removed maps that ShinyGold engine/script code still names (dead code paths).
+#define MAP_DRAGONS_DEN_CAVE1                            MAP_REMOVED
+#define MAP_DRAGONS_DEN_CAVE2                            MAP_REMOVED
+#define MAP_FUCHSIA_CITY_INTERIOR4                       MAP_REMOVED
+#define MAP_GREEN_ROUTE                                  MAP_REMOVED
+#define MAP_GREEN_ROUTE_AREA1                            MAP_REMOVED
+#define MAP_KALM_CITY_NOUSAR                             MAP_REMOVED
+#define MAP_KALM_CITY_NOUSAR_AREA1                       MAP_REMOVED
+#define MAP_RED_ROUTE                                    MAP_REMOVED
+#define MAP_RED_ROUTE_AREA1                              MAP_REMOVED
+#define MAP_SEA_CAVERN_INTERIOR4                         MAP_REMOVED
+#define MAP_SILPH_CO_INTERIOR2                           MAP_REMOVED
+#define MAP_SILPH_CO_INTERIOR3                           MAP_REMOVED
+#define MAP_UNUSED_PROTOTYPE_SEVII_ISLE_6                MAP_REMOVED
+#define MAP_UNUSED_PROTOTYPE_SEVII_ISLE_8                MAP_REMOVED
+#define MAP_UNUSED_PROTOTYPE_SEVII_ISLE_9                MAP_REMOVED
+#define MAP_UNUSED_SEVEN_ISLAND_TANOBY_RUINS_MONEAN_CHAMBER MAP_REMOVED
+#define MAP_VERMILION_CITY_INTERIOR9                     MAP_REMOVED
+
 // Maps (same group/num)
 #define MAP_BIRTH_ISLAND_EXTERIOR                        MAP_ROUTE26
 #define MAP_BIRTH_ISLAND_HARBOR                          MAP_ROUTE26_AREA1
-#define MAP_CELADON_CITY_CONDOMINIUMS_1F                 MAP_PURITY_FOREST_INTERIOR6
+#define MAP_CELADON_CITY_CONDOMINIUMS_1F                 MAP_REMOVED // removed (pure Gold/Silver build): was MAP_PURITY_FOREST_INTERIOR6
 #define MAP_CELADON_CITY_DEPARTMENT_STORE_1F             MAP_CELADON_CITY_INTERIOR1
 #define MAP_CELADON_CITY_DEPARTMENT_STORE_2F             MAP_CELADON_CITY_INTERIOR2
 #define MAP_CELADON_CITY_DEPARTMENT_STORE_3F             MAP_CELADON_CITY_INTERIOR3
@@ -22,19 +45,19 @@
 #define MAP_CELADON_CITY_POKEMON_CENTER_1F               MAP_CELADON_CITY_INTERIOR9
 #define MAP_CELADON_CITY_POKEMON_CENTER_2F               MAP_CELADON_CITY_INTERIOR10
 #define MAP_CELADON_CITY_RESTAURANT                      MAP_CELADON_CITY_INTERIOR14
-#define MAP_CERULEAN_CAVE_1F                             MAP_UNKNOWN_RUINS_CAVE1
-#define MAP_CERULEAN_CAVE_2F                             MAP_ROCK_TUNNEL_CAVE1
-#define MAP_CERULEAN_CAVE_B1F                            MAP_ROUTE4_CAVE1
+#define MAP_CERULEAN_CAVE_1F                             MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNKNOWN_RUINS_CAVE1
+#define MAP_CERULEAN_CAVE_2F                             MAP_REMOVED // removed (pure Gold/Silver build): was MAP_ROCK_TUNNEL_CAVE1
+#define MAP_CERULEAN_CAVE_B1F                            MAP_REMOVED // removed (pure Gold/Silver build): was MAP_ROUTE4_CAVE1
 #define MAP_CERULEAN_CITY_BIKE_SHOP                      MAP_MT_MOON_INTERIOR1
 #define MAP_CERULEAN_CITY_GYM                            MAP_UNUSED_CERULEAN_CITY_GYM
 #define MAP_CERULEAN_CITY_MART                           MAP_CERULEAN_CITY_INTERIOR5
 #define MAP_CERULEAN_CITY_POKEMON_CENTER_1F              MAP_CERULEAN_CITY_INTERIOR3
 #define MAP_CERULEAN_CITY_POKEMON_CENTER_2F              MAP_CERULEAN_CITY_INTERIOR4
-#define MAP_CINNABAR_ISLAND_GYM                          MAP_BATTLE_TOWER_INTERIOR1
-#define MAP_CINNABAR_ISLAND_MART                         MAP_KALM_CITY_NOUSAR_INTERIOR5
+#define MAP_CINNABAR_ISLAND_GYM                          MAP_REMOVED // removed (pure Gold/Silver build): was MAP_BATTLE_TOWER_INTERIOR1
+#define MAP_CINNABAR_ISLAND_MART                         MAP_REMOVED // removed (pure Gold/Silver build): was MAP_KALM_CITY_NOUSAR_INTERIOR5
 #define MAP_CINNABAR_ISLAND_POKEMON_CENTER_1F            MAP_CINNABAR_ISLAND_INTERIOR2
 #define MAP_CINNABAR_ISLAND_POKEMON_CENTER_2F            MAP_CINNABAR_ISLAND_INTERIOR3
-#define MAP_CINNABAR_ISLAND_POKEMON_LAB_ENTRANCE         MAP_CINNABAR_ISLAND_INTERIOR1
+#define MAP_CINNABAR_ISLAND_POKEMON_LAB_ENTRANCE         MAP_REMOVED // removed (pure Gold/Silver build): was MAP_CINNABAR_ISLAND_INTERIOR1
 #define MAP_DIGLETTS_CAVE_B1F                            MAP_DIGLETTS_CAVE_CAVE2
 #define MAP_DIGLETTS_CAVE_NORTH_ENTRANCE                 MAP_DIGLETTS_CAVE_CAVE1
 #define MAP_DIGLETTS_CAVE_SOUTH_ENTRANCE                 MAP_DIGLETTS_CAVE_CAVE3
@@ -45,7 +68,7 @@
 #define MAP_FIVE_ISLAND_LOST_CAVE_ROOM10                 MAP_LAVENDER_TOWN_CAVE1
 #define MAP_FIVE_ISLAND_LOST_CAVE_ROOM11                 MAP_ROUTE36
 #define MAP_FIVE_ISLAND_LOST_CAVE_ROOM12                 MAP_ROUTE31
-#define MAP_FIVE_ISLAND_LOST_CAVE_ROOM13                 MAP_UNUSED_FIVE_ISLAND_LOST_CAVE_ROOM13
+#define MAP_FIVE_ISLAND_LOST_CAVE_ROOM13                 MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_FIVE_ISLAND_LOST_CAVE_ROOM13
 #define MAP_FIVE_ISLAND_LOST_CAVE_ROOM14                 MAP_ROUTE30
 #define MAP_FIVE_ISLAND_LOST_CAVE_ROOM2                  MAP_UNION_CAVE_CAVE1
 #define MAP_FIVE_ISLAND_LOST_CAVE_ROOM3                  MAP_UNION_CAVE_CAVE2
@@ -56,17 +79,17 @@
 #define MAP_FIVE_ISLAND_LOST_CAVE_ROOM8                  MAP_GOLDENROD_CITY_INTERIOR2
 #define MAP_FIVE_ISLAND_LOST_CAVE_ROOM9                  MAP_ROUTE35
 #define MAP_FIVE_ISLAND_MEADOW                           MAP_BLACKTHORN_CITY
-#define MAP_FIVE_ISLAND_MEMORIAL_PILLAR                  MAP_GREEN_ROUTE
+#define MAP_FIVE_ISLAND_MEMORIAL_PILLAR                  MAP_REMOVED // removed (pure Gold/Silver build): was MAP_GREEN_ROUTE
 #define MAP_FIVE_ISLAND_POKEMON_CENTER_1F                MAP_ECRUTEAK_CITY_INTERIOR10
 #define MAP_FIVE_ISLAND_POKEMON_CENTER_2F                MAP_ECRUTEAK_CITY_INTERIOR11
-#define MAP_FIVE_ISLAND_RESORT_GORGEOUS                  MAP_RED_ROUTE
+#define MAP_FIVE_ISLAND_RESORT_GORGEOUS                  MAP_REMOVED // removed (pure Gold/Silver build): was MAP_RED_ROUTE
 #define MAP_FIVE_ISLAND_WATER_LABYRINTH                  MAP_MAHOGANY_TOWN
 #define MAP_FOUR_ISLAND                                  MAP_GOLDENROD_CITY
 #define MAP_FOUR_ISLAND_HARBOR                           MAP_GOLDENROD_CITY_INTERIOR23
-#define MAP_FOUR_ISLAND_ICEFALL_CAVE_1F                  MAP_RADIO_TOWER_CAVE1
-#define MAP_FOUR_ISLAND_ICEFALL_CAVE_B1F                 MAP_UNUSED_FOUR_ISLAND_ICEFALL_CAVE_B1F
+#define MAP_FOUR_ISLAND_ICEFALL_CAVE_1F                  MAP_REMOVED // removed (pure Gold/Silver build): was MAP_RADIO_TOWER_CAVE1
+#define MAP_FOUR_ISLAND_ICEFALL_CAVE_B1F                 MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_FOUR_ISLAND_ICEFALL_CAVE_B1F
 #define MAP_FOUR_ISLAND_ICEFALL_CAVE_BACK                MAP_MT_SILVER_CAVE3
-#define MAP_FOUR_ISLAND_ICEFALL_CAVE_ENTRANCE            MAP_UNUSED_FOUR_ISLAND_ICEFALL_CAVE_ENTRANCE
+#define MAP_FOUR_ISLAND_ICEFALL_CAVE_ENTRANCE            MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_FOUR_ISLAND_ICEFALL_CAVE_ENTRANCE
 #define MAP_FOUR_ISLAND_MART                             MAP_ECRUTEAK_CITY_INTERIOR9
 #define MAP_FOUR_ISLAND_POKEMON_CENTER_1F                MAP_GOLDENROD_CITY_INTERIOR19
 #define MAP_FOUR_ISLAND_POKEMON_CENTER_2F                MAP_GOLDENROD_CITY_INTERIOR20
@@ -74,33 +97,33 @@
 #define MAP_FUCHSIA_CITY_MART                            MAP_FUCHSIA_CITY_INTERIOR5
 #define MAP_FUCHSIA_CITY_POKEMON_CENTER_1F               MAP_FUCHSIA_CITY_INTERIOR9
 #define MAP_FUCHSIA_CITY_POKEMON_CENTER_2F               MAP_FUCHSIA_CITY_INTERIOR10
-#define MAP_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE            MAP_FUCHSIA_CITY_INTERIOR4
+#define MAP_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE            MAP_REMOVED // removed (pure Gold/Silver build): was MAP_FUCHSIA_CITY_INTERIOR4
 #define MAP_FUCHSIA_CITY_WARDENS_HOUSE                   MAP_FUCHSIA_CITY_INTERIOR11
 #define MAP_INDIGO_PLATEAU_EXTERIOR                      MAP_INDIGO_PLATEAU
 #define MAP_INDIGO_PLATEAU_POKEMON_CENTER_1F             MAP_INDIGO_PLATEAU_INTERIOR5
 #define MAP_INDIGO_PLATEAU_POKEMON_CENTER_2F             MAP_INDIGO_PLATEAU_INTERIOR6
 #define MAP_LAVENDER_TOWN_HOUSE2                         MAP_GOLDENROD_CITY_INTERIOR3
 #define MAP_LAVENDER_TOWN_MART                           MAP_LAVENDER_TOWN_INTERIOR5
-#define MAP_LAVENDER_TOWN_POKEMON_CENTER_1F              MAP_LAVENDER_TOWN_INTERIOR1
-#define MAP_LAVENDER_TOWN_POKEMON_CENTER_2F              MAP_LAVENDER_TOWN_INTERIOR2
+#define MAP_LAVENDER_TOWN_POKEMON_CENTER_1F              MAP_REMOVED // removed (pure Gold/Silver build): was MAP_LAVENDER_TOWN_INTERIOR1
+#define MAP_LAVENDER_TOWN_POKEMON_CENTER_2F              MAP_REMOVED // removed (pure Gold/Silver build): was MAP_LAVENDER_TOWN_INTERIOR2
 #define MAP_LAVENDER_TOWN_VOLUNTEER_POKEMON_HOUSE        MAP_LAVENDER_TOWN_INTERIOR3
-#define MAP_MT_EMBER_EXTERIOR                            MAP_MAIDENS_PEAK_DIS_AREA1
+#define MAP_MT_EMBER_EXTERIOR                            MAP_REMOVED // removed (pure Gold/Silver build): was MAP_MAIDENS_PEAK_DIS_AREA1
 #define MAP_MT_EMBER_RUBY_PATH_1F                        MAP_WHIRL_ISLANDS_CAVE5
 #define MAP_MT_EMBER_RUBY_PATH_B1F                       MAP_WHIRL_ISLANDS_CAVE6
 #define MAP_MT_EMBER_RUBY_PATH_B1F_STAIRS                MAP_WHIRL_ISLANDS_CAVE8
 #define MAP_MT_EMBER_RUBY_PATH_B2F                       MAP_WHIRL_ISLANDS_CAVE7
-#define MAP_MT_EMBER_RUBY_PATH_B2F_STAIRS                MAP_UNUSED_MT_EMBER_RUBY_PATH_B2F_STAIRS
-#define MAP_MT_EMBER_RUBY_PATH_B3F                       MAP_DRAGONS_DEN_CAVE2
+#define MAP_MT_EMBER_RUBY_PATH_B2F_STAIRS                MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_MT_EMBER_RUBY_PATH_B2F_STAIRS
+#define MAP_MT_EMBER_RUBY_PATH_B3F                       MAP_REMOVED // removed (pure Gold/Silver build): was MAP_DRAGONS_DEN_CAVE2
 #define MAP_MT_EMBER_RUBY_PATH_B4F                       MAP_WHIRL_ISLANDS_CAVE1
 #define MAP_MT_EMBER_RUBY_PATH_B5F                       MAP_WHIRL_ISLANDS_CAVE4
 #define MAP_MT_EMBER_SUMMIT_PATH_1F                      MAP_WHIRL_ISLANDS_CAVE2
 #define MAP_MT_EMBER_SUMMIT_PATH_2F                      MAP_WHIRL_ISLANDS_CAVE3
 #define MAP_MT_EMBER_SUMMIT_PATH_3F                      MAP_MT_SILVER_CAVE2
-#define MAP_MT_MOON_1F                                   MAP_MT_STEEL_CAVE1
+#define MAP_MT_MOON_1F                                   MAP_REMOVED // removed (pure Gold/Silver build): was MAP_MT_STEEL_CAVE1
 #define MAP_MT_MOON_B1F                                  MAP_MT_MOON_CAVE1
 #define MAP_MT_MOON_B2F                                  MAP_MT_SILVER_CAVE1
 #define MAP_NAVEL_ROCK_EXTERIOR                          MAP_TOHJO_FALLS_CAVE1
-#define MAP_NAVEL_ROCK_HARBOR                            MAP_UNUSED_NAVEL_ROCK_HARBOR
+#define MAP_NAVEL_ROCK_HARBOR                            MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_NAVEL_ROCK_HARBOR
 #define MAP_ONE_ISLAND                                   MAP_PALLET_TOWN
 #define MAP_ONE_ISLAND_HARBOR                            MAP_ROUTE39_INTERIOR1
 #define MAP_ONE_ISLAND_KINDLE_ROAD                       MAP_NATIONAL_PARK
@@ -113,171 +136,171 @@
 #define MAP_PALLET_TOWN_RIVALS_HOUSE                     MAP_PALLET_TOWN_INTERIOR1
 #define MAP_PEWTER_CITY_GYM                              MAP_PEWTER_CITY_INTERIOR3
 #define MAP_PEWTER_CITY_MART                             MAP_PEWTER_CITY_INTERIOR4
-#define MAP_PEWTER_CITY_MUSEUM_1F                        MAP_PEWTER_CITY_INTERIOR1
+#define MAP_PEWTER_CITY_MUSEUM_1F                        MAP_REMOVED // removed (pure Gold/Silver build): was MAP_PEWTER_CITY_INTERIOR1
 #define MAP_PEWTER_CITY_POKEMON_CENTER_1F                MAP_PEWTER_CITY_INTERIOR6
 #define MAP_PEWTER_CITY_POKEMON_CENTER_2F                MAP_PEWTER_CITY_INTERIOR7
-#define MAP_POKEMON_LEAGUE_CHAMPIONS_ROOM                MAP_UNUSED_POKEMON_LEAGUE_CHAMPIONS_ROOM
+#define MAP_POKEMON_LEAGUE_CHAMPIONS_ROOM                MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_POKEMON_LEAGUE_CHAMPIONS_ROOM
 #define MAP_POKEMON_MANSION_1F                           MAP_VICTORY_ROAD_CAVE1
 #define MAP_POKEMON_MANSION_2F                           MAP_VICTORY_ROAD_CAVE2
 #define MAP_POKEMON_MANSION_3F                           MAP_VICTORY_ROAD_CAVE3
 #define MAP_POKEMON_MANSION_B1F                          MAP_VICTORY_ROAD_CAVE4
 #define MAP_POKEMON_TOWER_1F                             MAP_ROUTE28_INTERIOR1
 #define MAP_POKEMON_TOWER_2F                             MAP_MT_SILVER_INTERIOR1
-#define MAP_POKEMON_TOWER_3F                             MAP_UNUSED_POKEMON_TOWER_3F
-#define MAP_POKEMON_TOWER_4F                             MAP_UNUSED_POKEMON_TOWER_4F
-#define MAP_POKEMON_TOWER_5F                             MAP_UNUSED_POKEMON_TOWER_5F
-#define MAP_POKEMON_TOWER_6F                             MAP_UNUSED_POKEMON_TOWER_6F
-#define MAP_POKEMON_TOWER_7F                             MAP_UNUSED_POKEMON_TOWER_7F
+#define MAP_POKEMON_TOWER_3F                             MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_POKEMON_TOWER_3F
+#define MAP_POKEMON_TOWER_4F                             MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_POKEMON_TOWER_4F
+#define MAP_POKEMON_TOWER_5F                             MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_POKEMON_TOWER_5F
+#define MAP_POKEMON_TOWER_6F                             MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_POKEMON_TOWER_6F
+#define MAP_POKEMON_TOWER_7F                             MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_POKEMON_TOWER_7F
 #define MAP_POWER_PLANT                                  MAP_POWER_PLANT_INTERIOR1
-#define MAP_PROTOTYPE_SEVII_ISLE_6                       MAP_UNUSED_PROTOTYPE_SEVII_ISLE_6
+#define MAP_PROTOTYPE_SEVII_ISLE_6                       MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_PROTOTYPE_SEVII_ISLE_6
 #define MAP_PROTOTYPE_SEVII_ISLE_7                       MAP_ROUTE34
-#define MAP_PROTOTYPE_SEVII_ISLE_8                       MAP_UNUSED_PROTOTYPE_SEVII_ISLE_8
-#define MAP_PROTOTYPE_SEVII_ISLE_9                       MAP_UNUSED_PROTOTYPE_SEVII_ISLE_9
-#define MAP_ROCKET_HIDEOUT_B1F                           MAP_UNUSED_ROCKET_HIDEOUT_B1F
-#define MAP_ROCKET_HIDEOUT_B2F                           MAP_UNUSED_ROCKET_HIDEOUT_B2F
-#define MAP_ROCKET_HIDEOUT_B4F                           MAP_UNUSED_ROCKET_HIDEOUT_B4F
-#define MAP_ROCKET_HIDEOUT_ELEVATOR                      MAP_MAIDENS_PEAK_DIS_INTERIOR4
+#define MAP_PROTOTYPE_SEVII_ISLE_8                       MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_PROTOTYPE_SEVII_ISLE_8
+#define MAP_PROTOTYPE_SEVII_ISLE_9                       MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_PROTOTYPE_SEVII_ISLE_9
+#define MAP_ROCKET_HIDEOUT_B1F                           MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_ROCKET_HIDEOUT_B1F
+#define MAP_ROCKET_HIDEOUT_B2F                           MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_ROCKET_HIDEOUT_B2F
+#define MAP_ROCKET_HIDEOUT_B4F                           MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_ROCKET_HIDEOUT_B4F
+#define MAP_ROCKET_HIDEOUT_ELEVATOR                      MAP_REMOVED // removed (pure Gold/Silver build): was MAP_MAIDENS_PEAK_DIS_INTERIOR4
 #define MAP_ROCK_TUNNEL_1F                               MAP_ROCK_TUNNEL_CAVE2
 #define MAP_ROCK_TUNNEL_B1F                              MAP_ROCK_TUNNEL_CAVE3
 #define MAP_ROUTE10_POKEMON_CENTER_1F                    MAP_BLACKTHORN_CITY_INTERIOR3
 #define MAP_ROUTE10_POKEMON_CENTER_2F                    MAP_BLACKTHORN_CITY_INTERIOR4
 #define MAP_ROUTE21_NORTH                                MAP_ROUTE21
-#define MAP_ROUTE21_SOUTH                                MAP_UNUSED_ROUTE21_SOUTH
-#define MAP_ROUTE22_NORTH_ENTRANCE                       MAP_MAIDENS_PEAK_DIS_INTERIOR8
+#define MAP_ROUTE21_SOUTH                                MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_ROUTE21_SOUTH
+#define MAP_ROUTE22_NORTH_ENTRANCE                       MAP_REMOVED // removed (pure Gold/Silver build): was MAP_MAIDENS_PEAK_DIS_INTERIOR8
 #define MAP_ROUTE25_SEA_COTTAGE                          MAP_ROUTE25_INTERIOR1
 #define MAP_ROUTE2_VIRIDIAN_FOREST_NORTH_ENTRANCE        MAP_ROUTE2_INTERIOR4
-#define MAP_ROUTE2_VIRIDIAN_FOREST_SOUTH_ENTRANCE        MAP_ROUTE2_INTERIOR1
+#define MAP_ROUTE2_VIRIDIAN_FOREST_SOUTH_ENTRANCE        MAP_REMOVED // removed (pure Gold/Silver build): was MAP_ROUTE2_INTERIOR1
 #define MAP_ROUTE4_POKEMON_CENTER_1F                     MAP_MAHOGANY_TOWN_INTERIOR3
 #define MAP_ROUTE4_POKEMON_CENTER_2F                     MAP_MAHOGANY_TOWN_INTERIOR4
 #define MAP_ROUTE5_POKEMON_DAY_CARE                      MAP_ROUTE5_INTERIOR2
-#define MAP_SAFARI_ZONE_CENTER                           MAP_FUCHSIA_CITY_AREA1
-#define MAP_SAFARI_ZONE_EAST                             MAP_FUCHSIA_CITY_AREA2
-#define MAP_SAFARI_ZONE_NORTH                            MAP_FUCHSIA_CITY_AREA3
-#define MAP_SAFARI_ZONE_WEST                             MAP_FUCHSIA_CITY_AREA4
+#define MAP_SAFARI_ZONE_CENTER                           MAP_REMOVED // removed (pure Gold/Silver build): was MAP_FUCHSIA_CITY_AREA1
+#define MAP_SAFARI_ZONE_EAST                             MAP_REMOVED // removed (pure Gold/Silver build): was MAP_FUCHSIA_CITY_AREA2
+#define MAP_SAFARI_ZONE_NORTH                            MAP_REMOVED // removed (pure Gold/Silver build): was MAP_FUCHSIA_CITY_AREA3
+#define MAP_SAFARI_ZONE_WEST                             MAP_REMOVED // removed (pure Gold/Silver build): was MAP_FUCHSIA_CITY_AREA4
 #define MAP_SAFFRON_CITY_DOJO                            MAP_SAFFRON_CITY_INTERIOR4
 #define MAP_SAFFRON_CITY_GYM                             MAP_SAFFRON_CITY_INTERIOR5
 #define MAP_SAFFRON_CITY_MART                            MAP_SAFFRON_CITY_INTERIOR6
 #define MAP_SAFFRON_CITY_POKEMON_CENTER_1F               MAP_SAFFRON_CITY_INTERIOR7
 #define MAP_SAFFRON_CITY_POKEMON_CENTER_2F               MAP_SAFFRON_CITY_INTERIOR8
-#define MAP_SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB        MAP_UNUSED_SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB
-#define MAP_SEAFOAM_ISLANDS_1F                           MAP_MAIDENS_PEAK_DIS_CAVE1
-#define MAP_SEAFOAM_ISLANDS_B1F                          MAP_MAIDENS_PEAK_DIS_CAVE2
-#define MAP_SEAFOAM_ISLANDS_B2F                          MAP_MAIDENS_PEAK_DIS_CAVE3
-#define MAP_SEAFOAM_ISLANDS_B3F                          MAP_MAIDENS_PEAK_DIS_CAVE4
-#define MAP_SEAFOAM_ISLANDS_B4F                          MAP_MAIDENS_PEAK_DIS_CAVE5
+#define MAP_SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB        MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB
+#define MAP_SEAFOAM_ISLANDS_1F                           MAP_REMOVED // removed (pure Gold/Silver build): was MAP_MAIDENS_PEAK_DIS_CAVE1
+#define MAP_SEAFOAM_ISLANDS_B1F                          MAP_REMOVED // removed (pure Gold/Silver build): was MAP_MAIDENS_PEAK_DIS_CAVE2
+#define MAP_SEAFOAM_ISLANDS_B2F                          MAP_REMOVED // removed (pure Gold/Silver build): was MAP_MAIDENS_PEAK_DIS_CAVE3
+#define MAP_SEAFOAM_ISLANDS_B3F                          MAP_REMOVED // removed (pure Gold/Silver build): was MAP_MAIDENS_PEAK_DIS_CAVE4
+#define MAP_SEAFOAM_ISLANDS_B4F                          MAP_REMOVED // removed (pure Gold/Silver build): was MAP_MAIDENS_PEAK_DIS_CAVE5
 #define MAP_SEVEN_ISLAND                                 MAP_CIANWOOD_CITY
 #define MAP_SEVEN_ISLAND_HARBOR                          MAP_CIANWOOD_CITY_INTERIOR4
-#define MAP_SEVEN_ISLAND_HOUSE_ROOM1                     MAP_PURITY_FOREST_INTERIOR12
-#define MAP_SEVEN_ISLAND_HOUSE_ROOM2                     MAP_UNUSED_SEVEN_ISLAND_HOUSE_ROOM2
+#define MAP_SEVEN_ISLAND_HOUSE_ROOM1                     MAP_REMOVED // removed (pure Gold/Silver build): was MAP_PURITY_FOREST_INTERIOR12
+#define MAP_SEVEN_ISLAND_HOUSE_ROOM2                     MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_SEVEN_ISLAND_HOUSE_ROOM2
 #define MAP_SEVEN_ISLAND_MART                            MAP_BLACKTHORN_CITY_INTERIOR6
 #define MAP_SEVEN_ISLAND_POKEMON_CENTER_1F               MAP_CIANWOOD_CITY_INTERIOR1
 #define MAP_SEVEN_ISLAND_POKEMON_CENTER_2F               MAP_CIANWOOD_CITY_INTERIOR2
 #define MAP_SEVEN_ISLAND_SEVAULT_CANYON                  MAP_ROUTE43
 #define MAP_SEVEN_ISLAND_SEVAULT_CANYON_ENTRANCE         MAP_PALLET_TOWN_AREA1
-#define MAP_SEVEN_ISLAND_TANOBY_RUINS                    MAP_RED_ROUTE_AREA1
-#define MAP_SEVEN_ISLAND_TANOBY_RUINS_DILFORD_CHAMBER    MAP_SEA_CAVERN_INTERIOR3
-#define MAP_SEVEN_ISLAND_TANOBY_RUINS_LIPTOO_CHAMBER     MAP_SEA_CAVERN_INTERIOR1
-#define MAP_SEVEN_ISLAND_TANOBY_RUINS_MONEAN_CHAMBER     MAP_UNUSED_SEVEN_ISLAND_TANOBY_RUINS_MONEAN_CHAMBER
-#define MAP_SEVEN_ISLAND_TANOBY_RUINS_RIXY_CHAMBER       MAP_ROUTE35_CAVE1
-#define MAP_SEVEN_ISLAND_TANOBY_RUINS_SCUFIB_CHAMBER     MAP_ROUTE46_CAVE1
-#define MAP_SEVEN_ISLAND_TANOBY_RUINS_VIAPOIS_CHAMBER    MAP_ROUTE33_CAVE1
-#define MAP_SEVEN_ISLAND_TANOBY_RUINS_WEEPTH_CHAMBER     MAP_SEA_CAVERN_INTERIOR2
-#define MAP_SEVEN_ISLAND_TRAINER_TOWER                   MAP_KALM_CITY_NOUSAR_AREA1
-#define MAP_SILPH_CO_10F                                 MAP_KALM_CITY_NOUSAR_INTERIOR1
-#define MAP_SILPH_CO_11F                                 MAP_SILPH_CO_INTERIOR8
+#define MAP_SEVEN_ISLAND_TANOBY_RUINS                    MAP_REMOVED // removed (pure Gold/Silver build): was MAP_RED_ROUTE_AREA1
+#define MAP_SEVEN_ISLAND_TANOBY_RUINS_DILFORD_CHAMBER    MAP_REMOVED // removed (pure Gold/Silver build): was MAP_SEA_CAVERN_INTERIOR3
+#define MAP_SEVEN_ISLAND_TANOBY_RUINS_LIPTOO_CHAMBER     MAP_REMOVED // removed (pure Gold/Silver build): was MAP_SEA_CAVERN_INTERIOR1
+#define MAP_SEVEN_ISLAND_TANOBY_RUINS_MONEAN_CHAMBER     MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_SEVEN_ISLAND_TANOBY_RUINS_MONEAN_CHAMBER
+#define MAP_SEVEN_ISLAND_TANOBY_RUINS_RIXY_CHAMBER       MAP_REMOVED // removed (pure Gold/Silver build): was MAP_ROUTE35_CAVE1
+#define MAP_SEVEN_ISLAND_TANOBY_RUINS_SCUFIB_CHAMBER     MAP_REMOVED // removed (pure Gold/Silver build): was MAP_ROUTE46_CAVE1
+#define MAP_SEVEN_ISLAND_TANOBY_RUINS_VIAPOIS_CHAMBER    MAP_REMOVED // removed (pure Gold/Silver build): was MAP_ROUTE33_CAVE1
+#define MAP_SEVEN_ISLAND_TANOBY_RUINS_WEEPTH_CHAMBER     MAP_REMOVED // removed (pure Gold/Silver build): was MAP_SEA_CAVERN_INTERIOR2
+#define MAP_SEVEN_ISLAND_TRAINER_TOWER                   MAP_REMOVED // removed (pure Gold/Silver build): was MAP_KALM_CITY_NOUSAR_AREA1
+#define MAP_SILPH_CO_10F                                 MAP_REMOVED // removed (pure Gold/Silver build): was MAP_KALM_CITY_NOUSAR_INTERIOR1
+#define MAP_SILPH_CO_11F                                 MAP_REMOVED // removed (pure Gold/Silver build): was MAP_SILPH_CO_INTERIOR8
 #define MAP_SILPH_CO_1F                                  MAP_SILPH_CO_INTERIOR1
-#define MAP_SILPH_CO_2F                                  MAP_SILPH_CO_INTERIOR2
-#define MAP_SILPH_CO_3F                                  MAP_SILPH_CO_INTERIOR3
-#define MAP_SILPH_CO_4F                                  MAP_SILPH_CO_INTERIOR4
-#define MAP_SILPH_CO_5F                                  MAP_SILPH_CO_INTERIOR5
-#define MAP_SILPH_CO_6F                                  MAP_SILPH_CO_INTERIOR6
-#define MAP_SILPH_CO_7F                                  MAP_SILPH_CO_INTERIOR7
-#define MAP_SILPH_CO_8F                                  MAP_MAIDENS_PEAK_DIS_INTERIOR5
-#define MAP_SILPH_CO_9F                                  MAP_MAIDENS_PEAK_DIS_INTERIOR6
-#define MAP_SILPH_CO_ELEVATOR                            MAP_SILPH_CO_INTERIOR9
+#define MAP_SILPH_CO_2F                                  MAP_REMOVED // removed (pure Gold/Silver build): was MAP_SILPH_CO_INTERIOR2
+#define MAP_SILPH_CO_3F                                  MAP_REMOVED // removed (pure Gold/Silver build): was MAP_SILPH_CO_INTERIOR3
+#define MAP_SILPH_CO_4F                                  MAP_REMOVED // removed (pure Gold/Silver build): was MAP_SILPH_CO_INTERIOR4
+#define MAP_SILPH_CO_5F                                  MAP_REMOVED // removed (pure Gold/Silver build): was MAP_SILPH_CO_INTERIOR5
+#define MAP_SILPH_CO_6F                                  MAP_REMOVED // removed (pure Gold/Silver build): was MAP_SILPH_CO_INTERIOR6
+#define MAP_SILPH_CO_7F                                  MAP_REMOVED // removed (pure Gold/Silver build): was MAP_SILPH_CO_INTERIOR7
+#define MAP_SILPH_CO_8F                                  MAP_REMOVED // removed (pure Gold/Silver build): was MAP_MAIDENS_PEAK_DIS_INTERIOR5
+#define MAP_SILPH_CO_9F                                  MAP_REMOVED // removed (pure Gold/Silver build): was MAP_MAIDENS_PEAK_DIS_INTERIOR6
+#define MAP_SILPH_CO_ELEVATOR                            MAP_REMOVED // removed (pure Gold/Silver build): was MAP_SILPH_CO_INTERIOR9
 #define MAP_SIX_ISLAND                                   MAP_OLIVINE_CITY
-#define MAP_SIX_ISLAND_ALTERING_CAVE                     MAP_SEIRUN_TOMB_CAVE1
+#define MAP_SIX_ISLAND_ALTERING_CAVE                     MAP_REMOVED // removed (pure Gold/Silver build): was MAP_SEIRUN_TOMB_CAVE1
 #define MAP_SIX_ISLAND_GREEN_PATH                        MAP_ROUTE28
 #define MAP_SIX_ISLAND_HARBOR                            MAP_OLIVINE_CITY_INTERIOR7
 #define MAP_SIX_ISLAND_MART                              MAP_OLIVINE_CITY_INTERIOR9
 #define MAP_SIX_ISLAND_OUTCAST_ISLAND                    MAP_ROUTE2
-#define MAP_SIX_ISLAND_PATTERN_BUSH                      MAP_BLUE_ROUTE
+#define MAP_SIX_ISLAND_PATTERN_BUSH                      MAP_REMOVED // removed (pure Gold/Silver build): was MAP_BLUE_ROUTE
 #define MAP_SIX_ISLAND_POKEMON_CENTER_1F                 MAP_OLIVINE_CITY_INTERIOR5
 #define MAP_SIX_ISLAND_POKEMON_CENTER_2F                 MAP_OLIVINE_CITY_INTERIOR6
 #define MAP_SIX_ISLAND_RUIN_VALLEY                       MAP_MT_SILVER
-#define MAP_SIX_ISLAND_WATER_PATH                        MAP_GREEN_ROUTE_AREA1
+#define MAP_SIX_ISLAND_WATER_PATH                        MAP_REMOVED // removed (pure Gold/Silver build): was MAP_GREEN_ROUTE_AREA1
 #define MAP_SSANNE_1F_CORRIDOR                           MAP_SS_AQUA_INTERIOR2
 #define MAP_SSANNE_EXTERIOR                              MAP_SS_AQUA_INTERIOR1
 #define MAP_THREE_ISLAND                                 MAP_AZALEA_TOWN
-#define MAP_THREE_ISLAND_BERRY_FOREST                    MAP_GREEN_PLAINS
+#define MAP_THREE_ISLAND_BERRY_FOREST                    MAP_REMOVED // removed (pure Gold/Silver build): was MAP_GREEN_PLAINS
 #define MAP_THREE_ISLAND_BOND_BRIDGE                     MAP_ROUTE42
 #define MAP_THREE_ISLAND_HARBOR                          MAP_MAHOGANY_TOWN_INTERIOR6
 #define MAP_THREE_ISLAND_MART                            MAP_VIOLET_CITY_INTERIOR5
 #define MAP_THREE_ISLAND_POKEMON_CENTER_1F               MAP_AZALEA_TOWN_INTERIOR1
 #define MAP_THREE_ISLAND_POKEMON_CENTER_2F               MAP_AZALEA_TOWN_INTERIOR2
 #define MAP_THREE_ISLAND_PORT                            MAP_ROUTE32
-#define MAP_TRAINER_TOWER_1F                             MAP_VERMILION_CITY_INTERIOR1
-#define MAP_TRAINER_TOWER_2F                             MAP_VERMILION_CITY_INTERIOR2
-#define MAP_TRAINER_TOWER_3F                             MAP_VERMILION_CITY_INTERIOR3
-#define MAP_TRAINER_TOWER_4F                             MAP_VERMILION_CITY_INTERIOR4
-#define MAP_TRAINER_TOWER_5F                             MAP_VERMILION_CITY_INTERIOR5
-#define MAP_TRAINER_TOWER_6F                             MAP_VERMILION_CITY_INTERIOR6
-#define MAP_TRAINER_TOWER_7F                             MAP_VERMILION_CITY_INTERIOR7
-#define MAP_TRAINER_TOWER_8F                             MAP_VERMILION_CITY_INTERIOR8
-#define MAP_TRAINER_TOWER_ELEVATOR                       MAP_LIGHTHOUSE_INTERIOR1
-#define MAP_TRAINER_TOWER_LOBBY                          MAP_VERMILION_CITY_INTERIOR9
+#define MAP_TRAINER_TOWER_1F                             MAP_REMOVED // removed (pure Gold/Silver build): was MAP_VERMILION_CITY_INTERIOR1
+#define MAP_TRAINER_TOWER_2F                             MAP_REMOVED // removed (pure Gold/Silver build): was MAP_VERMILION_CITY_INTERIOR2
+#define MAP_TRAINER_TOWER_3F                             MAP_REMOVED // removed (pure Gold/Silver build): was MAP_VERMILION_CITY_INTERIOR3
+#define MAP_TRAINER_TOWER_4F                             MAP_REMOVED // removed (pure Gold/Silver build): was MAP_VERMILION_CITY_INTERIOR4
+#define MAP_TRAINER_TOWER_5F                             MAP_REMOVED // removed (pure Gold/Silver build): was MAP_VERMILION_CITY_INTERIOR5
+#define MAP_TRAINER_TOWER_6F                             MAP_REMOVED // removed (pure Gold/Silver build): was MAP_VERMILION_CITY_INTERIOR6
+#define MAP_TRAINER_TOWER_7F                             MAP_REMOVED // removed (pure Gold/Silver build): was MAP_VERMILION_CITY_INTERIOR7
+#define MAP_TRAINER_TOWER_8F                             MAP_REMOVED // removed (pure Gold/Silver build): was MAP_VERMILION_CITY_INTERIOR8
+#define MAP_TRAINER_TOWER_ELEVATOR                       MAP_REMOVED // removed (pure Gold/Silver build): was MAP_LIGHTHOUSE_INTERIOR1
+#define MAP_TRAINER_TOWER_LOBBY                          MAP_REMOVED // removed (pure Gold/Silver build): was MAP_VERMILION_CITY_INTERIOR9
 #define MAP_TRAINER_TOWER_ROOF                           MAP_ROUTE20_INTERIOR1
 #define MAP_TWO_ISLAND                                   MAP_VIOLET_CITY
 #define MAP_TWO_ISLAND_CAPE_BRINK                        MAP_CHERRYGROVE_CITY
 #define MAP_TWO_ISLAND_HARBOR                            MAP_CHERRYGROVE_CITY_INTERIOR4
 #define MAP_TWO_ISLAND_POKEMON_CENTER_1F                 MAP_VIOLET_CITY_INTERIOR3
 #define MAP_TWO_ISLAND_POKEMON_CENTER_2F                 MAP_VIOLET_CITY_INTERIOR4
-#define MAP_UNDERGROUND_PATH_EAST_ENTRANCE               MAP_MAIDENS_PEAK_DIS_INTERIOR3
-#define MAP_UNDERGROUND_PATH_EAST_WEST_TUNNEL            MAP_MAIDENS_PEAK_DIS_INTERIOR2
+#define MAP_UNDERGROUND_PATH_EAST_ENTRANCE               MAP_REMOVED // removed (pure Gold/Silver build): was MAP_MAIDENS_PEAK_DIS_INTERIOR3
+#define MAP_UNDERGROUND_PATH_EAST_WEST_TUNNEL            MAP_REMOVED // removed (pure Gold/Silver build): was MAP_MAIDENS_PEAK_DIS_INTERIOR2
 #define MAP_UNDERGROUND_PATH_NORTH_ENTRANCE              MAP_ROUTE5_INTERIOR1
 #define MAP_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL          MAP_SAFFRON_CITY_INTERIOR1
 #define MAP_UNDERGROUND_PATH_SOUTH_ENTRANCE              MAP_ROUTE6_INTERIOR1
-#define MAP_UNDERGROUND_PATH_WEST_ENTRANCE               MAP_MAIDENS_PEAK_DIS_INTERIOR1
+#define MAP_UNDERGROUND_PATH_WEST_ENTRANCE               MAP_REMOVED // removed (pure Gold/Silver build): was MAP_MAIDENS_PEAK_DIS_INTERIOR1
 #define MAP_VERMILION_CITY_GYM                           MAP_VERMILION_CITY_INTERIOR16
 #define MAP_VERMILION_CITY_MART                          MAP_VERMILION_CITY_INTERIOR15
 #define MAP_VERMILION_CITY_POKEMON_CENTER_1F             MAP_VERMILION_CITY_INTERIOR11
 #define MAP_VERMILION_CITY_POKEMON_CENTER_2F             MAP_VERMILION_CITY_INTERIOR12
 #define MAP_VERMILION_CITY_POKEMON_FAN_CLUB              MAP_VERMILION_CITY_INTERIOR13
-#define MAP_VICTORY_ROAD_1F                              MAP_UNUSED_VICTORY_ROAD_1F
-#define MAP_VICTORY_ROAD_2F                              MAP_UNUSED_VICTORY_ROAD_2F
-#define MAP_VICTORY_ROAD_3F                              MAP_UNUSED_VICTORY_ROAD_3F
+#define MAP_VICTORY_ROAD_1F                              MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_VICTORY_ROAD_1F
+#define MAP_VICTORY_ROAD_2F                              MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_VICTORY_ROAD_2F
+#define MAP_VICTORY_ROAD_3F                              MAP_REMOVED // removed (pure Gold/Silver build): was MAP_UNUSED_VICTORY_ROAD_3F
 #define MAP_VIRIDIAN_CITY_GYM                            MAP_VIRIDIAN_CITY_INTERIOR2
 #define MAP_VIRIDIAN_CITY_MART                           MAP_VIRIDIAN_CITY_INTERIOR3
 #define MAP_VIRIDIAN_CITY_POKEMON_CENTER_1F              MAP_VIRIDIAN_CITY_INTERIOR4
 #define MAP_VIRIDIAN_CITY_POKEMON_CENTER_2F              MAP_VIRIDIAN_CITY_INTERIOR5
-#define MAP_VIRIDIAN_FOREST                              MAP_MAIDENS_PEAK_DIS
+#define MAP_VIRIDIAN_FOREST                              MAP_REMOVED // removed (pure Gold/Silver build): was MAP_MAIDENS_PEAK_DIS
 
 // Layouts (same layout id)
-#define LAYOUT_TRAINER_TOWER_1F                          LAYOUT_VERMILION_CITY_INTERIOR1
+#define LAYOUT_TRAINER_TOWER_1F                          0 // removed (pure Gold/Silver build): was LAYOUT_VERMILION_CITY_INTERIOR1
 #define LAYOUT_TRAINER_TOWER_1F_DOUBLES                  LAYOUT_UNUSED_LAYOUT366
 #define LAYOUT_TRAINER_TOWER_1F_KNOCKOUT                 LAYOUT_UNUSED_LAYOUT374
-#define LAYOUT_TRAINER_TOWER_2F                          LAYOUT_VERMILION_CITY_INTERIOR2
+#define LAYOUT_TRAINER_TOWER_2F                          0 // removed (pure Gold/Silver build): was LAYOUT_VERMILION_CITY_INTERIOR2
 #define LAYOUT_TRAINER_TOWER_2F_DOUBLES                  LAYOUT_UNUSED_LAYOUT367
 #define LAYOUT_TRAINER_TOWER_2F_KNOCKOUT                 LAYOUT_UNUSED_LAYOUT375
-#define LAYOUT_TRAINER_TOWER_3F                          LAYOUT_VERMILION_CITY_INTERIOR3
+#define LAYOUT_TRAINER_TOWER_3F                          0 // removed (pure Gold/Silver build): was LAYOUT_VERMILION_CITY_INTERIOR3
 #define LAYOUT_TRAINER_TOWER_3F_DOUBLES                  LAYOUT_UNUSED_LAYOUT368
 #define LAYOUT_TRAINER_TOWER_3F_KNOCKOUT                 LAYOUT_UNUSED_LAYOUT376
-#define LAYOUT_TRAINER_TOWER_4F                          LAYOUT_VERMILION_CITY_INTERIOR4
+#define LAYOUT_TRAINER_TOWER_4F                          0 // removed (pure Gold/Silver build): was LAYOUT_VERMILION_CITY_INTERIOR4
 #define LAYOUT_TRAINER_TOWER_4F_DOUBLES                  LAYOUT_UNUSED_LAYOUT369
 #define LAYOUT_TRAINER_TOWER_4F_KNOCKOUT                 LAYOUT_UNUSED_LAYOUT377
-#define LAYOUT_TRAINER_TOWER_5F                          LAYOUT_VERMILION_CITY_INTERIOR5
+#define LAYOUT_TRAINER_TOWER_5F                          0 // removed (pure Gold/Silver build): was LAYOUT_VERMILION_CITY_INTERIOR5
 #define LAYOUT_TRAINER_TOWER_5F_DOUBLES                  LAYOUT_UNUSED_LAYOUT370
 #define LAYOUT_TRAINER_TOWER_5F_KNOCKOUT                 LAYOUT_UNUSED_LAYOUT378
-#define LAYOUT_TRAINER_TOWER_6F                          LAYOUT_VERMILION_CITY_INTERIOR6
+#define LAYOUT_TRAINER_TOWER_6F                          0 // removed (pure Gold/Silver build): was LAYOUT_VERMILION_CITY_INTERIOR6
 #define LAYOUT_TRAINER_TOWER_6F_DOUBLES                  LAYOUT_UNUSED_LAYOUT371
 #define LAYOUT_TRAINER_TOWER_6F_KNOCKOUT                 LAYOUT_UNUSED_LAYOUT379
-#define LAYOUT_TRAINER_TOWER_7F                          LAYOUT_VERMILION_CITY_INTERIOR7
+#define LAYOUT_TRAINER_TOWER_7F                          0 // removed (pure Gold/Silver build): was LAYOUT_VERMILION_CITY_INTERIOR7
 #define LAYOUT_TRAINER_TOWER_7F_DOUBLES                  LAYOUT_UNUSED_LAYOUT372
 #define LAYOUT_TRAINER_TOWER_7F_KNOCKOUT                 LAYOUT_UNUSED_LAYOUT380
-#define LAYOUT_TRAINER_TOWER_8F                          LAYOUT_VERMILION_CITY_INTERIOR8
+#define LAYOUT_TRAINER_TOWER_8F                          0 // removed (pure Gold/Silver build): was LAYOUT_VERMILION_CITY_INTERIOR8
 #define LAYOUT_TRAINER_TOWER_8F_DOUBLES                  LAYOUT_UNUSED_LAYOUT373
 #define LAYOUT_TRAINER_TOWER_8F_KNOCKOUT                 LAYOUT_UNUSED_LAYOUT381
-#define LAYOUT_TRAINER_TOWER_LOBBY                       LAYOUT_VERMILION_CITY_INTERIOR9
+#define LAYOUT_TRAINER_TOWER_LOBBY                       0 // removed (pure Gold/Silver build): was LAYOUT_VERMILION_CITY_INTERIOR9
 #define LAYOUT_TRAINER_TOWER_ROOF                        LAYOUT_ROUTE20_INTERIOR1
 
 // Heal locations (same id)

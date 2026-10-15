@@ -55,3 +55,21 @@ VioletCity_Interior3_Movement_Scientist::
 	walk_down
 	walk_down
 	step_end
+
+@ ShinyGold: moved from data/maps/Unused_G1_M123/scripts.inc (map removed)
+Unused_G1_M123_EventScript_Nurse::
+	lock
+	faceplayer
+	call EventScript_PkmnCenterNurse
+	release
+	end
+
+@ ShinyGold: moved from data/maps/Unused_G1_M123/scripts.inc (map removed)
+Unused_G1_M123_EventScript_GbaKid::
+	msgbox Unused_G1_M123_Text_GbaKid, MSGBOX_NPC
+	end
+
+@ ShinyGold: moved from data/maps/Unused_G1_M123/scripts.inc (map removed)
+Unused_G1_M123_EventScript_BugCatcher::
+	msgbox Unused_G1_M123_Text_BugCatcher, MSGBOX_NPC
+	end

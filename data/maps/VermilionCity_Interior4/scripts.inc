@@ -1,8 +1,0 @@
-VermilionCity_Interior4_MapScripts::
-	@ ShinyGold: map script header pointer was NULL
-	.byte 0
-
-VermilionCity_Interior4_EventScript_PkmnRangerMadeline::
-	trainerbattle_single TRAINER_PKMN_RANGER_MADELINE, VermilionCity_Interior4_Text_PkmnRangerMadelineIntro, VermilionCity_Interior4_Text_PkmnRangerMadelineDefeat
-	msgbox VermilionCity_Interior4_Text_PkmnRangerMadeline, MSGBOX_AUTOCLOSE
-	end

@@ -1,7 +1,0 @@
-Unused_RocketHideout_B2F_MapScripts::
-	.byte 0
-
-Unused_RocketHideout_B2F_EventScript_LeaderMorty::
-	trainerbattle_single TRAINER_LEADER_MORTY, Unused_RocketHideout_B2F_Text_LeaderMortyIntro, Unused_RocketHideout_B2F_Text_LeaderMortyDefeat
-	msgbox Unused_RocketHideout_B2F_Text_LeaderMorty, MSGBOX_AUTOCLOSE
-	end

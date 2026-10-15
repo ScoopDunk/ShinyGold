@@ -1,5 +1,6 @@
 #include "global.h"
 #include "heal_location.h"
+#include "overworld.h"
 #include "event_data.h"
 #include "constants/maps.h"
 #include "constants/map_event_ids.h"
@@ -109,8 +110,23 @@ void SetWhiteoutRespawnWarpAndHealerNpc(struct WarpData * warp)
         }
         else
         {
+            // ShinyGold: respawn two tiles below the healer, so Pokemon Centers with other layouts work too
+            // (same as the vanilla 7,4 for the standard layout with the nurse at 7,2).
+            const struct MapHeader *header = Overworld_GetMapHeaderByGroupAndId(warp->mapGroup, warp->mapNum);
+            u8 localId = sWhiteoutRespawnHealerNpcIds[healLocationIdx - 1];
+            s32 i;
+
             warp->x = 7;
             warp->y = 4;
+            for (i = 0; i < header->events->objectEventCount; i++)
+            {
+                if (header->events->objectEvents[i].localId == localId)
+                {
+                    warp->x = header->events->objectEvents[i].x;
+                    warp->y = header->events->objectEvents[i].y + 2;
+                    break;
+                }
+            }
         }
         SetWhiteoutRespawnHealerNpcAsLastTalked(healLocationIdx);
     }

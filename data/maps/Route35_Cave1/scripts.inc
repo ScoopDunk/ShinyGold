@@ -1,3 +1,0 @@
-Route35_Cave1_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, Unused_FiveIsland_LostCave_Room13_OnTransition
-	.byte 0

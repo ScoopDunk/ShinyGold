@@ -175,3 +175,17 @@ CeladonCity_Interior11_EventScript_Sign23::
 CeladonCity_Interior11_EventScript_Sign29::
 	msgbox CeladonCity_Interior11_Text_Sign29, MSGBOX_AUTOCLOSE
 	end
+
+@ ShinyGold: moved from data/maps/SilphCo_Interior6/scripts.inc (map removed)
+SilphCo_Interior6_EventScript_Trigger1_1::
+	setvar 0x7030, 0x129
+	setvar 0x7033, 0x13C
+	release
+	return
+
+@ ShinyGold: moved from data/maps/SilphCo_Interior6/scripts.inc (map removed)
+SilphCo_Interior6_EventScript_Trigger1_2::
+	setvar 0x7030, 0x129
+	setvar 0x7033, 0x10A
+	release
+	return

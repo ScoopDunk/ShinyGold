@@ -37,7 +37,7 @@
       "map": "MAP_LAVENDER_TOWN",
       "x": 3,
       "y": 13,
-      "respawn_map": "MAP_LAVENDER_TOWN_INTERIOR1",
+      "respawn_map": "MAP_LAVENDER_TOWN_INTERIOR7",
       "respawn_npc": 1
     },
     {
@@ -183,14 +183,6 @@
       "y": 18,
       "respawn_map": "MAP_MAHOGANY_TOWN_INTERIOR3",
       "respawn_npc": 1
-    },
-    {
-      "id": "HEAL_LOCATION_KALM_CITY_NOUSAR_AREA1",
-      "map": "MAP_KALM_CITY_NOUSAR_AREA1",
-      "x": 100,
-      "y": 21,
-      "respawn_map": "MAP_KALM_CITY_NOUSAR_INTERIOR4",
-      "respawn_npc": 2
     }
   ]
 }

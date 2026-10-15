@@ -109,13 +109,6 @@
       "dest_warp_id": "4"
     },
     {
-      "x": 10,
-      "y": 11,
-      "elevation": 4,
-      "dest_map": "MAP_KALM_CITY_NOUSAR_INTERIOR3",
-      "dest_warp_id": "0"
-    },
-    {
       "x": 23,
       "y": 7,
       "elevation": 0,

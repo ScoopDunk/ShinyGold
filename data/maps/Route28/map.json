@@ -50,20 +50,6 @@
       "elevation": 3,
       "dest_map": "MAP_ROUTE28_INTERIOR1",
       "dest_warp_id": "0"
-    },
-    {
-      "x": 34,
-      "y": 3,
-      "elevation": 3,
-      "dest_map": "MAP_BLUE_ROUTE",
-      "dest_warp_id": "4"
-    },
-    {
-      "x": 35,
-      "y": 3,
-      "elevation": 3,
-      "dest_map": "MAP_BLUE_ROUTE",
-      "dest_warp_id": "4"
     }
   ],
   "coord_events": [],

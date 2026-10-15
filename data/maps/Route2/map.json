@@ -292,21 +292,21 @@
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2_INTERIOR2",
-      "dest_warp_id": "1"
+      "dest_warp_id": "0"
     },
     {
       "x": 17,
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2_INTERIOR4",
-      "dest_warp_id": "3"
+      "dest_warp_id": "1"
     },
     {
       "x": 16,
       "y": 29,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2_INTERIOR4",
-      "dest_warp_id": "1"
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

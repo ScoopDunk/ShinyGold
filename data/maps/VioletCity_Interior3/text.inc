@@ -34,3 +34,16 @@ VioletCity_Interior3_Text_Scientist_6::
 	.string "we can rely on.\p"
 	.string "Please return to ELM’s LAB when that\n"
 	.string "EGG hatches!$"
+
+@ ShinyGold: moved from data/maps/Unused_G1_M123/text.inc (map removed)
+Unused_G1_M123_Text_GbaKid::
+	.string "A guy named BILL made the POKéMON\n"
+	.string "PC storage system.$"
+
+@ ShinyGold: moved from data/maps/Unused_G1_M123/text.inc (map removed)
+Unused_G1_M123_Text_BugCatcher::
+	.string "It was around three years ago.\p"
+	.string "TEAM ROCKET was up to no good with\n"
+	.string "POKéMON.\p"
+	.string "But justice prevailed--a young kid\n"
+	.string "broke ’em up.$"

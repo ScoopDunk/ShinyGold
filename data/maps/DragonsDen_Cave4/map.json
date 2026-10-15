@@ -163,13 +163,6 @@
       "elevation": 3,
       "dest_map": "MAP_DRAGONS_DEN_CAVE3",
       "dest_warp_id": "3"
-    },
-    {
-      "x": 36,
-      "y": 14,
-      "elevation": 0,
-      "dest_map": "MAP_DRAGONS_DEN_CAVE2",
-      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

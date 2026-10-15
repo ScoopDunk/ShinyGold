@@ -128,20 +128,6 @@
   "warp_events": [
     {
       "x": 17,
-      "y": 3,
-      "elevation": 0,
-      "dest_map": "MAP_PEWTER_CITY_INTERIOR1",
-      "dest_warp_id": "1"
-    },
-    {
-      "x": 18,
-      "y": 3,
-      "elevation": 0,
-      "dest_map": "MAP_PEWTER_CITY_INTERIOR1",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 17,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_CITY_INTERIOR3",

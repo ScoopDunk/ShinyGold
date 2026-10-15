@@ -836,55 +836,8 @@ static const u8 sElevatorWindowAnimDuration[] = {
 
 void GetElevatorFloor(void)
 {
+    // ShinyGold (pure Gold/Silver): Silph Co., Rocket Hideout and Trainer Tower elevators removed
     u16 floor = 4;
-    if (gSaveBlock1Ptr->dynamicWarp.mapGroup == MAP_GROUP(MAP_ROCKET_HIDEOUT_B1F))
-    {
-        switch (gSaveBlock1Ptr->dynamicWarp.mapNum)
-        {
-        case MAP_NUM(MAP_SILPH_CO_1F):
-            floor = 4;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_2F):
-            floor = 5;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_3F):
-            floor = 6;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_4F):
-            floor = 7;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_5F):
-            floor = 8;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_6F):
-            floor = 9;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_7F):
-            floor = 10;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_8F):
-            floor = 11;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_9F):
-            floor = 12;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_10F):
-            floor = 13;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_11F):
-            floor = 14;
-            break;
-        case MAP_NUM(MAP_ROCKET_HIDEOUT_B1F):
-            floor = 3;
-            break;
-        case MAP_NUM(MAP_ROCKET_HIDEOUT_B2F):
-            floor = 2;
-            break;
-        case MAP_NUM(MAP_ROCKET_HIDEOUT_B4F):
-            floor = 0;
-            break;
-        }
-    }
     if (gSaveBlock1Ptr->dynamicWarp.mapGroup == MAP_GROUP(MAP_CELADON_CITY_DEPARTMENT_STORE_1F))
     {
         switch (gSaveBlock1Ptr->dynamicWarp.mapNum)
@@ -903,26 +856,6 @@ void GetElevatorFloor(void)
             break;
         case MAP_NUM(MAP_CELADON_CITY_DEPARTMENT_STORE_5F):
             floor = 8;
-            break;
-        }
-    }
-    if (gSaveBlock1Ptr->dynamicWarp.mapGroup == MAP_GROUP(MAP_TRAINER_TOWER_1F))
-    {
-        switch (gSaveBlock1Ptr->dynamicWarp.mapNum)
-        {
-        case MAP_NUM(MAP_TRAINER_TOWER_1F):
-        case MAP_NUM(MAP_TRAINER_TOWER_2F):
-        case MAP_NUM(MAP_TRAINER_TOWER_3F):
-        case MAP_NUM(MAP_TRAINER_TOWER_4F):
-        case MAP_NUM(MAP_TRAINER_TOWER_5F):
-        case MAP_NUM(MAP_TRAINER_TOWER_6F):
-        case MAP_NUM(MAP_TRAINER_TOWER_7F):
-        case MAP_NUM(MAP_TRAINER_TOWER_8F):
-        case MAP_NUM(MAP_TRAINER_TOWER_ROOF):
-            floor = 15;
-            break;
-        case MAP_NUM(MAP_TRAINER_TOWER_LOBBY):
-            floor = 3;
             break;
         }
     }
@@ -934,68 +867,6 @@ u16 InitElevatorFloorSelectMenuPos(void)
     sElevatorScroll = 0;
     sElevatorCursorPos = 0;
 
-    if (gSaveBlock1Ptr->dynamicWarp.mapGroup == MAP_GROUP(MAP_ROCKET_HIDEOUT_B1F))
-    {
-        switch (gSaveBlock1Ptr->dynamicWarp.mapNum)
-        {
-        case MAP_NUM(MAP_SILPH_CO_11F):
-            sElevatorScroll = 0;
-            sElevatorCursorPos = 0;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_10F):
-            sElevatorScroll = 0;
-            sElevatorCursorPos = 1;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_9F):
-            sElevatorScroll = 0;
-            sElevatorCursorPos = 2;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_8F):
-            sElevatorScroll = 0;
-            sElevatorCursorPos = 3;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_7F):
-            sElevatorScroll = 0;
-            sElevatorCursorPos = 4;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_6F):
-            sElevatorScroll = 1;
-            sElevatorCursorPos = 4;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_5F):
-            sElevatorScroll = 2;
-            sElevatorCursorPos = 4;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_4F):
-            sElevatorScroll = 3;
-            sElevatorCursorPos = 4;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_3F):
-            sElevatorScroll = 4;
-            sElevatorCursorPos = 4;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_2F):
-            sElevatorScroll = 5;
-            sElevatorCursorPos = 4;
-            break;
-        case MAP_NUM(MAP_SILPH_CO_1F):
-            sElevatorScroll = 5;
-            sElevatorCursorPos = 5;
-            break;
-        case MAP_NUM(MAP_ROCKET_HIDEOUT_B1F):
-            sElevatorScroll = 0;
-            sElevatorCursorPos = 0;
-            break;
-        case MAP_NUM(MAP_ROCKET_HIDEOUT_B2F):
-            sElevatorScroll = 0;
-            sElevatorCursorPos = 1;
-            break;
-        case MAP_NUM(MAP_ROCKET_HIDEOUT_B4F):
-            sElevatorScroll = 0;
-            sElevatorCursorPos = 2;
-            break;
-        }
-    }
     if (gSaveBlock1Ptr->dynamicWarp.mapGroup == MAP_GROUP(MAP_CELADON_CITY_DEPARTMENT_STORE_1F))
     {
         switch (gSaveBlock1Ptr->dynamicWarp.mapNum)
@@ -1019,28 +890,6 @@ u16 InitElevatorFloorSelectMenuPos(void)
         case MAP_NUM(MAP_CELADON_CITY_DEPARTMENT_STORE_1F):
             sElevatorScroll = 0;
             sElevatorCursorPos = 4;
-            break;
-        }
-    }
-    if (gSaveBlock1Ptr->dynamicWarp.mapGroup == MAP_GROUP(MAP_TRAINER_TOWER_1F))
-    {
-        switch (gSaveBlock1Ptr->dynamicWarp.mapNum)
-        {
-        case MAP_NUM(MAP_TRAINER_TOWER_1F):
-        case MAP_NUM(MAP_TRAINER_TOWER_2F):
-        case MAP_NUM(MAP_TRAINER_TOWER_3F):
-        case MAP_NUM(MAP_TRAINER_TOWER_4F):
-        case MAP_NUM(MAP_TRAINER_TOWER_5F):
-        case MAP_NUM(MAP_TRAINER_TOWER_6F):
-        case MAP_NUM(MAP_TRAINER_TOWER_7F):
-        case MAP_NUM(MAP_TRAINER_TOWER_8F):
-        case MAP_NUM(MAP_TRAINER_TOWER_ROOF):
-            sElevatorScroll = 0;
-            sElevatorCursorPos = 0;
-            break;
-        case MAP_NUM(MAP_TRAINER_TOWER_LOBBY):
-            sElevatorScroll = 0;
-            sElevatorCursorPos = 1;
             break;
         }
     }

@@ -1,8 +1,0 @@
-VermilionCity_Interior5_MapScripts::
-	@ ShinyGold: map script header pointer was NULL
-	.byte 0
-
-VermilionCity_Interior5_EventScript_BlackBeltShea2::
-	trainerbattle_single TRAINER_BLACK_BELT_SHEA_2, VermilionCity_Interior5_Text_BlackBeltShea2Intro, VermilionCity_Interior5_Text_BlackBeltShea2Defeat
-	msgbox VermilionCity_Interior5_Text_BlackBeltShea2, MSGBOX_AUTOCLOSE
-	end

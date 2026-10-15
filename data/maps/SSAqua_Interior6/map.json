@@ -50,14 +50,14 @@
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_SS_AQUA_INTERIOR5",
-      "dest_warp_id": "4"
+      "dest_warp_id": "3"
     },
     {
       "x": 3,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_SS_AQUA_INTERIOR5",
-      "dest_warp_id": "10"
+      "dest_warp_id": "9"
     },
     {
       "x": 28,
