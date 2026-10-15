@@ -2,7 +2,7 @@ BlackthornCity_MapScripts::
 	@ ShinyGold: overlapping data duplicated from 0x0888CE18
 	@ ShinyGold: 7 entries with invalid type(s) 0xFF, 0xBD, 0xFF, 0xFF, 0x10, 0xFF, 0xFF dropped (inert: the engine skips them)
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, BlackthornCity_OnFrame
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route35_OnFrame
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route35_OnFrame  @ ShinyGold: shadowed by the first entry of this type (never used)
 	.byte 0
 
 BlackthornCity_OnFrame::

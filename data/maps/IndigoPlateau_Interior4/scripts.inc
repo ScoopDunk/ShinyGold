@@ -1,8 +1,8 @@
 IndigoPlateau_Interior4_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, IndigoPlateau_Interior4_OnResume
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, IndigoPlateau_Interior4_OnFrame
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, 0x0816296E
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, 0x0816297D
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, IndigoPlateau_Interior4_OnWarp
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, 0x0816297D  @ ShinyGold: shadowed by the first entry of this type (never used)
 	.byte 0
 
 IndigoPlateau_Interior4_OnResume::
@@ -12,6 +12,11 @@ IndigoPlateau_Interior4_OnResume::
 	applymovement LOCALID_PLAYER, IndigoPlateau_Interior4_Movement_OnResume
 	delay 64
 	end
+
+IndigoPlateau_Interior4_OnWarp::
+	@ ShinyGold: overlapping data duplicated from 0x0816296E
+	map_script_2 VAR_TEMP_0, 0, IndigoPlateau_Interior4_EventScript_WarpScene
+	.2byte 0
 
 IndigoPlateau_Interior4_EventScript_OnResume_1::
 	release
@@ -38,6 +43,11 @@ IndigoPlateau_Interior4_EventScript_FrameScene7::
 	waitse
 	setvar 0x4068, 4
 	releaseall
+	end
+
+IndigoPlateau_Interior4_EventScript_WarpScene::
+	@ ShinyGold: overlapping data duplicated from 0x08162978
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 
 IndigoPlateau_Interior4_Movement_OnResume::
