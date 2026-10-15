@@ -109,6 +109,13 @@
       "dest_warp_id": "4"
     },
     {
+      "x": 10,
+      "y": 11,
+      "elevation": 4,
+      "dest_map": "MAP_SPROUT_TOWER_INTERIOR1",
+      "dest_warp_id": "1"
+    },
+    {
       "x": 23,
       "y": 7,
       "elevation": 0,
