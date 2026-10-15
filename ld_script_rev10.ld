@@ -214,6 +214,8 @@ SECTIONS {
         src/palette_util.o(.text);
         src/cable_car_util.o(.text);
         src/save.o(.text);
+        src/save_block_ext.o(.text);
+        src/force_shiny.o(.text);
         src/mystery_event_script.o(.text);
         src/field_effect_helpers.o(.text);
         src/battle_anim_sound_tasks.o(.text);
@@ -513,6 +515,7 @@ SECTIONS {
         src/battle_controller_link_partner.o(.rodata);
         src/battle_message.o(.rodata);
         src/save.o(.rodata);
+        src/save_block_ext.o(.rodata);
         src/field_effect_helpers.o(.rodata);
         src/battle_controller_safari.o(.rodata);
         src/battle_anim_effects_3.o(.rodata);
