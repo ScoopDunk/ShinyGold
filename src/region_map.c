@@ -826,7 +826,7 @@ static const u8 sTextColors[] = {TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_WHITE, TEXT_CO
 #include "data/region_map/region_map_layout_sevii_67.h"
 
 static const u8 sMapFlyDestinations[][3] = {
-    [MAPSEC_PALLET_TOWN         - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_PALLET_TOWN},
+    [MAPSEC_PALLET_TOWN         - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_PALLET_TOWN}, // ShinyGold: same group/num as vanilla PALLET_TOWN
     [MAPSEC_VIRIDIAN_CITY       - KANTO_MAPSEC_START] = {MAP(MAP_VIRIDIAN_CITY),                         HEAL_LOCATION_VIRIDIAN_CITY},
     [MAPSEC_PEWTER_CITY         - KANTO_MAPSEC_START] = {MAP(MAP_PEWTER_CITY),                           HEAL_LOCATION_PEWTER_CITY},
     [MAPSEC_CERULEAN_CITY       - KANTO_MAPSEC_START] = {MAP(MAP_CERULEAN_CITY),                         HEAL_LOCATION_CERULEAN_CITY},
@@ -840,7 +840,7 @@ static const u8 sMapFlyDestinations[][3] = {
     [MAPSEC_ROUTE_4_POKECENTER  - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE4),                                HEAL_LOCATION_ROUTE4},
     [MAPSEC_ROUTE_10_POKECENTER - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE10),                               HEAL_LOCATION_ROUTE10},
     [MAPSEC_ROUTE_1             - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE1),                                HEAL_LOCATION_NONE},
-    [MAPSEC_ROUTE_2             - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE2),                                HEAL_LOCATION_NONE},
+    [MAPSEC_ROUTE_2             - KANTO_MAPSEC_START] = {MAP(MAP_KALM_CITY_NOUSAR),                                HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla ROUTE2
     [MAPSEC_ROUTE_3             - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE3),                                HEAL_LOCATION_NONE},
     [MAPSEC_ROUTE_4             - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE4),                                HEAL_LOCATION_NONE},
     [MAPSEC_ROUTE_5             - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE5),                                HEAL_LOCATION_NONE},
@@ -864,23 +864,23 @@ static const u8 sMapFlyDestinations[][3] = {
     [MAPSEC_ROUTE_23            - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE23),                               HEAL_LOCATION_NONE},
     [MAPSEC_ROUTE_24            - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE24),                               HEAL_LOCATION_NONE},
     [MAPSEC_ROUTE_25            - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE25),                               HEAL_LOCATION_NONE},
-    [MAPSEC_VIRIDIAN_FOREST     - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_MT_MOON             - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_S_S_ANNE            - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_UNDERGROUND_PATH    - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_UNDERGROUND_PATH_2  - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_DIGLETTS_CAVE       - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_KANTO_VICTORY_ROAD  - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_ROCKET_HIDEOUT      - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_SILPH_CO            - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_POKEMON_MANSION     - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_KANTO_SAFARI_ZONE   - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_POKEMON_LEAGUE      - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_ROCK_TUNNEL         - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_SEAFOAM_ISLANDS     - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_POKEMON_TOWER       - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_CERULEAN_CAVE       - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_POWER_PLANT         - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
+    [MAPSEC_VIRIDIAN_FOREST     - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_MT_MOON             - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_S_S_ANNE            - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_UNDERGROUND_PATH    - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_UNDERGROUND_PATH_2  - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_DIGLETTS_CAVE       - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_KANTO_VICTORY_ROAD  - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_ROCKET_HIDEOUT      - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_SILPH_CO            - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_POKEMON_MANSION     - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_KANTO_SAFARI_ZONE   - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_POKEMON_LEAGUE      - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_ROCK_TUNNEL         - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_SEAFOAM_ISLANDS     - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_POKEMON_TOWER       - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_CERULEAN_CAVE       - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_POWER_PLANT         - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
     [MAPSEC_ONE_ISLAND          - KANTO_MAPSEC_START] = {MAP(MAP_ONE_ISLAND),                            HEAL_LOCATION_ONE_ISLAND},
     [MAPSEC_TWO_ISLAND          - KANTO_MAPSEC_START] = {MAP(MAP_TWO_ISLAND),                            HEAL_LOCATION_TWO_ISLAND},
     [MAPSEC_THREE_ISLAND        - KANTO_MAPSEC_START] = {MAP(MAP_THREE_ISLAND),                          HEAL_LOCATION_THREE_ISLAND},
@@ -909,31 +909,31 @@ static const u8 sMapFlyDestinations[][3] = {
     [MAPSEC_CANYON_ENTRANCE     - KANTO_MAPSEC_START] = {MAP(MAP_SEVEN_ISLAND_SEVAULT_CANYON_ENTRANCE),  HEAL_LOCATION_NONE},
     [MAPSEC_SEVAULT_CANYON      - KANTO_MAPSEC_START] = {MAP(MAP_SEVEN_ISLAND_SEVAULT_CANYON),           HEAL_LOCATION_NONE},
     [MAPSEC_TANOBY_RUINS        - KANTO_MAPSEC_START] = {MAP(MAP_SEVEN_ISLAND_TANOBY_RUINS),             HEAL_LOCATION_NONE},
-    [MAPSEC_SEVII_ISLE_22       - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_SEVII_ISLE_23       - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_SEVII_ISLE_24       - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
+    [MAPSEC_SEVII_ISLE_22       - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_SEVII_ISLE_23       - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_SEVII_ISLE_24       - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
     [MAPSEC_NAVEL_ROCK          - KANTO_MAPSEC_START] = {MAP(MAP_NAVEL_ROCK_EXTERIOR),                   HEAL_LOCATION_NONE},
-    [MAPSEC_MT_EMBER            - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_BERRY_FOREST        - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_ICEFALL_CAVE        - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_ROCKET_WAREHOUSE    - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_TRAINER_TOWER_2     - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_DOTTED_HOLE         - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_LOST_CAVE           - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_PATTERN_BUSH        - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_ALTERING_CAVE       - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_TANOBY_CHAMBERS     - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_THREE_ISLE_PATH     - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_TANOBY_KEY          - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
+    [MAPSEC_MT_EMBER            - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_BERRY_FOREST        - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_ICEFALL_CAVE        - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_ROCKET_WAREHOUSE    - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_TRAINER_TOWER_2     - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_DOTTED_HOLE         - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_LOST_CAVE           - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_PATTERN_BUSH        - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_ALTERING_CAVE       - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_TANOBY_CHAMBERS     - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_THREE_ISLE_PATH     - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_TANOBY_KEY          - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
     [MAPSEC_BIRTH_ISLAND        - KANTO_MAPSEC_START] = {MAP(MAP_BIRTH_ISLAND_EXTERIOR),                 HEAL_LOCATION_NONE},
-    [MAPSEC_MONEAN_CHAMBER      - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_LIPTOO_CHAMBER      - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_WEEPTH_CHAMBER      - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_DILFORD_CHAMBER     - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_SCUFIB_CHAMBER      - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_RIXY_CHAMBER        - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_VIAPOIS_CHAMBER     - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
-    [MAPSEC_EMBER_SPA           - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN),                           HEAL_LOCATION_NONE},
+    [MAPSEC_MONEAN_CHAMBER      - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_LIPTOO_CHAMBER      - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_WEEPTH_CHAMBER      - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_DILFORD_CHAMBER     - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_SCUFIB_CHAMBER      - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_RIXY_CHAMBER        - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_VIAPOIS_CHAMBER     - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
+    [MAPSEC_EMBER_SPA           - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN),                           HEAL_LOCATION_NONE}, // ShinyGold: same group/num as vanilla PALLET_TOWN
 };
 
 static void RegionMap_DarkenPalette(u16 *pal, u16 size, u16 tint)
@@ -3273,7 +3273,7 @@ static void GetPlayerPositionOnRegionMap_HandleOverrides(void)
         sMapCursor->y = 6;
         break;
     case MAPSEC_ROUTE_2:
-        if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_PALLET_TOWN))
+        if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_NEW_BARK_TOWN)) // ShinyGold: same group/num as vanilla PALLET_TOWN
         {
             sMapCursor->x = 4;
             sMapCursor->y = 7;
@@ -3312,7 +3312,7 @@ static void GetPlayerPositionOnRegionMap_HandleOverrides(void)
         }
         break;
     case MAPSEC_ROUTE_6:
-        if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_PALLET_TOWN))
+        if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_NEW_BARK_TOWN)) // ShinyGold: same group/num as vanilla PALLET_TOWN
         {
             sMapCursor->x = 14;
             sMapCursor->y = 7;
@@ -3323,7 +3323,7 @@ static void GetPlayerPositionOnRegionMap_HandleOverrides(void)
         }
         break;
     case MAPSEC_ROUTE_7:
-        if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_PALLET_TOWN))
+        if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_NEW_BARK_TOWN)) // ShinyGold: same group/num as vanilla PALLET_TOWN
         {
             sMapCursor->x = 13;
             sMapCursor->y = 6;
@@ -3334,7 +3334,7 @@ static void GetPlayerPositionOnRegionMap_HandleOverrides(void)
         }
         break;
     case MAPSEC_ROUTE_8:
-        if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_PALLET_TOWN))
+        if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_NEW_BARK_TOWN)) // ShinyGold: same group/num as vanilla PALLET_TOWN
         {
             sMapCursor->x = 15;
             sMapCursor->y = 6;

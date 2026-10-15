@@ -1,0 +1,53 @@
+{
+  "id": "MAP_RUINS_OF_ALPH_CAVE3",
+  "name": "RuinsOfAlph_Cave3",
+  "layout": "LAYOUT_RUINS_OF_ALPH_CAVE3",
+  "music": "MUS_MT_MOON",
+  "region_map_section": "MAPSEC_RUINS_OF_ALPH",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "floor_number": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 7,
+      "elevation": 3,
+      "dest_map": "MAP_RUINS_OF_ALPH",
+      "dest_warp_id": "9"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE37",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 0,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "0x08000000"
+    },
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 0,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "0x0"
+    }
+  ]
+}

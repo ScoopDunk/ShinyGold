@@ -21,136 +21,226 @@
     },
     {
       "map": "MAP_ROUTE12",
-      "offset": 0,
+      "offset": -1,
       "direction": "down"
     },
     {
       "map": "MAP_ROUTE8",
-      "offset": 0,
+      "offset": 7,
       "direction": "left"
     }
   ],
   "object_events": [
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
-      "x": 19,
-      "y": 10,
+      "graphics_id": "OBJ_EVENT_GFX_BALDING_MAN",
+      "x": 13,
+      "y": 12,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
       "movement_range_x": 2,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LavenderTown_EventScript_LittleGirl",
+      "script": "0x088753D0",
       "flag": "0"
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_WORKER_M",
-      "x": 12,
-      "y": 12,
+      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
+      "x": 18,
+      "y": 23,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LavenderTown_EventScript_WorkerM",
+      "script": "0x08875400",
       "flag": "0"
     },
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BOY",
-      "x": 10,
-      "y": 7,
+      "x": 8,
+      "y": 19,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LavenderTown_EventScript_Boy",
+      "script": "0x088753E0",
       "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "x": 4,
+      "y": 26,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x088753F0",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_CRUSH_GIRL",
+      "x": 18,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0882BCE0",
+      "flag": "0x11DD"
     }
   ],
   "warp_events": [
     {
-      "x": 18,
-      "y": 6,
+      "x": 17,
+      "y": 22,
       "elevation": 0,
-      "dest_map": "MAP_POKEMON_TOWER_1F",
+      "dest_map": "MAP_LAVENDER_TOWN_INTERIOR6",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 3,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_LAVENDER_TOWN_INTERIOR7",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 6,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_LAVENDER_TOWN_INTERIOR3",
       "dest_warp_id": "1"
     },
     {
       "x": 6,
-      "y": 5,
+      "y": 24,
       "elevation": 0,
-      "dest_map": "MAP_LAVENDER_TOWN_POKEMON_CENTER_1F",
+      "dest_map": "MAP_LAVENDER_TOWN_INTERIOR4",
       "dest_warp_id": "1"
     },
     {
-      "x": 10,
+      "x": 11,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_LAVENDER_TOWN_CAVE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 7,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_LAVENDER_TOWN_INTERIOR5",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 18,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_LAVENDER_TOWN_VOLUNTEER_POKEMON_HOUSE",
-      "dest_warp_id": "1"
-    },
-    {
-      "x": 5,
-      "y": 16,
-      "elevation": 0,
-      "dest_map": "MAP_LAVENDER_TOWN_HOUSE1",
-      "dest_warp_id": "1"
-    },
-    {
-      "x": 10,
-      "y": 16,
-      "elevation": 0,
-      "dest_map": "MAP_LAVENDER_TOWN_HOUSE2",
-      "dest_warp_id": "1"
-    },
-    {
-      "x": 20,
-      "y": 15,
-      "elevation": 0,
-      "dest_map": "MAP_LAVENDER_TOWN_MART",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_LAV_RADIO_TOWER_INTERIOR1",
+      "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 4,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x088753A0"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 4,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x088753A0"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 4,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x088753A0"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 0,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x08000000"
+    },
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 0,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x08000000"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x088765F0"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",
-      "x": 12,
-      "y": 4,
+      "x": 13,
+      "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "LavenderTown_EventScript_SilphScopeNotice"
+      "script": "0x08875410"
     },
     {
       "type": "sign",
-      "x": 15,
-      "y": 11,
+      "x": 19,
+      "y": 24,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "LavenderTown_EventScript_TownSign"
+      "script": "0x08875440"
     },
     {
       "type": "sign",
-      "x": 21,
-      "y": 7,
+      "x": 19,
+      "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "LavenderTown_EventScript_PokemonTowerSign"
+      "script": "0x08875420"
     },
     {
       "type": "sign",
-      "x": 7,
-      "y": 11,
+      "x": 3,
+      "y": 18,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "LavenderTown_EventScript_VolunteerHouseSign"
+      "script": "0x08875430"
     }
   ]
 }

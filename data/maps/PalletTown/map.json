@@ -2,7 +2,7 @@
   "id": "MAP_PALLET_TOWN",
   "name": "PalletTown",
   "layout": "LAYOUT_PALLET_TOWN",
-  "music": "MUS_PALLET",
+  "music": "MUS_MYSTERY_GIFT",
   "region_map_section": "MAPSEC_PALLET_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -15,155 +15,204 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE1",
+      "map": "MAP_ROUTE29",
       "offset": 0,
-      "direction": "up"
+      "direction": "left"
     },
     {
-      "map": "MAP_ROUTE21_NORTH",
-      "offset": 0,
-      "direction": "down"
+      "map": "MAP_ROUTE27",
+      "offset": -1,
+      "direction": "right"
     }
   ],
   "object_events": [
     {
-      "local_id": "LOCALID_PALLET_SIGN_LADY",
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
-      "x": 3,
-      "y": 10,
+      "graphics_id": "OBJ_EVENT_GFX_RS_BRENDAN",
+      "x": 5,
+      "y": 3,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 4,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "PalletTown_EventScript_SignLady",
-      "flag": "0"
-    },
-    {
-      "local_id": "LOCALID_PALLET_FAT_MAN",
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-      "x": 13,
-      "y": 17,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 6,
-      "movement_range_y": 2,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "PalletTown_EventScript_FatMan",
-      "flag": "0"
-    },
-    {
-      "local_id": "LOCALID_PALLET_PROF_OAK",
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_PROF_OAK",
-      "x": 10,
-      "y": 8,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "FLAG_HIDE_OAK_IN_PALLET_TOWN"
+      "script": "0x0871C280",
+      "flag": "0x1018"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
+      "x": 14,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08167517",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_LASS",
+      "x": 8,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08742950",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
+      "x": 20,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x081BDF13",
+      "flag": "FLAG_TEMP_12"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_PIKACHU",
+      "x": 15,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878BA70",
+      "flag": "0x1134"
     }
   ],
   "warp_events": [
     {
-      "x": 6,
-      "y": 7,
+      "x": 9,
+      "y": 4,
       "elevation": 0,
-      "dest_map": "MAP_PALLET_TOWN_PLAYERS_HOUSE_1F",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_NEW_BARK_TOWN_INTERIOR3",
+      "dest_warp_id": "0"
     },
     {
-      "x": 15,
-      "y": 7,
+      "x": 13,
+      "y": 14,
       "elevation": 0,
-      "dest_map": "MAP_PALLET_TOWN_RIVALS_HOUSE",
+      "dest_map": "MAP_NEW_BARK_TOWN_INTERIOR5",
       "dest_warp_id": "0"
     },
     {
       "x": 16,
-      "y": 13,
+      "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_PALLET_TOWN_PROFESSOR_OAKS_LAB",
+      "dest_map": "MAP_NEW_BARK_TOWN_INTERIOR1",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 5,
+      "y": 13,
+      "elevation": 3,
+      "dest_map": "MAP_NEW_BARK_TOWN_INTERIOR4",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
       "dest_warp_id": "0"
     }
   ],
   "coord_events": [
     {
       "type": "trigger",
-      "x": 12,
-      "y": 1,
+      "x": 0,
+      "y": 9,
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "PalletTown_EventScript_OakTriggerLeft"
+      "script": "0x0871C320"
     },
     {
       "type": "trigger",
-      "x": 13,
-      "y": 1,
+      "x": 0,
+      "y": 10,
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "PalletTown_EventScript_OakTriggerRight"
+      "script": "0x0871C470"
     },
     {
       "type": "trigger",
-      "x": 13,
-      "y": 2,
+      "x": 15,
+      "y": 8,
       "elevation": 3,
-      "var": "VAR_TEMP_2",
-      "var_value": "1",
-      "script": "PalletTown_EventScript_SignLadyTrigger"
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x08740D80"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x08740D80"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 8,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x08740D80"
     }
   ],
   "bg_events": [
     {
       "type": "sign",
-      "x": 16,
-      "y": 16,
+      "x": 10,
+      "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_EventScript_OaksLabSign"
+      "script": "0x08167552"
     },
     {
       "type": "sign",
-      "x": 4,
+      "x": 14,
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_EventScript_PlayersHouseSign"
-    },
-    {
-      "type": "sign",
-      "x": 13,
-      "y": 7,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_EventScript_RivalsHouseSign"
-    },
-    {
-      "type": "sign",
-      "x": 9,
-      "y": 11,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_EventScript_TownSign"
+      "script": "0x0816755B"
     },
     {
       "type": "sign",
       "x": 5,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "0x0871C260"
+    },
+    {
+      "type": "sign",
+      "x": 11,
       "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PalletTown_EventScript_TrainerTips"
+      "script": "0x0871C240"
     }
   ]
 }

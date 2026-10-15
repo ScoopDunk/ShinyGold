@@ -1,0 +1,103 @@
+{
+  "id": "MAP_WHIRL_ISLANDS_CAVE5",
+  "name": "WhirlIslands_Cave5",
+  "layout": "LAYOUT_WHIRL_ISLANDS_CAVE5",
+  "music": "MUS_MT_MOON",
+  "region_map_section": "MAPSEC_WHIRL_ISLANDS",
+  "requires_flash": true,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "floor_number": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 25,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x087873A0",
+      "flag": "0x220"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 8,
+      "y": 17,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08787380",
+      "flag": "0x21E"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 24,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08787390",
+      "flag": "0x21F"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 1,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_WHIRL_ISLANDS_CAVE1",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 10,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS_CAVE3",
+      "dest_warp_id": "8"
+    },
+    {
+      "x": 5,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS_CAVE4",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 25,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_WHIRL_ISLANDS_CAVE3",
+      "dest_warp_id": "3"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 14,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878BA20"
+    }
+  ],
+  "bg_events": []
+}

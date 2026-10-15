@@ -1,0 +1,1208 @@
+{
+  "id": "MAP_UNUSED_G34_M52",
+  "name": "Unused_G34_M52",
+  "layout": "LAYOUT_UNUSED_G34_M52",
+  "music": "MUS_TEACHY_TV_SHOW",
+  "region_map_section": "MAPSEC_ECRUTEAK_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "floor_number": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 56,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878AE90",
+      "flag": "0x22A"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_RED_NORMAL",
+      "x": 62,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878AE60",
+      "flag": "0x22B"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 66,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878AE70",
+      "flag": "0x22C"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 32,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878AE50",
+      "flag": "0x228"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 60,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878AE80",
+      "flag": "0x229"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_RED_NORMAL",
+      "x": 82,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878AEB0",
+      "flag": "0x22E"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_RED_NORMAL",
+      "x": 83,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878AEA0",
+      "flag": "0x22F"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 81,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878AEC0",
+      "flag": "0x22D"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 131,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878AED0",
+      "flag": "0x230"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 159,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878AEF0",
+      "flag": "0x231"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 152,
+      "y": 14,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878AEE0",
+      "flag": "0x232"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 169,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878AF00",
+      "flag": "0x233"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 15,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_AZALEA_TOWN",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 15,
+      "y": 14,
+      "elevation": 3,
+      "dest_map": "MAP_AZALEA_TOWN_INTERIOR2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 38,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 54,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 56,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 62,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 66,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 79,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 85,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 91,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 85,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 108,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 101,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 124,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 124,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 170,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 133,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 133,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 147,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 172,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 128,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 149,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 150,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 176,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 147,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 175,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 175,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 178,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 182,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 157,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 174,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 6,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AD17"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 14,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AD20"
+    },
+    {
+      "type": "trigger",
+      "x": 38,
+      "y": 14,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AD27"
+    },
+    {
+      "type": "trigger",
+      "x": 31,
+      "y": 6,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AD30"
+    },
+    {
+      "type": "trigger",
+      "x": 54,
+      "y": 6,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AD37"
+    },
+    {
+      "type": "trigger",
+      "x": 40,
+      "y": 12,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 43,
+      "y": 12,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 42,
+      "y": 6,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE20"
+    },
+    {
+      "type": "trigger",
+      "x": 39,
+      "y": 6,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE20"
+    },
+    {
+      "type": "trigger",
+      "x": 36,
+      "y": 6,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE20"
+    },
+    {
+      "type": "trigger",
+      "x": 35,
+      "y": 12,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE20"
+    },
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 14,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 56,
+      "y": 18,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AD40"
+    },
+    {
+      "type": "trigger",
+      "x": 62,
+      "y": 12,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AD50"
+    },
+    {
+      "type": "trigger",
+      "x": 66,
+      "y": 6,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AD60"
+    },
+    {
+      "type": "trigger",
+      "x": 36,
+      "y": 15,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE30"
+    },
+    {
+      "type": "trigger",
+      "x": 54,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE30"
+    },
+    {
+      "type": "trigger",
+      "x": 56,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE30"
+    },
+    {
+      "type": "trigger",
+      "x": 58,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 58,
+      "y": 15,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 58,
+      "y": 17,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 59,
+      "y": 18,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE20"
+    },
+    {
+      "type": "trigger",
+      "x": 64,
+      "y": 11,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE20"
+    },
+    {
+      "type": "trigger",
+      "x": 65,
+      "y": 8,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE30"
+    },
+    {
+      "type": "trigger",
+      "x": 79,
+      "y": 18,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AD47"
+    },
+    {
+      "type": "trigger",
+      "x": 85,
+      "y": 12,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AD57"
+    },
+    {
+      "type": "trigger",
+      "x": 91,
+      "y": 6,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AD67"
+    },
+    {
+      "type": "trigger",
+      "x": 85,
+      "y": 9,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AD70"
+    },
+    {
+      "type": "trigger",
+      "x": 77,
+      "y": 14,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE30"
+    },
+    {
+      "type": "trigger",
+      "x": 77,
+      "y": 17,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE30"
+    },
+    {
+      "type": "trigger",
+      "x": 78,
+      "y": 16,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 81,
+      "y": 16,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 84,
+      "y": 18,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 86,
+      "y": 16,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 87,
+      "y": 18,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 89,
+      "y": 17,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 90,
+      "y": 14,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE20"
+    },
+    {
+      "type": "trigger",
+      "x": 89,
+      "y": 12,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 87,
+      "y": 11,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE20"
+    },
+    {
+      "type": "trigger",
+      "x": 86,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 85,
+      "y": 14,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE30"
+    },
+    {
+      "type": "trigger",
+      "x": 83,
+      "y": 14,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE30"
+    },
+    {
+      "type": "trigger",
+      "x": 82,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE20"
+    },
+    {
+      "type": "trigger",
+      "x": 79,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE20"
+    },
+    {
+      "type": "trigger",
+      "x": 81,
+      "y": 8,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE30"
+    },
+    {
+      "type": "trigger",
+      "x": 108,
+      "y": 9,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AD77"
+    },
+    {
+      "type": "trigger",
+      "x": 101,
+      "y": 7,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AD80"
+    },
+    {
+      "type": "trigger",
+      "x": 111,
+      "y": 11,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE20"
+    },
+    {
+      "type": "trigger",
+      "x": 102,
+      "y": 11,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 124,
+      "y": 7,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AD87"
+    },
+    {
+      "type": "trigger",
+      "x": 124,
+      "y": 12,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AD90"
+    },
+    {
+      "type": "trigger",
+      "x": 133,
+      "y": 11,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878ADA0"
+    },
+    {
+      "type": "trigger",
+      "x": 133,
+      "y": 13,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878ADB0"
+    },
+    {
+      "type": "trigger",
+      "x": 128,
+      "y": 16,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878ADC0"
+    },
+    {
+      "type": "trigger",
+      "x": 126,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 130,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 134,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 123,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE30"
+    },
+    {
+      "type": "trigger",
+      "x": 136,
+      "y": 8,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE30"
+    },
+    {
+      "type": "trigger",
+      "x": 134,
+      "y": 14,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE30"
+    },
+    {
+      "type": "trigger",
+      "x": 147,
+      "y": 18,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878ADA7"
+    },
+    {
+      "type": "trigger",
+      "x": 149,
+      "y": 17,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878ADC7"
+    },
+    {
+      "type": "trigger",
+      "x": 150,
+      "y": 12,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878ADD0"
+    },
+    {
+      "type": "trigger",
+      "x": 147,
+      "y": 7,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878ADE0"
+    },
+    {
+      "type": "trigger",
+      "x": 157,
+      "y": 16,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AE07"
+    },
+    {
+      "type": "trigger",
+      "x": 156,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE20"
+    },
+    {
+      "type": "trigger",
+      "x": 154,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 154,
+      "y": 16,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 149,
+      "y": 11,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE20"
+    },
+    {
+      "type": "trigger",
+      "x": 170,
+      "y": 6,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AD97"
+    },
+    {
+      "type": "trigger",
+      "x": 172,
+      "y": 18,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878ADB7"
+    },
+    {
+      "type": "trigger",
+      "x": 176,
+      "y": 6,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878ADD7"
+    },
+    {
+      "type": "trigger",
+      "x": 175,
+      "y": 13,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878ADE7"
+    },
+    {
+      "type": "trigger",
+      "x": 175,
+      "y": 17,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878ADF0"
+    },
+    {
+      "type": "trigger",
+      "x": 178,
+      "y": 15,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878ADF7"
+    },
+    {
+      "type": "trigger",
+      "x": 182,
+      "y": 6,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AE00"
+    },
+    {
+      "type": "trigger",
+      "x": 180,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE30"
+    },
+    {
+      "type": "trigger",
+      "x": 171,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE20"
+    },
+    {
+      "type": "trigger",
+      "x": 170,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 172,
+      "y": 14,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE30"
+    },
+    {
+      "type": "trigger",
+      "x": 174,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE20"
+    },
+    {
+      "type": "trigger",
+      "x": 175,
+      "y": 14,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE30"
+    },
+    {
+      "type": "trigger",
+      "x": 176,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 174,
+      "y": 11,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x0878AF10"
+    },
+    {
+      "type": "trigger",
+      "x": 179,
+      "y": 12,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 126,
+      "y": 11,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 35,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE10"
+    },
+    {
+      "type": "trigger",
+      "x": 79,
+      "y": 10,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878AE20"
+    }
+  ],
+  "bg_events": []
+}
