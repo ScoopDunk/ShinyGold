@@ -349,7 +349,7 @@ AzaleaTown_EventScript_Trigger8_2::
 	end
 
 AzaleaTown_EventScript_Trigger8_3::
-	callnative SG_NATIVE_0x0882884D
+	callnative CheckSaveBlockExtStepCounter
 	call_if_eq VAR_RESULT, 1, AzaleaTown_EventScript_Trigger8_4
 	setflag 0x1058
 	clearflag 0x1137
