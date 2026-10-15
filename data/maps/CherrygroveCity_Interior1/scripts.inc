@@ -2,7 +2,7 @@ CherrygroveCity_Interior1_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, CherrygroveCity_Interior1_OnFrame
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
 	map_script MAP_SCRIPT_ON_LOAD, CherrygroveCity_Interior1_OnLoad
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, 0x08170CA7
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, 0x08170CA7  @ ShinyGold: shadowed by the first entry of this type (never used)
 	.byte 0
 
 CherrygroveCity_Interior1_OnLoad::
@@ -26,12 +26,12 @@ CherrygroveCity_Interior1_OnFrame::
 	map_script_2 0x0008, 0x6900, 0xFF4F00C7
 	map_script_2 0x7D00, 0x170E, 0x00024F08
 	map_script_2 0x0E86, 0x817, 0x0F000051  @ ShinyGold: can never match
-	map_script_2 0xDE00, 0x1A0C, 0x4F040908
+	map_script_2 0xDE00, 0x1A0C, 0x4F040908  @ ShinyGold: reads past gSpecialVars (undefined behaviour, differs between builds)
 	map_script_2 0x00FF, 0x75EB, 0x0051081A
 	map_script_2 0x2F00, 21, 0xDB00034F  @ ShinyGold: can never match
 	map_script_2 0x1A75, 0x5108, 0x034F0000
-	map_script_2 0xE700, 0x1A75, 0x00005108
-	map_script_2 0x034F, 0xDD00, 0x51081A75
+	map_script_2 0xE700, 0x1A75, 0x00005108  @ ShinyGold: reads past gSpecialVars (undefined behaviour, differs between builds)
+	map_script_2 0x034F, 0xDD00, 0x51081A75  @ ShinyGold: reads past gSpecialVars (undefined behaviour, differs between builds)
 	.2byte 0
 
 CherrygroveCity_Interior1_EventScript_OnLoad_1::
