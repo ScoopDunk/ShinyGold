@@ -183,7 +183,7 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
     SPECIES_PAL(FLAAFFY, gMonPalette_Flaaffy),
     SPECIES_PAL(AMPHAROS, gMonPalette_Ampharos),
     SPECIES_PAL(BELLOSSOM, gMonPalette_Bellossom),
-    SPECIES_PAL(MARILL, gMonPalette_Marill),
+    [SPECIES_MARILL] = {gMonPalette_Marill, SPECIES_NIDORAN_F}, // ShinyGold: palette tag changed from SPECIES_MARILL to SPECIES_NIDORAN_F (likely a stray edit in the hack)
     SPECIES_PAL(AZUMARILL, gMonPalette_Azumarill),
     SPECIES_PAL(SUDOWOODO, gMonPalette_Sudowoodo),
     SPECIES_PAL(POLITOED, gMonPalette_Politoed),
