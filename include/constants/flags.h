@@ -1532,4 +1532,10 @@
 // FLAG_SPECIAL_FLAG_0x4002 - 0x407F also exist and are unused
 #define SPECIAL_FLAGS_END             (SPECIAL_FLAGS_START + 0x7F)
 
+// Pure Gold/Silver build: story flags/vars, one header per area of work
+#include "constants/gold_visual.h"
+#include "constants/gold_kanto.h"
+#include "constants/gold_johto.h"
+#include "constants/gold_legendaries.h"
+
 #endif // GUARD_CONSTANTS_FLAGS_H
