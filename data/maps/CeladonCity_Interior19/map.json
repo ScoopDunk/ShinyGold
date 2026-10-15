@@ -46,7 +46,7 @@
       "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088783B0"
+      "script": "CeladonCity_Interior19_EventScript_Sign"
     }
   ]
 }

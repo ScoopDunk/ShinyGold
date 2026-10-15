@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171D00",
+      "script": "EcruteakCity_Interior10_EventScript_Nurse",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08776330",
+      "script": "EcruteakCity_Interior10_EventScript_PokeManiac",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08776310",
+      "script": "EcruteakCity_Interior10_EventScript_Lass",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08776320",
+      "script": "EcruteakCity_Interior10_EventScript_BaldingMan",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081ACF5F",
+      "script": "FiveIsland_PokemonCenter_1F_EventScript_PokemonJournal",
       "flag": "0x10C4"
     }
   ],
@@ -110,7 +110,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08774255"
+      "script": "EcruteakCity_Interior10_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -119,7 +119,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08774230"
+      "script": "EcruteakCity_Interior10_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -128,7 +128,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08774280"
+      "script": "EcruteakCity_Interior10_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -137,7 +137,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887BC70"
+      "script": "MtSilver_Interior1_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -146,7 +146,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887BC70"
+      "script": "MtSilver_Interior1_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -155,7 +155,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887BC70"
+      "script": "MtSilver_Interior1_EventScript_Trigger1"
     }
   ],
   "bg_events": []

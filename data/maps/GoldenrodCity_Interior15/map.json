@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874E7F0",
+      "script": "GoldenrodCity_Interior15_EventScript_Machoke",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874E7D0",
+      "script": "GoldenrodCity_Interior15_EventScript_Rocker",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874E7E0",
+      "script": "GoldenrodCity_Interior15_EventScript_BlackBelt",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874E7C0",
+      "script": "GoldenrodCity_Interior15_EventScript_BaldingMan",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08789AE0",
+      "script": "Unused_NavelRock_BasePath_B11F_EventScript_ItemBall",
       "flag": "0x1121"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08789AE0",
+      "script": "Unused_NavelRock_BasePath_B11F_EventScript_ItemBall",
       "flag": "0x1121"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08789AE0",
+      "script": "Unused_NavelRock_BasePath_B11F_EventScript_ItemBall",
       "flag": "0x1121"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08789B05",
+      "script": "GoldenrodCity_Interior15_EventScript_ItemEther",
       "flag": "0x177"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08789B15",
+      "script": "GoldenrodCity_Interior15_EventScript_ItemBurnHeal",
       "flag": "0x176"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08789AF5",
+      "script": "GoldenrodCity_Interior15_EventScript_ItemUltraBall",
       "flag": "0x178"
     },
     {
@@ -166,7 +166,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08789AE5",
+      "script": "GoldenrodCity_Interior15_EventScript_ItemAmuletCoin",
       "flag": "0x179"
     }
   ],
@@ -194,7 +194,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0874E4C0"
+      "script": "GoldenrodCity_Interior15_EventScript_Trigger1"
     },
     {
       "type": "trigger",

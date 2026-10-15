@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08872A40",
+      "script": "SaffronCity_Interior1_EventScript_ItemFullRestore",
       "flag": "0x273"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08872A50",
+      "script": "SaffronCity_Interior1_EventScript_ItemXSpecial",
       "flag": "0x274"
     }
   ],

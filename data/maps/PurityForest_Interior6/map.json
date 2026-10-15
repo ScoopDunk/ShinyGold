@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816C38E",
+      "script": "PurityForest_Interior6_EventScript_Meowth",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816C3A1",
+      "script": "PurityForest_Interior6_EventScript_Clefairy",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816C3B4",
+      "script": "PurityForest_Interior6_EventScript_NidoranF",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816C321",
+      "script": "PurityForest_Interior6_EventScript_OldWoman",
       "flag": "0"
     }
   ],
@@ -124,7 +124,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816C3C7"
+      "script": "PurityForest_Interior6_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -132,7 +132,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816C3C7"
+      "script": "PurityForest_Interior6_EventScript_Sign1"
     }
   ]
 }

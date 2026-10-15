@@ -37,7 +37,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08822A18",
+      "script": "PewterCity_EventScript_Lass",
       "flag": "0"
     },
     {
@@ -51,7 +51,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08828420",
+      "script": "PewterCity_EventScript_OldMan1",
       "flag": "0"
     },
     {
@@ -65,7 +65,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088228AC",
+      "script": "PewterCity_EventScript_LittleGirl",
       "flag": "0"
     },
     {
@@ -79,7 +79,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08885640",
+      "script": "Route35_EventScript_Sign4",
       "flag": "0"
     },
     {
@@ -93,7 +93,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08165B9D",
+      "script": "PewterCity_EventScript_Boy",
       "flag": "0"
     },
     {
@@ -107,7 +107,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BDF13",
+      "script": "EventScript_CutTree",
       "flag": "FLAG_TEMP_12"
     },
     {
@@ -121,7 +121,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081662A9",
+      "script": "PewterCity_EventScript_Scientist",
       "flag": "0x092"
     }
   ],
@@ -184,7 +184,7 @@
       "elevation": 3,
       "var": "0x406C",
       "var_value": "0",
-      "script": "0x08165D8E"
+      "script": "PewterCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -193,7 +193,7 @@
       "elevation": 3,
       "var": "0x406C",
       "var_value": "0",
-      "script": "0x08165D9A"
+      "script": "PewterCity_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -202,7 +202,7 @@
       "elevation": 3,
       "var": "0x406C",
       "var_value": "0",
-      "script": "0x08165DA6"
+      "script": "PewterCity_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -211,7 +211,7 @@
       "elevation": 3,
       "var": "0x406C",
       "var_value": "0",
-      "script": "0x08165DB2"
+      "script": "PewterCity_EventScript_Trigger4"
     },
     {
       "type": "trigger",
@@ -220,7 +220,7 @@
       "elevation": 3,
       "var": "0x406C",
       "var_value": "1",
-      "script": "0x081662B7"
+      "script": "PewterCity_EventScript_Trigger5"
     },
     {
       "type": "trigger",
@@ -229,7 +229,7 @@
       "elevation": 3,
       "var": "0x406C",
       "var_value": "1",
-      "script": "0x081662C4"
+      "script": "PewterCity_EventScript_Trigger6"
     },
     {
       "type": "trigger",
@@ -238,7 +238,7 @@
       "elevation": 3,
       "var": "0x406C",
       "var_value": "1",
-      "script": "0x081662D1"
+      "script": "PewterCity_EventScript_Trigger7"
     }
   ],
   "bg_events": [
@@ -248,7 +248,7 @@
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08822924"
+      "script": "PewterCity_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -256,7 +256,7 @@
       "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088229D4"
+      "script": "PewterCity_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -264,7 +264,7 @@
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08822980"
+      "script": "PewterCity_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -272,7 +272,7 @@
       "y": 29,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08822900"
+      "script": "PewterCity_EventScript_Sign4"
     },
     {
       "type": "sign",
@@ -280,7 +280,7 @@
       "y": 23,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081662A0"
+      "script": "PewterCity_EventScript_Sign5"
     },
     {
       "type": "hidden_item",

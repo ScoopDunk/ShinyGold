@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x08786AD0",
+      "script": "MahoganyTown_Interior5_EventScript_BoarderDouglas",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x08786B30",
+      "script": "MahoganyTown_Interior5_EventScript_SkierClarissa",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x08786AB0",
+      "script": "MahoganyTown_Interior5_EventScript_BoarderRonald",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x087868F0",
+      "script": "MahoganyTown_Interior5_EventScript_GymGuy",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x08786AF0",
+      "script": "MahoganyTown_Interior5_EventScript_SkierRoxanne",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x08786B10",
+      "script": "MahoganyTown_Interior5_EventScript_BoarderBrad",
       "flag": "0"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08786E80",
+      "script": "MahoganyTown_Interior5_EventScript_LeaderPryce",
       "flag": "0"
     }
   ],
@@ -131,7 +131,7 @@
       "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x087868C0"
+      "script": "MahoganyTown_Interior5_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -139,7 +139,7 @@
       "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x087868C0"
+      "script": "MahoganyTown_Interior5_EventScript_Sign1"
     }
   ]
 }

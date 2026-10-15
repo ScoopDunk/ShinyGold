@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08160DD6",
+      "script": "Unused_SSAnne_B1F_Room5_EventScript_Boy",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08160DDF",
+      "script": "Unused_SSAnne_B1F_Room5_EventScript_Machoke",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE69F",
+      "script": "SSAnne_B1F_Room5_EventScript_ItemSuperPotion",
       "flag": "0x169"
     }
   ],

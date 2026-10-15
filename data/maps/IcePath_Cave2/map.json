@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0x041"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0x043"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0x041"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0x042"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0x040"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0878BC60",
+      "script": "IcePath_Cave2_EventScript_ItemIron",
       "flag": "FLAG_GOT_HM05"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0878BC50",
+      "script": "IcePath_Cave2_EventScript_ItemMaxPotion",
       "flag": "0x23C"
     }
   ],
@@ -222,7 +222,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB80"
+      "script": "IcePath_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -231,7 +231,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB80"
+      "script": "IcePath_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -240,7 +240,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB80"
+      "script": "IcePath_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -249,7 +249,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB80"
+      "script": "IcePath_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -258,7 +258,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB80"
+      "script": "IcePath_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -267,7 +267,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB80"
+      "script": "IcePath_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -276,7 +276,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB80"
+      "script": "IcePath_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -285,7 +285,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB80"
+      "script": "IcePath_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -294,7 +294,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB80"
+      "script": "IcePath_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -303,7 +303,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB80"
+      "script": "IcePath_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -312,7 +312,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB80"
+      "script": "IcePath_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -321,7 +321,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB80"
+      "script": "IcePath_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -330,7 +330,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB80"
+      "script": "IcePath_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -339,7 +339,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB80"
+      "script": "IcePath_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -348,7 +348,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB80"
+      "script": "IcePath_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -357,7 +357,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB80"
+      "script": "IcePath_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -366,7 +366,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB90"
+      "script": "IcePath_Cave2_EventScript_Trigger17"
     },
     {
       "type": "trigger",
@@ -375,7 +375,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB90"
+      "script": "IcePath_Cave2_EventScript_Trigger17"
     },
     {
       "type": "trigger",
@@ -384,7 +384,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB90"
+      "script": "IcePath_Cave2_EventScript_Trigger17"
     },
     {
       "type": "trigger",
@@ -393,7 +393,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB80"
+      "script": "IcePath_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -402,7 +402,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB90"
+      "script": "IcePath_Cave2_EventScript_Trigger17"
     },
     {
       "type": "trigger",
@@ -411,7 +411,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB80"
+      "script": "IcePath_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -420,7 +420,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB80"
+      "script": "IcePath_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -429,7 +429,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BB90"
+      "script": "IcePath_Cave2_EventScript_Trigger17"
     },
     {
       "type": "trigger",
@@ -438,7 +438,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x08000000"
+      "script": "0x0"
     },
     {
       "type": "trigger",

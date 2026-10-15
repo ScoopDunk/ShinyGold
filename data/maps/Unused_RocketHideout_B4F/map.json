@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08161317",
+      "script": "Unused_RocketHideout_B4F_EventScript_TeamRocketExecutive",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08161363",
+      "script": "Unused_RocketHideout_B4F_EventScript_ItemBall",
       "flag": "0x037"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x08161381",
+      "script": "Unused_RocketHideout_B4F_EventScript_RocketDuo368",
       "flag": "0x0AD"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081613AD",
+      "script": "Unused_RocketHideout_B4F_EventScript_ItemBall2",
       "flag": "0x036"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08161418",
+      "script": "Unused_RocketHideout_B4F_EventScript_TeamRocketGrunt17",
       "flag": "0x0AD"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081613CE",
+      "script": "Unused_RocketHideout_B4F_EventScript_TeamRocketGrunt16",
       "flag": "0x0AD"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE72E",
+      "script": "RocketHideout_B4F_EventScript_ItemTM49",
       "flag": "0x174"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE73B",
+      "script": "RocketHideout_B4F_EventScript_ItemMaxEther",
       "flag": "0x175"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE748",
+      "script": "RocketHideout_B4F_EventScript_ItemCalcium",
       "flag": "0x176"
     }
   ],

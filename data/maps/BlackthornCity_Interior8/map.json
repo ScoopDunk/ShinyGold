@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0x046"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0x045"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0x047"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0x044"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE00C",
+      "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_12"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x0878CCB0",
+      "script": "BlackthornCity_Interior8_EventScript_CooltrainerFran",
       "flag": "0"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x0878CCD0",
+      "script": "BlackthornCity_Interior8_EventScript_CooltrainerCody",
       "flag": "0"
     }
   ],
@@ -194,7 +194,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C740"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -203,7 +203,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C740"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -212,7 +212,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C870"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -221,7 +221,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C740"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -230,7 +230,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C740"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -239,7 +239,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C8A0"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger6"
     },
     {
       "type": "trigger",
@@ -248,7 +248,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C880"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger7"
     },
     {
       "type": "trigger",
@@ -257,7 +257,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C740"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -275,7 +275,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C740"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -284,7 +284,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C8C0"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger11"
     },
     {
       "type": "trigger",
@@ -293,7 +293,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C830"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger12"
     },
     {
       "type": "trigger",
@@ -302,7 +302,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C810"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger13"
     },
     {
       "type": "trigger",
@@ -311,7 +311,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08000000"
+      "script": "0x0"
     },
     {
       "type": "trigger",
@@ -320,7 +320,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C740"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -329,7 +329,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C740"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -338,7 +338,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C740"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -347,7 +347,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C740"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -356,7 +356,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C740"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -365,7 +365,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C740"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -374,7 +374,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C740"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -383,7 +383,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C740"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -392,7 +392,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C740"
+      "script": "BlackthornCity_Interior8_EventScript_Trigger1"
     }
   ],
   "bg_events": []

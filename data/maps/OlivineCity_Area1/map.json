@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171841",
+      "script": "RuinsOfAlph_Interior1_EventScript_RedBike",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0888F510",
+      "script": "OlivineCity_Area1_EventScript_Sailor",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0888EB20",
+      "script": "OlivineCity_Area1_EventScript_Fisher",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0888EB30",
+      "script": "OlivineCity_Area1_EventScript_Fisher2",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08872A60",
+      "script": "OlivineCity_Area1_EventScript_ItemProtein",
       "flag": "0x18F"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0880CE20",
+      "script": "OlivineCity_Area1_EventScript_Sailor2",
       "flag": "0"
     },
     {
@@ -138,7 +138,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0888F540"
+      "script": "OlivineCity_Area1_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -147,7 +147,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0880CDD0"
+      "script": "OlivineCity_Area1_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -156,7 +156,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0880CDF0"
+      "script": "OlivineCity_Area1_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -165,7 +165,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0888FAE0"
+      "script": "IndigoPlateau_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -174,7 +174,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0888FAE0"
+      "script": "IndigoPlateau_EventScript_Trigger1"
     }
   ],
   "bg_events": []

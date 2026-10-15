@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0880CAE0",
+      "script": "SSAqua_Interior8_EventScript_Captain",
       "flag": "0x1173"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08804A90",
+      "script": "SSAqua_Interior8_EventScript_Woman1",
       "flag": "0x1170"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08805340",
+      "script": "SSAqua_Interior7_EventScript_RedNormal",
       "flag": "0"
     }
   ],

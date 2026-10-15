@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08000000",
+      "script": "0x0",
       "flag": "0x117A"
     },
     {
@@ -75,7 +75,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x08805860"
+      "script": "SeaCavern_Interior1_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -84,7 +84,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08805870"
+      "script": "SeaCavern_Interior1_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -93,7 +93,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08805890"
+      "script": "SeaCavern_Interior1_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -102,7 +102,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088058B0"
+      "script": "SeaCavern_Interior1_EventScript_Trigger4"
     }
   ],
   "bg_events": []

@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08806460",
+      "script": "VermilionCity_Interior13_EventScript_Gentleman",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08806420",
+      "script": "VermilionCity_Interior13_EventScript_Beauty",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08806410",
+      "script": "VermilionCity_Interior13_EventScript_Chansey",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08806430",
+      "script": "VermilionCity_Interior13_EventScript_Clefairy",
       "flag": "0x1189"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088064D0",
+      "script": "VermilionCity_Interior13_EventScript_FatMan",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08806400",
+      "script": "VermilionCity_Interior13_EventScript_Woman2",
       "flag": "0"
     }
   ],
@@ -131,7 +131,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08806450"
+      "script": "VermilionCity_Interior13_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -139,7 +139,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08806440"
+      "script": "VermilionCity_Interior13_EventScript_Sign2"
     }
   ]
 }

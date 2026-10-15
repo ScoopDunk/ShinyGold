@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08744480",
+      "script": "VioletCity_Interior2_EventScript_FatMan",
       "flag": "0x11D4"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816A07D",
+      "script": "VioletCity_Interior2_EventScript_Youngster",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816A094",
+      "script": "VioletCity_Interior2_EventScript_Boy",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x087443F0",
+      "script": "VioletCity_Interior2_EventScript_GbaKid",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08744400",
+      "script": "VioletCity_Interior2_EventScript_GbaKid2",
       "flag": "0"
     }
   ],
@@ -117,7 +117,7 @@
       "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816A0AB"
+      "script": "VioletCity_Interior2_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -125,7 +125,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816A11D"
+      "script": "VioletCity_Interior2_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -133,7 +133,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816A11D"
+      "script": "VioletCity_Interior2_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -141,7 +141,7 @@
       "y": 0,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "0x081ACD65"
+      "script": "ViridianCity_School_EventScript_PokemonJournal"
     },
     {
       "type": "hidden_item",

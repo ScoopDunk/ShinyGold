@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874C618",
+      "script": "GoldenrodCity_Interior22_EventScript_WorkerM",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171C8D",
+      "script": "GoldenrodCity_Interior22_EventScript_Wigglytuff",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171C8D",
+      "script": "GoldenrodCity_Interior22_EventScript_Wigglytuff",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171C8D",
+      "script": "GoldenrodCity_Interior22_EventScript_Wigglytuff",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171C8D",
+      "script": "GoldenrodCity_Interior22_EventScript_Wigglytuff",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171C8D",
+      "script": "GoldenrodCity_Interior22_EventScript_Wigglytuff",
       "flag": "0"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171C8D",
+      "script": "GoldenrodCity_Interior22_EventScript_Wigglytuff",
       "flag": "0"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171C8D",
+      "script": "GoldenrodCity_Interior22_EventScript_Wigglytuff",
       "flag": "FLAG_HIDE_LORELEI_HOUSE_MEOWTH_DOLL"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171C8D",
+      "script": "GoldenrodCity_Interior22_EventScript_Wigglytuff",
       "flag": "FLAG_HIDE_LORELEI_HOUSE_CHANSEY_DOLL"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171C8D",
+      "script": "GoldenrodCity_Interior22_EventScript_Wigglytuff",
       "flag": "FLAG_HIDE_LORELEI_HOUSE_JIGGLYPUFF_DOLL"
     },
     {
@@ -166,7 +166,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171C8D",
+      "script": "GoldenrodCity_Interior22_EventScript_Wigglytuff",
       "flag": "FLAG_HIDE_LORELEIS_HOUSE_NIDORAN_F_DOLL"
     },
     {
@@ -180,7 +180,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171C8D",
+      "script": "GoldenrodCity_Interior22_EventScript_Wigglytuff",
       "flag": "FLAG_HIDE_LORELEIS_HOUSE_NIDORAN_M_DOLL"
     },
     {
@@ -194,7 +194,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171C8D",
+      "script": "GoldenrodCity_Interior22_EventScript_Wigglytuff",
       "flag": "FLAG_HIDE_LORELEIS_HOUSE_PIDGEOT_DOLL"
     },
     {
@@ -208,7 +208,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171C8D",
+      "script": "GoldenrodCity_Interior22_EventScript_Wigglytuff",
       "flag": "FLAG_HIDE_LORELEIS_HOUSE_FEAROW_DOLL"
     },
     {
@@ -222,7 +222,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171C8D",
+      "script": "GoldenrodCity_Interior22_EventScript_Wigglytuff",
       "flag": "FLAG_HIDE_LORELEIS_HOUSE_LAPRAS_DOLL"
     }
   ],

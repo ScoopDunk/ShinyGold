@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08807800",
+      "script": "Route5_EventScript_BaldingMan",
       "flag": "0x1185"
     }
   ],
@@ -79,7 +79,7 @@
       "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08167FA8"
+      "script": "Route5_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -87,7 +87,7 @@
       "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08872990"
+      "script": "VermilionCity_EventScript_Sign7"
     }
   ]
 }

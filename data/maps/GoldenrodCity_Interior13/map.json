@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171841",
+      "script": "RuinsOfAlph_Interior1_EventScript_RedBike",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0817185C",
+      "script": "Route35_Interior1_EventScript_Fisher",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874E390",
+      "script": "GoldenrodCity_Interior13_EventScript_CooltrainerF",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874E380",
+      "script": "GoldenrodCity_Interior13_EventScript_CooltrainerM",
       "flag": "0"
     }
   ],
@@ -96,7 +96,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0874E4F0"
+      "script": "GoldenrodCity_Interior13_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -105,7 +105,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x08000000"
+      "script": "0x0"
     },
     {
       "type": "trigger",
@@ -142,7 +142,7 @@
       "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0874E3A0"
+      "script": "GoldenrodCity_Interior13_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -150,7 +150,7 @@
       "y": 5,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816C034"
+      "script": "CeladonCity_Interior6_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -158,7 +158,7 @@
       "y": 5,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816C034"
+      "script": "CeladonCity_Interior6_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -166,7 +166,7 @@
       "y": 5,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816C034"
+      "script": "CeladonCity_Interior6_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -174,7 +174,7 @@
       "y": 5,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816C034"
+      "script": "CeladonCity_Interior6_EventScript_Sign2"
     }
   ]
 }

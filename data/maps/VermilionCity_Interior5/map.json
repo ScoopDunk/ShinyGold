@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08827880",
+      "script": "VermilionCity_Interior5_EventScript_BlackBeltShea2",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081646C8",
+      "script": "VermilionCity_Interior1_EventScript_Vars",
       "flag": "FLAG_TEMP_2"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081646CE",
+      "script": "VermilionCity_Interior1_EventScript_Npc",
       "flag": "FLAG_TEMP_3"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081646D4",
+      "script": "VermilionCity_Interior1_EventScript_Npc2",
       "flag": "FLAG_TEMP_4"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081646DA",
+      "script": "VermilionCity_Interior1_EventScript_Npc3",
       "flag": "FLAG_TEMP_5"
     }
   ],
@@ -117,7 +117,7 @@
       "elevation": 3,
       "var": "VAR_TEMP_E",
       "var_value": "0",
-      "script": "0x081C54AF"
+      "script": "TrainerTower_EventScript_SingleBattleTrigger"
     },
     {
       "type": "trigger",
@@ -126,7 +126,7 @@
       "elevation": 3,
       "var": "VAR_TEMP_F",
       "var_value": "0",
-      "script": "0x081C54B4"
+      "script": "TrainerTower_EventScript_DoubleBattleTriggerTop"
     },
     {
       "type": "trigger",
@@ -135,7 +135,7 @@
       "elevation": 3,
       "var": "VAR_TEMP_F",
       "var_value": "0",
-      "script": "0x081C54EA"
+      "script": "TrainerTower_EventScript_DoubleBattleTriggerBottom"
     }
   ],
   "bg_events": []

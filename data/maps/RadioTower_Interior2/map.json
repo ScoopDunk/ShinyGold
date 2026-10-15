@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874F090",
+      "script": "RadioTower_Interior2_EventScript_Youngster",
       "flag": "0x110B"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874F100",
+      "script": "RadioTower_Interior2_EventScript_Jigglypuff",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874F0B0",
+      "script": "RadioTower_Interior2_EventScript_Policeman",
       "flag": "0x110A"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874F070",
+      "script": "RadioTower_Interior2_EventScript_Woman2",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x08787770",
+      "script": "RadioTower_Interior2_EventScript_TeamRocketGrunt23",
       "flag": "0x10BD"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x08787750",
+      "script": "RadioTower_Interior2_EventScript_TeamRocketGrunt35",
       "flag": "0x10BD"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x087877B0",
+      "script": "RadioTower_Interior2_EventScript_TeamRocketGrunt33",
       "flag": "0x10BD"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x087877D0",
+      "script": "RadioTower_Interior2_EventScript_TeamRocketGrunt2",
       "flag": "0x10BD"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x08787790",
+      "script": "RadioTower_Interior2_EventScript_TeamRocketGrunt21",
       "flag": "0x10BD"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0878A7B0",
+      "script": "RadioTower_Interior2_EventScript_Policeman2",
       "flag": "0x1132"
     }
   ],
@@ -180,7 +180,7 @@
       "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0874F0D0"
+      "script": "RadioTower_Interior2_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -188,7 +188,7 @@
       "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0874F0E0"
+      "script": "RadioTower_Interior2_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -196,7 +196,7 @@
       "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0874F0F0"
+      "script": "RadioTower_Interior2_EventScript_Sign3"
     }
   ]
 }

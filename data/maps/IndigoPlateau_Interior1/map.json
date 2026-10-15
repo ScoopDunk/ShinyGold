@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08801CC0",
+      "script": "IndigoPlateau_Interior1_EventScript_Celio",
       "flag": "0"
     }
   ],
@@ -54,7 +54,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A0290"
+      "script": "IndigoPlateau_Interior1_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -63,7 +63,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A0290"
+      "script": "IndigoPlateau_Interior1_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -72,7 +72,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A0290"
+      "script": "IndigoPlateau_Interior1_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -81,7 +81,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A0290"
+      "script": "IndigoPlateau_Interior1_EventScript_Trigger1"
     }
   ],
   "bg_events": []

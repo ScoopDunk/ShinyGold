@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08829640",
+      "script": "KalmCityNousar_Interior4_EventScript_Boy",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08826E7C",
+      "script": "MtSilver_Interior1_EventScript_Nurse",
       "flag": "0"
     }
   ],

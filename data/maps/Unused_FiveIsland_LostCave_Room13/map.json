@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08772400",
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_MgDeliveryman",
       "flag": "0x1FB"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08772470",
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Youngster",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08772490",
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_BugCatcher",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x087724A0",
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Boy",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x087724B0",
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_BugCatcher2",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08772480",
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_BaldingMan",
       "flag": "0"
     }
   ],
@@ -117,7 +117,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771530"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -126,7 +126,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771530"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -135,7 +135,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771530"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -144,7 +144,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771630"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger4"
     },
     {
       "type": "trigger",
@@ -153,7 +153,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771630"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger4"
     },
     {
       "type": "trigger",
@@ -162,7 +162,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771630"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger4"
     },
     {
       "type": "trigger",
@@ -171,7 +171,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771730"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger7"
     },
     {
       "type": "trigger",
@@ -180,7 +180,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771730"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger7"
     },
     {
       "type": "trigger",
@@ -189,7 +189,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771730"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger7"
     },
     {
       "type": "trigger",
@@ -198,7 +198,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771830"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger10"
     },
     {
       "type": "trigger",
@@ -207,7 +207,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771830"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger10"
     },
     {
       "type": "trigger",
@@ -216,7 +216,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771830"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger10"
     },
     {
       "type": "trigger",
@@ -225,7 +225,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771930"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger13"
     },
     {
       "type": "trigger",
@@ -234,7 +234,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771930"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger13"
     },
     {
       "type": "trigger",
@@ -243,7 +243,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771930"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger13"
     },
     {
       "type": "trigger",
@@ -252,7 +252,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771A30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger16"
     },
     {
       "type": "trigger",
@@ -261,7 +261,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771A30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger16"
     },
     {
       "type": "trigger",
@@ -270,7 +270,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771A30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger16"
     },
     {
       "type": "trigger",
@@ -279,7 +279,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771B30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger19"
     },
     {
       "type": "trigger",
@@ -288,7 +288,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771B30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger19"
     },
     {
       "type": "trigger",
@@ -297,7 +297,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771B30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger19"
     },
     {
       "type": "trigger",
@@ -306,7 +306,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771B30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger19"
     },
     {
       "type": "trigger",
@@ -315,7 +315,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771C30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger23"
     },
     {
       "type": "trigger",
@@ -324,7 +324,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771C30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger23"
     },
     {
       "type": "trigger",
@@ -333,7 +333,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771C30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger23"
     },
     {
       "type": "trigger",
@@ -342,7 +342,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771D30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger26"
     },
     {
       "type": "trigger",
@@ -351,7 +351,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771D30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger26"
     },
     {
       "type": "trigger",
@@ -360,7 +360,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771D30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger26"
     },
     {
       "type": "trigger",
@@ -369,7 +369,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771E30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger29"
     },
     {
       "type": "trigger",
@@ -378,7 +378,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771E30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger29"
     },
     {
       "type": "trigger",
@@ -387,7 +387,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771E30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger29"
     },
     {
       "type": "trigger",
@@ -396,7 +396,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771E30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger29"
     },
     {
       "type": "trigger",
@@ -405,7 +405,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771F30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger33"
     },
     {
       "type": "trigger",
@@ -414,7 +414,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771F30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger33"
     },
     {
       "type": "trigger",
@@ -423,7 +423,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08771F30"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger33"
     },
     {
       "type": "trigger",
@@ -432,7 +432,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08772030"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger36"
     },
     {
       "type": "trigger",
@@ -441,7 +441,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08772030"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger36"
     },
     {
       "type": "trigger",
@@ -450,7 +450,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08772030"
+      "script": "Unused_FiveIsland_LostCave_Room13_EventScript_Trigger36"
     }
   ],
   "bg_events": []

@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816FD5C",
+      "script": "Route14_EventScript_Beauty",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816FDD8",
+      "script": "PurityForest_Interior11_EventScript_Scientist",
       "flag": "0"
     }
   ],
@@ -61,7 +61,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816FD35"
+      "script": "PurityForest_Interior11_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -69,7 +69,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816FD53"
+      "script": "PurityForest_Interior11_EventScript_Sign2"
     }
   ]
 }

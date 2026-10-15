@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788940",
+      "script": "GoldenrodCity_Interior17_EventScript_Meteorite",
       "flag": "0x1114"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788940",
+      "script": "GoldenrodCity_Interior17_EventScript_Meteorite",
       "flag": "0x1116"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788940",
+      "script": "GoldenrodCity_Interior17_EventScript_Meteorite",
       "flag": "0x1113"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788940",
+      "script": "GoldenrodCity_Interior17_EventScript_Meteorite",
       "flag": "0x1116"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788940",
+      "script": "GoldenrodCity_Interior17_EventScript_Meteorite",
       "flag": "0x1115"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788940",
+      "script": "GoldenrodCity_Interior17_EventScript_Meteorite",
       "flag": "0x1118"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788940",
+      "script": "GoldenrodCity_Interior17_EventScript_Meteorite",
       "flag": "0x1119"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788940",
+      "script": "GoldenrodCity_Interior17_EventScript_Meteorite",
       "flag": "0x111A"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788940",
+      "script": "GoldenrodCity_Interior17_EventScript_Meteorite",
       "flag": "0x1117"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788940",
+      "script": "GoldenrodCity_Interior17_EventScript_Meteorite",
       "flag": "0x1117"
     },
     {
@@ -166,7 +166,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788940",
+      "script": "GoldenrodCity_Interior17_EventScript_Meteorite",
       "flag": "0x111B"
     },
     {
@@ -180,7 +180,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788940",
+      "script": "GoldenrodCity_Interior17_EventScript_Meteorite",
       "flag": "0x111B"
     },
     {
@@ -194,7 +194,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788940",
+      "script": "GoldenrodCity_Interior17_EventScript_Meteorite",
       "flag": "0x111C"
     },
     {
@@ -208,7 +208,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788940",
+      "script": "GoldenrodCity_Interior17_EventScript_Meteorite",
       "flag": "0x111C"
     },
     {
@@ -222,7 +222,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788940",
+      "script": "GoldenrodCity_Interior17_EventScript_Meteorite",
       "flag": "0x111D"
     },
     {
@@ -236,7 +236,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788940",
+      "script": "GoldenrodCity_Interior17_EventScript_Meteorite",
       "flag": "0x111D"
     },
     {
@@ -250,7 +250,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08000000",
+      "script": "0x0",
       "flag": "0x110E"
     },
     {
@@ -264,7 +264,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x08788DC0",
+      "script": "GoldenrodCity_Interior17_EventScript_BurglarEddie",
       "flag": "0"
     },
     {
@@ -278,7 +278,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788D40",
+      "script": "GoldenrodCity_Interior17_EventScript_ItemRevive",
       "flag": "0x224"
     },
     {
@@ -292,7 +292,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788D30",
+      "script": "GoldenrodCity_Interior17_EventScript_ItemMaxPotion",
       "flag": "0x223"
     },
     {
@@ -306,7 +306,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788D20",
+      "script": "GoldenrodCity_Interior17_EventScript_ItemFullHeal",
       "flag": "0x222"
     },
     {
@@ -320,7 +320,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788D50",
+      "script": "GoldenrodCity_Interior17_EventScript_ItemSmokeBall",
       "flag": "0x225"
     },
     {
@@ -334,7 +334,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x08788DE0",
+      "script": "GoldenrodCity_Interior17_EventScript_BurglarDuncan",
       "flag": "0"
     },
     {
@@ -348,7 +348,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x08789220",
+      "script": "GoldenrodCity_Interior17_EventScript_TeamRocketGrunt29",
       "flag": "0x10BD"
     },
     {
@@ -362,7 +362,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08788DA0",
+      "script": "GoldenrodCity_Interior17_EventScript_TeamRocketGrunt22",
       "flag": "0x10BD"
     },
     {
@@ -376,7 +376,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08788D60",
+      "script": "GoldenrodCity_Interior17_EventScript_TeamRocketGrunt30",
       "flag": "0x10BD"
     },
     {
@@ -390,7 +390,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08788D80",
+      "script": "GoldenrodCity_Interior17_EventScript_TeamRocketGrunt36",
       "flag": "0x10BD"
     }
   ],
@@ -460,7 +460,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08788500"
+      "script": "GoldenrodCity_Interior17_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -469,7 +469,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08788530"
+      "script": "GoldenrodCity_Interior17_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -478,7 +478,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A0210"
+      "script": "GoldenrodCity_Interior17_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -487,7 +487,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A01E0"
+      "script": "RadioTower_Interior1_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -496,7 +496,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A0210"
+      "script": "GoldenrodCity_Interior17_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -505,7 +505,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A01E0"
+      "script": "RadioTower_Interior1_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -514,7 +514,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A01E0"
+      "script": "RadioTower_Interior1_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -523,7 +523,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A01E0"
+      "script": "RadioTower_Interior1_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -532,7 +532,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A01E0"
+      "script": "RadioTower_Interior1_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -541,7 +541,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A01E0"
+      "script": "RadioTower_Interior1_EventScript_Trigger2"
     }
   ],
   "bg_events": [
@@ -551,7 +551,7 @@
       "y": 5,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08788A10"
+      "script": "GoldenrodCity_Interior17_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -559,7 +559,7 @@
       "y": 5,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08788AD0"
+      "script": "GoldenrodCity_Interior17_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -567,7 +567,7 @@
       "y": 5,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08788B90"
+      "script": "GoldenrodCity_Interior17_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -575,7 +575,7 @@
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08788C50"
+      "script": "GoldenrodCity_Interior17_EventScript_Sign4"
     }
   ]
 }

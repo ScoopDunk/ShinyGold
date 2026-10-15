@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081704FC",
+      "script": "MaidensPeakDis_Interior8_EventScript_Policeman",
       "flag": "0"
     }
   ],
@@ -68,7 +68,7 @@
       "elevation": 3,
       "var": "0x405F",
       "var_value": "0",
-      "script": "0x0817050D"
+      "script": "MaidensPeakDis_Interior8_EventScript_Trigger"
     }
   ],
   "bg_events": []

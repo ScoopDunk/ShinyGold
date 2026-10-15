@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088081D0",
+      "script": "Route5_Interior3_EventScript_Policeman",
       "flag": "0"
     }
   ],
@@ -68,7 +68,7 @@
       "elevation": 3,
       "var": "0x4062",
       "var_value": "0",
-      "script": "0x0816F90A"
+      "script": "Route5_Interior3_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -77,7 +77,7 @@
       "elevation": 3,
       "var": "0x4062",
       "var_value": "0",
-      "script": "0x0816F916"
+      "script": "Route5_Interior3_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -86,7 +86,7 @@
       "elevation": 3,
       "var": "0x4062",
       "var_value": "0",
-      "script": "0x0816F922"
+      "script": "Route5_Interior3_EventScript_Trigger3"
     }
   ],
   "bg_events": []

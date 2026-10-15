@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08777070",
+      "script": "EcruteakCity_Interior8_EventScript_OldMan1",
       "flag": "0x1040"
     }
   ],
@@ -54,7 +54,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878AD10"
+      "script": "EcruteakCity_Interior8_EventScript_Trigger"
     }
   ],
   "bg_events": []

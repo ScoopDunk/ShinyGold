@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874B330",
+      "script": "IlexForest_Interior2_EventScript_Woman2",
       "flag": "0",
       "explicit_local_id": 4
     },
@@ -41,7 +41,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874B360",
+      "script": "IlexForest_Interior2_EventScript_Picnicker",
       "flag": "0"
     },
     {
@@ -55,7 +55,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874B340",
+      "script": "IlexForest_Interior2_EventScript_Clefairy",
       "flag": "0"
     }
   ],

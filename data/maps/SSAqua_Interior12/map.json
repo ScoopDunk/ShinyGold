@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0880BBF0",
+      "script": "SSAqua_Interior12_EventScript_PokemaniacEthan",
       "flag": "0x1175"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0880BEB0",
+      "script": "SSAqua_Interior12_EventScript_CooltrainerSean",
       "flag": "0x1174"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0880BE70",
+      "script": "SSAqua_Interior12_EventScript_CooltrainerCarol",
       "flag": "0x1174"
     }
   ],

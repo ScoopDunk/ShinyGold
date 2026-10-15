@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08879330",
+      "script": "CeladonCity_Interior11_EventScript_WorkerF",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816C68D",
+      "script": "GoldenrodCity_Interior1_EventScript_WorkerM",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08000000",
+      "script": "0x0",
       "flag": "0x11E7"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088792E0",
+      "script": "CeladonCity_Interior11_EventScript_OldMan1",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816C7E7",
+      "script": "CeladonCity_Interior11_EventScript_Fisher",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08879320",
+      "script": "CeladonCity_Interior11_EventScript_GymGuy",
       "flag": "0"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08879350",
+      "script": "CeladonCity_Interior11_EventScript_FatMan",
       "flag": "0"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088792F0",
+      "script": "CeladonCity_Interior11_EventScript_Fisher2",
       "flag": "0"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08879300",
+      "script": "CeladonCity_Interior11_EventScript_BaldingMan",
       "flag": "0"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08879310",
+      "script": "CeladonCity_Interior11_EventScript_CooltrainerF",
       "flag": "0"
     },
     {
@@ -166,7 +166,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08000000",
+      "script": "0x0",
       "flag": "0x11E7"
     }
   ],
@@ -194,7 +194,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088796D0"
+      "script": "CeladonCity_Interior11_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -203,7 +203,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088796F0"
+      "script": "CeladonCity_Interior11_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -212,7 +212,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08879710"
+      "script": "CeladonCity_Interior11_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -221,7 +221,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08879730"
+      "script": "CeladonCity_Interior11_EventScript_Trigger4"
     }
   ],
   "bg_events": [
@@ -351,7 +351,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_WEST",
-      "script": "0x0816C95E"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -359,7 +359,7 @@
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_WEST",
-      "script": "0x0816C9A4"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -367,7 +367,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_WEST",
-      "script": "0x0816C9B0"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -375,7 +375,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_EAST",
-      "script": "0x0816C9BC"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign5"
     },
     {
       "type": "sign",
@@ -383,7 +383,7 @@
       "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_EAST",
-      "script": "0x0816CB5A"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign10"
     },
     {
       "type": "sign",
@@ -391,7 +391,7 @@
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_EAST",
-      "script": "0x0816C9D4"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign9"
     },
     {
       "type": "sign",
@@ -399,7 +399,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816C9E0"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign8"
     },
     {
       "type": "sign",
@@ -407,7 +407,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_WEST",
-      "script": "0x0816C9EC"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign7"
     },
     {
       "type": "sign",
@@ -415,7 +415,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_WEST",
-      "script": "0x0816C9F8"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign6"
     },
     {
       "type": "sign",
@@ -423,7 +423,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_WEST",
-      "script": "0x0816CA04"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign15"
     },
     {
       "type": "sign",
@@ -431,7 +431,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_EAST",
-      "script": "0x0816CA10"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign14"
     },
     {
       "type": "sign",
@@ -439,7 +439,7 @@
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_EAST",
-      "script": "0x0816CA1C"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign13"
     },
     {
       "type": "sign",
@@ -447,7 +447,7 @@
       "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_EAST",
-      "script": "0x0816CA28"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign11"
     },
     {
       "type": "sign",
@@ -455,7 +455,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_EAST",
-      "script": "0x0816CA34"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign20"
     },
     {
       "type": "sign",
@@ -463,7 +463,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_WEST",
-      "script": "0x0816CA40"
+      "script": "CeladonCity_Interior11_EventScript_Sign15"
     },
     {
       "type": "sign",
@@ -471,7 +471,7 @@
       "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_WEST",
-      "script": "0x0816CB63"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign18"
     },
     {
       "type": "sign",
@@ -479,7 +479,7 @@
       "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_WEST",
-      "script": "0x0816CA58"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign17"
     },
     {
       "type": "sign",
@@ -487,7 +487,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_WEST",
-      "script": "0x0816CA64"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign16"
     },
     {
       "type": "sign",
@@ -495,7 +495,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_EAST",
-      "script": "0x0816CB6C"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign24"
     },
     {
       "type": "sign",
@@ -503,7 +503,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_EAST",
-      "script": "0x0816CA7C"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign23"
     },
     {
       "type": "sign",
@@ -511,7 +511,7 @@
       "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_EAST",
-      "script": "0x0816CA88"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign22"
     },
     {
       "type": "sign",
@@ -519,7 +519,7 @@
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_EAST",
-      "script": "0x0816CA94"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign21"
     },
     {
       "type": "sign",
@@ -527,7 +527,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08879340"
+      "script": "CeladonCity_Interior11_EventScript_Sign23"
     },
     {
       "type": "sign",
@@ -535,7 +535,7 @@
       "y": 13,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_EAST",
-      "script": "0x081B2867"
+      "script": "CeladonCity_GameCorner_EventScript_PhotoPrinter"
     },
     {
       "type": "sign",
@@ -543,7 +543,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816CB5A"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign10"
     },
     {
       "type": "sign",
@@ -551,7 +551,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816CB5A"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign10"
     },
     {
       "type": "sign",
@@ -559,7 +559,7 @@
       "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816CB5A"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign10"
     },
     {
       "type": "sign",
@@ -567,7 +567,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816CB5A"
+      "script": "GoldenrodCity_Interior1_EventScript_Sign10"
     },
     {
       "type": "sign",
@@ -575,7 +575,7 @@
       "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0888F950"
+      "script": "CeladonCity_Interior11_EventScript_Sign29"
     }
   ]
 }

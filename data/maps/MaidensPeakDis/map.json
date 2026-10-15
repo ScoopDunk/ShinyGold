@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08160529",
+      "script": "MaidensPeakDis_EventScript_Youngster",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08160532",
+      "script": "MaidensPeakDis_EventScript_Boy",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "0x08160571",
+      "script": "MaidensPeakDis_EventScript_BugCatcherDon",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x08160588",
+      "script": "MaidensPeakDis_EventScript_SuperNerdTom",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x0816059F",
+      "script": "MaidensPeakDis_EventScript_Cooltrainer104",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE5A8",
+      "script": "ViridianForest_EventScript_ItemPokeBall",
       "flag": "0x156"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE5B5",
+      "script": "ViridianForest_EventScript_ItemAntidote",
       "flag": "0x157"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE5C2",
+      "script": "ViridianForest_EventScript_ItemPotion",
       "flag": "0x158"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x081605B6",
+      "script": "MaidensPeakDis_EventScript_BugCatcherAnthony",
       "flag": "0"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x081605CD",
+      "script": "MaidensPeakDis_EventScript_BugCatcherEd",
       "flag": "0"
     },
     {
@@ -166,7 +166,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BEAC9",
+      "script": "ViridianForest_EventScript_ItemPotion2",
       "flag": "0x1BE"
     }
   ],
@@ -222,7 +222,7 @@
       "y": 59,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816053B"
+      "script": "MaidensPeakDis_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -230,7 +230,7 @@
       "y": 26,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816054D"
+      "script": "MaidensPeakDis_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -238,7 +238,7 @@
       "y": 29,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08160556"
+      "script": "MaidensPeakDis_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -246,7 +246,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08160568"
+      "script": "MaidensPeakDis_EventScript_Sign4"
     },
     {
       "type": "sign",
@@ -254,7 +254,7 @@
       "y": 44,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08160544"
+      "script": "MaidensPeakDis_EventScript_Sign5"
     },
     {
       "type": "sign",
@@ -262,7 +262,7 @@
       "y": 60,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816055F"
+      "script": "MaidensPeakDis_EventScript_Sign6"
     },
     {
       "type": "hidden_item",

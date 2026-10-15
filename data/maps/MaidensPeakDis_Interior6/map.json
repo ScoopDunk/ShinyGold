@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x08161D41",
+      "script": "MaidensPeakDis_Interior6_EventScript_PkmnTrainerAmelia",
       "flag": "0x053"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08161D6F",
+      "script": "MaidensPeakDis_Interior6_EventScript_TeamRocketGrunt34",
       "flag": "0x053"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08161D09",
+      "script": "MaidensPeakDis_Interior6_EventScript_Woman2",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "0x08161D58",
+      "script": "MaidensPeakDis_Interior6_EventScript_TeamRocketGrunt33",
       "flag": "0x053"
     }
   ],
@@ -127,7 +127,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8A87"
+      "script": "SilphCo_9F_EventScript_Door1"
     },
     {
       "type": "sign",
@@ -135,7 +135,7 @@
       "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8A87"
+      "script": "SilphCo_9F_EventScript_Door1"
     },
     {
       "type": "sign",
@@ -143,7 +143,7 @@
       "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8AA1"
+      "script": "SilphCo_9F_EventScript_Door2"
     },
     {
       "type": "sign",
@@ -151,7 +151,7 @@
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8AA1"
+      "script": "SilphCo_9F_EventScript_Door2"
     },
     {
       "type": "sign",
@@ -159,7 +159,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8ABB"
+      "script": "SilphCo_9F_EventScript_Door3"
     },
     {
       "type": "sign",
@@ -167,7 +167,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8ABB"
+      "script": "SilphCo_9F_EventScript_Door3"
     },
     {
       "type": "sign",
@@ -175,7 +175,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8ABB"
+      "script": "SilphCo_9F_EventScript_Door3"
     },
     {
       "type": "sign",
@@ -183,7 +183,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8ABB"
+      "script": "SilphCo_9F_EventScript_Door3"
     },
     {
       "type": "sign",
@@ -191,7 +191,7 @@
       "y": 13,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8AD5"
+      "script": "SilphCo_9F_EventScript_Door4"
     },
     {
       "type": "sign",
@@ -199,7 +199,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8AD5"
+      "script": "SilphCo_9F_EventScript_Door4"
     },
     {
       "type": "sign",
@@ -207,7 +207,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8AD5"
+      "script": "SilphCo_9F_EventScript_Door4"
     },
     {
       "type": "sign",
@@ -215,7 +215,7 @@
       "y": 13,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8AD5"
+      "script": "SilphCo_9F_EventScript_Door4"
     },
     {
       "type": "sign",
@@ -223,7 +223,7 @@
       "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8A87"
+      "script": "SilphCo_9F_EventScript_Door1"
     },
     {
       "type": "sign",
@@ -231,7 +231,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8A87"
+      "script": "SilphCo_9F_EventScript_Door1"
     },
     {
       "type": "sign",
@@ -239,7 +239,7 @@
       "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8AA1"
+      "script": "SilphCo_9F_EventScript_Door2"
     },
     {
       "type": "sign",
@@ -247,7 +247,7 @@
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8AA1"
+      "script": "SilphCo_9F_EventScript_Door2"
     },
     {
       "type": "hidden_item",
@@ -265,7 +265,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08161D38"
+      "script": "MaidensPeakDis_Interior6_EventScript_Sign17"
     }
   ]
 }

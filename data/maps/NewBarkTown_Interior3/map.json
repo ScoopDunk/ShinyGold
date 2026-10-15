@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08742430",
+      "script": "NewBarkTown_Interior3_EventScript_Scientist",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08000000",
+      "script": "0x0",
       "flag": "0x1021",
       "explicit_local_id": 11
     },
@@ -55,7 +55,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08741670",
+      "script": "NewBarkTown_Interior3_EventScript_Scientist2",
       "flag": "0"
     },
     {
@@ -69,7 +69,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08169595",
+      "script": "NewBarkTown_Interior3_EventScript_Scientist3",
       "flag": "0x02B"
     },
     {
@@ -83,7 +83,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0887AEE0",
+      "script": "NewBarkTown_Interior3_EventScript_ItemBall",
       "flag": "0x028"
     },
     {
@@ -97,7 +97,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0887AF40",
+      "script": "NewBarkTown_Interior3_EventScript_ItemBall2",
       "flag": "0x029"
     },
     {
@@ -111,7 +111,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0887AFA0",
+      "script": "NewBarkTown_Interior3_EventScript_ItemBall3",
       "flag": "0x02A"
     },
     {
@@ -125,7 +125,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816955F",
+      "script": "NewBarkTown_Interior3_EventScript_Blue",
       "flag": "0x02D"
     },
     {
@@ -139,7 +139,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08169E5F",
+      "script": "NewBarkTown_Interior3_EventScript_Pokedex",
       "flag": "0x03A"
     },
     {
@@ -153,7 +153,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08169E5F",
+      "script": "NewBarkTown_Interior3_EventScript_Pokedex",
       "flag": "0x03A"
     }
   ],
@@ -188,7 +188,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0871CA50"
+      "script": "NewBarkTown_Interior3_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -197,7 +197,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0871CA50"
+      "script": "NewBarkTown_Interior3_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -206,7 +206,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0871CA50"
+      "script": "NewBarkTown_Interior3_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -215,7 +215,7 @@
       "elevation": 0,
       "var": "0x4055",
       "var_value": "3",
-      "script": "0x08740F90"
+      "script": "NewBarkTown_Interior3_EventScript_Trigger4"
     },
     {
       "type": "trigger",
@@ -224,7 +224,7 @@
       "elevation": 0,
       "var": "0x4055",
       "var_value": "3",
-      "script": "0x08740DD0"
+      "script": "NewBarkTown_Interior3_EventScript_Trigger5"
     },
     {
       "type": "trigger",
@@ -233,7 +233,7 @@
       "elevation": 0,
       "var": "0x4055",
       "var_value": "3",
-      "script": "0x08740FD0"
+      "script": "NewBarkTown_Interior3_EventScript_Trigger6"
     },
     {
       "type": "trigger",
@@ -242,7 +242,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0871C7C0"
+      "script": "NewBarkTown_Interior3_EventScript_Trigger7"
     },
     {
       "type": "trigger",
@@ -251,7 +251,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0871C5C0"
+      "script": "NewBarkTown_Interior3_EventScript_Trigger8"
     },
     {
       "type": "trigger",
@@ -260,7 +260,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0871C810"
+      "script": "NewBarkTown_Interior3_EventScript_Trigger9"
     },
     {
       "type": "trigger",
@@ -269,7 +269,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877EAC0"
+      "script": "NewBarkTown_Interior3_EventScript_Trigger10"
     },
     {
       "type": "trigger",
@@ -278,7 +278,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08742580"
+      "script": "NewBarkTown_Interior3_EventScript_Trigger11"
     },
     {
       "type": "trigger",
@@ -287,7 +287,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877EAE0"
+      "script": "NewBarkTown_Interior3_EventScript_Trigger12"
     }
   ],
   "bg_events": [
@@ -297,7 +297,7 @@
       "y": 2,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0878C2D0"
+      "script": "NewBarkTown_Interior3_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -305,7 +305,7 @@
       "y": 2,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0878C2D0"
+      "script": "NewBarkTown_Interior3_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -313,7 +313,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08169E71"
+      "script": "NewBarkTown_Interior3_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -321,7 +321,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08169E7A"
+      "script": "NewBarkTown_Interior3_EventScript_Sign4"
     }
   ]
 }

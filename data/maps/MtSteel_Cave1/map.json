@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x08160681",
+      "script": "MtSteel_Cave1_EventScript_HikerBenjamin",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x08160625",
+      "script": "MtSteel_Cave1_EventScript_LassSanae",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x0816066A",
+      "script": "MtSteel_Cave1_EventScript_YoungsterIan",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x0816060E",
+      "script": "MtSteel_Cave1_EventScript_YoungsterJosh",
       "flag": "0"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08829254",
+      "script": "MtSteel_Cave1_EventScript_BurglarFredrick",
       "flag": "0"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0882927C",
+      "script": "MtSteel_Cave1_EventScript_ItemIron",
       "flag": "0x140A"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE5DC",
+      "script": "MtMoon_1F_EventScript_ItemTM09",
       "flag": "0x15A"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0882926C",
+      "script": "MtSteel_Cave1_EventScript_ItemMaxRevive",
       "flag": "0x140B"
     },
     {
@@ -166,7 +166,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE5F6",
+      "script": "MtMoon_1F_EventScript_ItemRareCandy",
       "flag": "0x15C"
     },
     {
@@ -180,7 +180,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE603",
+      "script": "MtMoon_1F_EventScript_ItemEscapeRope",
       "flag": "0x140C"
     },
     {
@@ -194,7 +194,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE610",
+      "script": "MtMoon_1F_EventScript_ItemMoonStone",
       "flag": "0x15E"
     },
     {
@@ -208,7 +208,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0882928C",
+      "script": "MtSteel_Cave1_EventScript_Zapdos",
       "flag": "0x140D"
     }
   ],
@@ -250,7 +250,7 @@
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081605EE"
+      "script": "MtSteel_Cave1_EventScript_Sign"
     }
   ]
 }

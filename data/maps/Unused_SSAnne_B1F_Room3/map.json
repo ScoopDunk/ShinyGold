@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08160D8F",
+      "script": "Unused_SSAnne_B1F_Room3_EventScript_SageEdmond",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE692",
+      "script": "SSAnne_B1F_Room3_EventScript_ItemEther",
       "flag": "0x168"
     }
   ],

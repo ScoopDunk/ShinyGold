@@ -42,7 +42,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0887E370",
+      "script": "FuchsiaCity_EventScript_Camper",
       "flag": "0"
     },
     {
@@ -56,7 +56,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0887E360",
+      "script": "FuchsiaCity_EventScript_Woman2",
       "flag": "0"
     },
     {
@@ -70,7 +70,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0887E3E0",
+      "script": "FuchsiaCity_EventScript_ItemRepeatBall",
       "flag": "0x291"
     },
     {
@@ -84,7 +84,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0887E350",
+      "script": "FuchsiaCity_EventScript_BaldingMan",
       "flag": "0"
     },
     {
@@ -98,7 +98,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0887E3F0",
+      "script": "FuchsiaCity_EventScript_ItemFullRestore",
       "flag": "FLAG_GOT_VS_SEEKER"
     },
     {
@@ -112,7 +112,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0887F060",
+      "script": "FuchsiaCity_EventScript_CutTree",
       "flag": "FLAG_TEMP_12"
     },
     {
@@ -126,7 +126,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0887F0D0",
+      "script": "FuchsiaCity_EventScript_CutTree2",
       "flag": "FLAG_TEMP_13"
     },
     {
@@ -140,7 +140,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08000000",
+      "script": "0x0",
       "flag": "0x11F4"
     }
   ],
@@ -224,7 +224,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887EB30"
+      "script": "FuchsiaCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -233,7 +233,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887EB30"
+      "script": "FuchsiaCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -242,7 +242,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887EB30"
+      "script": "FuchsiaCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -251,7 +251,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887EB60"
+      "script": "FuchsiaCity_EventScript_Trigger4"
     },
     {
       "type": "trigger",
@@ -260,7 +260,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887EB30"
+      "script": "FuchsiaCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -269,7 +269,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0888FAC0"
+      "script": "CeruleanCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -278,7 +278,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887EB30"
+      "script": "FuchsiaCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -287,7 +287,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887EB30"
+      "script": "FuchsiaCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -296,7 +296,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887EB30"
+      "script": "FuchsiaCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -305,7 +305,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0888FAC0"
+      "script": "CeruleanCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -314,7 +314,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0888FAC0"
+      "script": "CeruleanCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -333,7 +333,7 @@
       "y": 18,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0887E3B0"
+      "script": "FuchsiaCity_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -341,7 +341,7 @@
       "y": 18,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0887E3A0"
+      "script": "FuchsiaCity_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -349,7 +349,7 @@
       "y": 32,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0887E3D0"
+      "script": "FuchsiaCity_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -357,7 +357,7 @@
       "y": 33,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0887E3C0"
+      "script": "FuchsiaCity_EventScript_Sign4"
     },
     {
       "type": "sign",
@@ -365,7 +365,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0887E380"
+      "script": "FuchsiaCity_EventScript_Sign5"
     },
     {
       "type": "sign",
@@ -373,7 +373,7 @@
       "y": 3,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08780740"
+      "script": "Route44_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -381,7 +381,7 @@
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0887E390"
+      "script": "FuchsiaCity_EventScript_Sign7"
     },
     {
       "type": "sign",
@@ -389,7 +389,7 @@
       "y": 20,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08885640"
+      "script": "Route35_EventScript_Sign4"
     },
     {
       "type": "sign",
@@ -397,7 +397,7 @@
       "y": 0,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08000000"
+      "script": "0x0"
     }
   ]
 }

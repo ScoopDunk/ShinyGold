@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08170391",
+      "script": "Route18_Interior1_EventScript_Policeman",
       "flag": "0"
     }
   ],
@@ -61,7 +61,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_ROUTE16",
       "var_value": "0",
-      "script": "0x081A77C1"
+      "script": "EventScript_SetEnteringCyclingRoad"
     },
     {
       "type": "trigger",
@@ -70,7 +70,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887BD20"
+      "script": "Route16_Interior2_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -79,7 +79,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887BD70"
+      "script": "Route16_Interior2_EventScript_Trigger4"
     },
     {
       "type": "trigger",
@@ -88,7 +88,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887BDC0"
+      "script": "Route16_Interior2_EventScript_Trigger9"
     },
     {
       "type": "trigger",
@@ -97,7 +97,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887BE10"
+      "script": "Route16_Interior2_EventScript_Trigger10"
     },
     {
       "type": "trigger",
@@ -106,7 +106,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887BE60"
+      "script": "Route16_Interior2_EventScript_Trigger11"
     },
     {
       "type": "trigger",
@@ -115,7 +115,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_ROUTE16",
       "var_value": "1",
-      "script": "0x081A77B6"
+      "script": "EventScript_SetExitingCyclingRoad"
     },
     {
       "type": "trigger",
@@ -124,7 +124,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_ROUTE16",
       "var_value": "1",
-      "script": "0x081A77B6"
+      "script": "EventScript_SetExitingCyclingRoad"
     },
     {
       "type": "trigger",
@@ -133,7 +133,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_ROUTE16",
       "var_value": "1",
-      "script": "0x081A77B6"
+      "script": "EventScript_SetExitingCyclingRoad"
     },
     {
       "type": "trigger",
@@ -142,7 +142,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_ROUTE16",
       "var_value": "0",
-      "script": "0x081A77C1"
+      "script": "EventScript_SetEnteringCyclingRoad"
     },
     {
       "type": "trigger",
@@ -151,7 +151,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_ROUTE16",
       "var_value": "0",
-      "script": "0x081A77C1"
+      "script": "EventScript_SetEnteringCyclingRoad"
     }
   ],
   "bg_events": []

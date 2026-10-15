@@ -32,7 +32,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08167C80",
+      "script": "AzaleaTown_EventScript_RocketM",
       "flag": "0x1063"
     },
     {
@@ -46,7 +46,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x087487B0",
+      "script": "AzaleaTown_EventScript_OldMan1",
       "flag": "0x07E"
     },
     {
@@ -60,7 +60,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08167C77",
+      "script": "AzaleaTown_EventScript_Woman2",
       "flag": "0"
     },
     {
@@ -74,7 +74,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08167CA5",
+      "script": "AzaleaTown_EventScript_Rocker",
       "flag": "0x079"
     },
     {
@@ -88,7 +88,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08748560",
+      "script": "AzaleaTown_EventScript_RocketM2",
       "flag": "0x1055"
     },
     {
@@ -102,7 +102,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08000000",
+      "script": "0x0",
       "flag": "0x1056"
     },
     {
@@ -116,7 +116,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08749660",
+      "script": "AzaleaTown_EventScript_Slowpoke",
       "flag": "0x1054"
     },
     {
@@ -130,7 +130,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08749660",
+      "script": "AzaleaTown_EventScript_Slowpoke",
       "flag": "0x1054"
     },
     {
@@ -144,7 +144,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08749660",
+      "script": "AzaleaTown_EventScript_Slowpoke",
       "flag": "0x1054"
     },
     {
@@ -158,7 +158,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -172,7 +172,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -186,7 +186,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -200,7 +200,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -214,7 +214,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -228,7 +228,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -242,7 +242,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -256,7 +256,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0880D4A0",
+      "script": "AzaleaTown_EventScript_BaldingMan",
       "flag": "0x11AD"
     }
   ],
@@ -319,7 +319,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08748530"
+      "script": "AzaleaTown_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -328,7 +328,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08748500"
+      "script": "AzaleaTown_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -337,7 +337,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08748D70"
+      "script": "AzaleaTown_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -346,7 +346,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877EE90"
+      "script": "AzaleaTown_EventScript_Trigger4"
     },
     {
       "type": "trigger",
@@ -355,7 +355,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877EEE0"
+      "script": "AzaleaTown_EventScript_Trigger5"
     },
     {
       "type": "trigger",
@@ -364,7 +364,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0874A383"
+      "script": "AzaleaTown_EventScript_Trigger6"
     },
     {
       "type": "trigger",
@@ -373,7 +373,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877EF30"
+      "script": "AzaleaTown_EventScript_Trigger7"
     },
     {
       "type": "trigger",
@@ -382,7 +382,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08828C4C"
+      "script": "AzaleaTown_EventScript_Trigger8"
     },
     {
       "type": "trigger",
@@ -391,7 +391,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0880D141"
+      "script": "AzaleaTown_EventScript_Trigger9"
     },
     {
       "type": "trigger",
@@ -400,7 +400,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0880D141"
+      "script": "AzaleaTown_EventScript_Trigger9"
     },
     {
       "type": "trigger",
@@ -409,7 +409,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0880D141"
+      "script": "AzaleaTown_EventScript_Trigger9"
     }
   ],
   "bg_events": [
@@ -419,7 +419,7 @@
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x087485C0"
+      "script": "AzaleaTown_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -427,7 +427,7 @@
       "y": 8,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08748570"
+      "script": "AzaleaTown_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -435,7 +435,7 @@
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08748580"
+      "script": "AzaleaTown_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -443,7 +443,7 @@
       "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x087485A0"
+      "script": "AzaleaTown_EventScript_Sign4"
     },
     {
       "type": "sign",
@@ -451,7 +451,7 @@
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08748590"
+      "script": "AzaleaTown_EventScript_Sign5"
     },
     {
       "type": "sign",
@@ -459,7 +459,7 @@
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x087485B0"
+      "script": "AzaleaTown_EventScript_Sign6"
     },
     {
       "type": "sign",
@@ -467,7 +467,7 @@
       "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08780800"
+      "script": "AzaleaTown_EventScript_Sign7"
     },
     {
       "type": "sign",
@@ -475,7 +475,7 @@
       "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088855E0"
+      "script": "AzaleaTown_EventScript_Sign8"
     }
   ]
 }

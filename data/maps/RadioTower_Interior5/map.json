@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171841",
+      "script": "RuinsOfAlph_Interior1_EventScript_RedBike",
       "flag": "0x10BD"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x08789C15",
+      "script": "RadioTower_Interior5_EventScript_TeamRocketExecutive",
       "flag": "0x10BD"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08788350",
+      "script": "RadioTower_Interior5_EventScript_Gentleman",
       "flag": "0x10BD"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0878A0E0",
+      "script": "RadioTower_Interior5_EventScript_Gentleman2",
       "flag": "0x1124"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0878A770",
+      "script": "RadioTower_Interior5_EventScript_Man",
       "flag": "0x110B"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0878A780",
+      "script": "RadioTower_Interior5_EventScript_Gentleman3",
       "flag": "0x110B"
     }
   ],
@@ -131,7 +131,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08788100"
+      "script": "RadioTower_Interior5_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -140,7 +140,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878A070"
+      "script": "RadioTower_Interior5_EventScript_Trigger2"
     }
   ],
   "bg_events": [
@@ -150,7 +150,7 @@
       "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08788410"
+      "script": "RadioTower_Interior5_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -158,7 +158,7 @@
       "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08789FD0"
+      "script": "RadioTower_Interior5_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -166,7 +166,7 @@
       "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08789FD0"
+      "script": "RadioTower_Interior5_EventScript_Sign2"
     }
   ]
 }

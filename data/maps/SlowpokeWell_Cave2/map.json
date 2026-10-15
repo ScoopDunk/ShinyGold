@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0877A5C0",
+      "script": "SlowpokeWell_Cave2_EventScript_ItemTm18",
       "flag": "0x190",
       "explicit_local_id": 2
     },
@@ -41,7 +41,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0877A5D0",
+      "script": "SlowpokeWell_Cave2_EventScript_PokeManiac",
       "flag": "0",
       "explicit_local_id": 5
     },
@@ -56,7 +56,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0877A5C0",
+      "script": "SlowpokeWell_Cave2_EventScript_ItemTm18",
       "flag": "0x190"
     },
     {
@@ -70,7 +70,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0817184A",
+      "script": "SlowpokeWell_Cave2_EventScript_Gentleman",
       "flag": "0"
     }
   ],

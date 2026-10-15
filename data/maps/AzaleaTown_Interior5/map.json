@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088287BC",
+      "script": "AzaleaTown_Interior5_EventScript_BaldingMan",
       "flag": "0x1058"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08748B10",
+      "script": "AzaleaTown_Interior5_EventScript_LittleGirl",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0877FB30",
+      "script": "AzaleaTown_Interior5_EventScript_BaldingMan2",
       "flag": "0x1137"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08749660",
+      "script": "AzaleaTown_EventScript_Slowpoke",
       "flag": "0x1054"
     }
   ],

@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08880900",
+      "script": "FuchsiaCity_Area2_EventScript_ItemHpUp",
       "flag": "0x297"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08880920",
+      "script": "FuchsiaCity_Area2_EventScript_ItemFullHeal",
       "flag": "0x299"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08880910",
+      "script": "FuchsiaCity_Area2_EventScript_ItemFullRestore",
       "flag": "0x298"
     }
   ],
@@ -117,7 +117,7 @@
       "y": 25,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816238F"
+      "script": "FuchsiaCity_Area2_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -125,7 +125,7 @@
       "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816237D"
+      "script": "FuchsiaCity_Area2_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -133,7 +133,7 @@
       "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08162386"
+      "script": "FuchsiaCity_Area2_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -141,7 +141,7 @@
       "y": 23,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08880820"
+      "script": "FuchsiaCity_Area2_EventScript_Sign4"
     }
   ]
 }

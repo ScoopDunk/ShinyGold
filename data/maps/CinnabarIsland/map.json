@@ -37,7 +37,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08823944",
+      "script": "CinnabarIsland_EventScript_Blue",
       "flag": "0x055"
     },
     {
@@ -51,7 +51,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08167208",
+      "script": "CinnabarIsland_EventScript_OldMan1",
       "flag": "0"
     },
     {
@@ -65,7 +65,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088270C4",
+      "script": "CinnabarIsland_EventScript_ItemRareCandy",
       "flag": "FLAG_WONDER_CARD_UNUSED_3"
     },
     {
@@ -79,7 +79,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08000000",
+      "script": "0x0",
       "flag": "0"
     }
   ],
@@ -128,7 +128,7 @@
       "elevation": 3,
       "var": "VAR_TEMP_1",
       "var_value": "0",
-      "script": "0x081671CA"
+      "script": "CinnabarIsland_EventScript_Trigger"
     }
   ],
   "bg_events": [
@@ -138,7 +138,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08167211"
+      "script": "CinnabarIsland_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -146,7 +146,7 @@
       "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816721A"
+      "script": "CinnabarIsland_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -154,7 +154,7 @@
       "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08823C14"
+      "script": "CinnabarIsland_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -162,7 +162,7 @@
       "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816721A"
+      "script": "CinnabarIsland_EventScript_Sign2"
     }
   ]
 }

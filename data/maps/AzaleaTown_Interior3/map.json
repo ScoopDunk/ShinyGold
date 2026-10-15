@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08748977",
+      "script": "AzaleaTown_Interior3_EventScript_Rocker",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x087489A0",
+      "script": "AzaleaTown_Interior3_EventScript_Boy",
       "flag": "0x1074"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x087489C0",
+      "script": "AzaleaTown_Interior3_EventScript_Fearow",
       "flag": "0x1074"
     }
   ],

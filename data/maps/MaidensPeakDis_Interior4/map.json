@@ -39,7 +39,7 @@
       "y": 2,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081614D9"
+      "script": "MaidensPeakDis_Interior4_EventScript_Sign"
     }
   ]
 }

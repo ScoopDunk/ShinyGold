@@ -42,7 +42,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0877AA80",
+      "script": "Route41_EventScript_SwimmerMGeorge",
       "flag": "0"
     },
     {
@@ -56,7 +56,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0877AAA0",
+      "script": "Route41_EventScript_SwimmerMCharlie",
       "flag": "0"
     },
     {
@@ -70,7 +70,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x0877AAC0",
+      "script": "Route41_EventScript_SwimmerFKaylee",
       "flag": "0"
     },
     {
@@ -84,7 +84,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0877AAE0",
+      "script": "Route41_EventScript_SwimmerFSusie",
       "flag": "0"
     },
     {
@@ -98,7 +98,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0877AB00",
+      "script": "Route41_EventScript_SwimmerFKara",
       "flag": "0"
     },
     {
@@ -112,7 +112,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0877AB20",
+      "script": "Route41_EventScript_SwimmerMKirk",
       "flag": "0"
     },
     {
@@ -126,7 +126,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0877AB40",
+      "script": "Route41_EventScript_SwimmerMBerke",
       "flag": "0"
     },
     {
@@ -140,7 +140,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0877AB60",
+      "script": "Route41_EventScript_SwimmerFDenise",
       "flag": "0"
     },
     {
@@ -154,7 +154,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0877AB80",
+      "script": "Route41_EventScript_SwimmerMMathew",
       "flag": "0"
     },
     {
@@ -168,7 +168,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0877ABA0",
+      "script": "Route41_EventScript_SwimmerFWendy",
       "flag": "0"
     },
     {
@@ -182,7 +182,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0877B4F0",
+      "script": "Route41_EventScript_ItemNugget",
       "flag": "0x192"
     },
     {
@@ -196,7 +196,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0888F600",
+      "script": "Route41_EventScript_LaprasDoll",
       "flag": "0x05E"
     }
   ],
@@ -238,7 +238,7 @@
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877B5C0"
+      "script": "VictoryRoad_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -247,7 +247,7 @@
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877B5A0"
+      "script": "VictoryRoad_Cave2_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -256,7 +256,7 @@
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877B5C0"
+      "script": "VictoryRoad_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -265,7 +265,7 @@
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877B5A0"
+      "script": "VictoryRoad_Cave2_EventScript_Trigger3"
     }
   ],
   "bg_events": []

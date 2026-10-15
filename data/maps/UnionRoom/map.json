@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816050C",
+      "script": "UnionRoom_EventScript_UnionRoomReceptionist",
       "flag": "0"
     },
     {
@@ -41,7 +41,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081604DA",
+      "script": "UnionRoom_EventScript_Npc",
       "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_4"
     },
     {
@@ -56,7 +56,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08160502",
+      "script": "UnionRoom_EventScript_Npc2",
       "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_8"
     },
     {
@@ -71,7 +71,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081604F8",
+      "script": "UnionRoom_EventScript_Npc3",
       "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_7"
     },
     {
@@ -86,7 +86,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081604EE",
+      "script": "UnionRoom_EventScript_Npc4",
       "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_6"
     },
     {
@@ -101,7 +101,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081604E4",
+      "script": "UnionRoom_EventScript_Npc5",
       "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_5"
     },
     {
@@ -116,7 +116,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081604D0",
+      "script": "UnionRoom_EventScript_Npc6",
       "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_3"
     },
     {
@@ -131,7 +131,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081604C6",
+      "script": "UnionRoom_EventScript_Npc7",
       "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_2"
     },
     {
@@ -146,7 +146,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081604BC",
+      "script": "UnionRoom_EventScript_Vars",
       "flag": "FLAG_HIDE_UNION_ROOM_PLAYER_1"
     }
   ],

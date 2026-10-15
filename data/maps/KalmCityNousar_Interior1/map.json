@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0882A1E0",
+      "script": "KalmCityNousar_Interior1_EventScript_Scientist",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0882A1B0",
+      "script": "KalmCityNousar_Interior1_EventScript_WorkerF",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0882A148",
+      "script": "KalmCityNousar_Interior1_EventScript_BlackBelt",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE8F5",
+      "script": "SilphCo_10F_EventScript_ItemCarbos",
       "flag": "0x197"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE902",
+      "script": "SilphCo_10F_EventScript_ItemUltraBall",
       "flag": "0x198"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE90F",
+      "script": "SilphCo_10F_EventScript_ItemRareCandy",
       "flag": "0x199"
     }
   ],
@@ -152,7 +152,7 @@
       "y": 0,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8AEF"
+      "script": "SilphCo_10F_EventScript_Door"
     },
     {
       "type": "sign",
@@ -160,7 +160,7 @@
       "y": 0,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8AEF"
+      "script": "SilphCo_10F_EventScript_Door"
     },
     {
       "type": "sign",
@@ -168,7 +168,7 @@
       "y": 0,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8AEF"
+      "script": "SilphCo_10F_EventScript_Door"
     },
     {
       "type": "sign",
@@ -176,7 +176,7 @@
       "y": 0,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081A8AEF"
+      "script": "SilphCo_10F_EventScript_Door"
     },
     {
       "type": "hidden_item",
@@ -194,7 +194,7 @@
       "y": 0,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08161DB7"
+      "script": "KalmCityNousar_Interior1_EventScript_Sign5"
     }
   ]
 }

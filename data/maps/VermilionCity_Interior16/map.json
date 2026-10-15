@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088073F0",
+      "script": "VermilionCity_Interior16_EventScript_LeaderLtSurge",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x088071A0",
+      "script": "VermilionCity_Interior16_EventScript_JugglerHorton",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x088071C0",
+      "script": "VermilionCity_Interior16_EventScript_GuitaristVincent",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08806FA0",
+      "script": "VermilionCity_Interior16_EventScript_GymGuy",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x088071E0",
+      "script": "VermilionCity_Interior16_EventScript_GentlemanGregory",
       "flag": "0"
     }
   ],
@@ -117,7 +117,7 @@
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08806F70"
+      "script": "VermilionCity_Interior16_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -125,7 +125,7 @@
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08806F70"
+      "script": "VermilionCity_Interior16_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -133,7 +133,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088077A0"
+      "script": "VermilionCity_Interior16_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -141,7 +141,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088077A0"
+      "script": "VermilionCity_Interior16_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -149,7 +149,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088077A0"
+      "script": "VermilionCity_Interior16_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -157,7 +157,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088077A0"
+      "script": "VermilionCity_Interior16_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -165,7 +165,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088077A0"
+      "script": "VermilionCity_Interior16_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -173,7 +173,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088077A0"
+      "script": "VermilionCity_Interior16_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -181,7 +181,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088077A0"
+      "script": "VermilionCity_Interior16_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -189,7 +189,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088077A0"
+      "script": "VermilionCity_Interior16_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -197,7 +197,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088077A0"
+      "script": "VermilionCity_Interior16_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -205,7 +205,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088077A0"
+      "script": "VermilionCity_Interior16_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -213,7 +213,7 @@
       "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088077A0"
+      "script": "VermilionCity_Interior16_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -221,7 +221,7 @@
       "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088077A0"
+      "script": "VermilionCity_Interior16_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -229,7 +229,7 @@
       "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088077A0"
+      "script": "VermilionCity_Interior16_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -237,7 +237,7 @@
       "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088077A0"
+      "script": "VermilionCity_Interior16_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -245,7 +245,7 @@
       "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088077A0"
+      "script": "VermilionCity_Interior16_EventScript_Sign3"
     }
   ]
 }

@@ -26,7 +26,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x0880BE30",
+      "script": "SSAqua_Interior11_EventScript_GentlemanEdward",
       "flag": "0x1174"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0880BBB0",
+      "script": "SSAqua_Interior11_EventScript_BurglarCory",
       "flag": "0x1175"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088046B0",
+      "script": "SSAqua_Interior11_EventScript_SailorStanly",
       "flag": "0x1169"
     }
   ],
@@ -75,7 +75,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08804690"
+      "script": "SSAqua_Interior11_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -84,7 +84,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088046A0"
+      "script": "SSAqua_Interior11_EventScript_Trigger2"
     }
   ],
   "bg_events": []

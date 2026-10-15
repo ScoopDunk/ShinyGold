@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0888A180",
+      "script": "Unused_G34_M77_EventScript_GymSign",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0888A440",
+      "script": "Unused_G34_M77_EventScript_FishermanPhil",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x0888A460",
+      "script": "Unused_G34_M77_EventScript_PokemaniacMarco",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08889480",
+      "script": "Unused_G34_M77_EventScript_ItemUltraBall",
       "flag": "FLAG_WONDER_CARD_UNUSED_5"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08889490",
+      "script": "Unused_G34_M77_EventScript_ItemSitrusBerry",
       "flag": "FLAG_WONDER_CARD_UNUSED_4"
     }
   ],
@@ -103,7 +103,7 @@
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877B5A0"
+      "script": "VictoryRoad_Cave2_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -112,7 +112,7 @@
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877B5A0"
+      "script": "VictoryRoad_Cave2_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -121,7 +121,7 @@
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877B5A0"
+      "script": "VictoryRoad_Cave2_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -130,7 +130,7 @@
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877B5A0"
+      "script": "VictoryRoad_Cave2_EventScript_Trigger3"
     }
   ],
   "bg_events": [
@@ -140,7 +140,7 @@
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08889C77"
+      "script": "Unused_G34_M77_EventScript_Sign"
     }
   ]
 }

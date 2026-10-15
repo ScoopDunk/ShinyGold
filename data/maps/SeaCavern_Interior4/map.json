@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08805840",
+      "script": "SeaCavern_Interior4_EventScript_ItemYellowFlute",
       "flag": "0x267"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08805830",
+      "script": "SeaCavern_Interior4_EventScript_ItemMaxElixir",
       "flag": "0x26A"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08805820",
+      "script": "SeaCavern_Interior4_EventScript_ItemMaxPotion",
       "flag": "0x269"
     },
     {
@@ -166,7 +166,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08805810",
+      "script": "SeaCavern_Interior4_EventScript_ItemUltraBall",
       "flag": "FLAG_PENDING_DAYCARE_EGG"
     },
     {
@@ -180,7 +180,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08805850",
+      "script": "SeaCavern_Interior4_EventScript_ItemIron",
       "flag": "0x268"
     },
     {
@@ -320,7 +320,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x08805750"
+      "script": "SeaCavern_Interior4_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -329,7 +329,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x08805760"
+      "script": "SeaCavern_Interior4_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -338,7 +338,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x08805770"
+      "script": "SeaCavern_Interior4_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -347,7 +347,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x08805780"
+      "script": "SeaCavern_Interior4_EventScript_Trigger4"
     },
     {
       "type": "trigger",
@@ -356,7 +356,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x08805790"
+      "script": "SeaCavern_Interior4_EventScript_Trigger5"
     },
     {
       "type": "trigger",
@@ -365,7 +365,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x088057A0"
+      "script": "SeaCavern_Interior4_EventScript_Trigger6"
     },
     {
       "type": "trigger",
@@ -374,7 +374,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x088057B0"
+      "script": "SeaCavern_Interior4_EventScript_Trigger7"
     },
     {
       "type": "trigger",
@@ -383,7 +383,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x088057C0"
+      "script": "SeaCavern_Interior4_EventScript_Trigger8"
     },
     {
       "type": "trigger",
@@ -392,7 +392,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x088057D0"
+      "script": "SeaCavern_Interior4_EventScript_Trigger9"
     },
     {
       "type": "trigger",
@@ -401,7 +401,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x088057E0"
+      "script": "SeaCavern_Interior4_EventScript_Trigger10"
     },
     {
       "type": "trigger",
@@ -410,7 +410,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x088057F0"
+      "script": "SeaCavern_Interior4_EventScript_Trigger11"
     },
     {
       "type": "trigger",
@@ -419,7 +419,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x08805800"
+      "script": "SeaCavern_Interior4_EventScript_Trigger12"
     }
   ],
   "bg_events": []

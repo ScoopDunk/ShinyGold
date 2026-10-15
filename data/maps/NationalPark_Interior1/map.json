@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "0x0816341B",
+      "script": "Unused_PokemonTower_4F_EventScript_MediumJody",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x087710E0",
+      "script": "Unused_PokemonTower_4F_EventScript_MgDeliveryman",
       "flag": "0x1098"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x087710D0",
+      "script": "Unused_PokemonTower_4F_EventScript_Boy",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08771495",
+      "script": "Unused_PokemonTower_4F_EventScript_MgDeliveryman2",
       "flag": "0x1099"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE77C",
+      "script": "PokemonTower_4F_EventScript_ItemGreatBall",
       "flag": "0x17A"
     }
   ],
