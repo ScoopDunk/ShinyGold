@@ -647,7 +647,7 @@ static const u8 *const sFemaleNameChoices[] =
 static const u8 *const sRivalNameChoices[] =
 {
 #if defined(FIRERED)
-    gNameChoice_Green,
+    gNameChoice_Silver, // ShinyGold: was gNameChoice_Green
     gNameChoice_Gary,
     gNameChoice_Kaz,
     gNameChoice_Toru
@@ -1883,9 +1883,15 @@ static void CB2_ReturnFromNamingScreen(void)
 static void CreateNidoranFSprite(u8 taskId)
 {
     u8 spriteId;
+    struct CompressedSpritePalette palette;
 
-    DecompressPicFromTable(&gMonFrontPicTable[INTRO_SPECIES], MonSpritesGfxManager_GetSpritePtr(0), INTRO_SPECIES);
-    LoadCompressedSpritePaletteUsingHeap(&gMonPaletteTable[INTRO_SPECIES]);
+    // ShinyGold: Oak shows Marill's picture and palette (the rest, e.g. the cry, still uses INTRO_SPECIES).
+    // The hack changed the tag of Marill's entry in gMonPaletteTable to INTRO_SPECIES for this; here the
+    // palette is loaded with that tag instead.
+    DecompressPicFromTable(&gMonFrontPicTable[SPECIES_MARILL], MonSpritesGfxManager_GetSpritePtr(0), INTRO_SPECIES);
+    palette.data = gMonPaletteTable[SPECIES_MARILL].data;
+    palette.tag = INTRO_SPECIES;
+    LoadCompressedSpritePaletteUsingHeap(&palette);
     SetMultiuseSpriteTemplateToPokemon(INTRO_SPECIES, 0);
     spriteId = CreateSprite(&gMultiuseSpriteTemplate, 96, 96, 1);
     gSprites[spriteId].callback = SpriteCallbackDummy;

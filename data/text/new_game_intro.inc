@@ -4,6 +4,10 @@ gOtherText_NewName::
 gNameChoice_Green::
     .string "GREEN$"
 
+@ ShinyGold: first rival name choice
+gNameChoice_Silver::
+    .string "SILVER$"
+
 gNameChoice_Red::
     .string "RED$"
 
@@ -13,14 +17,17 @@ gNameChoice_Leaf::
 gNameChoice_Fire::
     .string "FIRE$"
 
+@ ShinyGold
 gNameChoice_Gary::
-    .string "GARY$"
+    .string "ZEL$"
 
+@ ShinyGold
 gNameChoice_Kaz::
-    .string "KAZ$"
+    .string "NEO$"
 
+@ ShinyGold
 gNameChoice_Toru::
-    .string "TORU$"
+    .string "DASH$"
 
 gNameChoice_Ash::
     .string "ASH$"
@@ -158,86 +165,109 @@ gOakSpeech_Text_AskPlayerGender::
     .string "Now tell me. Are you a boy?\n"
     .string "Or are you a girl?$"
 
+@ ShinyGold
 gPikachuIntro_Text_Page1::
-    .string "In the world which you are about to\n"
-    .string "enter, you will embark on a grand\n"
-    .string "adventure with you as the hero.\n"
+    .string "A FEW WORDS FROM THE AUTHOR\n"
+    .string "(Which, by the way, is ZEL)\n"
     .string "\n"
-    .string "Speak to people and check things\n"
-    .string "wherever you go, be it towns, roads,\n"
-    .string "or caves. Gather information and\n"
-    .string "hints from every source.$"
+    .string "As always, I’ll make sure... You\n"
+    .string "didn’t buy this game, right?\n"
+    .string "If you did, then let me tell you this\n"
+    .string "is a ROM HACK, which means it’s\n"
+    .string "an incomplete game. Too bad…$"
 
+@ ShinyGold
 gPikachuIntro_Text_Page2::
-    .string "New paths will open to you by helping\n"
-    .string "people in need, overcoming challenges,\n"
-    .string "and solving mysteries.\n"
+    .string "Let’s keep playing around\n"
+    .string "the Kanto region. Expect many\n"
+    .string "changes on this new Beta. So…\n"
+    .string "I hope you enjoy them!\n"
+    .string "By the way, you can reach\n"
+    .string "Pewter, Viridian and Pallet!\n"
     .string "\n"
-    .string "At times, you will be challenged by\n"
-    .string "others and attacked by wild creatures.\n"
-    .string "Be brave and keep pushing on.$"
+    .string "END OF MESSAGE---$"
 
+@ ShinyGold
 gPikachuIntro_Text_Page3::
-    .string "Through your adventure, we hope\n"
-    .string "that you will interact with all sorts\n"
-    .string "of people and achieve personal growth.\n"
-    .string "That is our biggest objective.\n"
-    .string "\n"
-    .string "Press the A Button, and let your\n"
-    .string "adventure begin!$"
+    .string "CREDITS\n"
+    .string "To GSC Platinum (specially Gridiron),\n"
+    .string "Fangking Omega, Enrico Marini, Marnic,\n"
+    .string "Neos, JIM, Red, birthofdna,\n"
+    .string "my beta testers, Pokecommunity, WAH,\n"
+    .string "Studiopokemon, youtube…\n"
+    .string "And most importantly…\n"
+    .string "Mastermind X! Out of space…$"
 
+@ ShinyGold
 gOakSpeech_Text_WelcomeToTheWorld::
-    .string "Hello, there!\n"
-    .string "Glad to meet you!\p"
+    .string "Hello! Sorry to keep you waiting!\p"
     .string "Welcome to the world of POKéMON!\p"
     .string "My name is OAK.\p"
-    .string "People affectionately refer to me\n"
-    .string "as the POKéMON PROFESSOR.\p$"
+    .string "People call me the POKéMON PROF.\p"
+    .string "\n"
+    .string "$"
 
 gOakSpeech_Text_ThisWorld::
     .string "This world…$"
 
+@ ShinyGold
 gOakSpeech_Text_IsInhabitedFarAndWide::
-    .string "…is inhabited far and wide by\n"
-    .string "creatures called POKéMON.\p$"
+    .string "…is inhabited by creatures that we\n"
+    .string "call POKéMON.\l"
+    .string "$"
 
+@ ShinyGold
 gOakSpeech_Text_IStudyPokemon::
-    .string "For some people, POKéMON are pets.\n"
-    .string "Others use them for battling.\p"
-    .string "As for myself…\p"
-    .string "I study POKéMON as a profession.\p$"
+    .string "People and POKéMON live together\n"
+    .string "by supporting each other.\p"
+    .string "Some people play with POKéMON,\n"
+    .string "some battle with them.\p"
+    .string "But we don’t know everything about\n"
+    .string "POKéMON yet.\p"
+    .string "There are still many mysteries to\n"
+    .string "solve.\p"
+    .string "That’s why I study POKéMON every\n"
+    .string "day.$"
 
 gOakSpeech_Text_TellMeALittleAboutYourself::
     .string "But first, tell me a little about\n"
     .string "yourself.\p$"
 
+@ ShinyGold
 gOakSpeech_Text_YourNameWhatIsIt::
-    .string "Let's begin with your name.\n"
-    .string "What is it?\p$"
+    .string "Now, what did you say your name was?\p"
+    .string "$"
 
+@ ShinyGold
 gOakSpeech_Text_SoYourNameIsPlayer::
-    .string "Right…\n"
-    .string "So your name is {PLAYER}.$"
+    .string "{PLAYER}, are you ready?$"
 
+@ ShinyGold
 gOakSpeech_Text_WhatWasHisName::
-    .string "This is my grandson.\p"
-    .string "He's been your rival since you both\n"
-    .string "were babies.\p"
-    .string "…Erm, what was his name now?$"
+    .string "Hehe… So you are {PLAYER}!\p"
+    .string "We’ll see who is the greatest\n"
+    .string "trainer!\p"
+    .string "Huh? Why do you need my name?$"
 
 gOakSpeech_Text_YourRivalsNameWhatWasIt::
     .string "Your rival's name, what was it now?$"
 
+@ ShinyGold
 gOakSpeech_Text_ConfirmRivalName::
-    .string "…Er, was it {RIVAL}?$"
+    .string "Yes! I’m {RIVAL}!$"
 
+@ ShinyGold
 gOakSpeech_Text_RememberRivalsName::
-    .string "That's right! I remember now!\n"
-    .string "His name is {RIVAL}!\p$"
+    .string "{PLAYER}, are you ready?\p"
+    .string "$"
 
+@ ShinyGold
 gOakSpeech_Text_LetsGo::
-    .string "{PLAYER}!\p"
-    .string "Your very own POKéMON legend is\n"
-    .string "about to unfold!\p"
-    .string "A world of dreams and adventures\n"
-    .string "with POKéMON awaits! Let's go!$"
+    .string "Your very own POKéMON story is about\n"
+    .string "to unfold.\p"
+    .string "You’ll face fun times and tough\n"
+    .string "challenges.\p"
+    .string "A world of dreams and adventures with\n"
+    .string "POKéMON awaits! Let’s go!\p"
+    .string "I’ll be seeing you later!$"
+

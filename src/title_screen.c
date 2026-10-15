@@ -28,7 +28,7 @@ enum TitleScreenScene
 };
 
 #if   defined(FIRERED)
-#define TITLE_SPECIES SPECIES_CHARIZARD
+#define TITLE_SPECIES SPECIES_HO_OH // ShinyGold: was SPECIES_CHARIZARD
 #elif defined(LEAFGREEN)
 #define TITLE_SPECIES SPECIES_VENUSAUR
 #endif
@@ -759,12 +759,9 @@ static void Task_TitleScreen_SlideWin0(u8 taskId)
 
     switch (data[0])
     {
+    // ShinyGold: the window that slides in the game title and the copyright/press start background is never
+    // enabled, and BG2 is not scrolled, so only the palette changes of this task remain.
     case 0:
-        SetGpuRegBits(REG_OFFSET_DISPCNT, DISPCNT_WIN0_ON);
-        SetGpuReg(REG_OFFSET_WININ, WININ_WIN0_ALL);
-        SetGpuReg(REG_OFFSET_WINOUT, WINOUT_WIN01_BG0 | WINOUT_WIN01_BG1 | WINOUT_WIN01_BG2 | WINOUT_WIN01_OBJ | WINOUT_WIN01_CLR);
-        SetGpuReg(REG_OFFSET_WIN0V, WIN_RANGE(0, DISPLAY_HEIGHT));
-        SetGpuReg(REG_OFFSET_WIN0H, WIN_RANGE(0, 0));
         BlendPalettes(1 << 0xE, 0, RGB_BLACK);
         data[0]++;
         break;
@@ -776,7 +773,6 @@ static void Task_TitleScreen_SlideWin0(u8 taskId)
             data[2] = DISPLAY_WIDTH;
             data[0]++;
         }
-        SetGpuReg(REG_OFFSET_WIN0H, WIN_RANGE(0, data[2]));
         break;
     case 2:
         data[3]++;
@@ -787,9 +783,6 @@ static void Task_TitleScreen_SlideWin0(u8 taskId)
         }
         break;
     case 3:
-        SetGpuReg(REG_OFFSET_WINOUT, WINOUT_WIN01_BG0 | WINOUT_WIN01_BG1 | WINOUT_WIN01_BG3 | WINOUT_WIN01_OBJ | WINOUT_WIN01_CLR);
-        SetGpuReg(REG_OFFSET_WIN0H, WIN_RANGE(DISPLAY_WIDTH, DISPLAY_WIDTH));
-        ChangeBgX(2, -0xF000, 0);
         BlendPalettes(1 << 0xF, 0, RGB_BLACK);
         data[1] = 10 * 24 << 4;
         data[0]++;
@@ -802,7 +795,6 @@ static void Task_TitleScreen_SlideWin0(u8 taskId)
             data[2] = 0;
             data[0]++;
         }
-        ChangeBgX(2, -data[2] << 8, 0);
         SetGpuReg(REG_OFFSET_WIN0H, WIN_RANGE(data[2], DISPLAY_WIDTH));
         break;
     case 5:

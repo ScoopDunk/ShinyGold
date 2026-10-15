@@ -689,6 +689,7 @@ extern const u8 gFameCheckerFlavorTextOriginObjectName_Giovanni5[];
 
 extern const u8 gOtherText_NewName[];
 extern const u8 gNameChoice_Green[];
+extern const u8 gNameChoice_Silver[];
 extern const u8 gNameChoice_Red[];
 extern const u8 gNameChoice_Fire[];
 extern const u8 gNameChoice_Leaf[];
