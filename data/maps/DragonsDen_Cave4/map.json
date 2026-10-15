@@ -1,0 +1,232 @@
+{
+  "id": "MAP_DRAGONS_DEN_CAVE4",
+  "name": "DragonsDen_Cave4",
+  "layout": "LAYOUT_DRAGONS_DEN_CAVE4",
+  "music": "MUS_EVOLUTION",
+  "region_map_section": "MAPSEC_DRAGONS_DEN",
+  "requires_flash": false,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "floor_number": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
+      "x": 15,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878D9B0",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
+      "x": 9,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878DEB0",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
+      "x": 38,
+      "y": 31,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878DE50",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
+      "x": 36,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878D4D0",
+      "flag": "0x244"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_RED_NORMAL",
+      "x": 19,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878D4E0",
+      "flag": "0x245"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 40,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878D5B0",
+      "flag": "0x246"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_RED_NORMAL",
+      "x": 35,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0878D4F0",
+      "flag": "0x247"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_SABRINA",
+      "x": 40,
+      "y": 24,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08000000",
+      "flag": "0x114B"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_LAPRAS_DOLL",
+      "x": 36,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08873840",
+      "flag": "0x05E"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_RS_BRENDAN",
+      "x": 25,
+      "y": 26,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x088274F8",
+      "flag": "0x090"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 24,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_DRAGONS_DEN_CAVE3",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 36,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_DRAGONS_DEN_CAVE2",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 23,
+      "elevation": 0,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0877B5C0"
+    },
+    {
+      "type": "trigger",
+      "x": 39,
+      "y": 17,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878D5A0"
+    },
+    {
+      "type": "trigger",
+      "x": 40,
+      "y": 18,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878D590"
+    },
+    {
+      "type": "trigger",
+      "x": 2,
+      "y": 0,
+      "elevation": 0,
+      "var": "0x0000",
+      "var_value": "0",
+      "script": "0x08000000"
+    },
+    {
+      "type": "trigger",
+      "x": 3,
+      "y": 0,
+      "elevation": 0,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 23,
+      "y": 27,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "0x0878D500"
+    }
+  ]
+}

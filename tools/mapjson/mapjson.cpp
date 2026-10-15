@@ -209,6 +209,14 @@ string generate_map_connections_text(Json map_data) {
     return text.str();
 }
 
+// An object event's local id is normally its index + 1. ShinyGold (made with binary map tools) has objects
+// whose local id differs from that; those carry an integer "explicit_local_id".
+string get_object_local_id(const Json &obj_event, unsigned int i) {
+    if (obj_event.object_items().find("explicit_local_id") != obj_event.object_items().end())
+        return json_to_string(obj_event, "explicit_local_id");
+    return std::to_string(i + 1);
+}
+
 string generate_map_events_text(Json map_data) {
     if (map_data.object_items().find("shared_events_map") != map_data.object_items().end())
         return string("\n");
@@ -227,10 +235,11 @@ string generate_map_events_text(Json map_data) {
         for (unsigned int i = 0; i < map_data["object_events"].array_items().size(); i++) {
             auto obj_event = map_data["object_events"].array_items()[i];
             string type = json_to_string(obj_event, "type", true);
+            string local_id = get_object_local_id(obj_event, i);
 
             // If no type field is present, assume it's a regular object event.
             if (type == "" || type == "object") {
-                text << "\tobject_event " << i + 1 << ", "
+                text << "\tobject_event " << local_id << ", "
                      << json_to_string(obj_event, "graphics_id") << ", "
                      << json_to_string(obj_event, "x") << ", "
                      << json_to_string(obj_event, "y") << ", "
@@ -243,12 +252,16 @@ string generate_map_events_text(Json map_data) {
                      << json_to_string(obj_event, "script") << ", "
                      << json_to_string(obj_event, "flag") << "\n";
             } else if (type == "clone") {
-                text << "\tclone_event " << i + 1 << ", "
+                text << "\tclone_event " << local_id << ", "
                      << json_to_string(obj_event, "graphics_id") << ", "
                      << json_to_string(obj_event, "x") << ", "
                      << json_to_string(obj_event, "y") << ", "
                      << json_to_string(obj_event, "target_local_id") << ", "
-                     << json_to_string(obj_event, "target_map") << "\n";
+                     << json_to_string(obj_event, "target_map");
+                // Optional: the clone template's own flag (checked before the clone is resolved).
+                if (obj_event.object_items().find("flag") != obj_event.object_items().end())
+                    text << ", " << json_to_string(obj_event, "flag");
+                text << "\n";
             } else {
                 FATAL_ERROR("Unknown object event type '%s'. Expected 'object' or 'clone'.\n", type.c_str());
             }
@@ -413,7 +426,7 @@ void process_event_constants(const vector<string> &map_filepaths, string output_
         for (unsigned int i = 0; i < obj_events.size(); i++) {
             auto obj_event = obj_events[i];
             if (obj_event.object_items().find("local_id") != obj_event.object_items().end())
-                map_ids_text << "#define " << json_to_string(obj_event, "local_id") << " " << i + 1 << "\n";
+                map_ids_text << "#define " << json_to_string(obj_event, "local_id") << " " << get_object_local_id(obj_event, i) << "\n";
         }
         // Get IDs from the warp events.
         auto warp_events = map_data["warp_events"].array_items();

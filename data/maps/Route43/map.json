@@ -1,0 +1,441 @@
+{
+  "id": "MAP_ROUTE43",
+  "name": "Route43",
+  "layout": "LAYOUT_ROUTE43",
+  "music": "MUS_SEVII_ROUTE",
+  "region_map_section": "MAPSEC_ROUTE_43",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "floor_number": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_LAKE_OF_RAGE",
+      "offset": -10,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_PALLET_TOWN_AREA1",
+      "offset": -20,
+      "direction": "none"
+    }
+  ],
+  "object_events": [
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+      "x": 15,
+      "y": 44,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "0x08781510",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
+      "x": 9,
+      "y": 29,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "0x08781590",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_POKE_MANIAC",
+      "x": 13,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "0x087815E0",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_POKE_MANIAC",
+      "x": 13,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "0x08781530",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_POKE_MANIAC",
+      "x": 14,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "0x08781550",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_FISHER",
+      "x": 4,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "0x08781570",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 12,
+      "y": 33,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08781500",
+      "flag": "0x205"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_BOY",
+      "x": 9,
+      "y": 48,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x081ACC07",
+      "flag": "0x10D8"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
+      "x": 2,
+      "y": 28,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x081BDF13",
+      "flag": "FLAG_TEMP_12"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_RED_NORMAL",
+      "x": 0,
+      "y": 28,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08780000",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_RED_NORMAL",
+      "x": 2,
+      "y": 24,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08780000",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_RED_NORMAL",
+      "x": 1,
+      "y": 1,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08780000",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_RED_NORMAL",
+      "x": 2,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08780000",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_RED_NORMAL",
+      "x": 2,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08780000",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_RED_NORMAL",
+      "x": 1,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08780000",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ENTEI",
+      "x": 14,
+      "y": 14,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0888D0A0",
+      "flag": "0x1230",
+      "explicit_local_id": 53
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_RAIKOU",
+      "x": 8,
+      "y": 33,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0888D140",
+      "flag": "0x1231",
+      "explicit_local_id": 51
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_SUICUNE",
+      "x": 8,
+      "y": 14,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0888D1E0",
+      "flag": "0x1232",
+      "explicit_local_id": 54
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 52,
+      "elevation": 0,
+      "dest_map": "MAP_MAHOGANY_TOWN_INTERIOR2",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 10,
+      "y": 52,
+      "elevation": 0,
+      "dest_map": "MAP_MAHOGANY_TOWN_INTERIOR2",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 17,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE43_INTERIOR1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 18,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE43_INTERIOR1",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 37,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x08781B40"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 31,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x08781B40"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 51,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x08781EC0"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 51,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x08781EE0"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 51,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x08781F00"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 2,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x087826A0"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 2,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x087826A0"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 2,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x087826A0"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 2,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x087826A0"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 2,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x087826A0"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 50,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "0x087814D0"
+    },
+    {
+      "type": "sign",
+      "x": 13,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "0x087814D0"
+    },
+    {
+      "type": "sign",
+      "x": 16,
+      "y": 39,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "0x087814E0"
+    },
+    {
+      "type": "sign",
+      "x": 1,
+      "y": 26,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "0x08780600"
+    }
+  ]
+}

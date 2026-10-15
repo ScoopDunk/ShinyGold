@@ -21,17 +21,16 @@
     },
     {
       "map": "MAP_VIRIDIAN_CITY",
-      "offset": -10,
+      "offset": -8,
       "direction": "right"
     }
   ],
   "object_events": [
     {
-      "local_id": "LOCALID_ROUTE22_RIVAL",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BLUE",
-      "x": 25,
-      "y": 4,
+      "x": 0,
+      "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -39,22 +38,22 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_ROUTE_22_RIVAL"
+      "flag": "0x04F"
     }
   ],
   "warp_events": [
     {
-      "x": 8,
+      "x": 22,
       "y": 5,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE22_NORTH_ENTRANCE",
-      "dest_warp_id": "2"
+      "dest_map": "MAP_ROUTE26_INTERIOR2",
+      "dest_warp_id": "1"
     },
     {
-      "x": 9,
-      "y": 5,
+      "x": 1,
+      "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE22_NORTH_ENTRANCE",
+      "dest_map": "MAP_MAIDENS_PEAK_DIS_INTERIOR8",
       "dest_warp_id": "2"
     }
   ],
@@ -62,66 +61,66 @@
     {
       "type": "trigger",
       "x": 33,
-      "y": 4,
+      "y": 0,
       "elevation": 3,
-      "var": "VAR_MAP_SCENE_ROUTE22",
+      "var": "0x4054",
       "var_value": "1",
-      "script": "Route22_EventScript_EarlyRivalTriggerTop"
+      "script": "0x0816828C"
     },
     {
       "type": "trigger",
       "x": 33,
-      "y": 5,
+      "y": 1,
       "elevation": 3,
-      "var": "VAR_MAP_SCENE_ROUTE22",
+      "var": "0x4054",
       "var_value": "1",
-      "script": "Route22_EventScript_EarlyRivalTriggerMid"
+      "script": "0x08168298"
     },
     {
       "type": "trigger",
       "x": 33,
-      "y": 6,
+      "y": 2,
       "elevation": 0,
-      "var": "VAR_MAP_SCENE_ROUTE22",
+      "var": "0x4054",
       "var_value": "1",
-      "script": "Route22_EventScript_EarlyRivalTriggerBottom"
+      "script": "0x081682AB"
     },
     {
       "type": "trigger",
       "x": 33,
-      "y": 4,
+      "y": 0,
       "elevation": 3,
-      "var": "VAR_MAP_SCENE_ROUTE22",
+      "var": "0x4054",
       "var_value": "3",
-      "script": "Route22_EventScript_LateRivalTriggerTop"
+      "script": "0x081683ED"
     },
     {
       "type": "trigger",
       "x": 33,
-      "y": 5,
+      "y": 1,
       "elevation": 3,
-      "var": "VAR_MAP_SCENE_ROUTE22",
+      "var": "0x4054",
       "var_value": "3",
-      "script": "Route22_EventScript_LateRivalTriggerMid"
+      "script": "0x081683F9"
     },
     {
       "type": "trigger",
       "x": 33,
-      "y": 6,
+      "y": 2,
       "elevation": 0,
-      "var": "VAR_MAP_SCENE_ROUTE22",
+      "var": "0x4054",
       "var_value": "3",
-      "script": "Route22_EventScript_LateRivalTriggerBottom"
+      "script": "0x0816840C"
     }
   ],
   "bg_events": [
     {
       "type": "sign",
-      "x": 7,
-      "y": 12,
+      "x": 20,
+      "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route22_EventScript_LeagueGateSign"
+      "script": "0x081684E2"
     }
   ]
 }

@@ -1,0 +1,274 @@
+{
+  "id": "MAP_OLIVINE_CITY",
+  "name": "OlivineCity",
+  "layout": "LAYOUT_OLIVINE_CITY",
+  "music": "MUS_SEVII_67",
+  "region_map_section": "MAPSEC_OLIVINE_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "floor_number": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE39",
+      "offset": 10,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE40",
+      "offset": 17,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_RS_BRENDAN",
+      "x": 11,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08167EEB",
+      "flag": "0x10C5"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "x": 20,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08779910",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_SAILOR",
+      "x": 18,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08779920",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_SAILOR",
+      "x": 25,
+      "y": 27,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x08779930",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 13,
+      "y": 16,
+      "elevation": 3,
+      "dest_map": "MAP_OLIVINE_CITY_INTERIOR4",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 14,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_OLIVINE_CITY_INTERIOR5",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 25,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_OLIVINE_CITY_INTERIOR8",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 19,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_OLIVINE_CITY_INTERIOR9",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_OLIVINE_CITY_INTERIOR7",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 19,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_OLIVINE_CITY_INTERIOR1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 20,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_OLIVINE_CITY_INTERIOR1",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 7,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_OLIVINE_CITY_INTERIOR2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 11,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_OLIVINE_CITY_INTERIOR3",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_LIGHTHOUSE_INTERIOR2",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 12,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x087796B0"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x087796E0"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 12,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0877A3D0"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 12,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0877E000"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0877E000"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 12,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878C6C0"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878C6C0"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 12,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "0x0878C6C0"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "0x087798E0"
+    },
+    {
+      "type": "sign",
+      "x": 17,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "0x087798D0"
+    },
+    {
+      "type": "sign",
+      "x": 30,
+      "y": 28,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "0x08779900"
+    },
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 24,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "0x087798F0"
+    },
+    {
+      "type": "sign",
+      "x": 23,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "0x08885640"
+    }
+  ]
+}
