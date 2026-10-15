@@ -72,10 +72,6 @@ VermilionCity_EventScript_ItemFullHeal::
 	finditem ITEM_FULL_HEAL
 	end
 
-VermilionCity_EventScript_Sign1::
-	msgbox VermilionCity_Text_Sign1, MSGBOX_AUTOCLOSE
-	end
-
 VermilionCity_EventScript_Sign2::
 	msgbox VermilionCity_Text_Sign2, MSGBOX_AUTOCLOSE
 	end
@@ -94,8 +90,4 @@ VermilionCity_EventScript_Sign5::
 
 VermilionCity_EventScript_Sign6::
 	msgbox VermilionCity_Text_Sign6, MSGBOX_AUTOCLOSE
-	end
-
-VermilionCity_EventScript_Sign7::
-	msgbox VermilionCity_Text_Sign7, MSGBOX_NPC
 	end
