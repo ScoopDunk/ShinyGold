@@ -36,19 +36,19 @@ MahoganyTown_Interior5_EventScript_BoarderBrad::
 	msgbox MahoganyTown_Interior5_Text_BoarderBrad, MSGBOX_AUTOCLOSE
 	end
 
-MahoganyTown_Interior5_EventScript_OldMan2::
+MahoganyTown_Interior5_EventScript_LeaderPryce::
 	setvar VAR_0x8004, 2
 	setvar VAR_0x8005, 2
 	special UpdatePickStateFromSpecialVar8005
-	trainerbattle_single TRAINER_LEADER_PRYCE, MahoganyTown_Interior5_Text_OldMan2Intro, MahoganyTown_Interior5_Text_OldMan2Defeat, MahoganyTown_Interior5_EventScript_OldMan2Continue, NO_MUSIC
-	msgbox MahoganyTown_Interior5_Text_OldMan2_1, MSGBOX_NPC
+	trainerbattle_single TRAINER_LEADER_PRYCE, MahoganyTown_Interior5_Text_LeaderPryceIntro, MahoganyTown_Interior5_Text_LeaderPryceDefeat, MahoganyTown_Interior5_EventScript_LeaderPryceContinue, NO_MUSIC
+	msgbox MahoganyTown_Interior5_Text_LeaderPryce_1, MSGBOX_NPC
 	.byte 0xFF @ invalid opcode (script stops)
 
-MahoganyTown_Interior5_EventScript_OldMan2Continue::
+MahoganyTown_Interior5_EventScript_LeaderPryceContinue::
 	setflag FLAG_BADGE08_GET
-	msgbox MahoganyTown_Interior5_Text_OldMan2_2, MSGBOX_NPC
+	msgbox MahoganyTown_Interior5_Text_LeaderPryce_2, MSGBOX_NPC
 	giveitem ITEM_TM16
-	msgbox MahoganyTown_Interior5_Text_OldMan2_3, MSGBOX_NPC
+	msgbox MahoganyTown_Interior5_Text_LeaderPryce_3, MSGBOX_NPC
 	end
 
 MahoganyTown_Interior5_EventScript_Sign1::

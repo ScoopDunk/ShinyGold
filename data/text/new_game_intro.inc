@@ -3,7 +3,7 @@ gOtherText_NewName::
 
 @ ShinyGold: modified in place by the hack
 gNameChoice_Green::
-	.string "$"
+	.string "SILVER$"
 
 gNameChoice_Red::
     .string "RED$"
@@ -186,7 +186,14 @@ gPikachuIntro_Text_Page2::
 
 @ ShinyGold: modified in place by the hack
 gPikachuIntro_Text_Page3::
-	.string "$"
+	.string "CREDITS\n"
+	.string "To GSC Platinum (specially Gridiron),\n"
+	.string "Fangking Omega, Enrico Marini, Marnic,\n"
+	.string "Neos, JIM, Red, birthofdna,\n"
+	.string "my beta testers, Pokecommunity, WAH,\n"
+	.string "Studiopokemon, youtube…\n"
+	.string "And most importantly…\n"
+	.string "Mastermind X! Out of space…$"
 
 @ ShinyGold: modified in place by the hack
 gOakSpeech_Text_WelcomeToTheWorld::
@@ -208,7 +215,16 @@ gOakSpeech_Text_IsInhabitedFarAndWide::
 
 @ ShinyGold: modified in place by the hack
 gOakSpeech_Text_IStudyPokemon::
-	.string "$"
+	.string "People and POKéMON live together\n"
+	.string "by supporting each other.\p"
+	.string "Some people play with POKéMON,\n"
+	.string "some battle with them.\p"
+	.string "But we don’t know everything about\n"
+	.string "POKéMON yet.\p"
+	.string "There are still many mysteries to\n"
+	.string "solve.\p"
+	.string "That’s why I study POKéMON every\n"
+	.string "day.$"
 
 gOakSpeech_Text_TellMeALittleAboutYourself::
     .string "But first, tell me a little about\n"
@@ -244,4 +260,10 @@ gOakSpeech_Text_RememberRivalsName::
 
 @ ShinyGold: modified in place by the hack
 gOakSpeech_Text_LetsGo::
-	.string "$"
+	.string "Your very own POKéMON story is about\n"
+	.string "to unfold.\p"
+	.string "You’ll face fun times and tough\n"
+	.string "challenges.\p"
+	.string "A world of dreams and adventures with\n"
+	.string "POKéMON awaits! Let’s go!\p"
+	.string "I’ll be seeing you later!$"

@@ -53,7 +53,7 @@ KalmCityNousar_Interior3_Text_SageTroyDefeat::
 KalmCityNousar_Interior3_Text_SageTroy::
 	.string "It is not far to the ELDER.$"
 
-KalmCityNousar_Interior3_Text_OldMan2_1::
+KalmCityNousar_Interior3_Text_SageLi_1::
 	.string "So good of you to come here!\p"
 	.string "SPROUT TOWER is a place of training.\p"
 	.string "People and POKéMON test their bonds\n"
@@ -62,24 +62,24 @@ KalmCityNousar_Interior3_Text_OldMan2_1::
 	.string "Allow me to check the ties between\l"
 	.string "your POkéMON and you!$"
 
-KalmCityNousar_Interior3_Text_OldMan2Defeat::
+KalmCityNousar_Interior3_Text_SageLiDefeat::
 	.string "Ah, excellent!$"
 
-KalmCityNousar_Interior3_Text_OldMan2Victory::
+KalmCityNousar_Interior3_Text_SageLiVictory::
 	.string "Ah, how disappointing!$"
 
-KalmCityNousar_Interior3_Text_OldMan2_2::
+KalmCityNousar_Interior3_Text_SageLi_2::
 	.string "You and your POKéMON should have\n"
 	.string "no problem using this move.\p"
 	.string "Take this FLASH HM.$"
 
-KalmCityNousar_Interior3_Text_OldMan2_3::
+KalmCityNousar_Interior3_Text_SageLi_3::
 	.string "FLASH illuminates even the darkest\n"
 	.string "of all places.\p"
 	.string "But to use it out of battle, you\n"
 	.string "need the BADGE from VIOLET’s GYM.$"
 
-KalmCityNousar_Interior3_Text_OldMan2_4::
+KalmCityNousar_Interior3_Text_SageLi_4::
 	.string "I hope you learn and grow from your\n"
 	.string "journey.$"
 

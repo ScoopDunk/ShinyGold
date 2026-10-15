@@ -34,7 +34,7 @@ AzaleaTown_Interior6_Text_BugCatcherBenny::
 	.string "POKéMON become stronger if they\n"
 	.string "evolve. Really!$"
 
-AzaleaTown_Interior6_Text_CamperIntro::
+AzaleaTown_Interior6_Text_LeaderBugsyIntro::
 	.string "I’m BUGSY!\n"
 	.string "I never lose when it comes to bug\l"
 	.string "POKéMON.\p"
@@ -43,19 +43,19 @@ AzaleaTown_Interior6_Text_CamperIntro::
 	.string "Let me demonstrate what I’ve\n"
 	.string "learned from my studies.$"
 
-AzaleaTown_Interior6_Text_CamperDefeat::
+AzaleaTown_Interior6_Text_LeaderBugsyDefeat::
 	.string "Whoa, amazing!\n"
 	.string "You’re an expert on POKéMON!\p"
 	.string "My research isn’t complete yet.\p"
 	.string "OK, you win. Take this BADGE.\p"
 	.string "{FONT 0x02}{PLAYER} received the HIVEBADGE!{PAUSE_MUSIC}{PLAY_BGM MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}$"
 
-AzaleaTown_Interior6_Text_Camper_1::
+AzaleaTown_Interior6_Text_LeaderBugsy_1::
 	.string "Bug POKéMON are deep. There are\n"
 	.string "many mysteries to be explored.\p"
 	.string "Study your favorites thoroughly.$"
 
-AzaleaTown_Interior6_Text_Camper_2::
+AzaleaTown_Interior6_Text_LeaderBugsy_2::
 	.string "Do you know the benefits of\n"
 	.string "HIVEBADGE?\p"
 	.string "If you have it, POKéMON up to L30\n"
@@ -64,7 +64,7 @@ AzaleaTown_Interior6_Text_Camper_2::
 	.string "to use it outside of battle too.\p"
 	.string "Here, I also want you to have this.$"
 
-AzaleaTown_Interior6_Text_Camper_3::
+AzaleaTown_Interior6_Text_LeaderBugsy_3::
 	.string "TM49 contains FURY CUTTER.\p"
 	.string "If you don’t miss, it gets stronger\n"
 	.string "every turn.\p"

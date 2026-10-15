@@ -35,18 +35,18 @@ SlowpokeWell_Cave1_EventScript_Slowpoke2::
 	msgbox SlowpokeWell_Cave1_Text_Slowpoke2, MSGBOX_NPC
 	end
 
-SlowpokeWell_Cave1_EventScript_RocketM::
-	msgbox SlowpokeWell_Cave1_Text_RocketM_1, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_TEAM_ROCKET_GRUNT, 0, SlowpokeWell_Cave1_Text_RocketMDefeat, SlowpokeWell_Cave1_Text_RocketMVictory
-	msgbox SlowpokeWell_Cave1_Text_RocketM_2, MSGBOX_NPC
-	call SlowpokeWell_Cave1_EventScript_RocketM_1
+SlowpokeWell_Cave1_EventScript_TeamRocketGrunt::
+	msgbox SlowpokeWell_Cave1_Text_TeamRocketGrunt_1, MSGBOX_NPC
+	trainerbattle_earlyrival TRAINER_TEAM_ROCKET_GRUNT, 0, SlowpokeWell_Cave1_Text_TeamRocketGruntDefeat, SlowpokeWell_Cave1_Text_TeamRocketGruntVictory
+	msgbox SlowpokeWell_Cave1_Text_TeamRocketGrunt_2, MSGBOX_NPC
+	call SlowpokeWell_Cave1_EventScript_TeamRocketGrunt_1
 	setflag 0x1061
 	clearflag 0x1059
 	warp MAP_SLOWPOKE_WELL_CAVE1, 2, 0x2028, 0x900
 	goto_if_gt 0x06090020
 	end
 
-SlowpokeWell_Cave1_EventScript_RocketM_1::
+SlowpokeWell_Cave1_EventScript_TeamRocketGrunt_1::
 	setvar 0x7030, 0x13C
 	setvar 0x7033, 0x129
 	release

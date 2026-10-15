@@ -1,20 +1,20 @@
 FuchsiaCity_Interior7_MapScripts::
 	.byte 0
 
-FuchsiaCity_Interior7_EventScript_CooltrainerF::
-	applymovement 1, FuchsiaCity_Interior7_Movement_CooltrainerF_1
+FuchsiaCity_Interior7_EventScript_CamperBarry::
+	applymovement 1, FuchsiaCity_Interior7_Movement_CamperBarry_1
 	delay 32
 	setobjectxy 13, 14, 8
 	setobjectxy 1, 5, 23
-	applymovement 13, FuchsiaCity_Interior7_Movement_CooltrainerF_2
+	applymovement 13, FuchsiaCity_Interior7_Movement_CamperBarry_2
 	delay 1
-	msgbox FuchsiaCity_Interior7_Text_CooltrainerF, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_CAMPER_BARRY, 0, FuchsiaCity_Interior7_Text_CooltrainerFDefeat, FuchsiaCity_Interior7_Text_CooltrainerFVictory
+	msgbox FuchsiaCity_Interior7_Text_CamperBarry, MSGBOX_NPC
+	trainerbattle_earlyrival TRAINER_CAMPER_BARRY, 0, FuchsiaCity_Interior7_Text_CamperBarryDefeat, FuchsiaCity_Interior7_Text_CamperBarryVictory
 	setflag 0x11FA
 	release
 	end
 
-FuchsiaCity_Interior7_Movement_CooltrainerF_1::
+FuchsiaCity_Interior7_Movement_CamperBarry_1::
 	face_up
 	face_left
 	face_down_fast
@@ -34,19 +34,19 @@ FuchsiaCity_Interior7_Movement_CooltrainerF_1::
 	face_down_fast
 	step_end
 
-FuchsiaCity_Interior7_Movement_CooltrainerF_2::
+FuchsiaCity_Interior7_Movement_CamperBarry_2::
 	face_player
 	step_end
 
-FuchsiaCity_Interior7_EventScript_CooltrainerF2::
-	applymovement 2, FuchsiaCity_Interior7_Movement_CooltrainerF_1
+FuchsiaCity_Interior7_EventScript_PicnickerCindy::
+	applymovement 2, FuchsiaCity_Interior7_Movement_CamperBarry_1
 	delay 32
 	setobjectxy 9, 8, 4
 	setobjectxy 2, 5, 23
-	applymovement 9, FuchsiaCity_Interior7_Movement_CooltrainerF_2
+	applymovement 9, FuchsiaCity_Interior7_Movement_CamperBarry_2
 	delay 1
-	msgbox FuchsiaCity_Interior7_Text_CooltrainerF2, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_PICNICKER_CINDY, 0, FuchsiaCity_Interior7_Text_CooltrainerF2Defeat, FuchsiaCity_Interior7_Text_CooltrainerFVictory
+	msgbox FuchsiaCity_Interior7_Text_PicnickerCindy, MSGBOX_NPC
+	trainerbattle_earlyrival TRAINER_PICNICKER_CINDY, 0, FuchsiaCity_Interior7_Text_PicnickerCindyDefeat, FuchsiaCity_Interior7_Text_CamperBarryVictory
 	setflag 0x11F9
 	release
 	end
@@ -82,51 +82,51 @@ FuchsiaCity_Interior7_EventScript_Lass::
 	msgbox FuchsiaCity_Interior7_Text_Lass, MSGBOX_NPC
 	end
 
-FuchsiaCity_Interior7_EventScript_CooltrainerF3::
-	applymovement 5, FuchsiaCity_Interior7_Movement_CooltrainerF_1
+FuchsiaCity_Interior7_EventScript_LassAlice::
+	applymovement 5, FuchsiaCity_Interior7_Movement_CamperBarry_1
 	delay 32
 	setobjectxy 15, 12, 2
 	setobjectxy 5, 5, 23
-	applymovement 15, FuchsiaCity_Interior7_Movement_CooltrainerF_2
+	applymovement 15, FuchsiaCity_Interior7_Movement_CamperBarry_2
 	delay 1
-	msgbox FuchsiaCity_Interior7_Text_CooltrainerF3, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_LASS_ALICE, 0, FuchsiaCity_Interior7_Text_CooltrainerF3Defeat, FuchsiaCity_Interior7_Text_CooltrainerFVictory
+	msgbox FuchsiaCity_Interior7_Text_LassAlice, MSGBOX_NPC
+	trainerbattle_earlyrival TRAINER_LASS_ALICE, 0, FuchsiaCity_Interior7_Text_LassAliceDefeat, FuchsiaCity_Interior7_Text_CamperBarryVictory
 	setflag 0x11FB
 	release
 	end
 
-FuchsiaCity_Interior7_EventScript_CooltrainerF4::
-	applymovement 6, FuchsiaCity_Interior7_Movement_CooltrainerF_1
+FuchsiaCity_Interior7_EventScript_LassLinda::
+	applymovement 6, FuchsiaCity_Interior7_Movement_CamperBarry_1
 	delay 32
 	setobjectxy 4, 8, 12
 	setobjectxy 6, 5, 23
-	applymovement 4, FuchsiaCity_Interior7_Movement_CooltrainerF_2
+	applymovement 4, FuchsiaCity_Interior7_Movement_CamperBarry_2
 	delay 1
-	msgbox FuchsiaCity_Interior7_Text_CooltrainerF4, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_LASS_LINDA, 0, FuchsiaCity_Interior7_Text_CooltrainerF4Defeat, FuchsiaCity_Interior7_Text_CooltrainerFVictory
+	msgbox FuchsiaCity_Interior7_Text_LassLinda, MSGBOX_NPC
+	trainerbattle_earlyrival TRAINER_LASS_LINDA, 0, FuchsiaCity_Interior7_Text_LassLindaDefeat, FuchsiaCity_Interior7_Text_CamperBarryVictory
 	setflag 0x11F8
 	release
 	end
 
-FuchsiaCity_Interior7_EventScript_CooltrainerF5::
-	applymovement 7, FuchsiaCity_Interior7_Movement_CooltrainerF_1
+FuchsiaCity_Interior7_EventScript_LeaderJanine2::
+	applymovement 7, FuchsiaCity_Interior7_Movement_CamperBarry_1
 	delay 32
-	applymovement 6, FuchsiaCity_Interior7_Movement_CooltrainerF_2
+	applymovement 6, FuchsiaCity_Interior7_Movement_CamperBarry_2
 	delay 1
 	setvar VAR_0x8004, 2
 	setvar VAR_0x8005, 2
 	special UpdatePickStateFromSpecialVar8005
-	call Unused_CeruleanCity_Gym_EventScript_Misty_1
-	trainerbattle_single TRAINER_LEADER_JANINE_2, FuchsiaCity_Interior7_Text_CooltrainerF5Intro, FuchsiaCity_Interior7_Text_CooltrainerF5Defeat, FuchsiaCity_Interior7_EventScript_CooltrainerF5Continue, NO_MUSIC
-	msgbox FuchsiaCity_Interior7_Text_CooltrainerF5_1, MSGBOX_NPC
+	call Unused_CeruleanCity_Gym_EventScript_LeaderMisty_1
+	trainerbattle_single TRAINER_LEADER_JANINE_2, FuchsiaCity_Interior7_Text_LeaderJanine2Intro, FuchsiaCity_Interior7_Text_LeaderJanine2Defeat, FuchsiaCity_Interior7_EventScript_LeaderJanine2Continue, NO_MUSIC
+	msgbox FuchsiaCity_Interior7_Text_LeaderJanine2_1, MSGBOX_NPC
 	end
 
-FuchsiaCity_Interior7_EventScript_CooltrainerF5Continue::
+FuchsiaCity_Interior7_EventScript_LeaderJanine2Continue::
 	setflag 0x11F7
 	call LavenderTown_EventScript_Trigger6_3
-	msgbox FuchsiaCity_Interior7_Text_CooltrainerF5_2, MSGBOX_NPC
+	msgbox FuchsiaCity_Interior7_Text_LeaderJanine2_2, MSGBOX_NPC
 	giveitem ITEM_TM06
-	msgbox FuchsiaCity_Interior7_Text_CooltrainerF5_1, MSGBOX_NPC
+	msgbox FuchsiaCity_Interior7_Text_LeaderJanine2_1, MSGBOX_NPC
 	end
 
 FuchsiaCity_Interior7_EventScript_GymGuy::

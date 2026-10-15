@@ -46,11 +46,11 @@ Route29_EventScript_Trigger1::
 	msgbox Unused_G2_M68_Text_Trigger1_1, MSGBOX_NPC
 	applymovement 2, Route29_Movement_Trigger1_1
 	delay 144
-	call Route44_EventScript_TeachyTvHost_1
+	call Route44_EventScript_PkmnTrainerCarlos3_1
 	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_194, 0, Unused_G2_M68_Text_Trigger1Defeat, Unused_G2_M68_Text_Trigger1Defeat
 	setflag 0x1007
 	delay 32
-	call Route44_EventScript_TeachyTvHost_2
+	call Route44_EventScript_PkmnTrainerCarlos3_2
 	msgbox Unused_G2_M68_Text_Trigger1_2, MSGBOX_NPC
 	applymovement LOCALID_PLAYER, Route29_Movement_Trigger1_2
 	applymovement 2, Unused_G2_M68_Movement_Trigger1_3
@@ -81,11 +81,11 @@ Route29_EventScript_Trigger2::
 	msgbox Unused_G2_M68_Text_Trigger1_1, MSGBOX_NPC
 	applymovement 2, Unused_G2_M68_Movement_Trigger1_1
 	delay 144
-	call Route44_EventScript_TeachyTvHost_1
+	call Route44_EventScript_PkmnTrainerCarlos3_1
 	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_194, 0, Unused_G2_M68_Text_Trigger1Defeat, Unused_G2_M68_Text_Trigger1Defeat
 	setflag 0x1007
 	delay 32
-	call Route44_EventScript_TeachyTvHost_2
+	call Route44_EventScript_PkmnTrainerCarlos3_2
 	msgbox Unused_G2_M68_Text_Trigger1_2, MSGBOX_NPC
 	applymovement LOCALID_PLAYER, Unused_G2_M68_Movement_Trigger1_2
 	applymovement 2, Unused_G2_M68_Movement_Trigger1_3

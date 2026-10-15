@@ -9,7 +9,7 @@ MahoganyTown_OnFrame::
 MahoganyTown_EventScript_FrameScene::
 	setflag 0x1373
 	call NewBarkTown_EventScript_FrameScene_1
-	call SlowpokeWell_Cave1_EventScript_RocketM_1
+	call SlowpokeWell_Cave1_EventScript_TeamRocketGrunt_1
 	setvar 0x7027, 1
 	call MahoganyTown_EventScript_FrameScene_1
 	call Route35_EventScript_FrameScene_2

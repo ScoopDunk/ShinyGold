@@ -21,12 +21,12 @@ FuchsiaCity_Interior9_EventScript_Rocker::
 FuchsiaCity_Interior9_EventScript_Woman2::
 	@ ShinyGold: overlapping data duplicated from 0x0887E660
 	msgbox FuchsiaCity_Interior9_Text_Woman2_1, MSGBOX_NPC
-	applymovement 3, FuchsiaCity_Interior7_Movement_CooltrainerF_1
+	applymovement 3, FuchsiaCity_Interior7_Movement_CamperBarry_1
 	delay 48
 	setobjectxy 3, 4, 10
 	setobjectxy 5, 4, 4
 	msgbox FuchsiaCity_Interior9_Text_Woman2_2, MSGBOX_NPC
-	applymovement 5, FuchsiaCity_Interior7_Movement_CooltrainerF_1
+	applymovement 5, FuchsiaCity_Interior7_Movement_CamperBarry_1
 	delay 48
 	setobjectxy 5, 4, 10
 	setobjectxy 3, 4, 4

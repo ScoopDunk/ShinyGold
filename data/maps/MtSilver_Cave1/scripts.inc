@@ -2,16 +2,16 @@ MtSilver_Cave1_MapScripts::
 	@ ShinyGold: map script header pointer was NULL
 	.byte 0
 
-MtSilver_Cave1_EventScript_TeachyTvHost::
+MtSilver_Cave1_EventScript_PkmnTrainerRed::
 	lockall
 	faceplayer
 	setvar 0x7030, 0x129
 	setvar 0x7033, 0x158
-	msgbox MtSilver_Cave1_Text_TeachyTvHost_1, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_RED, 0, MtSilver_Cave1_Text_TeachyTvHostDefeat, MtSilver_Cave1_Text_TeachyTvHostDefeat
+	msgbox MtSilver_Cave1_Text_PkmnTrainerRed_1, MSGBOX_NPC
+	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_RED, 0, MtSilver_Cave1_Text_PkmnTrainerRedDefeat, MtSilver_Cave1_Text_PkmnTrainerRedDefeat
 	setvar 0x7030, 0x158
 	setvar 0x7033, 0x129
-	msgbox MtSilver_Cave1_Text_TeachyTvHost_2, MSGBOX_NPC
+	msgbox MtSilver_Cave1_Text_PkmnTrainerRed_2, MSGBOX_NPC
 	fadescreen FADE_TO_BLACK
 	setflag 0x02F
 	setflag 0x05E

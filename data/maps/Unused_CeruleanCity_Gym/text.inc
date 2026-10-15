@@ -23,7 +23,7 @@ Unused_CeruleanCity_Gym_Text_PicnickerDiana::
 	.string "You have to face other TRAINERS\n"
 	.string "to see how good you really are.$"
 
-Unused_CeruleanCity_Gym_Text_MistyIntro::
+Unused_CeruleanCity_Gym_Text_LeaderMistyIntro::
 	.string "MISTY: I was expecting you, you\n"
 	.string "pest!\p"
 	.string "You may have a lot of JOHTO GYM\n"
@@ -31,13 +31,13 @@ Unused_CeruleanCity_Gym_Text_MistyIntro::
 	.string "me too lightly.\p"
 	.string "My water-type POKéMON are tough!$"
 
-Unused_CeruleanCity_Gym_Text_MistyDefeat::
+Unused_CeruleanCity_Gym_Text_LeaderMistyDefeat::
 	.string "MISTY: You really are good...\p"
 	.string "I’ll admit that you are skilled...\p"
 	.string "Here you go. It’s CASCADEBADGE.\p"
 	.string "{FONT 0x02}{PLAYER} received the CASCADEBADGE!{PAUSE_MUSIC}{PLAY_BGM MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}$"
 
-Unused_CeruleanCity_Gym_Text_Misty::
+Unused_CeruleanCity_Gym_Text_LeaderMisty::
 	.string "MISTY: Are there many strong trainers\n"
 	.string "in JOHTO? Like you, I mean.\p"
 	.string "I’m going to travel one day, so\n"

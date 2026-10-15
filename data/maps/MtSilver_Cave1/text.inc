@@ -1,11 +1,11 @@
-MtSilver_Cave1_Text_TeachyTvHost_1::
+MtSilver_Cave1_Text_PkmnTrainerRed_1::
 	.string "... ...\n"
 	.string "... ...$"
 
-MtSilver_Cave1_Text_TeachyTvHostDefeat::
+MtSilver_Cave1_Text_PkmnTrainerRedDefeat::
 	.string "... ...?$"
 
-MtSilver_Cave1_Text_TeachyTvHost_2::
+MtSilver_Cave1_Text_PkmnTrainerRed_2::
 	.string "... ... ...$"
 
 MtSilver_Cave1_Text_Fossil_1::

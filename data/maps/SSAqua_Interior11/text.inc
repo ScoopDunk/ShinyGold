@@ -21,7 +21,7 @@ SSAqua_Interior11_Text_BurglarCory::
 	.string "I found a pretty coin here.\n"
 	.string "Someone must have lost it...$"
 
-SSAqua_Interior11_Text_Sailor_1::
+SSAqua_Interior11_Text_SailorStanly_1::
 	.string "Yeah, I’m a sailor, all right.\p"
 	.string "I wasn’t goofing off!\p"
 	.string "This cabin was vacant, so I just\n"
@@ -29,12 +29,12 @@ SSAqua_Interior11_Text_Sailor_1::
 	.string "Ah, forget it!\n"
 	.string "Let’s battle!$"
 
-SSAqua_Interior11_Text_SailorDefeat::
+SSAqua_Interior11_Text_SailorStanlyDefeat::
 	.string "Sorry! It’s all my fault!$"
 
-SSAqua_Interior11_Text_SailorVictory::
+SSAqua_Interior11_Text_SailorStanlyVictory::
 	.string "Yaaaawn...$"
 
-SSAqua_Interior11_Text_Sailor_2::
+SSAqua_Interior11_Text_SailorStanly_2::
 	.string "Being a sailor, I have to do phys-\n"
 	.string "ical labor. It’s exhausting!$"

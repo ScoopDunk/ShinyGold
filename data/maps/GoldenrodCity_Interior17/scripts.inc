@@ -154,7 +154,7 @@ GoldenrodCity_Interior17_Movement_Trigger2::
 	step_end
 
 GoldenrodCity_Interior17_EventScript_Trigger3::
-	call SlowpokeWell_Cave1_EventScript_RocketM_1
+	call SlowpokeWell_Cave1_EventScript_TeamRocketGrunt_1
 	release
 	end
 

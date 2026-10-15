@@ -31,21 +31,21 @@ SaffronCity_Interior5_EventScript_PsychicFranklin::
 	msgbox SaffronCity_Interior5_Text_PsychicFranklin, MSGBOX_AUTOCLOSE
 	end
 
-SaffronCity_Interior5_EventScript_Sabrina::
+SaffronCity_Interior5_EventScript_LeaderSabrina::
 	setvar VAR_0x8004, 2
 	setvar VAR_0x8005, 2
 	special UpdatePickStateFromSpecialVar8005
-	call Unused_CeruleanCity_Gym_EventScript_Misty_1
-	trainerbattle_single TRAINER_LEADER_SABRINA, SaffronCity_Interior5_Text_SabrinaIntro, SaffronCity_Interior5_Text_SabrinaDefeat, SaffronCity_Interior5_EventScript_SabrinaContinue, NO_MUSIC
-	msgbox SaffronCity_Interior5_Text_Sabrina_1, MSGBOX_NPC
+	call Unused_CeruleanCity_Gym_EventScript_LeaderMisty_1
+	trainerbattle_single TRAINER_LEADER_SABRINA, SaffronCity_Interior5_Text_LeaderSabrinaIntro, SaffronCity_Interior5_Text_LeaderSabrinaDefeat, SaffronCity_Interior5_EventScript_LeaderSabrinaContinue, NO_MUSIC
+	msgbox SaffronCity_Interior5_Text_LeaderSabrina_1, MSGBOX_NPC
 	end
 
-SaffronCity_Interior5_EventScript_SabrinaContinue::
+SaffronCity_Interior5_EventScript_LeaderSabrinaContinue::
 	setflag 0x117F
 	call LavenderTown_EventScript_Trigger6_3
-	msgbox SaffronCity_Interior5_Text_Sabrina_2, MSGBOX_NPC
+	msgbox SaffronCity_Interior5_Text_LeaderSabrina_2, MSGBOX_NPC
 	delay 16
-	msgbox SaffronCity_Interior5_Text_Sabrina_3, MSGBOX_NPC
+	msgbox SaffronCity_Interior5_Text_LeaderSabrina_3, MSGBOX_NPC
 	end
 
 SaffronCity_Interior5_EventScript_PsychicNorman::

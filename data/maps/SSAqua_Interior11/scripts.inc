@@ -25,29 +25,29 @@ SSAqua_Interior11_EventScript_BurglarCory_1::
 	clearflag 0x1196
 	end
 
-SSAqua_Interior11_EventScript_Sailor::
-	msgbox SSAqua_Interior11_Text_Sailor_1, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_SAILOR_STANLY, 0, SSAqua_Interior11_Text_SailorDefeat, SSAqua_Interior11_Text_SailorVictory
+SSAqua_Interior11_EventScript_SailorStanly::
+	msgbox SSAqua_Interior11_Text_SailorStanly_1, MSGBOX_NPC
+	trainerbattle_earlyrival TRAINER_SAILOR_STANLY, 0, SSAqua_Interior11_Text_SailorStanlyDefeat, SSAqua_Interior11_Text_SailorStanlyVictory
 	setflag 0x1169
 	setflag 0x1167
-	msgbox SSAqua_Interior11_Text_Sailor_2, MSGBOX_NPC
-	call_if_eq VAR_TEMP_1, 1, SSAqua_Interior11_EventScript_Sailor_1
-	call_if_eq VAR_TEMP_1, 2, SSAqua_Interior11_EventScript_Sailor_2
+	msgbox SSAqua_Interior11_Text_SailorStanly_2, MSGBOX_NPC
+	call_if_eq VAR_TEMP_1, 1, SSAqua_Interior11_EventScript_SailorStanly_1
+	call_if_eq VAR_TEMP_1, 2, SSAqua_Interior11_EventScript_SailorStanly_2
 	end
 
-SSAqua_Interior11_EventScript_Sailor_1::
-	applymovement 3, SSAqua_Interior11_Movement_Sailor_1
+SSAqua_Interior11_EventScript_SailorStanly_1::
+	applymovement 3, SSAqua_Interior11_Movement_SailorStanly_1
 	delay 48
 	release
 	end
 
-SSAqua_Interior11_EventScript_Sailor_2::
-	applymovement 3, SSAqua_Interior11_Movement_Sailor_2
+SSAqua_Interior11_EventScript_SailorStanly_2::
+	applymovement 3, SSAqua_Interior11_Movement_SailorStanly_2
 	delay 80
 	release
 	end
 
-SSAqua_Interior11_Movement_Sailor_1::
+SSAqua_Interior11_Movement_SailorStanly_1::
 	walk_left
 	walk_left
 	face_up
@@ -56,7 +56,7 @@ SSAqua_Interior11_Movement_Sailor_1::
 	walk_fast_up
 	step_end
 
-SSAqua_Interior11_Movement_Sailor_2::
+SSAqua_Interior11_Movement_SailorStanly_2::
 	walk_down
 	walk_left
 	walk_left

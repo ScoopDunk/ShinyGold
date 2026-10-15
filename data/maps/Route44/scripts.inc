@@ -152,31 +152,31 @@ Route44_EventScript_BirdKeeper99_5::
 	release
 	end
 
-Route44_EventScript_TeachyTvHost::
+Route44_EventScript_PkmnTrainerCarlos3::
 	setflag 0x112B
-	msgbox Route44_Text_TeachyTvHost_1, MSGBOX_NPC
-	call Route44_EventScript_TeachyTvHost_1
-	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_CARLOS_3, 0, Route44_Text_TeachyTvHostDefeat, Route44_Text_TeachyTvHostVictory
-	msgbox Route44_Text_TeachyTvHost_2, MSGBOX_NPC
-	call Route44_EventScript_TeachyTvHost_2
-	applymovement 9, Route44_Movement_TeachyTvHost
+	msgbox Route44_Text_PkmnTrainerCarlos3_1, MSGBOX_NPC
+	call Route44_EventScript_PkmnTrainerCarlos3_1
+	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_CARLOS_3, 0, Route44_Text_PkmnTrainerCarlos3Defeat, Route44_Text_PkmnTrainerCarlos3Victory
+	msgbox Route44_Text_PkmnTrainerCarlos3_2, MSGBOX_NPC
+	call Route44_EventScript_PkmnTrainerCarlos3_2
+	applymovement 9, Route44_Movement_PkmnTrainerCarlos3
 	delay 240
 	release
 	end
 
-Route44_EventScript_TeachyTvHost_1::
+Route44_EventScript_PkmnTrainerCarlos3_1::
 	setvar 0x7030, 0x129
 	setvar 0x7033, 0x158
 	release
 	return
 
-Route44_EventScript_TeachyTvHost_2::
+Route44_EventScript_PkmnTrainerCarlos3_2::
 	setvar 0x7030, 0x158
 	setvar 0x7033, 0x129
 	release
 	return
 
-Route44_Movement_TeachyTvHost::
+Route44_Movement_PkmnTrainerCarlos3::
 	face_down_fast
 	jump_2_down
 	walk_left

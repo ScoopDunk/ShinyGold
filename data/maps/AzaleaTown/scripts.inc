@@ -9,7 +9,7 @@ AzaleaTown_OnFrame::
 AzaleaTown_EventScript_FrameScene::
 	setflag 0x136D
 	call NewBarkTown_EventScript_FrameScene_1
-	call SlowpokeWell_Cave1_EventScript_RocketM_1
+	call SlowpokeWell_Cave1_EventScript_TeamRocketGrunt_1
 	setvar 0x7023, 1
 	call AzaleaTown_EventScript_FrameScene_1
 	call Route35_EventScript_FrameScene_2

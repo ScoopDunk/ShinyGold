@@ -1,4 +1,4 @@
-Route24_Text_RocketM_1::
+Route24_Text_TeamRocketGrunt3_1::
 	.string "Hey, kid! Me am a TEAM ROCKET\n"
 	.string "member kind of guy!\p"
 	.string "Come from another country, a trainer\n"
@@ -12,17 +12,17 @@ Route24_Text_RocketM_1::
 	.string "tell.\p"
 	.string "Hey, kid! Battle begin we do!$"
 
-Route24_Text_RocketMDefeat::
+Route24_Text_TeamRocketGrunt3Defeat::
 	.string "Ayieeeh! No, no, no, believe it I\n"
 	.string "can’t!\p"
 	.string "Strong very much be you! Match I am\n"
 	.string "not to you!$"
 
-Route24_Text_RocketMVictory::
+Route24_Text_TeamRocketGrunt3Victory::
 	.string "Hahaha! Trainer number one,\n"
 	.string "me told you!$"
 
-Route24_Text_RocketM_2::
+Route24_Text_TeamRocketGrunt3_2::
 	.string "OK. Tell you mine secret will I.\p"
 	.string "MACHINE PART steal by me, hide it I\n"
 	.string "did in GYM of CERULEAN.\p"
@@ -33,7 +33,7 @@ Route24_Text_RocketM_2::
 	.string "Come from JOHTO will they, mine\n"
 	.string "friends, yes. Will revenge they are.$"
 
-Route24_Text_RocketM_3::
+Route24_Text_TeamRocketGrunt3_3::
 	.string "...\p"
 	.string "You say what? TEAM ROCKET bye-bye a\n"
 	.string "go-go? Broken it says you?\p"

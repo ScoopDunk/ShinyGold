@@ -78,7 +78,7 @@ ViridianCity_Interior2_Text_RivalTerry4::
 	.string "LEAGUE only by defeating our GYM\l"
 	.string "LEADER!$"
 
-ViridianCity_Interior2_Text_BlueIntro::
+ViridianCity_Interior2_Text_LeaderBlue2Intro::
 	.string "BLUE: Yo! Finally got here, huh?\p"
 	.string "I wasn’t in the mood as CINNABAR,\n"
 	.string "but now I’m ready to battle you.\p"
@@ -92,7 +92,7 @@ ViridianCity_Interior2_Text_BlueIntro::
 	.string "by battling you right now.\p"
 	.string "Ready, JOHTO CHAMP?$"
 
-ViridianCity_Interior2_Text_BlueDefeat::
+ViridianCity_Interior2_Text_LeaderBlue2Defeat::
 	.string "BLUE: What?\n"
 	.string "How the heck did I lose to you?\p"
 	.string "..\p"
@@ -100,12 +100,12 @@ ViridianCity_Interior2_Text_BlueDefeat::
 	.string "it’s EARTHBADGE.\p"
 	.string "{FONT 0x02}{PLAYER} received the EARTHBADGE!{PAUSE_MUSIC}{PLAY_BGM MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}$"
 
-ViridianCity_Interior2_Text_Blue_1::
+ViridianCity_Interior2_Text_LeaderBlue2_1::
 	.string "BLUE: Listen, you.\n"
 	.string "You’d better not lose until I beat\l"
 	.string "you. Got it?$"
 
-ViridianCity_Interior2_Text_Blue_2::
+ViridianCity_Interior2_Text_LeaderBlue2_2::
 	.string "BLUE: ...\p"
 	.string "All right. I was wrong.\n"
 	.string "You’re the real deal.\p"

@@ -52,60 +52,60 @@ EcruteakCity_Interior4_Text_OldWoman::
 EcruteakCity_Interior4_Text_Machoke::
 	.string "MACHOKE: Machoooo!$"
 
-EcruteakCity_Interior4_Text_Woman2Intro::
+EcruteakCity_Interior4_Text_KimonoGirlNaokoIntro::
 	.string "You have lovely POKéMON. May I see\n"
 	.string "them in battle?$"
 
-EcruteakCity_Interior4_Text_Woman2Defeat::
+EcruteakCity_Interior4_Text_KimonoGirlNaokoDefeat::
 	.string "Oh, you are very strong.$"
 
-EcruteakCity_Interior4_Text_Woman2::
+EcruteakCity_Interior4_Text_KimonoGirlNaoko::
 	.string "I enjoyed that bout. I would like\n"
 	.string "to see you again.$"
 
-EcruteakCity_Interior4_Text_Woman22Intro::
+EcruteakCity_Interior4_Text_KimonoGirlSayoIntro::
 	.string "I always dance with my POKéMON.\n"
 	.string "Of course, I also train them.$"
 
-EcruteakCity_Interior4_Text_Woman22Defeat::
+EcruteakCity_Interior4_Text_KimonoGirlSayoDefeat::
 	.string "Oh, so close!\n"
 	.string "I almost had you.$"
 
-EcruteakCity_Interior4_Text_Woman22::
+EcruteakCity_Interior4_Text_KimonoGirlSayo::
 	.string "Rhythm is important for both\n"
 	.string "dancing and POKéMON.$"
 
-EcruteakCity_Interior4_Text_Woman23Intro::
+EcruteakCity_Interior4_Text_KimonoGirlZukiIntro::
 	.string "Isn’t my barrette pretty?\p"
 	.string "Oh. A POKéMON battle?$"
 
-EcruteakCity_Interior4_Text_Woman23Defeat::
+EcruteakCity_Interior4_Text_KimonoGirlZukiDefeat::
 	.string "I don’t have any POKéMON left...$"
 
-EcruteakCity_Interior4_Text_Woman23::
+EcruteakCity_Interior4_Text_KimonoGirlZuki::
 	.string "I put a different flower in my\n"
 	.string "barrette every month.$"
 
-EcruteakCity_Interior4_Text_Woman24Intro::
+EcruteakCity_Interior4_Text_KimonoGirlKuniIntro::
 	.string "Oh, you’re a cute trainer. Would you\n"
 	.string "like to battle?$"
 
-EcruteakCity_Interior4_Text_Woman24Defeat::
+EcruteakCity_Interior4_Text_KimonoGirlKuniDefeat::
 	.string "You’re stronger than you look.$"
 
-EcruteakCity_Interior4_Text_Woman24::
+EcruteakCity_Interior4_Text_KimonoGirlKuni::
 	.string "I trained a lot, so I thought I was\n"
 	.string "a capable trainer.\l"
 	.string "I guess I’m not.$"
 
-EcruteakCity_Interior4_Text_Woman25Intro::
+EcruteakCity_Interior4_Text_KimonoGirlMikiIntro::
 	.string "Do you like my dancing?\n"
 	.string "I’m good at POKéMON too.$"
 
-EcruteakCity_Interior4_Text_Woman25Defeat::
+EcruteakCity_Interior4_Text_KimonoGirlMikiDefeat::
 	.string "Ooh, you’re good at POKéMON too.$"
 
-EcruteakCity_Interior4_Text_Woman25::
+EcruteakCity_Interior4_Text_KimonoGirlMiki::
 	.string "I can keep dancing because there are\n"
 	.string "people who enjoy what I do.\p"
 	.string "My POKéMON keep my spirits up too.$"

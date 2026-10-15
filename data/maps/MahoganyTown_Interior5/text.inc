@@ -68,7 +68,7 @@ MahoganyTown_Interior5_Text_BoarderBrad::
 	.string "This GYM is great.\n"
 	.string "I love boarding with my POKéMON!$"
 
-MahoganyTown_Interior5_Text_OldMan2Intro::
+MahoganyTown_Interior5_Text_LeaderPryceIntro::
 	.string "POKéMON have many experiences in\n"
 	.string "their lives, just like we do.\p"
 	.string "I, too, have seen and suffered much\n"
@@ -81,21 +81,21 @@ MahoganyTown_Interior5_Text_OldMan2Intro::
 	.string "I, PRYCE--the winter trainer--\n"
 	.string "shall demonstrate my power!$"
 
-MahoganyTown_Interior5_Text_OldMan2Defeat::
+MahoganyTown_Interior5_Text_LeaderPryceDefeat::
 	.string "Ah, I am impressed by your prowess.\p"
 	.string "With your strong will, I know you\n"
 	.string "will overcome all life’s obstacles.\p"
 	.string "You are worthy of this BADGE!\p"
 	.string "{FONT 0x02}{PLAYER} received the GLACIERBADGE!{PAUSE_MUSIC}{PLAY_BGM MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}$"
 
-MahoganyTown_Interior5_Text_OldMan2_1::
+MahoganyTown_Interior5_Text_LeaderPryce_1::
 	.string "When the ice and snow melt, spring\n"
 	.string "arrives.\p"
 	.string "You and your POKéMON will be\n"
 	.string "together for many years to come.\p"
 	.string "Cherish your time together!$"
 
-MahoganyTown_Interior5_Text_OldMan2_2::
+MahoganyTown_Interior5_Text_LeaderPryce_2::
 	.string "That BADGE will raise the SPECIAL\n"
 	.string "stats of POKéMON.\p"
 	.string "It also lets your POKéMON use\n"
@@ -103,7 +103,7 @@ MahoganyTown_Interior5_Text_OldMan2_2::
 	.string "whirlpools.\p"
 	.string "And this... This is a gift from me!$"
 
-MahoganyTown_Interior5_Text_OldMan2_3::
+MahoganyTown_Interior5_Text_LeaderPryce_3::
 	.string "That TM contains ICY WIND.\p"
 	.string "It inflicts damage and lowers\n"
 	.string "speed.\p"

@@ -11,25 +11,25 @@ Unused_CeruleanCity_Gym_EventScript_PicnickerDiana::
 	msgbox Unused_CeruleanCity_Gym_Text_PicnickerDiana, MSGBOX_AUTOCLOSE
 	end
 
-Unused_CeruleanCity_Gym_EventScript_Misty::
+Unused_CeruleanCity_Gym_EventScript_LeaderMisty::
 	setvar VAR_0x8004, 2
 	setvar VAR_0x8005, 2
 	special UpdatePickStateFromSpecialVar8005
-	call Unused_CeruleanCity_Gym_EventScript_Misty_1
-	trainerbattle_single TRAINER_LEADER_MISTY, Unused_CeruleanCity_Gym_Text_MistyIntro, Unused_CeruleanCity_Gym_Text_MistyDefeat, Unused_CeruleanCity_Gym_EventScript_MistyContinue, NO_MUSIC
-	msgbox Unused_CeruleanCity_Gym_Text_Misty, MSGBOX_NPC
+	call Unused_CeruleanCity_Gym_EventScript_LeaderMisty_1
+	trainerbattle_single TRAINER_LEADER_MISTY, Unused_CeruleanCity_Gym_Text_LeaderMistyIntro, Unused_CeruleanCity_Gym_Text_LeaderMistyDefeat, Unused_CeruleanCity_Gym_EventScript_LeaderMistyContinue, NO_MUSIC
+	msgbox Unused_CeruleanCity_Gym_Text_LeaderMisty, MSGBOX_NPC
 	end
 
-Unused_CeruleanCity_Gym_EventScript_Misty_1::
+Unused_CeruleanCity_Gym_EventScript_LeaderMisty_1::
 	setvar 0x7030, 0x128
 	setvar 0x7033, 0x109
 	release
 	return
 
-Unused_CeruleanCity_Gym_EventScript_MistyContinue::
+Unused_CeruleanCity_Gym_EventScript_LeaderMistyContinue::
 	setflag 0x1180
 	call LavenderTown_EventScript_Trigger6_3
-	msgbox Unused_CeruleanCity_Gym_Text_Misty, MSGBOX_NPC
+	msgbox Unused_CeruleanCity_Gym_Text_LeaderMisty, MSGBOX_NPC
 	end
 
 Unused_CeruleanCity_Gym_EventScript_GymGuy::

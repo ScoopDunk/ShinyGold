@@ -1,40 +1,40 @@
-DragonsDen_Cave4_Text_CooltrainerM_1::
+DragonsDen_Cave4_Text_DragonTamerAirat_1::
 	.string "We are the three DRAGON MASTERS.\p"
 	.string "If you are strong enough to\n"
 	.string "defeat us we will reward you with\l"
 	.string "a prize.\p"
 	.string "Engarde!$"
 
-DragonsDen_Cave4_Text_CooltrainerMDefeat::
+DragonsDen_Cave4_Text_DragonTamerAiratDefeat::
 	.string "I concede defeat...$"
 
-DragonsDen_Cave4_Text_CooltrainerMVictory::
+DragonsDen_Cave4_Text_DragonTamerAiratVictory::
 	.string "You were easily defeated...$"
 
-DragonsDen_Cave4_Text_CooltrainerM_2::
+DragonsDen_Cave4_Text_DragonTamerAirat_2::
 	.string "You defeated all of us...\n"
 	.string "Very impressive!\p"
 	.string "As we promised here’s your\n"
 	.string "reward!$"
 
-DragonsDen_Cave4_Text_CooltrainerM_3::
+DragonsDen_Cave4_Text_DragonTamerAirat_3::
 	.string "We wish you good luck in your\n"
 	.string "journey…$"
 
-DragonsDen_Cave4_Text_CooltrainerM_4::
+DragonsDen_Cave4_Text_DragonTamerAirat_4::
 	.string "We DRAGON MASTERS are to remain in\n"
 	.string "the DRAGON’S DEN.\p"
 	.string "We are awaiting for the return of\n"
 	.string "the legendary DRAGON POKéMON...$"
 
-DragonsDen_Cave4_Text_CooltrainerM2::
+DragonsDen_Cave4_Text_DragonTamerGon::
 	.string "It was said that the legendary\n"
 	.string "DRAGON POKéMON came to the\l"
 	.string "DRAGON’S DEN sometimes.\p"
 	.string "It used to roost at the top of the\n"
 	.string "mountain.$"
 
-DragonsDen_Cave4_Text_CooltrainerM3::
+DragonsDen_Cave4_Text_DragonTamerBravo::
 	.string "The legendary DRAGON POKéMON used\n"
 	.string "to enjoy the company of other\l"
 	.string "DRAGON POKéMON.\p"

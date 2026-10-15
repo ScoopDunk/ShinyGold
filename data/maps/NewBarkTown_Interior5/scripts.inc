@@ -7,7 +7,7 @@ NewBarkTown_Interior5_MapScripts::
 
 NewBarkTown_Interior5_OnFrame::
 	map_script_2 0xFB2B, 0x702, 0x1713EF01
-	map_script_2 0x0208, 0x163, gHeap + 0x600  @ ShinyGold: can never match
+	map_script_2 0x0208, 0x163, 0x02000600  @ ShinyGold: can never match
 	map_script_2 0x6500, 1, 0x00036508
 	map_script_2 0x1601, 0x4079, 0x79030004
 	map_script_2 0x0240, 0x1600, 0x6F081714  @ ShinyGold: can never match

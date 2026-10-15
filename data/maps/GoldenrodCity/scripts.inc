@@ -27,7 +27,7 @@ GoldenrodCity_OnFrame::
 GoldenrodCity_EventScript_FrameScene::
 	setflag 0x136E
 	call NewBarkTown_EventScript_FrameScene_1
-	call SlowpokeWell_Cave1_EventScript_RocketM_1
+	call SlowpokeWell_Cave1_EventScript_TeamRocketGrunt_1
 	setvar 0x7024, 1
 	call GoldenrodCity_EventScript_FrameScene_1
 	call Route35_EventScript_FrameScene_2

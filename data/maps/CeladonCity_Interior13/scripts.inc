@@ -31,21 +31,21 @@ CeladonCity_Interior13_EventScript_LassMichelle::
 	msgbox CeladonCity_Interior13_Text_LassMichelle, MSGBOX_AUTOCLOSE
 	end
 
-CeladonCity_Interior13_EventScript_Erika::
+CeladonCity_Interior13_EventScript_LeaderErika::
 	setvar VAR_0x8004, 2
 	setvar VAR_0x8005, 2
 	special UpdatePickStateFromSpecialVar8005
-	call Unused_CeruleanCity_Gym_EventScript_Misty_1
-	trainerbattle_single TRAINER_LEADER_ERIKA, CeladonCity_Interior13_Text_ErikaIntro, CeladonCity_Interior13_Text_ErikaDefeat, CeladonCity_Interior13_EventScript_ErikaContinue, NO_MUSIC
-	msgbox CeladonCity_Interior13_Text_Erika_1, MSGBOX_NPC
+	call Unused_CeruleanCity_Gym_EventScript_LeaderMisty_1
+	trainerbattle_single TRAINER_LEADER_ERIKA, CeladonCity_Interior13_Text_LeaderErikaIntro, CeladonCity_Interior13_Text_LeaderErikaDefeat, CeladonCity_Interior13_EventScript_LeaderErikaContinue, NO_MUSIC
+	msgbox CeladonCity_Interior13_Text_LeaderErika_1, MSGBOX_NPC
 	end
 
-CeladonCity_Interior13_EventScript_ErikaContinue::
+CeladonCity_Interior13_EventScript_LeaderErikaContinue::
 	setflag 0x1181
 	call LavenderTown_EventScript_Trigger6_3
-	msgbox CeladonCity_Interior13_Text_Erika_2, MSGBOX_NPC
+	msgbox CeladonCity_Interior13_Text_LeaderErika_2, MSGBOX_NPC
 	giveitem ITEM_TM19
-	msgbox CeladonCity_Interior13_Text_Erika_1, MSGBOX_NPC
+	msgbox CeladonCity_Interior13_Text_LeaderErika_1, MSGBOX_NPC
 	end
 
 CeladonCity_Interior13_EventScript_TwinsJoAndZoe2::

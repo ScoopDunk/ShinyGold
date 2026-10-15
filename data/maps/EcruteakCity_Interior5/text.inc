@@ -55,7 +55,7 @@ EcruteakCity_Interior5_Text_MediumMarthaDefeat::
 EcruteakCity_Interior5_Text_MediumMartha::
 	.string "The one who wants to win most--will!$"
 
-EcruteakCity_Interior5_Text_ManIntro::
+EcruteakCity_Interior5_Text_LeaderMorty2Intro::
 	.string "Good of you to have come.\p"
 	.string "Here in ECRUTEAK, POKéMON have\n"
 	.string "been revered.\p"
@@ -73,12 +73,12 @@ EcruteakCity_Interior5_Text_ManIntro::
 	.string "You’re going to help me reach that\n"
 	.string "level!$"
 
-EcruteakCity_Interior5_Text_ManDefeat::
+EcruteakCity_Interior5_Text_LeaderMorty2Defeat::
 	.string "I’m not good enough yet...\p"
 	.string "All right. This BADGE is yours.\p"
 	.string "{FONT 0x02}{PLAYER} received the FOGBADGE!{PAUSE_MUSIC}{PLAY_BGM MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}$"
 
-EcruteakCity_Interior5_Text_Man_1::
+EcruteakCity_Interior5_Text_LeaderMorty2_1::
 	.string "I see...\p"
 	.string "Your journey has taken you to\n"
 	.string "faraway places.\p"
@@ -86,14 +86,14 @@ EcruteakCity_Interior5_Text_Man_1::
 	.string "than I.\p"
 	.string "I envy you for that...$"
 
-EcruteakCity_Interior5_Text_Man_2::
+EcruteakCity_Interior5_Text_LeaderMorty2_2::
 	.string "By having FOGBADGE, POKéMON\n"
 	.string "up to L50 will obey you.\p"
 	.string "Also, POKéMON that know SURF will be\n"
 	.string "able to use that move anytime.\p"
 	.string "I want you to have this too.$"
 
-EcruteakCity_Interior5_Text_Man_3::
+EcruteakCity_Interior5_Text_LeaderMorty2_3::
 	.string "It’s SHADOW BALL.\n"
 	.string "It causes damage and may reduce\l"
 	.string "SPCL.DEF.\p"

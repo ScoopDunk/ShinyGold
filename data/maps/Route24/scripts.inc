@@ -1,17 +1,17 @@
 Route24_MapScripts::
 	.byte 0
 
-Route24_EventScript_RocketM::
+Route24_EventScript_TeamRocketGrunt3::
 	playbgm MUS_SILPH, 51
-	msgbox Route24_Text_RocketM_1, MSGBOX_NPC
+	msgbox Route24_Text_TeamRocketGrunt3_1, MSGBOX_NPC
 	call SilphCo_Interior6_EventScript_Trigger1_1
-	trainerbattle_earlyrival TRAINER_TEAM_ROCKET_GRUNT_3, 0, Route24_Text_RocketMDefeat, Route24_Text_RocketMVictory
+	trainerbattle_earlyrival TRAINER_TEAM_ROCKET_GRUNT_3, 0, Route24_Text_TeamRocketGrunt3Defeat, Route24_Text_TeamRocketGrunt3Victory
 	playbgm MUS_SILPH, 51
 	setflag 0x11B9
 	call SilphCo_Interior6_EventScript_Trigger1_2
-	msgbox Route24_Text_RocketM_2, MSGBOX_NPC
+	msgbox Route24_Text_TeamRocketGrunt3_2, MSGBOX_NPC
 	playbgm MUS_NONE, 51
-	msgbox Route24_Text_RocketM_3, MSGBOX_NPC
+	msgbox Route24_Text_TeamRocketGrunt3_3, MSGBOX_NPC
 	warp MAP_ROUTE24, 0, 0x26C, 0xFFFF
 	.byte 0xFF @ invalid opcode (script stops)
 

@@ -22,18 +22,18 @@ Unused_RocketHideout_B4F_EventScript_OnLoad_2::
 	setmetatile 18, 14, 0x282, 0
 	return
 
-Unused_RocketHideout_B4F_EventScript_Giovanni::
+Unused_RocketHideout_B4F_EventScript_TeamRocketExecutive::
 	lock
 	faceplayer
 	setvar VAR_0x8004, 15
 	setvar VAR_0x8005, 0
 	special SetFlavorTextFlagFromSpecialVars
-	message Unused_RocketHideout_B4F_Text_Giovanni_1
+	message Unused_RocketHideout_B4F_Text_TeamRocketExecutive_1
 	waitmessage
 	playbgm MUS_ENCOUNTER_ROCKET, 0
 	waitbuttonpress
-	trainerbattle_no_intro TRAINER_TEAM_ROCKET_EXECUTIVE, Unused_RocketHideout_B4F_Text_GiovanniDefeat
-	msgbox Unused_RocketHideout_B4F_Text_Giovanni_2
+	trainerbattle_no_intro TRAINER_TEAM_ROCKET_EXECUTIVE, Unused_RocketHideout_B4F_Text_TeamRocketExecutiveDefeat
+	msgbox Unused_RocketHideout_B4F_Text_TeamRocketExecutive_2
 	fadescreen FADE_TO_BLACK
 	closemessage
 	removeobject 1

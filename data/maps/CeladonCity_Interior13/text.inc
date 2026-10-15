@@ -65,7 +65,7 @@ CeladonCity_Interior13_Text_LassMichelle::
 	.string "But there are certain subjects\n"
 	.string "that only girls can talk about.$"
 
-CeladonCity_Interior13_Text_ErikaIntro::
+CeladonCity_Interior13_Text_LeaderErikaIntro::
 	.string "ERIKA: Hello...\n"
 	.string "Lovely weather, isn’t it?\l"
 	.string "It’s so pleasant...\p"
@@ -78,20 +78,20 @@ CeladonCity_Interior13_Text_ErikaIntro::
 	.string "that you wished to challenge me.\p"
 	.string "Very well, but I shall not lose.$"
 
-CeladonCity_Interior13_Text_ErikaDefeat::
+CeladonCity_Interior13_Text_LeaderErikaDefeat::
 	.string "ERIKA: Oh!\n"
 	.string "I concede defeat...\p"
 	.string "You are remarkably strong...\p"
 	.string "I shall give you RAINBOWBADGE...\p"
 	.string "{FONT 0x02}{PLAYER} received the RAINBOWBADGE!{PAUSE_MUSIC}{PLAY_BGM MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}$"
 
-CeladonCity_Interior13_Text_Erika_1::
+CeladonCity_Interior13_Text_LeaderErika_1::
 	.string "ERIKA: Losing leaves a bitter\n"
 	.string "aftertaste...\p"
 	.string "But knowing that there are strong\n"
 	.string "trainers spurs me to do better...$"
 
-CeladonCity_Interior13_Text_Erika_2::
+CeladonCity_Interior13_Text_LeaderErika_2::
 	.string "ERIKA: That was a delightful match.\p"
 	.string "I felt inspired.\n"
 	.string "Please, I wish you to have this TM.\p"

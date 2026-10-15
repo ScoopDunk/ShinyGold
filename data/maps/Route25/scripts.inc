@@ -134,18 +134,18 @@ Route25_EventScript_LassShannon::
 	msgbox Route25_Text_SchoolboyDudley, MSGBOX_AUTOCLOSE
 	end
 
-Route25_EventScript_CooltrainerM2::
-	call_if_set 0x11BA, Route25_EventScript_CooltrainerM2_1
+Route25_EventScript_CooltrainerKevin::
+	call_if_set 0x11BA, Route25_EventScript_CooltrainerKevin_1
 	setflag 0x11BA
-	msgbox Route25_Text_CooltrainerM2_1, MSGBOX_NPC
+	msgbox Route25_Text_CooltrainerKevin_1, MSGBOX_NPC
 	giveitem ITEM_NUGGET
-	msgbox Route25_Text_CooltrainerM2_2, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_COOLTRAINER_KEVIN, 0, Route25_Text_CooltrainerM2Defeat, Route25_Text_CooltrainerM2Victory
-	msgbox Route25_Text_CooltrainerM2_3, MSGBOX_NPC
+	msgbox Route25_Text_CooltrainerKevin_2, MSGBOX_NPC
+	trainerbattle_earlyrival TRAINER_COOLTRAINER_KEVIN, 0, Route25_Text_CooltrainerKevinDefeat, Route25_Text_CooltrainerKevinVictory
+	msgbox Route25_Text_CooltrainerKevin_3, MSGBOX_NPC
 	end
 
-Route25_EventScript_CooltrainerM2_1::
-	msgbox Route25_Text_CooltrainerM2_3, MSGBOX_NPC
+Route25_EventScript_CooltrainerKevin_1::
+	msgbox Route25_Text_CooltrainerKevin_3, MSGBOX_NPC
 	end
 
 Route25_EventScript_ItemProtein::

@@ -70,7 +70,7 @@ SaffronCity_Interior5_Text_PsychicFranklin::
 	.string "You made your soul stronger, not just\n"
 	.string "your abilities.$"
 
-SaffronCity_Interior5_Text_SabrinaIntro::
+SaffronCity_Interior5_Text_LeaderSabrinaIntro::
 	.string "SABRINA: I knew you were coming...\p"
 	.string "Three years ago I had a vision of\n"
 	.string "your arrival.\p"
@@ -82,7 +82,7 @@ SaffronCity_Interior5_Text_SabrinaIntro::
 	.string "Since you wish it, I will show you my\n"
 	.string "psychic powers!$"
 
-SaffronCity_Interior5_Text_SabrinaDefeat::
+SaffronCity_Interior5_Text_LeaderSabrinaDefeat::
 	.string "SABRINA: Your power...\p"
 	.string "It far exceeds what I foresaw...\p"
 	.string "Maybe it isn’t possible to fully\n"
@@ -91,13 +91,13 @@ SaffronCity_Interior5_Text_SabrinaDefeat::
 	.string "MARSHBADGE.\p"
 	.string "{FONT 0x02}{PLAYER} received the MARSHBADGE!{PAUSE_MUSIC}{PLAY_BGM MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}$"
 
-SaffronCity_Interior5_Text_Sabrina_1::
+SaffronCity_Interior5_Text_LeaderSabrina_1::
 	.string "SABRINA: Your love for your POKéMON\n"
 	.string "overwhelmed my psychic power...\p"
 	.string "The power of love, I think, is also a\n"
 	.string "kind of psychic power...$"
 
-SaffronCity_Interior5_Text_Sabrina_2::
+SaffronCity_Interior5_Text_LeaderSabrina_2::
 	.string "SABRINA: MARSHBADGE draws out\n"
 	.string "your subliminal powers...\p"
 	.string "Although I failed to accurately\n"
@@ -106,7 +106,7 @@ SaffronCity_Interior5_Text_Sabrina_2::
 	.string "You will become a celebrated and\n"
 	.string "beloved CHAMPION!$"
 
-SaffronCity_Interior5_Text_Sabrina_3::
+SaffronCity_Interior5_Text_LeaderSabrina_3::
 	.string "SABRINA: Wait {PLAYER}!\p"
 	.string "I can also sense something else.\p"
 	.string "You will soon face a terrible\n"

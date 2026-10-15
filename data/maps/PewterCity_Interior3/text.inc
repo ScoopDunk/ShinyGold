@@ -1,4 +1,4 @@
-PewterCity_Interior3_Text_BrockIntro::
+PewterCity_Interior3_Text_LeaderBrock2Intro::
 	.string "BROCK: Wow, it’s not often that we\n"
 	.string "get a challenger from JOHTO.\p"
 	.string "I’m BROCK, the PEWTER GYM LEADER.\n"
@@ -9,7 +9,7 @@ PewterCity_Interior3_Text_BrockIntro::
 	.string "any damage.\p"
 	.string "Come on!$"
 
-PewterCity_Interior3_Text_BrockDefeat::
+PewterCity_Interior3_Text_LeaderBrock2Defeat::
 	.string "BROCK: Your POKéMON’s powerful\n"
 	.string "attacks overcame my rock-hard\l"
 	.string "defense...\p"
@@ -17,14 +17,14 @@ PewterCity_Interior3_Text_BrockDefeat::
 	.string "Go ahead--take this BADGE.\p"
 	.string "{FONT 0x02}{PLAYER} received the BOULDERBADGE!{PAUSE_MUSIC}{PLAY_BGM MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}$"
 
-PewterCity_Interior3_Text_Brock_1::
+PewterCity_Interior3_Text_LeaderBrock2_1::
 	.string "BROCK: The world is huge.\n"
 	.string "There are still many strong\l"
 	.string "trainers like you.\p"
 	.string "Just wait and see. I’m going to\n"
 	.string "become a lot stronger too.$"
 
-PewterCity_Interior3_Text_Brock_2::
+PewterCity_Interior3_Text_LeaderBrock2_2::
 	.string "BROCK: {PLAYER}, thanks.\n"
 	.string "I enjoyed battling you, even\l"
 	.string "though I am a bit upset.\p"
