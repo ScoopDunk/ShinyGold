@@ -138,29 +138,29 @@ CeruleanCity_Movement_WorkerM::
 	face_left
 	step_end
 
-CeruleanCity_EventScript_TeachyTvHost::
-	msgbox CeruleanCity_Text_TeachyTvHost_1, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_CARLOS_6, 0, CeruleanCity_Text_TeachyTvHostDefeat, CeruleanCity_Text_TeachyTvHostVictory
+CeruleanCity_EventScript_PkmnTrainerCarlos6::
+	msgbox CeruleanCity_Text_PkmnTrainerCarlos6_1, MSGBOX_NPC
+	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_CARLOS_6, 0, CeruleanCity_Text_PkmnTrainerCarlos6Defeat, CeruleanCity_Text_PkmnTrainerCarlos6Victory
 	setflag 0x1194
-	msgbox CeruleanCity_Text_TeachyTvHost_2, MSGBOX_NPC
-	goto_if_eq VAR_FACING, 2, CeruleanCity_EventScript_TeachyTvHost_1
-	goto_if_eq VAR_FACING, 3, CeruleanCity_EventScript_TeachyTvHost_1
-	call CeruleanCity_EventScript_TeachyTvHost_2
+	msgbox CeruleanCity_Text_PkmnTrainerCarlos6_2, MSGBOX_NPC
+	goto_if_eq VAR_FACING, 2, CeruleanCity_EventScript_PkmnTrainerCarlos6_1
+	goto_if_eq VAR_FACING, 3, CeruleanCity_EventScript_PkmnTrainerCarlos6_1
+	call CeruleanCity_EventScript_PkmnTrainerCarlos6_2
 	end
 
-CeruleanCity_EventScript_TeachyTvHost_1::
-	applymovement 9, CeruleanCity_Movement_TeachyTvHost_1
+CeruleanCity_EventScript_PkmnTrainerCarlos6_1::
+	applymovement 9, CeruleanCity_Movement_PkmnTrainerCarlos6_1
 	delay 192
 	release
 	end
 
-CeruleanCity_EventScript_TeachyTvHost_2::
-	applymovement 9, CeruleanCity_Movement_TeachyTvHost_2
+CeruleanCity_EventScript_PkmnTrainerCarlos6_2::
+	applymovement 9, CeruleanCity_Movement_PkmnTrainerCarlos6_2
 	delay 224
 	release
 	end
 
-CeruleanCity_Movement_TeachyTvHost_1::
+CeruleanCity_Movement_PkmnTrainerCarlos6_1::
 	walk_left
 	walk_left
 	walk_left
@@ -177,7 +177,7 @@ CeruleanCity_Movement_TeachyTvHost_1::
 	walk_fast_up
 	step_end
 
-CeruleanCity_Movement_TeachyTvHost_2::
+CeruleanCity_Movement_PkmnTrainerCarlos6_2::
 	walk_down
 	walk_down
 	walk_left

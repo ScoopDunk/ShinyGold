@@ -196,10 +196,10 @@ EcruteakCity_EventScript_Trigger6::
 	setflag 0x10AD
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox EcruteakCity_Text_Trigger3_1, MSGBOX_NPC
-	call Route44_EventScript_TeachyTvHost_1
+	call Route44_EventScript_PkmnTrainerCarlos3_1
 	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_CARLOS_4, 0, EcruteakCity_Text_Trigger3Defeat, EcruteakCity_Text_Trigger3Defeat
 	msgbox EcruteakCity_Text_Trigger3_2, MSGBOX_NPC
-	call Route44_EventScript_TeachyTvHost_2
+	call Route44_EventScript_PkmnTrainerCarlos3_2
 	applymovement 10, EcruteakCity_Movement_Trigger3_2
 	delay 144
 	release

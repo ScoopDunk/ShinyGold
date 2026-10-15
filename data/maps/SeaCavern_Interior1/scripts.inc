@@ -35,7 +35,7 @@ SeaCavern_Interior1_EventScript_Trigger2_2::
 	call SilphCo_Interior6_EventScript_Trigger1_1
 	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_JESS_AND_JAMIE, 0, SeaCavern_Interior1_Text_Trigger2Defeat, SeaCavern_Interior1_Text_Trigger2Victory
 	setflag 0x117A
-	call SlowpokeWell_Cave1_EventScript_RocketM_1
+	call SlowpokeWell_Cave1_EventScript_TeamRocketGrunt_1
 	msgbox SeaCavern_Interior1_Text_Trigger2_4, MSGBOX_NPC
 	warp MAP_SEA_CAVERN_INTERIOR1, 2, 0x26C, 0xFFFF
 	.byte 0xFF @ invalid opcode (script stops)

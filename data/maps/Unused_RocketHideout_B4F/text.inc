@@ -1,4 +1,4 @@
-Unused_RocketHideout_B4F_Text_Giovanni_1::
+Unused_RocketHideout_B4F_Text_TeamRocketExecutive_1::
 	.string "So! I must say, I am impressed you\n"
 	.string "got here.\p"
 	.string "TEAM ROCKET captures POKéMON from\n"
@@ -9,11 +9,11 @@ Unused_RocketHideout_B4F_Text_Giovanni_1::
 	.string "For your insolence, you will feel a\n"
 	.string "world of pain!$"
 
-Unused_RocketHideout_B4F_Text_GiovanniDefeat::
+Unused_RocketHideout_B4F_Text_TeamRocketExecutiveDefeat::
 	.string "WHAT!\n"
 	.string "This can’t be!$"
 
-Unused_RocketHideout_B4F_Text_Giovanni_2::
+Unused_RocketHideout_B4F_Text_TeamRocketExecutive_2::
 	.string "I see that you raise POKéMON with\n"
 	.string "utmost care.\p"
 	.string "A child like you would never\n"

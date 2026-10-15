@@ -90,7 +90,7 @@ Route44_Text_BirdKeeper99::
 	.string "I heard there are other legendary\n"
 	.string "birds, though.$"
 
-Route44_Text_TeachyTvHost_1::
+Route44_Text_PkmnTrainerCarlos3_1::
 	.string "Hahaha!\p"
 	.string "Finally I’m ahead of you again!\p"
 	.string "While you were playing to be hero,\n"
@@ -100,14 +100,14 @@ Route44_Text_TeachyTvHost_1::
 	.string "I don’t need you around, so this is\n"
 	.string "the end of the road for you!$"
 
-Route44_Text_TeachyTvHostDefeat::
+Route44_Text_PkmnTrainerCarlos3Defeat::
 	.string "N... No...\n"
 	.string "Not again...$"
 
-Route44_Text_TeachyTvHostVictory::
+Route44_Text_PkmnTrainerCarlos3Victory::
 	.string "See ya, loser!$"
 
-Route44_Text_TeachyTvHost_2::
+Route44_Text_PkmnTrainerCarlos3_2::
 	.string "ARRGH!!!\p"
 	.string "Why do you keep beating me?!!!\p"
 	.string "I HATE you!\n"

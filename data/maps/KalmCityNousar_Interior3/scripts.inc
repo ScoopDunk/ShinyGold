@@ -39,18 +39,18 @@ KalmCityNousar_Interior3_EventScript_SageTroy::
 	msgbox KalmCityNousar_Interior3_Text_SageTroy, MSGBOX_AUTOCLOSE
 	end
 
-KalmCityNousar_Interior3_EventScript_OldMan2::
-	call_if_set 0x11D5, KalmCityNousar_Interior3_EventScript_OldMan2_1
-	msgbox KalmCityNousar_Interior3_Text_OldMan2_1, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_SAGE_LI, 0, KalmCityNousar_Interior3_Text_OldMan2Defeat, KalmCityNousar_Interior3_Text_OldMan2Victory
+KalmCityNousar_Interior3_EventScript_SageLi::
+	call_if_set 0x11D5, KalmCityNousar_Interior3_EventScript_SageLi_1
+	msgbox KalmCityNousar_Interior3_Text_SageLi_1, MSGBOX_NPC
+	trainerbattle_earlyrival TRAINER_SAGE_LI, 0, KalmCityNousar_Interior3_Text_SageLiDefeat, KalmCityNousar_Interior3_Text_SageLiVictory
 	setflag 0x11D5
-	msgbox KalmCityNousar_Interior3_Text_OldMan2_2, MSGBOX_NPC
+	msgbox KalmCityNousar_Interior3_Text_SageLi_2, MSGBOX_NPC
 	giveitem ITEM_HM05
-	msgbox KalmCityNousar_Interior3_Text_OldMan2_3, MSGBOX_NPC
+	msgbox KalmCityNousar_Interior3_Text_SageLi_3, MSGBOX_NPC
 	end
 
-KalmCityNousar_Interior3_EventScript_OldMan2_1::
-	msgbox KalmCityNousar_Interior3_Text_OldMan2_4, MSGBOX_NPC
+KalmCityNousar_Interior3_EventScript_SageLi_1::
+	msgbox KalmCityNousar_Interior3_Text_SageLi_4, MSGBOX_NPC
 	end
 
 KalmCityNousar_Interior3_EventScript_Trigger1::

@@ -17,20 +17,20 @@ AzaleaTown_Interior6_EventScript_BugCatcherBenny::
 	msgbox AzaleaTown_Interior6_Text_BugCatcherBenny, MSGBOX_AUTOCLOSE
 	end
 
-AzaleaTown_Interior6_EventScript_Camper::
+AzaleaTown_Interior6_EventScript_LeaderBugsy::
 	setflag 0x1067
 	setvar VAR_0x8004, 2
 	setvar VAR_0x8005, 2
 	special UpdatePickStateFromSpecialVar8005
-	trainerbattle_single TRAINER_LEADER_BUGSY, AzaleaTown_Interior6_Text_CamperIntro, AzaleaTown_Interior6_Text_CamperDefeat, AzaleaTown_Interior6_EventScript_CamperContinue, NO_MUSIC
-	msgbox AzaleaTown_Interior6_Text_Camper_1, MSGBOX_NPC
+	trainerbattle_single TRAINER_LEADER_BUGSY, AzaleaTown_Interior6_Text_LeaderBugsyIntro, AzaleaTown_Interior6_Text_LeaderBugsyDefeat, AzaleaTown_Interior6_EventScript_LeaderBugsyContinue, NO_MUSIC
+	msgbox AzaleaTown_Interior6_Text_LeaderBugsy_1, MSGBOX_NPC
 	end
 
-AzaleaTown_Interior6_EventScript_CamperContinue::
+AzaleaTown_Interior6_EventScript_LeaderBugsyContinue::
 	setflag FLAG_BADGE02_GET
-	msgbox AzaleaTown_Interior6_Text_Camper_2, MSGBOX_NPC
+	msgbox AzaleaTown_Interior6_Text_LeaderBugsy_2, MSGBOX_NPC
 	giveitem ITEM_TM49
-	msgbox AzaleaTown_Interior6_Text_Camper_3, MSGBOX_NPC
+	msgbox AzaleaTown_Interior6_Text_LeaderBugsy_3, MSGBOX_NPC
 	end
 
 AzaleaTown_Interior6_EventScript_GymGuy::
@@ -65,10 +65,10 @@ AzaleaTown_Interior6_EventScript_TeachyTvHost_2::
 
 AzaleaTown_Interior6_EventScript_TeachyTvHost_3::
 	msgbox AzaleaTown_Interior6_Text_TeachyTvHost_5, MSGBOX_NPC
-	call Route44_EventScript_TeachyTvHost_1
+	call Route44_EventScript_PkmnTrainerCarlos3_1
 	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_CARLOS_2, 0, AzaleaTown_Interior6_Text_TeachyTvHostDefeat, AzaleaTown_Interior6_Text_TeachyTvHostDefeat
 	msgbox AzaleaTown_Interior6_Text_TeachyTvHost_6, MSGBOX_NPC
-	call Route44_EventScript_TeachyTvHost_2
+	call Route44_EventScript_PkmnTrainerCarlos3_2
 	setflag 0x1066
 	end
 

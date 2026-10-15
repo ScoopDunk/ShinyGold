@@ -71,19 +71,19 @@ SlowpokeWell_Cave1_Text_TeamRocketGrunt5::
 SlowpokeWell_Cave1_Text_Slowpoke2::
 	.string "A SLOWPOKE with its TAIL cut off...$"
 
-SlowpokeWell_Cave1_Text_RocketM_1::
+SlowpokeWell_Cave1_Text_TeamRocketGrunt_1::
 	.string "What do you want?\p"
 	.string "If you interrupt our work, don’t\n"
 	.string "expect any mercy!$"
 
-SlowpokeWell_Cave1_Text_RocketMDefeat::
+SlowpokeWell_Cave1_Text_TeamRocketGruntDefeat::
 	.string "You did OK today, brat, but wait\n"
 	.string "’til next time!$"
 
 LakeOfRage_Interior1_Text_Fisher_3::
 	.string "LAKE OF RAGE is back to normal.\n"
 	.string "T"
-SlowpokeWell_Cave1_Text_RocketMVictory::
+SlowpokeWell_Cave1_Text_TeamRocketGruntVictory::
 	.string "he MAGIKARP have returned.\p"
 	.string "I may yet realize my dream of\n"
 	.string "seeing the world’s largest\l"
@@ -91,7 +91,7 @@ SlowpokeWell_Cave1_Text_RocketMVictory::
 	.string "Do you have a ROD?\n"
 	.string "Please help me if you do.$"
 
-SlowpokeWell_Cave1_Text_RocketM_2::
+SlowpokeWell_Cave1_Text_TeamRocketGrunt_2::
 	.string "Yeah, TEAM ROCKET was broken up\n"
 	.string "three years ago.\p"
 	.string "But we continued our activities\n"

@@ -17,21 +17,21 @@ BlackthornCity_Interior7_EventScript_CooltrainerLola::
 	msgbox BlackthornCity_Interior7_Text_CooltrainerLola, MSGBOX_AUTOCLOSE
 	end
 
-BlackthornCity_Interior7_EventScript_Sabrina::
+BlackthornCity_Interior7_EventScript_LeaderClair::
 	setvar VAR_0x8004, 2
 	setvar VAR_0x8005, 2
 	special UpdatePickStateFromSpecialVar8005
-	trainerbattle_single TRAINER_LEADER_CLAIR, BlackthornCity_Interior7_Text_SabrinaIntro, BlackthornCity_Interior7_Text_SabrinaDefeat, BlackthornCity_Interior7_EventScript_SabrinaContinue, NO_MUSIC
-	call_if_set FLAG_BADGE07_GET, BlackthornCity_Interior7_EventScript_Sabrina_1
-	msgbox BlackthornCity_Interior7_Text_Sabrina_1, MSGBOX_NPC
+	trainerbattle_single TRAINER_LEADER_CLAIR, BlackthornCity_Interior7_Text_LeaderClairIntro, BlackthornCity_Interior7_Text_LeaderClairDefeat, BlackthornCity_Interior7_EventScript_LeaderClairContinue, NO_MUSIC
+	call_if_set FLAG_BADGE07_GET, BlackthornCity_Interior7_EventScript_LeaderClair_1
+	msgbox BlackthornCity_Interior7_Text_LeaderClair_1, MSGBOX_NPC
 	end
 
-BlackthornCity_Interior7_EventScript_SabrinaContinue::
+BlackthornCity_Interior7_EventScript_LeaderClairContinue::
 	setflag 0x114A
-	msgbox BlackthornCity_Interior7_Text_Sabrina_2, MSGBOX_NPC
+	msgbox BlackthornCity_Interior7_Text_LeaderClair_2, MSGBOX_NPC
 	end
 
-BlackthornCity_Interior7_EventScript_Sabrina_1::
+BlackthornCity_Interior7_EventScript_LeaderClair_1::
 	msgbox DragonsDen_Cave4_Text_ItemDragonFang_4, MSGBOX_NPC
 	end
 

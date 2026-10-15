@@ -21,19 +21,19 @@ VioletCity_Interior8_EventScript_BirdKeeperAbe::
 	msgbox VioletCity_Interior8_Text_BirdKeeperAbe, MSGBOX_AUTOCLOSE
 	end
 
-VioletCity_Interior8_EventScript_Koga::
+VioletCity_Interior8_EventScript_LeaderFalkner2::
 	setvar VAR_0x8004, 2
 	setvar VAR_0x8005, 2
 	special UpdatePickStateFromSpecialVar8005
-	trainerbattle_single TRAINER_LEADER_FALKNER_2, VioletCity_Interior8_Text_KogaIntro, PewterCity_Gym_Text_BrockDefeat, VioletCity_Interior8_EventScript_KogaContinue, NO_MUSIC
-	msgbox VioletCity_Interior8_Text_Koga_1, MSGBOX_NPC
+	trainerbattle_single TRAINER_LEADER_FALKNER_2, VioletCity_Interior8_Text_LeaderFalkner2Intro, PewterCity_Gym_Text_BrockDefeat, VioletCity_Interior8_EventScript_LeaderFalkner2Continue, NO_MUSIC
+	msgbox VioletCity_Interior8_Text_LeaderFalkner2_1, MSGBOX_NPC
 	end
 
-VioletCity_Interior8_EventScript_KogaContinue::
+VioletCity_Interior8_EventScript_LeaderFalkner2Continue::
 	setflag FLAG_BADGE01_GET
-	msgbox VioletCity_Interior8_Text_Koga_2, MSGBOX_NPC
+	msgbox VioletCity_Interior8_Text_LeaderFalkner2_2, MSGBOX_NPC
 	giveitem ITEM_TM31
-	msgbox VioletCity_Interior8_Text_Koga_3, MSGBOX_NPC
+	msgbox VioletCity_Interior8_Text_LeaderFalkner2_3, MSGBOX_NPC
 	end
 
 VioletCity_Interior8_EventScript_Trigger1::
@@ -43,9 +43,9 @@ VioletCity_Interior8_EventScript_Trigger1::
 	applymovement 4, VioletCity_Interior8_Movement_Trigger1_2
 	delay 48
 	msgbox VioletCity_Interior8_Text_Trigger1_1, MSGBOX_NPC
-	call Route44_EventScript_TeachyTvHost_1
+	call Route44_EventScript_PkmnTrainerCarlos3_1
 	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_CARLOS, 0, VioletCity_Interior8_Text_Trigger1Defeat, VioletCity_Interior8_Text_Trigger1Defeat
-	call Route44_EventScript_TeachyTvHost_2
+	call Route44_EventScript_PkmnTrainerCarlos3_2
 	msgbox VioletCity_Interior8_Text_Trigger1_2, MSGBOX_NPC
 	applymovement 4, VioletCity_Interior8_Movement_Trigger1_3
 	delay 48
@@ -82,9 +82,9 @@ VioletCity_Interior8_EventScript_Trigger2::
 	applymovement 4, VioletCity_Interior8_Movement_Trigger1_2
 	delay 48
 	msgbox VioletCity_Interior8_Text_Trigger1_1, MSGBOX_NPC
-	call Route44_EventScript_TeachyTvHost_1
+	call Route44_EventScript_PkmnTrainerCarlos3_1
 	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_CARLOS, 0, VioletCity_Interior8_Text_Trigger1Defeat, VioletCity_Interior8_Text_Trigger1Defeat
-	call Route44_EventScript_TeachyTvHost_2
+	call Route44_EventScript_PkmnTrainerCarlos3_2
 	msgbox VioletCity_Interior8_Text_Trigger1_2, MSGBOX_NPC
 	applymovement 4, VioletCity_Interior8_Movement_Trigger1_3
 	delay 48
@@ -98,9 +98,9 @@ VioletCity_Interior8_EventScript_Trigger3::
 	applymovement 4, VioletCity_Interior8_Movement_Trigger1_2
 	delay 48
 	msgbox VioletCity_Interior8_Text_Trigger1_1, MSGBOX_NPC
-	call Route44_EventScript_TeachyTvHost_1
+	call Route44_EventScript_PkmnTrainerCarlos3_1
 	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_CARLOS, 0, VioletCity_Interior8_Text_Trigger1Defeat, VioletCity_Interior8_Text_Trigger1Defeat
-	call Route44_EventScript_TeachyTvHost_2
+	call Route44_EventScript_PkmnTrainerCarlos3_2
 	msgbox VioletCity_Interior8_Text_Trigger1_2, MSGBOX_NPC
 	applymovement 4, VioletCity_Interior8_Movement_Trigger1_3
 	delay 48

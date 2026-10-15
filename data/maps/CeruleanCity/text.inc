@@ -74,7 +74,7 @@ CeruleanCity_Text_WorkerM_2::
 	.string "Ayuh?\p"
 	.string "My ITEMFINDER is responding...$"
 
-CeruleanCity_Text_TeachyTvHost_1::
+CeruleanCity_Text_PkmnTrainerCarlos6_1::
 	.string "Grrr... What kind of GYM LEADER\n"
 	.string "leaves its GYM to have a date at\l"
 	.string "the CAPE in the north?\p"
@@ -85,15 +85,15 @@ CeruleanCity_Text_TeachyTvHost_1::
 	.string "crush your happy dreams!\p"
 	.string "...$"
 
-CeruleanCity_Text_TeachyTvHostDefeat::
+CeruleanCity_Text_PkmnTrainerCarlos6Defeat::
 	.string "...All right...\n"
 	.string "You won again...$"
 
-CeruleanCity_Text_TeachyTvHostVictory::
+CeruleanCity_Text_PkmnTrainerCarlos6Victory::
 	.string "Hahaha...\n"
 	.string "I knew you were no match for me...!$"
 
-CeruleanCity_Text_TeachyTvHost_2::
+CeruleanCity_Text_PkmnTrainerCarlos6_2::
 	.string "...\p"
 	.string "...\p"
 	.string "You know what?\n"

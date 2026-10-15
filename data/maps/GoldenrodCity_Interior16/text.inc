@@ -44,7 +44,7 @@ GoldenrodCity_Interior16_Text_BeautySamantha::
 	.string "I taught MEOWTH moves for taking\n"
 	.string "on any type...$"
 
-GoldenrodCity_Interior16_Text_CrushGirlIntro::
+GoldenrodCity_Interior16_Text_LeaderWhitney2Intro::
 	.string "Hi! I’m WHITNEY!\p"
 	.string "Everyone was into POKéMON, so I got\n"
 	.string "into it too!\p"
@@ -52,40 +52,40 @@ GoldenrodCity_Interior16_Text_CrushGirlIntro::
 	.string "You want to battle? I’m warning\n"
 	.string "you--I’m good!$"
 
-GoldenrodCity_Interior16_Text_CrushGirlDefeat::
+GoldenrodCity_Interior16_Text_LeaderWhitney2Defeat::
 	.string "Sob...\p"
 	.string "...Waaaaaaah!\n"
 	.string "You’re mean!\p"
 	.string "You shouldn’t be so serious! You,\n"
 	.string "you, child, you!$"
 
-GoldenrodCity_Interior16_Text_CrushGirl_1::
+GoldenrodCity_Interior16_Text_LeaderWhitney2_1::
 	.string "Waaaaah!\p"
 	.string "Waaaaah!\p"
 	.string "...Snivel, hic...\n"
 	.string "...You meanie!$"
 
-GoldenrodCity_Interior16_Text_CrushGirl_2::
+GoldenrodCity_Interior16_Text_LeaderWhitney2_2::
 	.string "Ah, that was a good cry!\p"
 	.string "Come for a visit again! Bye-bye!$"
 
-GoldenrodCity_Interior16_Text_CrushGirl_3::
+GoldenrodCity_Interior16_Text_LeaderWhitney2_3::
 	.string "...Sniff...\p"
 	.string "What? What do you want? A BADGE?\p"
 	.string "Oh, right. I forgot. Here’s\n"
 	.string "PLAINBADGE.$"
 
-GoldenrodCity_Interior16_Text_CrushGirl_4::
+GoldenrodCity_Interior16_Text_LeaderWhitney2_4::
 	.string "{FONT 0x02}{PLAYER} received the PLAINBADGE!{PAUSE_MUSIC}{PLAY_BGM MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}$"
 
-GoldenrodCity_Interior16_Text_CrushGirl_5::
+GoldenrodCity_Interior16_Text_LeaderWhitney2_5::
 	.string "PLAINBADGE lets your POKéMON use\n"
 	.string "STRENGTH outside of battle.\p"
 	.string "It also boosts your POKéMON’s\n"
 	.string "SPEED.\p"
 	.string "Oh, you can have this too!$"
 
-GoldenrodCity_Interior16_Text_CrushGirl_6::
+GoldenrodCity_Interior16_Text_LeaderWhitney2_6::
 	.string "It’s ATTRACT!\n"
 	.string "It makes full use of a\l"
 	.string "POKéMON’s charm.\p"

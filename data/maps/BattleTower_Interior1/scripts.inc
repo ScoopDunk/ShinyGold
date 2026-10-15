@@ -330,7 +330,7 @@ BattleTower_Interior1_EventScript_Trigger1_22::
 	msgbox BattleTower_Interior1_Text_Trigger1_46, MSGBOX_AUTOCLOSE
 	setvar 0x7030, 0x129
 	setvar 0x7033, 0x158
-	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_RED, 0, MtSilver_Cave1_Text_TeachyTvHostDefeat, MtSilver_Cave1_Text_TeachyTvHostDefeat
+	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_RED, 0, MtSilver_Cave1_Text_PkmnTrainerRedDefeat, MtSilver_Cave1_Text_PkmnTrainerRedDefeat
 	setvar 0x7030, 0x158
 	setvar 0x7033, 0x129
 	msgbox BattleTower_Interior1_Text_Trigger1_5, MSGBOX_AUTOCLOSE

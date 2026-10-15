@@ -121,24 +121,24 @@ Route25_Text_LassShannonIntro::
 Route25_Text_LassShannonDefeat::
 	.string "You’re kidding.$"
 
-Route25_Text_CooltrainerM2_1::
+Route25_Text_CooltrainerKevin_1::
 	.string "You took on one more battle than\n"
 	.string "you expected, but you won anyway.\p"
 	.string "As promised, you win a prize.$"
 
-Route25_Text_CooltrainerM2_2::
+Route25_Text_CooltrainerKevin_2::
 	.string "But after seeing how you battle, I\n"
 	.string "want to see how I’ll fare.\p"
 	.string "How about it?\n"
 	.string "Let me take you on.$"
 
-Route25_Text_CooltrainerM2Defeat::
+Route25_Text_CooltrainerKevinDefeat::
 	.string "I’ve never had a battle this good!$"
 
-Route25_Text_CooltrainerM2Victory::
+Route25_Text_CooltrainerKevinVictory::
 	.string "Oh, well...$"
 
-Route25_Text_CooltrainerM2_3::
+Route25_Text_CooltrainerKevin_3::
 	.string "That was a great battle!\p"
 	.string "You and your POKéMON are truly\n"
 	.string "outstanding!$"

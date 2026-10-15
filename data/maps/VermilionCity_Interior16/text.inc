@@ -1,4 +1,4 @@
-VermilionCity_Interior16_Text_LtSurgeIntro::
+VermilionCity_Interior16_Text_LeaderLtSurgeIntro::
 	.string "SURGE: Hey, little boy!\p"
 	.string "I have to hand it to you. It may not\n"
 	.string "be very smart to challenge me, but\l"
@@ -9,24 +9,24 @@ VermilionCity_Interior16_Text_LtSurgeIntro::
 	.string "I’ll zap you just like I did my\n"
 	.string "enemies in war!$"
 
-VermilionCity_Interior16_Text_LtSurgeDefeat::
+VermilionCity_Interior16_Text_LeaderLtSurgeDefeat::
 	.string "SURGE: Arrrgh!\n"
 	.string "You are strong!\p"
 	.string "OK, boy. You get THUNDERBADGE!\p"
 	.string "{FONT 0x02}{PLAYER} received the THUNDERBADGE!{PAUSE_MUSIC}{PLAY_BGM MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}$"
 
-VermilionCity_Interior16_Text_LtSurge_1::
+VermilionCity_Interior16_Text_LeaderLtSurge_1::
 	.string "SURGE: Hey, boy!\n"
 	.string "Still slugging and chugging away?\p"
 	.string "My POKéMON and I are still at it!$"
 
-VermilionCity_Interior16_Text_LtSurge_2::
+VermilionCity_Interior16_Text_LeaderLtSurge_2::
 	.string "SURGE: THUNDERBADGE increases\n"
 	.string "POKéMON’s speed.\p"
 	.string "Consider it proof that you defeated\n"
 	.string "me. You wear it proudly, hear?$"
 
-VermilionCity_Interior16_Text_LtSurge_3::
+VermilionCity_Interior16_Text_LeaderLtSurge_3::
 	.string "SURGE: OH, boy! I seem to forget...\p"
 	.string "There was this weird kid that came\n"
 	.string "here and defeated me before...\p"

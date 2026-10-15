@@ -16,19 +16,19 @@ OlivineCity_Interior3_EventScript_GymGuy_2::
 	msgbox OlivineCity_Interior3_Text_GymGuy_3, MSGBOX_NPC
 	end
 
-OlivineCity_Interior3_EventScript_Lass::
+OlivineCity_Interior3_EventScript_LeaderJasmine2::
 	setvar VAR_0x8004, 2
 	setvar VAR_0x8005, 2
 	special UpdatePickStateFromSpecialVar8005
-	trainerbattle_single TRAINER_LEADER_JASMINE_2, OlivineCity_Interior3_Text_LassIntro, OlivineCity_Interior3_Text_LassDefeat, OlivineCity_Interior3_EventScript_LassContinue, NO_MUSIC
-	msgbox OlivineCity_Interior3_Text_Lass_1, MSGBOX_NPC
+	trainerbattle_single TRAINER_LEADER_JASMINE_2, OlivineCity_Interior3_Text_LeaderJasmine2Intro, OlivineCity_Interior3_Text_LeaderJasmine2Defeat, OlivineCity_Interior3_EventScript_LeaderJasmine2Continue, NO_MUSIC
+	msgbox OlivineCity_Interior3_Text_LeaderJasmine2_1, MSGBOX_NPC
 	end
 
-OlivineCity_Interior3_EventScript_LassContinue::
+OlivineCity_Interior3_EventScript_LeaderJasmine2Continue::
 	setflag FLAG_BADGE06_GET
-	msgbox OlivineCity_Interior3_Text_Lass_2, MSGBOX_NPC
+	msgbox OlivineCity_Interior3_Text_LeaderJasmine2_2, MSGBOX_NPC
 	giveitem ITEM_TM23
-	msgbox OlivineCity_Interior3_Text_Lass_3, MSGBOX_NPC
+	msgbox OlivineCity_Interior3_Text_LeaderJasmine2_3, MSGBOX_NPC
 	end
 
 OlivineCity_Interior3_EventScript_TeachyTvHost::

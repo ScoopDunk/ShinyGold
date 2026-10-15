@@ -17,7 +17,7 @@ OlivineCity_Interior3_Text_GymGuy_3::
 	.string "steel-type.\p"
 	.string "I don’t know very much about it.$"
 
-OlivineCity_Interior3_Text_LassIntro::
+OlivineCity_Interior3_Text_LeaderJasmine2Intro::
 	.string "...Thank you for your help at the\n"
 	.string "LIGHTHOUSE...\p"
 	.string "But this is different. Please\n"
@@ -29,23 +29,23 @@ OlivineCity_Interior3_Text_LassIntro::
 	.string "discovered.\p"
 	.string "...Um... May I begin?$"
 
-OlivineCity_Interior3_Text_LassDefeat::
+OlivineCity_Interior3_Text_LeaderJasmine2Defeat::
 	.string "...You are a better trainer than me,\n"
 	.string "in both skill and kindness.\p"
 	.string "In accordance with LEAGUE rules, I\n"
 	.string "confer upon you this BADGE.\p"
 	.string "{FONT 0x02}{PLAYER} received the MINERALBADGE!{PAUSE_MUSIC}{PLAY_BGM MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}$"
 
-OlivineCity_Interior3_Text_Lass_1::
+OlivineCity_Interior3_Text_LeaderJasmine2_1::
 	.string "Um... I don’t know how to say this,\n"
 	.string "but good luck...$"
 
-OlivineCity_Interior3_Text_Lass_2::
+OlivineCity_Interior3_Text_LeaderJasmine2_2::
 	.string "MINERALBADGE raises POKéMON’s\n"
 	.string "DEFENSE.\p"
 	.string "...Um... Please take this too...$"
 
-OlivineCity_Interior3_Text_Lass_3::
+OlivineCity_Interior3_Text_LeaderJasmine2_3::
 	.string "...You could use that TM to teach\n"
 	.string "IRON TAIL.$"
 

@@ -1,4 +1,4 @@
-Route20_Interior1_Text_BlaineIntro::
+Route20_Interior1_Text_LeaderBlaine2Intro::
 	.string "BLAINE: Waaah!\n"
 	.string "My GYM in CINNABAR burned down.\p"
 	.string "My fire-breathing POKéMON and I are\n"
@@ -10,18 +10,18 @@ Route20_Interior1_Text_BlaineIntro::
 	.string "a BADGE.\p"
 	.string "Ha! You’d better have BURN HEAL!$"
 
-Route20_Interior1_Text_BlaineDefeat::
+Route20_Interior1_Text_LeaderBlaine2Defeat::
 	.string "BLAINE: Awesome.\n"
 	.string "I’ve burned out...\p"
 	.string "You’ve earned VOLCANOBADGE!\p"
 	.string "{FONT 0x02}{PLAYER} received the VOLCANOBADGE!{PAUSE_MUSIC}{PLAY_BGM MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}$"
 
-Route20_Interior1_Text_Blaine_1::
+Route20_Interior1_Text_LeaderBlaine2_1::
 	.string "BLAINE: My fire POKéMON will be\n"
 	.string "even stronger.\p"
 	.string "Just you watch!$"
 
-Route20_Interior1_Text_Blaine_2::
+Route20_Interior1_Text_LeaderBlaine2_2::
 	.string "BLAINE: I did lose this time, but\n"
 	.string "I’m going to win the next time.\p"
 	.string "When I rebuild my CINNABAR GYM,\n"

@@ -31,19 +31,19 @@ EcruteakCity_Interior5_EventScript_MediumMartha::
 	msgbox EcruteakCity_Interior5_Text_MediumMartha, MSGBOX_AUTOCLOSE
 	end
 
-EcruteakCity_Interior5_EventScript_Man::
+EcruteakCity_Interior5_EventScript_LeaderMorty2::
 	setvar VAR_0x8004, 2
 	setvar VAR_0x8005, 2
 	special UpdatePickStateFromSpecialVar8005
-	trainerbattle_single TRAINER_LEADER_MORTY_2, EcruteakCity_Interior5_Text_ManIntro, EcruteakCity_Interior5_Text_ManDefeat, EcruteakCity_Interior5_EventScript_ManContinue, NO_MUSIC
-	msgbox EcruteakCity_Interior5_Text_Man_1, MSGBOX_NPC
+	trainerbattle_single TRAINER_LEADER_MORTY_2, EcruteakCity_Interior5_Text_LeaderMorty2Intro, EcruteakCity_Interior5_Text_LeaderMorty2Defeat, EcruteakCity_Interior5_EventScript_LeaderMorty2Continue, NO_MUSIC
+	msgbox EcruteakCity_Interior5_Text_LeaderMorty2_1, MSGBOX_NPC
 	end
 
-EcruteakCity_Interior5_EventScript_ManContinue::
+EcruteakCity_Interior5_EventScript_LeaderMorty2Continue::
 	setflag FLAG_BADGE05_GET
-	msgbox EcruteakCity_Interior5_Text_Man_2, MSGBOX_NPC
+	msgbox EcruteakCity_Interior5_Text_LeaderMorty2_2, MSGBOX_NPC
 	giveitem ITEM_TM30
-	msgbox EcruteakCity_Interior5_Text_Man_3, MSGBOX_NPC
+	msgbox EcruteakCity_Interior5_Text_LeaderMorty2_3, MSGBOX_NPC
 	clearflag 0x10AD
 	release
 	end

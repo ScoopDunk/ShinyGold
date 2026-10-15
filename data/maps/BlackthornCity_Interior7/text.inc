@@ -33,7 +33,7 @@ BlackthornCity_Interior7_Text_CooltrainerLola::
 	.string "Dragons are weak against dragon-\n"
 	.string "type moves.$"
 
-BlackthornCity_Interior7_Text_SabrinaIntro::
+BlackthornCity_Interior7_Text_LeaderClairIntro::
 	.string "I am CLAIR. I’m the world’s best\n"
 	.string "dragon master.\p"
 	.string "I can hold my own against even the\n"
@@ -44,17 +44,17 @@ BlackthornCity_Interior7_Text_SabrinaIntro::
 	.string "As a trainer, I will use my full\n"
 	.string "power against any opponent!$"
 
-BlackthornCity_Interior7_Text_SabrinaDefeat::
+BlackthornCity_Interior7_Text_LeaderClairDefeat::
 	.string "I lost?\p"
 	.string "I don’t believe it. There must be\n"
 	.string "some mistake...$"
 
-BlackthornCity_Interior7_Text_Sabrina_1::
+BlackthornCity_Interior7_Text_LeaderClair_1::
 	.string "CLAIR: What’s the matter?\p"
 	.string "This errand won’t be hard for you,\n"
 	.string "unless your victory was a fluke.$"
 
-BlackthornCity_Interior7_Text_Sabrina_2::
+BlackthornCity_Interior7_Text_LeaderClair_2::
 	.string "I won’t admit this.\p"
 	.string "I may have lost, but you’re still\n"
 	.string "not ready for the POKéMON LEAGUE.\p"

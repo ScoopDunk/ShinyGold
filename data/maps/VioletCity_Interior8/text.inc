@@ -37,7 +37,7 @@ VioletCity_Interior8_Text_BirdKeeperAbe::
 	.string "This is pathetic, losing to some\n"
 	.string "rookie trainer...$"
 
-VioletCity_Interior8_Text_KogaIntro::
+VioletCity_Interior8_Text_LeaderFalkner2Intro::
 	.string "I’m FALKNER, the VIOLET POKéMON\n"
 	.string "GYM leader!\p"
 	.string "People say you can clip flying-type\n"
@@ -61,7 +61,7 @@ PewterCity_Gym_Text_BrockDefeat::
 	.string "It also enables POKéMON to use\n"
 	.string "FLASH, if they have it, anytime.$"
 
-VioletCity_Interior8_Text_Koga_1::
+VioletCity_Interior8_Text_LeaderFalkner2_1::
 	.string "There are POKéMON GYMS in cities\n"
 	.string "and towns ahead.\p"
 	.string "You should test your skills at these\n"
@@ -69,10 +69,10 @@ VioletCity_Interior8_Text_Koga_1::
 	.string "I’m going to train harder to become\n"
 	.string "the greatest bird master!$"
 
-VioletCity_Interior8_Text_Koga_2::
+VioletCity_Interior8_Text_LeaderFalkner2_2::
 	.string "Here--take this too.$"
 
-VioletCity_Interior8_Text_Koga_3::
+VioletCity_Interior8_Text_LeaderFalkner2_3::
 	.string "By using a TM, a POKéMON will\n"
 	.string "instantly learn a new move.\p"
 	.string "Think before you act--a TM can be\n"

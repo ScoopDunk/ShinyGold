@@ -45,21 +45,21 @@ VermilionCity_Interior16_EventScript_OnTransition_1::
 	copyvar VAR_TEMP_1, VAR_0x8005
 	return
 
-VermilionCity_Interior16_EventScript_LtSurge::
+VermilionCity_Interior16_EventScript_LeaderLtSurge::
 	setvar VAR_0x8004, 2
 	setvar VAR_0x8005, 2
 	special UpdatePickStateFromSpecialVar8005
-	call Unused_CeruleanCity_Gym_EventScript_Misty_1
-	trainerbattle_single TRAINER_LEADER_LT_SURGE, VermilionCity_Interior16_Text_LtSurgeIntro, VermilionCity_Interior16_Text_LtSurgeDefeat, VermilionCity_Interior16_EventScript_LtSurgeContinue, NO_MUSIC
-	msgbox VermilionCity_Interior16_Text_LtSurge_1, MSGBOX_NPC
+	call Unused_CeruleanCity_Gym_EventScript_LeaderMisty_1
+	trainerbattle_single TRAINER_LEADER_LT_SURGE, VermilionCity_Interior16_Text_LeaderLtSurgeIntro, VermilionCity_Interior16_Text_LeaderLtSurgeDefeat, VermilionCity_Interior16_EventScript_LeaderLtSurgeContinue, NO_MUSIC
+	msgbox VermilionCity_Interior16_Text_LeaderLtSurge_1, MSGBOX_NPC
 	end
 
-VermilionCity_Interior16_EventScript_LtSurgeContinue::
+VermilionCity_Interior16_EventScript_LeaderLtSurgeContinue::
 	setflag 0x117E
 	call LavenderTown_EventScript_Trigger6_3
-	msgbox VermilionCity_Interior16_Text_LtSurge_2, MSGBOX_NPC
+	msgbox VermilionCity_Interior16_Text_LeaderLtSurge_2, MSGBOX_NPC
 	delay 16
-	msgbox VermilionCity_Interior16_Text_LtSurge_3, MSGBOX_NPC
+	msgbox VermilionCity_Interior16_Text_LeaderLtSurge_3, MSGBOX_NPC
 	end
 
 VermilionCity_Interior16_EventScript_JugglerHorton::
