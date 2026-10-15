@@ -9,6 +9,12 @@
 #define SECTOR_FOOTER_SIZE 128
 #define SECTOR_SIZE (SECTOR_DATA_SIZE + SECTOR_FOOTER_SIZE)
 
+// ShinyGold: the sectors of the save slot (save blocks 1/2 and the PC storage) also use the formerly unused
+// part of the footer, i.e. everything up to the sector id field. The free space that is left at the end of
+// the last sector of each save block holds gSaveBlockExt (see save_block_ext.h).
+// Hall of Fame and Trainer Tower sectors are unchanged.
+#define SAVEBLOCK_SECTOR_DATA_SIZE 0xFF0
+
 #define NUM_SAVE_SLOTS 2
 
 // If the sector's signature field is not this value then the sector is either invalid or empty.
@@ -53,7 +59,7 @@ enum
 };
 
 // A save sector location holds a pointer to the data for a particular sector
-// and the size of that data. Size cannot be greater than SECTOR_DATA_SIZE.
+// and the size of that data. Size cannot be greater than SAVEBLOCK_SECTOR_DATA_SIZE.
 struct SaveSectorLocation
 {
     u8 *data;
@@ -62,8 +68,8 @@ struct SaveSectorLocation
 
 struct SaveSector
 {
-    u8 data[SECTOR_DATA_SIZE];
-    u8 unused[SECTOR_FOOTER_SIZE - 12]; // Unused portion of the footer
+    u8 data[SAVEBLOCK_SECTOR_DATA_SIZE]; // ShinyGold: was SECTOR_DATA_SIZE, see SAVEBLOCK_SECTOR_DATA_SIZE
+    u8 unused[SECTOR_SIZE - SAVEBLOCK_SECTOR_DATA_SIZE - 12]; // Unused portion of the footer
     u16 id;
     u16 checksum;
     u32 signature;

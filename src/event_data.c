@@ -2,6 +2,7 @@
 #include "event_data.h"
 #include "item_menu.h"
 #include "quest_log.h"
+#include "save_block_ext.h"
 
 static bool8 IsFlagOrVarStoredInQuestLog(u16 idx, u8 a1);
 
@@ -186,6 +187,9 @@ bool32 CanResetRTC(void)
 u16 *GetVarPointer(u16 idx)
 {
     u16 *ptr;
+    // ShinyGold: variables 0x4100-0x7FFF live in gSaveBlockExt (checked before the Quest Log handling, like the hack)
+    if (idx >= EXT_VARS_START && idx <= EXT_VARS_END)
+        return GetSaveBlockExtVarPointer(idx);
     if (idx < VARS_START)
         return NULL;
     if (idx < SPECIAL_VARS_START)
@@ -257,6 +261,9 @@ u8 VarGetObjectEventGraphicsId(u8 idx)
 u8 *GetFlagAddr(u16 idx)
 {
     u8 *ptr;
+    // ShinyGold: flags 0x900-0x1FFF live in gSaveBlockExt (checked before the Quest Log handling, like the hack)
+    if (idx >= EXT_FLAGS_START && idx <= EXT_FLAGS_END)
+        return GetSaveBlockExtFlagAddr(idx);
     if (idx == 0)
         return NULL;
     if (idx < SPECIAL_FLAGS_START)

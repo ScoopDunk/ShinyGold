@@ -10,6 +10,7 @@
 #include "pokemon_storage_system.h"
 #include "gba/flash_internal.h"
 #include "sloopsvc.h"
+#include "save_block_ext.h"
 
 static u8 HandleWriteSector(u16 sectorId, const struct SaveSectorLocation *locations);
 static u8 TryWriteSector(u8 sectorNum, u8 *data);
@@ -40,11 +41,12 @@ static u16 CalculateChecksum(void *data, u16 size);
 // (u8 *)structure was removed from the first statement of the macro in Emerald
 // and Fire Red/Leaf Green. This is because malloc is used to allocate addresses
 // so storing the raw addresses should not be done in the offsets information.
-#define SAVEBLOCK_CHUNK(structure, chunkNum)                                   \
-{                                                                              \
-    chunkNum * SECTOR_DATA_SIZE,                                               \
-    sizeof(structure) >= chunkNum * SECTOR_DATA_SIZE ?                         \
-    min(sizeof(structure) - chunkNum * SECTOR_DATA_SIZE, SECTOR_DATA_SIZE) : 0 \
+// ShinyGold: save blocks use SAVEBLOCK_SECTOR_DATA_SIZE bytes per sector instead of SECTOR_DATA_SIZE.
+#define SAVEBLOCK_CHUNK(structure, chunkNum)                                                       \
+{                                                                                                  \
+    chunkNum * SAVEBLOCK_SECTOR_DATA_SIZE,                                                         \
+    sizeof(structure) >= chunkNum * SAVEBLOCK_SECTOR_DATA_SIZE ?                                   \
+    min(sizeof(structure) - chunkNum * SAVEBLOCK_SECTOR_DATA_SIZE, SAVEBLOCK_SECTOR_DATA_SIZE) : 0 \
 }
 
 struct
@@ -73,9 +75,9 @@ struct
 
 // These will produce an error if a save struct is larger than the space
 // alloted for it in the flash.
-STATIC_ASSERT(sizeof(struct SaveBlock2) <= SECTOR_DATA_SIZE, SaveBlock2FreeSpace);
-STATIC_ASSERT(sizeof(struct SaveBlock1) <= SECTOR_DATA_SIZE * (SECTOR_ID_SAVEBLOCK1_END - SECTOR_ID_SAVEBLOCK1_START + 1), SaveBlock1FreeSpace);
-STATIC_ASSERT(sizeof(struct PokemonStorage) <= SECTOR_DATA_SIZE * (SECTOR_ID_PKMN_STORAGE_END - SECTOR_ID_PKMN_STORAGE_START + 1), PokemonStorageFreeSpace);
+STATIC_ASSERT(sizeof(struct SaveBlock2) <= SAVEBLOCK_SECTOR_DATA_SIZE, SaveBlock2FreeSpace);
+STATIC_ASSERT(sizeof(struct SaveBlock1) <= SAVEBLOCK_SECTOR_DATA_SIZE * (SECTOR_ID_SAVEBLOCK1_END - SECTOR_ID_SAVEBLOCK1_START + 1), SaveBlock1FreeSpace);
+STATIC_ASSERT(sizeof(struct PokemonStorage) <= SAVEBLOCK_SECTOR_DATA_SIZE * (SECTOR_ID_PKMN_STORAGE_END - SECTOR_ID_PKMN_STORAGE_START + 1), PokemonStorageFreeSpace);
 
 // Sector num to begin writing save data. Sectors are rotated each time the game is saved. (possibly to avoid wear on flash memory?)
 COMMON_DATA u16 gLastWrittenSector = 0;
@@ -191,6 +193,7 @@ static u8 HandleWriteSector(u16 sectorId, const struct SaveSectorLocation *locat
         gSaveDataBufferPtr->data[i] = data[i];
 
     gSaveDataBufferPtr->checksum = CalculateChecksum(data, size);
+    SaveBlockExt_WriteToSector(sectorId, gSaveDataBufferPtr->data); // ShinyGold
     return TryWriteSector(sectorNum, gSaveDataBufferPtr->data);
 }
 
@@ -318,6 +321,9 @@ static u8 HandleReplaceSector(u16 sectorId, const struct SaveSectorLocation *loc
         gSaveDataBufferPtr->data[i] = data[i];
 
     gSaveDataBufferPtr->checksum = CalculateChecksum(data, size);
+    // ShinyGold: The hack only extended HandleWriteSector, so link saves (which replace sectors 0-4 and 13 with
+    // this function) erased gSaveBlockExt's part of those sectors in flash. Write it here too.
+    SaveBlockExt_WriteToSector(sectorId, gSaveDataBufferPtr->data);
 
 #if REVISION >= 0xA
     svc_ReplaceSector(sectorNum, (u8*)gSaveDataBufferPtr);
@@ -457,6 +463,7 @@ static u8 CopySaveSlotData(u16 sectorId, const struct SaveSectorLocation *locati
             u16 j;
             for (j = 0; j < locations[id].size; j++)
                 locations[id].data[j] = gSaveDataBufferPtr->data[j];
+            SaveBlockExt_ReadFromSector(id, gSaveDataBufferPtr->data); // ShinyGold
         }
     }
 
