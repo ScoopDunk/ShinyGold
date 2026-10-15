@@ -26,7 +26,7 @@ AzaleaTown_Interior5_EventScript_BaldingMan_2::
 	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_3::
-	callnative SG_NATIVE_0x0882884D
+	callnative CheckSaveBlockExtStepCounter
 	call_if_eq VAR_RESULT, 1, AzaleaTown_Interior5_EventScript_BaldingMan_5
 	call AzaleaTown_Interior5_EventScript_BaldingMan_6
 	end
@@ -87,7 +87,7 @@ AzaleaTown_Interior5_EventScript_BaldingMan_6::
 	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_7::
-	callnative SG_NATIVE_0x0882884D
+	callnative CheckSaveBlockExtStepCounter
 	call_if_eq VAR_RESULT, 0, AzaleaTown_Interior5_EventScript_BaldingMan_23
 	msgbox AzaleaTown_Interior5_Text_BaldingMan_6, MSGBOX_NPC
 	giveitem ITEM_DIVE_BALL
@@ -96,7 +96,7 @@ AzaleaTown_Interior5_EventScript_BaldingMan_7::
 	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_8::
-	callnative SG_NATIVE_0x0882884D
+	callnative CheckSaveBlockExtStepCounter
 	call_if_eq VAR_RESULT, 0, AzaleaTown_Interior5_EventScript_BaldingMan_23
 	msgbox AzaleaTown_Interior5_Text_BaldingMan_6, MSGBOX_NPC
 	giveitem ITEM_LUXURY_BALL
@@ -105,7 +105,7 @@ AzaleaTown_Interior5_EventScript_BaldingMan_8::
 	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_9::
-	callnative SG_NATIVE_0x0882884D
+	callnative CheckSaveBlockExtStepCounter
 	call_if_eq VAR_RESULT, 0, AzaleaTown_Interior5_EventScript_BaldingMan_23
 	msgbox AzaleaTown_Interior5_Text_BaldingMan_6, MSGBOX_NPC
 	giveitem ITEM_TIMER_BALL
@@ -114,7 +114,7 @@ AzaleaTown_Interior5_EventScript_BaldingMan_9::
 	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_10::
-	callnative SG_NATIVE_0x0882884D
+	callnative CheckSaveBlockExtStepCounter
 	call_if_eq VAR_RESULT, 0, AzaleaTown_Interior5_EventScript_BaldingMan_23
 	msgbox AzaleaTown_Interior5_Text_BaldingMan_6, MSGBOX_NPC
 	giveitem ITEM_NEST_BALL
@@ -123,7 +123,7 @@ AzaleaTown_Interior5_EventScript_BaldingMan_10::
 	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_11::
-	callnative SG_NATIVE_0x0882884D
+	callnative CheckSaveBlockExtStepCounter
 	call_if_eq VAR_RESULT, 0, AzaleaTown_Interior5_EventScript_BaldingMan_23
 	msgbox AzaleaTown_Interior5_Text_BaldingMan_6, MSGBOX_NPC
 	giveitem ITEM_REPEAT_BALL
@@ -132,7 +132,7 @@ AzaleaTown_Interior5_EventScript_BaldingMan_11::
 	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_12::
-	callnative SG_NATIVE_0x0882884D
+	callnative CheckSaveBlockExtStepCounter
 	call_if_eq VAR_RESULT, 0, AzaleaTown_Interior5_EventScript_BaldingMan_23
 	msgbox AzaleaTown_Interior5_Text_BaldingMan_6, MSGBOX_NPC
 	giveitem ITEM_NET_BALL
@@ -141,7 +141,7 @@ AzaleaTown_Interior5_EventScript_BaldingMan_12::
 	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_13::
-	callnative SG_NATIVE_0x0882884D
+	callnative CheckSaveBlockExtStepCounter
 	call_if_eq VAR_RESULT, 0, AzaleaTown_Interior5_EventScript_BaldingMan_23
 	msgbox AzaleaTown_Interior5_Text_BaldingMan_6, MSGBOX_NPC
 	giveitem ITEM_PREMIER_BALL
@@ -155,7 +155,7 @@ AzaleaTown_Interior5_EventScript_BaldingMan_14::
 	removeitem ITEM_RED_ORB
 	setflag 0x11B0
 	setvar VAR_RESULT, 0
-	callnative SG_NATIVE_0x0882883D
+	callnative StartSaveBlockExtStepCounter
 	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_15::
@@ -215,7 +215,7 @@ AzaleaTown_Interior5_EventScript_BaldingMan_24::
 	removeitem ITEM_UP_GRADE
 	msgbox AzaleaTown_Interior5_Text_BaldingMan_17, MSGBOX_NPC
 	setvar VAR_RESULT, 0
-	callnative SG_NATIVE_0x0882883D
+	callnative StartSaveBlockExtStepCounter
 	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_25::
@@ -223,7 +223,7 @@ AzaleaTown_Interior5_EventScript_BaldingMan_25::
 	removeitem ITEM_GREEN_SCARF
 	msgbox AzaleaTown_Interior5_Text_BaldingMan_17, MSGBOX_NPC
 	setvar VAR_RESULT, 0
-	callnative SG_NATIVE_0x0882883D
+	callnative StartSaveBlockExtStepCounter
 	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_26::
@@ -231,7 +231,7 @@ AzaleaTown_Interior5_EventScript_BaldingMan_26::
 	removeitem ITEM_DEEP_SEA_TOOTH
 	msgbox AzaleaTown_Interior5_Text_BaldingMan_17, MSGBOX_NPC
 	setvar VAR_RESULT, 0
-	callnative SG_NATIVE_0x0882883D
+	callnative StartSaveBlockExtStepCounter
 	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_27::
@@ -239,7 +239,7 @@ AzaleaTown_Interior5_EventScript_BaldingMan_27::
 	removeitem ITEM_RED_SCARF
 	msgbox AzaleaTown_Interior5_Text_BaldingMan_17, MSGBOX_NPC
 	setvar VAR_RESULT, 0
-	callnative SG_NATIVE_0x0882883D
+	callnative StartSaveBlockExtStepCounter
 	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_28::
@@ -247,7 +247,7 @@ AzaleaTown_Interior5_EventScript_BaldingMan_28::
 	removeitem ITEM_PINK_SCARF
 	msgbox AzaleaTown_Interior5_Text_BaldingMan_17, MSGBOX_NPC
 	setvar VAR_RESULT, 0
-	callnative SG_NATIVE_0x0882883D
+	callnative StartSaveBlockExtStepCounter
 	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_29::
@@ -255,7 +255,7 @@ AzaleaTown_Interior5_EventScript_BaldingMan_29::
 	removeitem ITEM_BLUE_SCARF
 	msgbox AzaleaTown_Interior5_Text_BaldingMan_17, MSGBOX_NPC
 	setvar VAR_RESULT, 0
-	callnative SG_NATIVE_0x0882883D
+	callnative StartSaveBlockExtStepCounter
 	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_30::
@@ -263,7 +263,7 @@ AzaleaTown_Interior5_EventScript_BaldingMan_30::
 	removeitem ITEM_YELLOW_SCARF
 	msgbox AzaleaTown_Interior5_Text_BaldingMan_17, MSGBOX_NPC
 	setvar VAR_RESULT, 0
-	callnative SG_NATIVE_0x0882883D
+	callnative StartSaveBlockExtStepCounter
 	end
 
 AzaleaTown_Interior5_Movement_BaldingMan_2::

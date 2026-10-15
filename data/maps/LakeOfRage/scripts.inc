@@ -6,7 +6,7 @@ LakeOfRage_EventScript_OldMan1::
 	end
 
 LakeOfRage_EventScript_Psyduck::
-	callnative SG_NATIVE_0x087FFF71
+	callnative ToggleForceShinyMons
 	setflag 0x11E9
 	faceplayer
 	waitse
@@ -20,7 +20,7 @@ LakeOfRage_EventScript_Psyduck::
 	setflag 0x11EA
 	clearflag 0x10E0
 	clearflag 0x11E9
-	callnative SG_NATIVE_0x087FFF71
+	callnative ToggleForceShinyMons
 	delay 32
 	removeobject 4
 	call_if_eq VAR_FACING, 1, LakeOfRage_EventScript_Psyduck_1
