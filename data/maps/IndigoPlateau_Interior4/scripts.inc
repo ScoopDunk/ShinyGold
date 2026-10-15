@@ -2,7 +2,6 @@ IndigoPlateau_Interior4_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, IndigoPlateau_Interior4_OnResume
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, IndigoPlateau_Interior4_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, IndigoPlateau_Interior4_OnWarp
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, 0x0816297D  @ ShinyGold: shadowed by the first entry of this type (never used)
 	.byte 0
 
 IndigoPlateau_Interior4_OnResume::
@@ -23,12 +22,6 @@ IndigoPlateau_Interior4_EventScript_OnResume_1::
 	end
 
 IndigoPlateau_Interior4_OnFrame::
-	map_script_2 0x6821, 0x440, 0x62010700
-	map_script_2 0x1629, 0x2B08, 0x010704BB  @ ShinyGold: can never match
-	map_script_2 0x2968, 0x816, 0x29A80402  @ ShinyGold: can never match
-	map_script_2 0x0816, 0x403, 0x081A7589  @ ShinyGold: can never match
-	map_script_2 0x0003, 64, 0x16297800  @ ShinyGold: can never match
-	map_script_2 0x0008, 0x5B00, 0x020200FF
 	map_script_2 0x4068, 3, IndigoPlateau_Interior4_EventScript_FrameScene7
 	.2byte 0
 
