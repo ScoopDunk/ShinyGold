@@ -111,6 +111,11 @@ DirectSoundWaveData_sd90_cowbell::
 	.incbin "sound/direct_sound_samples/sd90_cowbell.bin"
 
 	.align 2
+@ ShinyGold: 32 bytes of this sample (sample data offsets 0x158-0x177) were overwritten by the
+@ hack with what looks like an unreferenced 16-colour BGR555 palette (stray write into space the
+@ hack's tools considered free).  Ported into the .wav for fidelity; the sample is used by drum
+@ entries in voicegroups 002/177/190 (see voice_groups.inc), so the hack plays it with a short
+@ glitch.  Restore the vanilla .wav to undo.
 DirectSoundWaveData_unused_heart_of_asia_indian_drum::
 	.incbin "sound/direct_sound_samples/unused_heart_of_asia_indian_drum.bin"
 

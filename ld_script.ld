@@ -920,14 +920,14 @@ SECTIONS {
         sound/songs/midi/mus_vs_gym_leader.o(.rodata);
         sound/songs/midi/mus_vs_trainer.o(.rodata);
         sound/songs/midi/mus_vs_wild.o(.rodata);
-        sound/songs/midi/mus_vs_champion.o(.rodata);
+        sound/songs/mus_vs_champion.o(.rodata);
         sound/songs/midi/mus_pallet.o(.rodata);
         sound/songs/midi/mus_oak_lab.o(.rodata);
         sound/songs/midi/mus_oak.o(.rodata);
         sound/songs/midi/mus_poke_center.o(.rodata);
         sound/songs/midi/mus_ss_anne.o(.rodata);
         sound/songs/midi/mus_surf.o(.rodata);
-        sound/songs/midi/mus_poke_tower.o(.rodata);
+        sound/songs/mus_poke_tower.o(.rodata);
         sound/songs/midi/mus_silph.o(.rodata);
         sound/songs/midi/mus_fuchsia.o(.rodata);
         sound/songs/midi/mus_celadon.o(.rodata);
@@ -937,7 +937,7 @@ SECTIONS {
         sound/songs/midi/mus_vermillion.o(.rodata);
         sound/songs/midi/mus_pewter.o(.rodata);
         sound/songs/midi/mus_encounter_rival.o(.rodata);
-        sound/songs/midi/mus_rival_exit.o(.rodata);
+        sound/songs/mus_rival_exit.o(.rodata);
         sound/songs/midi/mus_dex_rating.o(.rodata);
         sound/songs/midi/mus_obtain_key_item.o(.rodata);
         sound/songs/midi/mus_caught_intro.o(.rodata);
@@ -947,16 +947,16 @@ SECTIONS {
         sound/songs/midi/mus_new_game_instruct.o(.rodata);
         sound/songs/midi/mus_new_game_intro.o(.rodata);
         sound/songs/midi/mus_new_game_exit.o(.rodata);
-        sound/songs/midi/mus_poke_jump.o(.rodata);
-        sound/songs/midi/mus_union_room.o(.rodata);
-        sound/songs/midi/mus_net_center.o(.rodata);
+        sound/songs/mus_poke_jump.o(.rodata);
+        sound/songs/mus_union_room.o(.rodata);
+        sound/songs/mus_net_center.o(.rodata);
         sound/songs/midi/mus_mystery_gift.o(.rodata);
-        sound/songs/midi/mus_berry_pick.o(.rodata);
-        sound/songs/midi/mus_sevii_cave.o(.rodata);
-        sound/songs/midi/mus_teachy_tv_show.o(.rodata);
+        sound/songs/mus_berry_pick.o(.rodata);
+        sound/songs/mus_sevii_cave.o(.rodata);
+        sound/songs/mus_teachy_tv_show.o(.rodata);
         sound/songs/midi/mus_sevii_route.o(.rodata);
-        sound/songs/midi/mus_sevii_dungeon.o(.rodata);
-        sound/songs/midi/mus_sevii_123.o(.rodata);
+        sound/songs/mus_sevii_dungeon.o(.rodata);
+        sound/songs/mus_sevii_123.o(.rodata);
         sound/songs/midi/mus_sevii_45.o(.rodata);
         sound/songs/midi/mus_sevii_67.o(.rodata);
         sound/songs/midi/mus_poke_flute.o(.rodata);
@@ -965,9 +965,9 @@ SECTIONS {
         sound/songs/midi/mus_vs_legend.o(.rodata);
         sound/songs/midi/mus_encounter_gym_leader.o(.rodata);
         sound/songs/midi/mus_encounter_deoxys.o(.rodata);
-        sound/songs/midi/mus_trainer_tower.o(.rodata);
-        sound/songs/midi/mus_slow_pallet.o(.rodata);
-        sound/songs/midi/mus_teachy_tv_menu.o(.rodata);
+        sound/songs/mus_trainer_tower.o(.rodata);
+        sound/songs/mus_slow_pallet.o(.rodata);
+        sound/songs/mus_teachy_tv_menu.o(.rodata);
     } > ROM =0
 
     lib_rodata :
