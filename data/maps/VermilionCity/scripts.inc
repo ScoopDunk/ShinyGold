@@ -60,7 +60,7 @@ VermilionCity_EventScript_Snorlax_2::
 	setwildbattle SPECIES_SNORLAX, 50, ITEM_LEFTOVERS
 	special StartLegendaryBattle
 	delay 128
-	warp MAP_VERMILION_CITY, 2, 0x26C, 0xC6CC
+	warp MAP_VERMILION_CITY, 1, 0x26C, 0xC6CC
 	vgoto_if 210, 0xE7DD00
 	.byte 0xE7 @ invalid opcode (script stops)
 

@@ -1,7 +1,0 @@
-Unused_SSAnne_B1F_Room3_MapScripts::
-	.byte 0
-
-Unused_SSAnne_B1F_Room3_EventScript_SageEdmond::
-	trainerbattle_single TRAINER_SAGE_EDMOND, Unused_SSAnne_B1F_Room3_Text_SageEdmondIntro, Unused_SSAnne_B1F_Room3_Text_SageEdmondDefeat
-	msgbox Unused_SSAnne_B1F_Room3_Text_SageEdmond, MSGBOX_AUTOCLOSE
-	end

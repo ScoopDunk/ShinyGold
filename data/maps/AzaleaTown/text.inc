@@ -115,3 +115,8 @@ AzaleaTown_Text_Sign6::
 AzaleaTown_Text_Sign7::
 	.string "It’s a fruit-bearing tree.\p"
 	.string "Hey! It’s WHITE APRICORN!$"
+
+@ ShinyGold: moved from data/maps/GreenPlains/text.inc (map removed)
+GreenPlains_Text_Sign3_2::
+	.string "It’s a fruit-bearing tree.\p"
+	.string "There’s nothing here…$"

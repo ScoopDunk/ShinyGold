@@ -120,21 +120,21 @@
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_CITY",
-      "dest_warp_id": "5"
+      "dest_warp_id": "3"
     },
     {
       "x": 7,
       "y": 8,
       "elevation": 3,
       "dest_map": "MAP_PEWTER_CITY",
-      "dest_warp_id": "5"
+      "dest_warp_id": "3"
     },
     {
       "x": 8,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_CITY",
-      "dest_warp_id": "5"
+      "dest_warp_id": "3"
     },
     {
       "x": 1,

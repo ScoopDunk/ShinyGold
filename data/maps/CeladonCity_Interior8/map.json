@@ -46,24 +46,10 @@
   ],
   "warp_events": [
     {
-      "x": 3,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_PURITY_FOREST_INTERIOR9",
-      "dest_warp_id": "2"
-    },
-    {
       "x": 4,
       "y": 7,
       "elevation": 3,
       "dest_map": "MAP_CELADON_CITY_INTERIOR19",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 5,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_PURITY_FOREST_INTERIOR9",
       "dest_warp_id": "2"
     }
   ],

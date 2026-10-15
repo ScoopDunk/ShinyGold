@@ -51,13 +51,6 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE20",
       "dest_warp_id": "0"
-    },
-    {
-      "x": 4,
-      "y": 6,
-      "elevation": 3,
-      "dest_map": "MAP_VERMILION_CITY_INTERIOR8",
-      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],

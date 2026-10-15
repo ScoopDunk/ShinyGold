@@ -119,3 +119,15 @@ Route31_EventScript_Sign1::
 Route31_EventScript_Sign2::
 	msgbox Route31_Text_Sign2, MSGBOX_AUTOCLOSE
 	end
+
+@ ShinyGold: moved from data/maps/GreenPlains/scripts.inc (map removed)
+GreenPlains_EventScript_Sign5::
+	special GetQuestLogState
+	call_if_eq VAR_RESULT, 2, EventScript_ReleaseEnd
+	special QuestLog_CutRecording
+	call_if_lt VAR_MASSAGE_COOLDOWN_STEP_COUNTER, 0x1F4, GreenPlains_EventScript_Sign3_1
+	msgbox GreenPlains_Text_Sign5, MSGBOX_NPC
+	giveitem ITEM_PERSIM_BERRY
+	releaseall
+	special DaisyMassageServices
+	end

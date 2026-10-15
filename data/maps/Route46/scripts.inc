@@ -105,3 +105,8 @@ Route46_EventScript_Trigger2::
 	releaseall
 	special DaisyMassageServices
 	end
+
+@ ShinyGold: moved from data/maps/Unused_G2_M68/scripts.inc (map removed)
+Unused_G2_M68_EventScript_Sign2::
+	msgbox Unused_G2_M68_Text_Sign2, MSGBOX_AUTOCLOSE
+	end

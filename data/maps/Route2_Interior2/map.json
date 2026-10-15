@@ -46,25 +46,11 @@
   ],
   "warp_events": [
     {
-      "x": 3,
-      "y": 7,
-      "elevation": 0,
-      "dest_map": "MAP_KALM_CITY_NOUSAR",
-      "dest_warp_id": "4"
-    },
-    {
       "x": 4,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_ROUTE2",
       "dest_warp_id": "1"
-    },
-    {
-      "x": 5,
-      "y": 7,
-      "elevation": 0,
-      "dest_map": "MAP_KALM_CITY_NOUSAR",
-      "dest_warp_id": "4"
     }
   ],
   "coord_events": [],

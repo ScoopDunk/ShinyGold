@@ -35,3 +35,8 @@ Route46_Text_HikerBailey::
 Route46_Text_Trigger2::
 	.string "It’s a fruit-bearing tree.\p"
 	.string "Hey! It’s CHERI BERRY!$"
+
+@ ShinyGold: moved from data/maps/Unused_G2_M68/text.inc (map removed)
+Unused_G2_M68_Text_Sign2::
+	.string "ROUTE 46\n"
+	.string "MOUNTAIN RD. AHEAD$"

@@ -23,11 +23,6 @@
       "map": "MAP_CIANWOOD_CITY",
       "offset": 0,
       "direction": "left"
-    },
-    {
-      "map": "MAP_BLUE_ROUTE",
-      "offset": 18,
-      "direction": "down"
     }
   ],
   "object_events": [

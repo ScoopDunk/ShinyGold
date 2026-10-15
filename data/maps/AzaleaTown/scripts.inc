@@ -409,3 +409,8 @@ AzaleaTown_EventScript_Sign8::
 	call_if_eq VAR_FACING, 2, Route35_EventScript_Sign4_2
 	release
 	end
+
+@ ShinyGold: moved from data/maps/GreenPlains/scripts.inc (map removed)
+GreenPlains_EventScript_Sign3_1::
+	msgbox GreenPlains_Text_Sign3_2, MSGBOX_NPC
+	end

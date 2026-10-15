@@ -1,8 +1,0 @@
-VermilionCity_Interior7_MapScripts::
-	@ ShinyGold: map script header pointer was NULL
-	.byte 0
-
-VermilionCity_Interior7_EventScript_ScientistRyan::
-	trainerbattle_single TRAINER_SCIENTIST_RYAN, VermilionCity_Interior7_Text_ScientistRyanIntro, VermilionCity_Interior7_Text_ScientistRyanDefeat
-	msgbox VermilionCity_Interior7_Text_ScientistRyan, MSGBOX_AUTOCLOSE
-	end

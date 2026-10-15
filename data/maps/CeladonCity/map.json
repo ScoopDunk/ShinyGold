@@ -265,13 +265,6 @@
       "elevation": 0,
       "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
       "dest_warp_id": "0"
-    },
-    {
-      "x": 39,
-      "y": 20,
-      "elevation": 0,
-      "dest_map": "MAP_CELADON_CITY_INTERIOR15",
-      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

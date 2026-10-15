@@ -2806,3 +2806,119 @@ SevenIsland_TanobyRuins_EventScript_CliffordRematch::
 	trainerbattle_rematch TRAINER_BLACK_BELT_KENJI_2, SevenIsland_TanobyRuins_Text_CliffordRematchIntro, SevenIsland_TanobyRuins_Text_CliffordDefeat
 	msgbox SevenIsland_TanobyRuins_Text_CliffordPostBattle, MSGBOX_AUTOCLOSE
 	end
+
+@ ShinyGold: moved from data/maps/GreenRoute/text.inc (map removed)
+FiveIsland_MemorialPillar_Text_HaroldDefeat::
+	.string "Down is so comfy…\n"
+	.string "It makes me drowsy…$"
+
+@ ShinyGold: moved from data/maps/GreenRoute/text.inc (map removed)
+FiveIsland_MemorialPillar_Text_HaroldPostBattle::
+	.string "It fills me with happiness when\n"
+	.string "bird POKéMON beg playfully…$"
+
+@ ShinyGold: moved from data/maps/RedRoute/text.inc (map removed)
+FiveIsland_ResortGorgeous_Text_GillianIntro::
+	.string "I’m thinking of having a pool\n"
+	.string "made specially for POKéMON.$"
+
+@ ShinyGold: moved from data/maps/RedRoute/text.inc (map removed)
+FiveIsland_ResortGorgeous_Text_GillianDefeat::
+	.string "Oh, my goodness gracious!$"
+
+@ ShinyGold: moved from data/maps/RedRoute/text.inc (map removed)
+FiveIsland_ResortGorgeous_Text_GillianPostBattle::
+	.string "A pool would be nice, but I must\n"
+	.string "say, a sun-room may be sublime.$"
+
+@ ShinyGold: moved from data/maps/RedRoute/text.inc (map removed)
+FiveIsland_ResortGorgeous_Text_DestinIntro::
+	.string "I’m a good runner.\n"
+	.string "I’m really fast!$"
+
+@ ShinyGold: moved from data/maps/RedRoute/text.inc (map removed)
+FiveIsland_ResortGorgeous_Text_DestinDefeat::
+	.string "Oops!\n"
+	.string "I rushed things!$"
+
+@ ShinyGold: moved from data/maps/RedRoute/text.inc (map removed)
+FiveIsland_ResortGorgeous_Text_DestinPostBattle::
+	.string "When I run with the wind, it feels\n"
+	.string "like I could fly!$"
+
+@ ShinyGold: moved from data/maps/RedRoute/text.inc (map removed)
+FiveIsland_ResortGorgeous_Text_TobyIntro::
+	.string "I say, this marine life here at\n"
+	.string "this resort agrees with me.$"
+
+@ ShinyGold: moved from data/maps/RedRoute/text.inc (map removed)
+FiveIsland_ResortGorgeous_Text_TobyDefeat::
+	.string "That’s a shocker!\n"
+	.string "You must be joking.$"
+
+@ ShinyGold: moved from data/maps/RedRoute/text.inc (map removed)
+FiveIsland_ResortGorgeous_Text_TobyPostBattle::
+	.string "Getting so serious over this…\n"
+	.string "How nonsensical.$"
+
+@ ShinyGold: moved from data/maps/RedRoute_Area1/text.inc (map removed)
+SevenIsland_TanobyRuins_Text_BenjaminIntro::
+	.string "A mystic POKéMON is said to sleep\n"
+	.string "inside here.$"
+
+@ ShinyGold: moved from data/maps/RedRoute_Area1/text.inc (map removed)
+SevenIsland_TanobyRuins_Text_BenjaminDefeat::
+	.string "I’m not much good in battle.$"
+
+@ ShinyGold: moved from data/maps/RedRoute_Area1/text.inc (map removed)
+SevenIsland_TanobyRuins_Text_BenjaminPostBattle::
+	.string "I hear there are other ruins like\n"
+	.string "the one here.\p"
+	.string "Might they be the resting places\n"
+	.string "of other mystic POKéMON?$"
+
+@ ShinyGold: moved from data/maps/GreenRoute_Area1/text.inc (map removed)
+SixIsland_WaterPath_Text_RoseIntro::
+	.string "I let a pleasant breeze lead me\n"
+	.string "all the way here.$"
+
+@ ShinyGold: moved from data/maps/GreenRoute_Area1/text.inc (map removed)
+SixIsland_WaterPath_Text_RoseDefeat::
+	.string "Giggle… You’re so cute when you’re\n"
+	.string "determined.$"
+
+@ ShinyGold: moved from data/maps/GreenRoute_Area1/text.inc (map removed)
+SixIsland_WaterPath_Text_RosePostBattle::
+	.string "I want to go to the woods over\n"
+	.string "there, but…\p"
+	.string "There are lots of BUG POKéMON.\n"
+	.string "They scare me a little.$"
+
+@ ShinyGold: moved from data/maps/GreenRoute_Area1/text.inc (map removed)
+SixIsland_WaterPath_Text_EdwardIntro::
+	.string "I’m practicing in secret so no one\n"
+	.string "can see me.$"
+
+@ ShinyGold: moved from data/maps/GreenRoute_Area1/text.inc (map removed)
+SixIsland_WaterPath_Text_EdwardDefeat::
+	.string "Nobody saw me losing, right?$"
+
+@ ShinyGold: moved from data/maps/GreenRoute_Area1/text.inc (map removed)
+SixIsland_WaterPath_Text_EdwardPostBattle::
+	.string "As a performer, I don’t want people\n"
+	.string "to know about the effort I put in.$"
+
+@ ShinyGold: moved from data/maps/GreenRoute_Area1/text.inc (map removed)
+SixIsland_WaterPath_Text_EarlIntro::
+	.string "Tell me, where are the mountains\n"
+	.string "around these parts?$"
+
+@ ShinyGold: moved from data/maps/GreenRoute_Area1/text.inc (map removed)
+SixIsland_WaterPath_Text_EarlDefeat::
+	.string "I lost my way while I was busy\n"
+	.string "battling!$"
+
+@ ShinyGold: moved from data/maps/GreenRoute_Area1/text.inc (map removed)
+SixIsland_WaterPath_Text_EarlPostBattle::
+	.string "Aren’t there any mountains around\n"
+	.string "these parts?$"

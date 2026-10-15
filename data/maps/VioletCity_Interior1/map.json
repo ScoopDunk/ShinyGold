@@ -58,13 +58,6 @@
       "elevation": 3,
       "dest_map": "MAP_ROUTE31",
       "dest_warp_id": "0"
-    },
-    {
-      "x": 15,
-      "y": 16,
-      "elevation": 3,
-      "dest_map": "MAP_RADIO_TOWER_CAVE1",
-      "dest_warp_id": "4"
     }
   ],
   "coord_events": [],

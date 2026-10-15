@@ -46,13 +46,6 @@
   ],
   "warp_events": [
     {
-      "x": 19,
-      "y": 1,
-      "elevation": 4,
-      "dest_map": "MAP_SEA_CAVERN_INTERIOR4",
-      "dest_warp_id": "0"
-    },
-    {
       "x": 17,
       "y": 9,
       "elevation": 0,

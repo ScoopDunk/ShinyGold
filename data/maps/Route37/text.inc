@@ -36,3 +36,13 @@ Route37_Text_Sign1::
 Route37_Text_Sign2::
 	.string "It’s a fruit-bearing tree.\p"
 	.string "Hey! It’s RED APRICORN!$"
+
+@ ShinyGold: moved from data/maps/GreenPlains/text.inc (map removed)
+GreenPlains_Text_Sign3_1::
+	.string "It’s a fruit-bearing tree.\p"
+	.string "Hey! It’s BLACK APRICORN!$"
+
+@ ShinyGold: moved from data/maps/GreenPlains/text.inc (map removed)
+GreenPlains_Text_Sign4::
+	.string "It’s a fruit-bearing tree.\p"
+	.string "Hey! It’s BLUE APRICORN!$"

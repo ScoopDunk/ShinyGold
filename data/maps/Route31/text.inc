@@ -70,3 +70,8 @@ Route31_Text_Sign1::
 Route31_Text_Sign2::
 	.string "ROUTE 31\n"
 	.string "VIOLET CITY - CHERRYGROVE CITY$"
+
+@ ShinyGold: moved from data/maps/GreenPlains/text.inc (map removed)
+GreenPlains_Text_Sign5::
+	.string "It’s a fruit-bearing tree.\p"
+	.string "Hey! It’s PERSIM BERRY!$"

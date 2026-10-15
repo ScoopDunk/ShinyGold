@@ -120,21 +120,21 @@
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_CINNABAR_ISLAND",
-      "dest_warp_id": "3"
+      "dest_warp_id": "1"
     },
     {
       "x": 6,
       "y": 9,
       "elevation": 3,
       "dest_map": "MAP_CINNABAR_ISLAND",
-      "dest_warp_id": "3"
+      "dest_warp_id": "1"
     },
     {
       "x": 8,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_CINNABAR_ISLAND",
-      "dest_warp_id": "3"
+      "dest_warp_id": "1"
     },
     {
       "x": 1,
