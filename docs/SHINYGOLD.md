@@ -72,7 +72,12 @@ It looks like accidental corruption and could break Union Room trading, so vanil
   distribution of that route. Real G/S Rock Smash data is used where it exists; other rock-smash tables are removed.
 - Areas with no G/S counterpart (61 tables: Safari Zone areas, extra caves, unused maps) keep their tables, but
   every species not found in the wild in Gold or Silver is replaced by a similar one that is, at the same levels.
-- 3 tables removed where G/S has no wild Pokémon (Mahogany Town, Route 23, S.S. Aqua).
+- Mahogany Town, Route 23 and the S.S. Aqua have no wild Pokémon in G/S, so all their tables are removed.
+- Where the hack added water that the G/S location doesn't have (Route 29, Route 11, Ice Path 1F, Victory Road,
+  Whirl Islands B1F, ...), there are no surf/fishing encounters, as in G/S. (pokegold assigns placeholder fishing
+  groups to such maps, e.g. the Dratini group to Ice Path; they are never used in G/S and are not used here.)
+- Scyther and Pinsir stay in two hack-only areas (Fuchsia City area 3 and Red Route); in G/S they
+  are caught in the wild only in the Bug-Catching Contest.
 - Pokédex, species data and IDs stay at 386, so trades and Pokédex completion are unaffected.
 
 Per-map before/after: `docs/wild_encounters_gs.md`. To change the policy, edit `tools/shinygold/lib/gs_wild_apply.py`
