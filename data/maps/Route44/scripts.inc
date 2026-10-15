@@ -54,7 +54,7 @@ Route44_EventScript_ItemUltraBall::
 	end
 
 Route44_EventScript_Fisherman244::
-	trainerbattle_single TRAINER_FISHERMAN_244, Route44_Text_Fisherman244Intro, Route44_Text_Fisherman244Defeat
+	trainerbattle_single TRAINER_FISHERMAN_WILTON, Route44_Text_Fisherman244Intro, Route44_Text_Fisherman244Defeat
 	call_if_set 0x1321, Route44_EventScript_Fisherman244_1
 	setvar 0x700C, 33
 	setvar 0x700D, 0
@@ -71,27 +71,27 @@ Route44_EventScript_Fisherman244_1::
 	call_if_set 0x115F, Route44_EventScript_Fisherman244_3
 	call_if_set FLAG_BADGE07_GET, Route44_EventScript_Fisherman244_4
 	call_if_set 0x110A, Route44_EventScript_Fisherman244_5
-	trainerbattle_earlyrival TRAINER_FISHERMAN_244, 0, Route44_Text_Fisherman244Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_FISHERMAN_WILTON, 0, Route44_Text_Fisherman244Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route44_EventScript_Fisherman244_2::
-	trainerbattle_earlyrival TRAINER_FISHERMAN_612, 0, Route44_Text_Fisherman244Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_FISHERMAN_WILTON_2, 0, Route44_Text_Fisherman244Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route44_EventScript_Fisherman244_3::
-	trainerbattle_earlyrival TRAINER_FISHERMAN_613, 0, Route44_Text_Fisherman244Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_FISHERMAN_WILTON_3, 0, Route44_Text_Fisherman244Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route44_EventScript_Fisherman244_4::
-	trainerbattle_earlyrival TRAINER_FISHERMAN_614, 0, Route44_Text_Fisherman244Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_FISHERMAN_WILTON_4, 0, Route44_Text_Fisherman244Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route44_EventScript_Fisherman244_5::
-	trainerbattle_earlyrival TRAINER_FISHERMAN_683, 0, Route44_Text_Fisherman244Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_FISHERMAN_WILTON_5, 0, Route44_Text_Fisherman244Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
@@ -111,7 +111,7 @@ Route44_EventScript_CooltrainerAllen::
 	end
 
 Route44_EventScript_BirdKeeper99::
-	trainerbattle_single TRAINER_BIRD_KEEPER_99, Route44_Text_BirdKeeper99Intro, Route44_Text_BirdKeeper99Defeat
+	trainerbattle_single TRAINER_BIRD_KEEPER_VANCE, Route44_Text_BirdKeeper99Intro, Route44_Text_BirdKeeper99Defeat
 	call_if_set 0x1322, Route44_EventScript_BirdKeeper99_1
 	setvar 0x700C, 34
 	setvar 0x700D, 0
@@ -128,27 +128,27 @@ Route44_EventScript_BirdKeeper99_1::
 	call_if_set 0x115F, Route44_EventScript_BirdKeeper99_3
 	call_if_set FLAG_BADGE07_GET, Route44_EventScript_BirdKeeper99_4
 	call_if_set 0x110A, Route44_EventScript_BirdKeeper99_5
-	trainerbattle_earlyrival TRAINER_BIRD_KEEPER_99, 0, Route44_Text_BirdKeeper99Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BIRD_KEEPER_VANCE, 0, Route44_Text_BirdKeeper99Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route44_EventScript_BirdKeeper99_2::
-	trainerbattle_earlyrival TRAINER_BIRD_KEEPER_610, 0, Route44_Text_BirdKeeper99Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BIRD_KEEPER_VANCE_2, 0, Route44_Text_BirdKeeper99Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route44_EventScript_BirdKeeper99_3::
-	trainerbattle_earlyrival TRAINER_BIRD_KEEPER_611, 0, Route44_Text_BirdKeeper99Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BIRD_KEEPER_VANCE_3, 0, Route44_Text_BirdKeeper99Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route44_EventScript_BirdKeeper99_4::
-	trainerbattle_earlyrival TRAINER_BIRD_KEEPER_634, 0, Route44_Text_BirdKeeper99Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BIRD_KEEPER_VANCE_5, 0, Route44_Text_BirdKeeper99Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route44_EventScript_BirdKeeper99_5::
-	trainerbattle_earlyrival TRAINER_BIRD_KEEPER_633, 0, Route44_Text_BirdKeeper99Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BIRD_KEEPER_VANCE_4, 0, Route44_Text_BirdKeeper99Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 

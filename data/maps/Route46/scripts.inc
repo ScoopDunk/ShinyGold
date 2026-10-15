@@ -44,7 +44,7 @@ Route46_EventScript_ItemDireHit::
 	end
 
 Route46_EventScript_Picnicker116::
-	trainerbattle_single TRAINER_PICNICKER_116, Route46_Text_Picnicker116Intro, Route46_Text_Picnicker116Defeat
+	trainerbattle_single TRAINER_PICNICKER_ERIN, Route46_Text_Picnicker116Intro, Route46_Text_Picnicker116Defeat
 	call_if_set 0x1316, Route46_EventScript_Picnicker116_1
 	setvar 0x700C, 22
 	setvar 0x700D, 0
@@ -61,27 +61,27 @@ Route46_EventScript_Picnicker116_1::
 	call_if_set 0x115F, Route46_EventScript_Picnicker116_3
 	call_if_set FLAG_BADGE07_GET, Route46_EventScript_Picnicker116_4
 	call_if_set 0x110A, Route46_EventScript_Picnicker116_5
-	trainerbattle_earlyrival TRAINER_PICNICKER_116, 0, Route46_Text_Picnicker116Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_ERIN, 0, Route46_Text_Picnicker116Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route46_EventScript_Picnicker116_2::
-	trainerbattle_earlyrival TRAINER_POKEMANIAC_647, 0, Route46_Text_Picnicker116Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_POKEMANIAC_BRENT_5, 0, Route46_Text_Picnicker116Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route46_EventScript_Picnicker116_3::
-	trainerbattle_earlyrival TRAINER_PICNICKER_646, 0, Route46_Text_Picnicker116Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_ERIN_5, 0, Route46_Text_Picnicker116Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route46_EventScript_Picnicker116_4::
-	trainerbattle_earlyrival TRAINER_PICNICKER_508, 0, Route46_Text_Picnicker116Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_ERIN_3, 0, Route46_Text_Picnicker116Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route46_EventScript_Picnicker116_5::
-	trainerbattle_earlyrival TRAINER_PICNICKER_507, 0, Route46_Text_Picnicker116Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_ERIN_2, 0, Route46_Text_Picnicker116Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 

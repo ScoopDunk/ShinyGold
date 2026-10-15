@@ -45,7 +45,7 @@ Route39_EventScript_PsychicNorman::
 	end
 
 Route39_EventScript_Pokefan154::
-	trainerbattle_single TRAINER_POKEFAN_154, Route39_Text_Pokefan154Intro, Route39_Text_Pokefan154Defeat
+	trainerbattle_single TRAINER_POKEFAN_DEREK, Route39_Text_Pokefan154Intro, Route39_Text_Pokefan154Defeat
 	call_if_set 0x1315, Route39_EventScript_Pokefan154_1
 	setvar 0x700C, 21
 	setvar 0x700D, 0
@@ -62,27 +62,27 @@ Route39_EventScript_Pokefan154_1::
 	call_if_set 0x115F, Route39_EventScript_Pokefan154_3
 	call_if_set FLAG_BADGE07_GET, Route39_EventScript_Pokefan154_4
 	call_if_set FLAG_BADGE05_GET, Route39_EventScript_Pokefan154_5
-	trainerbattle_earlyrival TRAINER_POKEFAN_154, 0, Route39_Text_Pokefan154Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_POKEFAN_DEREK, 0, Route39_Text_Pokefan154Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route39_EventScript_Pokefan154_2::
-	trainerbattle_earlyrival TRAINER_POKEFAN_648, 0, Route39_Text_Pokefan154Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_POKEFAN_DEREK_5, 0, Route39_Text_Pokefan154Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route39_EventScript_Pokefan154_3::
-	trainerbattle_earlyrival TRAINER_POKEFAN_642, 0, Route39_Text_Pokefan154Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_POKEFAN_DEREK_4, 0, Route39_Text_Pokefan154Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route39_EventScript_Pokefan154_4::
-	trainerbattle_earlyrival TRAINER_POKEFAN_641, 0, Route39_Text_Pokefan154Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_POKEFAN_DEREK_3, 0, Route39_Text_Pokefan154Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route39_EventScript_Pokefan154_5::
-	trainerbattle_earlyrival TRAINER_POKEFAN_640, 0, Route39_Text_Pokefan154Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_POKEFAN_DEREK_2, 0, Route39_Text_Pokefan154Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 

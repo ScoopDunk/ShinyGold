@@ -1,7 +1,7 @@
 const u8 gTrainerClassNames[][13] = {
     [TRAINER_CLASS_NONE]                = _("{PKMN} TRAINER"),
     [TRAINER_CLASS_PKMN_TRAINER_UNUSED] = _("PKMN THIEF"), // ShinyGold: was "{PKMN} TRAINER"
-    [TRAINER_CLASS_AQUA_LEADER]         = _(""), // ShinyGold: was "AQUA LEADER"
+    [TRAINER_CLASS_AQUA_LEADER]         = _("TEAM ROCKET"), // ShinyGold fix: class name was blank // ShinyGold: was "AQUA LEADER"
     [TRAINER_CLASS_TEAM_AQUA]           = _("KIMONO GIRL"), // ShinyGold: was "TEAM AQUA"
     [TRAINER_CLASS_RS_AROMA_LADY]       = _("AROMA LADY"),
     [TRAINER_CLASS_RS_RUIN_MANIAC]      = _("TEACHER"), // ShinyGold: was "RUIN MANIAC"
@@ -24,7 +24,7 @@ const u8 gTrainerClassNames[][13] = {
     [TRAINER_CLASS_RS_GENTLEMAN]        = _("GENTLEMAN"),
     [TRAINER_CLASS_RS_ELITE_FOUR]       = _("PKMN TRAINER"), // ShinyGold: was "ELITE FOUR"
     [TRAINER_CLASS_RS_LEADER]           = _("COOL COUPLE"), // ShinyGold: was "LEADER"
-    [TRAINER_CLASS_SCHOOL_KID]          = _(""), // ShinyGold: was "SCHOOL KID"
+    [TRAINER_CLASS_SCHOOL_KID]          = _("SCHOOL KID"), // ShinyGold fix: class name was blank // ShinyGold: was "SCHOOL KID"
     [TRAINER_CLASS_SR_AND_JR]           = _("SR. AND JR."),
     [TRAINER_CLASS_POKEFAN]             = _("POKéFAN"),
     [TRAINER_CLASS_EXPERT]              = _("EXPERT"),

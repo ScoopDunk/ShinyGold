@@ -43,7 +43,7 @@ Route22_EventScript_Trigger1_3::
 	return
 
 Route22_EventScript_Trigger1_4::
-	trainerbattle_earlyrival TRAINER_RIVAL_329, 0, Route22_Text_Trigger1Defeat, Route22_Text_Trigger1Victory
+	trainerbattle_earlyrival TRAINER_RIVAL_SILVER_7, 0, Route22_Text_Trigger1Defeat, Route22_Text_Trigger1Victory
 	return
 
 Route22_EventScript_Trigger1_5::

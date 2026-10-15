@@ -212,7 +212,7 @@ Route35_EventScript_FirebreatherWalt::
 	end
 
 Route35_EventScript_Juggler228::
-	trainerbattle_single TRAINER_JUGGLER_228, Route35_Text_Juggler228Intro, Route35_Text_Juggler228Defeat
+	trainerbattle_single TRAINER_JUGGLER_IRWIN, Route35_Text_Juggler228Intro, Route35_Text_Juggler228Defeat
 	call_if_set 0x1308, Route35_EventScript_Juggler228_1
 	setvar 0x700C, 8
 	setvar 0x700D, 0
@@ -229,7 +229,7 @@ Route35_EventScript_Juggler228_1::
 	call_if_set 0x115F, Route35_EventScript_Juggler228_5
 	call_if_set 0x110A, Route35_EventScript_Juggler228_6
 	call_if_set FLAG_BADGE05_GET, Route35_EventScript_Juggler228_7
-	trainerbattle_earlyrival TRAINER_JUGGLER_228, 0, Route35_Text_Juggler228Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_JUGGLER_IRWIN, 0, Route35_Text_Juggler228Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
@@ -254,22 +254,22 @@ Route35_EventScript_Juggler228_3::
 	end
 
 Route35_EventScript_Juggler228_4::
-	trainerbattle_earlyrival TRAINER_JUGGLER_664, 0, Route35_Text_Juggler228Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_JUGGLER_IRWIN_3, 0, Route35_Text_Juggler228Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route35_EventScript_Juggler228_5::
-	trainerbattle_earlyrival TRAINER_JUGGLER_665, 0, Route35_Text_Juggler228Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_JUGGLER_IRWIN_4, 0, Route35_Text_Juggler228Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route35_EventScript_Juggler228_6::
-	trainerbattle_earlyrival TRAINER_JUGGLER_666, 0, Route35_Text_Juggler228Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_JUGGLER_IRWIN_5, 0, Route35_Text_Juggler228Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route35_EventScript_Juggler228_7::
-	trainerbattle_earlyrival TRAINER_JUGGLER_653, 0, Route35_Text_Juggler228Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_JUGGLER_IRWIN_2, 0, Route35_Text_Juggler228Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
@@ -842,7 +842,7 @@ Route35_EventScript_OfficerDirk::
 	end
 
 Route35_EventScript_BugCatcher95::
-	trainerbattle_single TRAINER_BUG_CATCHER_95, Route35_Text_BugCatcher95Intro, Route35_Text_BugCatcher95Defeat
+	trainerbattle_single TRAINER_BUG_CATCHER_ARNIE, Route35_Text_BugCatcher95Intro, Route35_Text_BugCatcher95Defeat
 	call_if_set 0x1309, Route35_EventScript_BugCatcher95_1
 	setvar 0x700C, 9
 	setvar 0x700D, 0
@@ -859,27 +859,27 @@ Route35_EventScript_BugCatcher95_1::
 	call_if_set 0x115F, Route35_EventScript_BugCatcher95_3
 	call_if_set FLAG_BADGE07_GET, Route35_EventScript_BugCatcher95_4
 	call_if_set FLAG_BADGE05_GET, Route35_EventScript_BugCatcher95_5
-	trainerbattle_earlyrival TRAINER_BUG_CATCHER_95, 0, Route35_Text_BugCatcher95Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BUG_CATCHER_ARNIE, 0, Route35_Text_BugCatcher95Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route35_EventScript_BugCatcher95_2::
-	trainerbattle_earlyrival TRAINER_BUG_CATCHER_663, 0, Route35_Text_BugCatcher95Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BUG_CATCHER_ARNIE_5, 0, Route35_Text_BugCatcher95Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route35_EventScript_BugCatcher95_3::
-	trainerbattle_earlyrival TRAINER_BUG_CATCHER_509, 0, Route35_Text_BugCatcher95Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BUG_CATCHER_ARNIE_4, 0, Route35_Text_BugCatcher95Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route35_EventScript_BugCatcher95_4::
-	trainerbattle_earlyrival TRAINER_BUG_CATCHER_506, 0, Route35_Text_BugCatcher95Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BUG_CATCHER_ARNIE_3, 0, Route35_Text_BugCatcher95Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route35_EventScript_BugCatcher95_5::
-	trainerbattle_earlyrival TRAINER_BUG_CATCHER_500, 0, Route35_Text_BugCatcher95Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_BUG_CATCHER_ARNIE_2, 0, Route35_Text_BugCatcher95Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 

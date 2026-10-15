@@ -13,17 +13,17 @@ BlueRoute_EventScript_LadyMariam::
 	end
 
 BlueRoute_EventScript_BirdKeeper611::
-	trainerbattle_single TRAINER_BIRD_KEEPER_611, BlueRoute_Text_BirdKeeper611Intro, BlueRoute_Text_BirdKeeper611Defeat
+	trainerbattle_single TRAINER_BIRD_KEEPER_VANCE_3, BlueRoute_Text_BirdKeeper611Intro, BlueRoute_Text_BirdKeeper611Defeat
 	msgbox BlueRoute_Text_BirdKeeper611, MSGBOX_AUTOCLOSE
 	end
 
 BlueRoute_EventScript_Fisherman612::
-	trainerbattle_single TRAINER_FISHERMAN_612, BlueRoute_Text_Fisherman612Intro, BlueRoute_Text_Fisherman612Defeat
+	trainerbattle_single TRAINER_FISHERMAN_WILTON_2, BlueRoute_Text_Fisherman612Intro, BlueRoute_Text_Fisherman612Defeat
 	msgbox BlueRoute_Text_Fisherman612, MSGBOX_AUTOCLOSE
 	end
 
 BlueRoute_EventScript_Fisherman613::
-	trainerbattle_single TRAINER_FISHERMAN_613, BlueRoute_Text_Fisherman613Intro, BlueRoute_Text_Fisherman613Defeat
+	trainerbattle_single TRAINER_FISHERMAN_WILTON_3, BlueRoute_Text_Fisherman613Intro, BlueRoute_Text_Fisherman613Defeat
 	msgbox BlueRoute_Text_Fisherman613, MSGBOX_AUTOCLOSE
 	end
 
@@ -33,7 +33,7 @@ BlueRoute_EventScript_YoungsterFelix::
 	end
 
 BlueRoute_EventScript_Pokemaniac617::
-	trainerbattle_single TRAINER_POKEMANIAC_617, BlueRoute_Text_Pokemaniac617Intro, BlueRoute_Text_Pokemaniac617Defeat
+	trainerbattle_single TRAINER_POKEMANIAC_BRENT_4, BlueRoute_Text_Pokemaniac617Intro, BlueRoute_Text_Pokemaniac617Defeat
 	msgbox BlueRoute_Text_Pokemaniac617, MSGBOX_AUTOCLOSE
 	end
 

@@ -52,7 +52,7 @@ Route42_EventScript_ItemMaxPotion::
 	end
 
 Route42_EventScript_Fisherman465::
-	trainerbattle_single TRAINER_FISHERMAN_465, Route42_Text_Fisherman465Intro, Route42_Text_Fisherman465Defeat
+	trainerbattle_single TRAINER_FISHERMAN_CHRIS, Route42_Text_Fisherman465Intro, Route42_Text_Fisherman465Defeat
 	call_if_set 0x1318, Route42_EventScript_Fisherman465_1
 	setvar 0x700C, 24
 	setvar 0x700D, 0
@@ -69,27 +69,27 @@ Route42_EventScript_Fisherman465_1::
 	call_if_set 0x115F, Route42_EventScript_Fisherman465_3
 	call_if_set FLAG_BADGE07_GET, Route42_EventScript_Fisherman465_4
 	call_if_set FLAG_BADGE05_GET, Route42_EventScript_Fisherman465_5
-	trainerbattle_earlyrival TRAINER_FISHERMAN_465, 0, Route42_Text_Fisherman465Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_FISHERMAN_CHRIS, 0, Route42_Text_Fisherman465Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route42_EventScript_Fisherman465_2::
-	trainerbattle_earlyrival TRAINER_FISHERMAN_620, 0, Route42_Text_Fisherman465Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_FISHERMAN_CHRIS_2, 0, Route42_Text_Fisherman465Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route42_EventScript_Fisherman465_3::
-	trainerbattle_earlyrival TRAINER_FISHERMAN_622, 0, Route42_Text_Fisherman465Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_FISHERMAN_CHRIS_3, 0, Route42_Text_Fisherman465Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route42_EventScript_Fisherman465_4::
-	trainerbattle_earlyrival TRAINER_FISHERMAN_623, 0, Route42_Text_Fisherman465Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_FISHERMAN_CHRIS_4, 0, Route42_Text_Fisherman465Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route42_EventScript_Fisherman465_5::
-	trainerbattle_earlyrival TRAINER_FISHERMAN_643, 0, Route42_Text_Fisherman465Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_FISHERMAN_CHRIS_5, 0, Route42_Text_Fisherman465Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 

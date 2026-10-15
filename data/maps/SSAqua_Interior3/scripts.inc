@@ -182,11 +182,11 @@ SSAqua_Interior3_EventScript_Trigger1_5::
 	return
 
 SSAqua_Interior3_EventScript_Trigger1_6::
-	trainerbattle_no_intro TRAINER_CHAMPION_427, SSAqua_Interior3_Text_Trigger1Defeat
+	trainerbattle_no_intro TRAINER_CHAMPION_SILVER, SSAqua_Interior3_Text_Trigger1Defeat
 	return
 
 SSAqua_Interior3_EventScript_Trigger1_7::
-	trainerbattle_no_intro TRAINER_CHAMPION_428, SSAqua_Interior3_Text_Trigger1Defeat
+	trainerbattle_no_intro TRAINER_CHAMPION_SILVER_2, SSAqua_Interior3_Text_Trigger1Defeat
 	return
 
 SSAqua_Interior3_EventScript_Trigger1_8::

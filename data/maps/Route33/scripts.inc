@@ -40,7 +40,7 @@ Route33_EventScript_FrameScene_1::
 	return
 
 Route33_EventScript_Hiker163::
-	trainerbattle_single TRAINER_HIKER_163, Route33_Text_Hiker163Intro, Route33_Text_Hiker163Defeat
+	trainerbattle_single TRAINER_HIKER_ANTHONY, Route33_Text_Hiker163Intro, Route33_Text_Hiker163Defeat
 	call_if_set 0x1305, Route33_EventScript_Hiker163_1
 	setvar 0x700C, 5
 	setvar 0x700D, 0
@@ -57,27 +57,27 @@ Route33_EventScript_Hiker163_1::
 	call_if_set 0x115F, Route33_EventScript_Hiker163_3
 	call_if_set 0x110A, Route33_EventScript_Hiker163_4
 	call_if_set FLAG_BADGE05_GET, Route33_EventScript_Hiker163_5
-	trainerbattle_earlyrival TRAINER_HIKER_163, 0, Route33_Text_Hiker163Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_HIKER_ANTHONY, 0, Route33_Text_Hiker163Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route33_EventScript_Hiker163_2::
-	trainerbattle_earlyrival TRAINER_HIKER_676, 0, Route33_Text_Hiker163Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_HIKER_ANTHONY_3, 0, Route33_Text_Hiker163Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route33_EventScript_Hiker163_3::
-	trainerbattle_earlyrival TRAINER_HIKER_677, 0, Route33_Text_Hiker163Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_HIKER_ANTHONY_4, 0, Route33_Text_Hiker163Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route33_EventScript_Hiker163_4::
-	trainerbattle_earlyrival TRAINER_HIKER_678, 0, Route33_Text_Hiker163Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_HIKER_ANTHONY_5, 0, Route33_Text_Hiker163Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route33_EventScript_Hiker163_5::
-	trainerbattle_earlyrival TRAINER_HIKER_645, 0, Route33_Text_Hiker163Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_HIKER_ANTHONY_2, 0, Route33_Text_Hiker163Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 

@@ -45,7 +45,7 @@ Route43_EventScript_CamperSpencer::
 	end
 
 Route43_EventScript_Picnicker472::
-	trainerbattle_single TRAINER_PICNICKER_472, Route43_Text_Picnicker472Intro, Route43_Text_Picnicker472Defeat
+	trainerbattle_single TRAINER_PICNICKER_TIFFANY, Route43_Text_Picnicker472Intro, Route43_Text_Picnicker472Defeat
 	call_if_set 0x1319, Route43_EventScript_Picnicker472_1
 	setvar 0x700C, 25
 	setvar 0x700D, 0
@@ -62,32 +62,32 @@ Route43_EventScript_Picnicker472_1::
 	call_if_set 0x8888, Route43_EventScript_Picnicker472_3
 	call_if_set FLAG_BADGE07_GET, Route43_EventScript_Picnicker472_4
 	call_if_set 0x110A, Route43_EventScript_Picnicker472_5
-	trainerbattle_earlyrival TRAINER_PICNICKER_472, 0, Route43_Text_Picnicker472Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_TIFFANY, 0, Route43_Text_Picnicker472Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route43_EventScript_Picnicker472_2::
-	trainerbattle_earlyrival TRAINER_PICNICKER_618, 0, Route43_Text_Picnicker472Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_TIFFANY_2, 0, Route43_Text_Picnicker472Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route43_EventScript_Picnicker472_3::
-	trainerbattle_earlyrival TRAINER_PICNICKER_619, 0, Route43_Text_Picnicker472Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_TIFFANY_3, 0, Route43_Text_Picnicker472Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route43_EventScript_Picnicker472_4::
-	trainerbattle_earlyrival TRAINER_PICNICKER_685, 0, Route43_Text_Picnicker472Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_TIFFANY_5, 0, Route43_Text_Picnicker472Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route43_EventScript_Picnicker472_5::
-	trainerbattle_earlyrival TRAINER_PICNICKER_684, 0, Route43_Text_Picnicker472Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_TIFFANY_4, 0, Route43_Text_Picnicker472Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route43_EventScript_Pokemaniac188::
-	trainerbattle_single TRAINER_POKEMANIAC_188, Route43_Text_Pokemaniac188Intro, Route43_Text_Pokemaniac188Defeat
+	trainerbattle_single TRAINER_POKEMANIAC_BRENT, Route43_Text_Pokemaniac188Intro, Route43_Text_Pokemaniac188Defeat
 	call_if_set 0x1320, Route43_EventScript_Pokemaniac188_1
 	setvar 0x700C, 16
 	setvar 0x700D, 0
@@ -104,27 +104,27 @@ Route43_EventScript_Pokemaniac188_1::
 	call_if_set 0x115F, Route43_EventScript_Pokemaniac188_3
 	call_if_set FLAG_BADGE07_GET, Route43_EventScript_Pokemaniac188_4
 	call_if_set 0x110A, Route43_EventScript_Pokemaniac188_5
-	trainerbattle_earlyrival TRAINER_POKEMANIAC_188, 0, Route43_Text_Pokemaniac188Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_POKEMANIAC_BRENT, 0, Route43_Text_Pokemaniac188Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route43_EventScript_Pokemaniac188_2::
-	trainerbattle_earlyrival TRAINER_POKEMANIAC_615, 0, Route43_Text_Pokemaniac188Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_POKEMANIAC_BRENT_2, 0, Route43_Text_Pokemaniac188Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route43_EventScript_Pokemaniac188_3::
-	trainerbattle_earlyrival TRAINER_POKEMANIAC_616, 0, Route43_Text_Pokemaniac188Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_POKEMANIAC_BRENT_3, 0, Route43_Text_Pokemaniac188Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route43_EventScript_Pokemaniac188_4::
-	trainerbattle_earlyrival TRAINER_POKEMANIAC_617, 0, Route43_Text_Pokemaniac188Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_POKEMANIAC_BRENT_4, 0, Route43_Text_Pokemaniac188Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route43_EventScript_Pokemaniac188_5::
-	trainerbattle_earlyrival TRAINER_POKEMANIAC_647, 0, Route43_Text_Pokemaniac188Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_POKEMANIAC_BRENT_5, 0, Route43_Text_Pokemaniac188Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 

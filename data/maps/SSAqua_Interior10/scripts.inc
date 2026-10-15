@@ -7,7 +7,7 @@ SSAqua_Interior10_EventScript_CamperElliot::
 	end
 
 SSAqua_Interior10_EventScript_BirdKeeper96::
-	trainerbattle_single TRAINER_BIRD_KEEPER_96, SSAqua_Interior10_Text_BirdKeeper96Intro, SSAqua_Interior10_Text_BirdKeeper96Defeat
+	trainerbattle_single TRAINER_BIRD_KEEPER_JOSE, SSAqua_Interior10_Text_BirdKeeper96Intro, SSAqua_Interior10_Text_BirdKeeper96Defeat
 	msgbox SSAqua_Interior10_Text_BirdKeeper96, MSGBOX_AUTOCLOSE
 	end
 

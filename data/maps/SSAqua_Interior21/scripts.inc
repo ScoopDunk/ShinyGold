@@ -7,6 +7,6 @@ SSAqua_Interior21_EventScript_FishermanScott::
 	end
 
 SSAqua_Interior21_EventScript_Cooltrainer140::
-	trainerbattle_single TRAINER_COOLTRAINER_140, SSAqua_Interior21_Text_Cooltrainer140Intro, SSAqua_Interior21_Text_Cooltrainer140Defeat
+	trainerbattle_single TRAINER_COOLTRAINER_REENA_3, SSAqua_Interior21_Text_Cooltrainer140Intro, SSAqua_Interior21_Text_Cooltrainer140Defeat
 	msgbox SSAqua_Interior21_Text_Cooltrainer140, MSGBOX_AUTOCLOSE
 	end

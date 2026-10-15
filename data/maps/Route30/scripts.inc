@@ -75,7 +75,7 @@ Route30_Movement_Youngster_3::
 	step_end
 
 Route30_EventScript_Youngster89::
-	trainerbattle_single TRAINER_YOUNGSTER_89, Route30_Text_Youngster89Intro, Route30_Text_Youngster89Defeat
+	trainerbattle_single TRAINER_YOUNGSTER_JOEY_2, Route30_Text_Youngster89Intro, Route30_Text_Youngster89Defeat
 	call_if_set 0x1301, Route30_EventScript_Youngster89_1
 	setvar 0x700C, 1
 	setvar 0x700D, 0
@@ -92,27 +92,27 @@ Route30_EventScript_Youngster89_1::
 	call_if_set FLAG_BADGE07_GET, Route30_EventScript_Youngster89_3
 	call_if_set FLAG_BADGE05_GET, Route30_EventScript_Youngster89_4
 	call_if_set FLAG_BADGE02_GET, Route30_EventScript_Youngster89_5
-	trainerbattle_earlyrival TRAINER_YOUNGSTER_89, 0, Route30_Text_Youngster89Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_YOUNGSTER_JOEY_2, 0, Route30_Text_Youngster89Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route30_EventScript_Youngster89_2::
-	trainerbattle_earlyrival TRAINER_YOUNGSTER_693, 0, Route30_Text_Youngster89Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_YOUNGSTER_JOEY_6, 0, Route30_Text_Youngster89Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route30_EventScript_Youngster89_3::
-	trainerbattle_earlyrival TRAINER_YOUNGSTER_499, 0, Route30_Text_Youngster89Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_YOUNGSTER_JOEY_5, 0, Route30_Text_Youngster89Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route30_EventScript_Youngster89_4::
-	trainerbattle_earlyrival TRAINER_YOUNGSTER_498, 0, Route30_Text_Youngster89Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_YOUNGSTER_JOEY_4, 0, Route30_Text_Youngster89Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 
 Route30_EventScript_Youngster89_5::
-	trainerbattle_earlyrival TRAINER_YOUNGSTER_101, 0, Route30_Text_Youngster89Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_YOUNGSTER_JOEY_3, 0, Route30_Text_Youngster89Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 

@@ -25,7 +25,7 @@ MaidensPeakDis_EventScript_SuperNerdTom::
 	end
 
 MaidensPeakDis_EventScript_Cooltrainer104::
-	trainerbattle_single TRAINER_COOLTRAINER_104, MaidensPeakDis_Text_Cooltrainer104Intro, MaidensPeakDis_Text_Cooltrainer104Defeat
+	trainerbattle_single TRAINER_COOLTRAINER_GAVEN, MaidensPeakDis_Text_Cooltrainer104Intro, MaidensPeakDis_Text_Cooltrainer104Defeat
 	msgbox MaidensPeakDis_Text_Cooltrainer104, MSGBOX_AUTOCLOSE
 	end
 
