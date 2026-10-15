@@ -1,0 +1,63 @@
+CeladonCity_Interior13_MapScripts::
+	.byte 0
+
+CeladonCity_Interior13_EventScript_CooltrainerJoyce::
+	trainerbattle_single TRAINER_COOLTRAINER_JOYCE, CeladonCity_Interior13_Text_CooltrainerJoyceIntro, CeladonCity_Interior13_Text_CooltrainerJoyceDefeat
+	msgbox CeladonCity_Interior13_Text_CooltrainerJoyce, MSGBOX_AUTOCLOSE
+	end
+
+CeladonCity_Interior13_EventScript_SwimmerMParker::
+	trainerbattle_single TRAINER_SWIMMER_M_PARKER, CeladonCity_Interior13_Text_SwimmerMParkerIntro, CeladonCity_Interior13_Text_SwimmerMParkerDefeat
+	msgbox CeladonCity_Interior13_Text_SwimmerMParker, MSGBOX_AUTOCLOSE
+	end
+
+CeladonCity_Interior13_EventScript_TwinsJoAndZoe::
+	trainerbattle_single TRAINER_TWINS_JO_AND_ZOE, CeladonCity_Interior13_Text_TwinsJoAndZoeIntro, CeladonCity_Interior13_Text_TwinsJoAndZoeDefeat
+	msgbox CeladonCity_Interior13_Text_TwinsJoAndZoe, MSGBOX_AUTOCLOSE
+	end
+
+CeladonCity_Interior13_EventScript_PicnickerTanya::
+	trainerbattle_single TRAINER_PICNICKER_TANYA, CeladonCity_Interior13_Text_PicnickerTanyaIntro, CeladonCity_Interior13_Text_PicnickerTanyaDefeat
+	msgbox CeladonCity_Interior13_Text_PicnickerTanya, MSGBOX_AUTOCLOSE
+	end
+
+CeladonCity_Interior13_EventScript_BeautyJulia::
+	trainerbattle_single TRAINER_BEAUTY_JULIA, CeladonCity_Interior13_Text_BeautyJuliaIntro, CeladonCity_Interior13_Text_BeautyJuliaDefeat
+	msgbox CeladonCity_Interior13_Text_BeautyJulia, MSGBOX_AUTOCLOSE
+	end
+
+CeladonCity_Interior13_EventScript_LassMichelle::
+	trainerbattle_single TRAINER_LASS_MICHELLE, CeladonCity_Interior13_Text_LassMichelleIntro, CeladonCity_Interior13_Text_LassMichelleDefeat
+	msgbox CeladonCity_Interior13_Text_LassMichelle, MSGBOX_AUTOCLOSE
+	end
+
+CeladonCity_Interior13_EventScript_Erika::
+	setvar VAR_0x8004, 2
+	setvar VAR_0x8005, 2
+	special UpdatePickStateFromSpecialVar8005
+	call Unused_CeruleanCity_Gym_EventScript_Misty_1
+	trainerbattle_single TRAINER_LEADER_ERIKA, CeladonCity_Interior13_Text_ErikaIntro, CeladonCity_Interior13_Text_ErikaDefeat, CeladonCity_Interior13_EventScript_ErikaContinue, NO_MUSIC
+	msgbox CeladonCity_Interior13_Text_Erika_1, MSGBOX_NPC
+	end
+
+CeladonCity_Interior13_EventScript_ErikaContinue::
+	setflag 0x1181
+	call LavenderTown_EventScript_Trigger6_3
+	msgbox CeladonCity_Interior13_Text_Erika_2, MSGBOX_NPC
+	giveitem ITEM_TM19
+	msgbox CeladonCity_Interior13_Text_Erika_1, MSGBOX_NPC
+	end
+
+CeladonCity_Interior13_EventScript_TwinsJoAndZoe2::
+	trainerbattle_single TRAINER_TWINS_JO_AND_ZOE, CeladonCity_Interior13_Text_TwinsJoAndZoe2Intro, CeladonCity_Interior13_Text_TwinsJoAndZoeDefeat
+	msgbox CeladonCity_Interior13_Text_TwinsJoAndZoe2, MSGBOX_AUTOCLOSE
+	end
+
+CeladonCity_Interior13_EventScript_Sign1::
+	call_if_set 0x1181, CeladonCity_Interior13_EventScript_Sign1_1
+	msgbox CeladonCity_Interior13_Text_Sign1_1, MSGBOX_AUTOCLOSE
+	end
+
+CeladonCity_Interior13_EventScript_Sign1_1::
+	msgbox CeladonCity_Interior13_Text_Sign1_2, MSGBOX_AUTOCLOSE
+	end

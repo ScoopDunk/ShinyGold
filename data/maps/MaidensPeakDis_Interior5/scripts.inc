@@ -1,0 +1,39 @@
+MaidensPeakDis_Interior5_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, MaidensPeakDis_Interior5_OnLoad
+	.byte 0
+
+MaidensPeakDis_Interior5_OnLoad::
+	call_if_unset 0x287, EventScript_Close8FDoor
+	end
+
+MaidensPeakDis_Interior5_EventScript_CoolCoupleDanteAndRina2::
+	trainerbattle_single TRAINER_COOL_COUPLE_DANTE_AND_RINA_2, MaidensPeakDis_Interior5_Text_CoolCoupleDanteAndRina2Intro, MaidensPeakDis_Interior5_Text_CoolCoupleDanteAndRina2Defeat
+	msgbox MaidensPeakDis_Interior5_Text_CoolCoupleDanteAndRina2, MSGBOX_AUTOCLOSE
+	end
+
+MaidensPeakDis_Interior5_EventScript_TeamRocketExecutive3::
+	trainerbattle_single TRAINER_TEAM_ROCKET_EXECUTIVE_3, MaidensPeakDis_Interior5_Text_TeamRocketExecutive3Intro, MaidensPeakDis_Interior5_Text_TeamRocketExecutive3Defeat
+	msgbox MaidensPeakDis_Interior5_Text_TeamRocketExecutive3, MSGBOX_AUTOCLOSE
+	end
+
+MaidensPeakDis_Interior5_EventScript_ScientistParker::
+	trainerbattle_single TRAINER_SCIENTIST_PARKER, MaidensPeakDis_Interior5_Text_ScientistParkerIntro, MaidensPeakDis_Interior5_Text_ScientistParkerDefeat
+	msgbox MaidensPeakDis_Interior5_Text_ScientistParker, MSGBOX_AUTOCLOSE
+	end
+
+MaidensPeakDis_Interior5_EventScript_WorkerM::
+	lock
+	faceplayer
+	goto_if_ge 0x4060, 1, MaidensPeakDis_Interior5_EventScript_WorkerM_1
+	msgbox MaidensPeakDis_Interior5_Text_WorkerM_1
+	release
+	end
+
+MaidensPeakDis_Interior5_EventScript_WorkerM_1::
+	msgbox MaidensPeakDis_Interior5_Text_WorkerM_2
+	release
+	end
+
+MaidensPeakDis_Interior5_EventScript_Sign5::
+	msgbox MaidensPeakDis_Interior5_Text_Sign5, MSGBOX_SIGN
+	end

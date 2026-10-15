@@ -1,0 +1,58 @@
+RadioTower_Interior4_MapScripts::
+	@ ShinyGold: map script header pointer was NULL
+	.byte 0
+
+RadioTower_Interior4_EventScript_FatMan::
+	msgbox RadioTower_Interior4_Text_FatMan, MSGBOX_NPC
+	end
+
+RadioTower_Interior4_EventScript_ScientistRich::
+	trainerbattle_single TRAINER_SCIENTIST_RICH, RadioTower_Interior4_Text_ScientistRichIntro, RadioTower_Interior4_Text_ScientistRichDefeat
+	msgbox RadioTower_Interior4_Text_ScientistRich, MSGBOX_AUTOCLOSE
+	end
+
+RadioTower_Interior4_EventScript_TeamRocketExecutive5::
+	trainerbattle_single TRAINER_TEAM_ROCKET_EXECUTIVE_5, RadioTower_Interior4_Text_TeamRocketExecutive5Intro, RadioTower_Interior4_Text_TeamRocketExecutive5Defeat
+	msgbox RadioTower_Interior4_Text_TeamRocketExecutive5, MSGBOX_AUTOCLOSE
+	end
+
+RadioTower_Interior4_EventScript_TeamRocketGrunt34::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_34, RadioTower_Interior4_Text_TeamRocketGrunt34Intro, RadioTower_Interior4_Text_TeamRocketGrunt34Defeat
+	msgbox RadioTower_Interior4_Text_TeamRocketGrunt34, MSGBOX_AUTOCLOSE
+	end
+
+RadioTower_Interior4_EventScript_TeamRocketGrunt32::
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_32, RadioTower_Interior4_Text_TeamRocketGrunt32Intro, RadioTower_Interior4_Text_TeamRocketGrunt32Defeat
+	msgbox RadioTower_Interior4_Text_TeamRocketGrunt32, MSGBOX_AUTOCLOSE
+	end
+
+RadioTower_Interior4_EventScript_Beauty::
+	call_if_set 0x1125, RadioTower_Interior4_EventScript_Beauty_1
+	call_if_set 0x1123, RadioTower_Interior4_EventScript_Beauty_2
+	msgbox RadioTower_Interior4_Text_Beauty_1, MSGBOX_NPC
+	end
+
+RadioTower_Interior4_EventScript_Beauty_1::
+	msgbox RadioTower_Interior4_Text_Beauty_2, MSGBOX_NPC
+	end
+
+RadioTower_Interior4_EventScript_Beauty_2::
+	setflag 0x1125
+	msgbox RadioTower_Interior4_Text_Beauty_3, MSGBOX_NPC
+	giveitem ITEM_SILK_SCARF
+	msgbox RadioTower_Interior4_Text_Beauty_4, MSGBOX_NPC
+	end
+
+RadioTower_Interior4_EventScript_Meowth::
+	msgbox RadioTower_Interior4_Text_Meowth, MSGBOX_NPC
+	waitse
+	playmoncry SPECIES_MEOWTH, 0x200
+	.byte 0xFF @ invalid opcode (script stops)
+
+RadioTower_Interior4_EventScript_Sign1::
+	msgbox RadioTower_Interior4_Text_Sign1, MSGBOX_AUTOCLOSE
+	end
+
+RadioTower_Interior4_EventScript_Sign2::
+	msgbox RadioTower_Interior4_Text_Sign2, MSGBOX_AUTOCLOSE
+	end

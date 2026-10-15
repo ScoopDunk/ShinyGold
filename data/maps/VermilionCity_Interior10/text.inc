@@ -1,0 +1,10 @@
+VermilionCity_Interior10_Text_Fisher::
+	.string "I am the FISHING GURU, the elder of\n"
+	.string "the FISHING BROS.\p"
+	.string "Do you happen to know FISHERMAN\n"
+	.string "WILTON? He fishes on ROUTE 44.\p"
+	.string "He came through with an amazing\n"
+	.string "tip on the phone.\p"
+	.string "Thanks to him, I caught a whole lot\n"
+	.string "of a rare POKéMON.\l"
+	.string "What a day it was!$"

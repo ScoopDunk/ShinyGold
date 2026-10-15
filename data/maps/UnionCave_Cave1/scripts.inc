@@ -1,0 +1,47 @@
+UnionCave_Cave1_MapScripts::
+	.byte 0
+
+UnionCave_Cave1_EventScript_ItemPotion::
+	finditem ITEM_POTION
+	end
+
+UnionCave_Cave1_EventScript_ItemGreatBall::
+	finditem ITEM_GREAT_BALL
+	end
+
+UnionCave_Cave1_EventScript_ItemXAttack::
+	finditem ITEM_X_ATTACK
+	end
+
+UnionCave_Cave1_EventScript_ItemAwakening::
+	finditem ITEM_AWAKENING
+	end
+
+UnionCave_Cave1_EventScript_HikerDaniel::
+	trainerbattle_single TRAINER_HIKER_DANIEL, UnionCave_Cave1_Text_HikerDanielIntro, UnionCave_Cave1_Text_HikerDanielDefeat
+	msgbox UnionCave_Cave1_Text_HikerDaniel, MSGBOX_AUTOCLOSE
+	end
+
+UnionCave_Cave1_EventScript_ItemMoonStone::
+	finditem ITEM_MOON_STONE
+	end
+
+UnionCave_Cave1_EventScript_HikerRusell::
+	trainerbattle_single TRAINER_HIKER_RUSELL, UnionCave_Cave1_Text_HikerRusellIntro, UnionCave_Cave1_Text_HikerRusellDefeat
+	msgbox UnionCave_Cave1_Text_HikerRusell, MSGBOX_AUTOCLOSE
+	end
+
+UnionCave_Cave1_EventScript_FirebreatherBill::
+	trainerbattle_single TRAINER_FIREBREATHER_BILL, UnionCave_Cave1_Text_FirebreatherBillIntro, UnionCave_Cave1_Text_FirebreatherBillDefeat
+	msgbox UnionCave_Cave1_Text_FirebreatherBill, MSGBOX_AUTOCLOSE
+	end
+
+UnionCave_Cave1_EventScript_PokemaniacLarry::
+	trainerbattle_single TRAINER_POKEMANIAC_LARRY, UnionCave_Cave1_Text_PokemaniacLarryIntro, UnionCave_Cave1_Text_PokemaniacLarryDefeat
+	msgbox UnionCave_Cave1_Text_PokemaniacLarry, MSGBOX_AUTOCLOSE
+	end
+
+UnionCave_Cave1_EventScript_FirebreatherRay::
+	trainerbattle_single TRAINER_FIREBREATHER_RAY, UnionCave_Cave1_Text_FirebreatherRayIntro, UnionCave_Cave1_Text_FirebreatherRayDefeat
+	msgbox UnionCave_Cave1_Text_FirebreatherRay, MSGBOX_AUTOCLOSE
+	end

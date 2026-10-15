@@ -1,0 +1,8 @@
+VermilionCity_Interior3_MapScripts::
+	@ ShinyGold: map script header pointer was NULL
+	.byte 0
+
+VermilionCity_Interior3_EventScript_JugglerMason::
+	trainerbattle_single TRAINER_JUGGLER_MASON, VermilionCity_Interior3_Text_JugglerMasonIntro, VermilionCity_Interior3_Text_JugglerMasonDefeat
+	msgbox VermilionCity_Interior3_Text_JugglerMason, MSGBOX_AUTOCLOSE
+	end

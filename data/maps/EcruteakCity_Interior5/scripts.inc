@@ -1,0 +1,63 @@
+EcruteakCity_Interior5_MapScripts::
+	@ ShinyGold: map script header pointer was NULL
+	.byte 0
+
+EcruteakCity_Interior5_EventScript_GymGuy::
+	call_if_set FLAG_BADGE05_GET, EcruteakCity_Interior5_EventScript_GymGuy_1
+	msgbox EcruteakCity_Interior5_Text_GymGuy_1, MSGBOX_NPC
+	end
+
+EcruteakCity_Interior5_EventScript_GymGuy_1::
+	msgbox EcruteakCity_Interior5_Text_GymGuy_2, MSGBOX_NPC
+	end
+
+EcruteakCity_Interior5_EventScript_SagePing2::
+	trainerbattle_single TRAINER_SAGE_PING_2, EcruteakCity_Interior5_Text_SagePing2Intro, EcruteakCity_Interior5_Text_SagePing2Defeat
+	msgbox EcruteakCity_Interior5_Text_SagePing2, MSGBOX_AUTOCLOSE
+	end
+
+EcruteakCity_Interior5_EventScript_MediumGrace::
+	trainerbattle_single TRAINER_MEDIUM_GRACE, EcruteakCity_Interior5_Text_MediumGraceIntro, EcruteakCity_Interior5_Text_MediumGraceDefeat
+	msgbox EcruteakCity_Interior5_Text_MediumGrace, MSGBOX_AUTOCLOSE
+	end
+
+EcruteakCity_Interior5_EventScript_SagePing::
+	trainerbattle_single TRAINER_SAGE_PING, EcruteakCity_Interior5_Text_SagePingIntro, EcruteakCity_Interior5_Text_SagePingDefeat
+	msgbox EcruteakCity_Interior5_Text_SagePing, MSGBOX_AUTOCLOSE
+	end
+
+EcruteakCity_Interior5_EventScript_MediumMartha::
+	trainerbattle_single TRAINER_MEDIUM_MARTHA, EcruteakCity_Interior5_Text_MediumMarthaIntro, EcruteakCity_Interior5_Text_MediumMarthaDefeat
+	msgbox EcruteakCity_Interior5_Text_MediumMartha, MSGBOX_AUTOCLOSE
+	end
+
+EcruteakCity_Interior5_EventScript_Man::
+	setvar VAR_0x8004, 2
+	setvar VAR_0x8005, 2
+	special UpdatePickStateFromSpecialVar8005
+	trainerbattle_single TRAINER_LEADER_MORTY_2, EcruteakCity_Interior5_Text_ManIntro, EcruteakCity_Interior5_Text_ManDefeat, EcruteakCity_Interior5_EventScript_ManContinue, NO_MUSIC
+	msgbox EcruteakCity_Interior5_Text_Man_1, MSGBOX_NPC
+	end
+
+EcruteakCity_Interior5_EventScript_ManContinue::
+	setflag FLAG_BADGE05_GET
+	msgbox EcruteakCity_Interior5_Text_Man_2, MSGBOX_NPC
+	giveitem ITEM_TM30
+	msgbox EcruteakCity_Interior5_Text_Man_3, MSGBOX_NPC
+	clearflag 0x10AD
+	release
+	end
+
+EcruteakCity_Interior5_EventScript_Sign1::
+	call_if_set 0x10B0, EcruteakCity_Interior5_EventScript_Sign1_1
+	call_if_set FLAG_BADGE05_GET, EcruteakCity_Interior5_EventScript_Sign1_2
+	msgbox EcruteakCity_Interior5_Text_Sign1_1, MSGBOX_NPC
+	end
+
+EcruteakCity_Interior5_EventScript_Sign1_1::
+	msgbox EcruteakCity_Interior5_Text_Sign1_2, MSGBOX_AUTOCLOSE
+	end
+
+EcruteakCity_Interior5_EventScript_Sign1_2::
+	msgbox EcruteakCity_Interior5_Text_Sign1_3, MSGBOX_NPC
+	end

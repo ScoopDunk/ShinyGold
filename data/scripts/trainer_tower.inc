@@ -34,8 +34,8 @@ TrainerTower_EventScript_SetObjectsSingles::
 	setflag HIDE_TRAINER_KNOCKOUT
 	setflag HIDE_TRAINER_DOUBLES2
 	setvar DISABLE_DOUBLES_TRIGGER, TRUE
-	setobjectxyperm       LOCALID_TOWER_TRAINER_SINGLES, 15, 13
-	setobjectmovementtype LOCALID_TOWER_TRAINER_SINGLES, MOVEMENT_TYPE_FACE_LEFT
+	setobjectxyperm       3, 15, 13
+	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_LEFT
 	goto TrainerTower_EventScript_HideOwner
 
 TrainerTower_EventScript_SetObjectsDoubles::
@@ -44,29 +44,29 @@ TrainerTower_EventScript_SetObjectsDoubles::
 	setvar DISABLE_SINGLES_TRIGGER, TRUE
 	ttower_isfloorcleared
 	goto_if_eq VAR_RESULT, TRUE, TrainerTower_EventScript_SetObjectsDoublesAlreadyBeaten
-	setobjectxyperm       LOCALID_TOWER_TRAINER_DOUBLES1, 10, 12
-	setobjectmovementtype LOCALID_TOWER_TRAINER_DOUBLES1, MOVEMENT_TYPE_FACE_LEFT
-	setobjectxyperm       LOCALID_TOWER_TRAINER_DOUBLES2, 10, 13
-	setobjectmovementtype LOCALID_TOWER_TRAINER_DOUBLES2, MOVEMENT_TYPE_FACE_LEFT
+	setobjectxyperm       2, 10, 12
+	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_LEFT
+	setobjectxyperm       5, 10, 13
+	setobjectmovementtype 5, MOVEMENT_TYPE_FACE_LEFT
 	goto TrainerTower_EventScript_HideOwner
 
 TrainerTower_EventScript_SetObjectsDoublesAlreadyBeaten::
-	setobjectxyperm       LOCALID_TOWER_TRAINER_DOUBLES1, 10, 12
-	setobjectmovementtype LOCALID_TOWER_TRAINER_DOUBLES1, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm       LOCALID_TOWER_TRAINER_DOUBLES2, 11, 12
-	setobjectmovementtype LOCALID_TOWER_TRAINER_DOUBLES2, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm       2, 10, 12
+	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm       5, 11, 12
+	setobjectmovementtype 5, MOVEMENT_TYPE_FACE_DOWN
 	goto TrainerTower_EventScript_HideOwner
 
 @ Knockout challenge re-uses trainer objects
 TrainerTower_EventScript_SetObjectsKnockout::
 	setflag HIDE_TRAINER_DOUBLES2
 	setvar DISABLE_DOUBLES_TRIGGER, TRUE
-	setobjectxyperm       LOCALID_TOWER_TRAINER_DOUBLES1, 10, 10
-	setobjectmovementtype LOCALID_TOWER_TRAINER_DOUBLES1, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm       LOCALID_TOWER_TRAINER_SINGLES, 14, 13
-	setobjectmovementtype LOCALID_TOWER_TRAINER_SINGLES, MOVEMENT_TYPE_FACE_LEFT
-	setobjectxyperm       LOCALID_TOWER_TRAINER_KNOCKOUT, 10, 16
-	setobjectmovementtype LOCALID_TOWER_TRAINER_KNOCKOUT, MOVEMENT_TYPE_FACE_UP
+	setobjectxyperm       2, 10, 10
+	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm       3, 14, 13
+	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_LEFT
+	setobjectxyperm       4, 10, 16
+	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_UP
 TrainerTower_EventScript_HideOwner:
 	setflag HIDE_OWNER
 	end
@@ -88,7 +88,7 @@ TrainerTower_EventScript_EndEnterFloor:
 
 @ Never reached
 TrainerTower_EventScript_WarpToLobby::
-	warp MAP_TRAINER_TOWER_LOBBY, 9, 7
+	warp MAP_VERMILION_CITY_INTERIOR9, 9, 7
 	waitstate
 
 
@@ -103,12 +103,12 @@ TrainerTower_EventScript_TriggerBattle::
 
 TrainerTower_EventScript_DoSingleBattle:
 	ttower_encountermusic
-	applymovement LOCALID_TOWER_TRAINER_SINGLES, Common_Movement_ExclamationMark
+	applymovement 3, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_TOWER_TRAINER_SINGLES, Common_Movement_Delay48
+	applymovement 3, Common_Movement_Delay48
 	waitmovement 0
 	setvar DISABLE_SINGLES_TRIGGER, TRUE
-	applymovement LOCALID_TOWER_TRAINER_SINGLES, TrainerTower_Movement_SingleTrainerApproach
+	applymovement 3, TrainerTower_Movement_SingleTrainerApproach
 	waitmovement 0
 	ttower_getspeech TRAINER_TOWER_TEXT_INTRO, 0
 	msgbox gStringVar4
@@ -138,31 +138,31 @@ TrainerTower_EventScript_DoKnockoutBattle::
 
 TrainerTower_EventScript_DoKnockoutBattle1:
 	ttower_encountermusic
-	applymovement LOCALID_TOWER_TRAINER_KNOCKOUT, Common_Movement_ExclamationMark
+	applymovement 4, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_TOWER_TRAINER_KNOCKOUT, Common_Movement_Delay48
+	applymovement 4, Common_Movement_Delay48
 	waitmovement 0
-	applymovement LOCALID_TOWER_TRAINER_KNOCKOUT, TrainerTower_Movement_BottomKnockoutTrainerApproach
+	applymovement 4, TrainerTower_Movement_BottomKnockoutTrainerApproach
 	waitmovement 0
 	goto TrainerTower_EventScript_DoKnockoutBattleIntro
 
 TrainerTower_EventScript_DoKnockoutBattle2::
 	ttower_encountermusic
-	applymovement LOCALID_TOWER_TRAINER_DOUBLES1, Common_Movement_ExclamationMark
+	applymovement 2, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_TOWER_TRAINER_DOUBLES1, Common_Movement_Delay48
+	applymovement 2, Common_Movement_Delay48
 	waitmovement 0
-	applymovement LOCALID_TOWER_TRAINER_DOUBLES1, TrainerTower_Movement_TopKnockoutTrainerApproach
+	applymovement 2, TrainerTower_Movement_TopKnockoutTrainerApproach
 	waitmovement 0
 	goto TrainerTower_EventScript_DoKnockoutBattleIntro
 
 TrainerTower_EventScript_DoKnockoutBattle3::
 	ttower_encountermusic
-	applymovement LOCALID_TOWER_TRAINER_SINGLES, Common_Movement_ExclamationMark
+	applymovement 3, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_TOWER_TRAINER_SINGLES, Common_Movement_Delay48
+	applymovement 3, Common_Movement_Delay48
 	waitmovement 0
-	applymovement LOCALID_TOWER_TRAINER_SINGLES, TrainerTower_Movement_RightKnockoutTrainerApproach
+	applymovement 3, TrainerTower_Movement_RightKnockoutTrainerApproach
 	waitmovement 0
 TrainerTower_EventScript_DoKnockoutBattleIntro:
 	ttower_getspeech TRAINER_TOWER_TEXT_INTRO, VAR_TEMP_1
@@ -197,13 +197,13 @@ TrainerTower_EventScript_DoThirdKnockoutBattle::
 	goto TrainerTower_EventScript_DoKnockoutBattle
 
 TrainerTower_EventScript_MoveDoublesTrainers::
-	applymovement LOCALID_TOWER_TRAINER_DOUBLES2, TrainerTower_Movement_DoublesTrainer2OutOfWay
+	applymovement 5, TrainerTower_Movement_DoublesTrainer2OutOfWay
 	waitmovement 0
-	applymovement LOCALID_TOWER_TRAINER_DOUBLES1, TrainerTower_Movement_DoublesTrainer1FaceDown
+	applymovement 2, TrainerTower_Movement_DoublesTrainer1FaceDown
 	goto TrainerTower_EventScript_SetFloorCleared
 
 TrainerTower_EventScript_MoveLastKnockoutTrainer::
-	applymovement LOCALID_TOWER_TRAINER_SINGLES, TrainerTower_Movement_LastKnockoutTrainerOutOfWay
+	applymovement 3, TrainerTower_Movement_LastKnockoutTrainerOutOfWay
 TrainerTower_EventScript_SetFloorCleared:
 	ttower_clearedfloor
 	end
@@ -211,7 +211,7 @@ TrainerTower_EventScript_SetFloorCleared:
 TrainerTower_EventScript_WarpToLobbyLost::
 	special HealPlayerParty
 	ttower_setlost
-	warp MAP_TRAINER_TOWER_LOBBY, 9, 7
+	warp MAP_VERMILION_CITY_INTERIOR9, 9, 7
 	waitstate
 
 
@@ -333,9 +333,9 @@ TrainerTower_EventScript_DoubleBattleTriggerTop::
 	ttower_checkdoubles
 	goto_if_ne VAR_RESULT, PLAYER_HAS_TWO_USABLE_MONS, TrainerTower_EventScript_IneligibleForDoubleBattle
 	ttower_encountermusic
-	applymovement LOCALID_TOWER_TRAINER_DOUBLES1, Common_Movement_ExclamationMark
+	applymovement 2, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_TOWER_TRAINER_DOUBLES1, Common_Movement_Delay48
+	applymovement 2, Common_Movement_Delay48
 	goto TrainerTower_EventScript_TriggerDoubleBattle
 
 TrainerTower_EventScript_DoubleBattleTriggerBottom::
@@ -343,9 +343,9 @@ TrainerTower_EventScript_DoubleBattleTriggerBottom::
 	ttower_checkdoubles
 	goto_if_ne VAR_RESULT, PLAYER_HAS_TWO_USABLE_MONS, TrainerTower_EventScript_IneligibleForDoubleBattle
 	ttower_encountermusic
-	applymovement LOCALID_TOWER_TRAINER_DOUBLES2, Common_Movement_ExclamationMark
+	applymovement 5, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_TOWER_TRAINER_DOUBLES2, Common_Movement_Delay48
+	applymovement 5, Common_Movement_Delay48
 TrainerTower_EventScript_TriggerDoubleBattle:
 	waitmovement 0
 	setvar DISABLE_DOUBLES_TRIGGER, TRUE

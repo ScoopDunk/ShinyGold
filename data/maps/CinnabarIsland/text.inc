@@ -1,75 +1,50 @@
-CinnabarIsland_Text_DoorIsLocked::
-    .string "The door is locked…$"
+CinnabarIsland_Text_Blue::
+	.string "Who are you?\p"
+	.string "Well, it’s plain to see that you’re\n"
+	.string "a trainer...\p"
+	.string "My name’s BLUE.\p"
+	.string "I was once the CHAMPION, although\n"
+	.string "it was for only a short time...\p"
+	.string "That meddling RED did me in...\p"
+	.string "Anyway, what do you want?\n"
+	.string "You want to challenge me or\l"
+	.string "something?\p"
+	.string "...I hate to say it, but I’m not\n"
+	.string "in the mood for a battle now.\p"
+	.string "Take a good look around you...\n"
+	.string "A volcano erupts, and just like\l"
+	.string "that, a whole town disappears.\p"
+	.string "We can go on winning and losing\n"
+	.string "in POKéMON.\p"
+	.string "But if nature so much as\n"
+	.string "twitches, we can lose in a second.\p"
+	.string "...\p"
+	.string "That’s the way it is...\p"
+	.string "But, anyway, I’m still a trainer.\n"
+	.string "If I see a strong opponent, it\l"
+	.string "makes me want to battle.\p"
+	.string "If you want to battle me, come\n"
+	.string "to the VIRIDIAN GYM.\p"
+	.string "I’ll take you on then.$"
 
-CinnabarIsland_Text_BlaineLivedHereSinceBeforeLab::
-    .string "CINNABAR GYM's BLAINE is quite the\n"
-    .string "odd fellow.\p"
-    .string "He's lived on the island since way\n"
-    .string "before the LAB was built.$"
+CinnabarIsland_Text_OldMan1::
+	.string "Scientists conduct experiments \n"
+	.string "in the burned-out building.\p"
+	.string "You know, the one they call the\n"
+	.string "POKéMON MANSION.$"
 
-CinnabarIsland_Text_ScientistsExperimentInMansion::
-    .string "Scientists conduct experiments \n"
-    .string "in the burned-out building.\p"
-    .string "You know, the one they call the\n"
-    .string "POKéMON MANSION.$"
+CinnabarIsland_Text_Trigger::
+	.string "The door is locked…$"
 
-CinnabarIsland_Text_IslandSign::
-    .string "CINNABAR ISLAND\n"
-    .string "The Fiery Town of Burning Desire$"
+CinnabarIsland_Text_Sign1::
+	.string "CINNABAR ISLAND\n"
+	.string "The Fiery Town of Burning Desire$"
 
-CinnabarIsland_Text_PokemonLab::
-    .string "POKéMON LAB$"
+CinnabarIsland_Text_Sign2::
+	.string "POKéMON LAB$"
 
-CinnabarIsland_Text_GymSign::
-    .string "CINNABAR ISLAND POKéMON GYM\n"
-    .string "LEADER: BLAINE\l"
-    .string "The Hotheaded Quiz Master!$"
-
-CinnabarIsland_Text_HeyIfItIsntPlayer::
-    .string "Huh?\n"
-    .string "Hey, if it isn't {PLAYER}!$"
-
-CinnabarIsland_Text_ComeWithMeToOneIsland::
-    .string "Look, it's me, BILL.\n"
-    .string "Long time no see!\p"
-    .string "I hope you're still using my\n"
-    .string "PC system.\p"
-    .string "Well, listen, since we met up here,\n"
-    .string "how about spending time with me?\p"
-    .string "There's this little island in the far\n"
-    .string "south called ONE ISLAND.\p"
-    .string "A friend invited me, so I'm on my\n"
-    .string "way out there.\p"
-    .string "How about it?\n"
-    .string "Do you feel like coming with me?$"
-
-CinnabarIsland_Text_AllRightLetsGo::
-    .string "All right, then.\n"
-    .string "Let's go!$"
-
-CinnabarIsland_Text_IllBeWaitingInPokeCenter::
-    .string "What, are you too busy?\p"
-    .string "Well, all right.\n"
-    .string "The boat hasn't arrived yet anyway.\p"
-    .string "I'll be waiting at the POKéMON\n"
-    .string "CENTER over there.\p"
-    .string "Come see me when you're done with\n"
-    .string "your business here.$"
-
-CinnabarIsland_Text_MyPalsBoatArrived::
-    .string "Looks like my pal's boat arrived,\n"
-    .string "too.\p"
-    .string "He sent it specially here to\n"
-    .string "CINNABAR to pick me up.$"
-
-CinnabarIsland_Text_IfYouHaveTriPassYouCanGoAgain::
-    .string "Hey, wasn't that a long cruise?\p"
-    .string "My buddy CELIO seemed to enjoy\n"
-    .string "your company.\p"
-    .string "I'm sure he'd welcome you if you\n"
-    .string "were to visit him again.\p"
-    .string "If you have a TRI-PASS, you can\n"
-    .string "always take a ferry there from\l"
-    .string "VERMILION PORT.\p"
-    .string "All right, thanks for your company!$"
-
+CinnabarIsland_Text_Sign3::
+	.string "There’s a notice here...\p"
+	.string "CINNABAR GYM has relocated to\n"
+	.string "SEAFOAM ISLANDS.\p"
+	.string "BLAINE$"

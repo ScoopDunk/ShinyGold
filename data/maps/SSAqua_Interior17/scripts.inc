@@ -1,0 +1,19 @@
+SSAqua_Interior17_MapScripts::
+	.byte 0
+
+SSAqua_Interior17_EventScript_FirebreatherLyle::
+	trainerbattle_single TRAINER_FIREBREATHER_LYLE, SSAqua_Interior17_Text_FirebreatherLyleIntro, SSAqua_Interior17_Text_FirebreatherLyleDefeat
+	msgbox SSAqua_Interior17_Text_FirebreatherLyle, MSGBOX_AUTOCLOSE
+	end
+
+SSAqua_Interior17_EventScript_BugCatcherKen::
+	trainerbattle_single TRAINER_BUG_CATCHER_KEN, SSAqua_Interior17_Text_BugCatcherKenIntro, SSAqua_Interior17_Text_BugCatcherKenDefeat
+	call_if_set 0x119B, SSAqua_Interior17_EventScript_BugCatcherKen_1
+	msgbox SSAqua_Interior17_Text_BugCatcherKen, MSGBOX_AUTOCLOSE
+	end
+
+SSAqua_Interior17_EventScript_BugCatcherKen_1::
+	msgbox SSAqua_Interior17_Text_BugCatcherKenIntro, MSGBOX_NPC
+	trainerbattle_earlyrival TRAINER_BUG_CATCHER_KEN, 0, SSAqua_Interior17_Text_BugCatcherKenDefeat, SSAqua_Interior3_Text_FishermanJonahVictory
+	clearflag 0x119B
+	end

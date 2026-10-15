@@ -1,0 +1,10 @@
+Unused_FourIsland_IcefallCave_B1F_MapScripts::
+	.byte 0
+
+Unused_FourIsland_IcefallCave_B1F_EventScript_MgDeliveryman::
+	msgbox Unused_FourIsland_IcefallCave_B1F_Text_MgDeliveryman, MSGBOX_NPC
+	end
+
+Unused_FourIsland_IcefallCave_B1F_EventScript_Woman2::
+	msgbox Unused_FourIsland_IcefallCave_B1F_Text_Woman2, MSGBOX_NPC
+	end

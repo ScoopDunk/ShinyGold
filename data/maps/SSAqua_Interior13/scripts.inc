@@ -1,0 +1,7 @@
+SSAqua_Interior13_MapScripts::
+	.byte 0
+
+SSAqua_Interior13_EventScript_GentlemanGregory::
+	trainerbattle_single TRAINER_GENTLEMAN_GREGORY, SSAqua_Interior13_Text_GentlemanGregoryIntro, SSAqua_Interior13_Text_GentlemanGregoryDefeat
+	msgbox SSAqua_Interior13_Text_GentlemanGregory, MSGBOX_AUTOCLOSE
+	end

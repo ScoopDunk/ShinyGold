@@ -1,0 +1,60 @@
+Route41_MapScripts::
+	.byte 0
+
+Route41_EventScript_SwimmerMGeorge::
+	trainerbattle_single TRAINER_SWIMMER_M_GEORGE, Route41_Text_SwimmerMGeorgeIntro, Route41_Text_SwimmerMGeorgeDefeat
+	msgbox Route41_Text_SwimmerMGeorge, MSGBOX_AUTOCLOSE
+	end
+
+Route41_EventScript_SwimmerMCharlie::
+	trainerbattle_single TRAINER_SWIMMER_M_CHARLIE, Route41_Text_SwimmerMCharlieIntro, Route41_Text_SwimmerMCharlieDefeat
+	msgbox Route41_Text_SwimmerMCharlie, MSGBOX_AUTOCLOSE
+	end
+
+Route41_EventScript_SwimmerFKaylee::
+	trainerbattle_single TRAINER_SWIMMER_F_KAYLEE, Route41_Text_SwimmerFKayleeIntro, Route41_Text_SwimmerFKayleeDefeat
+	msgbox Route41_Text_SwimmerFKaylee, MSGBOX_AUTOCLOSE
+	end
+
+Route41_EventScript_SwimmerFSusie::
+	trainerbattle_single TRAINER_SWIMMER_F_SUSIE, Route41_Text_SwimmerFSusieIntro, Route41_Text_SwimmerFSusieDefeat
+	msgbox Route41_Text_SwimmerFSusie, MSGBOX_AUTOCLOSE
+	end
+
+Route41_EventScript_SwimmerFKara::
+	trainerbattle_single TRAINER_SWIMMER_F_KARA, Route41_Text_SwimmerFKaraIntro, Route41_Text_SwimmerFKaraDefeat
+	msgbox Route41_Text_SwimmerFKara, MSGBOX_AUTOCLOSE
+	end
+
+Route41_EventScript_SwimmerMKirk::
+	trainerbattle_single TRAINER_SWIMMER_M_KIRK, Route41_Text_SwimmerMKirkIntro, Route41_Text_SwimmerMKirkDefeat
+	msgbox Route41_Text_SwimmerMKirk, MSGBOX_AUTOCLOSE
+	end
+
+Route41_EventScript_SwimmerMBerke::
+	trainerbattle_single TRAINER_SWIMMER_M_BERKE, Route41_Text_SwimmerMBerkeIntro, Route41_Text_SwimmerMBerkeDefeat
+	msgbox Route41_Text_SwimmerMBerke, MSGBOX_AUTOCLOSE
+	end
+
+Route41_EventScript_SwimmerFDenise::
+	trainerbattle_single TRAINER_SWIMMER_F_DENISE, Route41_Text_SwimmerFDeniseIntro, Route41_Text_SwimmerFDeniseDefeat
+	msgbox Route41_Text_SwimmerFDenise, MSGBOX_AUTOCLOSE
+	end
+
+Route41_EventScript_SwimmerMMathew::
+	trainerbattle_single TRAINER_SWIMMER_M_MATHEW, Route41_Text_SwimmerMMathewIntro, Route41_Text_SwimmerMMathewDefeat
+	msgbox Route41_Text_SwimmerMMathew, MSGBOX_AUTOCLOSE
+	end
+
+Route41_EventScript_SwimmerFWendy::
+	trainerbattle_single TRAINER_SWIMMER_F_WENDY, Route41_Text_SwimmerFWendyIntro, Route41_Text_SwimmerFWendyDefeat
+	msgbox Route41_Text_SwimmerFWendy, MSGBOX_AUTOCLOSE
+	end
+
+Route41_EventScript_ItemNugget::
+	finditem ITEM_NUGGET
+	end
+
+Route41_EventScript_LaprasDoll::
+	msgbox Route41_Text_LaprasDoll, MSGBOX_NPC
+	end

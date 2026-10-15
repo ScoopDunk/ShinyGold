@@ -1,73 +1,48 @@
-Route6_Text_RickyIntro::
-    .string "Who's there?\n"
-    .string "Quit listening in on us!$"
+Route6_Text_RsMay_1::
+	.string "ASHLEE: Hehe... We did it this time,\n"
+	.string "PIKACHU!\p"
+	.string "We finally stole something worth\n"
+	.string "millions!\p"
+	.string "All I had to do is trick that guy\n"
+	.string "and I got this very important item!\p"
+	.string "Aren’t you happy PIKACHU?$"
 
-Route6_Text_RickyDefeat::
-    .string "I just can't win!$"
+Route6_Text_RsMay_2::
+	.string "ASHLEE: Oh, no.\n"
+	.string "Not you again...\p"
+	.string "I thought about coming to KANTO\n"
+	.string "to display my skills here.\p"
+	.string "But then you just have to show\n"
+	.string "up here as well.\p"
+	.string "Wait...\n"
+	.string "Maybe you are following me?\p"
+	.string "Are you some kind of stalker?\p"
+	.string "Oh well...\n"
+	.string "It doesn’t matter...\p"
+	.string "The thing is that this item belongs\n"
+	.string "to me... ASHLEE!\p"
+	.string "And of course I’m not giving it\n"
+	.string "back!\p"
+	.string "Come on PIKACHU, let’s show this brat\n"
+	.string "we are not fooling around this time!$"
 
-Route6_Text_RickyPostBattle::
-    .string "Whisper…\n"
-    .string "Whisper…$"
+Route6_Text_RsMayDefeat::
+	.string "Oh...\n"
+	.string "Why...?$"
 
-Route6_Text_NancyIntro::
-    .string "Excuse me!\n"
-    .string "This is a private conversation!$"
+Route6_Text_RsMayVictory::
+	.string "Yes... In your face"
+Route6_Text_RsMay_3::
+	.string "ASHLEE: Argh... Let’s run away\n"
+	.string "PIKACHU!$"
 
-Route6_Text_NancyDefeat::
-    .string "Ugh!\n"
-    .string "I hate losing.$"
+Route6_Text_RsMay_4::
+	.string "{PLAYER} finds the PROTOTYPE!$"
 
-Route6_Text_NancyPostBattle::
-    .string "Whisper…\n"
-    .string "Whisper…$"
+Route6_Text_RsMay_5::
+	.string "ASHLEE: OH NO!!! WE FORGOT THE\n"
+	.string "ITEM!!!$"
 
-Route6_Text_KeigoIntro::
-    .string "There aren't many bugs out here.$"
-
-Route6_Text_KeigoDefeat::
-    .string "No!\n"
-    .string "You're kidding!$"
-
-Route6_Text_KeigoPostBattle::
-    .string "I like bugs, so I'm going back to\n"
-    .string "VIRIDIAN FOREST.$"
-
-Route6_Text_JeffIntro::
-    .string "Huh?\n"
-    .string "You want to talk to me?$"
-
-Route6_Text_JeffDefeat::
-    .string "This stinks…\n"
-    .string "I couldn't beat your challenge…$"
-
-Route6_Text_JeffPostBattle::
-    .string "I should bring more POKéMON with\n"
-    .string "me. I'll feel safer that way.$"
-
-Route6_Text_IsabelleIntro::
-    .string "Me?\n"
-    .string "Well, okay. I'll play!$"
-
-Route6_Text_IsabelleDefeat::
-    .string "Things just didn't work…$"
-
-Route6_Text_IsabellePostBattle::
-    .string "I want to get stronger.\n"
-    .string "What's your secret?$"
-
-Route6_Text_ElijahIntro::
-    .string "I've never seen you around.\n"
-    .string "Are you good?$"
-
-Route6_Text_ElijahDefeat::
-    .string "You're too good!$"
-
-Route6_Text_ElijahPostBattle::
-    .string "Are my POKéMON weak?\n"
-    .string "Or, am I just bad?\l"
-    .string "Which do you think?$"
-
-Route6_Text_UndergroundPathSign::
-    .string "UNDERGROUND PATH\n"
-    .string "CERULEAN CITY - VERMILION CITY$"
-
+Route6_Text_Sign::
+	.string "UNDERGROUND PATH\n"
+	.string "CERULEAN CITY - VERMILLION CITY$"

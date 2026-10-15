@@ -1,0 +1,50 @@
+Unused_ThreeIsland_DunsparceTunnel_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Unused_ThreeIsland_DunsparceTunnel_OnTransition
+	.byte 0
+
+Unused_ThreeIsland_DunsparceTunnel_OnTransition::
+	setworldmapflag FLAG_WORLD_MAP_THREE_ISLAND_DUNSPARCE_TUNNEL
+	specialvar VAR_RESULT, IsNationalPokedexEnabled
+	copyvar VAR_0x8008, VAR_RESULT
+	call_if_eq VAR_0x8008, 1, Unused_ThreeIsland_DunsparceTunnel_EventScript_OnTransition_1
+	call_if_eq VAR_0x8008, 0, Unused_ThreeIsland_DunsparceTunnel_EventScript_OnTransition_2
+	end
+
+Unused_ThreeIsland_DunsparceTunnel_EventScript_OnTransition_1::
+	setmaplayoutindex LAYOUT_UNUSED_LAYOUT319
+	return
+
+Unused_ThreeIsland_DunsparceTunnel_EventScript_OnTransition_2::
+	setobjectxyperm 1, 6, 3
+	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_RIGHT
+	return
+
+Unused_ThreeIsland_DunsparceTunnel_EventScript_FatMan::
+	lock
+	faceplayer
+	goto_if_set 0x2E2, Unused_ThreeIsland_DunsparceTunnel_EventScript_FatMan_1
+	specialvar VAR_RESULT, IsNationalPokedexEnabled
+	goto_if_eq VAR_RESULT, 1, Unused_ThreeIsland_DunsparceTunnel_EventScript_FatMan_2
+	msgbox Unused_ThreeIsland_DunsparceTunnel_Text_FatMan_1
+	closemessage
+	applymovement 1, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	release
+	end
+
+Unused_ThreeIsland_DunsparceTunnel_EventScript_FatMan_1::
+	msgbox Unused_ThreeIsland_DunsparceTunnel_Text_FatMan_2
+	release
+	end
+
+Unused_ThreeIsland_DunsparceTunnel_EventScript_FatMan_2::
+	msgbox Unused_ThreeIsland_DunsparceTunnel_Text_FatMan_3
+	giveitem ITEM_NUGGET
+	goto_if_eq VAR_RESULT, 0, Unused_ThreeIsland_DunsparceTunnel_EventScript_FatMan_3
+	setflag 0x2E2
+	goto Unused_ThreeIsland_DunsparceTunnel_EventScript_FatMan_1
+
+Unused_ThreeIsland_DunsparceTunnel_EventScript_FatMan_3::
+	msgbox Unused_ThreeIsland_DunsparceTunnel_Text_FatMan_4
+	release
+	end
