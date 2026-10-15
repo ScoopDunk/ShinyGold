@@ -304,14 +304,14 @@
 #define MUS_VS_GYM_LEADER         296 // MUS_VS_GYM
 #define MUS_VS_TRAINER            297 // MUS_VS_TORE
 #define MUS_VS_WILD               298 // MUS_VS_YASEI
-#define MUS_VS_CHAMPION           299 // MUS_VS_LAST
+#define MUS_VS_CHAMPION           299 // MUS_VS_LAST -- ShinyGold: unidentified battle theme (music-swapped in for some trainer battles)
 #define MUS_PALLET                300 // MUS_MASARA
 #define MUS_OAK_LAB               301 // MUS_KENKYU
 #define MUS_OAK                   302 // MUS_OHKIDO
 #define MUS_POKE_CENTER           303 // MUS_POKECEN
 #define MUS_SS_ANNE               304 // MUS_SANTOAN
 #define MUS_SURF                  305 // MUS_NAMINORI
-#define MUS_POKE_TOWER            306 // MUS_P_TOWER
+#define MUS_POKE_TOWER            306 // MUS_P_TOWER -- ShinyGold: GSC Sprout Tower
 #define MUS_SILPH                 307 // MUS_SHIRUHU
 #define MUS_FUCHSIA               308 // MUS_HANADA
 #define MUS_CELADON               309 // MUS_TAMAMUSI
@@ -321,7 +321,7 @@
 #define MUS_VERMILLION            313 // MUS_KUCHIBA
 #define MUS_PEWTER                314 // MUS_NIBI
 #define MUS_ENCOUNTER_RIVAL       315 // MUS_RIVAL1
-#define MUS_RIVAL_EXIT            316 // MUS_RIVAL2
+#define MUS_RIVAL_EXIT            316 // MUS_RIVAL2 -- ShinyGold: unidentified battle theme (music-swapped in, mostly Team Rocket battles)
 #define MUS_DEX_RATING            317 // MUS_FAN2
 #define MUS_OBTAIN_KEY_ITEM       318 // MUS_FAN5
 #define MUS_CAUGHT_INTRO          319 // MUS_FAN6
@@ -331,16 +331,16 @@
 #define MUS_NEW_GAME_INSTRUCT     323 // MUS_SOUSA
 #define MUS_NEW_GAME_INTRO        324 // MUS_SEKAIKAN
 #define MUS_NEW_GAME_EXIT         325 // MUS_SEIBETU
-#define MUS_POKE_JUMP             326 // MUS_JUMP
-#define MUS_UNION_ROOM            327 // MUS_UNION
-#define MUS_NET_CENTER            328 // MUS_NETWORK
+#define MUS_POKE_JUMP             326 // MUS_JUMP -- ShinyGold: GSC Goldenrod City
+#define MUS_UNION_ROOM            327 // MUS_UNION -- ShinyGold: GSC Route 2 (Kanto routes)
+#define MUS_NET_CENTER            328 // MUS_NETWORK -- ShinyGold: GSC Lighthouse
 #define MUS_MYSTERY_GIFT          329 // MUS_OKURIMONO
-#define MUS_BERRY_PICK            330 // MUS_KINOMIKUI
-#define MUS_SEVII_CAVE            331 // MUS_NANADUNGEON
-#define MUS_TEACHY_TV_SHOW        332 // MUS_OSHIE_TV
+#define MUS_BERRY_PICK            330 // MUS_KINOMIKUI -- ShinyGold: unidentified theme (Trick House interior)
+#define MUS_SEVII_CAVE            331 // MUS_NANADUNGEON -- ShinyGold: GSC Dark Cave
+#define MUS_TEACHY_TV_SHOW        332 // MUS_OSHIE_TV -- ShinyGold: unidentified theme (Ecruteak City interior)
 #define MUS_SEVII_ROUTE           333 // MUS_NANASHIMA
-#define MUS_SEVII_DUNGEON         334 // MUS_NANAISEKI
-#define MUS_SEVII_123             335 // MUS_NANA123
+#define MUS_SEVII_DUNGEON         334 // MUS_NANAISEKI -- ShinyGold: GSC Victory Road
+#define MUS_SEVII_123             335 // MUS_NANA123 -- ShinyGold: GSC Cherrygrove City / Mahogany Town
 #define MUS_SEVII_45              336 // MUS_NANA45
 #define MUS_SEVII_67              337 // MUS_NANA67
 #define MUS_POKE_FLUTE            338 // MUS_POKEFUE
@@ -349,9 +349,9 @@
 #define MUS_VS_LEGEND             341 // MUS_VS_DEN
 #define MUS_ENCOUNTER_GYM_LEADER  342 // MUS_EXEYE
 #define MUS_ENCOUNTER_DEOXYS      343 // MUS_DEOEYE
-#define MUS_TRAINER_TOWER         344 // MUS_T_TOWER
-#define MUS_SLOW_PALLET           345 // MUS_SLOWMASARA
-#define MUS_TEACHY_TV_MENU        346 // MUS_TVNOIZE
+#define MUS_TRAINER_TOWER         344 // MUS_T_TOWER -- ShinyGold: unidentified battle theme (music-swapped in for some PKMN TRAINER battles)
+#define MUS_SLOW_PALLET           345 // MUS_SLOWMASARA -- ShinyGold: unidentified battle theme (music-swapped in for one PKMN TRAINER battle)
+#define MUS_TEACHY_TV_MENU        346 // MUS_TVNOIZE -- ShinyGold: vanilla song, but track 1 is corrupted (see sound/songs/mus_teachy_tv_menu.s)
 
 #define MUS_NONE                    0xFFFF
 
