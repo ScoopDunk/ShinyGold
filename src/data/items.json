@@ -769,12 +769,12 @@
       "secondaryId": 0
     },
     {
-      "english": "RED SHARD",
+      "english": "SLOWPOKETAIL",
       "itemId": "ITEM_RED_SHARD",
-      "price": 200,
+      "price": 9800,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A small red shard.\\nIt appears to be from some sort of\\na tool made long ago.",
+      "description_english": "Very Tasty. Sell High.\\n(Poor thing...)",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_ITEMS",
@@ -2289,25 +2289,25 @@
       "secondaryId": 0
     },
     {
-      "english": "FIGY BERRY",
+      "english": "RAGECANDYBAR",
       "itemId": "ITEM_FIGY_BERRY",
-      "price": 20,
-      "holdEffect": "HOLD_EFFECT_CONFUSE_SPICY",
-      "holdEffectParam": 8,
-      "description_english": "A hold item that restores HP but\\nmay cause confusion when used.",
+      "price": 300,
+      "holdEffect": "HOLD_EFFECT_RESTORE_HP",
+      "holdEffectParam": 20,
+      "description_english": "Restores POKéMON HP by 20\\nwhen hold.                           ",
       "importance": 0,
       "registrability": 0,
-      "pocket": "POCKET_BERRY_POUCH",
-      "type": "ITEM_TYPE_BAG_MENU",
-      "fieldUseFunc": "FieldUseFunc_OakStopsYou",
-      "battleUsage": 0,
-      "battleUseFunc": "NULL",
+      "pocket": "POCKET_ITEMS",
+      "type": "ITEM_TYPE_PARTY_MENU",
+      "fieldUseFunc": "FieldUseFunc_Medicine",
+      "battleUsage": 1,
+      "battleUseFunc": "BattleUseFunc_Medicine",
       "secondaryId": 0
     },
     {
       "english": "WIKI BERRY",
       "itemId": "ITEM_WIKI_BERRY",
-      "price": 20,
+      "price": 100,
       "holdEffect": "HOLD_EFFECT_CONFUSE_DRY",
       "holdEffectParam": 8,
       "description_english": "A hold item that restores HP but\\nmay cause confusion when used.",
@@ -2323,7 +2323,7 @@
     {
       "english": "MAGO BERRY",
       "itemId": "ITEM_MAGO_BERRY",
-      "price": 20,
+      "price": 100,
       "holdEffect": "HOLD_EFFECT_CONFUSE_SWEET",
       "holdEffectParam": 8,
       "description_english": "A hold item that restores HP but\\nmay cause confusion when used.",
@@ -2339,7 +2339,7 @@
     {
       "english": "AGUAV BERRY",
       "itemId": "ITEM_AGUAV_BERRY",
-      "price": 20,
+      "price": 100,
       "holdEffect": "HOLD_EFFECT_CONFUSE_BITTER",
       "holdEffectParam": 8,
       "description_english": "A hold item that restores HP but\\nmay cause confusion when used.",
@@ -2355,7 +2355,7 @@
     {
       "english": "IAPAPA BERRY",
       "itemId": "ITEM_IAPAPA_BERRY",
-      "price": 20,
+      "price": 100,
       "holdEffect": "HOLD_EFFECT_CONFUSE_SOUR",
       "holdEffectParam": 8,
       "description_english": "A hold item that restores HP but\\nmay cause confusion when used.",
@@ -2531,7 +2531,7 @@
     {
       "english": "TAMATO BERRY",
       "itemId": "ITEM_TAMATO_BERRY",
-      "price": 20,
+      "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Can be ground up into a powder as\\nan ingredient for medicine.",
@@ -3073,12 +3073,12 @@
       "secondaryId": 0
     },
     {
-      "english": "DEEPSEATOOTH",
+      "english": "BLK APRICORN",
       "itemId": "ITEM_DEEP_SEA_TOOTH",
       "price": 200,
       "holdEffect": "HOLD_EFFECT_DEEP_SEA_TOOTH",
       "holdEffectParam": 0,
-      "description_english": "An item to be held by a POKéMON.\\nA fang that gleams a sharp silver.\\nIt raises the SP. ATK stat.",
+      "description_english": "A black APRICORN. Take it to KURT\\nand he’ll make a BALL out of it!",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_ITEMS",
@@ -3089,12 +3089,12 @@
       "secondaryId": 0
     },
     {
-      "english": "DEEPSEASCALE",
+      "english": "MYSTERY APR.",
       "itemId": "ITEM_DEEP_SEA_SCALE",
-      "price": 200,
+      "price": 0,
       "holdEffect": "HOLD_EFFECT_DEEP_SEA_SCALE",
       "holdEffectParam": 0,
-      "description_english": "An item to be held by a POKéMON.\\nA scale that shines a faint pink.\\nIt raises the SP. DEF stat.",
+      "description_english": "A mystery APRICORN capable of\\nhold any kind of power",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_ITEMS",
@@ -3489,12 +3489,12 @@
       "secondaryId": 0
     },
     {
-      "english": "UP-GRADE",
+      "english": "WHT APRICORN",
       "itemId": "ITEM_UP_GRADE",
-      "price": 2100,
+      "price": 200,
       "holdEffect": "HOLD_EFFECT_UP_GRADE",
       "holdEffectParam": 0,
-      "description_english": "A transparent device filled with all\\nsorts of data.\\nIt is made by SILPH CO.",
+      "description_english": "A white APRICORN. Take it to KURT\\nand he’ll make a BALL out of it!",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_ITEMS",
@@ -4065,12 +4065,12 @@
       "secondaryId": 0
     },
     {
-      "english": "RED SCARF",
+      "english": "RED APRICORN",
       "itemId": "ITEM_RED_SCARF",
-      "price": 100,
+      "price": 200,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "An item to be held by a POKéMON.\\nIt boosts the holding POKéMON's\\nCOOL condition in CONTESTS.",
+      "description_english": "A red APRICORN. Take it to KURT\\nand he’ll make a BALL out of it!",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_ITEMS",
@@ -4081,12 +4081,12 @@
       "secondaryId": 0
     },
     {
-      "english": "BLUE SCARF",
+      "english": "BLU APRICORN",
       "itemId": "ITEM_BLUE_SCARF",
-      "price": 100,
+      "price": 200,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "An item to be held by a POKéMON.\\nIt boosts the holding POKéMON's\\nBEAUTY condition in CONTESTS.",
+      "description_english": "A blue APRICORN. Take it to KURT\\nand he’ll make a BALL out of it!",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_ITEMS",
@@ -4097,12 +4097,12 @@
       "secondaryId": 0
     },
     {
-      "english": "PINK SCARF",
+      "english": "PNK APRICORN",
       "itemId": "ITEM_PINK_SCARF",
-      "price": 100,
+      "price": 200,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "An item to be held by a POKéMON.\\nIt boosts the holding POKéMON's\\nCUTE condition in CONTESTS.",
+      "description_english": "A pink APRICORN. Take it to KURT\\nand he’ll make a BALL out of it!",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_ITEMS",
@@ -4113,12 +4113,12 @@
       "secondaryId": 0
     },
     {
-      "english": "GREEN SCARF",
+      "english": "GRN APRICORN",
       "itemId": "ITEM_GREEN_SCARF",
-      "price": 100,
+      "price": 200,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "An item to be held by a POKéMON.\\nIt boosts the holding POKéMON's\\nSMART condition in CONTESTS.",
+      "description_english": "A green APRICORN. Take it to KURT\\nand he’ll make a BALL out of it!",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_ITEMS",
@@ -4129,12 +4129,12 @@
       "secondaryId": 0
     },
     {
-      "english": "YELLOW SCARF",
+      "english": "YLW APRICORN",
       "itemId": "ITEM_YELLOW_SCARF",
-      "price": 100,
+      "price": 200,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "An item to be held by a POKéMON.\\nIt boosts the holding POKéMON's\\nTOUGH condition in CONTESTS.",
+      "description_english": "A yellow APRICORN. Take it to KURT\\nand he’ll make a BALL out of it!",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_ITEMS",
@@ -4246,7 +4246,7 @@
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The ticket required for sailing on\\nthe ferry S.S. ANNE.\\nIt has a drawing of a ship on it.",
+      "description_english": "A ticket for the S.S. AQUA.\\nCan be used anytime!",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",
@@ -4257,12 +4257,12 @@
       "secondaryId": 0
     },
     {
-      "english": "CONTEST PASS",
+      "english": "PHONE CARD",
       "itemId": "ITEM_CONTEST_PASS",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The pass required for entering\\nPOKéMON CONTESTS. It has a\\ndrawing of an award ribbon on it.",
+      "description_english": "An intelligent card to be used\\non any phone. It can store up to\\nten phone numbers.",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",
@@ -4289,12 +4289,12 @@
       "secondaryId": 0
     },
     {
-      "english": "WAILMER PAIL",
+      "english": "SQUIRTBOTTLE",
       "itemId": "ITEM_WAILMER_PAIL",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A nifty watering pail.\\nUse it to promote strong growth in\\nBERRIES planted in soft soil.",
+      "description_english": "A bottle used for watering plants.\\nAvoid using it on rocks!",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",
@@ -4305,7 +4305,7 @@
       "secondaryId": 0
     },
     {
-      "english": "DEVON GOODS",
+      "english": "HM WHIRLPOOL",
       "itemId": "ITEM_DEVON_GOODS",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
@@ -4337,12 +4337,12 @@
       "secondaryId": 0
     },
     {
-      "english": "BASEMENT KEY",
+      "english": "CARD KEY",
       "itemId": "ITEM_BASEMENT_KEY",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The key to NEW MAUVILLE, which\\nwas constructed beneath MAUVILLE\\nCITY.",
+      "description_english": "Opens shutters in the RADIO\\nTOWER.",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",
@@ -4369,12 +4369,12 @@
       "secondaryId": 1
     },
     {
-      "english": "{POKEBLOCK} CASE",
+      "english": "GHOSTBUSTER",
       "itemId": "ITEM_POKEBLOCK_CASE",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A case for holding {POKEBLOCK}S made\\nwith a BERRY BLENDER. It releases\\none {POKEBLOCK} when shaken.",
+      "description_english": "Detects the presence of\\nan unseen POKéMON.\\nIt is made by SILPH.CO.",
       "importance": 1,
       "registrability": 1,
       "pocket": "POCKET_KEY_ITEMS",
@@ -4385,12 +4385,12 @@
       "secondaryId": 0
     },
     {
-      "english": "LETTER",
+      "english": "FLOWER MAIL",
       "itemId": "ITEM_LETTER",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "An extremely important letter to\\nSTEVEN from the PRESIDENT of the\\nDEVON CORPORATION.",
+      "description_english": "A MAIL to be delivered to the\\nchubby guy on ROUTE 31.",
       "importance": 2,
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",
@@ -4401,12 +4401,12 @@
       "secondaryId": 0
     },
     {
-      "english": "EON TICKET",
+      "english": "PASS",
       "itemId": "ITEM_EON_TICKET",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The ticket required for sailing on a\\nferry to a distant southern island.\\nIt features a drawing of an island.",
+      "description_english": "A ticket for the MAGNET TRAIN.\\nIt can be used infinitely.",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",
@@ -4417,12 +4417,12 @@
       "secondaryId": 1
     },
     {
-      "english": "RED ORB",
+      "english": "GS-BALL",
       "itemId": "ITEM_RED_ORB",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "An orb that glows red.\\nIt is said to contain an incredible\\npower from ancient times.",
+      "description_english": "This POKéBALL is a mystery.\\nA master POKéBALL maker should\\nhave a look at it.",
       "importance": 2,
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",
@@ -4449,12 +4449,12 @@
       "secondaryId": 0
     },
     {
-      "english": "SCANNER",
+      "english": "PROTOTYPE",
       "itemId": "ITEM_SCANNER",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A device used to search for\\nlife-forms in water.\\nIt looks too difficult to use.",
+      "description_english": "It’s a SCANNER PROTOTYPE.\\nThere’s no use for it, so you\\nshould give it back.",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",
@@ -4470,7 +4470,7 @@
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A pair of protective goggles.\\nThey enable a TRAINER to travel\\nthrough even desert sandstorms.",
+      "description_english": "A scope that signals the presence\\nof any unseeable POKéMON.\\nIt is made by the DEVON CORP.",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",
@@ -4481,12 +4481,12 @@
       "secondaryId": 0
     },
     {
-      "english": "METEORITE",
+      "english": "LOST ITEM",
       "itemId": "ITEM_METEORITE",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A meteorite that fell from space\\nonto MT. MOON long ago.\\nIt is very lumpy and hard.",
+      "description_english": "The POKéDOLL lost by the COPYCAT.\\nGive it back to get a PASS.",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",
@@ -4561,12 +4561,12 @@
       "secondaryId": 0
     },
     {
-      "english": "STORAGE KEY",
+      "english": "POK\u00e9BEEPER",
       "itemId": "ITEM_STORAGE_KEY",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A key that opens the storage hold\\ninside the ABANDONED SHIP.\\nIt is old and looks easily broken.",
+      "description_english": "A device able to receive simple\\nmessages.",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",
@@ -4614,7 +4614,7 @@
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A scope that signals the presence\\nof any unseeable POKéMON.\\nIt is made by the DEVON CORP.",
+      "description_english": "aaaaaaaaaaaaaaaaaaaaaaaa\\naaaaaaaaaaaaaaaaaaaaaaaa\\naaaaaaaaaaaaaaaa",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",
@@ -4639,7 +4639,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "FocusPunch"
+      "moveId": "DynamicPunch"
     },
     {
       "english": "TM02",
@@ -4656,7 +4656,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "DragonClaw"
+      "moveId": "Headbutt"
     },
     {
       "english": "TM03",
@@ -4673,7 +4673,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "WaterPulse"
+      "moveId": "Curse"
     },
     {
       "english": "TM04",
@@ -4690,7 +4690,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "CalmMind"
+      "moveId": "Rollout"
     },
     {
       "english": "TM05",
@@ -4741,7 +4741,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Hail"
+      "moveId": "ZapCannon"
     },
     {
       "english": "TM08",
@@ -4758,7 +4758,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "BulkUp"
+      "moveId": "AerialAce"
     },
     {
       "english": "TM09",
@@ -4775,7 +4775,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "BulletSeed"
+      "moveId": "LightScreen"
     },
     {
       "english": "TM10",
@@ -4826,7 +4826,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Taunt"
+      "moveId": "SweetScent"
     },
     {
       "english": "TM13",
@@ -4894,7 +4894,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "LightScreen"
+      "moveId": "IcyWind"
     },
     {
       "english": "TM17",
@@ -5030,7 +5030,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Thunderbolt"
+      "moveId": "DragonBreath"
     },
     {
       "english": "TM25",
@@ -5149,7 +5149,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "BrickBreak"
+      "moveId": "MudSlap"
     },
     {
       "english": "TM32",
@@ -5200,7 +5200,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "ShockWave"
+      "moveId": "Swagger"
     },
     {
       "english": "TM35",
@@ -5285,7 +5285,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "RockTomb"
+      "moveId": "Swift"
     },
     {
       "english": "TM40",
@@ -5302,7 +5302,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "AerialAce"
+      "moveId": "IcePunch"
     },
     {
       "english": "TM41",
@@ -5319,7 +5319,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Torment"
+      "moveId": "ThunderPunch"
     },
     {
       "english": "TM42",
@@ -5336,7 +5336,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Facade"
+      "moveId": "FirePunch"
     },
     {
       "english": "TM43",
@@ -5353,7 +5353,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "SecretPower"
+      "moveId": "DreamEater"
     },
     {
       "english": "TM44",
@@ -5438,7 +5438,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "SkillSwap"
+      "moveId": "Thunderbolt"
     },
     {
       "english": "TM49",
@@ -5455,7 +5455,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Snatch"
+      "moveId": "FuryCutter"
     },
     {
       "english": "TM50",
@@ -5472,7 +5472,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Overheat"
+      "moveId": "BrickBreak"
     },
     {
       "english": "HM01",
@@ -5643,12 +5643,12 @@
       "secondaryId": 0
     },
     {
-      "english": "OAK'S PARCEL",
+      "english": "MYSTERY EGG",
       "itemId": "ITEM_OAKS_PARCEL",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A parcel to be delivered to PROF.\\nOAK from VIRIDIAN CITY's POKéMON\\nMART.",
+      "description_english": "An EGG obtained from MR.POKéMON\\nto be delivered to PROF.ELM",
       "importance": 2,
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",
@@ -5659,12 +5659,12 @@
       "secondaryId": 0
     },
     {
-      "english": "POK\u00e9 FLUTE",
+      "english": "EXPN CARD",
       "itemId": "ITEM_POKE_FLUTE",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A flute that is said to instantly\\nawaken any POKéMON. It has a\\nlovely tone.",
+      "description_english": "Enables RADIO-VISIO to tune\\ninto KANTO’s programs.",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",
@@ -5675,12 +5675,12 @@
       "secondaryId": 0
     },
     {
-      "english": "SECRET KEY",
+      "english": "MACHINE PART",
       "itemId": "ITEM_SECRET_KEY",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The key to CINNABAR ISLAND GYM's\\nfront door. It is colored red and\\ndecorated.",
+      "description_english": "A machine part for the POWER\\nPLANT. Must return it to that scary\\nMANAGER.",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",
@@ -5739,12 +5739,12 @@
       "secondaryId": 0
     },
     {
-      "english": "CARD KEY",
+      "english": "BASEMENT KEY",
       "itemId": "ITEM_CARD_KEY",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A card-type key that unlocks doors\\nin SILPH CO.'s HEAD OFFICE in\\nSAFFRON CITY.",
+      "description_english": "Opens the door in the UNDER-\\nGROUND GOLDENROD.",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",
@@ -5755,12 +5755,12 @@
       "secondaryId": 0
     },
     {
-      "english": "LIFT KEY",
+      "english": "RED SCALE",
       "itemId": "ITEM_LIFT_KEY",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A key that operates the elevator\\nin TEAM ROCKET's HIDEOUT.\\nIt bears the TEAM ROCKET logo.",
+      "description_english": "A scale from the red GYARADOS.\\nMaybe someone wants it?",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",
@@ -5803,12 +5803,12 @@
       "secondaryId": 0
     },
     {
-      "english": "SILPH SCOPE",
+      "english": "GHOSTBUSTER",
       "itemId": "ITEM_SILPH_SCOPE",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A scope that makes unseeable\\nPOKéMON visible.\\nIt is made by SILPH CO.",
+      "description_english": "Detects the presence of\\nan unseen POKéMON.\\nIt is made by SILPH.CO.",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",
@@ -5915,12 +5915,12 @@
       "secondaryId": 0
     },
     {
-      "english": "TEACHY TV",
+      "english": "RADIO-VISIO",
       "itemId": "ITEM_TEACHY_TV",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A television set that is tuned to\\na program with useful tips for\\nnovice TRAINERS.",
+      "description_english": "A mix between a RADIO and a TV.\\nIt tunes the TEACHY TIME program!",
       "importance": 1,
       "registrability": 1,
       "pocket": "POCKET_KEY_ITEMS",
@@ -5963,12 +5963,12 @@
       "secondaryId": 0
     },
     {
-      "english": "TEA",
+      "english": "SECRETPOTION",
       "itemId": "ITEM_TEA",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "An aromatic tea prepared by an old\\nlady. It will slake even the worst\\nthirst.",
+      "description_english": "Fully heals any POKéMON.\\nMust be used on sick AMPHY.",
       "importance": 1,
       "registrability": 1,
       "pocket": "POCKET_KEY_ITEMS",
@@ -5979,12 +5979,12 @@
       "secondaryId": 0
     },
     {
-      "english": "MYSTICTICKET",
+      "english": "SILVER WING",
       "itemId": "ITEM_MYSTIC_TICKET",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A ticket required to board the ship\\nto NAVEL ROCK.\\nIt glows with a mystic light.",
+      "description_english": "A strange, silver-colored feather.                                              ",
       "importance": 1,
       "registrability": 1,
       "pocket": "POCKET_KEY_ITEMS",
@@ -5995,12 +5995,12 @@
       "secondaryId": 0
     },
     {
-      "english": "AURORATICKET",
+      "english": "RAINBOW WING",
       "itemId": "ITEM_AURORA_TICKET",
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A ticket required to board the ship\\nto BIRTH ISLAND.\\nIt glows beautifully.",
+      "description_english": "A mystical feather of rainbow colors.\\nComes from a legendary POKéMON.",
       "importance": 1,
       "registrability": 1,
       "pocket": "POCKET_KEY_ITEMS",
