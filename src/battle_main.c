@@ -42,6 +42,7 @@
 #include "constants/pokemon.h"
 #include "constants/songs.h"
 #include "constants/trainers.h"
+#include "pokemon_storage_system.h"
 
 static void SpriteCB_UnusedDebugSprite(struct Sprite *sprite);
 static void HandleAction_UseMove(void);
@@ -1631,7 +1632,10 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
             }
         }
 
-        gBattleTypeFlags |= gTrainers[trainerNum].doubleBattle;
+        // ShinyGold: a double battle trainer only fights a double battle if the player has at least
+        // two Pokémon that can battle (CountPartyAliveNonEggMonsExcept: no slot is ignored for PARTY_SIZE).
+        if ((gTrainers[trainerNum].doubleBattle & 1) && CountPartyAliveNonEggMonsExcept(PARTY_SIZE) >= 2)
+            gBattleTypeFlags |= BATTLE_TYPE_DOUBLE;
     }
 
     return gTrainers[trainerNum].partySize;

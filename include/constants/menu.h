@@ -69,6 +69,12 @@
 #define MULTICHOICE_62                                         62
 #define MULTICHOICE_JOIN_OR_LEAD                               63
 #define MULTICHOICE_TRAINER_TOWER_MODE                         64
+// ShinyGold
+#define MULTICHOICE_SG_65                                      65
+#define MULTICHOICE_SG_66                                      66
+#define MULTICHOICE_SG_67                                      67
+#define MULTICHOICE_SG_68                                      68
+#define MULTICHOICE_SG_69                                      69
 
 #define MULTICHOICE_NONE                                      255
 

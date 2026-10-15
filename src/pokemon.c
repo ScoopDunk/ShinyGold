@@ -1,6 +1,7 @@
 #define IS_POKEMON_C
 
 #include "global.h"
+#include "force_shiny.h"
 #include "gflib.h"
 #include "random.h"
 #include "text.h"
@@ -3438,6 +3439,10 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
         break;
     case MON_DATA_OT_ID:
         SET32(boxMon->otId);
+        // ShinyGold: while gForceShinyMons is set (toggled by scripts), new Pokémon get personality = OT ID,
+        // which makes them shiny.
+        if (gForceShinyMons == TRUE)
+            boxMon->personality = boxMon->otId;
         break;
     case MON_DATA_NICKNAME:
     {

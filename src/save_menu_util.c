@@ -8,7 +8,6 @@
 void SaveStatToString(u8 gameStatId, u8 *dest0, u8 color)
 {
     int nBadges;
-    int flagId;
 
     u8 *dest = dest0;
     *dest++ = EXT_CTRL_CODE_BEGIN;
@@ -42,12 +41,17 @@ void SaveStatToString(u8 gameStatId, u8 *dest0, u8 color)
         GetMapNameGeneric(dest, gMapHeader.regionMapSectionId);
         break;
     case SAVE_STAT_BADGES:
-        for (flagId = FLAG_BADGE01_GET, nBadges = 0; flagId < FLAG_BADGE01_GET + 8; flagId++)
+        // ShinyGold: 16 badges
+        nBadges = GetNumBadges();
+        if (nBadges >= 10)
         {
-            if (FlagGet(flagId))
-                nBadges++;
+            *dest++ = CHAR_1;
+            *dest++ = nBadges - 10 + CHAR_0;
         }
-        *dest++ = nBadges + CHAR_0;
+        else
+        {
+            *dest++ = nBadges + CHAR_0;
+        }
         *dest++ = 10; // 'こ'
         *dest++ = EOS;
         break;

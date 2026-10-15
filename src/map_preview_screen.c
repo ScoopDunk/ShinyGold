@@ -11,6 +11,7 @@
 #include "event_data.h"
 #include "map_preview_screen.h"
 #include "constants/region_map_sections.h"
+#include "constants/maps.h"
 
 static EWRAM_DATA bool8 sHasVisitedMapBefore = FALSE;
 static EWRAM_DATA bool8 sAllocedBg0TilemapBuffer = FALSE;
@@ -324,9 +325,52 @@ static const struct BgTemplate sMapPreviewBgTemplate[1] = {
     }
 };
 
+// ShinyGold: no map preview is shown when the player arrives at one of these positions
+// (inner entrances of multi-part dungeons and the like).
+static const struct
+{
+    s16 x;
+    s16 y;
+    u8 mapGroup;
+    u8 mapNum;
+} sNoPreviewScreenPositions[] = {
+    { 9, 10, MAP(MAP_RADIO_TOWER_INTERIOR1)},
+    {14, 14, MAP(MAP_MT_MOON_CAVE1)},
+    { 2,  2, MAP(MAP_MT_MOON_CAVE1)},
+    {13, 15, MAP(MAP_TOHJO_FALLS_CAVE1)},
+    { 9, 21, MAP(MAP_DARK_CAVE_CAVE1)},
+    {31, 35, MAP(MAP_DARK_CAVE_CAVE1)},
+    {28,  7, MAP(MAP_DARK_CAVE_CAVE2)},
+    { 9, 44, MAP(MAP_DARK_CAVE_CAVE2)},
+    {34,  6, MAP(MAP_ROUTE31)},
+    { 4,  7, MAP(MAP_ROUTE31)},
+    {12, 13, MAP(MAP_ROUTE41)},
+    {10, 34, MAP(MAP_ROUTE41)},
+    {33, 43, MAP(MAP_ROUTE41)},
+    {36, 16, MAP(MAP_ROUTE41)},
+    { 9,  8, MAP(MAP_DRAGONS_DEN_CAVE3)},
+    { 9, 20, MAP(MAP_DRAGONS_DEN_CAVE1)},
+    {23, 19, MAP(MAP_DRAGONS_DEN_CAVE2)},
+    { 3,  5, MAP(MAP_ROUTE35)},
+    {10, 33, MAP(MAP_ROUTE35)},
+    {11, 13, MAP(MAP_ROUTE35_INTERIOR1)},
+    { 7, 11, MAP(MAP_ROUTE36)},
+    {32,  8, MAP(MAP_ROUTE36)},
+};
+
 static u8 GetMapPreviewScreenIdx(u8 mapsec)
 {
     s32 i;
+
+    // ShinyGold
+    for (i = 0; i < ARRAY_COUNT(sNoPreviewScreenPositions); i++)
+    {
+        if (gSaveBlock1Ptr->pos.x == sNoPreviewScreenPositions[i].x
+         && gSaveBlock1Ptr->pos.y == sNoPreviewScreenPositions[i].y
+         && gSaveBlock1Ptr->location.mapGroup == sNoPreviewScreenPositions[i].mapGroup
+         && gSaveBlock1Ptr->location.mapNum == sNoPreviewScreenPositions[i].mapNum)
+            return MPS_COUNT;
+    }
 
     for (i = 0; i < MPS_COUNT; i++)
     {

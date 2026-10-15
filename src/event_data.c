@@ -317,6 +317,20 @@ bool8 FlagGet(u16 idx)
     return TRUE;
 }
 
+// ShinyGold: there are 16 badges. Badges 1-8 use FLAG_BADGE01_GET-FLAG_BADGE08_GET, badges 9-16 these flags.
+static const u16 sExtraBadgeFlags[] = {0x030, 0x02E, 0x117F, 0x11F7, 0x056, 0x1181, 0x1180, 0x117E};
+
+u8 GetNumBadges(void)
+{
+    u8 i, count = 0;
+
+    for (i = 0; i < 8; i++)
+        count += FlagGet(FLAG_BADGE01_GET + i);
+    for (i = 0; i < ARRAY_COUNT(sExtraBadgeFlags); i++)
+        count += FlagGet(sExtraBadgeFlags[i]);
+    return count;
+}
+
 void ResetSpecialVars(void)
 {
     gSpecialVar_0x8000 = 0;

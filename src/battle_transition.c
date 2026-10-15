@@ -17,6 +17,8 @@
 #include "scanline_effect.h"
 #include "event_object_movement.h"
 #include "constants/songs.h"
+#include "constants/trainers.h"
+#include "battle.h"
 
 #define PALTAG_UNUSED_MUGSHOT 0x100A
 
@@ -2146,6 +2148,21 @@ static void HBlankCB_Mugshots(void)
 }
 
 
+// ShinyGold: the opponent of the last mugshot battle (MUGSHOT_BLUE) can be different trainers
+static u8 GetMugshotTrainerPicId(s16 mugshotId)
+{
+    if (mugshotId == MUGSHOT_BLUE)
+    {
+        if (gTrainerBattleOpponent_A == TRAINER_ELITETRAINER_LANCE)
+            return TRAINER_PIC_CUE_BALL;
+        else if (gTrainerBattleOpponent_A & 1)
+            return TRAINER_PIC_MAGMA_GRUNT_F;
+        else
+            return TRAINER_PIC_COLLECTOR;
+    }
+    return sMugshotsTrainerPicIDsTable[mugshotId];
+}
+
 static void Mugshots_CreateTrainerPics(struct Task *task)
 {
     struct Sprite *opponentSprite, *playerSprite;
@@ -2153,7 +2170,7 @@ static void Mugshots_CreateTrainerPics(struct Task *task)
 
     gReservedSpritePaletteCount = 10;
     mugshotId = task->tMugshotId;
-    task->tOpponentSpriteId = CreateTrainerSprite(sMugshotsTrainerPicIDsTable[mugshotId],
+    task->tOpponentSpriteId = CreateTrainerSprite(GetMugshotTrainerPicId(mugshotId), // ShinyGold
                                                   sMugshotsOpponentCoords[mugshotId][0] - 32,
                                                   sMugshotsOpponentCoords[mugshotId][1] + 42,
                                                   0, gDecompressionBuffer);

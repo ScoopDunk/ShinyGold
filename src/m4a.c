@@ -1,5 +1,6 @@
 #include "global.h"
 #include "gba/m4a_internal.h"
+#include "sound.h"
 
 extern const u8 gCgb3Vol[];
 
@@ -108,8 +109,12 @@ void m4aSongNumStart(u16 n)
 {
     const struct MusicPlayer *mplayTable = gMPlayTable;
     const struct Song *songTable = gSongTable;
-    const struct Song *song = &songTable[n];
-    const struct MusicPlayer *mplay = &mplayTable[song->ms];
+    const struct Song *song;
+    const struct MusicPlayer *mplay;
+
+    n = GetSwappedSongNum(n); // ShinyGold: scripts can replace songs, see sound.c
+    song = &songTable[n];
+    mplay = &mplayTable[song->ms];
 
     MPlayStart(mplay->info, song->header);
 }
