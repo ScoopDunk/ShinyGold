@@ -32,7 +32,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x088291F4",
+      "script": "RedRoute_Area1_EventScript_HikerGrant",
       "flag": "0"
     },
     {
@@ -46,7 +46,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0882923C",
+      "script": "RedRoute_Area1_EventScript_HikerDoug",
       "flag": "0"
     },
     {
@@ -60,7 +60,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0882920C",
+      "script": "RedRoute_Area1_EventScript_PicnickerMona",
       "flag": "0"
     },
     {
@@ -74,7 +74,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x08829224",
+      "script": "RedRoute_Area1_EventScript_BlackBeltKaji",
       "flag": "0"
     }
   ],
@@ -147,7 +147,7 @@
       "y": 13,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08780680"
+      "script": "Route35_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -155,7 +155,7 @@
       "y": 12,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088291DC"
+      "script": "RedRoute_Area1_EventScript_Sign2"
     },
     {
       "type": "hidden_item",

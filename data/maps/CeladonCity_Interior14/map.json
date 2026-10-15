@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08878790",
+      "script": "CeladonCity_Interior14_EventScript_Chef",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08878770",
+      "script": "CeladonCity_Interior14_EventScript_FatMan",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08878A60",
+      "script": "CeladonCity_Interior14_EventScript_Woman3",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08878750",
+      "script": "CeladonCity_Interior14_EventScript_BaldingMan",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08878710",
+      "script": "CeladonCity_Interior14_EventScript_FatMan2",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088787A0",
+      "script": "CeladonCity_Interior14_EventScript_ItemLeftovers",
       "flag": "0x27F"
     }
   ],

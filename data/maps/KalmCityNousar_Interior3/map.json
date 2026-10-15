@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08743970",
+      "script": "KalmCityNousar_Interior3_EventScript_ItemXDefend",
       "flag": "0x1035"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08743A50",
+      "script": "KalmCityNousar_Interior3_EventScript_ItemPotion",
       "flag": "0x1036"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x08743890",
+      "script": "KalmCityNousar_Interior3_EventScript_SageEdmond",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x08743870",
+      "script": "KalmCityNousar_Interior3_EventScript_SageNico",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08743A60",
+      "script": "KalmCityNousar_Interior3_EventScript_ItemEscapeRope",
       "flag": "0x1037"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x08743A70",
+      "script": "KalmCityNousar_Interior3_EventScript_SageJin",
       "flag": "0"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x08743A90",
+      "script": "KalmCityNousar_Interior3_EventScript_SageNeal",
       "flag": "0"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08743AB0",
+      "script": "KalmCityNousar_Interior3_EventScript_SageTroy",
       "flag": "0"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08744030",
+      "script": "KalmCityNousar_Interior3_EventScript_SageLi",
       "flag": "0"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08000000",
+      "script": "0x0",
       "flag": "0x1038"
     }
   ],
@@ -201,7 +201,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x087435B7"
+      "script": "KalmCityNousar_Interior3_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -210,7 +210,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x087435C0"
+      "script": "KalmCityNousar_Interior3_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -219,7 +219,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x087435D7"
+      "script": "KalmCityNousar_Interior3_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -228,7 +228,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x087435E0"
+      "script": "KalmCityNousar_Interior3_EventScript_Trigger4"
     },
     {
       "type": "trigger",
@@ -237,7 +237,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x087435E7"
+      "script": "KalmCityNousar_Interior3_EventScript_Trigger5"
     },
     {
       "type": "trigger",
@@ -246,7 +246,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08743CF0"
+      "script": "KalmCityNousar_Interior3_EventScript_Trigger6"
     }
   ],
   "bg_events": []

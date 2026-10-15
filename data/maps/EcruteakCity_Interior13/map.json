@@ -26,7 +26,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x087747F0",
+      "script": "EcruteakCity_Interior13_EventScript_OldMan1",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08774800",
+      "script": "EcruteakCity_Interior13_EventScript_Youngster",
       "flag": "0"
     }
   ],

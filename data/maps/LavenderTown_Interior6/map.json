@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08875C40",
+      "script": "LavenderTown_Interior6_EventScript_MrFuji",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08875C30",
+      "script": "LavenderTown_Interior6_EventScript_OldWoman",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08875C20",
+      "script": "LavenderTown_Interior6_EventScript_Woman2",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08875C10",
+      "script": "LavenderTown_Interior6_EventScript_Lass",
       "flag": "0"
     }
   ],

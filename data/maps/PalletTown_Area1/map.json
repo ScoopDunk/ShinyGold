@@ -37,7 +37,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088255CC",
+      "script": "PalletTown_Area1_EventScript_Woman2",
       "flag": "0"
     },
     {
@@ -51,7 +51,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08825570",
+      "script": "PalletTown_Area1_EventScript_Beauty",
       "flag": "0"
     },
     {
@@ -65,7 +65,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081AC94D",
+      "script": "SevenIsland_SevaultCanyon_Entrance_EventScript_Jon",
       "flag": "0"
     },
     {
@@ -79,7 +79,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081AC9D1",
+      "script": "SevenIsland_SevaultCanyon_Entrance_EventScript_Nicolas",
       "flag": "0"
     },
     {
@@ -93,7 +93,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081ACA0F",
+      "script": "SevenIsland_SevaultCanyon_Entrance_EventScript_Madeline",
       "flag": "0"
     },
     {
@@ -107,7 +107,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081AC993",
+      "script": "SevenIsland_SevaultCanyon_Entrance_EventScript_Mason",
       "flag": "0"
     },
     {
@@ -156,7 +156,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08825630"
+      "script": "PalletTown_Area1_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -164,7 +164,7 @@
       "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08168BF4"
+      "script": "PalletTown_Area1_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -172,7 +172,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08825670"
+      "script": "PalletTown_Area1_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -180,7 +180,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08825688"
+      "script": "PalletTown_Area1_EventScript_Sign4"
     }
   ]
 }

@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0871D960",
+      "script": "CherrygroveCity_Interior4_EventScript_OldMan1",
       "flag": "0x1009"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0871D960",
+      "script": "CherrygroveCity_Interior4_EventScript_OldMan1",
       "flag": "0"
     }
   ],
@@ -61,7 +61,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0871DC00"
+      "script": "CherrygroveCity_EventScript_Trigger5"
     }
   ],
   "bg_events": []

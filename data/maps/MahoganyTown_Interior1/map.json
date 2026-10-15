@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0878B040",
+      "script": "MahoganyTown_Interior1_EventScript_RedSurf",
       "flag": "0x10E4",
       "explicit_local_id": 2
     },
@@ -41,7 +41,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08783550",
+      "script": "MahoganyTown_Interior1_EventScript_PokeManiac",
       "flag": "0x1103"
     },
     {
@@ -55,7 +55,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171853",
+      "script": "EcruteakCity_Interior2_EventScript_Woman3",
       "flag": "0x10E5"
     },
     {
@@ -69,7 +69,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08783520",
+      "script": "MahoganyTown_Interior1_EventScript_Rocker",
       "flag": "0x1103"
     },
     {
@@ -83,7 +83,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08781CE0",
+      "script": "MahoganyTown_Interior1_EventScript_OldAmber",
       "flag": "0x10E6"
     }
   ],
@@ -111,7 +111,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x087832B0"
+      "script": "MahoganyTown_Interior1_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -120,7 +120,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x087832F0"
+      "script": "MahoganyTown_Interior1_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -129,7 +129,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783330"
+      "script": "MahoganyTown_Interior1_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -138,7 +138,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x08783640"
+      "script": "MahoganyTown_Interior1_EventScript_Trigger4"
     }
   ],
   "bg_events": []

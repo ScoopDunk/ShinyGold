@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x08161037",
+      "script": "Unused_VictoryRoad_2F_EventScript_CamperSpencer",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x0816104E",
+      "script": "Unused_VictoryRoad_2F_EventScript_HikerErik",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x08161065",
+      "script": "Unused_VictoryRoad_2F_EventScript_JugglerHorton",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x08161093",
+      "script": "Unused_VictoryRoad_2F_EventScript_MediumSarina",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0816107C",
+      "script": "Unused_VictoryRoad_2F_EventScript_JugglerGregory",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE9EC",
+      "script": "VictoryRoad_2F_EventScript_ItemGuardSpec",
       "flag": "0x1AB"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE9F9",
+      "script": "VictoryRoad_2F_EventScript_ItemTM07",
       "flag": "0x1AC"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BEA06",
+      "script": "VictoryRoad_2F_EventScript_ItemFullHeal",
       "flag": "0x1AD"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BEA13",
+      "script": "VictoryRoad_2F_EventScript_ItemTM37",
       "flag": "0x1AE"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -166,7 +166,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -180,7 +180,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0x058"
     },
     {
@@ -194,7 +194,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081C47AE",
+      "script": "VictoryRoad_2F_EventScript_DoubleEdgeTutor",
       "flag": "0"
     }
   ],
@@ -271,7 +271,7 @@
       "elevation": 3,
       "var": "0x4065",
       "var_value": "99",
-      "script": "0x08160FD5"
+      "script": "Unused_VictoryRoad_2F_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -280,7 +280,7 @@
       "elevation": 3,
       "var": "0x4066",
       "var_value": "99",
-      "script": "0x08161006"
+      "script": "Unused_VictoryRoad_2F_EventScript_Trigger2"
     }
   ],
   "bg_events": []

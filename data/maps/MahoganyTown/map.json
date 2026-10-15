@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780E30",
+      "script": "MahoganyTown_EventScript_FatMan",
       "flag": "0x1103"
     },
     {
@@ -51,7 +51,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780E20",
+      "script": "MahoganyTown_EventScript_OldMan1",
       "flag": "0"
     },
     {
@@ -65,7 +65,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780E40",
+      "script": "MahoganyTown_EventScript_BaldingMan",
       "flag": "0x110A"
     },
     {
@@ -79,7 +79,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08782FF0",
+      "script": "MahoganyTown_EventScript_CrushGirl",
       "flag": "0x10E3"
     },
     {
@@ -93,7 +93,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0878B030",
+      "script": "MahoganyTown_EventScript_Lass",
       "flag": "0x112A"
     }
   ],
@@ -142,7 +142,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08781470"
+      "script": "MahoganyTown_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -151,7 +151,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783290"
+      "script": "MahoganyTown_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -160,7 +160,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783290"
+      "script": "MahoganyTown_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -169,7 +169,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x087832A0"
+      "script": "MahoganyTown_EventScript_Trigger4"
     },
     {
       "type": "trigger",
@@ -178,7 +178,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C6C0"
+      "script": "CianwoodCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -187,7 +187,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C6C0"
+      "script": "CianwoodCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -196,7 +196,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878C6C0"
+      "script": "CianwoodCity_EventScript_Trigger1"
     }
   ],
   "bg_events": [
@@ -206,7 +206,7 @@
       "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08780E10"
+      "script": "MahoganyTown_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -214,7 +214,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08780EE0"
+      "script": "MahoganyTown_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -222,7 +222,7 @@
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08780EF0"
+      "script": "MahoganyTown_EventScript_Sign3"
     }
   ]
 }

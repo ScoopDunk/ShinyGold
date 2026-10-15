@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08775A80",
+      "script": "EcruteakCity_Interior4_EventScript_Rocker",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08775130",
+      "script": "EcruteakCity_Interior4_EventScript_Gentleman",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08775A70",
+      "script": "EcruteakCity_Interior4_EventScript_OldWoman",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08775A90",
+      "script": "EcruteakCity_Interior4_EventScript_Machoke",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08774D80",
+      "script": "EcruteakCity_Interior4_EventScript_KimonoGirlNaoko",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08774DA0",
+      "script": "EcruteakCity_Interior4_EventScript_KimonoGirlSayo",
       "flag": "0"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08774DC0",
+      "script": "EcruteakCity_Interior4_EventScript_KimonoGirlZuki",
       "flag": "0"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08774DE0",
+      "script": "EcruteakCity_Interior4_EventScript_KimonoGirlKuni",
       "flag": "0"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08774E00",
+      "script": "EcruteakCity_Interior4_EventScript_KimonoGirlMiki",
       "flag": "0"
     }
   ],

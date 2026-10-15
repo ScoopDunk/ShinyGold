@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816355A",
+      "script": "Unused_PokemonTower_7F_EventScript_MrFuji",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x08163586",
+      "script": "Unused_PokemonTower_7F_EventScript_TeamRocketGrunt18",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x0816363D",
+      "script": "Unused_PokemonTower_7F_EventScript_TeamRocketGrunt19",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x081636D6",
+      "script": "Unused_PokemonTower_7F_EventScript_TeamRocketGrunt20",
       "flag": "0"
     }
   ],

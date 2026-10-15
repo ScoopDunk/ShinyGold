@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x081612D1",
+      "script": "Unused_RocketHideout_B3F_EventScript_TeamRocketGrunt15",
       "flag": "0x0AD"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x081612BA",
+      "script": "Unused_RocketHideout_B3F_EventScript_TeamRocketGrunt14",
       "flag": "0x0AD"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE714",
+      "script": "RocketHideout_B3F_EventScript_ItemRareCandy",
       "flag": "0x172"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE721",
+      "script": "RocketHideout_B3F_EventScript_ItemTM21",
       "flag": "0x173"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BEBCD",
+      "script": "RocketHideout_B3F_EventScript_ItemBlackGlasses",
       "flag": "0x1D2"
     }
   ],

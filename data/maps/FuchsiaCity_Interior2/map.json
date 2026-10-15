@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088808A0",
+      "script": "FuchsiaCity_Interior2_EventScript_WorkerM",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081623FF",
+      "script": "FuchsiaCity_Interior2_EventScript_Rocker",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08162411",
+      "script": "FuchsiaCity_Interior2_EventScript_BaldingMan",
       "flag": "0"
     }
   ],

@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816B433",
+      "script": "VermilionCity_Interior11_EventScript_Nurse",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088063A0",
+      "script": "VermilionCity_Interior11_EventScript_LittleBoy",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088063C0",
+      "script": "VermilionCity_Interior11_EventScript_Fisher",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816B44E",
+      "script": "VermilionCity_Interior11_EventScript_Youngster",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088063B0",
+      "script": "VermilionCity_Interior11_EventScript_Sailor",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081ACE83",
+      "script": "VermilionCity_PokemonCenter_1F_EventScript_PokemonJournalLtSurge",
       "flag": "0x0A0"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081ACE83",
+      "script": "VermilionCity_PokemonCenter_1F_EventScript_PokemonJournalLtSurge",
       "flag": "0x0A0"
     }
   ],
@@ -152,7 +152,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A02F0"
+      "script": "ViridianCity_Interior4_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -161,7 +161,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A02F0"
+      "script": "ViridianCity_Interior4_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -170,7 +170,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A02F0"
+      "script": "ViridianCity_Interior4_EventScript_Trigger1"
     }
   ],
   "bg_events": []

@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08775C20",
+      "script": "EcruteakCity_Interior1_EventScript_RsBrendan",
       "flag": "0x10AB"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE00C",
+      "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_12"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08775FD0",
+      "script": "EcruteakCity_Interior1_EventScript_FirebreatherNed",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x08775FF0",
+      "script": "EcruteakCity_Interior1_EventScript_FirebreatherDick",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x087761B0",
+      "script": "EcruteakCity_Interior1_EventScript_ItemBurnHeal",
       "flag": "0x17F"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x087761C0",
+      "script": "EcruteakCity_Interior1_EventScript_ItemXSpeed",
       "flag": "0x180"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x087761D0",
+      "script": "EcruteakCity_Interior1_EventScript_ItemEther",
       "flag": "0x181"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE00C",
+      "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_13"
     }
   ],
@@ -222,7 +222,7 @@
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08775C40"
+      "script": "EcruteakCity_Interior1_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -231,7 +231,7 @@
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08775C20"
+      "script": "EcruteakCity_Interior1_EventScript_RsBrendan"
     },
     {
       "type": "trigger",
@@ -240,7 +240,7 @@
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08775C70"
+      "script": "EcruteakCity_Interior1_EventScript_Trigger3"
     }
   ],
   "bg_events": []

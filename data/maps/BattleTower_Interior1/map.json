@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0882BA64",
+      "script": "BattleTower_Interior1_EventScript_UnionRoomReceptionist",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0882BA64",
+      "script": "BattleTower_Interior1_EventScript_UnionRoomReceptionist",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816DB7F",
+      "script": "BattleTower_Interior1_EventScript_BurglarEddie",
       "flag": "0x0A3"
     },
     {
@@ -411,7 +411,7 @@
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0882A520"
+      "script": "BattleTower_Interior1_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -420,7 +420,7 @@
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0882BA90"
+      "script": "BattleTower_Interior1_EventScript_Trigger2"
     }
   ],
   "bg_events": []

@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816ABBD",
+      "script": "MtMoon_Interior1_EventScript_Man",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08824908",
+      "script": "MtMoon_Interior1_EventScript_Lass",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08824948",
+      "script": "MtMoon_Interior1_EventScript_OldMan1",
       "flag": "0"
     }
   ],
@@ -89,7 +89,7 @@
       "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816AC94"
+      "script": "MtMoon_Interior1_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -97,7 +97,7 @@
       "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816AC94"
+      "script": "MtMoon_Interior1_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -105,7 +105,7 @@
       "y": 5,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816AC94"
+      "script": "MtMoon_Interior1_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -113,7 +113,7 @@
       "y": 2,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816AC94"
+      "script": "MtMoon_Interior1_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -121,7 +121,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816AC94"
+      "script": "MtMoon_Interior1_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -129,7 +129,7 @@
       "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816AC94"
+      "script": "MtMoon_Interior1_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -137,7 +137,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816AC94"
+      "script": "MtMoon_Interior1_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -145,7 +145,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0816AC94"
+      "script": "MtMoon_Interior1_EventScript_Sign1"
     }
   ]
 }

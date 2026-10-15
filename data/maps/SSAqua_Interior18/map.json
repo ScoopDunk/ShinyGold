@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "0x08804190",
+      "script": "SSAqua_Interior18_EventScript_PokefanColin",
       "flag": "0x1176"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x088041B0",
+      "script": "SSAqua_Interior18_EventScript_TwinsMegAndPeg",
       "flag": "0x1176"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x088041D0",
+      "script": "SSAqua_Interior18_EventScript_TwinsMegAndPeg2",
       "flag": "0x1176"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0880BC70",
+      "script": "SSAqua_Interior18_EventScript_PokefanJeremy",
       "flag": "0x1175"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0880BC30",
+      "script": "SSAqua_Interior18_EventScript_PokefanGeorgia",
       "flag": "0x1175"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "0x0880BF30",
+      "script": "SSAqua_Interior18_EventScript_PsychicRodney",
       "flag": "0x1174"
     }
   ],

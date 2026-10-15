@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816B0FE",
+      "script": "LavenderTown_Interior1_EventScript_Nurse",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08875650",
+      "script": "LavenderTown_Interior1_EventScript_WorkerF",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08875660",
+      "script": "LavenderTown_Interior1_EventScript_Gentleman",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08875620",
+      "script": "LavenderTown_Interior1_EventScript_Youngster",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081AD0A0",
+      "script": "LavenderTown_PokemonCenter_1F_EventScript_BaldingMan",
       "flag": "0x09D"
     }
   ],
@@ -124,7 +124,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887BC70"
+      "script": "MtSilver_Interior1_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -133,7 +133,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887BC70"
+      "script": "MtSilver_Interior1_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -142,7 +142,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887BC70"
+      "script": "MtSilver_Interior1_EventScript_Trigger1"
     }
   ],
   "bg_events": []

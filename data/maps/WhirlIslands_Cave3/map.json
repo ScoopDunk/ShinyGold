@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE00C",
+      "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_12"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08787330",
+      "script": "WhirlIslands_Cave3_EventScript_ItemCarbos",
       "flag": "0x218"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08787320",
+      "script": "WhirlIslands_Cave3_EventScript_ItemNugget",
       "flag": "0x219"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08787370",
+      "script": "WhirlIslands_Cave3_EventScript_ItemEscapeRope",
       "flag": "0x21D"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08787340",
+      "script": "WhirlIslands_Cave3_EventScript_ItemCalcium",
       "flag": "0x21A"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08787360",
+      "script": "WhirlIslands_Cave3_EventScript_ItemUltraBall",
       "flag": "0x21C"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08787350",
+      "script": "WhirlIslands_Cave3_EventScript_ItemRareCandy",
       "flag": "0x21B"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08787300",
+      "script": "WhirlIslands_Cave3_EventScript_ItemFullRestore",
       "flag": "0x216"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08787310",
+      "script": "WhirlIslands_Cave3_EventScript_ItemFullRestore2",
       "flag": "0x217"
     }
   ],

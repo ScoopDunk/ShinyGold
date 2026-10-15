@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x08808960",
+      "script": "SaffronCity_Interior5_EventScript_MediumRebecca",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x088089A0",
+      "script": "SaffronCity_Interior5_EventScript_PsychicJared",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x088089C0",
+      "script": "SaffronCity_Interior5_EventScript_MediumDoris",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0816EEF1",
+      "script": "SaffronCity_Interior5_EventScript_MediumGrace",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0816EF08",
+      "script": "SaffronCity_Interior5_EventScript_MediumStacy",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x08808980",
+      "script": "SaffronCity_Interior5_EventScript_PsychicFranklin",
       "flag": "0"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08808C10",
+      "script": "SaffronCity_Interior5_EventScript_LeaderSabrina",
       "flag": "0"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0816EE9F",
+      "script": "SaffronCity_Interior5_EventScript_PsychicNorman",
       "flag": "0"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088087B0",
+      "script": "SaffronCity_Interior5_EventScript_GymGuy",
       "flag": "0"
     }
   ],
@@ -383,7 +383,7 @@
       "y": 20,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08808780"
+      "script": "SaffronCity_Interior5_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -391,7 +391,7 @@
       "y": 20,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08808780"
+      "script": "SaffronCity_Interior5_EventScript_Sign1"
     }
   ]
 }

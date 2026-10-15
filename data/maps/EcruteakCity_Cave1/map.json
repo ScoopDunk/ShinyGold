@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x087761E0",
+      "script": "EcruteakCity_Cave1_EventScript_ItemUltraBall",
       "flag": "0x182"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x087761F0",
+      "script": "EcruteakCity_Cave1_EventScript_ItemBurnHeal",
       "flag": "0x183"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08776200",
+      "script": "EcruteakCity_Cave1_EventScript_ItemHpUp",
       "flag": "0x184"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08776210",
+      "script": "EcruteakCity_Cave1_EventScript_ItemTm50",
       "flag": "0x186"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08776220",
+      "script": "EcruteakCity_Cave1_EventScript_ItemNugget",
       "flag": "0x185"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08000000",
+      "script": "0x0",
       "flag": "0x10AC"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0880DA26",
+      "script": "EcruteakCity_Cave1_EventScript_Man",
       "flag": "0x11B6"
     }
   ],
@@ -208,7 +208,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08776230"
+      "script": "EcruteakCity_Cave1_EventScript_Trigger"
     }
   ],
   "bg_events": []

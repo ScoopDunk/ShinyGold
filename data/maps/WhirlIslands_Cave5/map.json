@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x087873A0",
+      "script": "WhirlIslands_Cave5_EventScript_ItemMaxElixir",
       "flag": "0x220"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08787380",
+      "script": "WhirlIslands_Cave5_EventScript_ItemMaxRevive",
       "flag": "0x21E"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08787390",
+      "script": "WhirlIslands_Cave5_EventScript_ItemFullRestore",
       "flag": "0x21F"
     }
   ],
@@ -96,7 +96,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x0878BA20"
+      "script": "WhirlIslands_Cave5_EventScript_Trigger"
     }
   ],
   "bg_events": []

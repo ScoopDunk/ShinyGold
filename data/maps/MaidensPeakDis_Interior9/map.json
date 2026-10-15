@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171EBE",
+      "script": "MaidensPeakDis_Interior9_EventScript_Woman2",
       "flag": "0x095"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08172062",
+      "script": "MaidensPeakDis_Interior9_EventScript_Gentleman",
       "flag": "0x096"
     }
   ],
@@ -61,7 +61,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "0x081ACF2C"
+      "script": "FiveIsland_ResortGorgeous_House_EventScript_PokemonJournal"
     },
     {
       "type": "sign",
@@ -69,7 +69,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "0x081ACF2C"
+      "script": "FiveIsland_ResortGorgeous_House_EventScript_PokemonJournal"
     }
   ]
 }

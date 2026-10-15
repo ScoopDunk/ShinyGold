@@ -42,7 +42,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "0x08746460",
+      "script": "Route36_EventScript_Woman2",
       "flag": "0"
     },
     {
@@ -56,7 +56,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08746480",
+      "script": "Route36_EventScript_FatMan",
       "flag": "0"
     },
     {
@@ -70,7 +70,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08770C70",
+      "script": "Route36_EventScript_Fossil",
       "flag": "0x1095"
     },
     {
@@ -84,7 +84,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x08770A20",
+      "script": "Route36_EventScript_PsychicMark",
       "flag": "0",
       "explicit_local_id": 49
     },
@@ -99,7 +99,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0",
       "explicit_local_id": 70
     },
@@ -114,7 +114,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x08770A40",
+      "script": "Route36_EventScript_Schoolboy306",
       "flag": "0"
     },
     {
@@ -128,7 +128,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -142,7 +142,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -156,7 +156,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -170,7 +170,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -184,7 +184,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -198,7 +198,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -212,7 +212,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -226,7 +226,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -240,7 +240,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -254,7 +254,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -268,7 +268,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -282,7 +282,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -296,7 +296,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -310,7 +310,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -324,7 +324,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -338,7 +338,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -352,7 +352,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08780000",
+      "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
     },
     {
@@ -366,7 +366,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0888D0A0",
+      "script": "Route35_EventScript_Entei",
       "flag": "0x1230",
       "explicit_local_id": 53
     },
@@ -381,7 +381,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0888D140",
+      "script": "Route35_EventScript_Raikou",
       "flag": "0x1231",
       "explicit_local_id": 51
     },
@@ -396,7 +396,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0888D1E0",
+      "script": "Route35_EventScript_Suicune",
       "flag": "0x1232",
       "explicit_local_id": 54
     }
@@ -439,7 +439,7 @@
       "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x087464A0"
+      "script": "Route36_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -447,7 +447,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x087464B0"
+      "script": "Route36_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -455,7 +455,7 @@
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08770A10"
+      "script": "Route36_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -463,7 +463,7 @@
       "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08770F30"
+      "script": "Route36_EventScript_Sign4"
     },
     {
       "type": "sign",
@@ -471,7 +471,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x087806C0"
+      "script": "Route36_EventScript_Sign5"
     },
     {
       "type": "sign",
@@ -479,7 +479,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08885640"
+      "script": "Route35_EventScript_Sign4"
     },
     {
       "type": "sign",
@@ -487,7 +487,7 @@
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08888D80"
+      "script": "Route36_EventScript_Sign7"
     }
   ]
 }

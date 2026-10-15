@@ -32,7 +32,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x08809890"
+      "script": "SilphCo_Interior9_EventScript_Trigger"
     }
   ],
   "bg_events": [
@@ -42,7 +42,7 @@
       "y": 2,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088098B8"
+      "script": "SilphCo_Interior9_EventScript_Sign"
     }
   ]
 }

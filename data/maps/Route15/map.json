@@ -37,7 +37,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08000000",
+      "script": "0x0",
       "flag": "0x11F4"
     },
     {
@@ -51,7 +51,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0887D790",
+      "script": "Route15_EventScript_PsychicJun",
       "flag": "0"
     },
     {
@@ -65,7 +65,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0887D770",
+      "script": "Route15_EventScript_SchoolboyKipp",
       "flag": "0"
     },
     {
@@ -79,7 +79,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x0887D750",
+      "script": "Route15_EventScript_SchoolboyTommy",
       "flag": "0"
     },
     {
@@ -93,7 +93,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0887D730",
+      "script": "Route15_EventScript_TeacherHillary",
       "flag": "0"
     },
     {
@@ -107,7 +107,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0887D6F0",
+      "script": "Route15_EventScript_TeacherColette",
       "flag": "0"
     },
     {
@@ -121,7 +121,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0887D6D0",
+      "script": "Route15_EventScript_SchoolboyJohnny",
       "flag": "0"
     },
     {
@@ -135,7 +135,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0887D7C0",
+      "script": "Route15_EventScript_ItemPpUp",
       "flag": "0x290"
     },
     {
@@ -149,7 +149,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0887D710",
+      "script": "Route15_EventScript_SchoolboyBilly",
       "flag": "0"
     },
     {
@@ -163,7 +163,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08000000",
+      "script": "0x0",
       "flag": "0x11F4"
     },
     {
@@ -205,7 +205,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887F514"
+      "script": "Route15_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -214,7 +214,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887F4F2"
+      "script": "Route15_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -223,7 +223,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887EB30"
+      "script": "FuchsiaCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -232,7 +232,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887F536"
+      "script": "Route15_EventScript_Trigger4"
     },
     {
       "type": "trigger",
@@ -241,7 +241,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887EB30"
+      "script": "FuchsiaCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -250,7 +250,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887EB30"
+      "script": "FuchsiaCity_EventScript_Trigger1"
     }
   ],
   "bg_events": [
@@ -260,7 +260,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0887D800"
+      "script": "Route15_EventScript_Sign"
     }
   ]
 }

@@ -37,7 +37,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088751F0",
+      "script": "RockTunnel_Cave2_EventScript_LaprasDoll",
       "flag": "0x05E"
     },
     {
@@ -51,7 +51,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x08824E18",
+      "script": "Route4_EventScript_PicnickerHope",
       "flag": "0"
     },
     {
@@ -65,7 +65,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08824E64",
+      "script": "Route4_EventScript_ItemHpUp",
       "flag": "0x083"
     },
     {
@@ -79,7 +79,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08824D3C",
+      "script": "Route4_EventScript_BirdKeeperHank",
       "flag": "0"
     },
     {
@@ -93,7 +93,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08885640",
+      "script": "Route35_EventScript_Sign4",
       "flag": "0"
     },
     {
@@ -107,7 +107,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081C49B6",
+      "script": "Route4_EventScript_MegaKickTutor",
       "flag": "0"
     },
     {
@@ -129,7 +129,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08000000",
+      "script": "0x0",
       "flag": "0"
     }
   ],
@@ -157,7 +157,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x08000000"
+      "script": "0x0"
     }
   ],
   "bg_events": [
@@ -167,7 +167,7 @@
       "y": 21,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08167F95"
+      "script": "Route4_EventScript_Sign"
     }
   ]
 }

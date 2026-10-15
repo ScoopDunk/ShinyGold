@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0880BF70",
+      "script": "SSAqua_Interior19_EventScript_BeautyCassie",
       "flag": "0x1174"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0880BCB0",
+      "script": "SSAqua_Interior19_EventScript_GuitaristClyde",
       "flag": "0x1175"
     }
   ],

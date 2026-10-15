@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x087448E0",
+      "script": "VioletCity_Interior8_EventScript_GymGuy",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x08744A00",
+      "script": "VioletCity_Interior8_EventScript_BirdKeeperRod",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x087449E0",
+      "script": "VioletCity_Interior8_EventScript_BirdKeeperAbe",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08000000",
+      "script": "0x0",
       "flag": "0x1041"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x087448E0",
+      "script": "VioletCity_Interior8_EventScript_GymGuy",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08745B90",
+      "script": "VioletCity_Interior8_EventScript_LeaderFalkner2",
       "flag": "0"
     }
   ],
@@ -124,7 +124,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877EDB0"
+      "script": "VioletCity_Interior8_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -133,7 +133,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x087447E0"
+      "script": "VioletCity_Interior8_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -142,7 +142,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A00C0"
+      "script": "VioletCity_Interior8_EventScript_Trigger3"
     }
   ],
   "bg_events": [
@@ -152,7 +152,7 @@
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08745C40"
+      "script": "VioletCity_Interior8_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -160,7 +160,7 @@
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08745C40"
+      "script": "VioletCity_Interior8_EventScript_Sign1"
     }
   ]
 }

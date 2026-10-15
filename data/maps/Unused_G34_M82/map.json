@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0888A1C0",
+      "script": "Unused_G34_M82_EventScript_GymSign",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0888A4E0",
+      "script": "Unused_G34_M82_EventScript_CooltrainerRezo",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088894D0",
+      "script": "Unused_G34_M82_EventScript_ItemMagoBerry",
       "flag": "FLAG_WONDER_CARD_UNUSED_15"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x0888A4C0",
+      "script": "Unused_G34_M82_EventScript_CooltrainerReika",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088894C0",
+      "script": "Unused_G34_M82_EventScript_ItemNugget",
       "flag": "FLAG_WONDER_CARD_UNUSED_14"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BDF13",
+      "script": "EventScript_CutTree",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BDF13",
+      "script": "EventScript_CutTree",
       "flag": "FLAG_TEMP_5"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BDF13",
+      "script": "EventScript_CutTree",
       "flag": "FLAG_TEMP_3"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -166,7 +166,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -180,7 +180,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE00C",
+      "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_5"
     },
     {
@@ -194,7 +194,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE00C",
+      "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_6"
     },
     {
@@ -208,7 +208,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -222,7 +222,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -236,7 +236,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -250,7 +250,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -264,7 +264,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -278,7 +278,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -292,7 +292,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -306,7 +306,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE00C",
+      "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_2"
     },
     {
@@ -320,7 +320,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE00C",
+      "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_4"
     },
     {
@@ -334,7 +334,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE00C",
+      "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_6"
     },
     {
@@ -348,7 +348,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE00C",
+      "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_7"
     }
   ],
@@ -432,7 +432,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08889CA7"
+      "script": "Unused_G34_M82_EventScript_Sign"
     }
   ]
 }

@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08000000",
+      "script": "0x0",
       "flag": "0x084"
     }
   ],
@@ -117,7 +117,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08827600"
+      "script": "MtMoon_Cave1_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -126,7 +126,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08827670"
+      "script": "MtMoon_Cave1_EventScript_Trigger2"
     }
   ],
   "bg_events": [
@@ -196,7 +196,7 @@
       "y": 31,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x088248E0"
+      "script": "MtMoon_Cave1_EventScript_Sign"
     }
   ]
 }

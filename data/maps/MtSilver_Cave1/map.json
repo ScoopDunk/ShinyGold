@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0882428C",
+      "script": "MtSilver_Cave1_EventScript_PkmnTrainerRed",
       "flag": "0x02F"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816077F",
+      "script": "MtSilver_Cave1_EventScript_Fossil",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081606C2",
+      "script": "MtSilver_Cave1_EventScript_Scientist",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08160829",
+      "script": "MtSilver_Cave1_EventScript_TeamRocketGrunt7",
       "flag": "0x0AD"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x081607E4",
+      "script": "MtSilver_Cave1_EventScript_TeamRocketGrunt4",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x08160812",
+      "script": "MtSilver_Cave1_EventScript_TeamRocketGrunt6",
       "flag": "0x0AD"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x081607FB",
+      "script": "MtSilver_Cave1_EventScript_TeamRocketGrunt5",
       "flag": "0x0AD"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE61D",
+      "script": "MtMoon_B2F_EventScript_ItemStarPiece",
       "flag": "0x15F"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0882426C",
+      "script": "MtSilver_Cave1_EventScript_ItemMaxRevive",
       "flag": "0x2A4"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0882427C",
+      "script": "MtSilver_Cave1_EventScript_ItemFullRestore",
       "flag": "0x0AD"
     },
     {
@@ -166,7 +166,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BEAE3",
+      "script": "MtMoon_B2F_EventScript_ItemAntidote",
       "flag": "0x1C0"
     }
   ],
@@ -208,7 +208,7 @@
       "elevation": 3,
       "var": "0x408B",
       "var_value": "0",
-      "script": "0x081606B0"
+      "script": "MtSilver_Cave1_EventScript_Trigger"
     }
   ],
   "bg_events": [

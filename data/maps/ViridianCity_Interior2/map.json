@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08169FD6",
+      "script": "ViridianCity_Interior2_EventScript_BlackBeltWai",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0816A004",
+      "script": "ViridianCity_Interior2_EventScript_LeaderSabrina",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08169FA8",
+      "script": "ViridianCity_Interior2_EventScript_DragonTamerMikahil",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08169F7A",
+      "script": "ViridianCity_Interior2_EventScript_TamerJason",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x08169F91",
+      "script": "ViridianCity_Interior2_EventScript_YoungsterFabricio",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x08169FBF",
+      "script": "ViridianCity_Interior2_EventScript_BlackBeltKiyo2",
       "flag": "0"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08169FED",
+      "script": "ViridianCity_Interior2_EventScript_RivalTerry4",
       "flag": "0"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08823C70",
+      "script": "ViridianCity_Interior2_EventScript_LeaderBlue2",
       "flag": "0x06B"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0816A01B",
+      "script": "ViridianCity_Interior2_EventScript_LeaderErika",
       "flag": "0"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816A032",
+      "script": "ViridianCity_Interior2_EventScript_GymGuy",
       "flag": "0x06B"
     }
   ],
@@ -187,7 +187,7 @@
       "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08823F80"
+      "script": "ViridianCity_Interior2_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -195,7 +195,7 @@
       "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08823F80"
+      "script": "ViridianCity_Interior2_EventScript_Sign1"
     },
     {
       "type": "hidden_item",

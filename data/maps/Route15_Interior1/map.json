@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08880CE0",
+      "script": "Route15_Interior1_EventScript_Policeman",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08000000",
+      "script": "0x0",
       "flag": "0x11F4"
     }
   ],
@@ -89,7 +89,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887F410"
+      "script": "Route15_Interior1_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -98,7 +98,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887F454"
+      "script": "Route15_Interior1_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -107,7 +107,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887F432"
+      "script": "Route15_Interior1_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -116,7 +116,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0887F476"
+      "script": "Route15_Interior1_EventScript_Trigger4"
     }
   ],
   "bg_events": []

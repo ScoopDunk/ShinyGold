@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816495D",
+      "script": "VermilionCity_Interior9_EventScript_Nurse",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08164992",
+      "script": "VermilionCity_Interior9_EventScript_UnionRoomReceptionist",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088276E0",
+      "script": "VermilionCity_Interior9_EventScript_WorkerF",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08164AE6",
+      "script": "VermilionCity_Interior9_EventScript_CooltrainerF",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08164AEF",
+      "script": "VermilionCity_Interior9_EventScript_BaldingMan",
       "flag": "0"
     }
   ],
@@ -117,7 +117,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_TRAINER_TOWER",
       "var_value": "0",
-      "script": "0x081649CE"
+      "script": "VermilionCity_Interior9_EventScript_Trigger"
     }
   ],
   "bg_events": [
@@ -127,7 +127,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "0x08164AD8"
+      "script": "VermilionCity_Interior9_EventScript_Sign"
     }
   ]
 }

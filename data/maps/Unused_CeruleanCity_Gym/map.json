@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x08870720",
+      "script": "Unused_CeruleanCity_Gym_EventScript_SwimmerMParker",
       "flag": "0x11C2"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816AB44",
+      "script": "Unused_CeruleanCity_Gym_EventScript_PicnickerDiana",
       "flag": "0x11C0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08870920",
+      "script": "Unused_CeruleanCity_Gym_EventScript_LeaderMisty",
       "flag": "0x11C2"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08870610",
+      "script": "Unused_CeruleanCity_Gym_EventScript_GymGuy",
       "flag": "0x11C2"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x08870700",
+      "script": "Unused_CeruleanCity_Gym_EventScript_SwimmerFBriana",
       "flag": "0x11C2"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x08870740",
+      "script": "Unused_CeruleanCity_Gym_EventScript_SwimmerFDiana",
       "flag": "0x11C2"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0880FC40",
+      "script": "Unused_CeruleanCity_Gym_EventScript_ItemSecretKey",
       "flag": "0x272"
     }
   ],
@@ -131,7 +131,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0880F990"
+      "script": "Unused_CeruleanCity_Gym_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -140,7 +140,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0880FC00"
+      "script": "Unused_CeruleanCity_Gym_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -149,7 +149,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0880FC20"
+      "script": "Unused_CeruleanCity_Gym_EventScript_Trigger3"
     }
   ],
   "bg_events": [
@@ -159,7 +159,7 @@
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0888F670"
+      "script": "Unused_CeruleanCity_Gym_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -167,7 +167,7 @@
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0888F6B0"
+      "script": "Unused_CeruleanCity_Gym_EventScript_Sign2"
     }
   ]
 }

@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0878D9B0",
+      "script": "DragonsDen_Cave4_EventScript_DragonTamerAirat",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0878DEB0",
+      "script": "DragonsDen_Cave4_EventScript_DragonTamerGon",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0878DE50",
+      "script": "DragonsDen_Cave4_EventScript_DragonTamerBravo",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0878D4D0",
+      "script": "DragonsDen_Cave4_EventScript_ItemRevive",
       "flag": "0x244"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0878D4E0",
+      "script": "DragonsDen_Cave4_EventScript_ItemMaxPotion",
       "flag": "0x245"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0878D5B0",
+      "script": "DragonsDen_Cave4_EventScript_ItemDragonFang",
       "flag": "0x246"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0878D4F0",
+      "script": "DragonsDen_Cave4_EventScript_ItemMaxElixir",
       "flag": "0x247"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08000000",
+      "script": "0x0",
       "flag": "0x114B"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08873840",
+      "script": "DragonsDen_Cave4_EventScript_LaprasDoll",
       "flag": "0x05E"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088274F8",
+      "script": "DragonsDen_Cave4_EventScript_RsBrendan",
       "flag": "0x090"
     }
   ],
@@ -180,7 +180,7 @@
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877B5C0"
+      "script": "VictoryRoad_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -189,7 +189,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878D5A0"
+      "script": "DragonsDen_Cave4_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -198,7 +198,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0878D590"
+      "script": "DragonsDen_Cave4_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -207,7 +207,7 @@
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
-      "script": "0x08000000"
+      "script": "0x0"
     },
     {
       "type": "trigger",
@@ -226,7 +226,7 @@
       "y": 27,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0878D500"
+      "script": "DragonsDen_Cave4_EventScript_Sign"
     }
   ]
 }

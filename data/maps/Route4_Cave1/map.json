@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BEA95",
+      "script": "CeruleanCave_B1F_EventScript_ItemUltraBall",
       "flag": "0x1B8"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BEA88",
+      "script": "CeruleanCave_B1F_EventScript_ItemMaxRevive",
       "flag": "0x1B7"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08827014",
+      "script": "Route4_Cave1_EventScript_Mewtwo",
       "flag": "0x081"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE00C",
+      "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_12"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE00C",
+      "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_13"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE00C",
+      "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_14"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE00C",
+      "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_15"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE00C",
+      "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_16"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE00C",
+      "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_17"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE00C",
+      "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_18"
     },
     {
@@ -166,7 +166,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE00C",
+      "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_19"
     },
     {
@@ -180,7 +180,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE00C",
+      "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_1A"
     }
   ],

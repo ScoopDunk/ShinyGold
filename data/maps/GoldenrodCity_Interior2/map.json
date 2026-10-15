@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0874CE10",
+      "script": "GoldenrodCity_Interior2_EventScript_SuperNerdEric",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0874CE30",
+      "script": "GoldenrodCity_Interior2_EventScript_PokemaniacIssac",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874CE90",
+      "script": "GoldenrodCity_Interior2_EventScript_ItemBall",
       "flag": "0x172"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874D5B0",
+      "script": "GoldenrodCity_Interior2_EventScript_OldWoman",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874CEB9",
+      "script": "GoldenrodCity_Interior2_EventScript_ItemSuperPotion",
       "flag": "0x173"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874D4A0",
+      "script": "GoldenrodCity_Interior2_EventScript_Man",
       "flag": "0"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874D850",
+      "script": "GoldenrodCity_Interior2_EventScript_GymSign",
       "flag": "0"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874CEC9",
+      "script": "GoldenrodCity_Interior2_EventScript_ItemParalyzeHeal",
       "flag": "0x174"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874D790",
+      "script": "GoldenrodCity_Interior2_EventScript_OldMan1",
       "flag": "0"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0874CE50",
+      "script": "GoldenrodCity_Interior2_EventScript_SuperNerdTeru",
       "flag": "0"
     },
     {
@@ -166,7 +166,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874CEA9",
+      "script": "GoldenrodCity_Interior2_EventScript_ItemAntidote",
       "flag": "0x175"
     },
     {
@@ -180,7 +180,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0874CE70",
+      "script": "GoldenrodCity_Interior2_EventScript_PokemaniacDonald",
       "flag": "0"
     }
   ],
@@ -222,7 +222,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x087884D0"
+      "script": "GoldenrodCity_Interior2_EventScript_Trigger"
     }
   ],
   "bg_events": []

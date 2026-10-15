@@ -37,7 +37,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08828FF0",
+      "script": "BlueRoute_EventScript_BeautyShea",
       "flag": "0"
     },
     {
@@ -51,7 +51,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x08828FD8",
+      "script": "BlueRoute_EventScript_LadyMariam",
       "flag": "0"
     },
     {
@@ -65,7 +65,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x081645BE",
+      "script": "BlueRoute_EventScript_BirdKeeper611",
       "flag": "0"
     },
     {
@@ -79,7 +79,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x081645D5",
+      "script": "BlueRoute_EventScript_Fisherman612",
       "flag": "0"
     },
     {
@@ -93,7 +93,7 @@
       "movement_range_y": 5,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x081645EC",
+      "script": "BlueRoute_EventScript_Fisherman613",
       "flag": "0"
     },
     {
@@ -121,7 +121,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x08829008",
+      "script": "BlueRoute_EventScript_YoungsterFelix",
       "flag": "0"
     },
     {
@@ -149,7 +149,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08164648",
+      "script": "BlueRoute_EventScript_Pokemaniac617",
       "flag": "0"
     },
     {
@@ -177,7 +177,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08829178",
+      "script": "BlueRoute_EventScript_Picnicker",
       "flag": "0"
     },
     {

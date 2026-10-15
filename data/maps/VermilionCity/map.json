@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08805CF0",
+      "script": "VermilionCity_EventScript_Woman2",
       "flag": "0"
     },
     {
@@ -51,7 +51,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08805D00",
+      "script": "VermilionCity_EventScript_Man",
       "flag": "0"
     },
     {
@@ -65,7 +65,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08805D10",
+      "script": "VermilionCity_EventScript_Woman1",
       "flag": "0x117B"
     },
     {
@@ -79,7 +79,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x088060B0",
+      "script": "VermilionCity_EventScript_Gentleman",
       "flag": "0x117B"
     },
     {
@@ -93,7 +93,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0887C7C0",
+      "script": "VermilionCity_EventScript_Snorlax",
       "flag": "0x11EC"
     },
     {
@@ -107,7 +107,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08806210",
+      "script": "VermilionCity_EventScript_BaldingMan",
       "flag": "0"
     },
     {
@@ -121,7 +121,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BDF13",
+      "script": "EventScript_CutTree",
       "flag": "FLAG_TEMP_12"
     },
     {
@@ -135,7 +135,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08805D80",
+      "script": "VermilionCity_EventScript_ItemFullHeal",
       "flag": "0x26B"
     }
   ],
@@ -233,7 +233,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0888FAC0"
+      "script": "CeruleanCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -242,7 +242,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0888FAC0"
+      "script": "CeruleanCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -251,7 +251,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0888FAC0"
+      "script": "CeruleanCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -260,7 +260,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0888FAC0"
+      "script": "CeruleanCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -269,7 +269,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0888FAC0"
+      "script": "CeruleanCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -278,7 +278,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0888FAC0"
+      "script": "CeruleanCity_EventScript_Trigger1"
     }
   ],
   "bg_events": [
@@ -288,7 +288,7 @@
       "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08805D70"
+      "script": "VermilionCity_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -296,7 +296,7 @@
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08805D30"
+      "script": "VermilionCity_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -304,7 +304,7 @@
       "y": 24,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08805D50"
+      "script": "VermilionCity_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -312,7 +312,7 @@
       "y": 20,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08805D40"
+      "script": "VermilionCity_EventScript_Sign4"
     },
     {
       "type": "sign",
@@ -320,7 +320,7 @@
       "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08805D60"
+      "script": "VermilionCity_EventScript_Sign5"
     },
     {
       "type": "sign",
@@ -328,7 +328,7 @@
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08805D20"
+      "script": "VermilionCity_EventScript_Sign6"
     },
     {
       "type": "sign",
@@ -336,7 +336,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08872990"
+      "script": "VermilionCity_EventScript_Sign7"
     },
     {
       "type": "sign",
@@ -344,7 +344,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08885640"
+      "script": "Route35_EventScript_Sign4"
     }
   ]
 }

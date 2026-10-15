@@ -32,7 +32,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x081AC517",
+      "script": "SixIsland_GreenPath_EventScript_Jaclyn",
       "flag": "0"
     }
   ],
@@ -74,7 +74,7 @@
       "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08168B37"
+      "script": "Route28_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -82,7 +82,7 @@
       "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08168B2E"
+      "script": "Route28_EventScript_Sign2"
     },
     {
       "type": "hidden_item",

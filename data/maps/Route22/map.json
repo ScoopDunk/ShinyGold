@@ -65,7 +65,7 @@
       "elevation": 3,
       "var": "0x4054",
       "var_value": "1",
-      "script": "0x0816828C"
+      "script": "Route22_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -74,7 +74,7 @@
       "elevation": 3,
       "var": "0x4054",
       "var_value": "1",
-      "script": "0x08168298"
+      "script": "Route22_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -83,7 +83,7 @@
       "elevation": 0,
       "var": "0x4054",
       "var_value": "1",
-      "script": "0x081682AB"
+      "script": "Route22_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -92,7 +92,7 @@
       "elevation": 3,
       "var": "0x4054",
       "var_value": "3",
-      "script": "0x081683ED"
+      "script": "Route22_EventScript_Trigger4"
     },
     {
       "type": "trigger",
@@ -101,7 +101,7 @@
       "elevation": 3,
       "var": "0x4054",
       "var_value": "3",
-      "script": "0x081683F9"
+      "script": "Route22_EventScript_Trigger5"
     },
     {
       "type": "trigger",
@@ -110,7 +110,7 @@
       "elevation": 0,
       "var": "0x4054",
       "var_value": "3",
-      "script": "0x0816840C"
+      "script": "Route22_EventScript_Trigger6"
     }
   ],
   "bg_events": [
@@ -120,7 +120,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081684E2"
+      "script": "Route22_EventScript_Sign"
     }
   ]
 }

@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0888BC90",
+      "script": "Unused_G34_M80_EventScript_GymSign",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x0888A560",
+      "script": "Unused_G34_M80_EventScript_BikerLark",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x0888A540",
+      "script": "Unused_G34_M80_EventScript_BikerRowdy",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08889510",
+      "script": "Unused_G34_M80_EventScript_ItemSalacBerry",
       "flag": "FLAG_WONDER_CARD_UNUSED_10"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08889500",
+      "script": "Unused_G34_M80_EventScript_ItemMaxElixir",
       "flag": "FLAG_WONDER_CARD_UNUSED_11"
     }
   ],
@@ -103,7 +103,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08889580"
+      "script": "Unused_G34_M80_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -112,7 +112,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08889580"
+      "script": "Unused_G34_M80_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -121,7 +121,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08889580"
+      "script": "Unused_G34_M80_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -130,7 +130,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0888BC80"
+      "script": "Unused_G34_M80_EventScript_Trigger4"
     },
     {
       "type": "trigger",
@@ -139,7 +139,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0888BC80"
+      "script": "Unused_G34_M80_EventScript_Trigger4"
     },
     {
       "type": "trigger",
@@ -148,7 +148,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0888BC80"
+      "script": "Unused_G34_M80_EventScript_Trigger4"
     },
     {
       "type": "trigger",
@@ -167,7 +167,7 @@
       "y": 18,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08889CD7"
+      "script": "Unused_G34_M80_EventScript_Sign"
     }
   ]
 }

@@ -43,7 +43,7 @@
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08801A50"
+      "script": "Route23_EventScript_Sign"
     }
   ]
 }

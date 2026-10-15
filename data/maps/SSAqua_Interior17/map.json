@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x08804170",
+      "script": "SSAqua_Interior17_EventScript_FirebreatherLyle",
       "flag": "0x1176"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0880BCF0",
+      "script": "SSAqua_Interior17_EventScript_BugCatcherKen",
       "flag": "0x1175"
     }
   ],

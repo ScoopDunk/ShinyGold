@@ -32,7 +32,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08167F78",
+      "script": "Route3_EventScript_Youngster",
       "flag": "0"
     },
     {
@@ -46,7 +46,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x081A957B",
+      "script": "Route3_EventScript_Robin",
       "flag": "0"
     },
     {
@@ -60,7 +60,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x088244D4",
+      "script": "Route3_EventScript_FirebreatherBurt",
       "flag": "0"
     },
     {
@@ -74,7 +74,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "0x081A953D",
+      "script": "Route3_EventScript_Sally",
       "flag": "0"
     },
     {
@@ -88,7 +88,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x081A9483",
+      "script": "Route3_EventScript_Greg",
       "flag": "0"
     },
     {
@@ -102,7 +102,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0882444C",
+      "script": "Route3_EventScript_FirebreatherOtis",
       "flag": "0"
     },
     {
@@ -116,7 +116,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "0x081A94FF",
+      "script": "Route3_EventScript_Janice",
       "flag": "0"
     },
     {
@@ -130,7 +130,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08824348",
+      "script": "Route3_EventScript_YoungsterWarren",
       "flag": "0"
     },
     {
@@ -144,7 +144,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x088243CC",
+      "script": "Route3_EventScript_YoungsterJimmy",
       "flag": "0"
     }
   ],
@@ -165,7 +165,7 @@
       "y": 13,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08167F81"
+      "script": "Route3_EventScript_Sign"
     },
     {
       "type": "hidden_item",

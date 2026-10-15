@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171841",
+      "script": "RuinsOfAlph_Interior1_EventScript_RedBike",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08806E00",
+      "script": "VermilionCity_Area1_EventScript_Sailor",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08806D60",
+      "script": "VermilionCity_Area1_EventScript_Boy",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0880CE20",
+      "script": "OlivineCity_Area1_EventScript_Sailor2",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08872A70",
+      "script": "VermilionCity_Area1_EventScript_ItemIron",
       "flag": "0x275"
     }
   ],
@@ -110,7 +110,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08806EE0"
+      "script": "VermilionCity_Area1_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -119,7 +119,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0880CDD0"
+      "script": "OlivineCity_Area1_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -128,7 +128,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0880CDF0"
+      "script": "OlivineCity_Area1_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -137,7 +137,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0888FAC0"
+      "script": "CeruleanCity_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -146,7 +146,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0888FAC0"
+      "script": "CeruleanCity_EventScript_Trigger1"
     }
   ],
   "bg_events": []

@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x0877CE80",
+      "script": "CianwoodCity_Interior7_EventScript_BlackBeltYoshi",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x0877CEA0",
+      "script": "CianwoodCity_Interior7_EventScript_BlackBeltLao",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0877CEC0",
+      "script": "CianwoodCity_Interior7_EventScript_BlackBeltNob",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x0877CEE0",
+      "script": "CianwoodCity_Interior7_EventScript_BlackBeltLung",
       "flag": "0"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0877D200",
+      "script": "CianwoodCity_Interior7_EventScript_CrushGirl",
       "flag": "0x10CD"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0877D2A0",
+      "script": "CianwoodCity_Interior7_EventScript_BaldingMan",
       "flag": "0"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0877D270",
+      "script": "CianwoodCity_Interior7_EventScript_PushableBoulder4",
       "flag": "0"
     }
   ],
@@ -173,7 +173,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877D6F0"
+      "script": "CianwoodCity_Interior7_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -182,7 +182,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877F860"
+      "script": "CianwoodCity_Interior7_EventScript_Trigger2"
     }
   ],
   "bg_events": [
@@ -192,7 +192,7 @@
       "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0877D0F0"
+      "script": "CianwoodCity_Interior7_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -200,7 +200,7 @@
       "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0877D0F0"
+      "script": "CianwoodCity_Interior7_EventScript_Sign1"
     }
   ]
 }

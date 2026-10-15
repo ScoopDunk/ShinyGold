@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08783A90",
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_TeamRocketGrunt20",
       "flag": "0x1103"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08783BB6",
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_ItemRevive",
       "flag": "0x20E"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08783B86",
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_ItemHyperPotion",
       "flag": "0x20B"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08783B96",
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_ItemNugget",
       "flag": "0x20D"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08783BA6",
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_ItemXAccuracy",
       "flag": "0x20C"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x08783BC6",
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_ScientistJed",
       "flag": "0x1103"
     },
     {
@@ -306,7 +306,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783670"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -315,7 +315,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783670"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -324,7 +324,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783670"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -333,7 +333,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783670"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -342,7 +342,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783810"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger5"
     },
     {
       "type": "trigger",
@@ -351,7 +351,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783810"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger5"
     },
     {
       "type": "trigger",
@@ -360,7 +360,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783810"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger5"
     },
     {
       "type": "trigger",
@@ -369,7 +369,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783810"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger5"
     },
     {
       "type": "trigger",
@@ -378,7 +378,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x087838B0"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger9"
     },
     {
       "type": "trigger",
@@ -387,7 +387,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x087838B0"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger9"
     },
     {
       "type": "trigger",
@@ -396,7 +396,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x087838B0"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger9"
     },
     {
       "type": "trigger",
@@ -405,7 +405,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x087838B0"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger9"
     },
     {
       "type": "trigger",
@@ -414,7 +414,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x087839F0"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger13"
     },
     {
       "type": "trigger",
@@ -423,7 +423,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x087839F0"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger13"
     },
     {
       "type": "trigger",
@@ -432,7 +432,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x087839F0"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger13"
     },
     {
       "type": "trigger",
@@ -441,7 +441,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783950"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger16"
     },
     {
       "type": "trigger",
@@ -450,7 +450,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783950"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger16"
     },
     {
       "type": "trigger",
@@ -459,7 +459,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783950"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger16"
     },
     {
       "type": "trigger",
@@ -468,7 +468,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783D70"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger19"
     },
     {
       "type": "trigger",
@@ -477,7 +477,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783D80"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger20"
     },
     {
       "type": "trigger",
@@ -486,7 +486,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783D90"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger21"
     },
     {
       "type": "trigger",
@@ -495,7 +495,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A0190"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger22"
     },
     {
       "type": "trigger",
@@ -504,7 +504,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783D90"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger21"
     },
     {
       "type": "trigger",
@@ -513,7 +513,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783D90"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger21"
     },
     {
       "type": "trigger",
@@ -522,7 +522,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783D80"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger20"
     },
     {
       "type": "trigger",
@@ -531,7 +531,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783D90"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger21"
     },
     {
       "type": "trigger",
@@ -540,7 +540,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783D70"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger19"
     },
     {
       "type": "trigger",
@@ -549,7 +549,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783D70"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger19"
     },
     {
       "type": "trigger",
@@ -558,7 +558,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A0190"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger22"
     },
     {
       "type": "trigger",
@@ -567,7 +567,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783D80"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger20"
     },
     {
       "type": "trigger",
@@ -576,7 +576,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783D80"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger20"
     },
     {
       "type": "trigger",
@@ -585,7 +585,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783D90"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger21"
     },
     {
       "type": "trigger",
@@ -594,7 +594,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783D90"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger21"
     },
     {
       "type": "trigger",
@@ -603,7 +603,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783D70"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger19"
     },
     {
       "type": "trigger",
@@ -612,7 +612,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783D80"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger20"
     },
     {
       "type": "trigger",
@@ -621,7 +621,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783D90"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger21"
     },
     {
       "type": "trigger",
@@ -630,7 +630,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783D80"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger20"
     },
     {
       "type": "trigger",
@@ -639,7 +639,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08783D70"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger19"
     },
     {
       "type": "trigger",
@@ -648,7 +648,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A0190"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger22"
     },
     {
       "type": "trigger",
@@ -657,7 +657,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x088A0190"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger22"
     }
   ],
   "bg_events": [
@@ -667,7 +667,7 @@
       "y": 20,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08783CF0"
+      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Sign"
     }
   ]
 }

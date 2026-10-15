@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE91C",
+      "script": "PowerPlant_EventScript_ItemMaxPotion",
       "flag": "0x11BE"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0880F380",
+      "script": "PowerPlant_Interior1_EventScript_Policeman",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0880F3B0",
+      "script": "PowerPlant_Interior1_EventScript_Scientist",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0880F3E0",
+      "script": "PowerPlant_Interior1_EventScript_Scientist2",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0880F410",
+      "script": "PowerPlant_Interior1_EventScript_Scientist3",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0880F440",
+      "script": "PowerPlant_Interior1_EventScript_Policeman2",
       "flag": "0"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0880F7F1",
+      "script": "PowerPlant_Interior1_EventScript_BaldingMan",
       "flag": "0"
     }
   ],
@@ -131,7 +131,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0880EFA0"
+      "script": "PowerPlant_Interior1_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -140,7 +140,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0880EFC0"
+      "script": "PowerPlant_Interior1_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -149,7 +149,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0880EFE0"
+      "script": "PowerPlant_Interior1_EventScript_Trigger3"
     }
   ],
   "bg_events": []

@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08746612",
+      "script": "Unused_PokemonTower_6F_EventScript_MgDeliveryman",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08163542",
+      "script": "Unused_PokemonTower_6F_EventScript_MediumJennifer",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x087465F2",
+      "script": "Unused_PokemonTower_6F_EventScript_OldMan1",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE796",
+      "script": "PokemonTower_6F_EventScript_ItemRareCandy",
       "flag": "0x17C"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE7A3",
+      "script": "PokemonTower_6F_EventScript_ItemXAccuracy",
       "flag": "0x17D"
     }
   ],
@@ -110,7 +110,7 @@
       "elevation": 3,
       "var": "0x4059",
       "var_value": "0",
-      "script": "0x081634B8"
+      "script": "Unused_PokemonTower_6F_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -119,7 +119,7 @@
       "elevation": 3,
       "var": "0x4059",
       "var_value": "0",
-      "script": "0x081634B8"
+      "script": "Unused_PokemonTower_6F_EventScript_Trigger1"
     }
   ],
   "bg_events": []

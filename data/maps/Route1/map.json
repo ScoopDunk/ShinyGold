@@ -37,7 +37,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x088256BC",
+      "script": "Route1_EventScript_CooltrainerQuinn",
       "flag": "0"
     },
     {
@@ -51,7 +51,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x08825738",
+      "script": "Route1_EventScript_SchoolboyDanny",
       "flag": "0"
     }
   ],
@@ -64,7 +64,7 @@
       "y": 28,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x08167F5B"
+      "script": "Route1_EventScript_Sign"
     }
   ]
 }

@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08801550",
+      "script": "VictoryRoad_Cave2_EventScript_ItemTm26",
       "flag": "0x253"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08801570",
+      "script": "VictoryRoad_Cave2_EventScript_ItemFullRestore",
       "flag": "0x254"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081BE11D",
+      "script": "EventScript_StrengthBoulder",
       "flag": "0"
     }
   ],
@@ -103,7 +103,7 @@
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877B5C0"
+      "script": "VictoryRoad_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -112,7 +112,7 @@
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877B5C0"
+      "script": "VictoryRoad_Cave2_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -121,7 +121,7 @@
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877B5A0"
+      "script": "VictoryRoad_Cave2_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -130,7 +130,7 @@
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877B5A0"
+      "script": "VictoryRoad_Cave2_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -139,7 +139,7 @@
       "elevation": 0,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0877B5A0"
+      "script": "VictoryRoad_Cave2_EventScript_Trigger3"
     }
   ],
   "bg_events": []

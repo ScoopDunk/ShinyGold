@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874E000",
+      "script": "GoldenrodCity_Interior12_EventScript_Clerk",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0816A9B1",
+      "script": "GoldenrodCity_Interior12_EventScript_BlackBelt",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874DFD0",
+      "script": "GoldenrodCity_Interior12_EventScript_CrushGirl",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874DFC0",
+      "script": "GoldenrodCity_Interior12_EventScript_Hiker",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874DFE0",
+      "script": "GoldenrodCity_Interior12_EventScript_Woman1",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0874E1D0",
+      "script": "GoldenrodCity_Interior12_EventScript_Woman2",
       "flag": "0"
     }
   ],
@@ -131,7 +131,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x0874E4E8"
+      "script": "GoldenrodCity_Interior12_EventScript_Trigger"
     }
   ],
   "bg_events": [
@@ -141,7 +141,7 @@
       "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0874DFF0"
+      "script": "GoldenrodCity_Interior12_EventScript_Sign"
     }
   ]
 }

@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0878C340",
+      "script": "Route43_Interior1_EventScript_RocketM",
       "flag": "0x1103"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0878C340",
+      "script": "Route43_Interior1_EventScript_RocketM",
       "flag": "0x1103"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08785FF0",
+      "script": "Route43_Interior1_EventScript_MgDeliveryman",
       "flag": "0x10DB"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0817184A",
+      "script": "SlowpokeWell_Cave2_EventScript_Gentleman",
       "flag": "0"
     }
   ],
@@ -96,7 +96,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08781CF0"
+      "script": "Route43_Interior1_EventScript_Trigger1"
     },
     {
       "type": "trigger",
@@ -105,7 +105,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08781B60"
+      "script": "Route43_Interior1_EventScript_Trigger2"
     },
     {
       "type": "trigger",
@@ -114,7 +114,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08781D40"
+      "script": "Route43_Interior1_EventScript_Trigger3"
     },
     {
       "type": "trigger",
@@ -123,7 +123,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08781E10"
+      "script": "Route43_Interior1_EventScript_Trigger4"
     },
     {
       "type": "trigger",
@@ -132,7 +132,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08781DB0"
+      "script": "Route43_Interior1_EventScript_Trigger5"
     },
     {
       "type": "trigger",
@@ -141,7 +141,7 @@
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
-      "script": "0x08781E70"
+      "script": "Route43_Interior1_EventScript_Trigger6"
     }
   ],
   "bg_events": []

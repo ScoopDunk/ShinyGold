@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0817135C",
+      "script": "NewBarkTown_Interior5_EventScript_Woman2",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08000000",
+      "script": "0x0",
       "flag": "0x074"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171365",
+      "script": "NewBarkTown_Interior4_EventScript_LittleBoy",
       "flag": "0x075"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x08171365",
+      "script": "NewBarkTown_Interior4_EventScript_LittleBoy",
       "flag": "0"
     }
   ],
@@ -89,7 +89,7 @@
       "y": 0,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081BC2E7"
+      "script": "TwoIsland_JoyfulGameCorner_EventScript_ShowPokemonJumpRecords"
     },
     {
       "type": "sign",
@@ -97,7 +97,7 @@
       "y": 0,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x081BC2FC"
+      "script": "TwoIsland_JoyfulGameCorner_EventScript_ShowDodrioBerryPickingRecords"
     }
   ]
 }

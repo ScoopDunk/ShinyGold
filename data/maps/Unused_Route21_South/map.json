@@ -37,7 +37,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081AB9B3",
+      "script": "Route21_South_EventScript_Claude",
       "flag": "0"
     },
     {
@@ -51,7 +51,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x081ABA2F",
+      "script": "Route21_South_EventScript_Nolan",
       "flag": "0"
     },
     {
@@ -65,7 +65,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x081ABAAB",
+      "script": "Route21_South_EventScript_Jack",
       "flag": "0"
     },
     {
@@ -79,7 +79,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x081ABAE9",
+      "script": "Route21_South_EventScript_Jerome",
       "flag": "0"
     },
     {
@@ -93,7 +93,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x081ABB27",
+      "script": "Route21_South_EventScript_Roland",
       "flag": "0"
     }
   ],
