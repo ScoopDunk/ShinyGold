@@ -1,0 +1,389 @@
+# decomp map	region-map section	confidence	best pokegold maps by dialogue overlap (score)
+AzaleaTown	AZALEA TOWN	1.00	AzaleaTown:26.5
+AzaleaTown_Interior1	AZALEA TOWN	1.00	AzaleaPokecenter1F:2.7
+AzaleaTown_Interior2	AZALEA TOWN	0.00	
+AzaleaTown_Interior3	AZALEA TOWN	0.85	CharcoalKiln:5.5 IlexForest:1.0
+AzaleaTown_Interior4	AZALEA TOWN	1.00	AzaleaMart:2.5
+AzaleaTown_Interior5	AZALEA TOWN	0.90	KurtsHouse:9.2 AzaleaTown:1.0
+AzaleaTown_Interior6	AZALEA TOWN	0.86	AzaleaGym:21.3 AzaleaTown:2.4 NationalPark:1.0
+AzaleaTown_Interior7	AZALEA TOWN	0.68	IlexForestAzaleaGate:2.0 AzaleaPokecenter1F:0.9
+BattleColosseum_2P	PURITY FOREST	0.00	
+BattleColosseum_4P	PURITY FOREST	0.00	
+BlackthornCity	BLACKTHORN CITY	1.00	BlackthornCity:12.8
+BlackthornCity_Interior1	BLACKTHORN CITY	0.00	
+BlackthornCity_Interior3	BLACKTHORN CITY	1.00	BlackthornPokecenter1F:1.9
+BlackthornCity_Interior4	BLACKTHORN CITY	0.00	
+BlackthornCity_Interior5	BLACKTHORN CITY	0.00	
+BlackthornCity_Interior6	BLACKTHORN CITY	1.00	BlackthornMart:3.0
+BlackthornCity_Interior7	BLACKTHORN CITY	0.70	BlackthornGym1F:13.6 BlackthornCity:3.8 SlowpokeWellB1F:1.0
+BlackthornCity_Interior8	BLACKTHORN CITY	1.00	BlackthornGym2F:5.4
+BlackthornCity_Interior9	BLACKTHORN CITY	1.00	BlackthornDragonSpeechHouse:1.0
+CeladonCity	CELADON CITY	0.93	CeladonCity:13.7 CeladonMansion1F:1.0
+CeladonCity_Interior1	CELADON CITY	1.00	CeladonDeptStore1F:4.5
+CeladonCity_Interior10	CELADON CITY	0.00	
+CeladonCity_Interior11	CELADON CITY	0.67	CeladonGameCorner:9.0 SlowpokeWellB1F:2.0 BurnedTower1F:2.0
+CeladonCity_Interior12	CELADON CITY	0.41	CeladonGameCornerPrizeRoom:4.4 GoldenrodGameCorner:2.0 PewterGym:1.5
+CeladonCity_Interior13	CELADON CITY	0.87	CeladonGym:18.8 CeladonCity:2.1 Route27:0.7
+CeladonCity_Interior14	CELADON CITY	1.00	CeladonCafe:8.8
+CeladonCity_Interior16	CELADON CITY	1.00	CeladonMansion1F:9.0
+CeladonCity_Interior17	CELADON CITY	1.00	CeladonMansion2F:1.0
+CeladonCity_Interior18	CELADON CITY	1.00	CeladonMansion3F:5.7
+CeladonCity_Interior19	CELADON CITY	0.00	
+CeladonCity_Interior2	CELADON CITY	1.00	CeladonDeptStore2F:5.0
+CeladonCity_Interior3	CELADON CITY	0.57	CeladonDeptStore3F:4.0 Route12SuperRodHouse:3.0
+CeladonCity_Interior4	CELADON CITY	1.00	CeladonDeptStore4F:1.6
+CeladonCity_Interior5	CELADON CITY	1.00	CeladonDeptStore5F:4.5
+CeladonCity_Interior6	CELADON CITY	0.75	CeladonDeptStore6F:8.8 GoldenrodDeptStore6F:3.0
+CeladonCity_Interior7	CELADON CITY	0.00	
+CeladonCity_Interior8	CELADON CITY	1.00	CeladonMansionRoofHouse:2.8
+CeladonCity_Interior9	CELADON CITY	1.00	CeladonPokecenter1F:2.0
+CeruleanCity	CERULEAN CITY	0.97	CeruleanCity:14.5 ManiasHouse:0.5
+CeruleanCity_Interior1	CERULEAN CITY	1.00	CeruleanGymBadgeSpeechHouse:1.0
+CeruleanCity_Interior2	CERULEAN CITY	1.00	CeruleanTradeSpeechHouse:3.8
+CeruleanCity_Interior3	CERULEAN CITY	1.00	CeruleanPokecenter1F:2.0
+CeruleanCity_Interior4	CERULEAN CITY	0.00	
+CeruleanCity_Interior5	CERULEAN CITY	1.00	CeruleanMart:2.9
+CeruleanCity_Interior6	CERULEAN CITY	1.00	CeruleanPoliceStation:2.0
+CeruleanCity_Interior7	CERULEAN CITY	0.67	CeruleanGym:12.7 CeruleanCity:6.1
+CherrygroveCity	CHERRYGROVE CITY	1.00	CherrygroveCity:22.7
+CherrygroveCity_Interior1	CHERRYGROVE CITY	1.00	CherrygrovePokecenter1F:2.0
+CherrygroveCity_Interior2	CHERRYGROVE CITY	0.00	
+CherrygroveCity_Interior3	CHERRYGROVE CITY	1.00	CherrygroveGymSpeechHouse:2.0
+CherrygroveCity_Interior4	CHERRYGROVE CITY	1.00	GuideGentsHouse:1.8
+CherrygroveCity_Interior5	CHERRYGROVE CITY	0.81	CherrygroveMart:4.3 AzaleaPokecenter1F:1.0
+CherrygroveCity_Interior6	CHERRYGROVE CITY	1.00	CherrygroveEvolutionSpeechHouse:1.8
+CianwoodCity	CIANWOOD CITY	0.91	CianwoodCity:10.0 Route25:1.0
+CianwoodCity_Interior1	CIANWOOD CITY	1.00	CianwoodPokecenter1F:2.7
+CianwoodCity_Interior2	CIANWOOD CITY	0.00	
+CianwoodCity_Interior3	CIANWOOD CITY	1.00	CianwoodLugiaSpeechHouse:2.9
+CianwoodCity_Interior4	CIANWOOD CITY	0.80	ManiasHouse:4.0 Route35GoldenrodGate:1.0
+CianwoodCity_Interior5	CIANWOOD CITY	0.00	
+CianwoodCity_Interior6	CIANWOOD CITY	0.60	AzaleaPokecenter1F:2.7 CianwoodPharmacy:1.8
+CianwoodCity_Interior7	CIANWOOD CITY	0.81	CianwoodGym:16.1 CianwoodCity:3.8
+CinnabarIsland	CINNABAR ISLAND	0.51	CinnabarIsland:2.8 NewBarkTown:2.0 GoldenrodUnderground:0.7
+CinnabarIsland_Interior2	CINNABAR ISLAND	0.80	CinnabarPokecenter1F:2.0 BlackthornGym1F:0.5
+CinnabarIsland_Interior3	CINNABAR ISLAND	0.00	
+DarkCave_Cave1	DARK CAVE	0.60	MountMoon:0.8 IndigoPlateauPokecenter1F:0.5
+DarkCave_Cave2	DARK CAVE	1.00	DarkCaveBlackthornEntrance:1.9
+DiglettsCave_Cave1	DIGLETT’S CAVE	0.00	
+DiglettsCave_Cave2	DIGLETT’S CAVE	0.00	
+DiglettsCave_Cave3	DIGLETT’S CAVE	1.00	DiglettsCave:1.0
+DragonsDen_Cave3	DRAGON’S DEN	0.00	
+DragonsDen_Cave4	DRAGON’S DEN	0.59	DragonsDenB1F:5.6 CeladonGym:3.0 BlackthornGym1F:0.9
+EcruteakCity	ECRUTEAK CITY	0.73	EcruteakCity:10.6 BlackthornCity:2.7 Route3:1.2
+EcruteakCity_Cave1	ECRUTEAK CITY	1.00	KurtsHouse:0.5
+EcruteakCity_Interior1	ECRUTEAK CITY	1.00	BurnedTower1F:16.9
+EcruteakCity_Interior10	ECRUTEAK CITY	1.00	EcruteakPokecenter1F:2.9
+EcruteakCity_Interior11	ECRUTEAK CITY	0.00	
+EcruteakCity_Interior12	ECRUTEAK CITY	1.00	EcruteakItemfinderHouse:8.7
+EcruteakCity_Interior13	ECRUTEAK CITY	1.00	EcruteakLugiaSpeechHouse:2.0
+EcruteakCity_Interior2	ECRUTEAK CITY	0.64	AzaleaPokecenter1F:1.7 Route38EcruteakGate:1.0
+EcruteakCity_Interior3	ECRUTEAK CITY	1.00	Route42EcruteakGate:1.0
+EcruteakCity_Interior4	ECRUTEAK CITY	1.00	DanceTheater:21.4
+EcruteakCity_Interior5	ECRUTEAK CITY	0.78	EcruteakGym:17.2 EcruteakCity:3.8 NationalPark:1.0
+EcruteakCity_Interior6	ECRUTEAK CITY	1.00	EcruteakTinTowerEntrance:5.0
+EcruteakCity_Interior7	ECRUTEAK CITY	1.00	AzaleaPokecenter1F:2.7
+EcruteakCity_Interior8	ECRUTEAK CITY	1.00	TinTower1F:1.0
+EcruteakCity_Interior9	ECRUTEAK CITY	1.00	EcruteakMart:3.0
+FuchsiaCity	FUCHSIA CITY	0.86	FuchsiaCity:6.0 CeladonGameCorner:1.0
+FuchsiaCity_Interior10	FUCHSIA CITY	0.00	
+FuchsiaCity_Interior11	FUCHSIA CITY	0.00	
+FuchsiaCity_Interior5	FUCHSIA CITY	1.00	FuchsiaMart:1.8
+FuchsiaCity_Interior6	FUCHSIA CITY	0.00	
+FuchsiaCity_Interior7	FUCHSIA CITY	0.90	FuchsiaGym:20.9 FuchsiaCity:2.4
+FuchsiaCity_Interior8	FUCHSIA CITY	1.00	BillsOlderSistersHouse:2.0
+FuchsiaCity_Interior9	FUCHSIA CITY	1.00	FuchsiaPokecenter1F:4.0
+GoldenrodCity	GOLDENROD CITY	0.90	GoldenrodCity:24.4 Route29:2.6
+GoldenrodCity_Interior1	GOLDENROD CITY	0.53	GoldenrodGameCorner:6.0 PewterGym:2.5 CeladonGameCornerPrizeRoom:1.6
+GoldenrodCity_Interior10	GOLDENROD CITY	0.81	GoldenrodDeptStore3F:3.9 AzaleaPokecenter1F:0.9
+GoldenrodCity_Interior11	GOLDENROD CITY	1.00	GoldenrodDeptStore4F:4.8
+GoldenrodCity_Interior12	GOLDENROD CITY	1.00	GoldenrodDeptStore5F:7.9
+GoldenrodCity_Interior13	GOLDENROD CITY	0.51	CeladonDeptStore6F:8.0 GoldenrodDeptStore6F:6.9 AzaleaPokecenter1F:0.8
+GoldenrodCity_Interior14	GOLDENROD CITY	0.17	GoldenrodDeptStore6F:2.0 GoldenrodDeptStore5F:2.0 GoldenrodDeptStore4F:2.0
+GoldenrodCity_Interior15	GOLDENROD CITY	1.00	GoldenrodDeptStoreB1F:4.8
+GoldenrodCity_Interior16	GOLDENROD CITY	0.81	GoldenrodGym:20.5 GoldenrodCity:3.8 ManiasHouse:1.0
+GoldenrodCity_Interior17	GOLDENROD CITY	0.94	GoldenrodUndergroundSwitchRoomEntrances:37.6 Route19:1.2 Route43:1.0
+GoldenrodCity_Interior18	GOLDENROD CITY	0.85	GoldenrodUndergroundWarehouse:11.6 SlowpokeWellB1F:2.0
+GoldenrodCity_Interior19	GOLDENROD CITY	1.00	GoldenrodPokecenter1F:2.9
+GoldenrodCity_Interior2	GOLDENROD CITY	1.00	GoldenrodUnderground:18.8
+GoldenrodCity_Interior20	GOLDENROD CITY	0.00	
+GoldenrodCity_Interior21	GOLDENROD CITY	1.00	GoldenrodHappinessRater:8.7
+GoldenrodCity_Interior22	GOLDENROD CITY	1.00	GoldenrodBikeShop:3.9
+GoldenrodCity_Interior23	GOLDENROD CITY	1.00	BillsFamilysHouse:9.4
+GoldenrodCity_Interior24	GOLDENROD CITY	1.00	GoldenrodPPSpeechHouse:1.9
+GoldenrodCity_Interior3	GOLDENROD CITY	0.00	
+GoldenrodCity_Interior4	GOLDENROD CITY	0.64	AzaleaPokecenter1F:1.7 GoldenrodUndergroundSwitchRoomEntrances:1.0
+GoldenrodCity_Interior5	GOLDENROD CITY	0.50	GoldenrodUndergroundSwitchRoomEntrances:1.8 AzaleaPokecenter1F:1.7
+GoldenrodCity_Interior6	GOLDENROD CITY	0.80	GoldenrodFlowerShop:3.9 AzaleaPokecenter1F:0.9
+GoldenrodCity_Interior7	GOLDENROD CITY	0.50	SaffronMagnetTrainStation:3.8 GoldenrodMagnetTrainStation:3.0 AzaleaPokecenter1F:0.8
+GoldenrodCity_Interior8	GOLDENROD CITY	1.00	GoldenrodDeptStore1F:4.4
+GoldenrodCity_Interior9	GOLDENROD CITY	1.00	GoldenrodDeptStore2F:3.8
+IcePath_Cave1	ICE PATH	0.00	
+IcePath_Cave2	ICE PATH	0.00	
+IcePath_Cave3	ICE PATH	0.00	
+IcePath_Cave4	ICE PATH	0.00	
+IcePath_Cave5	ICE PATH	0.00	
+IcePath_Cave6	ICE PATH	0.00	
+IlexForest_Interior1	ILEX FOREST	0.86	IlexForest:16.1 Route32:2.6
+IlexForest_Interior2	ILEX FOREST	1.00	Route34IlexForestGate:3.0
+IndigoPlateau	INDIGO PLATEAU	0.00	
+IndigoPlateau_Interior1	INDIGO PLATEAU	1.00	WillsRoom:3.0
+IndigoPlateau_Interior2	INDIGO PLATEAU	1.00	KogasRoom:3.0
+IndigoPlateau_Interior3	INDIGO PLATEAU	1.00	BrunosRoom:2.9
+IndigoPlateau_Interior4	INDIGO PLATEAU	1.00	KarensRoom:2.9
+IndigoPlateau_Interior5	INDIGO PLATEAU	1.00	IndigoPlateauPokecenter1F:7.8
+IndigoPlateau_Interior6	INDIGO PLATEAU	0.00	
+IndigoPlateau_Interior7	INDIGO PLATEAU	1.00	LancesRoom:6.8
+LakeOfRage	LAKE OF RAGE	0.86	LakeOfRage:23.8 LakeOfRageMagikarpHouse:2.0 GoldenrodUndergroundSwitchRoomEntrances:2.0
+LakeOfRage_Interior1	LAKE OF RAGE	1.00	LakeOfRageMagikarpHouse:7.2
+LakeOfRage_Interior2	LAKE OF RAGE	1.00	LakeOfRageHiddenPowerHouse:2.8
+LavRadioTower_Interior1	LAV RADIO TOWER	1.00	LavRadioTower1F:9.7
+LavenderTown	LAVENDER TOWN	0.94	LavenderTown:7.8 CeruleanTradeSpeechHouse:0.5
+LavenderTown_Cave1	LAVENDER TOWN	0.00	
+LavenderTown_Interior3	LAVENDER TOWN	1.00	MrFujisHouse:3.0
+LavenderTown_Interior4	LAVENDER TOWN	1.00	LavenderSpeechHouse:1.0
+LavenderTown_Interior5	LAVENDER TOWN	1.00	LavenderMart:1.8
+LavenderTown_Interior6	LAVENDER TOWN	1.00	SoulHouse:3.9
+LavenderTown_Interior7	LAVENDER TOWN	1.00	AzaleaPokecenter1F:2.7
+LavenderTown_Interior8	LAVENDER TOWN	0.00	
+Lighthouse_Interior2	LIGHTHOUSE	0.26	OlivineLighthouse6F:10.1 OlivineLighthouse3F:8.8 OlivineLighthouse4F:6.0
+MahoganyTown	MAHOGANY TOWN	1.00	MahoganyTown:11.5
+MahoganyTown_Interior1	MAHOGANY TOWN	0.95	MahoganyMart1F:19.2 AzaleaPokecenter1F:0.9
+MahoganyTown_Interior2	MAHOGANY TOWN	0.64	AzaleaPokecenter1F:1.7 Route43MahoganyGate:1.0
+MahoganyTown_Interior3	MAHOGANY TOWN	1.00	MahoganyPokecenter1F:2.9
+MahoganyTown_Interior4	MAHOGANY TOWN	0.00	
+MahoganyTown_Interior5	MAHOGANY TOWN	0.90	MahoganyGym:21.4 MahoganyTown:2.4
+MahoganyTown_Interior6	MAHOGANY TOWN	1.00	MahoganyRedGyaradosSpeechHouse:2.0
+MtMoon_Cave1	MT. MOON	0.86	MountMoon:5.9 MountMoonSquare:1.0
+MtMoon_Interior1	MT. MOON	0.85	GoldenrodBikeShop:9.0 MountMoonGiftShop:1.0 VermilionPort:0.6
+MtMortar_Cave1	MT. MORTAR	0.00	
+MtMortar_Cave2	MT. MORTAR	1.00	VioletGym:0.5
+MtMortar_Cave3	MT. MORTAR	0.00	
+MtMortar_Cave4	MT. MORTAR	0.92	MountMortarB1F:6.0 Route34:0.5
+MtSilver	MT. SILVER	1.00	OaksLab:1.0
+MtSilver_Cave1	MT. SILVER	0.44	Route32:1.2 Route26:1.0 ViridianGym:0.5
+MtSilver_Cave2	MT. SILVER	0.00	
+MtSilver_Cave3	MT. SILVER	0.00	
+MtSilver_Interior1	MT. SILVER	0.50	SaffronMagnetTrainStation:1.0 SilverCavePokecenter1F:1.0
+NationalPark	NATIONAL PARK	0.65	NationalPark:22.6 NationalParkBugContest:4.0 KogasRoom:3.0
+NationalPark_Interior1	NATIONAL PARK	0.49	Route35NationalParkGate:2.5 Route36NationalParkGate:2.1 GoldenrodUndergroundWarehouse:0.5
+NationalPark_Interior2	NATIONAL PARK	1.00	Route36NationalParkGate:1.0
+NewBarkTown	NEW BARK TOWN	0.94	NewBarkTown:14.8 CeladonGameCorner:1.0
+NewBarkTown_Interior1	NEW BARK TOWN	1.00	PlayersHouse1F:4.4
+NewBarkTown_Interior2	NEW BARK TOWN	0.00	
+NewBarkTown_Interior3	NEW BARK TOWN	0.90	ElmsLab:55.3 PewterGym:4.5 RuinsOfAlphResearchCenter:1.0
+NewBarkTown_Interior4	NEW BARK TOWN	0.52	ElmsHouse:1.0 PlayersNeighborsHouse:0.9
+NewBarkTown_Interior5	NEW BARK TOWN	1.00	ElmsHouse:3.0
+OlivineCity	OLIVINE CITY	1.00	OlivineCity:8.9
+OlivineCity_Area1	OLIVINE CITY	0.57	OlivinePort:4.8 VermilionPort:2.6 SaffronMagnetTrainStation:1.0
+OlivineCity_Interior1	OLIVINE CITY	0.00	
+OlivineCity_Interior2	OLIVINE CITY	0.78	OlivineCafe:2.9 AzaleaPokecenter1F:0.8
+OlivineCity_Interior3	OLIVINE CITY	0.67	OlivineGym:7.8 OlivineCity:3.8
+OlivineCity_Interior4	OLIVINE CITY	1.00	OlivineGoodRodHouse:6.0
+OlivineCity_Interior5	OLIVINE CITY	1.00	OlivinePokecenter1F:1.9
+OlivineCity_Interior6	OLIVINE CITY	0.00	
+OlivineCity_Interior7	OLIVINE CITY	1.00	OlivinePunishmentSpeechHouse:2.0
+OlivineCity_Interior8	OLIVINE CITY	1.00	RadioTower5F:1.0
+OlivineCity_Interior9	OLIVINE CITY	1.00	OlivineMart:3.0
+PalletTown	PALLET TOWN	0.94	NewBarkTown:14.6 CeladonGameCorner:1.0
+PalletTown_Area1	PALLET TOWN	0.85	PalletTown:5.8 Route32:1.0
+PalletTown_Interior1	PALLET TOWN	1.00	BluesHouse:4.8
+PalletTown_Interior2	PALLET TOWN	0.88	OaksLab:7.2 ElmsLab:1.0
+PalletTown_Interior3	PALLET TOWN	0.53	RedsHouse1F:2.0 RedsHouse2F:1.8
+PewterCity	PEWTER CITY	1.00	PewterCity:8.9
+PewterCity_Interior3	PEWTER CITY	1.00	PewterGym:8.3
+PewterCity_Interior4	PEWTER CITY	1.00	PewterMart:2.0
+PewterCity_Interior5	PEWTER CITY	1.00	PewterNidoranSpeechHouse:1.0
+PewterCity_Interior6	PEWTER CITY	1.00	PewterPokecenter1F:3.0
+PewterCity_Interior7	PEWTER CITY	0.00	
+PewterCity_Interior8	PEWTER CITY	1.00	PewterSnoozeSpeechHouse:1.0
+PowerPlant_Interior1	POWER PLANT	1.00	PowerPlant:13.9
+RadioTower_Interior1	RADIO TOWER	0.92	RadioTower1F:12.0 LavRadioTower1F:1.0
+RadioTower_Interior2	RADIO TOWER	0.95	RadioTower2F:19.0 LavRadioTower1F:1.0
+RadioTower_Interior3	RADIO TOWER	0.96	RadioTower3F:26.1 Route25:1.0
+RadioTower_Interior4	RADIO TOWER	1.00	RadioTower4F:20.9
+RadioTower_Interior5	RADIO TOWER	1.00	RadioTower5F:19.7
+RockTunnel_Cave2	ROCK TUNNEL	0.00	
+RockTunnel_Cave3	ROCK TUNNEL	0.00	
+Route1	ROUTE 1	1.00	Route1:7.0
+Route10	ROUTE 10	0.86	Route10South:6.0 Route10North:1.0
+Route10_Interior1	ROUTE 10	1.00	Route10Pokecenter1F:3.7
+Route10_Interior2	ROUTE 10	0.00	
+Route11	ROUTE 11	1.00	Route11:10.5
+Route12	ROUTE 12	1.00	Route12:12.4
+Route12_Interior1	ROUTE 12	1.00	Route12SuperRodHouse:5.0
+Route13	ROUTE 13	0.94	Route13:16.7 BlackthornGym1F:1.0
+Route14	ROUTE 14	0.90	Route14:8.8 PewterGym:1.0
+Route15	ROUTE 15	0.84	Route15:18.6 WillsRoom:2.0 SlowpokeWellB1F:1.5
+Route15_Interior1	ROUTE 15	1.00	Route15FuchsiaGate:1.0
+Route16	ROUTE 16	1.00	Route16:1.0
+Route16_Interior1	ROUTE 16	1.00	Route16FuchsiaSpeechHouse:1.0
+Route16_Interior2	ROUTE 16	1.00	Route16Gate:3.9
+Route17	ROUTE 17	1.00	Route17:12.0
+Route18	ROUTE 18	1.00	Route18:7.0
+Route18_Interior1	ROUTE 18	1.00	Route16Gate:3.9
+Route19	ROUTE 19	0.92	Route19:16.5 Route32:1.5
+Route19_Interior1	ROUTE 19	1.00	Route19FuchsiaGate:1.8
+Route2	ROUTE 2	0.71	Route2:10.0 Route20:3.0 VermilionPokecenter1F:1.0
+Route20	ROUTE 20	0.73	Route20:9.8 FastShipCabins_SE_SSE_CaptainsCabin:1.0 Route32:1.0
+Route20_Interior1	ROUTE 20	1.00	SeafoamGym:5.6
+Route21	ROUTE 21	1.00	Route21:7.7
+Route22	ROUTE 22	0.00	
+Route23	ROUTE 23	0.00	
+Route24	ROUTE 24	1.00	Route24:4.4
+Route25	ROUTE 25	0.90	Route25:27.7 Route31:1.0 FastShipB1F:1.0
+Route25_Interior1	ROUTE 25	1.00	BillsHouse:31.2
+Route26	ROUTE 26	1.00	Route26:18.7
+Route26_Area1	ROUTE 26	0.00	
+Route26_Interior1	ROUTE 26	1.00	Route26HealHouse:2.0
+Route26_Interior2	ROUTE 26	1.00	VictoryRoadGate:3.1
+Route27	ROUTE 27	0.96	Route27:23.3 Route26:0.5 Route25:0.5
+Route27_Interior1	ROUTE 27	1.00	Route27SandstormHouse:4.0
+Route28	ROUTE 28	0.00	
+Route28_Interior1	ROUTE 28	1.00	Route28SteelWingHouse:3.0
+Route29	ROUTE 29	0.90	Route29:18.0 Route17:2.0
+Route29_Interior1	ROUTE 29	1.00	Route29Route46Gate:2.0
+Route2_Interior2	ROUTE 2	1.00	Route2NuggetHouse:2.0
+Route2_Interior4	ROUTE 2	1.00	Route2Gate:1.0
+Route3	ROUTE 3	0.70	Route3:11.8 CeladonGym:1.0 RadioTower5F:1.0
+Route30	ROUTE 30	0.93	Route30:14.3 CherrygroveCity:1.0
+Route30_Interior1	ROUTE 30	1.00	Route30BerryHouse:2.0
+Route30_Interior2	ROUTE 30	0.98	MrPokemonsHouse:29.1 NationalParkBugContest:0.7
+Route31	ROUTE 31	1.00	Route31:8.5
+Route32	ROUTE 32	0.97	Route32:38.0 UnionCave1F:1.0
+Route32_Interior1	ROUTE 32	0.86	Route32Pokecenter1F:6.0 SaffronMagnetTrainStation:1.0
+Route32_Interior2	ROUTE 32	0.00	
+Route33	ROUTE 33	0.49	Route31:3.8 Route33:2.9 GoldenrodUnderground:1.0
+Route34	ROUTE 34	1.00	Route34:31.0
+Route34_Interior1	ROUTE 34	0.00	
+Route35	ROUTE 35	0.96	Route35:27.1 FastShipCabins_NNW_NNE_NE:1.0
+Route35_Interior1	ROUTE 35	0.92	Route35GoldenrodGate:9.8 AzaleaPokecenter1F:0.8
+Route36	ROUTE 36	0.95	Route36:18.4 GoldenrodFlowerShop:1.0
+Route36_Interior1	ROUTE 36	0.71	Route36RuinsOfAlphGate:1.8 Route43Gate:0.8
+Route37	ROUTE 37	1.00	Route37:9.5
+Route38	ROUTE 38	0.86	Route38:16.0 Route36:2.6
+Route39	ROUTE 39	1.00	Route39:18.1
+Route39_Interior1	ROUTE 39	1.00	Route39Farmhouse:8.5
+Route39_Interior2	ROUTE 39	1.00	Route39Barn:9.7
+Route4	ROUTE 4	0.27	Route4:1.0 Route37:1.0 Route3:1.0
+Route40	ROUTE 40	1.00	Route40:13.8
+Route41	ROUTE 41	1.00	Route41:29.2
+Route42	ROUTE 42	1.00	Route42:12.8
+Route43	ROUTE 43	0.93	Route43:19.9 Route31:1.5
+Route43_Interior1	ROUTE 43	0.95	Route43Gate:20.7 AzaleaPokecenter1F:1.0
+Route44	ROUTE 44	0.96	Route44:21.6 FastShipCabins_NNW_NNE_NE:1.0
+Route45	ROUTE 45	1.00	Route45:21.5
+Route46	ROUTE 46	0.67	Route29:20.0 Route46:9.8
+Route5	ROUTE 5	0.50	Route6:1.0 Route5:1.0
+Route5_Interior1	ROUTE 5	1.00	Route5UndergroundPathEntrance:1.0
+Route5_Interior2	ROUTE 5	1.00	Route5CleanseTagHouse:3.0
+Route5_Interior3	ROUTE 5	1.00	Route5SaffronGate:1.0
+Route6	ROUTE 6	0.62	Route6:1.0 Route5:0.6
+Route6_Interior1	ROUTE 6	0.00	
+Route6_Interior2	ROUTE 6	1.00	Route6SaffronGate:1.9
+Route7	ROUTE 7	0.52	CeruleanCity:1.0 Route7:0.9
+Route7_Interior1	ROUTE 7	1.00	Route7SaffronGate:1.0
+Route8	ROUTE 8	0.94	Route8:15.0 CeruleanCity:1.0
+Route8_Interior1	ROUTE 8	1.00	Route8SaffronGate:1.0
+Route9	ROUTE 9	0.94	Route9:17.0 BlackthornGym1F:0.5 NationalParkBugContest:0.5
+RuinsOfAlph	RUINS OF ALPH	1.00	RuinsOfAlphOutside:5.0
+RuinsOfAlph_Cave1	RUINS OF ALPH	0.67	RuinsOfAlphKabutoChamber:2.0 RuinsOfAlphResearchCenter:1.0
+RuinsOfAlph_Cave2	RUINS OF ALPH	1.00	RuinsOfAlphInnerChamber:3.0
+RuinsOfAlph_Cave3	RUINS OF ALPH	0.00	
+RuinsOfAlph_Interior1	RUINS OF ALPH	1.00	Route32RuinsOfAlphGate:3.0
+RuinsOfAlph_Interior2	RUINS OF ALPH	0.00	
+RuinsOfAlph_Interior3	RUINS OF ALPH	0.00	
+RuinsOfAlph_Interior4	RUINS OF ALPH	0.66	RuinsOfAlphResearchCenter:1.8 AzaleaPokecenter1F:0.9
+SSAqua_Interior1	S.S. AQUA	0.76	FastShipCabins_SW_SSW_NW:2.9 FastShipCabins_SE_SSE_CaptainsCabin:0.9
+SSAqua_Interior10	S.S. AQUA	0.57	Route42:0.7 Route43:0.5
+SSAqua_Interior11	S.S. AQUA	1.00	FastShipCabins_NNW_NNE_NE:8.9
+SSAqua_Interior12	S.S. AQUA	0.88	FastShipCabins_NNW_NNE_NE:7.6 FuchsiaGym:1.0
+SSAqua_Interior13	S.S. AQUA	0.00	
+SSAqua_Interior14	S.S. AQUA	0.00	
+SSAqua_Interior15	S.S. AQUA	0.00	
+SSAqua_Interior16	S.S. AQUA	0.85	FastShipCabins_SE_SSE_CaptainsCabin:3.7 GoldenrodUnderground:0.7
+SSAqua_Interior17	S.S. AQUA	1.00	FastShipCabins_SW_SSW_NW:6.0
+SSAqua_Interior18	S.S. AQUA	0.84	FastShipCabins_SE_SSE_CaptainsCabin:13.5 UnionCave1F:1.0 CeladonGym:1.0
+SSAqua_Interior19	S.S. AQUA	1.00	FastShipCabins_SW_SSW_NW:5.8
+SSAqua_Interior2	S.S. AQUA	0.52	FastShip1F:9.4 SlowpokeWellB1F:2.3 Route35GoldenrodGate:2.0
+SSAqua_Interior20	S.S. AQUA	0.00	
+SSAqua_Interior21	S.S. AQUA	1.00	SproutTower3F:0.5
+SSAqua_Interior22	S.S. AQUA	1.00	FuchsiaGym:0.5
+SSAqua_Interior3	S.S. AQUA	0.98	FastShipB1F:31.1 SlowpokeWellB1F:0.8
+SSAqua_Interior4	S.S. AQUA	0.76	FastShipCabins_SW_SSW_NW:2.9 FastShipCabins_SE_SSE_CaptainsCabin:0.9
+SSAqua_Interior5	S.S. AQUA	0.00	
+SSAqua_Interior6	S.S. AQUA	0.00	
+SSAqua_Interior7	S.S. AQUA	0.00	
+SSAqua_Interior8	S.S. AQUA	1.00	FastShipCabins_SE_SSE_CaptainsCabin:3.8
+SSAqua_Interior9	S.S. AQUA	1.00	FastShipCabins_NNW_NNE_NE:3.0
+SaffronCity	SAFFRON CITY	1.00	SaffronCity:16.8
+SaffronCity_Area1	SAFFRON CITY	0.00	
+SaffronCity_Interior1	SAFFRON CITY	0.00	
+SaffronCity_Interior10	SAFFRON CITY	1.00	SaffronMagnetTrainStation:9.9
+SaffronCity_Interior2	SAFFRON CITY	1.00	CopycatsHouse1F:2.9
+SaffronCity_Interior3	SAFFRON CITY	1.00	CopycatsHouse2F:12.3
+SaffronCity_Interior4	SAFFRON CITY	0.45	FightingDojo:3.0 SaffronCity:2.0 FastShipCabins_NNW_NNE_NE:1.7
+SaffronCity_Interior5	SAFFRON CITY	0.77	SaffronGym:17.7 SaffronCity:2.4 Route36NationalParkGate:1.0
+SaffronCity_Interior6	SAFFRON CITY	1.00	SaffronMart:3.0
+SaffronCity_Interior7	SAFFRON CITY	1.00	SaffronPokecenter1F:3.8
+SaffronCity_Interior8	SAFFRON CITY	0.00	
+SaffronCity_Interior9	SAFFRON CITY	1.00	MrPsychicsHouse:2.0
+SilphCo_Interior1	SILPH CO.	0.67	LavRadioTower1F:2.0 SilphCo1F:1.0
+SlowpokeWell_Cave1	SLOWPOKE WELL	0.95	SlowpokeWellB1F:17.6 LakeOfRageMagikarpHouse:0.9
+SlowpokeWell_Cave2	SLOWPOKE WELL	0.65	SlowpokeWellB2F:1.8 AzaleaPokecenter1F:1.0
+SproutTower_Interior1	SPROUT TOWER	1.00	SproutTower1F:6.7
+SproutTower_Interior2	SPROUT TOWER	0.75	SproutTower3F:19.1 SproutTower2F:5.8 GoldenrodUnderground:0.5
+TohjoFalls_Cave1	TOHJO FALLS	0.00	
+TradeCenter	PURITY FOREST	0.00	
+UnionCave_Cave1	UNION CAVE	1.00	UnionCave1F:13.7
+UnionCave_Cave2	UNION CAVE	0.95	UnionCaveB1F:11.7 LakeOfRageMagikarpHouse:0.6
+UnionCave_Cave3	UNION CAVE	1.00	UnionCaveB2F:8.9
+UnionRoom	PURITY FOREST	0.00	
+Unused_CeruleanCity_Gym	CERULEAN CITY	0.78	CeruleanGym:21.4 CeruleanCity:6.1
+Unused_G2_M63	RUINS OF ALPH	0.00	
+Unused_G2_M88	NATIONAL PARK	0.91	NationalParkBugContest:4.9 Route36NationalParkGate:0.5
+Unused_G34_M52	ECRUTEAK CITY	0.00	
+Unused_G34_M53	ECRUTEAK CITY	0.00	
+Unused_NavelRock_B1F	MAHOGANY TOWN	0.96	TeamRocketBaseB3F:27.3 SlowpokeWellB1F:1.2
+Unused_NavelRock_BasePath_B10F	MAHOGANY TOWN	0.86	TeamRocketBaseB1F:74.0 Route27:12.1
+Unused_NavelRock_BasePath_B11F	MAHOGANY TOWN	0.98	TeamRocketBaseB2F:30.9 PewterGym:0.5
+Unused_PokemonLeague_HallOfFame	INDIGO PLATEAU	0.00	
+VermilionCity	VERMILION CITY	0.95	VermilionCity:9.5 VermilionPokecenter1F:0.5
+VermilionCity_Area1	VERMILION CITY	0.67	VermilionPort:7.3 SaffronMagnetTrainStation:2.0 OlivinePort:1.6
+VermilionCity_Interior10	VERMILION CITY	1.00	VermilionFishingSpeechHouse:1.0
+VermilionCity_Interior11	VERMILION CITY	1.00	VermilionPokecenter1F:3.0
+VermilionCity_Interior12	VERMILION CITY	0.00	
+VermilionCity_Interior13	VERMILION CITY	1.00	PokemonFanClub:13.4
+VermilionCity_Interior14	VERMILION CITY	1.00	VermilionDiglettsCaveSpeechHouse:1.0
+VermilionCity_Interior15	VERMILION CITY	1.00	VermilionMart:3.0
+VermilionCity_Interior16	VERMILION CITY	0.93	VermilionGym:28.9 VermilionCity:2.1
+VermilionCity_Interior17	VERMILION CITY	1.00	VermilionMagnetTrainSpeechHouse:1.9
+VermilionCity_Interior18	VERMILION CITY	1.00	VermilionPortPassage:0.8
+VictoryRoad_Cave1	VICTORY ROAD	1.00	VictoryRoad:2.9
+VictoryRoad_Cave2	VICTORY ROAD	0.00	
+VictoryRoad_Cave3	VICTORY ROAD	0.00	
+VictoryRoad_Cave4	VICTORY ROAD	0.00	
+VioletCity	VIOLET CITY	0.85	VioletCity:13.0 Route40:2.3
+VioletCity_Interior1	VIOLET CITY	1.00	Route31VioletGate:2.0
+VioletCity_Interior2	VIOLET CITY	0.96	EarlsPokemonAcademy:23.3 EcruteakItemfinderHouse:1.0
+VioletCity_Interior3	VIOLET CITY	0.94	VioletPokecenter1F:7.8 PewterGym:0.5
+VioletCity_Interior4	VIOLET CITY	0.00	
+VioletCity_Interior5	VIOLET CITY	1.00	VioletMart:2.8
+VioletCity_Interior6	VIOLET CITY	1.00	VioletNicknameSpeechHouse:3.0
+VioletCity_Interior7	VIOLET CITY	1.00	VioletKylesHouse:1.0
+VioletCity_Interior8	VIOLET CITY	0.78	VioletGym:13.9 VioletCity:2.4 Route46:1.5
+ViridianCity	VIRIDIAN CITY	0.88	ViridianCity:7.0 Route29Route46Gate:1.0
+ViridianCity_Interior1	VIRIDIAN CITY	1.00	ViridianNicknameSpeechHouse:3.0
+ViridianCity_Interior2	VIRIDIAN CITY	0.58	ViridianGym:5.8 Route20:1.0 RadioTower4F:1.0
+ViridianCity_Interior3	VIRIDIAN CITY	1.00	ViridianMart:3.0
+ViridianCity_Interior4	VIRIDIAN CITY	0.00	
+ViridianCity_Interior5	VIRIDIAN CITY	0.00	
+ViridianCity_Interior6	VIRIDIAN CITY	0.58	TrainerHouse1F:5.0 TrainerHouseB1F:3.6
+WhirlIslands_Cave1	WHIRL ISLANDS	0.00	
+WhirlIslands_Cave2	WHIRL ISLANDS	0.00	
+WhirlIslands_Cave3	WHIRL ISLANDS	0.00	
+WhirlIslands_Cave4	WHIRL ISLANDS	0.00	
+WhirlIslands_Cave5	WHIRL ISLANDS	0.00	
+WhirlIslands_Cave6	WHIRL ISLANDS	0.00	
+WhirlIslands_Cave7	WHIRL ISLANDS	0.00	
+WhirlIslands_Cave8	WHIRL ISLANDS	0.00	
