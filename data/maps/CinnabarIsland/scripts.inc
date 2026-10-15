@@ -50,10 +50,6 @@ CinnabarIsland_EventScript_Sign1::
 	msgbox CinnabarIsland_Text_Sign1, MSGBOX_SIGN
 	end
 
-CinnabarIsland_EventScript_Sign2::
-	msgbox CinnabarIsland_Text_Sign2, MSGBOX_SIGN
-	end
-
 CinnabarIsland_EventScript_Sign3::
 	msgbox CinnabarIsland_Text_Sign3, MSGBOX_SIGN
 	end
