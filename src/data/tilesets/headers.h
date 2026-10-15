@@ -1,6 +1,6 @@
 const struct Tileset gTileset_General =
 {
-    .isCompressed = TRUE,
+    .isCompressed = FALSE, // ShinyGold: tiles repointed to uncompressed data
     .isSecondary = FALSE,
     .tiles = gTilesetTiles_General,
     .palettes = gTilesetPalettes_General,
@@ -11,7 +11,7 @@ const struct Tileset gTileset_General =
 
 const struct Tileset gTileset_PalletTown =
 {
-    .isCompressed = TRUE,
+    .isCompressed = FALSE, // ShinyGold: tiles repointed to uncompressed data
     .isSecondary = TRUE,
     .tiles = gTilesetTiles_PalletTown,
     .palettes = gTilesetPalettes_PalletTown,
@@ -44,7 +44,7 @@ const struct Tileset gTileset_PewterCity =
 
 const struct Tileset gTileset_CeruleanCity =
 {
-    .isCompressed = TRUE,
+    .isCompressed = FALSE, // ShinyGold: tiles repointed to uncompressed data
     .isSecondary = TRUE,
     .tiles = gTilesetTiles_CeruleanCity,
     .palettes = gTilesetPalettes_CeruleanCity,
@@ -77,7 +77,7 @@ const struct Tileset gTileset_VermilionCity =
 
 const struct Tileset gTileset_CeladonCity =
 {
-    .isCompressed = TRUE,
+    .isCompressed = FALSE, // ShinyGold: tiles repointed to uncompressed data
     .isSecondary = TRUE,
     .tiles = gTilesetTiles_CeladonCity,
     .palettes = gTilesetPalettes_CeladonCity,
@@ -88,7 +88,7 @@ const struct Tileset gTileset_CeladonCity =
 
 const struct Tileset gTileset_FuchsiaCity =
 {
-    .isCompressed = TRUE,
+    .isCompressed = FALSE, // ShinyGold: tiles repointed to uncompressed data
     .isSecondary = TRUE,
     .tiles = gTilesetTiles_FuchsiaCity,
     .palettes = gTilesetPalettes_FuchsiaCity,
@@ -121,7 +121,7 @@ const struct Tileset gTileset_IndigoPlateau =
 
 const struct Tileset gTileset_SaffronCity =
 {
-    .isCompressed = TRUE,
+    .isCompressed = FALSE, // ShinyGold: tiles repointed to uncompressed data
     .isSecondary = TRUE,
     .tiles = gTilesetTiles_SaffronCity,
     .palettes = gTilesetPalettes_SaffronCity,
@@ -374,7 +374,7 @@ const struct Tileset gTileset_Dummy2 =
 
 const struct Tileset gTileset_ViridianForest =
 {
-    .isCompressed = TRUE,
+    .isCompressed = FALSE, // ShinyGold: tiles repointed to uncompressed data
     .isSecondary = TRUE,
     .tiles = gTilesetTiles_ViridianForest,
     .palettes = gTilesetPalettes_ViridianForest,
@@ -407,7 +407,7 @@ const struct Tileset gTileset_RockTunnel =
 
 const struct Tileset gTileset_DiglettsCave =
 {
-    .isCompressed = TRUE,
+    .isCompressed = FALSE, // ShinyGold: tiles repointed to uncompressed data
     .isSecondary = TRUE,
     .tiles = gTilesetTiles_DiglettsCave,
     .palettes = gTilesetPalettes_DiglettsCave,
@@ -473,7 +473,7 @@ const struct Tileset gTileset_GenericBuilding2 =
 
 const struct Tileset gTileset_PowerPlant =
 {
-    .isCompressed = TRUE,
+    .isCompressed = FALSE, // ShinyGold: tiles repointed to uncompressed data
     .isSecondary = TRUE,
     .tiles = gTilesetTiles_PowerPlant,
     .palettes = gTilesetPalettes_PowerPlant,
@@ -495,9 +495,9 @@ const struct Tileset gTileset_SeaCottage =
 
 const struct Tileset gTileset_SilphCo =
 {
-    .isCompressed = TRUE,
+    .isCompressed = FALSE, // ShinyGold: tiles repointed to uncompressed data
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_Condominiums,
+    .tiles = gTilesetTiles_SilphCo,
     .palettes = gTilesetPalettes_Condominiums,
     .metatiles = gMetatiles_SilphCo,
     .metatileAttributes = gMetatileAttributes_SilphCo,
@@ -550,7 +550,7 @@ const struct Tileset gTileset_PokemonMansion =
 
 const struct Tileset gTileset_RestaurantHotel =
 {
-    .isCompressed = TRUE,
+    .isCompressed = FALSE, // ShinyGold: tiles repointed to uncompressed data
     .isSecondary = TRUE,
     .tiles = gTilesetTiles_RestaurantHotel,
     .palettes = gTilesetPalettes_RestaurantHotel,
@@ -627,7 +627,7 @@ const struct Tileset gTileset_Dummy4 =
 
 const struct Tileset gTileset_MtEmber =
 {
-    .isCompressed = TRUE,
+    .isCompressed = FALSE, // ShinyGold: tiles repointed to uncompressed data
     .isSecondary = TRUE,
     .tiles = gTilesetTiles_MtEmber,
     .palettes = gTilesetPalettes_MtEmber,
@@ -649,7 +649,7 @@ const struct Tileset gTileset_BerryForest =
 
 const struct Tileset gTileset_NavelRock =
 {
-    .isCompressed = TRUE,
+    .isCompressed = FALSE, // ShinyGold: tiles repointed to uncompressed data
     .isSecondary = TRUE,
     .tiles = gTilesetTiles_NavelRock,
     .palettes = gTilesetPalettes_NavelRock,
@@ -671,7 +671,7 @@ const struct Tileset gTileset_TanobyRuins =
 
 const struct Tileset gTileset_SeviiIslands123 =
 {
-    .isCompressed = TRUE,
+    .isCompressed = FALSE, // ShinyGold: tiles repointed to uncompressed data
     .isSecondary = TRUE,
     .tiles = gTilesetTiles_SeviiIslands123,
     .palettes = gTilesetPalettes_SeviiIslands123,
@@ -693,7 +693,7 @@ const struct Tileset gTileset_SeviiIslands45 =
 
 const struct Tileset gTileset_SeviiIslands67 =
 {
-    .isCompressed = TRUE,
+    .isCompressed = FALSE, // ShinyGold: tiles repointed to uncompressed data
     .isSecondary = TRUE,
     .tiles = gTilesetTiles_SeviiIslands67,
     .palettes = gTilesetPalettes_SeviiIslands67,
@@ -704,7 +704,7 @@ const struct Tileset gTileset_SeviiIslands67 =
 
 const struct Tileset gTileset_TrainerTower =
 {
-    .isCompressed = TRUE,
+    .isCompressed = FALSE, // ShinyGold: tiles repointed to uncompressed data
     .isSecondary = TRUE,
     .tiles = gTilesetTiles_TrainerTower,
     .palettes = gTilesetPalettes_TrainerTower,

@@ -11,4 +11,7 @@ enum {
     NUM_HEAL_LOCATIONS
 };
 
+// ShinyGold: vanilla HEAL_LOCATION_ name aliases
+#include "constants/map_compat.h"
+
 #endif // GUARD_CONSTANTS_HEAL_LOCATIONS_H
