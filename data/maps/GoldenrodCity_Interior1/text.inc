@@ -62,12 +62,6 @@ GoldenrodCity_Interior1_Text_CableClubReceptionist_3::
 GoldenrodCity_Interior1_Text_CableClubReceptionist_4::
 	.string "So, you want DRATINI?$"
 
-GoldenrodCity_Interior1_Text_CableClubReceptionist_5::
-	.string "So, you want CHARMANDER?$"
-
-GoldenrodCity_Interior1_Text_CableClubReceptionist_6::
-	.string "So, you want LARVITAR?$"
-
 GoldenrodCity_Interior1_Text_CableClubReceptionist_7::
 	.string "I’m sorry, you don’t have enough\n"
 	.string "coins...$"
@@ -81,12 +75,6 @@ GoldenrodCity_Interior1_Text_CableClubReceptionist_9::
 GoldenrodCity_Interior1_Text_CableClubReceptionist_10::
 	.string "{PLAYER} received DRATINI.$"
 
-GoldenrodCity_Interior1_Text_CableClubReceptionist_11::
-	.string "{PLAYER} received CHARMANDER.$"
-
-GoldenrodCity_Interior1_Text_CableClubReceptionist_12::
-	.string "{PLAYER} received LARVITAR.$"
-
 GoldenrodCity_Interior1_Text_CableClubReceptionist2_1::
 	.string "Okay, a TM of THUNDER\n"
 	.string "is what you want?$"
@@ -97,14 +85,6 @@ GoldenrodCity_Interior1_Text_CableClubReceptionist2_2::
 
 GoldenrodCity_Interior1_Text_CableClubReceptionist2_3::
 	.string "Okay, a TM of FIRE BLAST\n"
-	.string "is what you want?$"
-
-GoldenrodCity_Interior1_Text_CableClubReceptionist2_4::
-	.string "Okay, a TM of IRON TAIL\n"
-	.string "is what you want?$"
-
-GoldenrodCity_Interior1_Text_CableClubReceptionist2_5::
-	.string "Okay, a TM of EARTHQUAKE\n"
 	.string "is what you want?$"
 
 GoldenrodCity_Interior1_Text_Sign1_1::

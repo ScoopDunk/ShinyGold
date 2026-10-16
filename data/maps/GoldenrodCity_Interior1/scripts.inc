@@ -104,9 +104,7 @@ GoldenrodCity_Interior1_EventScript_CableClubReceptionist::
 	call_if_eq VAR_0x8000, 0, GoldenrodCity_Interior1_EventScript_CableClubReceptionist_1
 	call_if_eq VAR_0x8000, 1, GoldenrodCity_Interior1_EventScript_CableClubReceptionist_2
 	call_if_eq VAR_0x8000, 2, GoldenrodCity_Interior1_EventScript_CableClubReceptionist_3
-	call_if_eq VAR_0x8000, 3, GoldenrodCity_Interior1_EventScript_CableClubReceptionist_4
-	call_if_eq VAR_0x8000, 4, GoldenrodCity_Interior1_EventScript_CableClubReceptionist_5
-	call_if_eq VAR_0x8000, 5, GoldenrodCity_Interior1_EventScript_CableClubReceptionist_6
+	call_if_eq VAR_0x8000, 3, GoldenrodCity_Interior1_EventScript_CableClubReceptionist_6
 	call_if_eq VAR_0x8000, 127, GoldenrodCity_Interior1_EventScript_CableClubReceptionist_6
 	end
 
@@ -124,16 +122,6 @@ GoldenrodCity_Interior1_EventScript_CableClubReceptionist_3::
 	msgbox GoldenrodCity_Interior1_Text_CableClubReceptionist_4, MSGBOX_YESNO
 	call_if_eq VAR_RESULT, 0, GoldenrodCity_Interior1_EventScript_CableClubReceptionist_6
 	goto GoldenrodCity_Interior1_EventScript_CableClubReceptionist_9
-
-GoldenrodCity_Interior1_EventScript_CableClubReceptionist_4::
-	msgbox GoldenrodCity_Interior1_Text_CableClubReceptionist_5, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 0, GoldenrodCity_Interior1_EventScript_CableClubReceptionist_6
-	goto GoldenrodCity_Interior1_EventScript_CableClubReceptionist_10
-
-GoldenrodCity_Interior1_EventScript_CableClubReceptionist_5::
-	msgbox GoldenrodCity_Interior1_Text_CableClubReceptionist_6, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 0, GoldenrodCity_Interior1_EventScript_CableClubReceptionist_6
-	goto GoldenrodCity_Interior1_EventScript_CableClubReceptionist_11
 
 GoldenrodCity_Interior1_EventScript_CableClubReceptionist_6::
 	hidecoinsbox 104, 148
@@ -168,20 +156,6 @@ GoldenrodCity_Interior1_EventScript_CableClubReceptionist_9::
 	hidecoinsbox 2, 255
 	.byte 0xFF @ invalid opcode (script stops)
 
-GoldenrodCity_Interior1_EventScript_CableClubReceptionist_10::
-	checkcoins VAR_TEMP_1
-	call_if_ge VAR_TEMP_1, 0x834, GoldenrodCity_Interior1_EventScript_CableClubReceptionist_15
-	msgbox GoldenrodCity_Interior1_Text_CableClubReceptionist_7, MSGBOX_NPC
-	hidecoinsbox 2, 255
-	.byte 0xFF @ invalid opcode (script stops)
-
-GoldenrodCity_Interior1_EventScript_CableClubReceptionist_11::
-	checkcoins VAR_TEMP_1
-	call_if_ge VAR_TEMP_1, 0x1388, GoldenrodCity_Interior1_EventScript_CableClubReceptionist_16
-	msgbox GoldenrodCity_Interior1_Text_CableClubReceptionist_7, MSGBOX_NPC
-	hidecoinsbox 2, 255
-	.byte 0xFF @ invalid opcode (script stops)
-
 GoldenrodCity_Interior1_EventScript_CableClubReceptionist_12::
 	updatemoneybox
 	updatecoinsbox 0, 5
@@ -194,7 +168,7 @@ GoldenrodCity_Interior1_EventScript_CableClubReceptionist_12::
 	msgbox GoldenrodCity_Interior1_Text_CableClubReceptionist_8, MSGBOX_NPC
 	.byte 0x79 @ givemon
 	.2byte SPECIES_ABRA
-	.byte 5
+	.byte 10
 	.2byte ITEM_NONE
 	.4byte 0xFF020002
 	.4byte 0xFFFFFFFF
@@ -213,7 +187,7 @@ GoldenrodCity_Interior1_EventScript_CableClubReceptionist_13::
 	msgbox GoldenrodCity_Interior1_Text_CableClubReceptionist_9, MSGBOX_NPC
 	.byte 0x79 @ givemon
 	.2byte SPECIES_EKANS
-	.byte 5
+	.byte 10
 	.2byte ITEM_NONE
 	.4byte 0xFFFFFF02
 	.4byte 0xFFFFFFFF
@@ -232,45 +206,7 @@ GoldenrodCity_Interior1_EventScript_CableClubReceptionist_14::
 	msgbox GoldenrodCity_Interior1_Text_CableClubReceptionist_10, MSGBOX_NPC
 	.byte 0x79 @ givemon
 	.2byte SPECIES_DRATINI
-	.byte 5
-	.2byte ITEM_NONE
-	.4byte 0xFFFFFF02
-	.4byte 0xFFFFFFFF
-	.byte 255
-	.byte 0xFF @ invalid opcode (script stops)
-
-GoldenrodCity_Interior1_EventScript_CableClubReceptionist_15::
-	updatemoneybox
-	updatecoinsbox 0, 5
-	playse SE_SHOP
-	loadword 0, 0x6B01
-	hidecoinsbox 0, 0
-	removecoins 0x834
-	nop
-	nop
-	msgbox GoldenrodCity_Interior1_Text_CableClubReceptionist_11, MSGBOX_NPC
-	.byte 0x79 @ givemon
-	.2byte SPECIES_CHARMANDER
-	.byte 1
-	.2byte ITEM_NONE
-	.4byte 0xFFFFFF02
-	.4byte 0xFFFFFFFF
-	.byte 255
-	.byte 0xFF @ invalid opcode (script stops)
-
-GoldenrodCity_Interior1_EventScript_CableClubReceptionist_16::
-	updatemoneybox
-	updatecoinsbox 0, 5
-	playse SE_SHOP
-	loadword 0, 0x6B01
-	hidecoinsbox 0, 0
-	removecoins 0x1388
-	nop
-	nop
-	msgbox GoldenrodCity_Interior1_Text_CableClubReceptionist_12, MSGBOX_NPC
-	.byte 0x79 @ givemon
-	.2byte SPECIES_LARVITAR
-	.byte 5
+	.byte 10
 	.2byte ITEM_NONE
 	.4byte 0xFFFFFF02
 	.4byte 0xFFFFFFFF
@@ -286,9 +222,7 @@ GoldenrodCity_Interior1_EventScript_CableClubReceptionist2::
 	call_if_eq VAR_0x8000, 0, GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_1
 	call_if_eq VAR_0x8000, 1, GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_2
 	call_if_eq VAR_0x8000, 2, GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_3
-	call_if_eq VAR_0x8000, 3, GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_4
-	call_if_eq VAR_0x8000, 4, GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_5
-	call_if_eq VAR_0x8000, 5, GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_6
+	call_if_eq VAR_0x8000, 3, GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_6
 	call_if_eq VAR_0x8000, 127, GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_6
 	end
 
@@ -306,16 +240,6 @@ GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_3::
 	msgbox GoldenrodCity_Interior1_Text_CableClubReceptionist2_3, MSGBOX_YESNO
 	call_if_eq VAR_RESULT, 0, GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_6
 	goto GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_9
-
-GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_4::
-	msgbox GoldenrodCity_Interior1_Text_CableClubReceptionist2_4, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 0, GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_6
-	goto GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_10
-
-GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_5::
-	msgbox GoldenrodCity_Interior1_Text_CableClubReceptionist2_5, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 0, GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_6
-	goto GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_11
 
 GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_6::
 	hidecoinsbox 104, 148
@@ -341,20 +265,6 @@ GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_8::
 GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_9::
 	checkcoins VAR_TEMP_1
 	call_if_ge VAR_TEMP_1, 0x157C, GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_14
-	msgbox GoldenrodCity_Interior1_Text_CableClubReceptionist_7, MSGBOX_NPC
-	hidecoinsbox 2, 255
-	.byte 0xFF @ invalid opcode (script stops)
-
-GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_10::
-	checkcoins VAR_TEMP_1
-	call_if_ge VAR_TEMP_1, 0x1194, GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_15
-	msgbox GoldenrodCity_Interior1_Text_CableClubReceptionist_7, MSGBOX_NPC
-	hidecoinsbox 2, 255
-	.byte 0xFF @ invalid opcode (script stops)
-
-GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_11::
-	checkcoins VAR_TEMP_1
-	call_if_ge VAR_TEMP_1, 0x1964, GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_16
 	msgbox GoldenrodCity_Interior1_Text_CableClubReceptionist_7, MSGBOX_NPC
 	hidecoinsbox 2, 255
 	.byte 0xFF @ invalid opcode (script stops)
@@ -395,32 +305,6 @@ GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_14::
 	nop
 	nop
 	giveitem ITEM_TM38
-	release
-	end
-
-GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_15::
-	updatemoneybox
-	updatecoinsbox 0, 5
-	playse SE_SHOP
-	loadword 0, 0x6B01
-	hidecoinsbox 0, 0
-	removecoins 0x1194
-	nop
-	nop
-	giveitem ITEM_TM23
-	release
-	end
-
-GoldenrodCity_Interior1_EventScript_CableClubReceptionist2_16::
-	updatemoneybox
-	updatecoinsbox 0, 5
-	playse SE_SHOP
-	loadword 0, 0x6B01
-	hidecoinsbox 0, 0
-	removecoins 0x1964
-	nop
-	nop
-	giveitem ITEM_TM26
 	release
 	end
 
