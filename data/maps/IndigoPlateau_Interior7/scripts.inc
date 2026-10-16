@@ -264,9 +264,8 @@ IndigoPlateau_Interior7_Movement_Trigger1_23::
 	step_end
 
 IndigoPlateau_Interior7_EventScript_Trigger2::
-	setptr 17, 0x11111111
-	setptr 254, 0xFFFFFFFF
-	.byte 0xFF @ invalid opcode (script stops)
+	@ ShinyGold fix: was two raw memory writes to unmapped addresses and an invalid opcode
+	end
 
 IndigoPlateau_Interior7_EventScript_Trigger3::
 	call IndigoPlateau_Interior7_EventScript_Trigger3_1

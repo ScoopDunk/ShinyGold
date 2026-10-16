@@ -27,8 +27,6 @@ Route11_Cave1_EventScript_OldMan1_3::
 	call_if_eq VAR_0x8008, 0, Route11_Cave1_EventScript_OldMan1_4
 	call_if_eq VAR_0x8008, 1, Route11_Cave1_EventScript_OldMan1_5
 	call_if_eq VAR_0x8008, 2, Route11_Cave1_EventScript_OldMan1_6
-	compare VAR_0x8008, 3
-	call_if 199, 0x010D3103
 	msgbox Route14_Text_Sign1_3
 	waitfanfare
 	textcolor NPC_TEXT_COLOR_MALE

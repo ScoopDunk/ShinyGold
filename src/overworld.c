@@ -51,6 +51,7 @@
 #include "constants/cable_club.h"
 #include "constants/event_objects.h"
 #include "constants/maps.h"
+#include "constants/heal_locations.h"
 #include "constants/region_map_sections.h"
 #include "constants/songs.h"
 #include "constants/sound.h"
@@ -222,6 +223,7 @@ static void SpriteCB_LinkPlayer(struct Sprite *sprite);
 
 extern const struct MapLayout * gMapLayouts[];
 extern const struct MapHeader *const *gMapGroups[];
+extern const u8 gMapGroupSizes[];
 
 // Routines related to game state on warping in
 
@@ -1690,12 +1692,69 @@ static void FieldCB_ShowMapNameOnContinue(void)
     FieldCB_WarpExitFadeFromBlack();
 }
 
+// ShinyGold: a save made with a different map list can point at a map that no longer exists.
+static bool8 IsSavedLocationValid(void)
+{
+    s8 group = gSaveBlock1Ptr->location.mapGroup;
+    s8 num = gSaveBlock1Ptr->location.mapNum;
+    return group >= 0 && group < MAP_GROUPS_COUNT && num >= 0 && num < gMapGroupSizes[group];
+}
+
+// ShinyGold: a save made before this map's object list changed holds object templates and live objects that no
+// longer match the map header. Templates are paired with the header by position when a game is continued, so a
+// mismatch would give NPCs the wrong scripts (or none). Returns FALSE when the map has to be reloaded.
+static bool8 SavedObjectsMatchMapHeader(void)
+{
+    s32 i, j;
+    const struct MapEvents *events = gMapHeader.events;
+
+    for (i = 0; i < events->objectEventCount && i < OBJECT_EVENT_TEMPLATES_COUNT; i++)
+    {
+        if (gSaveBlock1Ptr->objectEventTemplates[i].localId != events->objectEvents[i].localId)
+            return FALSE;
+    }
+    for (i = 0; i < OBJECT_EVENTS_COUNT; i++)
+    {
+        const struct ObjectEvent *obj = &gSaveBlock1Ptr->objectEvents[i];
+        if (!obj->active || obj->isPlayer || obj->localId >= OBJ_EVENT_ID_CAMERA)
+            continue;
+        if (obj->mapNum != (u8)gSaveBlock1Ptr->location.mapNum || obj->mapGroup != (u8)gSaveBlock1Ptr->location.mapGroup)
+            continue;
+        for (j = 0; j < events->objectEventCount; j++)
+        {
+            if (events->objectEvents[j].localId == obj->localId)
+                break;
+        }
+        if (j == events->objectEventCount)
+            return FALSE;
+    }
+    return TRUE;
+}
+
 void CB2_ContinueSavedGame(void)
 {
     FieldClearVBlankHBlankCallbacks();
     StopMapMusic();
     ResetSafariZoneFlag_();
+    if (!IsSavedLocationValid())
+    {
+        // continue at home instead of reading a map header that doesn't exist
+        SetContinueGameWarpToHealLocation(HEAL_LOCATION_NEW_BARK_TOWN);
+        gSaveBlock1Ptr->location = gSaveBlock1Ptr->continueGameWarp;
+        gSaveBlock1Ptr->pos.x = gSaveBlock1Ptr->continueGameWarp.x;
+        gSaveBlock1Ptr->pos.y = gSaveBlock1Ptr->continueGameWarp.y;
+        SetContinueGameWarpStatus();
+    }
     LoadSaveblockMapHeader();
+    if (!UseContinueGameWarp() && !SavedObjectsMatchMapHeader())
+    {
+        // reload the map where the player stands, so objects come from the current header
+        gSaveBlock1Ptr->continueGameWarp = gSaveBlock1Ptr->location;
+        gSaveBlock1Ptr->continueGameWarp.warpId = -1;
+        gSaveBlock1Ptr->continueGameWarp.x = gSaveBlock1Ptr->pos.x;
+        gSaveBlock1Ptr->continueGameWarp.y = gSaveBlock1Ptr->pos.y;
+        SetContinueGameWarpStatus();
+    }
     LoadSaveblockObjEventScripts();
     UnfreezeObjectEvents();
     Overworld_ResetStateOnContinue();
