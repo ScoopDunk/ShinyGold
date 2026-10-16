@@ -413,7 +413,6 @@ static const u32 sMapEdge_Gfx[] = INCBIN_U32("graphics/region_map/map_edge.4bpp.
 static const u32 sSwitchMapMenu_Gfx[] = INCBIN_U32("graphics/region_map/switch_map_menu.4bpp.lz");
 static const u32 sKanto_Tilemap[] = INCBIN_U32("graphics/region_map/kanto.bin.lz");
 static const u32 sSevii123_Tilemap[] = INCBIN_U32("graphics/region_map/sevii_123.bin.lz");
-static const u32 sSevii67_Tilemap[] = INCBIN_U32("graphics/region_map/sevii_67.bin.lz");
 static const u32 sMapEdge_Tilemap[] = INCBIN_U32("graphics/region_map/map_edge.bin.lz");
 static const u32 sSwitchMap_KantoSeviiAll_Tilemap[] = INCBIN_U32("graphics/region_map/switch_map_kanto_sevii_all.bin.lz");
 static const u32 sSwitchMap_KantoSevii123_Tilemap[] = INCBIN_U32("graphics/region_map/switch_map_kanto_sevii_123.bin.lz");
@@ -531,7 +530,8 @@ static const u8 *const sTextColorTable[] = {
 // search in InitRegionMapType continues into the second list. Its entries are repeated here to keep that
 // behavior (the second list can therefore never be selected). The hack's region maps are Kanto
 // (REGIONMAP_KANTO), Johto (REGIONMAP_SEVII123) and the map of the third region (REGIONMAP_SEVII67);
-// REGIONMAP_SEVII45 shows the Kanto map.
+// REGIONMAP_SEVII45 shows the Kanto map. Pure Gold/Silver: the third region was removed, so
+// REGIONMAP_SEVII67 also shows the Kanto map and has no map sections.
 static const u8 sSeviiMapsecs[3][46] = {
     [REGIONMAP_SEVII123 - 1] =
     {
@@ -547,7 +547,6 @@ static const u8 sSeviiMapsecs[3][46] = {
         MAPSEC_ECRUTEAK_CITY,
         MAPSEC_CIANWOOD_CITY,
         MAPSEC_OLIVINE_CITY,
-        MAPSEC_MIRAGE_ISLAND_2,
         MAPSEC_ROUTE_29,
         MAPSEC_CHERRYGROVE_CITY,
         MAPSEC_ROUTE_42,
@@ -556,7 +555,6 @@ static const u8 sSeviiMapsecs[3][46] = {
         MAPSEC_ROUTE_34,
         MAPSEC_ROUTE_39,
         MAPSEC_ROUTE_45,
-        MAPSEC_TRICK_HOUSE,
         MAPSEC_ROUTE_44,
         MAPSEC_ROUTE_40,
         MAPSEC_ROUTE_37,
@@ -601,14 +599,9 @@ static const u8 sSeviiMapsecs[3][46] = {
         MAPSEC_ROUTE_43,
         MAPSEC_NONE
     },
+    // Pure Gold/Silver: the third region (Kalm City and its routes) was removed.
     [REGIONMAP_SEVII67 - 1] =
     {
-        MAPSEC_GREEN_PLAINS,
-        MAPSEC_BATTLE_TOWER,
-        MAPSEC_KALM_CITY_NOUSAR,
-        MAPSEC_SEIRUN_TOMB,
-        MAPSEC_MT_STEEL,
-        MAPSEC_MAIDENS_PEAK_DIS,
         MAPSEC_NONE
     },
 };
@@ -868,7 +861,10 @@ static const u8 sTextColors[] = {TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_WHITE, TEXT_CO
 #include "data/region_map/region_map_layout_sevii_45.h"
 #include "data/region_map/region_map_layout_sevii_67.h"
 
-// ShinyGold: fly destinations of the hack
+// ShinyGold: fly destinations of the hack. Only map sections of type MAPSECTYPE_VISITED (towns, see
+// GetMapsecType) can be picked on the fly map; the map ids of the other entries are never used.
+// Pure Gold/Silver: entries that named removed maps now name the G/S map of that section, or
+// MAP_REMOVED for the hack's own sections (none of them is on a region map any more).
 static const u8 sMapFlyDestinations[][3] = {
     [MAPSEC_PALLET_TOWN           - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_PALLET_TOWN_AREA1},
     [MAPSEC_VIRIDIAN_CITY         - KANTO_MAPSEC_START] = {MAP(MAP_VIRIDIAN_CITY), HEAL_LOCATION_VIRIDIAN_CITY},
@@ -881,10 +877,10 @@ static const u8 sMapFlyDestinations[][3] = {
     [MAPSEC_CINNABAR_ISLAND       - KANTO_MAPSEC_START] = {MAP(MAP_CINNABAR_ISLAND), HEAL_LOCATION_CINNABAR_ISLAND},
     [MAPSEC_INDIGO_PLATEAU        - KANTO_MAPSEC_START] = {MAP(MAP_INDIGO_PLATEAU), HEAL_LOCATION_INDIGO_PLATEAU},
     [MAPSEC_SAFFRON_CITY          - KANTO_MAPSEC_START] = {MAP(MAP_SAFFRON_CITY), HEAL_LOCATION_SAFFRON_CITY},
-    [MAPSEC_MYSTERY_ISLAND        - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE4), HEAL_LOCATION_BLACKTHORN_CITY},
-    [MAPSEC_SEA_CAVERN            - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE10), HEAL_LOCATION_MAHOGANY_TOWN},
+    [MAPSEC_MYSTERY_ISLAND        - KANTO_MAPSEC_START] = {MAP(MAP_REMOVED), HEAL_LOCATION_NONE},  // custom section (no map), never a fly destination
+    [MAPSEC_SEA_CAVERN            - KANTO_MAPSEC_START] = {MAP(MAP_REMOVED), HEAL_LOCATION_NONE},  // custom section, removed
     [MAPSEC_ROUTE_1               - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE1), HEAL_LOCATION_NONE},
-    [MAPSEC_ROUTE_2               - KANTO_MAPSEC_START] = {MAP(MAP_KALM_CITY_NOUSAR), HEAL_LOCATION_NONE},
+    [MAPSEC_ROUTE_2               - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE2), HEAL_LOCATION_NONE},  // hack: MAP_KALM_CITY_NOUSAR (removed)
     [MAPSEC_ROUTE_3               - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE3), HEAL_LOCATION_NONE},
     [MAPSEC_ROUTE_4               - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE4), HEAL_LOCATION_NONE},
     [MAPSEC_ROUTE_5               - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE5), HEAL_LOCATION_NONE},
@@ -909,7 +905,7 @@ static const u8 sMapFlyDestinations[][3] = {
     [MAPSEC_ROUTE_24              - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE24), HEAL_LOCATION_NONE},
     [MAPSEC_ROUTE_25              - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE25), HEAL_LOCATION_NONE},
     [MAPSEC_TOHJO_FALLS           - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
-    [MAPSEC_TRAINER_TOWER_3       - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
+    [MAPSEC_TRAINER_TOWER_3       - KANTO_MAPSEC_START] = {MAP(MAP_REMOVED), HEAL_LOCATION_NONE},  // custom section, removed
     [MAPSEC_ROCK_TUNNEL_2         - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
     [MAPSEC_LAV_RADIO_TOWER       - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
     [MAPSEC_SEAFOM_ISLANDS        - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
@@ -918,9 +914,9 @@ static const u8 sMapFlyDestinations[][3] = {
     [MAPSEC_S_S_AQUA              - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
     [MAPSEC_SILPH_CO              - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
     [MAPSEC_MT_MOON_2             - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
-    [MAPSEC_FROZEN_CAVE           - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
+    [MAPSEC_FROZEN_CAVE           - KANTO_MAPSEC_START] = {MAP(MAP_REMOVED), HEAL_LOCATION_NONE},  // custom section (no map)
     [MAPSEC_POWER_PLANT_2         - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
-    [MAPSEC_UNKNOWN_RUINS         - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
+    [MAPSEC_UNKNOWN_RUINS         - KANTO_MAPSEC_START] = {MAP(MAP_REMOVED), HEAL_LOCATION_NONE},  // custom section, removed
     [MAPSEC_ROUTE_27              - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
     [MAPSEC_ROUTE_26              - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
     [MAPSEC_ROUTE_28              - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
@@ -932,29 +928,29 @@ static const u8 sMapFlyDestinations[][3] = {
     [MAPSEC_ECRUTEAK_CITY         - KANTO_MAPSEC_START] = {MAP(MAP_ECRUTEAK_CITY), HEAL_LOCATION_ECRUTEAK_CITY},
     [MAPSEC_CIANWOOD_CITY         - KANTO_MAPSEC_START] = {MAP(MAP_CIANWOOD_CITY), HEAL_LOCATION_CIANWOOD_CITY},
     [MAPSEC_OLIVINE_CITY          - KANTO_MAPSEC_START] = {MAP(MAP_OLIVINE_CITY), HEAL_LOCATION_OLIVINE_CITY},
-    [MAPSEC_MIRAGE_ISLAND_2       - KANTO_MAPSEC_START] = {MAP(MAP_NATIONAL_PARK), HEAL_LOCATION_NONE},
+    [MAPSEC_MIRAGE_ISLAND_2       - KANTO_MAPSEC_START] = {MAP(MAP_REMOVED), HEAL_LOCATION_NONE},  // custom section (no map)
     [MAPSEC_ROUTE_29              - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE29), HEAL_LOCATION_NONE},
     [MAPSEC_CHERRYGROVE_CITY      - KANTO_MAPSEC_START] = {MAP(MAP_CHERRYGROVE_CITY), HEAL_LOCATION_CHERRYGROVE_CITY},
     [MAPSEC_ROUTE_42              - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE42), HEAL_LOCATION_NONE},
     [MAPSEC_ROUTE_32              - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE32), HEAL_LOCATION_NONE},
-    [MAPSEC_SLOWPOKE_WELL         - KANTO_MAPSEC_START] = {MAP(MAP_UNUSED_PROTOTYPE_SEVII_ISLE_6), HEAL_LOCATION_NONE},
+    [MAPSEC_SLOWPOKE_WELL         - KANTO_MAPSEC_START] = {MAP(MAP_SLOWPOKE_WELL_CAVE1), HEAL_LOCATION_NONE},  // hack: MAP_UNUSED_PROTOTYPE_SEVII_ISLE_6 (removed)
     [MAPSEC_ROUTE_34              - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE34), HEAL_LOCATION_NONE},
-    [MAPSEC_ROUTE_39              - KANTO_MAPSEC_START] = {MAP(MAP_UNUSED_PROTOTYPE_SEVII_ISLE_8), HEAL_LOCATION_NONE},
-    [MAPSEC_ROUTE_45              - KANTO_MAPSEC_START] = {MAP(MAP_UNUSED_PROTOTYPE_SEVII_ISLE_9), HEAL_LOCATION_NONE},
-    [MAPSEC_RED_ROUTE             - KANTO_MAPSEC_START] = {MAP(MAP_RED_ROUTE), HEAL_LOCATION_NONE},
+    [MAPSEC_ROUTE_39              - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE39), HEAL_LOCATION_NONE},  // hack: MAP_UNUSED_PROTOTYPE_SEVII_ISLE_8 (removed)
+    [MAPSEC_ROUTE_45              - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE45), HEAL_LOCATION_NONE},  // hack: MAP_UNUSED_PROTOTYPE_SEVII_ISLE_9 (removed)
+    [MAPSEC_RED_ROUTE             - KANTO_MAPSEC_START] = {MAP(MAP_REMOVED), HEAL_LOCATION_NONE},  // custom section, removed
     [MAPSEC_MAHOGANY_TOWN         - KANTO_MAPSEC_START] = {MAP(MAP_MAHOGANY_TOWN), HEAL_LOCATION_MAHOGANY_TOWN_2},
     [MAPSEC_BLACKTHORN_CITY       - KANTO_MAPSEC_START] = {MAP(MAP_BLACKTHORN_CITY), HEAL_LOCATION_BLACKTHORN_CITY_2},
-    [MAPSEC_TRICK_HOUSE           - KANTO_MAPSEC_START] = {MAP(MAP_GREEN_ROUTE), HEAL_LOCATION_NONE},
-    [MAPSEC_BLUE_ROUTE            - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE2), HEAL_LOCATION_NONE},
-    [MAPSEC_KALM_CITY_NOUSAR      - KANTO_MAPSEC_START] = {MAP(MAP_REMOVED), HEAL_LOCATION_NONE}, // ShinyGold: Kalm City removed (pure Gold/Silver)
-    [MAPSEC_ROUTE_44              - KANTO_MAPSEC_START] = {MAP(MAP_GREEN_ROUTE_AREA1), HEAL_LOCATION_NONE},
-    [MAPSEC_GREEN_PLAINS          - KANTO_MAPSEC_START] = {MAP(MAP_MT_SILVER), HEAL_LOCATION_NONE},
-    [MAPSEC_BATTLE_TOWER          - KANTO_MAPSEC_START] = {MAP(MAP_KALM_CITY_NOUSAR_AREA1), HEAL_LOCATION_NONE},
-    [MAPSEC_SEIRUN_TOMB           - KANTO_MAPSEC_START] = {MAP(MAP_PALLET_TOWN_AREA1), HEAL_LOCATION_NONE},
+    [MAPSEC_TRICK_HOUSE           - KANTO_MAPSEC_START] = {MAP(MAP_REMOVED), HEAL_LOCATION_NONE},  // custom section, removed
+    [MAPSEC_BLUE_ROUTE            - KANTO_MAPSEC_START] = {MAP(MAP_REMOVED), HEAL_LOCATION_NONE},  // custom section, removed
+    [MAPSEC_KALM_CITY_NOUSAR      - KANTO_MAPSEC_START] = {MAP(MAP_REMOVED), HEAL_LOCATION_NONE},  // custom section, removed
+    [MAPSEC_ROUTE_44              - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE44), HEAL_LOCATION_NONE},  // hack: MAP_GREEN_ROUTE_AREA1 (removed)
+    [MAPSEC_GREEN_PLAINS          - KANTO_MAPSEC_START] = {MAP(MAP_REMOVED), HEAL_LOCATION_NONE},  // custom section, removed
+    [MAPSEC_BATTLE_TOWER          - KANTO_MAPSEC_START] = {MAP(MAP_REMOVED), HEAL_LOCATION_NONE},  // custom section, removed
+    [MAPSEC_SEIRUN_TOMB           - KANTO_MAPSEC_START] = {MAP(MAP_REMOVED), HEAL_LOCATION_NONE},  // custom section, removed
     [MAPSEC_ROUTE_43              - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE43), HEAL_LOCATION_NONE},
-    [MAPSEC_ROUTE_40              - KANTO_MAPSEC_START] = {MAP(MAP_RED_ROUTE_AREA1), HEAL_LOCATION_NONE},
+    [MAPSEC_ROUTE_40              - KANTO_MAPSEC_START] = {MAP(MAP_ROUTE40), HEAL_LOCATION_NONE},  // hack: MAP_RED_ROUTE_AREA1 (removed)
     [MAPSEC_ROUTE_37              - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
-    [MAPSEC_GREEN_ROUTE           - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
+    [MAPSEC_GREEN_ROUTE           - KANTO_MAPSEC_START] = {MAP(MAP_REMOVED), HEAL_LOCATION_NONE},  // custom section, removed
     [MAPSEC_ROUTE_38              - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
     [MAPSEC_RUINS_OF_ALPH         - KANTO_MAPSEC_START] = {MAP(MAP_TOHJO_FALLS_CAVE1), HEAL_LOCATION_NONE},
     [MAPSEC_WHIRL_ISLANDS         - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
@@ -963,9 +959,9 @@ static const u8 sMapFlyDestinations[][3] = {
     [MAPSEC_LAKE_OF_RAGE          - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
     [MAPSEC_LIGHTHOUSE            - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
     [MAPSEC_MT_MORTAR             - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
-    [MAPSEC_MT_STEEL              - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
+    [MAPSEC_MT_STEEL              - KANTO_MAPSEC_START] = {MAP(MAP_REMOVED), HEAL_LOCATION_NONE},  // custom section, removed
     [MAPSEC_ILEX_FOREST           - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
-    [MAPSEC_MAIDENS_PEAK_DIS      - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
+    [MAPSEC_MAIDENS_PEAK_DIS      - KANTO_MAPSEC_START] = {MAP(MAP_REMOVED), HEAL_LOCATION_NONE},  // custom section, removed
     [MAPSEC_NATIONAL_PARK         - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
     [MAPSEC_UNION_CAVE            - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
     [MAPSEC_ICE_PATH              - KANTO_MAPSEC_START] = {MAP(MAP_NEW_BARK_TOWN), HEAL_LOCATION_NONE},
@@ -1048,19 +1044,6 @@ void InitRegionMapWithExitCB(u8 type, MainCallback cb)
     }
 }
 
-// ShinyGold: these map sections always use the REGIONMAP_SEVII67 map
-static const u8 sSevii67Mapsecs_ShinyGold[] = {
-    MAPSEC_BLUE_ROUTE,
-    MAPSEC_RED_ROUTE,
-    MAPSEC_GREEN_ROUTE,
-    MAPSEC_GREEN_PLAINS,
-    MAPSEC_SEIRUN_TOMB,
-    MAPSEC_MT_STEEL,
-    MAPSEC_MAIDENS_PEAK_DIS,
-    MAPSEC_BATTLE_TOWER,
-    MAPSEC_KALM_CITY_NOUSAR,
-};
-
 static void InitRegionMapType(void)
 {
     u8 i;
@@ -1086,12 +1069,8 @@ static void InitRegionMapType(void)
         sRegionMap->permissions[MAPPERM_HAS_SWITCH_BUTTON] = FALSE;
     region = REGIONMAP_KANTO;
     j = REGIONMAP_KANTO;
-    // ShinyGold: Cherrygrove City and sSevii67Mapsecs_ShinyGold have fixed maps
-    for (i = 0; i < ARRAY_COUNT(sSevii67Mapsecs_ShinyGold); i++)
-    {
-        if (gMapHeader.regionMapSectionId == sSevii67Mapsecs_ShinyGold[i])
-            region = REGIONMAP_SEVII67;
-    }
+    // ShinyGold: Cherrygrove City has a fixed map. (The hack also sent the map sections of its third
+    // region to REGIONMAP_SEVII67; that region was removed for the pure Gold/Silver build.)
     if (gMapHeader.regionMapSectionId == MAPSEC_CHERRYGROVE_CITY)
     {
         region = REGIONMAP_SEVII123;
@@ -1099,7 +1078,8 @@ static void InitRegionMapType(void)
     else if (region == REGIONMAP_KANTO && gMapHeader.regionMapSectionId >= SEVII_MAPSEC_START)
     {
         // Mapsec is in Sevii Islands, determine which map to use
-        while (region == REGIONMAP_KANTO)
+        // (pure Gold/Silver: stop after the last list; a map section in none of them stays on Kanto)
+        while (region == REGIONMAP_KANTO && j < ARRAY_COUNT(sSeviiMapsecs))
         {
             for (i = 0; sSeviiMapsecs[j][i] != MAPSEC_NONE; i++)
             {
@@ -1208,7 +1188,7 @@ static bool8 LoadRegionMapGfx(void)
         LZ77UnCompWram(sKanto_Tilemap, sRegionMap->layouts[REGIONMAP_SEVII45]); // ShinyGold: was sSevii45_Tilemap
         break;
     case 8:
-        LZ77UnCompWram(sSevii67_Tilemap, sRegionMap->layouts[REGIONMAP_SEVII67]);
+        LZ77UnCompWram(sKanto_Tilemap, sRegionMap->layouts[REGIONMAP_SEVII67]); // Pure Gold/Silver: was sSevii67_Tilemap (third region removed)
         break;
     default:
         LZ77UnCompWram(sBackground_Tilemap, sRegionMap->layouts[REGIONMAP_COUNT]);
@@ -1587,8 +1567,7 @@ static void BufferRegionMapBg(u8 bg, u16 *map)
         whichMap = sRegionMap->selectedRegion;
     if (whichMap == REGIONMAP_SEVII45 && !FlagGet(FLAG_WORLD_MAP_NAVEL_ROCK_EXTERIOR))
         FillBgTilemapBufferRect_Palette0(0, 0x003, 13, 11, 3, 2);
-    if (whichMap == REGIONMAP_SEVII67 && !FlagGet(FLAG_WORLD_MAP_BIRTH_ISLAND_EXTERIOR))
-        FillBgTilemapBufferRect_Palette0(0, 0x003, 21, 16, 3, 3);
+    // Pure Gold/Silver: the REGIONMAP_SEVII67 case (it hid an island of the removed third region) is gone.
 }
 
 static bool8 GetRegionMapPermission(u8 attr)
@@ -3059,16 +3038,14 @@ static u8 GetMapsecType(u8 mapsec)
     case MAPSEC_SIX_ISLAND:
         return FlagGet(FLAG_WORLD_MAP_SIX_ISLAND) ? MAPSECTYPE_VISITED : MAPSECTYPE_NOT_VISITED;
     // ShinyGold: the cases of the two Pokémon Center map sections (now MAPSEC_MYSTERY_ISLAND and MAPSEC_SEA_CAVERN,
-    // which are routes now) were moved to Blackthorn City and Mahogany Town, Kalm City also uses the Lavender
-    // Town flag and Cherrygrove City got its own flag.
+    // which are routes now) were moved to Blackthorn City and Mahogany Town and Cherrygrove City got its own
+    // flag. (The hack's Kalm City case, which used the Lavender Town flag, was removed with Kalm City.)
     case MAPSEC_BLACKTHORN_CITY:
         if (!GetRegionMapPermission(MAPPERM_HAS_FLY_DESTINATIONS))
             return MAPSECTYPE_NONE;
         return FlagGet(FLAG_WORLD_MAP_ROUTE4_POKEMON_CENTER_1F) ? MAPSECTYPE_VISITED : MAPSECTYPE_NOT_VISITED;
     case MAPSEC_MAHOGANY_TOWN:
         return FlagGet(FLAG_WORLD_MAP_ROUTE10_POKEMON_CENTER_1F) ? MAPSECTYPE_VISITED : MAPSECTYPE_NOT_VISITED;
-    case MAPSEC_KALM_CITY_NOUSAR:
-        return FlagGet(FLAG_WORLD_MAP_LAVENDER_TOWN) ? MAPSECTYPE_VISITED : MAPSECTYPE_NOT_VISITED;
     case MAPSEC_CHERRYGROVE_CITY:
         return FlagGet(SG_FLAG_WORLD_MAP_CHERRYGROVE_CITY) ? MAPSECTYPE_VISITED : MAPSECTYPE_NOT_VISITED;
     case MAPSEC_NONE:

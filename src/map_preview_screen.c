@@ -326,7 +326,8 @@ static const struct BgTemplate sMapPreviewBgTemplate[1] = {
 };
 
 // ShinyGold: no map preview is shown when the player arrives at one of these positions
-// (inner entrances of multi-part dungeons and the like).
+// (inner entrances of multi-part dungeons and the like). Pure Gold/Silver: the entries for the removed
+// Dragon's Den chambers and the Trick House exit on Route 36 are gone.
 static const struct
 {
     s16 x;
@@ -349,13 +350,10 @@ static const struct
     {33, 43, MAP(MAP_ROUTE41)},
     {36, 16, MAP(MAP_ROUTE41)},
     { 9,  8, MAP(MAP_DRAGONS_DEN_CAVE3)},
-    { 9, 20, MAP(MAP_DRAGONS_DEN_CAVE1)},
-    {23, 19, MAP(MAP_DRAGONS_DEN_CAVE2)},
     { 3,  5, MAP(MAP_ROUTE35)},
     {10, 33, MAP(MAP_ROUTE35)},
     {11, 13, MAP(MAP_ROUTE35_INTERIOR1)},
     { 7, 11, MAP(MAP_ROUTE36)},
-    {32,  8, MAP(MAP_ROUTE36)},
 };
 
 static u8 GetMapPreviewScreenIdx(u8 mapsec)
