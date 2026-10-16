@@ -22,7 +22,7 @@ The ROM keeps FireRed's game code (`BPRE`), title and save format, so it trades 
 
 | Area | Files | Notes |
 |---|---|---|
-| Maps | `data/maps/*`, `data/layouts/*`, `data/tilesets/*` | 534 maps in 43 groups (473 reachable). Names come from `tools/shinygold/map_names.json`: the map section name plus `_Interior<n>` / `_Cave<n>` / `_Area<n>` for sub-maps, `Unused_*` for unreachable leftovers. The hack reuses FireRed map slots, so some names don't match their old FireRed meaning |
+| Maps | `data/maps/*`, `data/layouts/*`, `data/tilesets/*` | 378 maps in 43 groups on `gold` (534 on `master`). Names come from `tools/shinygold/map_names.json`: the map section name plus `_Interior<n>` / `_Cave<n>` / `_Area<n>` for sub-maps, `Unused_*` for unreachable leftovers (none left on `gold`). The hack reuses FireRed map slots, so some names don't match their old FireRed meaning |
 | Vanilla map names | `include/constants/map_compat.h` | Old `MAP_`/`LAYOUT_`/`HEAL_LOCATION_` names used by engine code, aliased to the map in the same slot |
 | Event scripts | `data/maps/*/scripts.inc`, `text.inc`, `data/scripts/*`, `data/event_scripts.s` | Generated from the ROM and checked byte-for-byte. `@ ShinyGold:` comments mark oddities (scripts that run into data, duplicated overlapping blocks, dead entries) |
 | Save expansion | `src/save_block_ext.c`, `src/event_data.c`, `src/save.c` | JPAN-style: flags 0x900–0x1FFF and vars 0x4100–0x7FFF stored in the unused tails of the save sectors, same on-flash layout as the hack, so ShinyGold saves load |
