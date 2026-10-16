@@ -45,7 +45,7 @@ NationalPark_EventScript_Pokefan145::
 NationalPark_EventScript_Pokefan145_1::
 	clearflag 0x1311
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, NationalPark_EventScript_Pokefan145_2
+	call_if_set 0x030, NationalPark_EventScript_Pokefan145_2
 	call_if_set 0x115F, NationalPark_EventScript_Pokefan145_3
 	call_if_set FLAG_BADGE07_GET, NationalPark_EventScript_Pokefan145_4
 	call_if_set FLAG_BADGE05_GET, NationalPark_EventScript_Pokefan145_5
@@ -91,8 +91,8 @@ NationalPark_EventScript_Schoolboy480::
 NationalPark_EventScript_Schoolboy480_1::
 	clearflag 0x1312
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, NationalPark_EventScript_Schoolboy480_2
-	call_if_set 0x8888, NationalPark_EventScript_Schoolboy480_3
+	call_if_set 0x030, NationalPark_EventScript_Schoolboy480_2
+	call_if_set 0x030, NationalPark_EventScript_Schoolboy480_3
 	call_if_set FLAG_BADGE07_GET, NationalPark_EventScript_Schoolboy480_4
 	call_if_set FLAG_BADGE05_GET, NationalPark_EventScript_Schoolboy480_5
 	trainerbattle_earlyrival TRAINER_SCHOOLBOY_JACK, 0, NationalPark_Text_Schoolboy480Defeat, Route35_Text_Juggler228Victory

@@ -48,7 +48,9 @@ MahoganyTown_RocketBase_B1F_EventScript_Trigger1::
 	setflag 0x10E7
 	setflag 0x10ED
 	warp MAP_MAHOGANY_TOWN_ROCKET_BASE_B1F, 3, 0x1002, 0xED29
-	loadbyte 57, 2
+	@ ShinyGold fix: the engine keeps running a script during the warp fade, so the hack's leftover bytes
+	@ that followed this warp executed (garbage calls, stray text, RAM writes). The script now ends here.
+	end
 
 MahoganyTown_RocketBase_B1F_EventScript_Trigger1_1::
 	release
@@ -95,11 +97,9 @@ MahoganyTown_RocketBase_B1F_EventScript_Trigger5::
 	setflag 0x10E8
 	setflag 0x10EE
 	warp MAP_MAHOGANY_TOWN_ROCKET_BASE_B1F, 4, 0x1002, 0xEE29
-	loadbyte 57, 2
-	compare_ptr_to_local 0x1E1E1E1E, 30
-	compare_ptr_to_local 0xFFFFFE03, 255
-	cleartrainerflag 65027
-	.byte 0xFF @ invalid opcode (script stops)
+	@ ShinyGold fix: the engine keeps running a script during the warp fade, so the hack's leftover bytes
+	@ that followed this warp executed (garbage calls, stray text, RAM writes). The script now ends here.
+	end
 
 MahoganyTown_RocketBase_B1F_Movement_Trigger5_1::
 	@ ShinyGold: overlapping data duplicated from 0x08783890
@@ -153,9 +153,9 @@ MahoganyTown_RocketBase_B1F_EventScript_Trigger9::
 	setflag 0x10E9
 	setflag 0x10EF
 	warp MAP_MAHOGANY_TOWN_ROCKET_BASE_B1F, 5, 0x1002, 0xEF29
-	loadbyte 57, 2
-	cleartrainerflag 65104
-	.byte 0xFF @ invalid opcode (script stops)
+	@ ShinyGold fix: the engine keeps running a script during the warp fade, so the hack's leftover bytes
+	@ that followed this warp executed (garbage calls, stray text, RAM writes). The script now ends here.
+	end
 
 MahoganyTown_RocketBase_B1F_Movement_Trigger9_1::
 	@ ShinyGold: overlapping data duplicated from 0x08783930
@@ -206,10 +206,9 @@ MahoganyTown_RocketBase_B1F_EventScript_Trigger13::
 	setflag 0x10EB
 	setflag 0x10F1
 	warp MAP_MAHOGANY_TOWN_ROCKET_BASE_B1F, 7, 0x1002, 0xF129
-	loadbyte 57, 2
-	compare_local_to_ptr 29, 0x1D1D1D1D
-	compare_ptr_to_ptr 0xFEFE2020, 0xFFFFFFFF
-	.byte 0xFF @ invalid opcode (script stops)
+	@ ShinyGold fix: the engine keeps running a script during the warp fade, so the hack's leftover bytes
+	@ that followed this warp executed (garbage calls, stray text, RAM writes). The script now ends here.
+	end
 
 MahoganyTown_RocketBase_B1F_Movement_Trigger13_1::
 	@ ShinyGold: overlapping data duplicated from 0x08783A70
@@ -255,9 +254,9 @@ MahoganyTown_RocketBase_B1F_EventScript_Trigger16::
 	setflag 0x10EA
 	setflag 0x10F0
 	warp MAP_MAHOGANY_TOWN_ROCKET_BASE_B1F, 6, 0x1002, 0xF029
-	loadbyte 57, 2
-	compare_ptr_to_ptr 0x20202020, 0xFFFE2020
-	.byte 0xFF @ invalid opcode (script stops)
+	@ ShinyGold fix: the engine keeps running a script during the warp fade, so the hack's leftover bytes
+	@ that followed this warp executed (garbage calls, stray text, RAM writes). The script now ends here.
+	end
 
 MahoganyTown_RocketBase_B1F_Movement_Trigger16_1::
 	@ ShinyGold: overlapping data duplicated from 0x087839D0

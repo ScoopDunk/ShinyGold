@@ -139,7 +139,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "TinTower_UpperFloors_EventScript_ItemMaxRevive",
-      "flag": "0x230"
+      "flag": "0x1D10"
     },
     {
       "type": "object",
@@ -167,7 +167,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "TinTower_UpperFloors_EventScript_ItemMaxElixir",
-      "flag": "0x232"
+      "flag": "0x1D11"
     },
     {
       "type": "object",

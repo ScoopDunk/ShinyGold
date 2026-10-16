@@ -194,8 +194,8 @@ GoldenrodCity_Interior17_EventScript_Sign1_3::
 	clearflag 0x111A
 	clearflag 0x1117
 	warp MAP_GOLDENROD_CITY_INTERIOR17, 2, 0x26C, 0x1429
-	setptr 41, 0x2239111D
-	waitfanfare
+	@ ShinyGold fix: the engine keeps running a script during the warp fade, so the hack's leftover bytes
+	@ that followed this warp executed (garbage calls, stray text, RAM writes). The script now ends here.
 	end
 
 GoldenrodCity_Interior17_EventScript_Sign2::

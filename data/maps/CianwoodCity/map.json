@@ -173,7 +173,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CianwoodCity_EventScript_ItemRevive",
-      "flag": "0"
+      "flag": "0x1D00"
     },
     {
       "type": "object",
@@ -187,7 +187,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CianwoodCity_EventScript_ItemMaxEther",
-      "flag": "0"
+      "flag": "0x1D01"
     },
     {
       "type": "object",

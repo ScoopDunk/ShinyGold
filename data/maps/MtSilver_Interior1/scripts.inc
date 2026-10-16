@@ -50,7 +50,7 @@ MtSilver_Interior1_EventScript_Trigger1::
 	end
 
 MtSilver_Interior1_EventScript_Trigger1_1::
-	callnative ToggleForceShinyMons
+	callnative ClearForceShinyMons
 	clearflag 0x11E9
 	release
 	end

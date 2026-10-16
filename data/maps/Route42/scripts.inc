@@ -64,7 +64,7 @@ Route42_EventScript_Fisherman465::
 Route42_EventScript_Fisherman465_1::
 	clearflag 0x1318
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route42_EventScript_Fisherman465_2
+	call_if_set 0x030, Route42_EventScript_Fisherman465_2
 	call_if_set 0x115F, Route42_EventScript_Fisherman465_3
 	call_if_set FLAG_BADGE07_GET, Route42_EventScript_Fisherman465_4
 	call_if_set FLAG_BADGE05_GET, Route42_EventScript_Fisherman465_5

@@ -57,8 +57,9 @@ VioletCity_Text_WorkerF_3::
 	.string "See if you could find them all!$"
 
 VioletCity_Text_Trigger2::
-	.string "PROF.ELM: Hello, {PLAYER}? We discovered\n"
-	.string "something about the EGG!\p"
+	.string "PROF.ELM: Hello, {PLAYER}?\n"
+	.string "We discovered something about\l"
+	.string "the EGG!\p"
 	.string "My assistant is at the POKéMON\n"
 	.string "CENTER in VIOLET CITY.\l"
 	.string "Could you talk to him?\p"
