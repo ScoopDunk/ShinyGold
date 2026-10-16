@@ -102,6 +102,38 @@ the scripts generator treated every `gotostd` as the end of a script, so three s
   no longer uses the female sprite and pic.
 - The S.S. Aqua no longer shows the Rocket Hideout map preview. Typos: VERMILION, DIGLETT'S, SEAFOAM ISLANDS.
 
+### Fixes from the full audit
+A static audit of scripts, maps, data and engine code plus an emulator sweep that talked to every NPC, sign and
+trigger (tools and reports outside the tree). Everything below was in the original hack unless noted.
+- Crashes and hangs: gold's Ruins of Alph inner chamber froze on about 1 Unown encounter in 5 (FireRed's Tanoby
+  letter table read out of bounds; gold edit). Unown outside the Tanoby slots now get a random letter. Unreachable
+  Ice Path immediate triggers that hang the game are removed.
+- Scripts that ran garbage during a warp fade now end at the warp (Slowpoke Well Kurt scene executed heap memory;
+  Union Cave Lapras reset the phone/rematch step timer; Goldenrod basement switch wrote RAM; stray text boxes).
+- Teleport/white-out: Mahogany and Blackthorn Pokémon Centers set each other's heal point and fly flag (Teleport
+  could strand the player inside a rock in Mahogany; Fly to Blackthorn opened before the Ice Path). Cherrygrove and
+  Olivine centers never set the heal point. Declining a heal at the Rock Tunnel/Lavender centers left the text box
+  open and the NPCs frozen.
+- Forced-shiny mode stayed on after losing to the Lake of Rage Gyarados (every later Pokémon shiny until reset); now
+  explicit on/off around the Gyarados's creation, and cleared on white-out.
+- Phone: contact 25's call stopped at a 0xFF; rematch top tiers used placeholder flag 0x8888 (read from palette RAM),
+  now the Earth Badge flag 0x030; Erin's top tier battled Pokémaniac Brent's party; five trainer held items were 0xFFFF.
+- Items: item balls sharing a flag with another item or a story event (e.g. the only LEFTOVERS vs the Route 17 Max
+  Ether; a Route 32 Great Ball vs the Coin Case) got their own flags (0x1D00+); Cianwood's two rock items had flag 0
+  and respawned forever; garbage hidden items that gave 8 "????????" are removed.
+- Data: the 13 species whose evolutions the hack edited had friendship 0 and wrong colour/rare item (editor
+  corruption), restored; RAGECANDYBAR had no use effect (now heals 20 HP); EXPN CARD still acted as the Poké Flute.
+- Engine via vanilla aliases: Cut at Mt. Silver (24,25) ran FireRed's Ruin Valley door code; FireRed map-preview
+  pictures showed on Johto places (only Diglett's Cave, Silph Co. and Victory Road keep theirs).
+- Cosmetic: `playbgm SE_*` sound effects silenced the map music; Route 10's music swap wrote var 0x7032 instead of
+  0x7033; the champion mugshot chose the rival by trainer id parity; two over-wide text lines.
+- Robustness: the extension var lookup clamps a corrupt var count.
+- Fixed branch only: the Tanoby-slot Unown caves were locked by FLAG_SYS_UNLOCKED_TANOBY_RUINS (never set), so
+  wild Unown never appeared; Super Rod slots in the Cerulean Gym pool and Pallet water were species 0 ("??????????"
+  Lv1) and Sweet Scent in Ice Path room 6 did the same; the Route 43 boy ran FireRed's Nya double battle against
+  SILVER's Lv 65-70 team (now Ard's scene, with the missing trigger tile added); the Vermilion lucky gentleman paid
+  two prizes on a roll of 0; an S.S. Aqua ladder pointed at a missing warp.
+
 ### Hack bugs fixed during the port (all branches)
 - Save extension: link/trade saves skipped the extension (turning off after a trade lost it); the save-failed
   screen overwrote it; no bounds check on the var table; the load hook copied garbage from invalid sectors; the
