@@ -322,6 +322,13 @@ static const u8 sItemEffect_OranBerry[7] = {
     [6] = 10, // Amount of HP to recover
 };
 
+// ShinyGold fix: the hack turned the FIGY BERRY into the RAGECANDYBAR (heals 20 HP) and made it usable from the bag,
+// but it had no effect entry, so using it always failed ("It won't have any effect.").
+static const u8 sItemEffect_RageCandyBar[7] = {
+    [4] = ITEM4_HEAL_HP,
+    [6] = 20, // Amount of HP to recover
+};
+
 static const u8 sItemEffect_PersimBerry[6] = {
     [3] = ITEM3_CONFUSION,
 };
@@ -400,5 +407,6 @@ const u8 *const gItemEffectTable[] =
     [ITEM_PERSIM_BERRY - ITEM_POTION]  = sItemEffect_PersimBerry,
     [ITEM_LUM_BERRY - ITEM_POTION]     = sItemEffect_LumBerry,
     [ITEM_SITRUS_BERRY - ITEM_POTION]  = sItemEffect_SitrusBerry,
+    [ITEM_FIGY_BERRY - ITEM_POTION]    = sItemEffect_RageCandyBar,
     [LAST_BERRY_INDEX - ITEM_POTION]   = NULL,
 };

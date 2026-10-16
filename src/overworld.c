@@ -1,4 +1,5 @@
 #include "global.h"
+#include "force_shiny.h"
 #include "gflib.h"
 #include "bg_regs.h"
 #include "cable_club.h"
@@ -250,6 +251,7 @@ static const u16 sWhiteOutMoneyLossBadgeFlagIDs[] = {
 static void DoWhiteOut(void)
 {
     RunScriptImmediately(EventScript_ResetEliteFourEnd);
+    gForceShinyMons = FALSE; // ShinyGold fix: never carry forced-shiny mode past a white-out
     RemoveMoney(&gSaveBlock1Ptr->money, ComputeWhiteOutMoneyLoss());
     HealPlayerParty();
     Overworld_ResetStateAfterWhitingOut();

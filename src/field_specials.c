@@ -2297,6 +2297,9 @@ bool8 HasLearnedAllMovesFromCapeBrinkTutor(void)
 
 bool8 CutMoveRuinValleyCheck(void)
 {
+    // ShinyGold fix: FireRed's Ruin Valley map slot is Mt. Silver here, so Cut at (24,25) "opened" a door that isn't
+    // there and replaced a grass tile with a blank one for good.
+    return FALSE;
     if (FlagGet(FLAG_USED_CUT_ON_RUIN_VALLEY_BRAILLE) != TRUE
      && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_SIX_ISLAND_RUIN_VALLEY)
      && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_SIX_ISLAND_RUIN_VALLEY)

@@ -12678,29 +12678,29 @@
                 "species": "SPECIES_SHELLDER"
               },
               {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
+                "min_level": 30,
+                "max_level": 35,
+                "species": "SPECIES_TENTACOOL"
               },
               {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
+                "min_level": 30,
+                "max_level": 35,
+                "species": "SPECIES_CHINCHOU"
               },
               {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
+                "min_level": 35,
+                "max_level": 35,
+                "species": "SPECIES_TENTACRUEL"
               },
               {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
+                "min_level": 35,
+                "max_level": 35,
+                "species": "SPECIES_LANTURN"
               },
               {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
+                "min_level": 35,
+                "max_level": 35,
+                "species": "SPECIES_SHELLDER"
               }
             ]
           }
@@ -17335,72 +17335,7 @@
         },
         {
           "map": "MAP_ICE_PATH_CAVE6",
-          "base_label": "sIcePath_Cave6",
-          "land_mons": {
-            "encounter_rate": 0,
-            "mons": [
-              {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
-              }
-            ]
-          }
+          "base_label": "sIcePath_Cave6"
         },
         {
           "map": "MAP_DRAGONS_DEN_CAVE4",
@@ -18292,29 +18227,29 @@
                 "species": "SPECIES_STARYU"
               },
               {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
+                "min_level": 30,
+                "max_level": 35,
+                "species": "SPECIES_GOLDEEN"
               },
               {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
+                "min_level": 30,
+                "max_level": 35,
+                "species": "SPECIES_STARYU"
               },
               {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
+                "min_level": 35,
+                "max_level": 35,
+                "species": "SPECIES_SEAKING"
               },
               {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
+                "min_level": 35,
+                "max_level": 35,
+                "species": "SPECIES_CORSOLA"
               },
               {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_STARMIE"
               }
             ]
           }
@@ -18381,29 +18316,29 @@
                 "species": "SPECIES_STARYU"
               },
               {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
+                "min_level": 30,
+                "max_level": 35,
+                "species": "SPECIES_GOLDEEN"
               },
               {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
+                "min_level": 30,
+                "max_level": 35,
+                "species": "SPECIES_STARYU"
               },
               {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
+                "min_level": 35,
+                "max_level": 35,
+                "species": "SPECIES_SEAKING"
               },
               {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
+                "min_level": 35,
+                "max_level": 35,
+                "species": "SPECIES_CORSOLA"
               },
               {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_NONE"
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_STARMIE"
               }
             ]
           }
