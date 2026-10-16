@@ -106,6 +106,8 @@ static bool8 CheckTrainer(u8 trainerObjId)
 {
     const u8 *script = GetObjectEventScriptPointerByObjectEventId(trainerObjId);
     u8 approachDistance;
+    if (script == NULL) // ShinyGold: object without a template
+        return FALSE;
     if (GetTrainerFlagFromScriptPointer(script))
         return FALSE;
     approachDistance = GetTrainerApproachDistance(&gObjectEvents[trainerObjId]);

@@ -176,7 +176,8 @@ void BugContest_Judge(void)
 // For place VAR_0x8004 (1-3): STR_VAR_1 = the winner, STR_VAR_2 = the POKéMON, STR_VAR_3 = the score.
 void BugContest_BufferPlace(void)
 {
-    const struct BugContestPlace *place = &sBugContestPlaces[(gSpecialVar_0x8004 - 1) % 3];
+    // (clamped: 0 used to read sBugContestPlaces[-1])
+    const struct BugContestPlace *place = &sBugContestPlaces[(gSpecialVar_0x8004 >= 1 && gSpecialVar_0x8004 <= 3) ? gSpecialVar_0x8004 - 1 : 0];
 
     if (place->contestant == CONTESTANT_PLAYER)
         StringCopy(gStringVar1, gSaveBlock2Ptr->playerName);
