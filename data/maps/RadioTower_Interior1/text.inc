@@ -1,62 +1,60 @@
-RadioTower_Interior1_Text_Gentleman_1::
-	.string "Hi, do you want to participate in\n"
-	.string "our little game?\p"
-	.string "For just ¥300, you can try your\n"
-	.string "luck!\p"
-	.string "Get one of the colored balls and\n"
-	.string "you will get a prize!\p"
-	.string "How about it?\n"
-	.string "Just ¥300!$"
+@ pokegold maps/RadioTower1F.asm and data/text/common_2.asm
+RadioTower_Interior1_Text_LuckyNumberAskToPlay::
+	.string "Hi, are you here for the LUCKY\n"
+	.string "NUMBER SHOW?\p"
+	.string "Want me to check the ID numbers\n"
+	.string "of your POKéMON?\p"
+	.string "If you get lucky, you win a prize.$"
 
-RadioTower_Interior1_Text_Gentleman_2::
-	.string "OK, if you want to play, come again!$"
+RadioTower_Interior1_Text_LuckyNumberThisWeeksId::
+	.string "This week’s ID number is\n"
+	.string "{STR_VAR_1}.$"
 
-RadioTower_Interior1_Text_Gentleman_3::
-	.string "{PLAYER} spins the ball holder…$"
+RadioTower_Interior1_Text_LuckyNumberCheckIfMatch::
+	.string "Let’s see if you have a match.$"
 
-RadioTower_Interior1_Text_Gentleman_4::
-	.string "Oops… Looks like you need some\n"
-	.string "money…$"
+RadioTower_Interior1_Text_LuckyNumberDotDotDot::
+	.string "……\n"
+	.string "……$"
 
-RadioTower_Interior1_Text_Gentleman_5::
-	.string "{PLAYER} gets a WHITE ball…$"
+RadioTower_Interior1_Text_LuckyNumberMatchParty::
+	.string "Congratulations!\p"
+	.string "We have a match with the ID number\n"
+	.string "of {STR_VAR_2} in your party.$"
 
-RadioTower_Interior1_Text_Gentleman_6::
-	.string "Oh my…\n"
-	.string "Seems you didn’t have luck this time!\l"
-	.string "Try again!$"
+RadioTower_Interior1_Text_LuckyNumberMatchPC::
+	.string "Congratulations!\p"
+	.string "We have a match with the ID number\n"
+	.string "of {STR_VAR_2} in your PC BOX.$"
 
-RadioTower_Interior1_Text_Gentleman_7::
-	.string "{PLAYER} gets a RED ball…$"
+RadioTower_Interior1_Text_LuckyNumberPerfectMatch::
+	.string "Wow! You have a perfect match of\n"
+	.string "all five numbers!\p"
+	.string "We have a grand prize winner!\p"
+	.string "You have won a MASTER BALL!$"
 
-RadioTower_Interior1_Text_Gentleman_8::
-	.string "We have a winner!\p"
-	.string "This RED BALL means you win the\n"
-	.string "prize… FULL RESTORE!$"
+RadioTower_Interior1_Text_LuckyNumberOkayMatch::
+	.string "Hey! You’ve matched the last three\n"
+	.string "numbers!\p"
+	.string "You’ve won second prize,\n"
+	.string "an EXP. SHARE!$"
 
-RadioTower_Interior1_Text_Gentleman_9::
-	.string "{PLAYER} gets a BLUE ball…$"
+RadioTower_Interior1_Text_LuckyNumberWeakMatch::
+	.string "Ooh, you’ve matched the last two\n"
+	.string "numbers.\p"
+	.string "You’ve won third prize, a PP UP.$"
 
-RadioTower_Interior1_Text_Gentleman_10::
-	.string "We have a winner!\p"
-	.string "This BLUE BALL means you win the\n"
-	.string "prize… PP UP!$"
+RadioTower_Interior1_Text_LuckyNumberNoMatch::
+	.string "Nope, none of your ID numbers\n"
+	.string "match.$"
 
-RadioTower_Interior1_Text_Gentleman_11::
-	.string "{PLAYER} gets a GREEN ball…$"
+RadioTower_Interior1_Text_LuckyNumberNoRoom::
+	.string "You’ve got no room for your prize.\p"
+	.string "Make room and come back right away.$"
 
-RadioTower_Interior1_Text_Gentleman_12::
-	.string "We have a winner!\p"
-	.string "This GREEN BALL means you win the\n"
-	.string "prize… HP UP!$"
-
-RadioTower_Interior1_Text_Gentleman_13::
-	.string "{PLAYER} gets a GOLD ball…$"
-
-RadioTower_Interior1_Text_Gentleman_14::
-	.string "We have a winner!\p"
-	.string "This GOLD BALL means you win the\n"
-	.string "prize… MAX REVIVE!$"
+RadioTower_Interior1_Text_LuckyNumberComeAgain::
+	.string "Please come back next week for the\n"
+	.string "next LUCKY NUMBER.$"
 
 RadioTower_Interior1_Text_WorkerF_1::
 	.string "We have a special quiz campaign on\n"
