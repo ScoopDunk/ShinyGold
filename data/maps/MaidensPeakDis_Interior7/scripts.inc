@@ -1,14 +1,3 @@
 MaidensPeakDis_Interior7_MapScripts::
+	@ ShinyGold: unreachable map, emptied (the slot is kept so map ids stay the same)
 	.byte 0
-
-MaidensPeakDis_Interior7_EventScript_Gentleman::
-	msgbox MaidensPeakDis_Interior7_Text_Gentleman, MSGBOX_NPC
-	end
-
-MaidensPeakDis_Interior7_EventScript_Scientist::
-	msgbox MaidensPeakDis_Interior7_Text_Scientist, MSGBOX_NPC
-	end
-
-MaidensPeakDis_Interior7_EventScript_Fisher::
-	msgbox MaidensPeakDis_Interior7_Text_Fisher, MSGBOX_NPC
-	end

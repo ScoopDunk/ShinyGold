@@ -24,10 +24,6 @@ GreenPlains_EventScript_Mew::
 	release
 	end
 
-GreenPlains_EventScript_Sign1::
-	msgbox GreenPlains_Text_Sign1, MSGBOX_SIGN
-	end
-
 GreenPlains_EventScript_Sign2::
 	msgbox GreenPlains_Text_Sign2, MSGBOX_SIGN
 	end

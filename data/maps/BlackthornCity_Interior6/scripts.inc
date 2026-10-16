@@ -31,7 +31,3 @@ BlackthornCity_Interior6_EventScript_BlackBelt::
 BlackthornCity_Interior6_EventScript_Camper::
 	msgbox BlackthornCity_Interior6_Text_Camper, MSGBOX_NPC
 	end
-
-BlackthornCity_Interior6_EventScript_Hiker::
-	msgbox BlackthornCity_Interior6_Text_Hiker, MSGBOX_NPC
-	end

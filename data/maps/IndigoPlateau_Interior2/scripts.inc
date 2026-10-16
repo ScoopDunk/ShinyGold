@@ -47,20 +47,13 @@ IndigoPlateau_Interior2_EventScript_Koga::
 	msgbox IndigoPlateau_Interior2_Text_Koga_1, MSGBOX_NPC
 	setflag FLAG_TEMP_3
 	setflag FLAG_TEMP_5
-	goto_if_set 0x115B, IndigoPlateau_Interior2_EventScript_Koga_2
-	goto_if_unset 0x115B, IndigoPlateau_Interior2_EventScript_Koga_3
+	@ ShinyGold: the stronger rematch behind flag 0x115B is removed; nothing ever set that flag
+	goto IndigoPlateau_Interior2_EventScript_Koga_3
 	end
 
 IndigoPlateau_Interior2_EventScript_Koga_1::
 	msgbox IndigoPlateau_Interior2_Text_Koga_2, MSGBOX_NPC
 	end
-
-IndigoPlateau_Interior2_EventScript_Koga_2::
-	trainerbattle_earlyrival TRAINER_LEADER_BLUE_2, 0, IndigoPlateau_Interior2_Text_KogaDefeat, IndigoPlateau_Interior2_Text_KogaVictory
-	setflag 0x4B9
-	call PokemonLeague_EventScript_OpenDoor
-	msgbox IndigoPlateau_Interior2_Text_Koga_2, MSGBOX_NPC
-	return
 
 IndigoPlateau_Interior2_EventScript_Koga_3::
 	trainerbattle_earlyrival TRAINER_ELITETRAINER_KOGA, 0, IndigoPlateau_Interior2_Text_KogaDefeat, IndigoPlateau_Interior2_Text_KogaVictory

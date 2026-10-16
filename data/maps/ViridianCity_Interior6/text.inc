@@ -54,6 +54,3 @@ ViridianCity_Interior6_Text_Trigger1Defeat::
 
 ViridianCity_Interior6_Text_Trigger1Victory::
 	.string "YES!$"
-
-ViridianCity_Interior6_Text_Sign::
-	.string "TEAM ROCKET left a way out!$"

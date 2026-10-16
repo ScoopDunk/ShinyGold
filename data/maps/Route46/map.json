@@ -23,48 +23,6 @@
   "object_events": [
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
-      "x": 9,
-      "y": 7,
-      "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 2,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Unused_G2_M68_EventScript_Woman2",
-      "flag": "0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_LANCE",
-      "x": 27,
-      "y": 18,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Unused_G2_M68_EventScript_Lance",
-      "flag": "0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_MAN",
-      "x": 10,
-      "y": 7,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Unused_G2_M68_EventScript_Man",
-      "flag": "0"
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 7,
       "y": 16,
@@ -75,7 +33,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route46_EventScript_ItemDireHit",
-      "flag": "0x18B"
+      "flag": "0x18B",
+      "explicit_local_id": 4
     },
     {
       "type": "object",
@@ -89,7 +48,8 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route46_EventScript_Picnicker116",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 5
     },
     {
       "type": "object",
@@ -103,7 +63,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Unused_G2_M68_EventScript_WorkerM",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 6
     },
     {
       "type": "object",
@@ -117,21 +78,8 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route46_EventScript_CamperTed",
-      "flag": "0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 3,
-      "y": 2,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Unused_G2_M68_EventScript_ItemPotion",
-      "flag": "0x1D1E"
+      "flag": "0",
+      "explicit_local_id": 7
     },
     {
       "type": "object",
@@ -145,21 +93,8 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route46_EventScript_HikerBailey",
-      "flag": "0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
-      "x": 7,
-      "y": 2,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_CutTree",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 9
     },
     {
       "type": "object",
@@ -224,24 +159,6 @@
     }
   ],
   "coord_events": [
-    {
-      "type": "trigger",
-      "x": 9,
-      "y": 8,
-      "elevation": 0,
-      "var": "0x0000",
-      "var_value": "0",
-      "script": "Route30_EventScript_Sign5"
-    },
-    {
-      "type": "trigger",
-      "x": 10,
-      "y": 9,
-      "elevation": 0,
-      "var": "0x0000",
-      "var_value": "0",
-      "script": "Route46_EventScript_Trigger2"
-    },
     {
       "type": "trigger",
       "x": 37,
@@ -329,26 +246,6 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route46_EventScript_Trigger2"
-    },
-    {
-      "type": "hidden_item",
-      "x": 1,
-      "y": 0,
-      "elevation": 3,
-      "item": "ITEM_ULTRA_BALL",
-      "flag": "FLAG_HIDDEN_ITEM_ONE_ISLAND_TREASURE_BEACH_ULTRA_BALL",
-      "quantity": 8,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 1,
-      "y": 0,
-      "elevation": 3,
-      "item": "ITEM_ULTRA_BALL",
-      "flag": "FLAG_HIDDEN_ITEM_ONE_ISLAND_TREASURE_BEACH_ULTRA_BALL_2",
-      "quantity": 8,
-      "underfoot": false
     }
   ]
 }

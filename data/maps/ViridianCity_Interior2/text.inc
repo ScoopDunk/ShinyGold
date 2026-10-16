@@ -1,83 +1,3 @@
-ViridianCity_Interior2_Text_BlackBeltWaiIntro::
-	.string "I’m the KARATE KING!\n"
-	.string "Your fate rests with me!$"
-
-ViridianCity_Interior2_Text_BlackBeltWaiDefeat::
-	.string "Ayah!$"
-
-ViridianCity_Interior2_Text_BlackBeltWai::
-	.string "The POKéMON LEAGUE?\n"
-	.string "You? Don’t get cocky!$"
-
-ViridianCity_Interior2_Text_LeaderSabrinaIntro::
-	.string "Heh!\n"
-	.string "You must be running out of steam\l"
-	.string "by now!$"
-
-ViridianCity_Interior2_Text_LeaderSabrinaDefeat::
-	.string "I ran out of gas!$"
-
-ViridianCity_Interior2_Text_LeaderSabrina::
-	.string "You’ll need power to keep up with\n"
-	.string "our GYM LEADER.$"
-
-ViridianCity_Interior2_Text_DragonTamerMikahilIntro::
-	.string "Rrrroar!\n"
-	.string "I’m working myself into a rage!$"
-
-ViridianCity_Interior2_Text_DragonTamerMikahilDefeat::
-	.string "Wargh!$"
-
-ViridianCity_Interior2_Text_DragonTamerMikahil::
-	.string "I’m still not worthy!$"
-
-ViridianCity_Interior2_Text_TamerJasonIntro::
-	.string "POKéMON and I, we make wonderful\n"
-	.string "music together!$"
-
-ViridianCity_Interior2_Text_TamerJasonDefeat::
-	.string "You are in perfect harmony!$"
-
-ViridianCity_Interior2_Text_TamerJason::
-	.string "Do you know the identity of our\n"
-	.string "GYM LEADER?$"
-
-ViridianCity_Interior2_Text_YoungsterFabricioIntro::
-	.string "Your POKéMON will cower at the\n"
-	.string "crack of my whip!$"
-
-ViridianCity_Interior2_Text_YoungsterFabricioDefeat::
-	.string "Yowch!\n"
-	.string "Whiplash!$"
-
-ViridianCity_Interior2_Text_YoungsterFabricio::
-	.string "Wait!\n"
-	.string "I was just careless!$"
-
-ViridianCity_Interior2_Text_BlackBeltKiyo2Intro::
-	.string "Karate is the ultimate form of\n"
-	.string "martial arts!$"
-
-ViridianCity_Interior2_Text_BlackBeltKiyo2Defeat::
-	.string "Aiyah!$"
-
-ViridianCity_Interior2_Text_BlackBeltKiyo2::
-	.string "If my POKéMON were as good at\n"
-	.string "karate as I…$"
-
-ViridianCity_Interior2_Text_RivalTerry4Intro::
-	.string "VIRIDIAN GYM was closed for a\n"
-	.string "long time.\p"
-	.string "But now, our LEADER is back!$"
-
-ViridianCity_Interior2_Text_RivalTerry4Defeat::
-	.string "I was beaten?$"
-
-ViridianCity_Interior2_Text_RivalTerry4::
-	.string "You can go on to the POKéMON\n"
-	.string "LEAGUE only by defeating our GYM\l"
-	.string "LEADER!$"
-
 ViridianCity_Interior2_Text_LeaderBlue2Intro::
 	.string "BLUE: Yo! Finally got here, huh?\p"
 	.string "I wasn’t in the mood as CINNABAR,\n"
@@ -112,16 +32,6 @@ ViridianCity_Interior2_Text_LeaderBlue2_2::
 	.string "You are a good trainer.\p"
 	.string "But I’m going to beat you someday.\n"
 	.string "Don’t you forget it!$"
-
-ViridianCity_Interior2_Text_LeaderErikaIntro::
-	.string "The truly talented win with style.$"
-
-ViridianCity_Interior2_Text_LeaderErikaDefeat::
-	.string "I lost my grip!$"
-
-ViridianCity_Interior2_Text_LeaderErika::
-	.string "The LEADER will scold me for\n"
-	.string "losing this way…$"
 
 ViridianCity_Interior2_Text_GymGuy_1::
 	.string "Yo, CHAMP in making!\n"

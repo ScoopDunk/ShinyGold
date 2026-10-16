@@ -94,11 +94,6 @@ BlackthornCity_Interior7_Text_Sign1_1::
 	.string "LEADER: CLAIR\p"
 	.string "WINNING TRAINERS:$"
 
-BlackthornCity_Interior7_Text_Sign1_2::
-	.string "BLACKTHORN CITY POKéMON GYM\n"
-	.string "LEADER: CLAIR\p"
-	.string "WINNING TRAINERS: {PLAYER} CARLOS$"
-
 BlackthornCity_Interior7_Text_Sign1_3::
 	.string "BLACKTHORN CITY POKéMON GYM\n"
 	.string "LEADER: CLAIR\p"

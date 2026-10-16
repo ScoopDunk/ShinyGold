@@ -14,14 +14,6 @@ CianwoodCity_Interior1_Text_GymGuy_2::
 	.string "{PLAYER}! You won!\n"
 	.string "I could tell by looking at you!$"
 
-CianwoodCity_Interior1_Text_Sailor::
-	.string "Did you ride a SEAGALLOP ferry\n"
-	.string "to get here?\p"
-	.string "There are at least ten of those\n"
-	.string "high-speed ships.\p"
-	.string "I don’t know where they all go,\n"
-	.string "though.$"
-
 CianwoodCity_Interior1_Text_Lass::
 	.string "Did you meet the POKéMANIAC?\p"
 	.string "He’s always bragging about his\n"

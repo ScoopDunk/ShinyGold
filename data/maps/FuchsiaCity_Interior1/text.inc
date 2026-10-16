@@ -8,7 +8,3 @@ FuchsiaCity_Interior1_Text_FatMan_1::
 FuchsiaCity_Interior1_Text_FatMan_2::
 	.string "Certain FIRE POKéMON will evolve\n"
 	.string "only using the FIRE STONE.$"
-
-FuchsiaCity_Interior1_Text_Woman1::
-	.string "SARA: Where did my boyfriend,\n"
-	.string "ERIK, go?$"

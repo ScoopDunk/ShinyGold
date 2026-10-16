@@ -1,6 +1,3 @@
 LavenderTown_Interior2_MapScripts::
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, ViridianCity_Interior5_OnFrame
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, ViridianCity_Interior5_OnWarp
-	map_script MAP_SCRIPT_ON_LOAD, CableClub_OnLoad
-	map_script MAP_SCRIPT_ON_TRANSITION, CableClub_OnTransition
+	@ ShinyGold: unreachable map, emptied (the slot is kept so map ids stay the same)
 	.byte 0

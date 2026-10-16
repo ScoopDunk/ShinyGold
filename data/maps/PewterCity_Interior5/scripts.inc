@@ -1,10 +1,6 @@
 PewterCity_Interior5_MapScripts::
 	.byte 0
 
-PewterCity_Interior5_EventScript_BaldingMan::
-	msgbox PewterCity_Interior5_Text_BaldingMan, MSGBOX_NPC
-	end
-
 PewterCity_Interior5_EventScript_LittleBoy::
 	lock
 	msgbox PewterCity_Interior5_Text_LittleBoy_1

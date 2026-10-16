@@ -17,34 +17,6 @@
   "object_events": [
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 28,
-      "y": 0,
-      "elevation": 4,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "CeruleanCave_B1F_EventScript_ItemUltraBall",
-      "flag": "0x1B8"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 29,
-      "y": 0,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "CeruleanCave_B1F_EventScript_ItemMaxRevive",
-      "flag": "0x1B7"
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_MEWTWO",
       "x": 30,
       "y": 5,
@@ -55,7 +27,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route4_Cave1_EventScript_Mewtwo",
-      "flag": "0x081"
+      "flag": "0x081",
+      "explicit_local_id": 3
     },
     {
       "type": "object",
@@ -69,7 +42,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_RockSmash",
-      "flag": "FLAG_TEMP_12"
+      "flag": "FLAG_TEMP_12",
+      "explicit_local_id": 4
     },
     {
       "type": "object",
@@ -83,7 +57,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_RockSmash",
-      "flag": "FLAG_TEMP_13"
+      "flag": "FLAG_TEMP_13",
+      "explicit_local_id": 5
     },
     {
       "type": "object",
@@ -97,7 +72,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_RockSmash",
-      "flag": "FLAG_TEMP_14"
+      "flag": "FLAG_TEMP_14",
+      "explicit_local_id": 6
     },
     {
       "type": "object",
@@ -111,7 +87,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_RockSmash",
-      "flag": "FLAG_TEMP_15"
+      "flag": "FLAG_TEMP_15",
+      "explicit_local_id": 7
     },
     {
       "type": "object",
@@ -125,7 +102,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_RockSmash",
-      "flag": "FLAG_TEMP_16"
+      "flag": "FLAG_TEMP_16",
+      "explicit_local_id": 8
     },
     {
       "type": "object",
@@ -139,7 +117,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_RockSmash",
-      "flag": "FLAG_TEMP_17"
+      "flag": "FLAG_TEMP_17",
+      "explicit_local_id": 9
     },
     {
       "type": "object",
@@ -153,7 +132,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_RockSmash",
-      "flag": "FLAG_TEMP_18"
+      "flag": "FLAG_TEMP_18",
+      "explicit_local_id": 10
     },
     {
       "type": "object",
@@ -167,7 +147,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_RockSmash",
-      "flag": "FLAG_TEMP_19"
+      "flag": "FLAG_TEMP_19",
+      "explicit_local_id": 11
     },
     {
       "type": "object",
@@ -181,7 +162,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_RockSmash",
-      "flag": "FLAG_TEMP_1A"
+      "flag": "FLAG_TEMP_1A",
+      "explicit_local_id": 12
     }
   ],
   "warp_events": [

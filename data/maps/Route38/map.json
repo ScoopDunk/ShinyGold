@@ -256,13 +256,6 @@
       "elevation": 3,
       "dest_map": "MAP_ECRUTEAK_CITY_INTERIOR2",
       "dest_warp_id": "1"
-    },
-    {
-      "x": 2,
-      "y": 0,
-      "elevation": 3,
-      "dest_map": "MAP_MAIDENS_PEAK_DIS_CAVE6",
-      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

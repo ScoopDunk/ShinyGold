@@ -105,15 +105,6 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 11,
-      "y": 15,
-      "elevation": 3,
-      "var": "0x4059",
-      "var_value": "0",
-      "script": "Unused_PokemonTower_6F_EventScript_Trigger1"
-    },
-    {
-      "type": "trigger",
       "x": 12,
       "y": 16,
       "elevation": 3,

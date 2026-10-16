@@ -1,6 +1,3 @@
 Unused_Route12_NorthEntrance_1F_MapScripts::
+	@ ShinyGold: unreachable map, emptied (the slot is kept so map ids stay the same)
 	.byte 0
-
-Unused_Route12_NorthEntrance_1F_EventScript_Policeman::
-	msgbox Unused_Route12_NorthEntrance_1F_Text_Policeman, MSGBOX_NPC
-	end

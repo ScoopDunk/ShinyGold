@@ -22,36 +22,12 @@ CinnabarIsland_EventScript_Blue::
 	release
 	end
 
-CinnabarIsland_EventScript_OldMan1::
-	msgbox CinnabarIsland_Text_OldMan1, MSGBOX_NPC
-	end
-
 CinnabarIsland_EventScript_ItemRareCandy::
 	finditem ITEM_RARE_CANDY
 	end
 
-CinnabarIsland_EventScript_Trigger::
-	lockall
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
-	waitmovement 0
-	delay 20
-	msgbox CinnabarIsland_Text_Trigger
-	closemessage
-	applymovement LOCALID_PLAYER, CinnabarIsland_Movement_Trigger
-	waitmovement 0
-	releaseall
-	end
-
-CinnabarIsland_Movement_Trigger::
-	walk_down
-	step_end
-
 CinnabarIsland_EventScript_Sign1::
 	msgbox CinnabarIsland_Text_Sign1, MSGBOX_SIGN
-	end
-
-CinnabarIsland_EventScript_Sign2::
-	msgbox CinnabarIsland_Text_Sign2, MSGBOX_SIGN
 	end
 
 CinnabarIsland_EventScript_Sign3::

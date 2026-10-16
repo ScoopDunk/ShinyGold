@@ -32,7 +32,3 @@ VioletCity_Interior5_EventScript_OldWoman::
 VioletCity_Interior5_EventScript_Youngster::
 	msgbox VioletCity_Interior5_Text_Youngster, MSGBOX_NPC
 	end
-
-VioletCity_Interior5_EventScript_Youngster2::
-	msgbox VioletCity_Interior5_Text_Youngster2, MSGBOX_NPC
-	end

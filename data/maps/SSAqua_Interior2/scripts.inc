@@ -493,15 +493,6 @@ SSAqua_Interior2_Movement_Trigger7::
 	walk_down
 	step_end
 
-SSAqua_Interior2_EventScript_Trigger8::
-	call_if_unset 0x1178, SSAqua_Interior2_EventScript_Trigger8_1
-	call_if_set 0x1179, SSAqua_Interior2_EventScript_Trigger8_1
-	msgbox SSAqua_Interior2_Text_Trigger8_1, MSGBOX_NPC
-	applymovement 1, SSAqua_Interior2_Movement_Trigger8
-	delay 1
-	msgbox SSAqua_Interior2_Text_Trigger8_2, MSGBOX_NPC
-	end
-
 SSAqua_Interior2_EventScript_Trigger8_1::
 	release
 	end

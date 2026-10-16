@@ -1,7 +1,3 @@
 UnknownRuins_Cave1_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, UnknownRuins_Cave1_OnTransition
+	@ ShinyGold: unreachable map, emptied (the slot is kept so map ids stay the same)
 	.byte 0
-
-UnknownRuins_Cave1_OnTransition::
-	setworldmapflag FLAG_WORLD_MAP_CERULEAN_CAVE_1F
-	end

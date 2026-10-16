@@ -11,13 +11,8 @@ CherrygroveCity_Interior1_OnTransition::
 	end
 
 CherrygroveCity_Interior1_OnLoad::
-	call_if_ge 0x4076, 5, CherrygroveCity_Interior1_EventScript_OnLoad_1
 	call_if_set FLAG_SYS_CAN_LINK_WITH_RS, CherrygroveCity_Interior1_EventScript_OnLoad_2
 	end
-
-CherrygroveCity_Interior1_EventScript_OnLoad_1::
-	setmetatile 13, 4, 0x35D, 1
-	return
 
 CherrygroveCity_Interior1_EventScript_OnLoad_2::
 	call CherrygroveCity_Interior1_EventScript_OnLoad_3

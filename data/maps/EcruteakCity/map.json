@@ -297,15 +297,6 @@
     },
     {
       "type": "trigger",
-      "x": 0,
-      "y": 8,
-      "elevation": 0,
-      "var": "0x0000",
-      "var_value": "0",
-      "script": "0x0"
-    },
-    {
-      "type": "trigger",
       "x": 9,
       "y": 29,
       "elevation": 3,

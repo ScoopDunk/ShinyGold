@@ -1,32 +1,3 @@
-NewBarkTown_Interior3_Text_FrameScene1_1::
-	.string "{RIVAL}: Gramps!\n"
-	.string "I’m fed up with waiting!$"
-
-NewBarkTown_Interior3_Text_FrameScene1_2::
-	.string "OAK: {RIVAL}?\n"
-	.string "Let me think…\p"
-	.string "Oh, that’s right, I told you to\n"
-	.string "come! Just wait!\p"
-	.string "Here, {PLAYER}.\p"
-	.string "There are three POKéMON here.\p"
-	.string "Haha!\p"
-	.string "The POKéMON are held inside\n"
-	.string "these POKé BALLS.\p"
-	.string "When I was young, I was a serious\n"
-	.string "POKéMON TRAINER.\p"
-	.string "But now, in my old age, I have\n"
-	.string "only these three left.\p"
-	.string "You can have one.\n"
-	.string "Go on, choose!$"
-
-NewBarkTown_Interior3_Text_FrameScene1_3::
-	.string "{RIVAL}: Hey! Gramps! No fair!\n"
-	.string "What about me?$"
-
-NewBarkTown_Interior3_Text_FrameScene1_4::
-	.string "OAK: Be patient, {RIVAL}.\n"
-	.string "You can have one, too!$"
-
 NewBarkTown_Interior3_Text_FrameScene2_1::
 	.string "Recently, there have been sightings\n"
 	.string "of many rare POKéMON species.\p"
@@ -351,11 +322,6 @@ NewBarkTown_Interior3_Text_Scientist3_18::
 	.string "{PLAYER}! Hahaha!\p"
 	.string "Don’t bother coming around to\n"
 	.string "my place after this!$"
-
-NewBarkTown_Interior3_Text_Scientist3_19::
-	.string "OAK: {PLAYER}, raise your young\n"
-	.string "POKéMON by making it battle.\p"
-	.string "It has to battle for it to grow.$"
 
 NewBarkTown_Interior3_Text_Scientist3_20::
 	.string "OAK: If a wild POKéMON appears,\n"

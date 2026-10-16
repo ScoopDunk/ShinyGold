@@ -1,5 +1,5 @@
 Unused_G2_M68_MapScripts::
-	@ ShinyGold: map script header pointer was NULL
+	@ ShinyGold: unreachable map, emptied (the slot is kept so map ids stay the same)
 	.byte 0
 
 Unused_G2_M68_EventScript_Woman2::
@@ -28,22 +28,6 @@ Unused_G2_M68_EventScript_WorkerM::
 
 Unused_G2_M68_EventScript_ItemPotion::
 	finditem ITEM_POTION
-	end
-
-Unused_G2_M68_EventScript_Trigger1::
-	call_if_set 0x1007, Unused_G2_M68_EventScript_Trigger1_1
-	nop1
-	msgbox Unused_G2_M68_Text_Trigger1_1, MSGBOX_NPC
-	applymovement 2, Unused_G2_M68_Movement_Trigger1_1
-	delay 144
-	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_194, 0, Unused_G2_M68_Text_Trigger1Defeat, Unused_G2_M68_Text_Trigger1Defeat
-	setflag 0x1007
-	delay 32
-	msgbox Unused_G2_M68_Text_Trigger1_2, MSGBOX_NPC
-	applymovement LOCALID_PLAYER, Unused_G2_M68_Movement_Trigger1_2
-	applymovement 2, Unused_G2_M68_Movement_Trigger1_3
-	delay 224
-	release
 	end
 
 Unused_G2_M68_EventScript_Trigger1_1::

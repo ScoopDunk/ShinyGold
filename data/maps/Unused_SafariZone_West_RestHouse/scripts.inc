@@ -1,14 +1,3 @@
 Unused_SafariZone_West_RestHouse_MapScripts::
+	@ ShinyGold: unreachable map, emptied (the slot is kept so map ids stay the same)
 	.byte 0
-
-Unused_SafariZone_West_RestHouse_EventScript_Scientist::
-	msgbox Unused_SafariZone_West_RestHouse_Text_Scientist, MSGBOX_NPC
-	end
-
-Unused_SafariZone_West_RestHouse_EventScript_Man::
-	msgbox Unused_SafariZone_West_RestHouse_Text_Man, MSGBOX_NPC
-	end
-
-Unused_SafariZone_West_RestHouse_EventScript_CooltrainerF::
-	msgbox Unused_SafariZone_West_RestHouse_Text_CooltrainerF, MSGBOX_NPC
-	end

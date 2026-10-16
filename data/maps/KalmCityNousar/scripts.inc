@@ -1,5 +1,5 @@
 KalmCityNousar_MapScripts::
-	@ ShinyGold: 6 entries with invalid type(s) 0x6C, 0x18, 0x0F, 0x08, 0x0F, 0x08 dropped (inert: the engine skips them)
+	@ ShinyGold: unreachable map, emptied (the slot is kept so map ids stay the same)
 	.byte 0
 
 KalmCityNousar_EventScript_ItemMaxPotion::

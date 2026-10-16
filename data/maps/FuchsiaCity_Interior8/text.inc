@@ -5,8 +5,3 @@ FuchsiaCity_Interior8_Text_Youngster::
 FuchsiaCity_Interior8_Text_Woman2::
 	.string "My grandpa is at my brother BILL’s\n"
 	.string "on CERULEAN CAPE.$"
-
-FuchsiaCity_Interior8_Text_LittleBoy::
-	.string "BILL files his own POKéMON data on\n"
-	.string "his PC.\p"
-	.string "Did he show you?$"

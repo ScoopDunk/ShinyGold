@@ -213,51 +213,6 @@ Route27_Movement_Trigger3_4::
 	walk_fast_down
 	step_end
 
-Route27_EventScript_Trigger4::
-	call_if_set 0x1153, Route27_EventScript_Trigger4_1
-	setflag 0x1153
-	applymovement 1, Route27_Movement_Trigger4_1
-	delay 48
-	applymovement 1, Route27_Movement_Trigger4_2
-	delay 16
-	msgbox Route27_Text_FatMan_1, MSGBOX_NPC
-	end
-
-Route27_EventScript_Trigger4_1::
-	release
-	end
-
-Route27_Movement_Trigger4_1::
-	face_left
-	emote_exclamation_mark
-	step_end
-
-Route27_Movement_Trigger4_2::
-	walk_down
-	face_left
-	step_end
-
-Route27_EventScript_Trigger5::
-	call_if_set 0x1153, Route27_EventScript_Trigger4_1
-	setflag 0x1153
-	applymovement 1, Route27_Movement_Trigger4_1
-	delay 48
-	applymovement 1, Route27_Movement_Trigger5
-	delay 32
-	msgbox Route27_Text_FatMan_1, MSGBOX_NPC
-	end
-
-Route27_Movement_Trigger5::
-	walk_down
-	walk_down
-	face_left
-	step_end
-
-Route27_EventScript_Trigger6::
-	setflag 0x1152
-	release
-	end
-
 Route27_EventScript_Sign::
 	msgbox Route27_Text_Sign, MSGBOX_AUTOCLOSE
 	end

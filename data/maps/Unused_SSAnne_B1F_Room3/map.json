@@ -1,58 +1,21 @@
 {
   "id": "MAP_UNUSED_SS_ANNE_B1F_ROOM3",
   "name": "Unused_SSAnne_B1F_Room3",
-  "layout": "LAYOUT_SS_AQUA_INTERIOR15",
+  "layout": "LAYOUT_EMPTY_STUB",
   "music": "MUS_SS_ANNE",
-  "region_map_section": "MAPSEC_KALM_CITY_NOUSAR",
+  "region_map_section": "MAPSEC_NONE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
   "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": true,
-  "show_map_name": true,
+  "show_map_name": false,
   "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
-  "object_events": [
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_SAILOR",
-      "x": 4,
-      "y": 4,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
-      "script": "Unused_SSAnne_B1F_Room3_EventScript_SageEdmond",
-      "flag": "0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 1,
-      "y": 5,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "SSAnne_B1F_Room3_EventScript_ItemEther",
-      "flag": "0x168"
-    }
-  ],
-  "warp_events": [
-    {
-      "x": 4,
-      "y": 7,
-      "elevation": 3,
-      "dest_map": "MAP_SS_AQUA_INTERIOR5",
-      "dest_warp_id": "3"
-    }
-  ],
+  "object_events": [],
+  "warp_events": [],
   "coord_events": [],
   "bg_events": []
 }

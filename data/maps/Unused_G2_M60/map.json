@@ -1,9 +1,9 @@
 {
   "id": "MAP_UNUSED_G2_M60",
   "name": "Unused_G2_M60",
-  "layout": "LAYOUT_UNUSED_G2_M60",
+  "layout": "LAYOUT_EMPTY_STUB",
   "music": "MUS_PEWTER",
-  "region_map_section": "MAPSEC_KALM_CITY_NOUSAR",
+  "region_map_section": "MAPSEC_NONE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
@@ -14,69 +14,8 @@
   "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
-  "object_events": [
-    {
-      "type": "object",
-      "graphics_id": "0xDD",
-      "x": -6173,
-      "y": -8729,
-      "elevation": 214,
-      "movement_type": "0xE0",
-      "movement_range_x": 9,
-      "movement_range_y": 13,
-      "trainer_type": "0xE3E8",
-      "trainer_sight_or_berry_tree_id": "56064",
-      "script": "0xE800E8D9",
-      "flag": "0xE6DC",
-      "explicit_local_id": 254
-    },
-    {
-      "type": "object",
-      "graphics_id": "0xDC",
-      "x": -9010,
-      "y": 217,
-      "elevation": 189,
-      "movement_type": "0xC2",
-      "movement_range_x": 11,
-      "movement_range_y": 11,
-      "trainer_type": "0xC9BD",
-      "trainer_sight_or_berry_tree_id": "50875",
-      "script": "0xC8BBC700",
-      "flag": "0xE7B4",
-      "explicit_local_id": 219
-    },
-    {
-      "type": "object",
-      "graphics_id": "0xC5",
-      "x": -14135,
-      "y": -10496,
-      "elevation": 213,
-      "movement_type": "0xE2",
-      "movement_range_x": 14,
-      "movement_range_y": 15,
-      "trainer_type": "0xCECF",
-      "trainer_sight_or_berry_tree_id": "55296",
-      "script": "0x00E2EBE3",
-      "flag": "0xE6E8",
-      "explicit_local_id": 201
-    }
-  ],
-  "warp_events": [
-    {
-      "x": -21017,
-      "y": 255,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE31",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 7,
-      "y": 9,
-      "elevation": 3,
-      "dest_map": "MAP_VIOLET_CITY",
-      "dest_warp_id": "0"
-    }
-  ],
+  "object_events": [],
+  "warp_events": [],
   "coord_events": [],
   "bg_events": []
 }

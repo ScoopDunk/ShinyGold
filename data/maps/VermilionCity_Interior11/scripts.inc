@@ -22,10 +22,6 @@ VermilionCity_Interior11_EventScript_Fisher::
 	msgbox VermilionCity_Interior11_Text_Fisher, MSGBOX_NPC
 	end
 
-VermilionCity_Interior11_EventScript_Youngster::
-	msgbox VermilionCity_Interior11_Text_Youngster, MSGBOX_NPC
-	end
-
 VermilionCity_Interior11_EventScript_Sailor::
 	msgbox VermilionCity_Interior11_Text_Sailor, MSGBOX_NPC
 	end

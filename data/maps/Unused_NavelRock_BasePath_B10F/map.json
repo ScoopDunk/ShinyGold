@@ -427,15 +427,6 @@
     },
     {
       "type": "trigger",
-      "x": 10,
-      "y": 27,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger13"
-    },
-    {
-      "type": "trigger",
       "x": 22,
       "y": 25,
       "elevation": 3,
@@ -447,15 +438,6 @@
       "type": "trigger",
       "x": 22,
       "y": 26,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "Unused_NavelRock_BasePath_B10F_EventScript_Trigger16"
-    },
-    {
-      "type": "trigger",
-      "x": 22,
-      "y": 27,
       "elevation": 3,
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",

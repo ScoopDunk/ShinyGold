@@ -1,13 +1,6 @@
 Unused_FiveIsland_LostCave_Room13_MapScripts::
-	@ ShinyGold: overlapping data duplicated from 0x08164CCD
-	@ ShinyGold: 11 entries with invalid type(s) 0xE0, 0x08, 0x08, 0x08, 0x16, 0x92, 0xF0, 0x08, 0x1A, 0x4D, 0x5E dropped (inert: the engine skips them)
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, 0x164CFC03
-	map_script MAP_SCRIPT_ON_TRANSITION, Unused_FiveIsland_LostCave_Room13_OnTransition
+	@ ShinyGold: unreachable map, emptied (the slot is kept so map ids stay the same)
 	.byte 0
-
-Unused_FiveIsland_LostCave_Room13_OnTransition::
-	call EventScript_TryDarkenRuins
-	end
 
 Unused_FiveIsland_LostCave_Room13_EventScript_MgDeliveryman::
 	getpartysize

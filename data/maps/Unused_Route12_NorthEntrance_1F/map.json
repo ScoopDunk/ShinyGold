@@ -1,9 +1,9 @@
 {
   "id": "MAP_UNUSED_ROUTE12_NORTH_ENTRANCE_1F",
   "name": "Unused_Route12_NorthEntrance_1F",
-  "layout": "LAYOUT_UNUSED_ROUTE12_NORTH_ENTRANCE_1F",
+  "layout": "LAYOUT_EMPTY_STUB",
   "music": "MUS_PEWTER",
-  "region_map_section": "MAPSEC_MAIDENS_PEAK_DIS",
+  "region_map_section": "MAPSEC_NONE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
@@ -14,59 +14,8 @@
   "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
-  "object_events": [
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_POLICEMAN",
-      "x": 1,
-      "y": 5,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Unused_Route12_NorthEntrance_1F_EventScript_Policeman",
-      "flag": "0"
-    }
-  ],
-  "warp_events": [
-    {
-      "x": 5,
-      "y": 1,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE12",
-      "dest_warp_id": "1"
-    },
-    {
-      "x": 6,
-      "y": 1,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE12",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 5,
-      "y": 11,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE12",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 6,
-      "y": 11,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE12",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 8,
-      "y": 10,
-      "elevation": 3,
-      "dest_map": "MAP_UNUSED_ROUTE12_NORTH_ENTRANCE_2F",
-      "dest_warp_id": "0"
-    }
-  ],
+  "object_events": [],
+  "warp_events": [],
   "coord_events": [],
   "bg_events": []
 }

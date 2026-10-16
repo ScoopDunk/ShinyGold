@@ -32,20 +32,6 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 12,
-      "y": 14,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Unused_NavelRock_BasePath_B11F_EventScript_ItemBall",
-      "flag": "0x1142"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
       "x": 11,
       "y": 10,
       "elevation": 0,
@@ -55,7 +41,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Unused_NavelRock_BasePath_B11F_EventScript_ItemBall",
-      "flag": "0x1143"
+      "flag": "0x1143",
+      "explicit_local_id": 3
     },
     {
       "type": "object",
@@ -69,7 +56,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Unused_NavelRock_BasePath_B11F_EventScript_ItemBall",
-      "flag": "0x1141"
+      "flag": "0x1141",
+      "explicit_local_id": 4
     },
     {
       "type": "object",
@@ -83,7 +71,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Unused_NavelRock_BasePath_B11F_EventScript_ItemBall",
-      "flag": "0x1146"
+      "flag": "0x1146",
+      "explicit_local_id": 5
     },
     {
       "type": "object",
@@ -97,7 +86,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Unused_NavelRock_BasePath_B11F_EventScript_ItemBall",
-      "flag": "0x1144"
+      "flag": "0x1144",
+      "explicit_local_id": 6
     },
     {
       "type": "object",
@@ -111,7 +101,8 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "BlackthornCity_Interior7_EventScript_CooltrainerPaul",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 7
     },
     {
       "type": "object",
@@ -125,7 +116,8 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "BlackthornCity_Interior7_EventScript_CooltrainerMike",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 8
     },
     {
       "type": "object",
@@ -139,7 +131,8 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "BlackthornCity_Interior7_EventScript_CooltrainerLola",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 9
     },
     {
       "type": "object",
@@ -153,7 +146,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BlackthornCity_Interior7_EventScript_LeaderClair",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 10
     },
     {
       "type": "object",
@@ -167,7 +161,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BlackthornCity_Interior7_EventScript_GymGuy",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 11
     }
   ],
   "warp_events": [
