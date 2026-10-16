@@ -18,7 +18,6 @@ AzaleaTown_Interior6_EventScript_BugCatcherBenny::
 	end
 
 AzaleaTown_Interior6_EventScript_LeaderBugsy::
-	setflag 0x1067
 	setvar VAR_0x8004, 2
 	setvar VAR_0x8005, 2
 	special UpdatePickStateFromSpecialVar8005
@@ -41,52 +40,6 @@ AzaleaTown_Interior6_EventScript_GymGuy::
 AzaleaTown_Interior6_EventScript_GymGuy_1::
 	msgbox AzaleaTown_Interior6_Text_GymGuy_2, MSGBOX_NPC
 	end
-
-AzaleaTown_Interior6_EventScript_TeachyTvHost::
-	faceplayer
-	call_if_set FLAG_BADGE02_GET, AzaleaTown_Interior6_EventScript_TeachyTvHost_1
-	call_if_set 0x1066, AzaleaTown_Interior6_EventScript_TeachyTvHost_2
-	msgbox AzaleaTown_Interior6_Text_TeachyTvHost_1, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 1, AzaleaTown_Interior6_EventScript_TeachyTvHost_3
-	msgbox AzaleaTown_Interior6_Text_TeachyTvHost_2, MSGBOX_NPC
-	applymovement LOCALID_PLAYER, AzaleaTown_Interior6_Movement_TeachyTvHost_1
-	applymovement 6, AzaleaTown_Interior6_Movement_TeachyTvHost_2
-	delay 80
-	setflag 0x1067
-	end
-
-AzaleaTown_Interior6_EventScript_TeachyTvHost_1::
-	msgbox AzaleaTown_Interior6_Text_TeachyTvHost_3, MSGBOX_NPC
-	end
-
-AzaleaTown_Interior6_EventScript_TeachyTvHost_2::
-	msgbox AzaleaTown_Interior6_Text_TeachyTvHost_4, MSGBOX_NPC
-	end
-
-AzaleaTown_Interior6_EventScript_TeachyTvHost_3::
-	msgbox AzaleaTown_Interior6_Text_TeachyTvHost_5, MSGBOX_NPC
-	call Route44_EventScript_PkmnTrainerCarlos3_1
-	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_CARLOS_2, 0, AzaleaTown_Interior6_Text_TeachyTvHostDefeat, AzaleaTown_Interior6_Text_TeachyTvHostDefeat
-	msgbox AzaleaTown_Interior6_Text_TeachyTvHost_6, MSGBOX_NPC
-	call Route44_EventScript_PkmnTrainerCarlos3_2
-	setflag 0x1066
-	end
-
-AzaleaTown_Interior6_Movement_TeachyTvHost_1::
-	walk_down
-	face_right
-	step_end
-
-AzaleaTown_Interior6_Movement_TeachyTvHost_2::
-	walk_down
-	walk_right
-	walk_right
-	walk_down
-	walk_down
-	set_invisible
-	walk_down
-	walk_down
-	step_end
 
 AzaleaTown_Interior6_EventScript_TwinsAmyAndMay::
 	trainerbattle_single TRAINER_TWINS_AMY_AND_MAY, AzaleaTown_Interior6_Text_TwinsAmyAndMayIntro, AzaleaTown_Interior6_Text_TwinsAmyAndMayDefeat

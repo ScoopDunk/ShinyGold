@@ -156,13 +156,8 @@ CianwoodCity_Interior7_Movement_Trigger2_2::
 	step_end
 
 CianwoodCity_Interior7_EventScript_Sign1::
-	call_if_set 0x11EA, CianwoodCity_Interior7_EventScript_Sign1_1
 	call_if_set FLAG_BADGE03_GET, CianwoodCity_Interior7_EventScript_Sign1_2
 	msgbox CianwoodCity_Interior7_Text_Sign1_1, MSGBOX_NPC
-	end
-
-CianwoodCity_Interior7_EventScript_Sign1_1::
-	msgbox CianwoodCity_Interior7_Text_Sign1_2, MSGBOX_NPC
 	end
 
 CianwoodCity_Interior7_EventScript_Sign1_2::

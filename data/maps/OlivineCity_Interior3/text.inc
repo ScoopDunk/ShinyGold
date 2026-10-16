@@ -49,31 +49,6 @@ OlivineCity_Interior3_Text_LeaderJasmine2_3::
 	.string "...You could use that TM to teach\n"
 	.string "IRON TAIL.$"
 
-OlivineCity_Interior3_Text_TeachyTvHost::
-	.string "HAHA! This time I beat you!!!\p"
-	.string "With my new POKéMON I quickly\n"
-	.string "defeated that weak girl!\p"
-	.string "...\p"
-	.string "Huh? You already have 5 BADGES?\p"
-	.string "So, you are saying there’s another\n"
-	.string "POKéMON GYM across the ocean?\p"
-	.string "...\p"
-	.string "Crap!\n"
-	.string "Never expected that...\p"
-	.string "Move it!\n"
-	.string "I’m going there!$"
-
-OlivineCity_Interior3_Text_HikerJitouIntro::
-	.string "I found my POKéMON in a dark\n"
-	.string "mountain!$"
-
-OlivineCity_Interior3_Text_HikerJitouDefeat::
-	.string "You are hard as steel...$"
-
-OlivineCity_Interior3_Text_HikerJitou::
-	.string "Where was the mountain?\p"
-	.string "I don’t quite remember...$"
-
 OlivineCity_Interior3_Text_Sign1_1::
 	.string "OLIVINE CITY POKéMON GYM\n"
 	.string "LEADER: JASMINE\p"
@@ -83,10 +58,4 @@ OlivineCity_Interior3_Text_Sign1_2::
 	.string "OLIVINE CITY POKéMON GYM\n"
 	.string "LEADER: JASMINE\p"
 	.string "WINNING TRAINERS:\n"
-	.string "CARLOS {PLAYER}$"
-
-OlivineCity_Interior3_Text_Sign1_3::
-	.string "OLIVINE CITY POKéMON GYM\n"
-	.string "LEADER: JASMINE\p"
-	.string "WINNING TRAINERS:\n"
-	.string "CARLOS$"
+	.string "{PLAYER}$"

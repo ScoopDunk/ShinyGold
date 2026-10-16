@@ -90,36 +90,6 @@ Route44_Text_BirdKeeper99::
 	.string "I heard there are other legendary\n"
 	.string "birds, though.$"
 
-Route44_Text_PkmnTrainerCarlos3_1::
-	.string "Hahaha!\p"
-	.string "Finally I’m ahead of you again!\p"
-	.string "While you were playing to be hero,\n"
-	.string "I defeated MAHOGANY’s GYM!\p"
-	.string "Now, I’ll beat the next GYM to win my\n"
-	.string "last BADGE!\p"
-	.string "I don’t need you around, so this is\n"
-	.string "the end of the road for you!$"
-
-Route44_Text_PkmnTrainerCarlos3Defeat::
-	.string "N... No...\n"
-	.string "Not again...$"
-
-Route44_Text_PkmnTrainerCarlos3Victory::
-	.string "See ya, loser!$"
-
-Route44_Text_PkmnTrainerCarlos3_2::
-	.string "ARRGH!!!\p"
-	.string "Why do you keep beating me?!!!\p"
-	.string "I HATE you!\n"
-	.string "I DESPISE you!\p"
-	.string "...\p"
-	.string "Now I need to go to that POKéMON\n"
-	.string "CENTER to heal my POKéMON...\p"
-	.string "But...\p"
-	.string "I still know I’ll reach the POKéMON\n"
-	.string "LEAGUE before you!\p"
-	.string "It’s only a matter of time...$"
-
 Route44_Text_Sign1::
 	.string "ROUTE 44\n"
 	.string "MAHOGANY TOWN - BLACKTHORN CITY$"

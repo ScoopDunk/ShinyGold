@@ -96,32 +96,10 @@ GoldenrodCity_Text_RocketF3::
 	.string "Hey, brat! You don’t belong here!\n"
 	.string "Get lost!$"
 
-GoldenrodCity_Text_TeachyTvHost_1::
-	.string "Damn...\n"
-	.string "This LEADER is strong...\p"
-	.string "I was totally defeated...$"
-
-GoldenrodCity_Text_TeachyTvHost_2::
-	.string "Huh? what are you looking at?\p"
-	.string "Have you come to make fun of me\n"
-	.string "too?\p"
-	.string "But you’ll soon see.\p"
-	.string "I’m gonna become a great master\n"
-	.string "and catch every single POKéMON!\p"
-	.string "I need to go back to the POKéMON\n"
-	.string "CENTER so we can’t battle this\l"
-	.string "time...$"
-
 GoldenrodCity_Text_Youngster::
 	.string "E-he-he-he...\p"
 	.string "I got in trouble for playing in the\n"
 	.string "basement of the DEPT.STORE.$"
-
-GoldenrodCity_Text_RocketM5::
-	.string "I was once a member of another\n"
-	.string "evil organization called TEAM\l"
-	.string "MAGMA.\p"
-	.string "They operate in the HOENN region.$"
 
 GoldenrodCity_Text_Sign1::
 	.string "Your Playground!\n"

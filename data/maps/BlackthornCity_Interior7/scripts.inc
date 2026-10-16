@@ -125,13 +125,8 @@ BlackthornCity_Interior7_Movement_Trigger6::
 	step_end
 
 BlackthornCity_Interior7_EventScript_Sign1::
-	call_if_set 0x1149, BlackthornCity_Interior7_EventScript_Sign1_1
 	call_if_set FLAG_BADGE07_GET, BlackthornCity_Interior7_EventScript_Sign1_2
 	msgbox BlackthornCity_Interior7_Text_Sign1_1, MSGBOX_AUTOCLOSE
-	end
-
-BlackthornCity_Interior7_EventScript_Sign1_1::
-	msgbox BlackthornCity_Interior7_Text_Sign1_2, MSGBOX_AUTOCLOSE
 	end
 
 BlackthornCity_Interior7_EventScript_Sign1_2::

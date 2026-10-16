@@ -161,73 +161,8 @@ GoldenrodCity_EventScript_RocketF3::
 	msgbox GoldenrodCity_Text_RocketF3, MSGBOX_NPC
 	end
 
-GoldenrodCity_EventScript_TeachyTvHost::
-	msgbox GoldenrodCity_Text_TeachyTvHost_1, MSGBOX_NPC
-	applymovement 15, GoldenrodCity_Movement_TeachyTvHost_1
-	msgbox GoldenrodCity_Text_TeachyTvHost_2, MSGBOX_NPC
-	call_if_eq VAR_TEMP_1, 1, GoldenrodCity_EventScript_TeachyTvHost_1
-	call_if_eq VAR_TEMP_1, 2, GoldenrodCity_EventScript_TeachyTvHost_2
-	call_if_eq VAR_TEMP_1, 3, GoldenrodCity_EventScript_TeachyTvHost_2
-	end
-
-GoldenrodCity_EventScript_TeachyTvHost_1::
-	applymovement 15, GoldenrodCity_Movement_TeachyTvHost_2
-	delay 192
-	setflag 0x1091
-	release
-	end
-
-GoldenrodCity_EventScript_TeachyTvHost_2::
-	applymovement 15, GoldenrodCity_Movement_TeachyTvHost_3
-	delay 192
-	setflag 0x1091
-	release
-	end
-
-GoldenrodCity_Movement_TeachyTvHost_1::
-	emote_question_mark
-	step_end
-
-GoldenrodCity_Movement_TeachyTvHost_2::
-	walk_down
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	set_invisible
-	walk_fast_right
-	walk_fast_right
-	walk_fast_right
-	step_end
-
-GoldenrodCity_Movement_TeachyTvHost_3::
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	set_invisible
-	walk_fast_right
-	walk_fast_right
-	walk_fast_right
-	step_end
-
 GoldenrodCity_EventScript_Youngster::
 	msgbox GoldenrodCity_Text_Youngster, MSGBOX_NPC
-	end
-
-GoldenrodCity_EventScript_RocketM5::
-	msgbox GoldenrodCity_Text_RocketM5, MSGBOX_NPC
 	end
 
 GoldenrodCity_EventScript_Trigger1::
@@ -264,28 +199,6 @@ GoldenrodCity_EventScript_Trigger6::
 	end
 
 GoldenrodCity_EventScript_Trigger6_1::
-	release
-	end
-
-GoldenrodCity_EventScript_Trigger7::
-	call_if_set 0x1091, GoldenrodCity_EventScript_Trigger7_1
-	setvar VAR_TEMP_1, 1
-	release
-	end
-
-GoldenrodCity_EventScript_Trigger7_1::
-	release
-	end
-
-GoldenrodCity_EventScript_Trigger8::
-	call_if_set 0x1091, GoldenrodCity_EventScript_Trigger7_1
-	setvar VAR_TEMP_1, 3
-	release
-	end
-
-GoldenrodCity_EventScript_Trigger10::
-	call_if_set 0x1091, GoldenrodCity_EventScript_Trigger7_1
-	setvar VAR_TEMP_1, 2
 	release
 	end
 

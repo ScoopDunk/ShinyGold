@@ -126,48 +126,6 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_F",
-      "x": 10,
-      "y": 9,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EcruteakCity_EventScript_CooltrainerF",
-      "flag": "0x10AA"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
-      "x": 11,
-      "y": 9,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EcruteakCity_EventScript_CooltrainerF",
-      "flag": "0x10AA"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_TEACHY_TV_HOST",
-      "x": 12,
-      "y": 29,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "0x0",
-      "flag": "0x10AD"
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_POKE_MANIAC",
       "x": 15,
       "y": 7,
@@ -288,39 +246,12 @@
     },
     {
       "type": "trigger",
-      "x": 10,
-      "y": 30,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "EcruteakCity_EventScript_Trigger3"
-    },
-    {
-      "type": "trigger",
       "x": 0,
       "y": 8,
       "elevation": 0,
       "var": "0x0000",
       "var_value": "0",
       "script": "0x0"
-    },
-    {
-      "type": "trigger",
-      "x": 9,
-      "y": 29,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "EcruteakCity_EventScript_Trigger5"
-    },
-    {
-      "type": "trigger",
-      "x": 11,
-      "y": 29,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "EcruteakCity_EventScript_Trigger6"
     }
   ],
   "bg_events": [

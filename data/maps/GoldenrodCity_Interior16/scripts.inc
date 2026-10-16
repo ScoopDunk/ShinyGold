@@ -89,13 +89,8 @@ GoldenrodCity_Interior16_Movement_Trigger_2::
 	step_end
 
 GoldenrodCity_Interior16_EventScript_Sign1::
-	call_if_set 0x1095, GoldenrodCity_Interior16_EventScript_Sign1_1
 	call_if_set FLAG_BADGE04_GET, GoldenrodCity_Interior16_EventScript_Sign1_2
 	msgbox GoldenrodCity_Interior16_Text_Sign1_1, MSGBOX_NPC
-	end
-
-GoldenrodCity_Interior16_EventScript_Sign1_1::
-	msgbox GoldenrodCity_Interior16_Text_Sign1_2, MSGBOX_AUTOCLOSE
 	end
 
 GoldenrodCity_Interior16_EventScript_Sign1_2::
