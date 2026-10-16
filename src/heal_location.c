@@ -1,5 +1,6 @@
 #include "global.h"
 #include "heal_location.h"
+#include "overworld.h"
 #include "event_data.h"
 #include "constants/maps.h"
 #include "constants/map_event_ids.h"
@@ -96,11 +97,9 @@ void SetWhiteoutRespawnWarpAndHealerNpc(struct WarpData * warp)
             warp->x = 13;
             warp->y = 12;
         }
-        else if (sWhiteoutRespawnHealCenterMapIdxs[healLocationIdx - 1][0] == MAP_GROUP(MAP_ONE_ISLAND_POKEMON_CENTER_1F) && sWhiteoutRespawnHealCenterMapIdxs[healLocationIdx - 1][1] == MAP_NUM(MAP_ONE_ISLAND_POKEMON_CENTER_1F))
-        {
-            warp->x = 5;
-            warp->y = 4;
-        }
+        // ShinyGold fix: FireRed's One Island Pokemon Center case (5,4) is gone. That map slot is the hack's
+        // Cherrygrove Pokemon Center (also New Bark Town's respawn point), whose nurse stands at (28,2), so a
+        // white-out there left the player in the black outside the room. The general case below handles it.
         else if (sWhiteoutRespawnHealCenterMapIdxs[healLocationIdx - 1][0] == MAP_GROUP(MAP_TRAINER_TOWER_LOBBY) && sWhiteoutRespawnHealCenterMapIdxs[healLocationIdx - 1][1] == MAP_NUM(MAP_TRAINER_TOWER_LOBBY))
         {
             warp->x = 4;
@@ -109,8 +108,23 @@ void SetWhiteoutRespawnWarpAndHealerNpc(struct WarpData * warp)
         }
         else
         {
+            // ShinyGold: respawn two tiles below the healer, so Pokemon Centers with other layouts work too
+            // (same as the vanilla 7,4 for the standard layout with the nurse at 7,2).
+            const struct MapHeader *header = Overworld_GetMapHeaderByGroupAndId(warp->mapGroup, warp->mapNum);
+            u8 localId = sWhiteoutRespawnHealerNpcIds[healLocationIdx - 1];
+            s32 i;
+
             warp->x = 7;
             warp->y = 4;
+            for (i = 0; i < header->events->objectEventCount; i++)
+            {
+                if (header->events->objectEvents[i].localId == localId)
+                {
+                    warp->x = header->events->objectEvents[i].x;
+                    warp->y = header->events->objectEvents[i].y + 2;
+                    break;
+                }
+            }
         }
         SetWhiteoutRespawnHealerNpcAsLastTalked(healLocationIdx);
     }
