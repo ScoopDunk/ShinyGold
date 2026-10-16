@@ -159,6 +159,3 @@ BlackthornCity_EventScript_Sign5::
 	msgbox BlackthornCity_Text_Sign5, MSGBOX_AUTOCLOSE
 	end
 
-BlackthornCity_EventScript_Sign6::
-	msgbox BlackthornCity_Text_Sign6, MSGBOX_AUTOCLOSE
-	end

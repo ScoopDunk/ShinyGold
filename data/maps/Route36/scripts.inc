@@ -163,6 +163,3 @@ Route36_EventScript_Sign5::
 	special DaisyMassageServices
 	end
 
-Route36_EventScript_Sign7::
-	msgbox Route36_Text_Sign7, MSGBOX_AUTOCLOSE
-	end

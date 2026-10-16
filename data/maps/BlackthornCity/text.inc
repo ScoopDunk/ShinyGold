@@ -71,5 +71,3 @@ BlackthornCity_Text_Sign4::
 BlackthornCity_Text_Sign5::
 	.string "DRAGON’S DEN AHEAD$"
 
-BlackthornCity_Text_Sign6::
-	.string "MOVE RELEARNER’S HOUSE$"
