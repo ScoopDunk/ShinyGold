@@ -1,26 +1,20 @@
 EcruteakCity_Interior8_MapScripts::
-	@ ShinyGold: map script header pointer was NULL
+	map_script MAP_SCRIPT_ON_TRANSITION, EcruteakCity_Interior8_OnTransition
 	.byte 0
 
-EcruteakCity_Interior8_EventScript_OldMan1::
+@ Pure Gold: TIN TOWER 1F. The sage who blocks the way up is gone once the player has the RAINBOW WING, as in Gold
+@ (pokegold TinTower1F: he disappears with EVENT_TEAM_ROCKET_DISBANDED, set when the RADIO TOWER director gives the
+@ RAINBOW WING). ShinyGold had him say a custom line and walk away when talked to.
+EcruteakCity_Interior8_OnTransition::
 	checkitem ITEM_AURORA_TICKET
-	call_if_eq VAR_RESULT, 1, EcruteakCity_Interior8_EventScript_OldMan1_1
+	goto_if_eq VAR_RESULT, FALSE, EcruteakCity_Interior8_EventScript_OnTransitionEnd
+	setflag 0x1040
+EcruteakCity_Interior8_EventScript_OnTransitionEnd::
+	end
+
+EcruteakCity_Interior8_EventScript_OldMan1::
 	msgbox EcruteakCity_Interior8_Text_OldMan1_1, MSGBOX_NPC
 	end
-
-EcruteakCity_Interior8_EventScript_OldMan1_1::
-	setflag 0x1040
-	msgbox EcruteakCity_Interior8_Text_OldMan1_2, MSGBOX_NPC
-	applymovement 1, EcruteakCity_Interior8_Movement_OldMan1
-	delay 16
-	end
-
-EcruteakCity_Interior8_Movement_OldMan1::
-	face_up
-	set_invisible
-	walk_fast_up
-	walk_fast_up
-	step_end
 
 EcruteakCity_Interior8_EventScript_Trigger::
 	warp MAP_UNUSED_G34_M52, 0, 0x3402, 0x3900
