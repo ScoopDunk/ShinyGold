@@ -35,7 +35,7 @@ CeladonCity_Interior13_EventScript_LeaderErika::
 	setvar VAR_0x8004, 2
 	setvar VAR_0x8005, 2
 	special UpdatePickStateFromSpecialVar8005
-	call Unused_CeruleanCity_Gym_EventScript_LeaderMisty_1
+	call CeruleanCity_Gym_EventScript_LeaderMisty_1
 	trainerbattle_single TRAINER_LEADER_ERIKA, CeladonCity_Interior13_Text_LeaderErikaIntro, CeladonCity_Interior13_Text_LeaderErikaDefeat, CeladonCity_Interior13_EventScript_LeaderErikaContinue, NO_MUSIC
 	msgbox CeladonCity_Interior13_Text_LeaderErika_1, MSGBOX_NPC
 	end

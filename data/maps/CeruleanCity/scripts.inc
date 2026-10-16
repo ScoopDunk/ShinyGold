@@ -323,7 +323,7 @@ CeruleanCity_EventScript_Trigger10_3::
 	delay 32
 	closedoor 31, 21
 	delay 48
-	warp MAP_UNUSED_CERULEAN_CITY_GYM, 0, 0x26C, 0xFFFF
+	warp MAP_CERULEAN_CITY_GYM, 0, 0x26C, 0xFFFF
 	.byte 0xFF @ invalid opcode (script stops)
 
 CeruleanCity_Movement_Trigger10_1::

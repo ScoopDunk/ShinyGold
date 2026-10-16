@@ -34,5 +34,5 @@ Unused_PokemonTower_4F_EventScript_MgDeliveryman2_2::
 	msgbox Unused_PokemonTower_4F_Text_MgDeliveryman2_5, MSGBOX_NPC
 	giveitem ITEM_SAFARI_BALL, 20
 	msgbox Unused_PokemonTower_4F_Text_MgDeliveryman2_6, MSGBOX_NPC
-	warp MAP_UNUSED_G2_M88, 0, 0xFF02, 0xFFFF
+	warp MAP_NATIONAL_PARK_BUG_CONTEST, 0, 0xFF02, 0xFFFF
 	.byte 0xFF @ invalid opcode (script stops)

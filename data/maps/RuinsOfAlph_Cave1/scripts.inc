@@ -11,7 +11,7 @@ RuinsOfAlph_Cave1_EventScript_Sign1::
 
 RuinsOfAlph_Cave1_EventScript_Sign2::
 	msgbox RuinsOfAlph_Cave1_Text_Sign2_1, MSGBOX_NPC
-	warp MAP_UNUSED_G2_M63, 0, 0xFF02, 0xFFFF
+	warp MAP_RUINS_OF_ALPH_INNER_CHAMBER, 0, 0xFF02, 0xFFFF
 
 RuinsOfAlph_Interior4_EventScript_Scientist2::
 	msgbox RuinsOfAlph_Cave1_Text_Sign2_2, MSGBOX_NPC

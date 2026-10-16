@@ -134,16 +134,16 @@
       "blockdata_filepath": "data/layouts/NewBarkTown_Interior4/map.bin"
     },
     {
-      "id": "LAYOUT_UNUSED_CERULEAN_CITY_GYM",
-      "name": "Unused_CeruleanCity_Gym_Layout",
+      "id": "LAYOUT_CERULEAN_CITY_GYM",
+      "name": "CeruleanCity_Gym_Layout",
       "width": 17,
       "height": 20,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_CeruleanGym",
-      "border_filepath": "data/layouts/Unused_CeruleanCity_Gym/border.bin",
-      "blockdata_filepath": "data/layouts/Unused_CeruleanCity_Gym/map.bin"
+      "border_filepath": "data/layouts/CeruleanCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/CeruleanCity_Gym/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE12_INTERIOR1",
@@ -1770,16 +1770,16 @@
     },
     {},
     {
-      "id": "LAYOUT_UNUSED_POKEMON_LEAGUE_HALL_OF_FAME",
-      "name": "Unused_PokemonLeague_HallOfFame_Layout",
+      "id": "LAYOUT_INDIGO_PLATEAU_HALL_OF_FAME",
+      "name": "IndigoPlateau_HallOfFame_Layout",
       "width": 11,
       "height": 13,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_HallOfFame",
-      "border_filepath": "data/layouts/Unused_PokemonLeague_HallOfFame/border.bin",
-      "blockdata_filepath": "data/layouts/Unused_PokemonLeague_HallOfFame/map.bin"
+      "border_filepath": "data/layouts/IndigoPlateau_HallOfFame/border.bin",
+      "blockdata_filepath": "data/layouts/IndigoPlateau_HallOfFame/map.bin"
     },
     {},
     {},
@@ -2968,42 +2968,42 @@
       "blockdata_filepath": "data/layouts/LakeOfRage/map.bin"
     },
     {
-      "id": "LAYOUT_UNUSED_NAVEL_ROCK_BASE_PATH_B10F",
-      "name": "Unused_NavelRock_BasePath_B10F_Layout",
+      "id": "LAYOUT_MAHOGANY_TOWN_ROCKET_BASE_B1F",
+      "name": "MahoganyTown_RocketBase_B1F_Layout",
       "width": 30,
       "height": 28,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_SilphCo",
-      "border_filepath": "data/layouts/Unused_NavelRock_BasePath_B10F/border.bin",
-      "blockdata_filepath": "data/layouts/Unused_NavelRock_BasePath_B10F/map.bin"
+      "border_filepath": "data/layouts/MahoganyTown_RocketBase_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/MahoganyTown_RocketBase_B1F/map.bin"
     },
     {
-      "id": "LAYOUT_UNUSED_NAVEL_ROCK_BASE_PATH_B11F",
-      "name": "Unused_NavelRock_BasePath_B11F_Layout",
+      "id": "LAYOUT_MAHOGANY_TOWN_ROCKET_BASE_B2F",
+      "name": "MahoganyTown_RocketBase_B2F_Layout",
       "width": 30,
       "height": 28,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_SilphCo",
-      "border_filepath": "data/layouts/Unused_NavelRock_BasePath_B11F/border.bin",
-      "blockdata_filepath": "data/layouts/Unused_NavelRock_BasePath_B11F/map.bin"
+      "border_filepath": "data/layouts/MahoganyTown_RocketBase_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/MahoganyTown_RocketBase_B2F/map.bin"
     },
     {},
     {},
     {
-      "id": "LAYOUT_UNUSED_NAVEL_ROCK_B1F",
-      "name": "Unused_NavelRock_B1F_Layout",
+      "id": "LAYOUT_MAHOGANY_TOWN_ROCKET_BASE_B3F",
+      "name": "MahoganyTown_RocketBase_B3F_Layout",
       "width": 30,
       "height": 28,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_SilphCo",
-      "border_filepath": "data/layouts/Unused_NavelRock_B1F/border.bin",
-      "blockdata_filepath": "data/layouts/Unused_NavelRock_B1F/map.bin"
+      "border_filepath": "data/layouts/MahoganyTown_RocketBase_B3F/border.bin",
+      "blockdata_filepath": "data/layouts/MahoganyTown_RocketBase_B3F/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE44",
@@ -3323,16 +3323,16 @@
       "blockdata_filepath": "data/layouts/RuinsOfAlph_Interior4/map.bin"
     },
     {
-      "id": "LAYOUT_UNUSED_G2_M63",
-      "name": "Unused_G2_M63_Layout",
+      "id": "LAYOUT_RUINS_OF_ALPH_INNER_CHAMBER",
+      "name": "RuinsOfAlph_InnerChamber_Layout",
       "width": 32,
       "height": 34,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_NavelRock",
-      "border_filepath": "data/layouts/Unused_G2_M63/border.bin",
-      "blockdata_filepath": "data/layouts/Unused_G2_M63/map.bin"
+      "border_filepath": "data/layouts/RuinsOfAlph_InnerChamber/border.bin",
+      "blockdata_filepath": "data/layouts/RuinsOfAlph_InnerChamber/map.bin"
     },
     {
       "id": "LAYOUT_RUINS_OF_ALPH_INTERIOR1",
@@ -4082,28 +4082,28 @@
       "blockdata_filepath": "data/layouts/GoldenrodCity_Interior18/map.bin"
     },
     {
-      "id": "LAYOUT_UNUSED_G34_M52",
-      "name": "Unused_G34_M52_Layout",
+      "id": "LAYOUT_TIN_TOWER_UPPER_FLOORS",
+      "name": "TinTower_UpperFloors_Layout",
       "width": 191,
       "height": 26,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PowerPlant",
-      "border_filepath": "data/layouts/Unused_G34_M52/border.bin",
-      "blockdata_filepath": "data/layouts/Unused_G34_M52/map.bin"
+      "border_filepath": "data/layouts/TinTower_UpperFloors/border.bin",
+      "blockdata_filepath": "data/layouts/TinTower_UpperFloors/map.bin"
     },
     {
-      "id": "LAYOUT_UNUSED_G34_M53",
-      "name": "Unused_G34_M53_Layout",
+      "id": "LAYOUT_TIN_TOWER_ROOF",
+      "name": "TinTower_Roof_Layout",
       "width": 30,
       "height": 28,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_PowerPlant",
-      "border_filepath": "data/layouts/Unused_G34_M53/border.bin",
-      "blockdata_filepath": "data/layouts/Unused_G34_M53/map.bin"
+      "border_filepath": "data/layouts/TinTower_Roof/border.bin",
+      "blockdata_filepath": "data/layouts/TinTower_Roof/map.bin"
     },
     {
       "id": "LAYOUT_BLACKTHORN_CITY_INTERIOR7",
@@ -4385,16 +4385,16 @@
       "blockdata_filepath": "data/layouts/DragonsDen_Cave4/map.bin"
     },
     {
-      "id": "LAYOUT_UNUSED_G2_M88",
-      "name": "Unused_G2_M88_Layout",
+      "id": "LAYOUT_NATIONAL_PARK_BUG_CONTEST",
+      "name": "NationalPark_BugContest_Layout",
       "width": 30,
       "height": 30,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_FuchsiaCity",
-      "border_filepath": "data/layouts/Unused_G2_M88/border.bin",
-      "blockdata_filepath": "data/layouts/Unused_G2_M88/map.bin"
+      "border_filepath": "data/layouts/NationalPark_BugContest/border.bin",
+      "blockdata_filepath": "data/layouts/NationalPark_BugContest/map.bin"
     }
   ]
 }

@@ -8045,8 +8045,8 @@
           }
         },
         {
-          "map": "MAP_UNUSED_G2_M63",
-          "base_label": "sUnused_G2_M63",
+          "map": "MAP_RUINS_OF_ALPH_INNER_CHAMBER",
+          "base_label": "sRuinsOfAlph_InnerChamber",
           "land_mons": {
             "encounter_rate": 7,
             "mons": [
@@ -11083,8 +11083,8 @@
           }
         },
         {
-          "map": "MAP_UNUSED_G34_M52",
-          "base_label": "sUnused_G34_M52",
+          "map": "MAP_TIN_TOWER_UPPER_FLOORS",
+          "base_label": "sTinTower_UpperFloors",
           "land_mons": {
             "encounter_rate": 15,
             "mons": [
@@ -12539,7 +12539,7 @@
           }
         },
         {
-          "map": "MAP_UNUSED_CERULEAN_CITY_GYM",
+          "map": "MAP_CERULEAN_CITY_GYM",
           "base_label": "sUnused_CeruleanCity_Gym",
           "water_mons": {
             "encounter_rate": 8,

@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Unused_NavelRock_BasePath_B11F_EventScript_ItemBall",
+      "script": "MahoganyTown_RocketBase_B2F_EventScript_ItemBall",
       "flag": "0x1121"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Unused_NavelRock_BasePath_B11F_EventScript_ItemBall",
+      "script": "MahoganyTown_RocketBase_B2F_EventScript_ItemBall",
       "flag": "0x1121"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Unused_NavelRock_BasePath_B11F_EventScript_ItemBall",
+      "script": "MahoganyTown_RocketBase_B2F_EventScript_ItemBall",
       "flag": "0x1121"
     },
     {

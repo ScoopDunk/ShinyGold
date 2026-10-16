@@ -89,7 +89,7 @@ FuchsiaCity_Interior7_EventScript_LeaderJanine2::
 	setvar VAR_0x8004, 2
 	setvar VAR_0x8005, 2
 	special UpdatePickStateFromSpecialVar8005
-	call Unused_CeruleanCity_Gym_EventScript_LeaderMisty_1
+	call CeruleanCity_Gym_EventScript_LeaderMisty_1
 	trainerbattle_single TRAINER_LEADER_JANINE_2, FuchsiaCity_Interior7_Text_LeaderJanine2Intro, FuchsiaCity_Interior7_Text_LeaderJanine2Defeat, FuchsiaCity_Interior7_EventScript_LeaderJanine2Continue, NO_MUSIC
 	msgbox FuchsiaCity_Interior7_Text_LeaderJanine2_1, MSGBOX_NPC
 	end

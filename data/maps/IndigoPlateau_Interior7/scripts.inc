@@ -47,7 +47,7 @@ IndigoPlateau_Interior7_EventScript_Trigger1::
 	msgbox IndigoPlateau_Interior7_Text_Trigger1_12, MSGBOX_NPC
 	applymovement 3, IndigoPlateau_Interior7_Movement_Trigger1_23
 	delay 112
-	warp MAP_UNUSED_POKEMON_LEAGUE_HALL_OF_FAME, 0, 0xFF02, 0xFFFF
+	warp MAP_INDIGO_PLATEAU_HALL_OF_FAME, 0, 0xFF02, 0xFFFF
 	.byte 0xFF @ invalid opcode (script stops)
 
 IndigoPlateau_Interior7_EventScript_Trigger1_2::
