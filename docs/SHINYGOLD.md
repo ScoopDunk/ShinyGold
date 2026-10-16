@@ -147,6 +147,8 @@ ranges), then removal of everything the player can never reach. Origin: original
 - 40 headbutt "sign" events stacked on single tiles (Ecruteak, Violet, Routes 33/34) ran the headbutt script on the
   last NPC talked to, which then vanished; removed.
 - Route 26 ran FireRed's Birth Island (Deoxys) map scripts on every visit; removed.
+- Prof. Oak's Pokédex rating ended with `return` after a `goto` when the National Dex is off (not reachable in
+  normal play), leaving the text box open and Oak locked; it now closes and releases.
 - Carlos's post-Morty battle could be lost: the Route 37 trigger re-hid him unless 0x10AE was set, and nothing
   set it. Morty's win now sets it.
 - The Sea Cavern hidden Ultra Ball used FLAG_PENDING_DAYCARE_EGG (came back after every egg) and the TwistedSpoon

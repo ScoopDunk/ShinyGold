@@ -68,9 +68,12 @@ PalletTown_Interior2_EventScript_ProfOak_5::
 	waitbuttonpress
 	return
 
+@ ShinyGold fix: only reached by goto, so the old 'return' ended the script with the text box open and Oak locked
 PalletTown_Interior2_EventScript_ProfOak_6::
 	special RestoreHelpContext
-	return
+	closemessage
+	release
+	end
 
 PalletTown_Interior2_EventScript_ProfOak_7::
 	msgbox PalletTown_Interior2_Text_ProfOak_7, MSGBOX_NPC
