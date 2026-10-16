@@ -13,4 +13,8 @@
 // (set when the player finds her in the captain's cabin), 0 = none.
 #define VAR_GOLD_SS_AQUA_SCENE          0x4541
 
+// Fuchsia, Warden's home: the Warden's granddaughter told the player why the SAFARI ZONE closed
+// (pokegold EVENT_TALKED_TO_WARDENS_GRANDDAUGHTER).
+#define FLAG_GOLD_TALKED_TO_WARDENS_GRANDDAUGHTER   0x1C00
+
 #endif // GUARD_CONSTANTS_GOLD_KANTO_H

@@ -57,13 +57,6 @@ SaffronCity_Text_BlackBelt::
 	.string "unused GYM next door.\p"
 	.string "Boy, I was pretty embarrassed.$"
 
-SaffronCity_Text_LaprasDoll::
-	.string "MESSAGE FROM ZEL: I forbid you to\n"
-	.string "proceed any further!\p"
-	.string "And don’t move this rock or use walk\n"
-	.string "through cheats.\l"
-	.string "There’s nothing further anyway...$"
-
 SaffronCity_Text_Sign2::
 	.string "SILPH CO. OFFICE BUILDING$"
 

@@ -60,34 +60,6 @@
       "dest_warp_id": "1"
     }
   ],
-  "coord_events": [
-    {
-      "type": "trigger",
-      "x": 5,
-      "y": 9,
-      "elevation": 3,
-      "var": "0x4062",
-      "var_value": "0",
-      "script": "Route8_Interior1_EventScript_Trigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 6,
-      "y": 9,
-      "elevation": 3,
-      "var": "0x4062",
-      "var_value": "0",
-      "script": "Route8_Interior1_EventScript_Trigger2"
-    },
-    {
-      "type": "trigger",
-      "x": 8,
-      "y": 9,
-      "elevation": 3,
-      "var": "0x4062",
-      "var_value": "0",
-      "script": "Route8_Interior1_EventScript_Trigger3"
-    }
-  ],
+  "coord_events": [],
   "bg_events": []
 }

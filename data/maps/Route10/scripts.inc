@@ -11,17 +11,12 @@ Route10_EventScript_PokefanRobert::
 	msgbox Route10_Text_PokefanRobert, MSGBOX_AUTOCLOSE
 	end
 
-Route10_EventScript_Rocker::
-	msgbox Route10_Text_Rocker, MSGBOX_NPC
-	end
-
 Route10_EventScript_Sign1::
 	msgbox Route10_Text_Sign1, MSGBOX_AUTOCLOSE
 	end
 
 Route10_EventScript_Sign2::
-	msgbox Route10_Text_Sign2, MSGBOX_NPC
+	msgbox Route10_Text_Sign2, MSGBOX_SIGN
 	setvar 0x7030, 0x129
 	setvar 0x7032, 0x12B
-	release
 	end

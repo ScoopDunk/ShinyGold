@@ -44,41 +44,6 @@ CeladonCity_Text_Youngster::
 	.string "CELADON MANSION has a hidden back\n"
 	.string "door.$"
 
-CeladonCity_Text_Trigger5_1::
-	.string "ARD: Huh?!$"
-
-CeladonCity_Text_Trigger5_2::
-	.string "ARD: Lookey here!\n"
-	.string "It’s the big loser!\p"
-	.string "Haha! What are you doing?\p"
-	.string "Don’t tell me you want to battle\n"
-	.string "against this GYM LEADER.\p"
-	.string "But you’ll struggle if you don’t own\n"
-	.string "a BUG POKéMON.\p"
-	.string "That means, of course, this battle\n"
-	.string "was a piece of cake for me, haha!\p"
-	.string "If I keep this rhythm I will be\n"
-	.string "CHAMPION in no time!\p"
-	.string "Oh, yeah. But first I need to take\n"
-	.string "care of you!$"
-
-CeladonCity_Text_Trigger5Defeat::
-	.string "Grrr...$"
-
-CeladonCity_Text_Trigger5Victory::
-	.string "Haha! I’m ready to become the\n"
-	.string "CHAMPION!$"
-
-CeladonCity_Text_Trigger5_3::
-	.string "ARD: You may have defeated my BUG\n"
-	.string "POKéMON this time.\p"
-	.string "But still I’ll become the CHAMPION,\n"
-	.string "and then I’ll battle you to show\l"
-	.string "everyone that BUG POKéMON are the\l"
-	.string "really best!\p"
-	.string "I’m going, BAD luck, loser!\n"
-	.string "Hahaha!$"
-
 CeladonCity_Text_Sign1::
 	.string "TRAINER TIPS\p"
 	.string "GUARD SPEC. protects POKéMON\n"
