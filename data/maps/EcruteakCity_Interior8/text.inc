@@ -11,7 +11,3 @@ EcruteakCity_Interior8_Text_OldMan1_1::
 	.string "I think that item is probably...\p"
 	.string "A RAINBOW WING!\p"
 	.string "But, where would I find one?$"
-
-EcruteakCity_Interior8_Text_OldMan1_2::
-	.string "Is that a RAINBOW WING?\p"
-	.string "You may pass...$"

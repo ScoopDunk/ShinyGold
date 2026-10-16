@@ -17,6 +17,10 @@ EWRAM_DATA struct SaveBlockExt gSaveBlockExt = {0};
 // The on-flash layout must match ShinyGold's exactly.
 STATIC_ASSERT(sizeof(struct SaveBlockExt) == 0xEC4, SaveBlockExtSize);
 STATIC_ASSERT(offsetof(struct SaveBlockExt, stepCounter) == 0x2E0, SaveBlockExtStepCounterOffset);
+STATIC_ASSERT(offsetof(struct SaveBlockExt, roamerPlayerCurMap) == 0x2E2, SaveBlockExtRoamerPlayerCurMapOffset);
+STATIC_ASSERT(offsetof(struct SaveBlockExt, roamers) == 0x2E4, SaveBlockExtRoamersOffset);
+STATIC_ASSERT(offsetof(struct SaveBlockExt, roamerMaps) == 0x31C, SaveBlockExtRoamerMapsOffset);
+STATIC_ASSERT(offsetof(struct SaveBlockExt, roamerPlayerLastMap) == 0x322, SaveBlockExtRoamerPlayerLastMapOffset);
 STATIC_ASSERT(offsetof(struct SaveBlockExt, numVars) == 0x324, SaveBlockExtNumVarsOffset);
 STATIC_ASSERT(EXT_SIZE_SAVEBLOCK2 == 0xCC, SaveBlockExtSaveBlock2Size);
 STATIC_ASSERT(EXT_SIZE_SAVEBLOCK1 == 0x258, SaveBlockExtSaveBlock1Size);

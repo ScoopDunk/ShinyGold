@@ -249,6 +249,7 @@ static const u16 sWhiteOutMoneyLossBadgeFlagIDs[] = {
 
 static void DoWhiteOut(void)
 {
+    SetRoamMonsWarpMode(ROAMERS_WARP_NONE); // Pure Gold: whiting out does not move the roaming beasts (G/S)
     RunScriptImmediately(EventScript_ResetEliteFourEnd);
     RemoveMoney(&gSaveBlock1Ptr->money, ComputeWhiteOutMoneyLoss());
     HealPlayerParty();
@@ -347,8 +348,8 @@ static void Overworld_ResetStateOnContinue(void)
     FlagClear(FLAG_SYS_SAFARI_MODE);
     VarSet(VAR_MAP_SCENE_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE, 0);
     ChooseAmbientCrySpecies();
-    UpdateLocationHistoryForRoamer();
-    RoamerMoveToOtherLocationSet();
+    // Pure Gold: pokegold continues a saved game with JumpRoamMons.
+    JumpRoamMons(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
 }
 
 // Routines related to game stats
@@ -617,11 +618,13 @@ void SetWarpDestinationToHealLocation(u8 healLocationId)
     const struct HealLocation *warp = GetHealLocation(healLocationId);
     if (warp)
         SetWarpDestination(warp->mapGroup, warp->mapNum, -1, warp->x, warp->y);
+    SetRoamMonsWarpMode(ROAMERS_WARP_JUMP); // Pure Gold: only Fly uses this; G/S jumps the roaming beasts
 }
 
 void SetWarpDestinationToLastHealLocation(void)
 {
     sWarpDestination = gSaveBlock1Ptr->lastHealLocation;
+    SetRoamMonsWarpMode(ROAMERS_WARP_JUMP); // Pure Gold: only Teleport uses this; G/S jumps the roaming beasts
 }
 
 static void Overworld_SetWhiteoutRespawnPoint(void)
@@ -775,8 +778,8 @@ void LoadMapFromCameraTransition(u8 mapGroup, u8 mapNum)
     for (paletteIndex = 7; paletteIndex < 13; paletteIndex++)
         ApplyWeatherGammaShiftToPal(paletteIndex);
     InitSecondaryTilesetAnimation();
-    UpdateLocationHistoryForRoamer();
-    RoamerMove();
+    if (!QL_IS_PLAYBACK_STATE)
+        UpdateRoamMons(); // Pure Gold: pokegold MapSetupScript_Connection
     QL_ResetDefeatedWildMonRecord();
     DoCurrentWeather();
     ResetFieldTasksArgs();
@@ -806,8 +809,7 @@ static void LoadMapFromWarp(bool32 unused)
     Overworld_ClearSavedMusic();
     RunOnTransitionMapScript();
     TryRegenerateRenewableHiddenItems();
-    UpdateLocationHistoryForRoamer();
-    RoamerMoveToOtherLocationSet();
+    HandleRoamMonsOnWarp(); // Pure Gold: see roamer.h
     QL_ResetDefeatedWildMonRecord();
     InitMap();
 }
@@ -1707,6 +1709,7 @@ void CB2_ContinueSavedGame(void)
     {
         ClearContinueGameWarpStatus();
         SetWarpDestinationToContinueGameWarp();
+        SetRoamMonsWarpMode(ROAMERS_WARP_NONE); // Pure Gold: continuing only jumps the roaming beasts (see Overworld_ResetStateOnContinue)
         WarpIntoMap();
         SetMainCallback2(CB2_LoadMap);
     }
@@ -1779,6 +1782,7 @@ static bool32 LoadMapInStepsLink(u8 *state)
         (*state)++;
         break;
     case 1:
+        SetRoamMonsWarpMode(ROAMERS_WARP_NONE); // Pure Gold: link rooms do not move the roaming beasts
         LoadMapFromWarp(TRUE);
         (*state)++;
         break;
@@ -2337,6 +2341,7 @@ void CB2_EnterFieldFromQuestLog(void)
     {
         ClearContinueGameWarpStatus();
         SetWarpDestinationToContinueGameWarp();
+        SetRoamMonsWarpMode(ROAMERS_WARP_NONE); // Pure Gold: continuing only jumps the roaming beasts (see Overworld_ResetStateOnContinue)
         WarpIntoMap();
         SetMainCallback2(CB2_LoadMap);
     }
@@ -2432,6 +2437,7 @@ static bool8 MapLdr_Credits(void)
     {
     case 0:
         InitOverworldBgs_NoResetHeap();
+        SetRoamMonsWarpMode(ROAMERS_WARP_NONE); // Pure Gold: the credits do not move the roaming beasts
         LoadMapFromWarp(FALSE);
         (*state)++;
         break;

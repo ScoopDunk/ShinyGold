@@ -10,7 +10,6 @@ Route29_OnFrame::
 Route29_EventScript_FrameScene::
 	setvar 0x7010, 1
 	call Route29_EventScript_FrameScene_1
-	call Route35_EventScript_FrameScene_2
 	end
 
 Route29_EventScript_FrameScene_1::

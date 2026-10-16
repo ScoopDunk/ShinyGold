@@ -3226,6 +3226,8 @@ AI_Unknown_End::
 AI_Roaming::
 	if_status2 AI_USER, STATUS2_WRAPPED, AI_Roaming_End
 	if_status2 AI_USER, STATUS2_ESCAPE_PREVENTION, AI_Roaming_End
+	@ Pure Gold: a roaming beast does not flee while asleep or frozen (pokegold TryEnemyFlee)
+	if_status AI_USER, STATUS1_SLEEP | STATUS1_FREEZE, AI_Roaming_End
 	get_ability AI_TARGET
 	if_equal ABILITY_SHADOW_TAG, AI_Roaming_End
 	get_ability AI_USER

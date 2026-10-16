@@ -9,7 +9,6 @@ Route45_OnFrame::
 Route45_EventScript_FrameScene::
 	setvar 0x701E, 1
 	call Route45_EventScript_FrameScene_1
-	call Route35_EventScript_FrameScene_2
 	end
 
 Route45_EventScript_FrameScene_1::
