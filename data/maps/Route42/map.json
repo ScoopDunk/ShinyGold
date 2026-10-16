@@ -230,51 +230,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VictoryRoad_Cave4_EventScript_RedNormal",
       "flag": "0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_ENTEI",
-      "x": 50,
-      "y": 14,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route35_EventScript_Entei",
-      "flag": "0x1230",
-      "explicit_local_id": 53
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_SUICUNE",
-      "x": 51,
-      "y": 13,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route35_EventScript_Suicune",
-      "flag": "0x1232",
-      "explicit_local_id": 54
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_RAIKOU",
-      "x": 52,
-      "y": 14,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route35_EventScript_Raikou",
-      "flag": "0x1231",
-      "explicit_local_id": 51
     }
   ],
   "warp_events": [

@@ -22,42 +22,6 @@ EcruteakCity_Cave1_EventScript_ItemNugget::
 	finditem ITEM_NUGGET
 	end
 
-EcruteakCity_Cave1_EventScript_Man::
-	call_if_set 0x11B4, EcruteakCity_Cave1_EventScript_Man_1
-	call_if_set 0x11B7, EcruteakCity_Cave1_EventScript_Man_2
-	setflag 0x11B7
-	msgbox EcruteakCity_Cave1_Text_Man_1, MSGBOX_NPC
-	lock
-	faceplayer
-	msgbox EcruteakCity_Cave1_Text_Man_2, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 1, EcruteakCity_Cave1_EventScript_Man_3
-	msgbox EcruteakCity_Cave1_Text_Man_3, MSGBOX_NPC
-	end
-
-EcruteakCity_Cave1_EventScript_Man_1::
-	msgbox EcruteakCity_Cave1_Text_Man_4, MSGBOX_NPC
-	end
-
-EcruteakCity_Cave1_EventScript_Man_2::
-	msgbox EcruteakCity_Cave1_Text_Man_5, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 1, EcruteakCity_Cave1_EventScript_Man_3
-	msgbox EcruteakCity_Cave1_Text_Man_3, MSGBOX_NPC
-
-EcruteakCity_Cave1_EventScript_Man_3::
-	msgbox EcruteakCity_Cave1_Text_Man_6, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_LEADER_MORTY, 0, EcruteakCity_Cave1_Text_ManDefeat, EcruteakCity_Cave1_Text_ManVictory
-	setflag 0x11B4
-	msgbox EcruteakCity_Cave1_Text_Man_7, MSGBOX_NPC
-	playfanfare MUS_SLOTS_JACKPOT
-	lock
-	faceplayer
-	msgbox EcruteakCity_Cave1_Text_Man_8, MSGBOX_AUTOCLOSE
-	waitfanfare
-	removeitem ITEM_POKEBLOCK_CASE
-	giveitem ITEM_SILPH_SCOPE
-	msgbox EcruteakCity_Cave1_Text_Man_9, MSGBOX_NPC
-	end
-
 EcruteakCity_Cave1_EventScript_Trigger::
 	call_if_set 0x10AC, EcruteakCity_Cave1_EventScript_Trigger_1
 	setflag 0x10AC
@@ -87,6 +51,7 @@ EcruteakCity_Cave1_EventScript_Trigger::
 	applymovement 9, EcruteakCity_Cave1_Movement_Trigger_4
 	delay 96
 	playbgm MUS_MT_MOON, 51
+	special InitRoamMons @ Pure Gold: the beasts now roam Johto (pokegold BurnedTowerB1F ReleaseTheBeasts)
 	release
 	end
 

@@ -9,7 +9,6 @@ Route43_OnFrame::
 Route43_EventScript_FrameScene::
 	setvar 0x701C, 1
 	call Route43_EventScript_FrameScene_1
-	call Route35_EventScript_FrameScene_2
 	end
 
 Route43_EventScript_FrameScene_1::

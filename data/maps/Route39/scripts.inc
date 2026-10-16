@@ -9,7 +9,6 @@ Route39_OnFrame::
 Route39_EventScript_FrameScene::
 	setvar 0x701A, 1
 	call Route39_EventScript_FrameScene_1
-	call Route35_EventScript_FrameScene_2
 	end
 
 Route39_EventScript_FrameScene_1::

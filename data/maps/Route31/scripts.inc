@@ -9,7 +9,6 @@ Route31_OnFrame::
 Route31_EventScript_FrameScene::
 	setvar 0x7012, 1
 	call Route31_EventScript_FrameScene_1
-	call Route35_EventScript_FrameScene_2
 	end
 
 Route31_EventScript_FrameScene_1::
