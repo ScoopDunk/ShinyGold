@@ -3,7 +3,7 @@ SilphCo_Interior6_MapScripts::
 	.byte 0
 
 SilphCo_Interior6_EventScript_TeamRocketGrunt29::
-	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_29, SilphCo_Interior6_Text_TeamRocketGrunt29Intro, SilphCo_Interior6_Text_TeamRocketGrunt29Defeat
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_29_2, SilphCo_Interior6_Text_TeamRocketGrunt29Intro, SilphCo_Interior6_Text_TeamRocketGrunt29Defeat
 	msgbox SilphCo_Interior6_Text_TeamRocketGrunt29, MSGBOX_AUTOCLOSE
 	end
 

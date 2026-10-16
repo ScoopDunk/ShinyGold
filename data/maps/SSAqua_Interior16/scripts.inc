@@ -2,7 +2,7 @@ SSAqua_Interior16_MapScripts::
 	.byte 0
 
 SSAqua_Interior16_EventScript_BurglarDuncan::
-	trainerbattle_single TRAINER_BURGLAR_DUNCAN, SSAqua_Interior16_Text_BurglarDuncanIntro, SSAqua_Interior16_Text_BurglarDuncanDefeat
+	trainerbattle_single TRAINER_BURGLAR_DUNCAN_2, SSAqua_Interior16_Text_BurglarDuncanIntro, SSAqua_Interior16_Text_BurglarDuncanDefeat
 	msgbox SSAqua_Interior16_Text_BurglarDuncan, MSGBOX_AUTOCLOSE
 	end
 

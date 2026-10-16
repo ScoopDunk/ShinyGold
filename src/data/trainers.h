@@ -8170,4 +8170,37 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_CueBallPaxton),
     },
 
+    [TRAINER_BURGLAR_EDDIE_2] = {
+        .trainerClass = TRAINER_CLASS_BURGLAR,
+        .encounterMusic_gender = 92,
+        .trainerPic = TRAINER_PIC_BURGLAR,
+        .trainerName = _("EDDIE"),  // ShinyGold fix: was "EDDIE!" (removed stray trailing characters)
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_BurglarEddie),
+    },
+
+    [TRAINER_BURGLAR_DUNCAN_2] = {
+        .trainerClass = TRAINER_CLASS_BURGLAR,
+        .encounterMusic_gender = 92,
+        .trainerPic = TRAINER_PIC_BURGLAR,
+        .trainerName = _("DUNCAN"),  // ShinyGold fix: was "DUNCAN!" (removed stray trailing characters)
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_BurglarDuncan),
+    },
+
+    [TRAINER_TEAM_ROCKET_GRUNT_29_2] = {
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
+        .trainerName = _("GRUNT"),  // ShinyGold fix: was "GRUNT!" (removed stray trailing characters)
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_TeamRocketGrunt29),
+    },
+
 };

@@ -76,11 +76,12 @@ SilphCo_Interior6_Text_Trigger1_8::
 	.string "and that means...$"
 
 SilphCo_Interior6_Text_Trigger1Defeat::
-	.string "JESS: You are annoying, you know that?$"
+	.string "JESS: You are annoying,\n"
+	.string "you know that?$"
 
 SilphCo_Interior6_Text_Trigger1Victory::
-	.string "JESS: Yes...! Go back home crying like\n"
-	.string "the baby you are!$"
+	.string "JESS: Yes...! Go back home\n"
+	.string "crying like the baby you are!$"
 
 SilphCo_Interior6_Text_Trigger1_9::
 	.string "JESS: Argh!\n"

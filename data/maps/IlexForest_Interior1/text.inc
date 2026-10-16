@@ -61,8 +61,8 @@ IlexForest_Interior1_Text_CrushGirl_1::
 	.string "Here’s a POISON BARB for you!$"
 
 IlexForest_Interior1_Text_CrushGirl_2::
-	.string "FRIEDA: Give it to a POKéMON that has\n"
-	.string "poison-type moves.\p"
+	.string "FRIEDA: Give it to a POKéMON that\n"
+	.string "has poison-type moves.\p"
 	.string "Oh!\p"
 	.string "It’s wicked!\p"
 	.string "You’ll be shocked how good it makes\n"

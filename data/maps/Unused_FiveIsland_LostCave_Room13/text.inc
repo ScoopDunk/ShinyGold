@@ -14,8 +14,8 @@ Unused_FiveIsland_LostCave_Room13_Text_MgDeliveryman_2::
 	.string "We have chosen the winners!$"
 
 Unused_FiveIsland_LostCave_Room13_Text_MgDeliveryman_3::
-	.string "Everyone else gets an ORAN BERRY as a\n"
-	.string "consolation prize!$"
+	.string "Everyone else gets an ORAN BERRY\n"
+	.string "as a consolation prize!$"
 
 Unused_FiveIsland_LostCave_Room13_Text_MgDeliveryman_4::
 	.string "Please join us for the next Contest!$"

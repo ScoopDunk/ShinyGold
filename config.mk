@@ -4,6 +4,12 @@ GAME_VERSION  ?= FIRERED
 GAME_REVISION ?= 0
 GAME_LANGUAGE ?= ENGLISH
 
+# ShinyGold: the game must always identify as FireRed (title POKEMON FIRE, game code BPRE, gGameVersion
+# VERSION_FIRE_RED) so other games, link partners, save tools and flash carts recognize it.
+ifneq ($(GAME_VERSION),FIRERED)
+  $(error ShinyGold only builds as FireRed: GAME_VERSION must be FIRERED, not $(GAME_VERSION))
+endif
+
 # Builds the ROM using a modern compiler
 MODERN        ?= 0
 # Compares the ROM to a checksum of the original - only makes sense using when non-modern
