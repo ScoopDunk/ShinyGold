@@ -9,7 +9,6 @@ Route38_OnFrame::
 Route38_EventScript_FrameScene::
 	setvar 0x7019, 1
 	call Route38_EventScript_FrameScene_1
-	call Route35_EventScript_FrameScene_2
 	end
 
 Route38_EventScript_FrameScene_1::

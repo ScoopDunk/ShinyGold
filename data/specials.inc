@@ -305,7 +305,7 @@ gSpecials::
 	def_special AreLeadMonEVsMaxedOut
 	def_special Script_FacePlayer
 	def_special Script_ClearHeldMovement
-	def_special InitRoamer
+	def_special NullFieldSpecial  @ Pure Gold: was InitRoamer (FireRed's Kanto roamer, unused); see InitRoamMons
 	def_special NullFieldSpecial
 	def_special PlayerHasGrassPokemonInParty
 	def_special NullFieldSpecial
@@ -452,4 +452,5 @@ gSpecials::
 	def_special UpdateLoreleiDollCollection
 	def_special LoopWingFlapSound
 	def_special CreateEnemyEventMon
+	def_special InitRoamMons @ Pure Gold: start the roaming beasts (Burned Tower scene)
 gSpecialsEnd::

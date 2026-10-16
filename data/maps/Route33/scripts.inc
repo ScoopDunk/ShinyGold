@@ -9,7 +9,6 @@ Route33_OnFrame::
 Route33_EventScript_FrameScene::
 	setvar 0x7014, 1
 	call Route33_EventScript_FrameScene_1
-	call Route35_EventScript_FrameScene_2
 	end
 
 Route33_EventScript_FrameScene_1::

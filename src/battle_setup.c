@@ -263,7 +263,7 @@ void StartRoamerBattle(void)
     StopPlayerAvatar();
     gMain.savedCallback = CB2_EndWildBattle;
     gBattleTypeFlags = BATTLE_TYPE_ROAMER;
-    CreateBattleStartTask(GetWildBattleTransition(), MUS_VS_LEGEND);
+    CreateBattleStartTask(GetWildBattleTransition(), 0); // Pure Gold: the roaming beasts use the wild battle music, as in G/S
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
     IncrementGameStat(GAME_STAT_WILD_BATTLES);
 }
@@ -368,6 +368,10 @@ void StartLegendaryBattle(void)
     case SPECIES_HO_OH:
     case SPECIES_LUGIA:
         CreateBattleStartTask(B_TRANSITION_BLUR, MUS_VS_LEGEND);
+        break;
+    case SPECIES_CELEBI:
+        // Pure Gold: the ILEX FOREST shrine's CELEBI is an ordinary wild battle in Crystal (wild battle music)
+        CreateBattleStartTask(GetWildBattleTransition(), 0);
         break;
     default:
         CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RS_VS_TRAINER);

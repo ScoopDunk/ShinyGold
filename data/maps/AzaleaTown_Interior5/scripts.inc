@@ -13,9 +13,67 @@ AzaleaTown_Interior5_EventScript_BaldingMan::
 	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_1::
-	call_if_set 0x11B0, AzaleaTown_Interior5_EventScript_BaldingMan_3
+	goto_if_eq VAR_GOLD_GS_BALL, GS_BALL_KURT_CHECKING, AzaleaTown_Interior5_EventScript_KurtCheckingGSBall
+	@ GS_BALL_NOT_RECEIVED too: a ShinyGold save may have the GS BALL without having been to Goldenrod's POKéMON CENTER
+	goto_if_le VAR_GOLD_GS_BALL, GS_BALL_RECEIVED, AzaleaTown_Interior5_EventScript_KurtTryTakeGSBall
+AzaleaTown_Interior5_EventScript_KurtMakesBalls::
 	msgbox AzaleaTown_Interior5_Text_BaldingMan_2, MSGBOX_NPC
 	call AzaleaTown_Interior5_EventScript_BaldingMan_4
+	end
+
+@ Pure Gold: the GS Ball, as in Crystal (pokecrystal KurtsHouse Kurt1 .CanGiveGSBallToKurt, .GaveGSBallToKurt and
+@ Kurt2). KURT keeps the GS BALL until the step counter runs out (the hack's stand-in for G/S's daily
+@ ENGINE_KURT_MAKING_BALLS, which it also uses for the APRICORN BALLS); meanwhile he works at his desk (object 3).
+AzaleaTown_Interior5_EventScript_KurtTryTakeGSBall::
+	@ a BALL made from an APRICORN comes first
+	goto_if_set 0x1138, AzaleaTown_Interior5_EventScript_KurtMakesBalls
+	goto_if_set 0x1139, AzaleaTown_Interior5_EventScript_KurtMakesBalls
+	goto_if_set 0x113A, AzaleaTown_Interior5_EventScript_KurtMakesBalls
+	goto_if_set 0x113B, AzaleaTown_Interior5_EventScript_KurtMakesBalls
+	goto_if_set 0x113C, AzaleaTown_Interior5_EventScript_KurtMakesBalls
+	goto_if_set 0x113D, AzaleaTown_Interior5_EventScript_KurtMakesBalls
+	goto_if_set 0x113E, AzaleaTown_Interior5_EventScript_KurtMakesBalls
+	checkitem ITEM_RED_ORB
+	goto_if_eq VAR_RESULT, FALSE, AzaleaTown_Interior5_EventScript_KurtMakesBalls
+	msgbox AzaleaTown_Interior5_Text_KurtWhatIsThat, MSGBOX_NPC
+	removeitem ITEM_RED_ORB
+	setvar VAR_GOLD_GS_BALL, GS_BALL_KURT_CHECKING
+	callnative StartSaveBlockExtStepCounter
+	end
+
+AzaleaTown_Interior5_EventScript_KurtCheckingGSBall::
+	callnative CheckSaveBlockExtStepCounter
+	goto_if_eq VAR_RESULT, TRUE, AzaleaTown_Interior5_EventScript_KurtGSBallShakes
+	lock
+	faceplayer
+	msgbox AzaleaTown_Interior5_Text_KurtImCheckingItNow
+	msgbox AzaleaTown_Interior5_Text_KurtAhHaISee
+	release
+	end
+
+AzaleaTown_Interior5_EventScript_KurtGSBallShakes::
+	lock
+	faceplayer
+	msgbox AzaleaTown_Interior5_Text_BaldingMan_4
+	closemessage
+	setvar VAR_GOLD_GS_BALL, GS_BALL_KURT_OUTSIDE
+	fadeoutbgm 0
+	delay 20
+	applymovement 1, AzaleaTown_Interior5_Movement_BaldingMan_2
+	waitmovement 0
+	goto_if_eq VAR_FACING, DIR_SOUTH, AzaleaTown_Interior5_EventScript_KurtRunsOutAroundPlayer
+	goto_if_eq VAR_FACING, DIR_NORTH, AzaleaTown_Interior5_EventScript_KurtRunsOutAroundPlayer
+	applymovement 1, AzaleaTown_Interior5_Movement_BaldingMan_3
+	goto AzaleaTown_Interior5_EventScript_KurtHasLeftTheBuilding
+
+AzaleaTown_Interior5_EventScript_KurtRunsOutAroundPlayer::
+	applymovement 1, AzaleaTown_Interior5_Movement_BaldingMan_4
+AzaleaTown_Interior5_EventScript_KurtHasLeftTheBuilding::
+	waitmovement 0
+	playse SE_EXIT
+	removeobject 1
+	fadedefaultbgm
+	release
 	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_2::
@@ -23,12 +81,6 @@ AzaleaTown_Interior5_EventScript_BaldingMan_2::
 	giveitem ITEM_NET_BALL
 	msgbox AzaleaTown_Interior5_Text_BaldingMan_2, MSGBOX_NPC
 	setflag 0x1065
-	end
-
-AzaleaTown_Interior5_EventScript_BaldingMan_3::
-	callnative CheckSaveBlockExtStepCounter
-	call_if_eq VAR_RESULT, 1, AzaleaTown_Interior5_EventScript_BaldingMan_5
-	call AzaleaTown_Interior5_EventScript_BaldingMan_6
 	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_4::
@@ -41,7 +93,6 @@ AzaleaTown_Interior5_EventScript_BaldingMan_4::
 	call_if_set 0x113C, AzaleaTown_Interior5_EventScript_BaldingMan_11
 	call_if_set 0x113D, AzaleaTown_Interior5_EventScript_BaldingMan_12
 	call_if_set 0x113E, AzaleaTown_Interior5_EventScript_BaldingMan_13
-	call_if_set 0x11AF, AzaleaTown_Interior5_EventScript_BaldingMan_14
 	checkitem ITEM_UP_GRADE
 	call_if_ge VAR_RESULT, 1, AzaleaTown_Interior5_EventScript_BaldingMan_15
 	checkitem ITEM_GREEN_SCARF
@@ -66,25 +117,6 @@ AzaleaTown_Interior5_Movement_BaldingMan_1::
 	set_invisible
 	walk_fast_down
 	step_end
-
-AzaleaTown_Interior5_EventScript_BaldingMan_5::
-	msgbox AzaleaTown_Interior5_Text_BaldingMan_4, MSGBOX_NPC
-	applymovement 1, AzaleaTown_Interior5_Movement_BaldingMan_2
-	delay 64
-	playbgm MUS_NONE, 51
-	setflag 0x1058
-	setflag 0x11AE
-	clearflag 0x11AD
-	call_if_eq VAR_FACING, 1, AzaleaTown_Interior5_EventScript_BaldingMan_22
-	call_if_eq VAR_FACING, 2, AzaleaTown_Interior5_EventScript_BaldingMan_22
-	applymovement 1, AzaleaTown_Interior5_Movement_BaldingMan_3
-	delay 80
-	playbgm MUS_SEVII_45, 51
-	end
-
-AzaleaTown_Interior5_EventScript_BaldingMan_6::
-	msgbox AzaleaTown_Interior5_Text_BaldingMan_5, MSGBOX_NPC
-	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_7::
 	callnative CheckSaveBlockExtStepCounter
@@ -149,15 +181,6 @@ AzaleaTown_Interior5_EventScript_BaldingMan_13::
 	clearflag 0x113E
 	end
 
-AzaleaTown_Interior5_EventScript_BaldingMan_14::
-	msgbox AzaleaTown_Interior5_Text_BaldingMan_8, MSGBOX_NPC
-	msgbox AzaleaTown_Interior5_Text_BaldingMan_9, MSGBOX_NPC
-	removeitem ITEM_RED_ORB
-	setflag 0x11B0
-	setvar VAR_RESULT, 0
-	callnative StartSaveBlockExtStepCounter
-	end
-
 AzaleaTown_Interior5_EventScript_BaldingMan_15::
 	msgbox AzaleaTown_Interior5_Text_BaldingMan_10, MSGBOX_YESNO
 	call_if_eq VAR_RESULT, 1, AzaleaTown_Interior5_EventScript_BaldingMan_24
@@ -199,12 +222,6 @@ AzaleaTown_Interior5_EventScript_BaldingMan_21::
 	call_if_eq VAR_RESULT, 1, AzaleaTown_Interior5_EventScript_BaldingMan_30
 	releaseall
 	return
-
-AzaleaTown_Interior5_EventScript_BaldingMan_22::
-	applymovement 1, AzaleaTown_Interior5_Movement_BaldingMan_4
-	delay 80
-	playbgm MUS_SEVII_45, 51
-	end
 
 AzaleaTown_Interior5_EventScript_BaldingMan_23::
 	msgbox AzaleaTown_Interior5_Text_BaldingMan_17, MSGBOX_NPC
@@ -291,7 +308,9 @@ AzaleaTown_Interior5_Movement_BaldingMan_4::
 	step_end
 
 AzaleaTown_Interior5_EventScript_LittleGirl::
-	call_if_set 0x11AE, AzaleaTown_Interior5_EventScript_LittleGirl_1
+	goto_if_eq VAR_GOLD_GS_BALL, GS_BALL_KURT_OUTSIDE, AzaleaTown_Interior5_EventScript_LittleGirl_1
+	goto_if_eq VAR_GOLD_GS_BALL, GS_BALL_RETURNED, AzaleaTown_Interior5_EventScript_LittleGirl_1
+	goto_if_eq VAR_GOLD_GS_BALL, GS_BALL_KURT_CHECKING, AzaleaTown_Interior5_EventScript_LittleGirlGSBall
 	call_if_set 0x1055, AzaleaTown_Interior5_EventScript_LittleGirl_2
 	call_if_set 0x1058, AzaleaTown_Interior5_EventScript_LittleGirl_1
 	msgbox AzaleaTown_Interior5_Text_LittleGirl_1, MSGBOX_NPC
@@ -305,6 +324,19 @@ AzaleaTown_Interior5_EventScript_LittleGirl_2::
 	msgbox AzaleaTown_Interior5_Text_LittleGirl_3, MSGBOX_NPC
 	end
 
+AzaleaTown_Interior5_EventScript_LittleGirlGSBall::
+	msgbox AzaleaTown_Interior5_Text_LittleGirlGSBall, MSGBOX_NPC
+	end
+
 AzaleaTown_Interior5_EventScript_BaldingMan2::
+	goto_if_eq VAR_GOLD_GS_BALL, GS_BALL_KURT_CHECKING, AzaleaTown_Interior5_EventScript_Kurt2CheckingGSBall
 	msgbox AzaleaTown_Interior5_Text_BaldingMan2, MSGBOX_NPC
+	end
+
+AzaleaTown_Interior5_EventScript_Kurt2CheckingGSBall::
+	lock
+	faceplayer
+	msgbox AzaleaTown_Interior5_Text_KurtImCheckingItNow
+	msgbox AzaleaTown_Interior5_Text_KurtAhHaISee
+	release
 	end

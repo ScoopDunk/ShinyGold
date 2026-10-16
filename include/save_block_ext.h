@@ -33,7 +33,12 @@ struct SaveBlockExt
 {
     /*0x000*/ u8 flags[EXT_FLAGS_SIZE];
     /*0x2E0*/ u16 stepCounter; // see StartSaveBlockExtStepCounter
-    /*0x2E2*/ u8 unused[0x42];
+    // Pure Gold/Silver: the three roaming beasts (src/roamer.c). This was unused space (0x42 bytes, zero in
+    // ShinyGold saves, which therefore load with no active roamers). Raikou is gSaveBlock1Ptr->roamer.
+    /*0x2E2*/ u8 roamerPlayerCurMap[2];     // pokegold wRoamMons_CurMapGroup/Number: (map group, map num)
+    /*0x2E4*/ struct Roamer roamers[2];     // Entei, Suicune
+    /*0x31C*/ u8 roamerMaps[3][2];          // current map of Raikou, Entei, Suicune: (map group, map num)
+    /*0x322*/ u8 roamerPlayerLastMap[2];    // pokegold wRoamMons_LastMapGroup/Number
     /*0x324*/ u32 numVars;
     /*0x328*/ struct SaveBlockExtVar vars[EXT_VARS_CAPACITY];
 }; // size = 0xEC4

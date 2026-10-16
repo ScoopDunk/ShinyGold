@@ -9,7 +9,6 @@ Route42_OnFrame::
 Route42_EventScript_FrameScene::
 	setvar 0x701B, 1
 	call Route42_EventScript_FrameScene_1
-	call Route35_EventScript_FrameScene_2
 	end
 
 Route42_EventScript_FrameScene_1::

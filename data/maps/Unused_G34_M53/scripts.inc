@@ -23,15 +23,31 @@ Unused_G34_M53_EventScript_Trigger4::
 	setflag 0x1129
 	applymovement 1, Unused_G34_M53_Movement_Trigger4
 	delay 128
-	waitse
-	playmoncry SPECIES_HO_OH, 0x5028
-	nop
-	nop
-	checkitemtype 0x1A64
-	gotostd 102
+	goto Unused_G34_M53_EventScript_HoOh
 
 Unused_G34_M53_EventScript_Trigger4_1::
 	release
+	end
+
+@ Pure Gold: Ho-Oh on the TIN TOWER roof, Lv 40 holding SACRED ASH, as in Gold (pokegold TinTowerRoof TinTowerHoOh:
+@ BATTLETYPE_FORCEITEM). The hack's bytes after Ho-Oh's cry were garbled (a text pointer read as "checkitemtype" and a
+@ "gotostd" out of range, which this tree's script engine skips), so its battle (Lv 45) was lost in this tree.
+Unused_G34_M53_EventScript_HoOh::
+	lockall
+	waitse
+	playmoncry SPECIES_HO_OH, CRY_MODE_ENCOUNTER
+	msgbox Unused_G34_M53_Text_HoOh
+	waitmoncry
+	delay 10
+	setwildbattle SPECIES_HO_OH, 40, ITEM_SACRED_ASH
+	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	special StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	fadescreen FADE_TO_BLACK
+	removeobject 1
+	fadescreen FADE_FROM_BLACK
+	releaseall
 	end
 
 Unused_G34_M53_Movement_Trigger4::
@@ -46,12 +62,7 @@ Unused_G34_M53_EventScript_Trigger5::
 	setflag 0x1129
 	applymovement 1, Unused_G34_M53_Movement_Trigger5
 	delay 128
-	waitse
-	playmoncry SPECIES_HO_OH, 0x5028
-	nop
-	nop
-	checkitemtype 0x1A64
-	gotostd 102
+	goto Unused_G34_M53_EventScript_HoOh
 
 Unused_G34_M53_Movement_Trigger5::
 	walk_fast_right
@@ -61,3 +72,6 @@ Unused_G34_M53_Movement_Trigger5::
 	walk_slow_down
 	walk_slow_down
 	step_end
+
+Unused_G34_M53_Text_HoOh::
+	.string "Shaoooh!$"

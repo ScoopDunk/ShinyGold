@@ -18,3 +18,7 @@ IlexForest_Interior2_Text_Picnicker_2::
 
 IlexForest_Interior2_Text_Clefairy::
 	.string "CLEFAIRY: Faaairy!$"
+
+IlexForest_Interior2_Text_ForestIsRestless::
+	.string "Something’s wrong in ILEX FOREST...\p"
+	.string "You should stay away right now.$"

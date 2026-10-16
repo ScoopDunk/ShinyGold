@@ -9,7 +9,6 @@ Route36_OnFrame::
 Route36_EventScript_FrameScene::
 	setvar 0x7017, 1
 	call Route36_EventScript_FrameScene_1
-	call Route35_EventScript_FrameScene_2
 	end
 
 Route36_EventScript_FrameScene_1::

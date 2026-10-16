@@ -9,7 +9,6 @@ Route35_OnFrame::
 Route35_EventScript_FrameScene::
 	setvar 0x7016, 1
 	call Route35_EventScript_FrameScene_1
-	call Route35_EventScript_FrameScene_2
 	end
 
 Route35_EventScript_FrameScene_1::
@@ -39,152 +38,10 @@ Route35_EventScript_FrameScene_1::
 	setvar 0x7028, 0
 	return
 
+@ Pure Gold: this used to show the static Raikou, Entei and Suicune at random on Johto's routes. They roam now
+@ (src/roamer.c). The towns' frame scripts still call it.
 Route35_EventScript_FrameScene_2::
-	call_if_unset 0x10AC, Route35_EventScript_FrameScene_3
-	call_if_set 0x1235, Route35_EventScript_FrameScene_4
-	call Route35_EventScript_FrameScene_5
-	end
-
-Route35_EventScript_FrameScene_3::
-	setflag 0x1230
-	setflag 0x1231
-	setflag 0x1232
-	release
-	end
-
-Route35_EventScript_FrameScene_4::
-	call_if_set 0x1234, Route35_EventScript_FrameScene_6
-	call Route35_EventScript_FrameScene_7
-	end
-
-Route35_EventScript_FrameScene_5::
-	lock
-	random 4
-	copyvar VAR_0x8008, VAR_RESULT
-	call_if_eq VAR_0x8008, 0, Route35_EventScript_FrameScene_3
-	call_if_eq VAR_0x8008, 1, Route35_EventScript_FrameScene_3
-	call_if_eq VAR_0x8008, 2, Route35_EventScript_FrameScene_3
-	call_if_eq VAR_0x8008, 3, Route35_EventScript_FrameScene_8
-	end
-
-Route35_EventScript_FrameScene_6::
-	call_if_set 0x1236, Route35_EventScript_FrameScene_3
-	call Route35_EventScript_FrameScene_7
-	end
-
-Route35_EventScript_FrameScene_7::
-	lock
-	random 4
-	copyvar VAR_0x8008, VAR_RESULT
-	call_if_eq VAR_0x8008, 0, Route35_EventScript_FrameScene_3
-	call_if_eq VAR_0x8008, 1, Route35_EventScript_FrameScene_3
-	call_if_eq VAR_0x8008, 2, Route35_EventScript_FrameScene_3
-	call_if_eq VAR_0x8008, 3, Route35_EventScript_FrameScene_9
-	end
-
-Route35_EventScript_FrameScene_8::
-	lock
-	random 4
-	copyvar VAR_0x8008, VAR_RESULT
-	call_if_eq VAR_0x8008, 0, Route35_EventScript_FrameScene_3
-	call_if_eq VAR_0x8008, 1, Route35_EventScript_FrameScene_3
-	call_if_eq VAR_0x8008, 2, Route35_EventScript_FrameScene_3
-	call_if_eq VAR_0x8008, 3, Route35_EventScript_FrameScene_10
-	end
-
-Route35_EventScript_FrameScene_9::
-	lock
-	random 4
-	copyvar VAR_0x8008, VAR_RESULT
-	call_if_eq VAR_0x8008, 0, Route35_EventScript_FrameScene_11
-	call_if_eq VAR_0x8008, 1, Route35_EventScript_FrameScene_12
-	call_if_eq VAR_0x8008, 2, Route35_EventScript_FrameScene_13
-	call_if_eq VAR_0x8008, 3, Route35_EventScript_FrameScene_14
-	end
-
-Route35_EventScript_FrameScene_10::
-	lock
-	random 4
-	copyvar VAR_0x8008, VAR_RESULT
-	call_if_eq VAR_0x8008, 0, Route35_EventScript_FrameScene_3
-	call_if_eq VAR_0x8008, 1, Route35_EventScript_FrameScene_3
-	call_if_eq VAR_0x8008, 2, Route35_EventScript_FrameScene_3
-	call_if_eq VAR_0x8008, 3, Route35_EventScript_FrameScene_15
-	end
-
-Route35_EventScript_FrameScene_11::
-	lock
-	random 4
-	copyvar VAR_0x8008, VAR_RESULT
-	call_if_eq VAR_0x8008, 0, Route35_EventScript_FrameScene_3
-	call_if_eq VAR_0x8008, 1, Route35_EventScript_FrameScene_16
-	call_if_eq VAR_0x8008, 2, Route35_EventScript_FrameScene_17
-	call_if_eq VAR_0x8008, 3, Route35_EventScript_FrameScene_18
-	end
-
-Route35_EventScript_FrameScene_12::
-	call_if_set 0x1235, Route35_EventScript_FrameScene_7
-	clearflag 0x1230
-	setflag 0x1231
-	setflag 0x1232
-	clearflag 0x1233
-	release
-	end
-
-Route35_EventScript_FrameScene_13::
-	call_if_set 0x1234, Route35_EventScript_FrameScene_7
-	clearflag 0x1231
-	setflag 0x1230
-	setflag 0x1232
-	clearflag 0x1233
-	release
-	end
-
-Route35_EventScript_FrameScene_14::
-	call_if_set 0x1236, Route35_EventScript_FrameScene_7
-	clearflag 0x1232
-	setflag 0x1230
-	setflag 0x1231
-	clearflag 0x1233
-	release
-	end
-
-Route35_EventScript_FrameScene_15::
-	lock
-	random 4
-	copyvar VAR_0x8008, VAR_RESULT
-	call_if_eq VAR_0x8008, 0, Route35_EventScript_FrameScene_3
-	call_if_eq VAR_0x8008, 1, Route35_EventScript_FrameScene_3
-	call_if_eq VAR_0x8008, 2, Route35_EventScript_FrameScene_3
-	call_if_eq VAR_0x8008, 3, Route35_EventScript_FrameScene_7
-	end
-
-Route35_EventScript_FrameScene_16::
-	call_if_set 0x1235, Route35_EventScript_FrameScene_7
-	clearflag 0x1230
-	setflag 0x1231
-	setflag 0x1232
-	setflag 0x1233
-	release
-	end
-
-Route35_EventScript_FrameScene_17::
-	call_if_set 0x1234, Route35_EventScript_FrameScene_7
-	clearflag 0x1231
-	setflag 0x1230
-	setflag 0x1232
-	setflag 0x1233
-	release
-	end
-
-Route35_EventScript_FrameScene_18::
-	call_if_set 0x1236, Route35_EventScript_FrameScene_7
-	clearflag 0x1232
-	setflag 0x1230
-	setflag 0x1231
-	setflag 0x1233
-	release
-	end
+	return
 
 Route35_EventScript_PicnickerKim::
 	trainerbattle_single TRAINER_PICNICKER_KIM, Route35_Text_PicnickerKimIntro, Route35_Text_PicnickerKimDefeat
@@ -892,178 +749,6 @@ Route35_EventScript_ItemTm04::
 	finditem ITEM_TM04
 	end
 
-Route35_EventScript_Entei::
-	call_if_unset 0x1233, Route35_EventScript_Entei_1
-	msgbox Route35_Text_Entei_1, MSGBOX_AUTOCLOSE
-	waitse
-	playmoncry SPECIES_ENTEI, 0x2800
-	waitse
-	nop
-	delay 48
-	setwildbattle SPECIES_ENTEI, 40
-	special StartLegendaryBattle
-	delay 128
-	specialvar VAR_RESULT, GetBattleOutcome
-	call_if_eq VAR_RESULT, 4, Route35_EventScript_Entei_2
-	call_if_eq VAR_RESULT, 5, Route35_EventScript_Entei_2
-	removeobject 53
-	setflag 0x1235
-	release
-	end
-
-Route35_EventScript_Entei_1::
-	removeobject 53
-	playbgm SE_BANG, 51
-	msgbox Route35_Text_Entei_2, MSGBOX_NPC
-	lock
-	random 4
-	copyvar VAR_0x8008, VAR_RESULT
-	call_if_eq VAR_0x8008, 0, Route35_EventScript_Entei_3
-	call_if_eq VAR_0x8008, 1, Route35_EventScript_Entei_4
-	call_if_eq VAR_0x8008, 2, Route35_EventScript_Entei_5
-	call_if_eq VAR_0x8008, 3, Route35_EventScript_Entei_6
-	end
-
-Route35_EventScript_Entei_2::
-	removeobject 53
-	playbgm SE_BANG, 51
-	msgbox Route35_Text_Entei_2, MSGBOX_NPC
-	end
-
-Route35_EventScript_Entei_3::
-	release
-	end
-
-Route35_EventScript_Entei_4::
-	msgbox Route35_Text_Entei_3, MSGBOX_NPC
-	giveitem ITEM_FIRE_STONE
-	release
-	end
-
-Route35_EventScript_Entei_5::
-	msgbox Route35_Text_Entei_3, MSGBOX_NPC
-	giveitem ITEM_CHARCOAL
-	release
-	end
-
-Route35_EventScript_Entei_6::
-	msgbox Route35_Text_Entei_3, MSGBOX_NPC
-	giveitem ITEM_LUM_BERRY
-	release
-	end
-
-Route35_EventScript_Suicune::
-	call_if_set 0x1233, Route35_EventScript_Suicune_1
-	msgbox Route35_Text_Suicune_1, MSGBOX_AUTOCLOSE
-	waitse
-	playmoncry SPECIES_SUICUNE, 0x2800
-	waitse
-	nop
-	delay 48
-	setwildbattle SPECIES_SUICUNE, 40
-	special StartLegendaryBattle
-	delay 128
-	specialvar VAR_RESULT, GetBattleOutcome
-	call_if_eq VAR_RESULT, 4, Route35_EventScript_Suicune_2
-	call_if_eq VAR_RESULT, 5, Route35_EventScript_Suicune_2
-	removeobject 54
-	setflag 0x1236
-	release
-	end
-
-Route35_EventScript_Suicune_1::
-	removeobject 54
-	playbgm SE_BANG, 51
-	msgbox Route35_Text_Suicune_2, MSGBOX_NPC
-	lock
-	random 4
-	copyvar VAR_0x8008, VAR_RESULT
-	call_if_eq VAR_0x8008, 0, Route35_EventScript_Entei_3
-	call_if_eq VAR_0x8008, 1, Route35_EventScript_Suicune_3
-	call_if_eq VAR_0x8008, 2, Route35_EventScript_Suicune_4
-	call_if_eq VAR_0x8008, 3, Route35_EventScript_Suicune_5
-	end
-
-Route35_EventScript_Suicune_2::
-	removeobject 54
-	playbgm SE_BANG, 51
-	msgbox Route35_Text_Suicune_2, MSGBOX_NPC
-	end
-
-Route35_EventScript_Suicune_3::
-	msgbox Route35_Text_Entei_3, MSGBOX_NPC
-	giveitem ITEM_WATER_STONE
-	release
-	end
-
-Route35_EventScript_Suicune_4::
-	msgbox Route35_Text_Entei_3, MSGBOX_NPC
-	giveitem ITEM_MYSTIC_WATER
-	release
-	end
-
-Route35_EventScript_Suicune_5::
-	msgbox Route35_Text_Entei_3, MSGBOX_NPC
-	giveitem ITEM_SITRUS_BERRY
-	release
-	end
-
-Route35_EventScript_Raikou::
-	call_if_set 0x1233, Route35_EventScript_Raikou_1
-	msgbox Route35_Text_Raikou_1, MSGBOX_AUTOCLOSE
-	waitse
-	playmoncry SPECIES_RAIKOU, 0x2800
-	waitse
-	nop
-	delay 48
-	setwildbattle SPECIES_RAIKOU, 40
-	special StartLegendaryBattle
-	delay 128
-	specialvar VAR_RESULT, GetBattleOutcome
-	call_if_eq VAR_RESULT, 4, Route35_EventScript_Raikou_2
-	call_if_eq VAR_RESULT, 5, Route35_EventScript_Raikou_2
-	removeobject 51
-	setflag 0x1234
-	release
-	end
-
-Route35_EventScript_Raikou_1::
-	removeobject 51
-	playbgm SE_BANG, 51
-	msgbox Route35_Text_Raikou_2, MSGBOX_NPC
-	lock
-	random 4
-	copyvar VAR_0x8008, VAR_RESULT
-	call_if_eq VAR_0x8008, 0, Route35_EventScript_Entei_3
-	call_if_eq VAR_0x8008, 1, Route35_EventScript_Raikou_3
-	call_if_eq VAR_0x8008, 2, Route35_EventScript_Raikou_4
-	call_if_eq VAR_0x8008, 3, Route35_EventScript_Raikou_5
-	end
-
-Route35_EventScript_Raikou_2::
-	removeobject 51
-	playbgm SE_BANG, 51
-	msgbox Route35_Text_Raikou_2, MSGBOX_NPC
-	end
-
-Route35_EventScript_Raikou_3::
-	msgbox Route35_Text_Entei_3, MSGBOX_NPC
-	giveitem ITEM_THUNDER_STONE
-	release
-	end
-
-Route35_EventScript_Raikou_4::
-	msgbox Route35_Text_Entei_3, MSGBOX_NPC
-	giveitem ITEM_MAGNET
-	release
-	end
-
-Route35_EventScript_Raikou_5::
-	msgbox Route35_Text_Entei_3, MSGBOX_NPC
-	giveitem ITEM_STARF_BERRY
-	release
-	end
-
 Route35_EventScript_Sign1::
 	msgbox Route35_Text_Sign1, MSGBOX_AUTOCLOSE
 	end
@@ -1120,9 +805,6 @@ Route35_EventScript_Sign4_3::
 Route35_EventScript_Sign4_4::
 	call Route35_EventScript_Sign4_7
 	msgbox Route35_Text_Sign4_3, MSGBOX_NPC
-	call_if_set 0x11AC, Route35_EventScript_Sign4_16
-	call_if_set 0x1195, Route35_EventScript_Sign4_17
-	call_if_set 0x117E, Route35_EventScript_Sign4_18
 	call_if_set 0x1151, Route35_EventScript_Sign4_16
 	call_if_set 0x1046, Route35_EventScript_Sign4_16
 	setvar VAR_RESORT_GORGEOUS_REQUESTED_MON, 175
@@ -1218,15 +900,6 @@ Route35_EventScript_Sign4_16::
 	goto_if_lt VAR_0x8008, 2, Route35_EventScript_Sign4_34
 	goto_if_gt VAR_0x8008, 1, Route35_EventScript_Sign4_35
 	end
-
-Route35_EventScript_Sign4_17::
-	msgbox Route35_Text_Sign4_14, MSGBOX_NPC
-	call Route35_EventScript_Sign4_24
-	end
-
-Route35_EventScript_Sign4_18::
-	call_if_set 0x117F, Route35_EventScript_Sign4_36
-	return
 
 Route35_EventScript_Sign4_19::
 	msgbox Route35_Text_Sign4_15, MSGBOX_NPC
@@ -1436,13 +1109,6 @@ Route35_EventScript_Sign4_34::
 
 Route35_EventScript_Sign4_35::
 	msgbox Route35_Text_Sign4_27, MSGBOX_NPC
-	call Route35_EventScript_Sign4_24
-	end
-
-Route35_EventScript_Sign4_36::
-	msgbox Route35_Text_Sign4_28, MSGBOX_NPC
-	setflag 0x117D
-	setflag 0x1195
 	call Route35_EventScript_Sign4_24
 	end
 
