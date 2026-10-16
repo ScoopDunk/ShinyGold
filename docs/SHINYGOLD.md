@@ -195,6 +195,8 @@ ranges), then removal of everything the player can never reach. Origin: original
 - 40 headbutt "sign" events stacked on single tiles (Ecruteak, Violet, Routes 33/34) ran the headbutt script on the
   last NPC talked to, which then vanished; removed.
 - Route 26 ran FireRed's Birth Island (Deoxys) map scripts on every visit; removed.
+- Prof. Oak's Pokédex rating ended with `return` after a `goto` when the National Dex is off (not reachable in
+  normal play), leaving the text box open and Oak locked; it now closes and releases.
 - Unused content removed (`tools/shinygold/cleanup`): the overgrown New Bark copy emptied to a stub (id kept), objects/signs sealed in walls, triggers on impassable tiles or with no script, objects hidden for good, map scripts and
   branches gated on values nothing sets (including the Elite Four 0x115B rematch nothing unlocked), every script/text
   block nothing reaches any more, and tilesets/layouts no map uses. Trainer, item and species tables are untouched
