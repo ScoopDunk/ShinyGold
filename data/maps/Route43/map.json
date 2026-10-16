@@ -135,7 +135,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SevenIsland_SevaultCanyon_EventScript_Nya",
+      "script": "Route43_EventScript_ArdBoy",
       "flag": "0x10D8"
     },
     {
@@ -402,6 +402,15 @@
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
       "script": "Route43_EventScript_Trigger6"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 51,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+      "var_value": "0",
+      "script": "Route43_EventScript_ArdTrigger"
     }
   ],
   "bg_events": [

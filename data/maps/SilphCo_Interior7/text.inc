@@ -23,8 +23,9 @@ SilphCo_Interior7_Text_OldMan2_2::
 	.string "Well, I wish you a safe journey!$"
 
 SilphCo_Interior7_Text_OldMan2_3::
-	.string "SILPH’s PRES: Oh, {PLAYER}, feel free to\n"
-	.string "visit us anytime you want!$"
+	.string "SILPH’s PRES: Oh, {PLAYER},\n"
+	.string "feel free to visit us anytime you\l"
+	.string "want!$"
 
 SilphCo_Interior7_Text_WorkerM_1::
 	.string "I’m the right hand of SILPH.CO’s\n"

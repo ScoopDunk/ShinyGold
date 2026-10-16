@@ -53,7 +53,7 @@ Route33_EventScript_Hiker163::
 Route33_EventScript_Hiker163_1::
 	clearflag 0x1305
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route33_EventScript_Hiker163_2
+	call_if_set 0x030, Route33_EventScript_Hiker163_2
 	call_if_set 0x115F, Route33_EventScript_Hiker163_3
 	call_if_set 0x110A, Route33_EventScript_Hiker163_4
 	call_if_set FLAG_BADGE05_GET, Route33_EventScript_Hiker163_5

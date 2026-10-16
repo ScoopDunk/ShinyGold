@@ -57,7 +57,7 @@ Route46_EventScript_Picnicker116::
 Route46_EventScript_Picnicker116_1::
 	clearflag 0x1316
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route46_EventScript_Picnicker116_2
+	call_if_set 0x030, Route46_EventScript_Picnicker116_2
 	call_if_set 0x115F, Route46_EventScript_Picnicker116_3
 	call_if_set FLAG_BADGE07_GET, Route46_EventScript_Picnicker116_4
 	call_if_set 0x110A, Route46_EventScript_Picnicker116_5
@@ -66,7 +66,7 @@ Route46_EventScript_Picnicker116_1::
 	end
 
 Route46_EventScript_Picnicker116_2::
-	trainerbattle_earlyrival TRAINER_POKEMANIAC_BRENT_5, 0, Route46_Text_Picnicker116Defeat, Route35_Text_Juggler228Victory
+	trainerbattle_earlyrival TRAINER_PICNICKER_ERIN_4, 0, Route46_Text_Picnicker116Defeat, Route35_Text_Juggler228Victory
 	release
 	end
 

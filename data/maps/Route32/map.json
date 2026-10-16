@@ -76,7 +76,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route32_EventScript_ItemPotion",
-      "flag": "0x15A",
+      "flag": "0x1D17",
       "explicit_local_id": 45
     },
     {
@@ -247,7 +247,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route32_EventScript_ItemSuperPotion",
-      "flag": "0x15C"
+      "flag": "0x1D18"
     },
     {
       "type": "object",
@@ -261,7 +261,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route32_EventScript_ItemGreatBall2",
-      "flag": "0x243"
+      "flag": "0x1D19"
     },
     {
       "type": "object",

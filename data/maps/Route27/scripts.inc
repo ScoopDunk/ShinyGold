@@ -54,7 +54,7 @@ Route27_EventScript_BirdKeeper549::
 Route27_EventScript_BirdKeeper549_1::
 	clearflag 0x1326
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route27_EventScript_BirdKeeper549_2
+	call_if_set 0x030, Route27_EventScript_BirdKeeper549_2
 	call_if_set 0x1177, Route27_EventScript_BirdKeeper549_3
 	call_if_set 0x115F, Route27_EventScript_BirdKeeper549_4
 	trainerbattle_earlyrival TRAINER_BIRD_KEEPER_JOSE_3, 0, Route27_Text_BirdKeeper549Defeat, Route35_Text_Juggler228Victory
@@ -99,7 +99,7 @@ Route27_EventScript_Cooltrainer222::
 Route27_EventScript_Cooltrainer222_1::
 	clearflag 0x1328
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route27_EventScript_Cooltrainer222_2
+	call_if_set 0x030, Route27_EventScript_Cooltrainer222_2
 	call_if_set 0x1177, Route27_EventScript_Cooltrainer222_3
 	call_if_set 0x115F, Route27_EventScript_Cooltrainer222_4
 	call_if_set FLAG_BADGE07_GET, Route27_EventScript_Cooltrainer222_5

@@ -102,9 +102,8 @@ Unused_NavelRock_BasePath_B11F_EventScript_Meteorite::
 	msgbox Unused_NavelRock_BasePath_B11F_Text_Meteorite_1, MSGBOX_NPC
 	setflag 0x10F7
 	warp MAP_UNUSED_NAVEL_ROCK_BASE_PATH_B11F, 1, 0x202, 0xF729
-	loadbyte 57, 2
-	fadedefaultbgm
-	nop1
+	@ ShinyGold fix: the engine keeps running a script during the warp fade, so the hack's leftover bytes
+	@ that followed this warp executed (garbage calls, stray text, RAM writes). The script now ends here.
 	end
 
 Unused_NavelRock_BasePath_B11F_EventScript_Meteorite_1::
@@ -351,12 +350,9 @@ Unused_NavelRock_BasePath_B11F_EventScript_Trigger3::
 	msgbox Unused_NavelRock_BasePath_B11F_Text_Trigger3_5, MSGBOX_NPC
 	delay 16
 	warp MAP_UNUSED_NAVEL_ROCK_BASE_PATH_B11F, 6, 0x5702, 0x878
-	callstd MSGBOX_NPC
-	msgbox Unused_NavelRock_BasePath_B11F_Text_Lance_6, MSGBOX_NPC
-	applymovement 17, Unused_NavelRock_BasePath_B11F_Movement_Lance_4
-	applymovement LOCALID_PLAYER, Unused_NavelRock_BasePath_B11F_Movement_Lance_4
-	delay 0xE3C2
-	.byte 0xE0 @ invalid opcode (script stops)
+	@ ShinyGold fix: the engine keeps running a script during the warp fade, so the hack's leftover bytes
+	@ that followed this warp executed (garbage calls, stray text, RAM writes). The script now ends here.
+	end
 
 Unused_NavelRock_BasePath_B11F_EventScript_Trigger3_1::
 	release

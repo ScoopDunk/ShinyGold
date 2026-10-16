@@ -139,7 +139,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SeaCavern_Interior4_EventScript_ItemMaxElixir",
-      "flag": "0x26A"
+      "flag": "0x1D22"
     },
     {
       "type": "object",

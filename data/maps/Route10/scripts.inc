@@ -22,6 +22,6 @@ Route10_EventScript_Sign1::
 Route10_EventScript_Sign2::
 	msgbox Route10_Text_Sign2, MSGBOX_NPC
 	setvar 0x7030, 0x129
-	setvar 0x7032, 0x12B
+	setvar 0x7033, 0x12B @ ShinyGold fix: was 0x7032 (the third swap slot), which left the trainer-battle music on an old swap
 	release
 	end

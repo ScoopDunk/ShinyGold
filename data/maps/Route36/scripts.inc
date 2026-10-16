@@ -108,7 +108,7 @@ Route36_EventScript_Schoolboy306::
 Route36_EventScript_Schoolboy306_1::
 	clearflag 0x1310
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route36_EventScript_Schoolboy306_2
+	call_if_set 0x030, Route36_EventScript_Schoolboy306_2
 	call_if_set 0x115F, Route36_EventScript_Schoolboy306_3
 	call_if_set 0x110A, Route36_EventScript_Schoolboy306_4
 	call_if_set FLAG_BADGE05_GET, Route36_EventScript_Schoolboy306_5

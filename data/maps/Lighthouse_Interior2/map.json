@@ -237,7 +237,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Lighthouse_Interior2_EventScript_ItemHyperPotion",
-      "flag": "0x197"
+      "flag": "0x1D07"
     },
     {
       "type": "object",
@@ -251,7 +251,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Lighthouse_Interior2_EventScript_ItemSuperPotion",
-      "flag": "0x198"
+      "flag": "0x1D08"
     },
     {
       "type": "object",

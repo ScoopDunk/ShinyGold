@@ -86,7 +86,7 @@ Route15_EventScript_Trigger1_2::
 	fadescreen FADE_TO_BLACK
 	playbgm MUS_VS_GYM_LEADER, 51
 	delay 48
-	playbgm SE_M_FLAMETHROWER, 51
+	playse SE_M_FLAMETHROWER @ ShinyGold fix: was playbgm (the sound effect replaced the map music until the next map)
 	msgbox Route15_Text_Trigger1_8, MSGBOX_NPC
 	msgbox Route15_Text_Trigger1_9, MSGBOX_NPC
 	msgbox Route15_Text_Trigger1_10, MSGBOX_NPC

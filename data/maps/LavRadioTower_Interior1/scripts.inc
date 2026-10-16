@@ -69,7 +69,7 @@ LavRadioTower_Interior1_EventScript_Trigger1_2::
 	nop
 	delay 32
 	msgbox LavRadioTower_Interior1_Text_Trigger1_5, MSGBOX_NPC
-	playbgm SE_LAVARIDGE_FALL_WARP, 51
+	playse SE_LAVARIDGE_FALL_WARP @ ShinyGold fix: was playbgm (the sound effect replaced the map music until the next map)
 	waitse
 	playmoncry SPECIES_MIGHTYENA, 0x2805
 	waitse
@@ -108,7 +108,7 @@ LavRadioTower_Interior1_EventScript_Trigger1_2::
 	delay 80
 	fadescreen FADE_TO_BLACK
 	msgbox LavRadioTower_Interior1_Text_Trigger1_17, MSGBOX_NPC
-	playbgm SE_ORB, 51
+	playse SE_ORB @ ShinyGold fix: was playbgm (the sound effect replaced the map music until the next map)
 	msgbox LavRadioTower_Interior1_Text_Trigger1_18, MSGBOX_NPC
 	delay 48
 	msgbox LavRadioTower_Interior1_Text_Trigger1_19, MSGBOX_NPC

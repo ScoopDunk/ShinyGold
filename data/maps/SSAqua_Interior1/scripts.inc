@@ -70,7 +70,7 @@ SSAqua_Interior1_EventScript_SsAnne::
 	call EventScript_OutOfCenterPartyHeal
 	msgbox SSAqua_Interior1_Text_SsAnne_2, MSGBOX_AUTOCLOSE
 	call_if_unset 0x117D, SSAqua_Interior1_EventScript_SsAnne_1
-	playbgm SE_DING_DONG, 51
+	playse SE_DING_DONG @ ShinyGold fix: was playbgm (the sound effect replaced the map music until the next map)
 	delay 80
 	playbgm MUS_CELADON, 51
 	call_if_set 0x1165, SSAqua_Interior1_EventScript_SsAnne_2

@@ -111,7 +111,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RockTunnel_Cave2_EventScript_ItemElixir",
-      "flag": "0x278"
+      "flag": "0x1D12"
     },
     {
       "type": "object",

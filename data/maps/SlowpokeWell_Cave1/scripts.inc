@@ -43,7 +43,8 @@ SlowpokeWell_Cave1_EventScript_TeamRocketGrunt::
 	setflag 0x1061
 	clearflag 0x1059
 	warp MAP_SLOWPOKE_WELL_CAVE1, 2, 0x2028, 0x900
-	goto_if_gt 0x06090020
+	@ ShinyGold fix: the engine keeps running a script during the warp fade, so the hack's leftover bytes
+	@ that followed this warp executed (garbage calls, stray text, RAM writes). The script now ends here.
 	end
 
 SlowpokeWell_Cave1_EventScript_TeamRocketGrunt_1::
@@ -79,18 +80,9 @@ SlowpokeWell_Cave1_EventScript_Trigger1::
 	clearflag 0x1070
 	clearflag 0x1073
 	warp MAP_AZALEA_TOWN_INTERIOR5, 0, 0x6C02, 0x1002
-	call_if_eq 0x026C9530
-	call_if_unset 0x1061, 0x622B9530
-	loadbyte 7, 1
-	setdivewarp ((149 << 8) | 43), 98, 0x610, 0x4701
-	.byte 0x95 @ updatemoneybox
-	.byte 116
-	.byte 8
-	.byte 43
-	settrainerflag 1552
-	nop
-	checkitem 0x7495, 0x4F08
-	endram
+	@ ShinyGold fix: the engine keeps running a script during the warp fade, so the hack's leftover bytes
+	@ that followed this warp executed (garbage calls, stray text, RAM writes). The script now ends here.
+	end
 
 SlowpokeWell_Cave1_EventScript_Trigger1_1::
 	@ ShinyGold: overlapping data duplicated from 0x08749547

@@ -210,20 +210,20 @@ SSAqua_Interior2_EventScript_Trigger3_2::
 	setvar VAR_0x8007, 5
 	special ShakeScreen
 	delay 64
-	playbgm SE_LAVARIDGE_FALL_WARP, 51
+	playse SE_LAVARIDGE_FALL_WARP @ ShinyGold fix: was playbgm (the sound effect replaced the map music until the next map)
 	delay 16
-	playbgm SE_LAVARIDGE_FALL_WARP, 51
+	playse SE_LAVARIDGE_FALL_WARP @ ShinyGold fix: was playbgm (the sound effect replaced the map music until the next map)
 	delay 16
 	fadescreen FADE_TO_BLACK
-	playbgm SE_LAVARIDGE_FALL_WARP, 51
+	playse SE_LAVARIDGE_FALL_WARP @ ShinyGold fix: was playbgm (the sound effect replaced the map music until the next map)
 	delay 16
-	playbgm SE_LAVARIDGE_FALL_WARP, 51
+	playse SE_LAVARIDGE_FALL_WARP @ ShinyGold fix: was playbgm (the sound effect replaced the map music until the next map)
 	delay 16
-	playbgm SE_LAVARIDGE_FALL_WARP, 51
+	playse SE_LAVARIDGE_FALL_WARP @ ShinyGold fix: was playbgm (the sound effect replaced the map music until the next map)
 	delay 16
-	playbgm SE_LAVARIDGE_FALL_WARP, 51
+	playse SE_LAVARIDGE_FALL_WARP @ ShinyGold fix: was playbgm (the sound effect replaced the map music until the next map)
 	delay 16
-	playbgm SE_LAVARIDGE_FALL_WARP, 51
+	playse SE_LAVARIDGE_FALL_WARP @ ShinyGold fix: was playbgm (the sound effect replaced the map music until the next map)
 	delay 16
 	msgbox SSAqua_Interior2_Text_Trigger3_12, MSGBOX_AUTOCLOSE
 	clearflag 0x116D

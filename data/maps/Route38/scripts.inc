@@ -63,7 +63,7 @@ Route38_EventScript_Lass122::
 Route38_EventScript_Lass122_1::
 	clearflag 0x1313
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route38_EventScript_Lass122_2
+	call_if_set 0x030, Route38_EventScript_Lass122_2
 	call_if_set 0x115F, Route38_EventScript_Lass122_3
 	call_if_set 0x110A, Route38_EventScript_Lass122_4
 	call_if_set FLAG_BADGE05_GET, Route38_EventScript_Lass122_5
@@ -110,7 +110,7 @@ Route38_EventScript_Schoolboy285::
 Route38_EventScript_Schoolboy285_1::
 	clearflag 0x1314
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route38_EventScript_Schoolboy285_2
+	call_if_set 0x030, Route38_EventScript_Schoolboy285_2
 	call_if_set 0x115F, Route38_EventScript_Schoolboy285_3
 	call_if_set 0x110A, Route38_EventScript_Schoolboy285_4
 	call_if_set FLAG_BADGE05_GET, Route38_EventScript_Schoolboy285_5
