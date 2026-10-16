@@ -23,10 +23,6 @@ CianwoodCity_Interior1_EventScript_GymGuy_1::
 	msgbox CianwoodCity_Interior1_Text_GymGuy_2, MSGBOX_NPC
 	end
 
-CianwoodCity_Interior1_EventScript_Sailor::
-	msgbox CianwoodCity_Interior1_Text_Sailor, MSGBOX_NPC
-	end
-
 CianwoodCity_Interior1_EventScript_Lass::
 	msgbox CianwoodCity_Interior1_Text_Lass, MSGBOX_NPC
 	end

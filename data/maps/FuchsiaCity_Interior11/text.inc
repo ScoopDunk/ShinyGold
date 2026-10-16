@@ -12,10 +12,6 @@ FuchsiaCity_Interior11_Text_WorkerF_2::
 	.string "SAFARI ZONE closed down, but\l"
 	.string "Grandpa is so stubborn…$"
 
-FuchsiaCity_Interior11_Text_Sign1::
-	.string "Old POKéMON merchandise is on\n"
-	.string "display.$"
-
 FuchsiaCity_Interior11_Text_Sign2::
 	.string "POKéMON photos and fossils are on\n"
 	.string "display.$"

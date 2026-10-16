@@ -1,9 +1,6 @@
 PalletTown_Interior3_MapScripts::
 	.byte 0
 
-PalletTown_Interior3_EventScript_PokeManiac::
-	goto EventScript_MetronomeTutor
-
 PalletTown_Interior3_EventScript_Mom::
 	lock
 	faceplayer

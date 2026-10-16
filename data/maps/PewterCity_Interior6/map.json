@@ -31,20 +31,6 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
-      "x": 11,
-      "y": 0,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "PewterCity_Interior6_EventScript_Gentleman",
-      "flag": "0"
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_NURSE",
       "x": 7,
       "y": 2,
@@ -55,7 +41,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PewterCity_Interior6_EventScript_Nurse",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 3
     },
     {
       "type": "object",
@@ -69,7 +56,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PewterCity_Interior6_EventScript_LittleGirl",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 4
     },
     {
       "type": "object",
@@ -83,21 +71,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PewterCity_Interior6_EventScript_Chris",
-      "flag": "0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_GBA_KID",
-      "x": 12,
-      "y": 0,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "PewterCity_Interior6_EventScript_GbaKid",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 5
     },
     {
       "type": "object",
@@ -111,7 +86,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PewterCity_Interior6_EventScript_Woman1",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 7
     }
   ],
   "warp_events": [

@@ -168,48 +168,6 @@
       "trainer_sight_or_berry_tree_id": "4",
       "script": "SSAqua_Interior3_EventScript_SailorGarrett",
       "flag": "0x1174"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_RED_NORMAL",
-      "x": 2,
-      "y": 0,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_RED_NORMAL",
-      "x": 3,
-      "y": 0,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_RED_NORMAL",
-      "x": 4,
-      "y": 0,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0"
     }
   ],
   "warp_events": [
@@ -236,33 +194,6 @@
     }
   ],
   "coord_events": [
-    {
-      "type": "trigger",
-      "x": 33,
-      "y": 6,
-      "elevation": 3,
-      "var": "0x405B",
-      "var_value": "0",
-      "script": "SSAqua_Interior3_EventScript_Trigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 31,
-      "y": 6,
-      "elevation": 3,
-      "var": "0x405B",
-      "var_value": "0",
-      "script": "SSAqua_Interior3_EventScript_Trigger2"
-    },
-    {
-      "type": "trigger",
-      "x": 32,
-      "y": 6,
-      "elevation": 3,
-      "var": "0x405B",
-      "var_value": "0",
-      "script": "SSAqua_Interior3_EventScript_Trigger3"
-    },
     {
       "type": "trigger",
       "x": 28,

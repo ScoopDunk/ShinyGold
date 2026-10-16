@@ -1,41 +1,6 @@
 ViridianCity_Interior2_MapScripts::
 	.byte 0
 
-ViridianCity_Interior2_EventScript_BlackBeltWai::
-	trainerbattle_single TRAINER_BLACK_BELT_WAI, ViridianCity_Interior2_Text_BlackBeltWaiIntro, ViridianCity_Interior2_Text_BlackBeltWaiDefeat
-	msgbox ViridianCity_Interior2_Text_BlackBeltWai, MSGBOX_AUTOCLOSE
-	end
-
-ViridianCity_Interior2_EventScript_LeaderSabrina::
-	trainerbattle_single TRAINER_LEADER_SABRINA, ViridianCity_Interior2_Text_LeaderSabrinaIntro, ViridianCity_Interior2_Text_LeaderSabrinaDefeat
-	msgbox ViridianCity_Interior2_Text_LeaderSabrina, MSGBOX_AUTOCLOSE
-	end
-
-ViridianCity_Interior2_EventScript_DragonTamerMikahil::
-	trainerbattle_single TRAINER_DRAGON_TAMER_MIKAHIL, ViridianCity_Interior2_Text_DragonTamerMikahilIntro, ViridianCity_Interior2_Text_DragonTamerMikahilDefeat
-	msgbox ViridianCity_Interior2_Text_DragonTamerMikahil, MSGBOX_AUTOCLOSE
-	end
-
-ViridianCity_Interior2_EventScript_TamerJason::
-	trainerbattle_single TRAINER_TAMER_JASON, ViridianCity_Interior2_Text_TamerJasonIntro, ViridianCity_Interior2_Text_TamerJasonDefeat
-	msgbox ViridianCity_Interior2_Text_TamerJason, MSGBOX_AUTOCLOSE
-	end
-
-ViridianCity_Interior2_EventScript_YoungsterFabricio::
-	trainerbattle_single TRAINER_YOUNGSTER_FABRICIO, ViridianCity_Interior2_Text_YoungsterFabricioIntro, ViridianCity_Interior2_Text_YoungsterFabricioDefeat
-	msgbox ViridianCity_Interior2_Text_YoungsterFabricio, MSGBOX_AUTOCLOSE
-	end
-
-ViridianCity_Interior2_EventScript_BlackBeltKiyo2::
-	trainerbattle_single TRAINER_BLACK_BELT_KIYO_2, ViridianCity_Interior2_Text_BlackBeltKiyo2Intro, ViridianCity_Interior2_Text_BlackBeltKiyo2Defeat
-	msgbox ViridianCity_Interior2_Text_BlackBeltKiyo2, MSGBOX_AUTOCLOSE
-	end
-
-ViridianCity_Interior2_EventScript_RivalTerry4::
-	trainerbattle_single TRAINER_RIVAL_TERRY_4, ViridianCity_Interior2_Text_RivalTerry4Intro, ViridianCity_Interior2_Text_RivalTerry4Defeat
-	msgbox ViridianCity_Interior2_Text_RivalTerry4, MSGBOX_AUTOCLOSE
-	end
-
 ViridianCity_Interior2_EventScript_LeaderBlue2::
 	setvar VAR_0x8004, 2
 	setvar VAR_0x8005, 2
@@ -62,11 +27,6 @@ ViridianCity_Interior2_EventScript_LeaderBlue2_2::
 	setvar 0x7033, 0x10A
 	release
 	return
-
-ViridianCity_Interior2_EventScript_LeaderErika::
-	trainerbattle_single TRAINER_LEADER_ERIKA, ViridianCity_Interior2_Text_LeaderErikaIntro, ViridianCity_Interior2_Text_LeaderErikaDefeat
-	msgbox ViridianCity_Interior2_Text_LeaderErika, MSGBOX_AUTOCLOSE
-	end
 
 ViridianCity_Interior2_EventScript_GymGuy::
 	lock

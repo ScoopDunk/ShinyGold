@@ -626,33 +626,6 @@
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
       "script": "IlexForest_Interior1_EventScript_Trigger18"
-    },
-    {
-      "type": "trigger",
-      "x": 4,
-      "y": 37,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "0x0"
-    },
-    {
-      "type": "trigger",
-      "x": 4,
-      "y": 36,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "0x0"
-    },
-    {
-      "type": "trigger",
-      "x": 4,
-      "y": 35,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "0x0"
     }
   ],
   "bg_events": [

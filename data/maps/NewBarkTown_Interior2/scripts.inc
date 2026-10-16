@@ -20,10 +20,6 @@ NewBarkTown_Interior2_EventScript_WarpScene::
 	setvar 0x4056, 1
 	end
 
-NewBarkTown_Interior2_EventScript_Sign1::
-	msgbox NewBarkTown_Interior2_Text_Sign1, MSGBOX_SIGN
-	end
-
 NewBarkTown_Interior2_EventScript_Sign2::
 PalletTown_PlayersHouse_2F_EventScript_PC::
 	goto_if_questlog EventScript_ReleaseEnd
@@ -38,8 +34,4 @@ PalletTown_PlayersHouse_2F_EventScript_PC::
 	waitstate
 	special SetHelpContextForMap
 	releaseall
-	end
-
-NewBarkTown_Interior2_EventScript_Sign3::
-	msgbox NewBarkTown_Interior2_Text_Sign3, MSGBOX_SIGN
 	end

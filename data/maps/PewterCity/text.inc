@@ -23,15 +23,6 @@ PewterCity_Text_LittleGirl::
 	.string "at MT.MOON.\p"
 	.string "But not every night.$"
 
-PewterCity_Text_Boy_1::
-	.string "You’re a TRAINER, right?\p"
-	.string "BROCK’s looking for new\n"
-	.string "challengers. Follow me!$"
-
-PewterCity_Text_Boy_2::
-	.string "If you have the right stuff,\n"
-	.string "go take on BROCK!$"
-
 PewterCity_Text_Scientist_1::
 	.string "Oh, {PLAYER}{KUN}!$"
 

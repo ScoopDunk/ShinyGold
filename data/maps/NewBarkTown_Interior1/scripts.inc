@@ -6,7 +6,6 @@ NewBarkTown_Interior1_EventScript_Mom::
 	faceplayer
 	call_if_set 0x1027, NewBarkTown_Interior1_EventScript_Mom_1
 	call_if_set 0x1025, NewBarkTown_Interior1_EventScript_Mom_2
-	call_if_set 0x258, NewBarkTown_Interior1_EventScript_Mom_3
 	call_if_eq 0x4055, 3, NewBarkTown_Interior1_EventScript_Mom_4
 	checkplayergender
 	goto_if_eq VAR_RESULT, 0, NewBarkTown_Interior1_EventScript_Mom_5
@@ -24,14 +23,6 @@ NewBarkTown_Interior1_EventScript_Mom_2::
 	giveitem ITEM_AMULET_COIN
 	call NewBarkTown_Interior1_EventScript_Mom_7
 	setflag 0x1027
-	end
-
-NewBarkTown_Interior1_EventScript_Mom_3::
-	msgbox NewBarkTown_Interior1_Text_Mom_3
-	closemessage
-	call EventScript_OutOfCenterPartyHeal
-	msgbox NewBarkTown_Interior1_Text_Mom_4
-	release
 	end
 
 NewBarkTown_Interior1_EventScript_Mom_4::
@@ -103,25 +94,3 @@ NewBarkTown_Interior1_Movement_Trigger1_2::
 	walk_slower_down
 	walk_slower_left
 	step_end
-
-NewBarkTown_Interior1_EventScript_Sign::
-	lockall
-	goto_if_eq VAR_FACING, 2, NewBarkTown_Interior1_EventScript_Sign_1
-	msgbox NewBarkTown_Interior1_Text_Sign_1
-	releaseall
-	end
-
-NewBarkTown_Interior1_EventScript_Sign_1::
-	checkplayergender
-	call_if_eq VAR_RESULT, 0, NewBarkTown_Interior1_EventScript_Sign_2
-	call_if_eq VAR_RESULT, 1, NewBarkTown_Interior1_EventScript_Sign_3
-	releaseall
-	end
-
-NewBarkTown_Interior1_EventScript_Sign_2::
-	msgbox NewBarkTown_Interior1_Text_Sign_2
-	return
-
-NewBarkTown_Interior1_EventScript_Sign_3::
-	msgbox NewBarkTown_Interior1_Text_Sign_3
-	return

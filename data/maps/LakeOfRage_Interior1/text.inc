@@ -50,8 +50,3 @@ LakeOfRage_Interior1_Text_Sign_1::
 	.string "It’s a blank chart of some sort.\p"
 	.string "It has spaces for writing in\n"
 	.string "records of some kind.$"
-
-LakeOfRage_Interior1_Text_Sign_2::
-	.string "The biggest HERACROSS that I have\n"
-	.string "ever seen measured so far is:\p"
-	.string "{STR_VAR_3} inches!$"

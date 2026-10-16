@@ -80,10 +80,6 @@ Route33_EventScript_Hiker163_5::
 	release
 	end
 
-Route33_EventScript_FatMan::
-	msgbox Route31_Text_FatMan_1, MSGBOX_NPC
-	end
-
 Route33_EventScript_Sign2::
 	msgbox Route33_Text_Sign2, MSGBOX_AUTOCLOSE
 	end

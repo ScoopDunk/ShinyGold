@@ -31,34 +31,6 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BIKER",
-      "x": 20,
-      "y": 7,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0x074"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
-      "x": 20,
-      "y": 5,
-      "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NewBarkTown_Interior4_EventScript_LittleBoy",
-      "flag": "0x075"
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
       "x": 7,
       "y": 5,
@@ -69,7 +41,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NewBarkTown_Interior4_EventScript_LittleBoy",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 4
     }
   ],
   "warp_events": [

@@ -3,6 +3,3 @@ LavenderTown_Interior4_Text_Woman3::
 	.string "at the foot of the mountains.\p"
 	.string "It’s gotten a bit busier since the\n"
 	.string "RADIO TOWER was built.$"
-
-LavenderTown_Interior4_Text_Cubone::
-	.string "CUBONE: Kyarugoo!$"
