@@ -87,20 +87,6 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_ROCKET_F",
-      "x": 33,
-      "y": 4,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "SSAqua_Interior3_EventScript_RocketF",
-      "flag": "0x116D"
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SAILOR",
       "x": 23,
       "y": 3,
@@ -246,13 +232,6 @@
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_BATTLE_COLOSSEUM_2P",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 8,
-      "y": 0,
-      "elevation": 0,
-      "dest_map": "MAP_SS_AQUA_INTERIOR15",
       "dest_warp_id": "0"
     }
   ],

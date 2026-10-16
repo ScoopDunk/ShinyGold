@@ -43,15 +43,6 @@ SSAqua_Interior3_EventScript_FishermanJonah_1::
 	clearflag 0x11A6
 	end
 
-SSAqua_Interior3_EventScript_RocketF::
-	applymovement 6, SSAqua_Interior3_Movement_RocketF
-	msgbox SSAqua_Interior3_Text_RocketF, MSGBOX_AUTOCLOSE
-	end
-
-SSAqua_Interior3_Movement_RocketF::
-	face_down_fast
-	step_end
-
 SSAqua_Interior3_EventScript_SailorKenneth::
 	trainerbattle_single TRAINER_SAILOR_KENNETH, SSAqua_Interior3_Text_SailorKennethIntro, SSAqua_Interior3_Text_SailorKennethDefeat
 	call_if_set 0x119C, SSAqua_Interior3_EventScript_SailorKenneth_1

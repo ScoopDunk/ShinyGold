@@ -67,10 +67,6 @@ SSAqua_Interior3_Text_FishermanJonah::
 SSAqua_Interior3_Text_FishermanJonahVictory::
 	.string " $"
 
-SSAqua_Interior3_Text_RocketF::
-	.string "JESS: ...\n"
-	.string "JAMIE, you fool...$"
-
 SSAqua_Interior3_Text_SailorKennethIntro::
 	.string "I’m a sailor man!\p"
 	.string "But I’m training POKéMON, so I can\n"
