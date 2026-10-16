@@ -28,34 +28,6 @@
   "object_events": [
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "x": 69,
-      "y": 9,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0x11F4"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
-      "x": 47,
-      "y": 5,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "2",
-      "script": "Route15_EventScript_PsychicJun",
-      "flag": "0"
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BOY",
       "x": 43,
       "y": 11,
@@ -151,34 +123,6 @@
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route15_EventScript_SchoolboyBilly",
       "flag": "0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_ROCKET_F",
-      "x": 68,
-      "y": 9,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0x11F4"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_KOGA",
-      "x": 40,
-      "y": 5,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0x11F4"
     }
   ],
   "warp_events": [
@@ -197,62 +141,7 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [
-    {
-      "type": "trigger",
-      "x": 37,
-      "y": 5,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "Route15_EventScript_Trigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 38,
-      "y": 6,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "Route15_EventScript_Trigger2"
-    },
-    {
-      "type": "trigger",
-      "x": 33,
-      "y": 11,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "FuchsiaCity_EventScript_Trigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 39,
-      "y": 5,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "Route15_EventScript_Trigger4"
-    },
-    {
-      "type": "trigger",
-      "x": 33,
-      "y": 9,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "FuchsiaCity_EventScript_Trigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 33,
-      "y": 10,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "FuchsiaCity_EventScript_Trigger1"
-    }
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

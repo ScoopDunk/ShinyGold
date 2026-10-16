@@ -19,67 +19,6 @@ FuchsiaCity_Interior7_Text_PicnickerCindyDefeat::
 	.string "Darn it!\n"
 	.string "I wanted to win!$"
 
-FuchsiaCity_Interior7_Text_Koga_1::
-	.string "KOGA: That little kid...\p"
-	.string "Instead of keep on training like I\n"
-	.string "told her, she’s just having some fun\l"
-	.string "hiding between all the other\l"
-	.string "trainers.\p"
-	.string "She needs to be more responsible\n"
-	.string "about her duty as a GYM LEADER.\p"
-	.string "{PLAYER}, can you please battle my\n"
-	.string "daughter and teach her what a real\l"
-	.string "TRAINER is?$"
-
-FuchsiaCity_Interior7_Text_Koga_2::
-	.string "KOGA: I guess we’ll meet again\n"
-	.string "sometime soon, {PLAYER}!$"
-
-FuchsiaCity_Interior7_Text_Koga_3::
-	.string "KOGA: Thanks, {PLAYER}.\p"
-	.string "My daughter seems to be more mature\n"
-	.string "now.\p"
-	.string "By the way, {PLAYER}.\n"
-	.string "You look pretty strong now.\p"
-	.string "Do you think we could battle again?$"
-
-FuchsiaCity_Interior7_Text_Koga_4::
-	.string "KOGA: Oh, if you have other things\n"
-	.string "to take care of, then go ahead.\l"
-	.string "I won’t delay you.$"
-
-FuchsiaCity_Interior7_Text_Koga_5::
-	.string "KOGA: Great. This time my sinister\n"
-	.string "technique will defeat you for sure!$"
-
-FuchsiaCity_Interior7_Text_KogaDefeat::
-	.string "Ah!\n"
-	.string "Defeated again!$"
-
-FuchsiaCity_Interior7_Text_KogaVictory::
-	.string "Fwahaha!$"
-
-FuchsiaCity_Interior7_Text_Koga_6::
-	.string "KOGA: You don’t only look strong, but\n"
-	.string "you are also strong, indeed.\p"
-	.string "Don’t forget that, there’s always the\n"
-	.string "chance of meeting someone stronger\l"
-	.string "than you.\p"
-	.string "That’s why life is a constant\n"
-	.string "training.\p"
-	.string "Please, accept this gift from me.$"
-
-FuchsiaCity_Interior7_Text_Koga_7::
-	.string "KOGA: That is a CHOICE BAND. This\n"
-	.string "will power up the strength of any\l"
-	.string "move you decide in-battle.\p"
-	.string "However, you must be really careful\n"
-	.string "with the move you pick.\l"
-	.string "That move will be the only one\l"
-	.string "available for that battle.\p"
-	.string "It all depends on the battle.\n"
-	.string "Be wise!$"
-
 FuchsiaCity_Interior7_Text_Lass::
 	.string "Well? Wasn’t my disguise perfect?$"
 

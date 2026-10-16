@@ -62,45 +62,6 @@ CeladonCity_Interior11_Text_CooltrainerF::
 	.string "It cleaned me out yesterday, so it\n"
 	.string "should pay out today.$"
 
-CeladonCity_Interior11_Text_Trigger1_1::
-	.string "JESS: What’s wrong, JAMIE?$"
-
-CeladonCity_Interior11_Text_Trigger1_2::
-	.string "JESS: What? There’s nothing behind\n"
-	.string "the poster?$"
-
-CeladonCity_Interior11_Text_Trigger1_3::
-	.string "JAMIE: ...$"
-
-CeladonCity_Interior11_Text_Trigger1_4::
-	.string "JESS: I wonder what happened to the\n"
-	.string "switch?\l"
-	.string "And the hideout?$"
-
-CeladonCity_Interior11_Text_Trigger1_5::
-	.string "JESS: Argh... It’s you...$"
-
-CeladonCity_Interior11_Text_Trigger1_6::
-	.string "JESS: Ahem, hideout?\p"
-	.string "No, there is no hideout, you heard\n"
-	.string "wrong!\p"
-	.string "...\p"
-	.string "I’M NOT LYING!\p"
-	.string "...\p"
-	.string "OK. Now you’ll pay just for calling\n"
-	.string "me a liar!$"
-
-CeladonCity_Interior11_Text_Trigger1Defeat::
-	.string "JESS: Ah, whatever...$"
-
-CeladonCity_Interior11_Text_Trigger1Victory::
-	.string "JESS: Serves you right!$"
-
-CeladonCity_Interior11_Text_Trigger1_7::
-	.string "JESS: Anyway, we don’t have anything\n"
-	.string "to do here...\l"
-	.string "Let’s retreat!$"
-
 CeladonCity_Interior11_Text_Sign23::
 	.string "Hey!\p"
 	.string "Underneath this poster...\p"
