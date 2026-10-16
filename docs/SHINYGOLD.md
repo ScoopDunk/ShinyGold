@@ -8,6 +8,7 @@ This tree is ShinyGold (Faithfully Fixed, Beta 5) ported onto pret/pokefirered. 
 | Branch | Contents |
 |---|---|
 | `gold` | Pure Gold/Silver: `master` with ShinyGold's custom content removed and the Gold/Silver content it replaced restored (see "Pure Gold/Silver" below) |
+| `fixed` | ShinyGold Fixed: all of ShinyGold's content and its own wild Pokémon, with its bugs fixed |
 | `master` | The faithful port plus the fixes below (all of ShinyGold's custom content still in) |
 | `faithful` | The hack ported as-is (only crash-level hack bugs fixed). Use it to see what the hack itself did |
 | first commit | Unmodified pret/pokefirered, so `git diff <first commit>` shows everything ShinyGold changes |
@@ -147,7 +148,13 @@ New Bark Town's game corner building, Lance's room and two unused maps this left
 entries compare out-of-range variables (undefined behaviour that could jump into data). Those garbage entries and
 the shadowed duplicate header entries are removed; the real entries (e.g. Lance's room door scene) are kept.
 
-### Hack bugs fixed during the port (both branches)
+### Hack bugs fixed later (`gold` and `fixed`)
+- Phone contact 35 crashed the game once the player had the seventh badge (a pointer outside the ROM, Route 35
+  phone script).
+- White-out after healing in Cherrygrove or New Bark Town left the player in the black outside the Pokémon Center
+  (FireRed's One Island coordinates for that map slot); the player now respawns two tiles below the nurse.
+
+### Hack bugs fixed during the port (all branches)
 - Save extension: link/trade saves skipped the extension (turning off after a trade lost it); the save-failed
   screen overwrote it; no bounds check on the var table; the load hook copied garbage from invalid sectors; the
   forced-shiny flag lived inside `gStringVar4`.
