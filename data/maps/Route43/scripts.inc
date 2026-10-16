@@ -169,9 +169,8 @@ Route43_EventScript_Trigger3_1::
 Route43_EventScript_ArdBoy::
 	lock
 	faceplayer
-	call Route43_EventScript_Trigger3_2
 	release
-	end
+	goto Route43_EventScript_Trigger3_2
 
 Route43_EventScript_ArdTrigger::
 	call_if_set 0x10D8, Route43_EventScript_Trigger3_1
