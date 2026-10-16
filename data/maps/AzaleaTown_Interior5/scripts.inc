@@ -22,8 +22,9 @@ AzaleaTown_Interior5_EventScript_KurtMakesBalls::
 	end
 
 @ Pure Gold: the GS Ball, as in Crystal (pokecrystal KurtsHouse Kurt1 .CanGiveGSBallToKurt, .GaveGSBallToKurt and
-@ Kurt2). KURT keeps the GS BALL until the step counter runs out (the hack's stand-in for G/S's daily
-@ ENGINE_KURT_MAKING_BALLS, which it also uses for the APRICORN BALLS); meanwhile he works at his desk (object 3).
+@ Kurt2). KURT keeps the GS BALL for 500 steps (a stand-in for G/S's daily ENGINE_KURT_MAKING_BALLS). The GS Ball
+@ has its own counter (VAR_GOLD_GS_BALL_STEPS) so it never restarts the APRICORN BALL wait, or the other way round;
+@ meanwhile he works at his desk (object 3).
 AzaleaTown_Interior5_EventScript_KurtTryTakeGSBall::
 	@ a BALL made from an APRICORN comes first
 	goto_if_set 0x1138, AzaleaTown_Interior5_EventScript_KurtMakesBalls
@@ -38,11 +39,11 @@ AzaleaTown_Interior5_EventScript_KurtTryTakeGSBall::
 	msgbox AzaleaTown_Interior5_Text_KurtWhatIsThat, MSGBOX_NPC
 	removeitem ITEM_RED_ORB
 	setvar VAR_GOLD_GS_BALL, GS_BALL_KURT_CHECKING
-	callnative StartSaveBlockExtStepCounter
+	callnative StartGsBallStepCounter
 	end
 
 AzaleaTown_Interior5_EventScript_KurtCheckingGSBall::
-	callnative CheckSaveBlockExtStepCounter
+	callnative CheckGsBallStepCounter
 	goto_if_eq VAR_RESULT, TRUE, AzaleaTown_Interior5_EventScript_KurtGSBallShakes
 	lock
 	faceplayer

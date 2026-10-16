@@ -26,6 +26,6 @@ MahoganyTown_Interior1_Text_Trigger1_3::
 	.string "The stairs are right here.$"
 
 MahoganyTown_Interior1_Text_Trigger1_4::
-	.string "LANCE: {PLAYER}, we should split up to\n"
-	.string "check this place.\l"
+	.string "LANCE: {PLAYER}, we should split\n"
+	.string "up to check this place.\l"
 	.string "I’ll go first.$"
