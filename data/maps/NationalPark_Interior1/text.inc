@@ -1,20 +1,5 @@
 
 @ ShinyGold: moved from data/maps/Unused_PokemonTower_4F/text.inc (map removed)
-Unused_PokemonTower_4F_Text_MediumJodyIntro::
-	.string "Huhuhu…\n"
-	.string "Beat me not!$"
-
-@ ShinyGold: moved from data/maps/Unused_PokemonTower_4F/text.inc (map removed)
-Unused_PokemonTower_4F_Text_MediumJodyDefeat::
-	.string "Huh?\n"
-	.string "Who? What?$"
-
-@ ShinyGold: moved from data/maps/Unused_PokemonTower_4F/text.inc (map removed)
-Unused_PokemonTower_4F_Text_MediumJody::
-	.string "May the departed POKéMON rest in\n"
-	.string "peace…$"
-
-@ ShinyGold: moved from data/maps/Unused_PokemonTower_4F/text.inc (map removed)
 Unused_PokemonTower_4F_Text_MgDeliveryman::
 	.string "We hold Contests regularly in the\n"
 	.string "PARK. You should give it a shot.$"

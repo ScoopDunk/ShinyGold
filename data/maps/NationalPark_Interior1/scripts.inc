@@ -3,12 +3,6 @@ NationalPark_Interior1_MapScripts::
 	.byte 0
 
 @ ShinyGold: moved from data/maps/Unused_PokemonTower_4F/scripts.inc (map removed)
-Unused_PokemonTower_4F_EventScript_MediumJody::
-	trainerbattle_single TRAINER_MEDIUM_JODY, Unused_PokemonTower_4F_Text_MediumJodyIntro, Unused_PokemonTower_4F_Text_MediumJodyDefeat
-	msgbox Unused_PokemonTower_4F_Text_MediumJody, MSGBOX_AUTOCLOSE
-	end
-
-@ ShinyGold: moved from data/maps/Unused_PokemonTower_4F/scripts.inc (map removed)
 Unused_PokemonTower_4F_EventScript_MgDeliveryman::
 	msgbox Unused_PokemonTower_4F_Text_MgDeliveryman, MSGBOX_NPC
 	end
