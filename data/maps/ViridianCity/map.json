@@ -198,39 +198,12 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 25,
-      "y": 0,
-      "elevation": 3,
-      "var": "0x4051",
-      "var_value": "0",
-      "script": "ViridianCity_EventScript_Trigger1"
-    },
-    {
-      "type": "trigger",
       "x": 35,
       "y": 5,
       "elevation": 3,
       "var": "0x405A",
       "var_value": "0",
       "script": "ViridianCity_EventScript_Trigger2"
-    },
-    {
-      "type": "trigger",
-      "x": 24,
-      "y": 1,
-      "elevation": 3,
-      "var": "0x4051",
-      "var_value": "1",
-      "script": "ViridianCity_EventScript_Trigger3"
-    },
-    {
-      "type": "trigger",
-      "x": 25,
-      "y": 1,
-      "elevation": 3,
-      "var": "0x4051",
-      "var_value": "1",
-      "script": "ViridianCity_EventScript_Trigger4"
     }
   ],
   "bg_events": [

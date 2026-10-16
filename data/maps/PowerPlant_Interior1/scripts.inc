@@ -34,11 +34,16 @@ PowerPlant_Interior1_EventScript_OnTransition_3::
 
 PowerPlant_Interior1_EventScript_Policeman::
 	call_if_set 0x1185, PowerPlant_Interior1_EventScript_Policeman_1
+	goto_if_set 0x11C1, PowerPlant_Interior1_EventScript_Policeman_2
 	msgbox PowerPlant_Interior1_Text_Policeman_1, MSGBOX_NPC
 	end
 
 PowerPlant_Interior1_EventScript_Policeman_1::
 	msgbox PowerPlant_Interior1_Text_Policeman_2, MSGBOX_NPC
+	end
+
+PowerPlant_Interior1_EventScript_Policeman_2::
+	msgbox PowerPlant_Interior1_Text_PhoneCall_2, MSGBOX_NPC
 	end
 
 PowerPlant_Interior1_EventScript_Scientist::
@@ -77,112 +82,62 @@ PowerPlant_Interior1_EventScript_Policeman2_1::
 	msgbox PowerPlant_Interior1_Text_Policeman2_2, MSGBOX_NPC
 	end
 
+@ Pure Gold/Silver: the manager starts the MACHINE PART hunt (pokegold PowerPlant.asm, PowerPlantManager)
 PowerPlant_Interior1_EventScript_BaldingMan::
-	call_if_set 0x1185, PowerPlant_Interior1_EventScript_BaldingMan_1
+	lock
+	faceplayer
+	goto_if_set 0x1185, PowerPlant_Interior1_EventScript_BaldingMan_1
 	checkitem ITEM_SECRET_KEY
-	call_if_eq VAR_RESULT, 1, PowerPlant_Interior1_EventScript_BaldingMan_2
-	call_if_set 0x11C1, PowerPlant_Interior1_EventScript_BaldingMan_3
+	goto_if_eq VAR_RESULT, TRUE, PowerPlant_Interior1_EventScript_BaldingMan_2
+	goto_if_set 0x11C1, PowerPlant_Interior1_EventScript_BaldingMan_3
+	msgbox PowerPlant_Interior1_Text_BaldingMan_1
 	setflag 0x11C1
-	msgbox PowerPlant_Interior1_Text_BaldingMan_1, MSGBOX_NPC
+	clearflag 0x11C0
+	clearflag 0x272
+	setflag 0x11BF
+	setvar VAR_GOLD_POWER_PLANT_SCENE, 1
+	release
 	end
 
 PowerPlant_Interior1_EventScript_BaldingMan_1::
-	msgbox PowerPlant_Interior1_Text_BaldingMan_2, MSGBOX_NPC
+	msgbox PowerPlant_Interior1_Text_BaldingMan_2
+	release
 	end
 
 PowerPlant_Interior1_EventScript_BaldingMan_2::
+	msgbox PowerPlant_Interior1_Text_BaldingMan_3
 	removeitem ITEM_SECRET_KEY
-	msgbox PowerPlant_Interior1_Text_BaldingMan_3, MSGBOX_NPC
-	giveitem ITEM_TM07
-	msgbox PowerPlant_Interior1_Text_BaldingMan_4, MSGBOX_NPC
 	setflag 0x1185
 	setflag 0x11B9
+	setvar VAR_GOLD_POWER_PLANT_SCENE, 2
+	giveitem ITEM_TM07
+	msgbox PowerPlant_Interior1_Text_BaldingMan_4
 	release
 	end
 
 PowerPlant_Interior1_EventScript_BaldingMan_3::
-	msgbox PowerPlant_Interior1_Text_BaldingMan_5, MSGBOX_NPC
-	end
-
-PowerPlant_Interior1_EventScript_Trigger1::
-	call_if_set 0x11BE, PowerPlant_Interior1_EventScript_Trigger1_1
-	applymovement LOCALID_PLAYER, PowerPlant_Interior1_Movement_Trigger1_1
-	delay 64
-	call PowerPlant_Interior1_EventScript_Trigger1_2
-	end
-
-PowerPlant_Interior1_EventScript_Trigger1_1::
+	msgbox PowerPlant_Interior1_Text_BaldingMan_5
 	release
 	end
 
-PowerPlant_Interior1_EventScript_Trigger1_2::
-	msgbox PowerPlant_Interior1_Text_Trigger1_1, MSGBOX_AUTOCLOSE
-	applymovement 1, PowerPlant_Interior1_Movement_Trigger1_2
-	delay 16
-	applymovement 1, PowerPlant_Interior1_Movement_Trigger1_3
-	delay 64
-	msgbox PowerPlant_Interior1_Text_Trigger1_2, MSGBOX_NPC
-	msgbox PowerPlant_Interior1_Text_Trigger1_3, MSGBOX_NPC
-	msgbox PowerPlant_Interior1_Text_Trigger1_4, MSGBOX_NPC
-	applymovement 1, PowerPlant_Interior1_Movement_Trigger1_4
-	delay 96
-	setflag 0x11BE
-	clearflag 0x11C0
-	clearflag 0x272
-	setflag 0x11BF
-	release
+@ Pure Gold/Silver: after the player met the manager, the officer at the door gets word from Cerulean
+@ (pokegold PowerPlant.asm, PowerPlantGuardPhoneScript)
+PowerPlant_Interior1_EventScript_PhoneCall::
+	lockall
+	playse SE_POKENAV_ON
+	applymovement 1, Common_Movement_ExclamationMark
+	waitmovement 0
+	waitse
+	delay 30
+	msgbox PowerPlant_Interior1_Text_PhoneCall_1
+	closemessage
+	applymovement 1, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	waitmovement 0
+	msgbox PowerPlant_Interior1_Text_PhoneCall_2
+	closemessage
+	applymovement 1, Common_Movement_WalkInPlaceFasterUp
+	waitmovement 0
+	setvar VAR_GOLD_POWER_PLANT_SCENE, 2
+	releaseall
 	end
-
-PowerPlant_Interior1_Movement_Trigger1_1::
-	walk_up
-	walk_right
-	walk_right
-	walk_right
-	face_up
-	step_end
-
-PowerPlant_Interior1_Movement_Trigger1_2::
-	face_down_fast
-	step_end
-
-PowerPlant_Interior1_Movement_Trigger1_3::
-	emote_exclamation_mark
-	step_end
-
-PowerPlant_Interior1_Movement_Trigger1_4::
-	walk_left
-	walk_left
-	walk_down
-	walk_down
-	walk_down
-	set_invisible
-	walk_fast_down
-	walk_fast_down
-	step_end
-
-PowerPlant_Interior1_EventScript_Trigger2::
-	call_if_set 0x11BE, PowerPlant_Interior1_EventScript_Trigger1_1
-	applymovement LOCALID_PLAYER, PowerPlant_Interior1_Movement_Trigger2
-	delay 64
-	call PowerPlant_Interior1_EventScript_Trigger1_2
-	end
-
-PowerPlant_Interior1_Movement_Trigger2::
-	walk_up
-	walk_right
-	walk_right
-	face_up
-	step_end
-
-PowerPlant_Interior1_EventScript_Trigger3::
-	call_if_set 0x11BE, PowerPlant_Interior1_EventScript_Trigger1_1
-	applymovement LOCALID_PLAYER, PowerPlant_Interior1_Movement_Trigger3
-	delay 48
-	call PowerPlant_Interior1_EventScript_Trigger1_2
-	end
-
-PowerPlant_Interior1_Movement_Trigger3::
-	walk_up
-	walk_right
-	face_up
-	step_end

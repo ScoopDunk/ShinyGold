@@ -20,20 +20,6 @@ VermilionCity_EventScript_Man::
 	msgbox VermilionCity_Text_Man, MSGBOX_NPC
 	end
 
-VermilionCity_EventScript_Woman1::
-	msgbox VermilionCity_Text_Woman1, MSGBOX_NPC
-	end
-
-VermilionCity_EventScript_Gentleman::
-	call_if_set 0x117B, VermilionCity_EventScript_Gentleman_1
-	msgbox VermilionCity_Text_Gentleman_1, MSGBOX_NPC
-	giveitem ITEM_METAL_COAT
-	setflag 0x117B
-
-VermilionCity_EventScript_Gentleman_1::
-	msgbox VermilionCity_Text_Gentleman_2, MSGBOX_NPC
-	end
-
 VermilionCity_EventScript_Snorlax::
 	checkitem ITEM_POKE_FLUTE
 	call_if_eq VAR_RESULT, 1, VermilionCity_EventScript_Snorlax_1

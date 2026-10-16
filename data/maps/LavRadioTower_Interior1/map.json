@@ -17,76 +17,6 @@
   "object_events": [
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_POLICEMAN",
-      "x": 11,
-      "y": 6,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0x11E0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_POLICEMAN",
-      "x": 11,
-      "y": 7,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0x11E0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_ROCKET_F",
-      "x": 7,
-      "y": 6,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0x11E0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "x": 7,
-      "y": 7,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0x11E0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_CRUSH_GIRL",
-      "x": 9,
-      "y": 14,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0x11E0"
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_WORKER_M",
       "x": 17,
       "y": 7,
@@ -165,35 +95,7 @@
       "dest_warp_id": "6"
     }
   ],
-  "coord_events": [
-    {
-      "type": "trigger",
-      "x": 8,
-      "y": 11,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "LavRadioTower_Interior1_EventScript_Trigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 9,
-      "y": 10,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "LavRadioTower_Interior1_EventScript_Trigger2"
-    },
-    {
-      "type": "trigger",
-      "x": 10,
-      "y": 11,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "LavRadioTower_Interior1_EventScript_Trigger3"
-    }
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

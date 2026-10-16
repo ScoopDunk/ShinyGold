@@ -2,15 +2,13 @@ CeladonCity_Interior3_Text_WorkerM::
 	.string "The TM SHOP sells some rare moves.$"
 
 CeladonCity_Interior3_Text_GbaKid::
-	.string "Did you forget?\n"
-	.string "You can’t trade with RSE unless you\l"
-	.string "get OAK’s permission!$"
+	.string "Uh-oh! I traded my POKéMON without\n"
+	.string "taking back the item it was holding.$"
 
 CeladonCity_Interior3_Text_GbaKid2::
-	.string "I wanted to trade a POKéMON from\n"
-	.string "my SHINY GOLD game to a RUBY\l"
-	.string "version.\l"
-	.string "But it didn’t work...$"
+	.string "Yeah! I’m finally getting a PORYGON!\p"
+	.string "I’m no good at the slots, so I could\n"
+	.string "never get enough coins…$"
 
 CeladonCity_Interior3_Text_Boy::
 	.string "I can’t decide which POKéMON I\n"

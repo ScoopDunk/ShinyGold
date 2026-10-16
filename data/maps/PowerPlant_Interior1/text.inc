@@ -78,35 +78,10 @@ PowerPlant_Interior1_Text_BaldingMan_5::
 	.string "but I’ll still hammer him!\p"
 	.string "Gahahahah!$"
 
-PowerPlant_Interior1_Text_Trigger1_1::
-	.string "AMELIA: Oh... I see...\n"
-	.string "Thanks for the information!$"
+PowerPlant_Interior1_Text_PhoneCall_1::
+	.string "I just got word from CERULEAN.\p"
+	.string "It appears that a shady character\n"
+	.string "has been loitering around.$"
 
-PowerPlant_Interior1_Text_Trigger1_2::
-	.string "AMELIA: {PLAYER}!\n"
-	.string "Nice to see you again!\p"
-	.string "You know, I’ve been investigating\n"
-	.string "what’s happening with the POWER\l"
-	.string "PLANT, because I wanted to go back\l"
-	.string "to JOHTO using the MAGNET TRAIN.\p"
-	.string "It seems as an important part to the\n"
-	.string "POWER PLANT has been stolen...\p"
-	.string "But can you guess by whom?\p"
-	.string "It seems it was a member of TEAM\n"
-	.string "ROCKET!\p"
-	.string "Do you think TEAM ROCKET is\n"
-	.string "up to something again?$"
-
-PowerPlant_Interior1_Text_Trigger1_3::
-	.string "AMELIA: Anyway, this guy told me\n"
-	.string "that the suspicious character went\l"
-	.string "towards CERULEAN CITY.\p"
-	.string "I guess this is a work for you,\n"
-	.string "{PLAYER}. After all, you are our\l"
-	.string "JOHTO’s CHAMPION.$"
-
-PowerPlant_Interior1_Text_Trigger1_4::
-	.string "AMELIA: Well... I’ll go back to the\n"
-	.string "MAGNET TRAIN.\p"
-	.string "I want to check on uncle CHUCK.\p"
-	.string "See ya!$"
+PowerPlant_Interior1_Text_PhoneCall_2::
+	.string "Could I ask for your cooperation?$"

@@ -68,9 +68,9 @@ PewterCity_Interior3_Text_GymGuy_2::
 PewterCity_Interior3_Text_Sign1_1::
 	.string "PEWTER POKéMON GYM\n"
 	.string "LEADER: BROCK\p"
-	.string "WINNING TRAINERS: CARLOS$"
+	.string "WINNING TRAINERS:$"
 
 PewterCity_Interior3_Text_Sign1_2::
 	.string "PEWTER POKéMON GYM\n"
 	.string "LEADER: BROCK\p"
-	.string "WINNING TRAINERS: CARLOS {PLAYER}$"
+	.string "WINNING TRAINERS: {PLAYER}$"

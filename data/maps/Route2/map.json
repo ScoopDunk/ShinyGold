@@ -126,34 +126,6 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_RS_MAY",
-      "x": 15,
-      "y": 8,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0x11EF"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_TUBER_M_WATER",
-      "x": 16,
-      "y": 8,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0x11EF"
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_RED_NORMAL",
       "x": 4,
       "y": 14,
@@ -309,35 +281,7 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [
-    {
-      "type": "trigger",
-      "x": 11,
-      "y": 8,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "Route2_EventScript_Trigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 12,
-      "y": 9,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "Route2_EventScript_Trigger2"
-    },
-    {
-      "type": "trigger",
-      "x": 13,
-      "y": 8,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "Route2_EventScript_Trigger3"
-    }
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

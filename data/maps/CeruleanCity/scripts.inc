@@ -138,66 +138,6 @@ CeruleanCity_Movement_WorkerM::
 	face_left
 	step_end
 
-CeruleanCity_EventScript_PkmnTrainerCarlos6::
-	msgbox CeruleanCity_Text_PkmnTrainerCarlos6_1, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_CARLOS_6, 0, CeruleanCity_Text_PkmnTrainerCarlos6Defeat, CeruleanCity_Text_PkmnTrainerCarlos6Victory
-	setflag 0x1194
-	msgbox CeruleanCity_Text_PkmnTrainerCarlos6_2, MSGBOX_NPC
-	goto_if_eq VAR_FACING, 2, CeruleanCity_EventScript_PkmnTrainerCarlos6_1
-	goto_if_eq VAR_FACING, 3, CeruleanCity_EventScript_PkmnTrainerCarlos6_1
-	call CeruleanCity_EventScript_PkmnTrainerCarlos6_2
-	end
-
-CeruleanCity_EventScript_PkmnTrainerCarlos6_1::
-	applymovement 9, CeruleanCity_Movement_PkmnTrainerCarlos6_1
-	delay 192
-	release
-	end
-
-CeruleanCity_EventScript_PkmnTrainerCarlos6_2::
-	applymovement 9, CeruleanCity_Movement_PkmnTrainerCarlos6_2
-	delay 224
-	release
-	end
-
-CeruleanCity_Movement_PkmnTrainerCarlos6_1::
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	set_invisible
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	step_end
-
-CeruleanCity_Movement_PkmnTrainerCarlos6_2::
-	walk_down
-	walk_down
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	set_invisible
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	step_end
-
 CeruleanCity_EventScript_ItemSootheBell::
 	finditem ITEM_SOOTHE_BELL
 	end
@@ -209,22 +149,6 @@ CeruleanCity_EventScript_Trigger1::
 	setvar 0x7034, 0x154
 	release
 	return
-
-CeruleanCity_EventScript_Trigger2::
-	goto_if_set 0x1195, CeruleanCity_EventScript_Trigger2_1
-	goto_if_unset 0x117E, CeruleanCity_EventScript_Trigger2_1
-	goto_if_unset 0x117F, CeruleanCity_EventScript_Trigger2_1
-	playfanfare MUS_SS_ANNE
-	msgbox CeruleanCity_Text_Trigger2, MSGBOX_NPC
-	setflag 0x117D
-	setflag 0x1195
-	waitfanfare
-	release
-	end
-
-CeruleanCity_EventScript_Trigger2_1::
-	release
-	end
 
 CeruleanCity_EventScript_Trigger3::
 	lockall
@@ -362,58 +286,6 @@ CeruleanCity_Movement_Trigger3_6::
 	walk_up
 	step_end
 
-CeruleanCity_EventScript_Trigger6::
-	call_if_set 0x11AA, CeruleanCity_EventScript_Trigger6_1
-	checkitem ITEM_SILPH_SCOPE
-	call_if_eq VAR_RESULT, 1, CeruleanCity_EventScript_Trigger6_2
-	setwildbattle SPECIES_HAUNTER, 35
-	nop
-	special StartMarowakBattle
-	delay 128
-	applymovement LOCALID_PLAYER, CeruleanCity_Movement_Trigger6
-	delay 16
-	end
-
-CeruleanCity_EventScript_Trigger6_1::
-	release
-	end
-
-CeruleanCity_EventScript_Trigger6_2::
-	msgbox CeruleanCity_Text_Trigger6, MSGBOX_AUTOCLOSE
-	setwildbattle SPECIES_HAUNTER, 35
-	special StartSouthernIslandBattle
-	setflag 0x11AA
-	release
-	end
-
-CeruleanCity_Movement_Trigger6::
-	walk_left
-	step_end
-
-CeruleanCity_EventScript_Trigger8::
-	call_if_set 0x11AB, CeruleanCity_EventScript_Trigger6_1
-	checkitem ITEM_SILPH_SCOPE
-	call_if_eq VAR_RESULT, 1, CeruleanCity_EventScript_Trigger8_1
-	setwildbattle SPECIES_GENGAR, 40
-	nop
-	special StartMarowakBattle
-	delay 128
-	applymovement LOCALID_PLAYER, CeruleanCity_Movement_Trigger8
-	delay 16
-	end
-
-CeruleanCity_EventScript_Trigger8_1::
-	msgbox CeruleanCity_Text_Trigger6, MSGBOX_AUTOCLOSE
-	setwildbattle SPECIES_GENGAR, 40
-	special StartSouthernIslandBattle
-	setflag 0x11AB
-	release
-	end
-
-CeruleanCity_Movement_Trigger8::
-	walk_right
-	step_end
-
 CeruleanCity_EventScript_Trigger10::
 	call_if_set 0x11C3, CeruleanCity_EventScript_Trigger10_1
 	call_if_set 0x11BF, CeruleanCity_EventScript_Trigger10_2
@@ -481,4 +353,9 @@ CeruleanCity_EventScript_Sign4::
 
 CeruleanCity_EventScript_Sign5::
 	msgbox CeruleanCity_Text_Sign5, MSGBOX_AUTOCLOSE
+	end
+
+@ Pure Gold/Silver: the old bike shop is closed (pokegold CeruleanCity.asm, CeruleanLockedDoor)
+CeruleanCity_EventScript_LockedDoor::
+	msgbox CeruleanCity_Text_LockedDoor, MSGBOX_SIGN
 	end

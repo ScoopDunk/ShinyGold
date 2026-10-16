@@ -1,12 +1,3 @@
-Route14_Text_WorkerF::
-	.string "That is the PILLAR OF WISHES.\p"
-	.string "They say a certain POKéMON came from\n"
-	.string "the stars and made that pillar.\p"
-	.string "Now people come to make their\n"
-	.string "wishes at the pillar.\p"
-	.string "I wonder if we’ll ever see that\n"
-	.string "POKéMON again?$"
-
 Route14_Text_BirdKeeperRoyIntro::
 	.string "My dream is to fly with my beloved\n"
 	.string "bird POKéMON.$"
@@ -41,12 +32,3 @@ Route14_Text_PokefanTrevorDefeat::
 Route14_Text_PokefanTrevor::
 	.string "If you have KANTO BADGES, they’ll\n"
 	.string "help you in linked battles.$"
-
-Route14_Text_Sign1_1::
-	.string "{PLAYER} makes a wish...$"
-
-Route14_Text_Sign1_2::
-	.string "Huh? {PLAYER} finds a POKéMON EGG?$"
-
-Route14_Text_Sign1_3::
-	.string "{PLAYER} received EGG.$"

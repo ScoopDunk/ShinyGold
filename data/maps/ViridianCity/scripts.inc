@@ -106,20 +106,6 @@ ViridianCity_EventScript_Boy::
 	msgbox ViridianCity_Text_Boy, MSGBOX_NPC
 	end
 
-ViridianCity_EventScript_Trigger1::
-	lockall
-	textcolor NPC_TEXT_COLOR_MALE
-	msgbox ViridianCity_Text_Vars_4
-	closemessage
-	applymovement LOCALID_PLAYER, ViridianCity_Movement_Trigger1
-	waitmovement 0
-	releaseall
-	end
-
-ViridianCity_Movement_Trigger1::
-	walk_down
-	step_end
-
 ViridianCity_EventScript_Trigger2::
 	lockall
 	textcolor NPC_TEXT_COLOR_NEUTRAL
@@ -136,28 +122,6 @@ ViridianCity_EventScript_Trigger2::
 ViridianCity_Movement_Trigger2::
 	jump_2_down
 	step_end
-
-ViridianCity_EventScript_Trigger3::
-	lockall
-	textcolor NPC_TEXT_COLOR_MALE
-	applymovement 4, Common_Movement_WalkInPlaceFasterLeft
-	waitmovement 0
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
-	waitmovement 0
-	call ViridianCity_EventScript_Vars_6
-	release
-	end
-
-ViridianCity_EventScript_Trigger4::
-	lockall
-	textcolor NPC_TEXT_COLOR_MALE
-	applymovement 4, Common_Movement_WalkInPlaceFasterRight
-	waitmovement 0
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
-	waitmovement 0
-	call ViridianCity_EventScript_Vars_6
-	release
-	end
 
 ViridianCity_EventScript_Sign1::
 	msgbox ViridianCity_Text_Sign1, MSGBOX_SIGN

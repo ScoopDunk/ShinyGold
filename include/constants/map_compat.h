@@ -230,7 +230,7 @@
 #define MAP_SIX_ISLAND_RUIN_VALLEY                       MAP_MT_SILVER
 #define MAP_SIX_ISLAND_WATER_PATH                        MAP_REMOVED // removed (pure Gold/Silver build): was MAP_GREEN_ROUTE_AREA1
 #define MAP_SSANNE_1F_CORRIDOR                           MAP_SS_AQUA_INTERIOR2
-#define MAP_SSANNE_EXTERIOR                              MAP_SS_AQUA_INTERIOR1
+#define MAP_SSANNE_EXTERIOR                              MAP_REMOVED // removed (pure Gold/Silver build): was MAP_SS_AQUA_INTERIOR1 (sunken S.S. Aqua)
 #define MAP_THREE_ISLAND                                 MAP_AZALEA_TOWN
 #define MAP_THREE_ISLAND_BERRY_FOREST                    MAP_REMOVED // removed (pure Gold/Silver build): was MAP_GREEN_PLAINS
 #define MAP_THREE_ISLAND_BOND_BRIDGE                     MAP_ROUTE42
@@ -317,6 +317,6 @@
 
 // Object local ids that engine code special-cases (the vanilla object is gone from the hack map, the value is kept)
 #define LOCALID_BIRTH_ISLAND_EXTERIOR_ROCK               1 // vanilla BirthIsland_Exterior object 1; engine code special-cases this local id on MAP_ROUTE26
-#define LOCALID_SS_ANNE                                  1 // vanilla SSAnne_Exterior object 1; engine code special-cases this local id on MAP_SS_AQUA_INTERIOR1
+#define LOCALID_SS_ANNE                                  1 // vanilla SSAnne_Exterior object 1; engine code special-cases this local id on MAP_SSANNE_EXTERIOR (removed)
 
 #endif // GUARD_CONSTANTS_MAP_COMPAT_H

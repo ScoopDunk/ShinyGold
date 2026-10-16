@@ -17,20 +17,6 @@
   "object_events": [
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_CRUSH_GIRL",
-      "x": 4,
-      "y": 17,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "PowerPlant_EventScript_ItemMaxPotion",
-      "flag": "0x11BE"
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_POLICEMAN",
       "x": 4,
       "y": 16,
@@ -126,30 +112,12 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 1,
-      "y": 19,
+      "x": 5,
+      "y": 16,
       "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "PowerPlant_Interior1_EventScript_Trigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 2,
-      "y": 19,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "PowerPlant_Interior1_EventScript_Trigger2"
-    },
-    {
-      "type": "trigger",
-      "x": 3,
-      "y": 19,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "PowerPlant_Interior1_EventScript_Trigger3"
+      "var": "VAR_GOLD_POWER_PLANT_SCENE",
+      "var_value": "1",
+      "script": "PowerPlant_Interior1_EventScript_PhoneCall"
     }
   ],
   "bg_events": []

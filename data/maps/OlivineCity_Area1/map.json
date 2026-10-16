@@ -133,15 +133,6 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 14,
-      "y": 13,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "OlivineCity_Area1_EventScript_Trigger1"
-    },
-    {
-      "type": "trigger",
       "x": 13,
       "y": 14,
       "elevation": 3,

@@ -33,43 +33,15 @@
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_POLICEMAN",
       "x": 12,
-      "y": 14,
+      "y": 15,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SilphCo_Interior1_EventScript_Policeman",
-      "flag": "0x118A"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_POLICEMAN",
-      "x": 14,
-      "y": 16,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "SilphCo_Interior1_EventScript_Policeman2",
-      "flag": "0x118B"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_POLICEMAN",
-      "x": 11,
-      "y": 14,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "SilphCo_Interior1_EventScript_Policeman3",
-      "flag": "0x118C"
+      "script": "SilphCo_Interior1_EventScript_Officer",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -88,17 +60,7 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [
-    {
-      "type": "trigger",
-      "x": 12,
-      "y": 14,
-      "elevation": 0,
-      "var": "0x0000",
-      "var_value": "0",
-      "script": "SilphCo_Interior1_EventScript_Trigger"
-    }
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",
