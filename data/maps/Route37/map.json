@@ -157,26 +157,7 @@
     }
   ],
   "warp_events": [],
-  "coord_events": [
-    {
-      "type": "trigger",
-      "x": 9,
-      "y": 1,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "Route37_EventScript_Trigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 10,
-      "y": 1,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "Route37_EventScript_Trigger1"
-    }
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

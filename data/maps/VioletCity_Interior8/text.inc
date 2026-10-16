@@ -83,27 +83,13 @@ VioletCity_Interior8_Text_LeaderFalkner2_3::
 	.string "In other words, it is both defensive\n"
 	.string "and offensive.$"
 
-VioletCity_Interior8_Text_Trigger1_1::
-	.string "...\p"
-	.string "You again...\p"
-	.string "Let’s battle!$"
-
-VioletCity_Interior8_Text_Trigger1Defeat::
-	.string "...$"
-
-VioletCity_Interior8_Text_Trigger1_2::
-	.string "My POKéMON were weak from this gym’s\n"
-	.string "battle. That’s why I lost.\p"
-	.string "We’ll soon battle again...$"
-
 VioletCity_Interior8_Text_Sign1_1::
 	.string "VIOLET CITY POKéMON GYM\n"
-	.string "LEADER:FALKNER\p"
-	.string "WINNING TRAINERS:\n"
-	.string "CARLOS$"
+	.string "LEADER: FALKNER\p"
+	.string "WINNING TRAINERS:$"
 
 VioletCity_Interior8_Text_Sign1_2::
 	.string "VIOLET CITY POKéMON GYM\n"
 	.string "LEADER: FALKNER\p"
 	.string "WINNING TRAINERS:\n"
-	.string "CARLOS {PLAYER}$"
+	.string "{PLAYER}$"

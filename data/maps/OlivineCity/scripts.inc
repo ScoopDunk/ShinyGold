@@ -212,16 +212,6 @@ OlivineCity_EventScript_Trigger3_1::
 	release
 	end
 
-OlivineCity_EventScript_Trigger4::
-	call_if_set 0x10CF, OlivineCity_EventScript_Trigger4_1
-	setflag 0x10D1
-	release
-	end
-
-OlivineCity_EventScript_Trigger4_1::
-	release
-	end
-
 OlivineCity_EventScript_Sign1::
 	msgbox OlivineCity_Text_Sign1, MSGBOX_AUTOCLOSE
 	end

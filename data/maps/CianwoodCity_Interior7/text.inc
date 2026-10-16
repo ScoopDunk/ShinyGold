@@ -134,12 +134,6 @@ CianwoodCity_Interior7_Text_Sign1_1::
 	.string "LEADER: CHUCK\p"
 	.string "WINNING TRAINERS:$"
 
-CianwoodCity_Interior7_Text_Sign1_2::
-	.string "CIANWOOD CITY POKéMON GYM\n"
-	.string "LEADER: CHUCK\p"
-	.string "WINNING TRAINERS:\n"
-	.string "{PLAYER} CARLOS$"
-
 CianwoodCity_Interior7_Text_Sign1_3::
 	.string "CIANWOOD CITY POKéMON GYM\n"
 	.string "LEADER: CHUCK\p"

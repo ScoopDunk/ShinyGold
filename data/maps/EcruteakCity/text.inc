@@ -29,68 +29,6 @@ EcruteakCity_Text_Woman2::
 	.string "That used to be a much taller tower,\n"
 	.string "but it burned down in a fire.$"
 
-EcruteakCity_Text_CooltrainerF_1::
-	.string "???: Darling, it’s raining!$"
-
-EcruteakCity_Text_CooltrainerF_2::
-	.string "???: Well, I just needed to see\n"
-	.string "this place...\p"
-	.string "It’s supposed to be a mystic place,\n"
-	.string "so I thought it could be the\l"
-	.string "perfect romantic place.$"
-
-EcruteakCity_Text_CooltrainerF_3::
-	.string "???: But I’m getting all wet!$"
-
-EcruteakCity_Text_CooltrainerF_4::
-	.string "???: Oh, well. It seems I failed\n"
-	.string "again…\p"
-	.string "All right. Better go before we catch\n"
-	.string "a cold.$"
-
-EcruteakCity_Text_CooltrainerF_5::
-	.string "???: Huh? Who are you?\p"
-	.string "...\p"
-	.string "???: Oh, you are {PLAYER}.\p"
-	.string "???: We are DANTE and RINA.$"
-
-EcruteakCity_Text_CooltrainerF_6::
-	.string "DANTE: We are a couple in love, as\n"
-	.string "you can see…$"
-
-EcruteakCity_Text_CooltrainerF_7::
-	.string "RINA: {PLAYER}, have you ever been in\n"
-	.string "love?\p"
-	.string "It’s such a wonderful sensation!$"
-
-EcruteakCity_Text_CooltrainerF_8::
-	.string "RINA: You prefer to battle?\p"
-	.string "OK. Darling, why don’t we show\n"
-	.string "our power?$"
-
-EcruteakCity_Text_CooltrainerF_9::
-	.string "DANTE: All right. Let’s show the\n"
-	.string "great power of LOVE!$"
-
-EcruteakCity_Text_CooltrainerFDefeat::
-	.string "DANTE & RINA: How could the power\n"
-	.string "of LOVE be defeated?$"
-
-EcruteakCity_Text_CooltrainerFVictory::
-	.string "DANTE & RINA: The power of LOVE\n"
-	.string "always wins!$"
-
-EcruteakCity_Text_CooltrainerF_10::
-	.string "RINA: Oh, he’s so strong…$"
-
-EcruteakCity_Text_CooltrainerF_11::
-	.string "DANTE: But I’m pretty sure\n"
-	.string "our power will defeat next\l"
-	.string "time!$"
-
-EcruteakCity_Text_CooltrainerF_12::
-	.string "RINA: Chuckle… Till next time!$"
-
 EcruteakCity_Text_PokeManiac_1::
 	.string "SANTOS: ...\p"
 	.string "It’s Saturday...\p"
@@ -107,24 +45,6 @@ EcruteakCity_Text_PokeManiac_3::
 	.string "SANTOS: ...\p"
 	.string "See you again on another Saturday...\p"
 	.string "I won’t have any more gifts...$"
-
-EcruteakCity_Text_Trigger3_1::
-	.string "No... I thought I’d come\n"
-	.string "first to this GYM...\p"
-	.string "I hate it when you are a step\n"
-	.string "ahead of me.\p"
-	.string "That’s why I MUST slow you\n"
-	.string "down!$"
-
-EcruteakCity_Text_Trigger3Defeat::
-	.string "...\p"
-	.string "Whatever...$"
-
-EcruteakCity_Text_Trigger3_2::
-	.string "Perhaps you are ahead of me right\n"
-	.string "now...\p"
-	.string "But I’ll soon beat you!\n"
-	.string "Don’t forget it!$"
 
 EcruteakCity_Text_Sign1::
 	.string "ECRUTEAK CITY POKéMON GYM\n"
