@@ -148,7 +148,9 @@ static const struct MapPreviewScreen sMapPreviewScreenData[MPS_COUNT] = {
         .palptr = sPokemonMansionMapPreviewPalette
     },
     [MPS_ROCKET_HIDEOUT] = {
-        .mapsec = MAPSEC_ROCKET_HIDEOUT,
+        // ShinyGold fix: the hack's S.S. Aqua uses FireRed's Rocket Hideout map section, so this preview (a
+        // Rocket Hideout picture) showed on the ship. No map section matches it now.
+        .mapsec = MAPSEC_NONE,
         .type = MPS_TYPE_FOREST,
         .flagId = FLAG_WORLD_MAP_ROCKET_HIDEOUT_B1F,
         .tilesptr = sRocketHideoutMapPreviewTiles,

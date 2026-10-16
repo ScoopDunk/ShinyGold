@@ -123,7 +123,7 @@ CeruleanCity_Text_Trigger2::
 	.string "This may be hard for you, but\n"
 	.string "could you come back to the lab?\p"
 	.string "I’ve heard the SS.AQUA II has\n"
-	.string "arrived at VERMILLION CITY.\p"
+	.string "arrived at VERMILION CITY.\p"
 	.string "Please, I need to see that strange\n"
 	.string "POKéBALL!\p"
 	.string "I’ll be waiting!\p"

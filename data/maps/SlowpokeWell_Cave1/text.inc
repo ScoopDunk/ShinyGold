@@ -82,14 +82,16 @@ SlowpokeWell_Cave1_Text_TeamRocketGruntDefeat::
 
 LakeOfRage_Interior1_Text_Fisher_3::
 	.string "LAKE OF RAGE is back to normal.\n"
-	.string "T"
-SlowpokeWell_Cave1_Text_TeamRocketGruntVictory::
-	.string "he MAGIKARP have returned.\p"
+	.string "The MAGIKARP have returned.\p"
 	.string "I may yet realize my dream of\n"
 	.string "seeing the world’s largest\l"
 	.string "MAGIKARP.\p"
 	.string "Do you have a ROD?\n"
 	.string "Please help me if you do.$"
+
+@ shown if the player loses (the hack pointed this into the middle of the MAGIKARP text above)
+SlowpokeWell_Cave1_Text_TeamRocketGruntVictory::
+	.string "Don’t mess with TEAM ROCKET!$"
 
 SlowpokeWell_Cave1_Text_TeamRocketGrunt_2::
 	.string "Yeah, TEAM ROCKET was broken up\n"

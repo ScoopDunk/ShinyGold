@@ -45,15 +45,6 @@ GoldenrodCity_Text_Boy_1::
 	.string "I know there’s a new BIKE SHOP, but\n"
 	.string "I can’t find it anywhere.$"
 
-GoldenrodCity_Text_Boy_2::
-	.string "LORELEI has gone back.\p"
-	.string "The LAPRAS she has, I imagine it\n"
-	.string "to be the one she met as a child.\p"
-	.string "I believe it was in ICEFALL CAVE\n"
-	.string "that she caught it.\p"
-	.string "Perhaps that POKéMON has been with\n"
-	.string "her ever since.$"
-
 GoldenrodCity_Text_RocketM3::
 	.string "Stay out of the way! Beat it!$"
 

@@ -448,10 +448,6 @@ CherrygroveCity_Movement_Trigger4_3::
 	walk_fast_left
 	step_end
 
-CherrygroveCity_EventScript_Trigger5::
-	msgbox CherrygroveCity_Text_Trigger5, MSGBOX_NPC
-	end
-
 CherrygroveCity_EventScript_Sign1::
 	msgbox CherrygroveCity_Text_Sign1, MSGBOX_AUTOCLOSE
 	end

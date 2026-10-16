@@ -103,19 +103,7 @@ GoldenrodCity_EventScript_RocketM2::
 	end
 
 GoldenrodCity_EventScript_Boy::
-	lock
-	faceplayer
-	goto_if_set FLAG_SYS_CAN_LINK_WITH_RS, GoldenrodCity_EventScript_Boy_1
-	msgbox GoldenrodCity_Text_Boy_1
-	release
-	end
-
-GoldenrodCity_EventScript_Boy_1::
-	setvar VAR_0x8004, 9
-	setvar VAR_0x8005, 5
-	special SetFlavorTextFlagFromSpecialVars
-	msgbox GoldenrodCity_Text_Boy_2
-	release
+	msgbox GoldenrodCity_Text_Boy_1, MSGBOX_NPC
 	end
 
 GoldenrodCity_EventScript_RocketM3::
