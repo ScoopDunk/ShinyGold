@@ -35,6 +35,3 @@ FiveIsland_ResortGorgeous_Text_TobyPostBattle::
 
 RedRoute_Text_Sign1::
 	.string "RED ROUTE$"
-
-RedRoute_Text_Sign2::
-	.string "SELPHY’S HOUSE$"

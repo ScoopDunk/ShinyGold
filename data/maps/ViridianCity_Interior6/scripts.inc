@@ -98,7 +98,3 @@ ViridianCity_Interior6_Movement_Trigger1_4::
 	walk_right
 	walk_right
 	step_end
-
-ViridianCity_Interior6_EventScript_Sign::
-	msgbox ViridianCity_Interior6_Text_Sign, MSGBOX_SIGN
-	end

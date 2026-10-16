@@ -27,21 +27,9 @@ CinnabarIsland_Text_Blue::
 	.string "to the VIRIDIAN GYM.\p"
 	.string "I’ll take you on then.$"
 
-CinnabarIsland_Text_OldMan1::
-	.string "Scientists conduct experiments \n"
-	.string "in the burned-out building.\p"
-	.string "You know, the one they call the\n"
-	.string "POKéMON MANSION.$"
-
-CinnabarIsland_Text_Trigger::
-	.string "The door is locked…$"
-
 CinnabarIsland_Text_Sign1::
 	.string "CINNABAR ISLAND\n"
 	.string "The Fiery Town of Burning Desire$"
-
-CinnabarIsland_Text_Sign2::
-	.string "POKéMON LAB$"
 
 CinnabarIsland_Text_Sign3::
 	.string "There’s a notice here...\p"

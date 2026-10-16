@@ -100,13 +100,6 @@
       "elevation": 3,
       "dest_map": "MAP_VERMILION_CITY_INTERIOR5",
       "dest_warp_id": "0"
-    },
-    {
-      "x": 13,
-      "y": 5,
-      "elevation": 0,
-      "dest_map": "MAP_LIGHTHOUSE_INTERIOR1",
-      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

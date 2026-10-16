@@ -1,117 +1,12 @@
 SaffronCity_Interior4_MapScripts::
 	.byte 0
 
-SaffronCity_Interior4_EventScript_BlackBeltLung::
-	trainerbattle_single TRAINER_BLACK_BELT_LUNG, SaffronCity_Interior4_Text_BlackBeltLungIntro, SaffronCity_Interior4_Text_BlackBeltLungDefeat
-	msgbox SaffronCity_Interior4_Text_BlackBeltLung, MSGBOX_AUTOCLOSE
-	end
-
-SaffronCity_Interior4_EventScript_BlackBeltNob::
-	trainerbattle_single TRAINER_BLACK_BELT_NOB, SaffronCity_Interior4_Text_BlackBeltNobIntro, SaffronCity_Interior4_Text_BlackBeltNobDefeat
-	msgbox SaffronCity_Interior4_Text_BlackBeltNob, MSGBOX_AUTOCLOSE
-	end
-
-SaffronCity_Interior4_EventScript_BlackBeltAaron::
-	trainerbattle_single TRAINER_BLACK_BELT_AARON, SaffronCity_Interior4_Text_BlackBeltAaronIntro, SaffronCity_Interior4_Text_BlackBeltAaronDefeat
-	msgbox SaffronCity_Interior4_Text_BlackBeltAaron, MSGBOX_AUTOCLOSE
-	end
-
-SaffronCity_Interior4_EventScript_BirdKeeperDenis::
-	trainerbattle_single TRAINER_BIRD_KEEPER_DENIS, SaffronCity_Interior4_Text_BirdKeeperDenisIntro, SaffronCity_Interior4_Text_BirdKeeperDenisDefeat
-	msgbox SaffronCity_Interior4_Text_BirdKeeperDenis, MSGBOX_AUTOCLOSE
-	end
-
 SaffronCity_Interior4_EventScript_BlackBelt::
 	msgbox SaffronCity_Interior4_Text_BlackBelt, MSGBOX_NPC
 	end
 
 SaffronCity_Interior4_EventScript_ItemFocusBand::
 	finditem ITEM_FOCUS_BAND
-	end
-
-SaffronCity_Interior4_EventScript_ItemBall::
-	lock
-	faceplayer
-	goto_if_set 0x278, SaffronCity_Interior4_EventScript_ItemBall_1
-	showmonpic SPECIES_HITMONCHAN, 10, 3
-	setvar VAR_TEMP_1, 107
-	applymovement 5, Common_Movement_WalkInPlaceFasterUp
-	waitmovement 0
-	textcolor NPC_TEXT_COLOR_MALE
-	msgbox SaffronCity_Interior4_Text_ItemBall_1, MSGBOX_YESNO
-	call EventScript_RestorePrevTextColor
-	goto_if_eq VAR_RESULT, 1, SaffronCity_Interior4_EventScript_ItemBall_2
-	hidemonpic
-	release
-	end
-
-SaffronCity_Interior4_EventScript_ItemBall_1::
-	msgbox SaffronCity_Interior4_Text_ItemBall_2
-	release
-	end
-
-SaffronCity_Interior4_EventScript_ItemBall_2::
-	hidemonpic
-	givemon VAR_TEMP_1, 25
-	goto_if_eq VAR_RESULT, 0, SaffronCity_Interior4_EventScript_ItemBall_3
-	goto_if_eq VAR_RESULT, 1, SaffronCity_Interior4_EventScript_ItemBall_4
-	goto_if_eq VAR_RESULT, 2, EventScript_NoMoreRoomForPokemon
-	release
-	end
-
-SaffronCity_Interior4_EventScript_ItemBall_3::
-	removeobject VAR_LAST_TALKED
-	bufferspeciesname STR_VAR_1, VAR_TEMP_1
-	playfanfare MUS_LEVEL_UP
-	message SaffronCity_Interior4_Text_ItemBall_3
-	waitmessage
-	waitfanfare
-	setflag 0x278
-	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, 0, SaffronCity_Interior4_EventScript_ItemBall_5
-	call EventScript_GetGiftMonPartySlot
-	call EventScript_ChangePokemonNickname
-	goto SaffronCity_Interior4_EventScript_ItemBall_5
-
-SaffronCity_Interior4_EventScript_ItemBall_4::
-	removeobject VAR_LAST_TALKED
-	bufferspeciesname STR_VAR_1, VAR_TEMP_1
-	playfanfare MUS_LEVEL_UP
-	message SaffronCity_Interior4_Text_ItemBall_3
-	waitmessage
-	waitfanfare
-	setflag 0x278
-	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, 0, SaffronCity_Interior4_EventScript_ItemBall_6
-	call EventScript_NameReceivedBoxMon
-	goto SaffronCity_Interior4_EventScript_ItemBall_6
-
-SaffronCity_Interior4_EventScript_ItemBall_5::
-	release
-	end
-
-SaffronCity_Interior4_EventScript_ItemBall_6::
-	call EventScript_TransferredToPC
-	goto SaffronCity_Interior4_EventScript_ItemBall_5
-
-SaffronCity_Interior4_EventScript_Trigger1::
-	lockall
-	setvar 0x4081, 1
-	applymovement 5, Common_Movement_WalkInPlaceFasterLeft
-	waitmovement 0
-	releaseall
-	end
-
-SaffronCity_Interior4_EventScript_Trigger2::
-	lockall
-	setvar 0x4081, 1
-	applymovement 5, Common_Movement_WalkInPlaceFasterRight
-	waitmovement 0
-	releaseall
-	end
-
-SaffronCity_Interior4_EventScript_Sign1::
-	msgbox SaffronCity_Interior4_Text_Sign1, MSGBOX_SIGN
 	end
 
 SaffronCity_Interior4_EventScript_Sign3::

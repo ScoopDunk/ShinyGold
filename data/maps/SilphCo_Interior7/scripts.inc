@@ -1,15 +1,6 @@
 SilphCo_Interior7_MapScripts::
 	@ ShinyGold: 1 entry with invalid type(s) 0x6C dropped (inert: the engine skips them)
-	map_script MAP_SCRIPT_ON_TRANSITION, SilphCo_Interior7_OnTransition
 	.byte 0
-
-SilphCo_Interior7_OnTransition::
-	call_if_ge 0x4060, 1, SilphCo_Interior7_EventScript_OnTransition_1
-	end
-
-SilphCo_Interior7_EventScript_OnTransition_1::
-	setobjectmovementtype 8, MOVEMENT_TYPE_FACE_UP
-	return
 
 SilphCo_Interior7_EventScript_OldMan2::
 	call_if_set 0x1192, SilphCo_Interior7_EventScript_OldMan2_1

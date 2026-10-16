@@ -24,9 +24,3 @@ GoldenrodCity_Interior22_EventScript_WorkerM_2::
 	msgbox GoldenrodCity_Interior22_Text_WorkerM_3, MSGBOX_NPC
 	setflag 0x10C1
 	end
-
-GoldenrodCity_Interior22_EventScript_Wigglytuff::
-	lock
-	msgbox GoldenrodCity_Interior22_Text_Wigglytuff
-	release
-	end

@@ -361,17 +361,6 @@ const struct Tileset gTileset_SSAnne =
     .callback = NULL,
 };
 
-const struct Tileset gTileset_Dummy2 =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_Dummy2,
-    .palettes = gTilesetPalettes_Dummy2,
-    .metatiles = gMetatiles_Dummy2,
-    .metatileAttributes = gMetatileAttributes_Dummy2,
-    .callback = NULL,
-};
-
 const struct Tileset gTileset_ViridianForest =
 {
     .isCompressed = FALSE, // ShinyGold: tiles repointed to uncompressed data
@@ -380,17 +369,6 @@ const struct Tileset gTileset_ViridianForest =
     .palettes = gTilesetPalettes_ViridianForest,
     .metatiles = gMetatiles_ViridianForest,
     .metatileAttributes = gMetatileAttributes_ViridianForest,
-    .callback = NULL,
-};
-
-const struct Tileset gTileset_UnusedGatehouse1 =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_UnusedGatehouse1,
-    .palettes = gTilesetPalettes_UnusedGatehouse1,
-    .metatiles = gMetatiles_UnusedGatehouse1,
-    .metatileAttributes = gMetatileAttributes_UnusedGatehouse1,
     .callback = NULL,
 };
 
@@ -424,17 +402,6 @@ const struct Tileset gTileset_SeafoamIslands =
     .palettes = gTilesetPalettes_SeafoamIslands,
     .metatiles = gMetatiles_SeafoamIslands,
     .metatileAttributes = gMetatileAttributes_SeafoamIslands,
-    .callback = NULL,
-};
-
-const struct Tileset gTileset_UnusedGatehouse2 =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_UnusedGatehouse2,
-    .palettes = gTilesetPalettes_UnusedGatehouse2,
-    .metatiles = gMetatiles_UnusedGatehouse2,
-    .metatileAttributes = gMetatileAttributes_UnusedGatehouse2,
     .callback = NULL,
 };
 
@@ -581,50 +548,6 @@ const struct Tileset gTileset_FanClubDaycare =
     .callback = NULL,
 };
 
-const struct Tileset gTileset_Condominiums =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_Condominiums,
-    .palettes = gTilesetPalettes_Condominiums,
-    .metatiles = gMetatiles_Condominiums,
-    .metatileAttributes = gMetatileAttributes_Condominiums,
-    .callback = NULL,
-};
-
-const struct Tileset gTileset_BurgledHouse =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_BurgledHouse,
-    .palettes = gTilesetPalettes_BurgledHouse,
-    .metatiles = gMetatiles_BurgledHouse,
-    .metatileAttributes = gMetatileAttributes_BurgledHouse,
-    .callback = NULL,
-};
-
-const struct Tileset gTileset_Dummy3 =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_Dummy3,
-    .palettes = gTilesetPalettes_Dummy3,
-    .metatiles = gMetatiles_Dummy3,
-    .metatileAttributes = gMetatileAttributes_Dummy3,
-    .callback = NULL,
-};
-
-const struct Tileset gTileset_Dummy4 =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_Dummy4,
-    .palettes = gTilesetPalettes_Dummy4,
-    .metatiles = gMetatiles_Dummy4,
-    .metatileAttributes = gMetatileAttributes_Dummy4,
-    .callback = NULL,
-};
-
 const struct Tileset gTileset_MtEmber =
 {
     .isCompressed = FALSE, // ShinyGold: tiles repointed to uncompressed data
@@ -710,17 +633,6 @@ const struct Tileset gTileset_TrainerTower =
     .palettes = gTilesetPalettes_TrainerTower,
     .metatiles = gMetatiles_TrainerTower,
     .metatileAttributes = gMetatileAttributes_TrainerTower,
-    .callback = NULL,
-};
-
-const struct Tileset gTileset_IslandHarbor =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_IslandHarbor,
-    .palettes = gTilesetPalettes_IslandHarbor,
-    .metatiles = gMetatiles_IslandHarbor,
-    .metatileAttributes = gMetatileAttributes_IslandHarbor,
     .callback = NULL,
 };
 

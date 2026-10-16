@@ -27,7 +27,3 @@ GreenRoute_Area1_EventScript_ItemSeaIncense::
 GreenRoute_Area1_EventScript_Sign1::
 	msgbox GreenRoute_Area1_Text_Sign1, MSGBOX_AUTOCLOSE
 	end
-
-GreenRoute_Area1_EventScript_Sign3::
-	msgbox GreenRoute_Area1_Text_Sign3, MSGBOX_SIGN
-	end

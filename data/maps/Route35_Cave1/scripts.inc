@@ -1,3 +1,3 @@
 Route35_Cave1_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, Unused_FiveIsland_LostCave_Room13_OnTransition
+	@ ShinyGold: unreachable map, emptied (the slot is kept so map ids stay the same)
 	.byte 0

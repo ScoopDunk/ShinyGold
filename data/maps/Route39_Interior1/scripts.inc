@@ -1,36 +1,5 @@
 Route39_Interior1_MapScripts::
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, Route39_Interior1_OnWarp
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route39_Interior1_OnFrame
 	.byte 0
-
-Route39_Interior1_OnWarp::
-	map_script_2 0x4075, 1, Route39_Interior1_EventScript_WarpScene
-	.2byte 0
-
-Route39_Interior1_EventScript_WarpScene::
-	turnobject LOCALID_PLAYER, DIR_NORTH
-	end
-
-Route39_Interior1_OnFrame::
-	map_script_2 0x4075, 1, Route39_Interior1_EventScript_FrameScene
-	.2byte 0
-
-Route39_Interior1_EventScript_FrameScene::
-	lockall
-	textcolor NPC_TEXT_COLOR_MALE
-	applymovement LOCALID_PLAYER, Route39_Interior1_Movement_FrameScene
-	waitmovement 0
-	setvar 0x4075, 2
-	warp MAP_PALLET_TOWN, 12, 18
-	waitstate
-	releaseall
-	end
-
-Route39_Interior1_Movement_FrameScene::
-	walk_up
-	walk_up
-	walk_up
-	step_end
 
 Route39_Interior1_EventScript_Woman3::
 	call_if_set 0x10B2, Route39_Interior1_EventScript_Woman3_1

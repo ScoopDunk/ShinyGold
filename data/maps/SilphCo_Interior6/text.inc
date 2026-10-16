@@ -13,25 +13,13 @@ SilphCo_Interior6_Text_WorkerM_1::
 	.string "Oh dear, oh dear.\n"
 	.string "Help me, please!$"
 
-SilphCo_Interior6_Text_WorkerM_2::
-	.string "We got engaged.\n"
-	.string "Heheh!$"
-
 SilphCo_Interior6_Text_RocketM_1::
 	.string "That man next to me…\n"
 	.string "He’s such a coward!$"
 
-SilphCo_Interior6_Text_RocketM_2::
-	.string "He’s so helpless, he needed\n"
-	.string "someone like me to look after him.$"
-
 SilphCo_Interior6_Text_RocketF_1::
 	.string "They must have targeted SILPH for\n"
 	.string "our POKéMON products.$"
-
-SilphCo_Interior6_Text_RocketF_2::
-	.string "Come work for SILPH when you\n"
-	.string "get older.$"
 
 SilphCo_Interior6_Text_Trigger1_1::
 	.string "JESS: And that’s why you should be\n"

@@ -1,12 +1,2 @@
 SSAqua_Interior21_MapScripts::
 	.byte 0
-
-SSAqua_Interior21_EventScript_FishermanScott::
-	trainerbattle_single TRAINER_FISHERMAN_SCOTT, SSAqua_Interior21_Text_FishermanScottIntro, SSAqua_Interior21_Text_FishermanScottDefeat
-	msgbox SSAqua_Interior21_Text_FishermanScott, MSGBOX_AUTOCLOSE
-	end
-
-SSAqua_Interior21_EventScript_Cooltrainer140::
-	trainerbattle_single TRAINER_COOLTRAINER_REENA_3, SSAqua_Interior21_Text_Cooltrainer140Intro, SSAqua_Interior21_Text_Cooltrainer140Defeat
-	msgbox SSAqua_Interior21_Text_Cooltrainer140, MSGBOX_AUTOCLOSE
-	end

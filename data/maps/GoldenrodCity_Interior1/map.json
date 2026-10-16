@@ -200,14 +200,6 @@
     },
     {
       "type": "sign",
-      "x": 2,
-      "y": 0,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0"
-    },
-    {
-      "type": "sign",
       "x": 6,
       "y": 10,
       "elevation": 0,
@@ -264,14 +256,6 @@
     },
     {
       "type": "sign",
-      "x": 2,
-      "y": 0,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0"
-    },
-    {
-      "type": "sign",
       "x": 12,
       "y": 8,
       "elevation": 0,
@@ -320,14 +304,6 @@
     },
     {
       "type": "sign",
-      "x": 2,
-      "y": 0,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0"
-    },
-    {
-      "type": "sign",
       "x": 13,
       "y": 6,
       "elevation": 0,
@@ -365,14 +341,6 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "GoldenrodCity_Interior1_EventScript_Sign24"
-    },
-    {
-      "type": "sign",
-      "x": 2,
-      "y": 0,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0"
     }
   ]
 }

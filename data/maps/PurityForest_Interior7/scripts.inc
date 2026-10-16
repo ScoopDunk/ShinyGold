@@ -1,6 +1,3 @@
 PurityForest_Interior7_MapScripts::
+	@ ShinyGold: unreachable map, emptied (the slot is kept so map ids stay the same)
 	.byte 0
-
-PurityForest_Interior7_EventScript_Sign1::
-	msgbox PurityForest_Interior7_Text_Sign1, MSGBOX_SIGN
-	end

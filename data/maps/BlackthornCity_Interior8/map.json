@@ -261,15 +261,6 @@
     },
     {
       "type": "trigger",
-      "x": 1,
-      "y": 0,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "0x0"
-    },
-    {
-      "type": "trigger",
       "x": 12,
       "y": 10,
       "elevation": 3,
@@ -303,15 +294,6 @@
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
       "script": "BlackthornCity_Interior8_EventScript_Trigger13"
-    },
-    {
-      "type": "trigger",
-      "x": 4,
-      "y": 10,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "0x0"
     },
     {
       "type": "trigger",

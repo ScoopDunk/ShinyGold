@@ -1,27 +1,12 @@
 NewBarkTown_Interior3_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, NewBarkTown_Interior3_OnTransition
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, NewBarkTown_Interior3_OnWarp
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, NewBarkTown_Interior3_OnFrame
 	.byte 0
 
 NewBarkTown_Interior3_OnTransition::
 	setflag FLAG_VISITED_OAKS_LAB
-	call_if_eq 0x4055, 1, NewBarkTown_Interior3_EventScript_OnTransition_1
-	call_if_eq 0x4055, 7, NewBarkTown_Interior3_EventScript_OnTransition_2
 	call_if_eq 0x4055, 8, NewBarkTown_Interior3_EventScript_OnTransition_3
 	call_if_set 0x247, NewBarkTown_Interior3_EventScript_OnTransition_4
 	end
-
-NewBarkTown_Interior3_EventScript_OnTransition_1::
-	setobjectxyperm 4, 6, 11
-	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_UP
-	savebgm MUS_OAK
-	return
-
-NewBarkTown_Interior3_EventScript_OnTransition_2::
-	setobjectxyperm 4, 6, 11
-	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_UP
-	return
 
 NewBarkTown_Interior3_EventScript_OnTransition_3::
 	setvar 0x4055, 9
@@ -30,63 +15,6 @@ NewBarkTown_Interior3_EventScript_OnTransition_3::
 NewBarkTown_Interior3_EventScript_OnTransition_4::
 	setflag 0x24F
 	return
-
-NewBarkTown_Interior3_OnWarp::
-	map_script_2 0x4055, 1, NewBarkTown_Interior3_EventScript_WarpScene
-	.2byte 0
-
-NewBarkTown_Interior3_EventScript_WarpScene::
-	turnobject LOCALID_PLAYER, DIR_NORTH
-	end
-
-NewBarkTown_Interior3_OnFrame::
-	map_script_2 0x4055, 1, NewBarkTown_Interior3_EventScript_FrameScene1
-	map_script_2 0x4055, 7, NewBarkTown_Interior3_EventScript_FrameScene2
-	.2byte 0
-
-NewBarkTown_Interior3_EventScript_FrameScene1::
-	lockall
-	textcolor NPC_TEXT_COLOR_MALE
-	applymovement 4, NewBarkTown_Interior3_Movement_FrameScene1_1
-	waitmovement 0
-	removeobject 4
-	setobjectxyperm 4, 6, 3
-	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_DOWN
-	clearflag 0x02B
-	applymovement LOCALID_PLAYER, NewBarkTown_Interior3_Movement_FrameScene1_2
-	waitmovement 0
-	applymovement 8, Common_Movement_WalkInPlaceFasterUp
-	waitmovement 0
-	clearflag FLAG_DONT_TRANSITION_MUSIC
-	savebgm MUS_DUMMY
-	fadedefaultbgm
-	msgbox NewBarkTown_Interior3_Text_FrameScene1_1
-	closemessage
-	delay 60
-	msgbox NewBarkTown_Interior3_Text_FrameScene1_2
-	closemessage
-	delay 30
-	applymovement 8, NewBarkTown_Interior3_Movement_FrameScene1_3
-	waitmovement 0
-	msgbox NewBarkTown_Interior3_Text_FrameScene1_3
-	msgbox NewBarkTown_Interior3_Text_FrameScene1_4
-	setvar 0x4055, 2
-	releaseall
-	end
-
-NewBarkTown_Interior3_EventScript_FrameScene2::
-	lockall
-	setvar VAR_FACING, 2
-	textcolor NPC_TEXT_COLOR_MALE
-	applymovement 4, NewBarkTown_Interior3_Movement_FrameScene1_1
-	waitmovement 0
-	removeobject 4
-	setobjectxyperm 4, 6, 3
-	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_DOWN
-	clearflag 0x02B
-	applymovement LOCALID_PLAYER, NewBarkTown_Interior3_Movement_FrameScene1_2
-	waitmovement 0
-	goto NewBarkTown_Interior3_EventScript_FrameScene2_1
 
 NewBarkTown_Interior3_EventScript_FrameScene2_1::
 	msgbox NewBarkTown_Interior3_Text_FrameScene2_1
@@ -140,31 +68,6 @@ NewBarkTown_Interior3_EventScript_FrameScene2_1::
 	setvar 0x4055, 8
 	releaseall
 	end
-
-NewBarkTown_Interior3_Movement_FrameScene1_1::
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
-NewBarkTown_Interior3_Movement_FrameScene1_2::
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
-NewBarkTown_Interior3_Movement_FrameScene1_3::
-	walk_in_place_up
-	walk_in_place_up
-	step_end
 
 NewBarkTown_Interior3_EventScript_FrameScene2_2::
 	setobjectxyperm 8, 5, 10
@@ -459,7 +362,6 @@ NewBarkTown_Interior3_EventScript_Scientist3::
 	goto_if_eq 0x4052, 1, NewBarkTown_Interior3_EventScript_Scientist3_2
 	goto_if_eq 0x4055, 6, NewBarkTown_Interior3_EventScript_Scientist3_5
 	goto_if_ge 0x4057, 1, NewBarkTown_Interior3_EventScript_Scientist3_6
-	goto_if_eq 0x4055, 4, NewBarkTown_Interior3_EventScript_Scientist3_7
 	goto_if_eq 0x4055, 3, NewBarkTown_Interior3_EventScript_Scientist3_8
 	msgbox NewBarkTown_Interior3_Text_Scientist3_1
 	release
@@ -587,11 +489,6 @@ NewBarkTown_Interior3_EventScript_Scientist3_6::
 	setvar 0x4051, 1
 	setvar 0x4058, 1
 	setvar 0x4054, 1
-	release
-	end
-
-NewBarkTown_Interior3_EventScript_Scientist3_7::
-	msgbox NewBarkTown_Interior3_Text_Scientist3_19
 	release
 	end
 

@@ -138,28 +138,3 @@ SSAqua_Interior3_Text_SailorGarrettDefeat::
 SSAqua_Interior3_Text_SailorGarrett::
 	.string "We get different passengers from\n"
 	.string "VERMILION CITY to OLIVINE CITY.$"
-
-SSAqua_Interior3_Text_Trigger1_1::
-	.string "{RIVAL}: Bonjour!\n"
-	.string "{PLAYER}!\p"
-	.string "Imagine seeing you here!\n"
-	.string "{PLAYER}, were you really invited?\p"
-	.string "So how’s your POKéDEX coming?\p"
-	.string "I already caught 40 kinds, pal.\n"
-	.string "Different kinds are everywhere.\p"
-	.string "Crawl around in grassy areas, and\n"
-	.string "look hard for them.$"
-
-SSAqua_Interior3_Text_Trigger1_2::
-	.string "{RIVAL}: I heard there was a CUT\n"
-	.string "master on board.\p"
-	.string "But he was just a seasick old man!\p"
-	.string "CUT itself is really useful.\n"
-	.string "Yup, it’ll be handy.\p"
-	.string "You should go see him, too.\n"
-	.string "Smell ya!$"
-
-SSAqua_Interior3_Text_Trigger1Defeat::
-	.string "Humph!\p"
-	.string "At least you’re raising your\n"
-	.string "POKéMON!$"

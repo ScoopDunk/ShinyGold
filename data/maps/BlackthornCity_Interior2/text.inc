@@ -1,6 +1,3 @@
-BlackthornCity_Interior2_Text_Pidgey::
-	.string "PIDGEY: Kurukkoo!$"
-
 BlackthornCity_Interior2_Text_FatMan_1::
 	.string "I’m the POKéMON MOVE MANIAC.\p"
 	.string "I know every single move that\n"
@@ -47,10 +44,6 @@ BlackthornCity_Interior2_Text_FatMan_9::
 BlackthornCity_Interior2_Text_FatMan_10::
 	.string "{PLAYER} handed over two\n"
 	.string "TINYMUSHROOMS in exchange.$"
-
-BlackthornCity_Interior2_Text_Youngster::
-	.string "The COPYCAT is cute!\n"
-	.string "I’m getting her a POKé DOLL.$"
 
 BlackthornCity_Interior2_Text_Sign::
 	.string "I was given a PP UP as a gift.\p"

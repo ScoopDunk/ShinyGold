@@ -77,18 +77,9 @@ BlackthornCity_EventScript_Youngster::
 	msgbox BlackthornCity_Text_Youngster, MSGBOX_NPC
 	end
 
-BlackthornCity_EventScript_ItemBall::
-	setflag FLAG_SYS_CAN_LINK_WITH_RS
-	release
-	end
-
 BlackthornCity_EventScript_Man2::
 	msgbox BlackthornCity_Text_Man2, MSGBOX_NPC
 	end
-
-BlackthornCity_EventScript_RedNormal::
-	@ ShinyGold: overlapping data duplicated from 0x08873370
-	.byte 0xD9 @ invalid opcode (script stops)
 
 BlackthornCity_EventScript_Trigger1::
 	call_if_set 0x114A, BlackthornCity_EventScript_Trigger1_1

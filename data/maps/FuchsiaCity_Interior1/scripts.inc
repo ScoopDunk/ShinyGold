@@ -14,7 +14,3 @@ FuchsiaCity_Interior1_EventScript_FatMan::
 FuchsiaCity_Interior1_EventScript_FatMan_1::
 	msgbox FuchsiaCity_Interior1_Text_FatMan_2, MSGBOX_NPC
 	end
-
-FuchsiaCity_Interior1_EventScript_Woman1::
-	msgbox FuchsiaCity_Interior1_Text_Woman1, MSGBOX_NPC
-	end

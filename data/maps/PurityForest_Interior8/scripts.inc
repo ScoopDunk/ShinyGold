@@ -1,9 +1,6 @@
 PurityForest_Interior8_MapScripts::
+	@ ShinyGold: unreachable map, emptied (the slot is kept so map ids stay the same)
 	.byte 0
-
-PurityForest_Interior8_EventScript_Rocker::
-	msgbox PurityForest_Interior8_Text_Rocker, MSGBOX_NPC
-	end
 
 PurityForest_Interior8_EventScript_Man::
 	lock
@@ -25,28 +22,4 @@ PurityForest_Interior8_EventScript_Man_2::
 	special ShowDiploma
 	waitstate
 	release
-	end
-
-PurityForest_Interior8_EventScript_PokeManiac::
-	msgbox PurityForest_Interior8_Text_PokeManiac, MSGBOX_NPC
-	end
-
-PurityForest_Interior8_EventScript_FatMan::
-	msgbox PurityForest_Interior8_Text_FatMan, MSGBOX_NPC
-	end
-
-PurityForest_Interior8_EventScript_Sign1::
-	msgbox PurityForest_Interior8_Text_Sign1, MSGBOX_SIGN
-	end
-
-PurityForest_Interior8_EventScript_Sign2::
-	msgbox PurityForest_Interior8_Text_Sign2, MSGBOX_SIGN
-	end
-
-PurityForest_Interior8_EventScript_Sign3::
-	msgbox PurityForest_Interior8_Text_Sign3, MSGBOX_SIGN
-	end
-
-PurityForest_Interior8_EventScript_Sign4::
-	msgbox PurityForest_Interior8_Text_Sign4, MSGBOX_SIGN
 	end

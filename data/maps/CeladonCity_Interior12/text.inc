@@ -49,19 +49,3 @@ CeladonCity_Interior12_Text_UnusedMaleReceptionist2_2::
 CeladonCity_Interior12_Text_UnusedMaleReceptionist2_3::
 	.string "Okay, a TM of HYPER BEAM\n"
 	.string "is what you want?$"
-
-CeladonCity_Interior12_Text_WorkerM_1::
-	.string "We exchange your COINS for prizes.$"
-
-CeladonCity_Interior12_Text_WorkerM_2::
-	.string "Oh? You don’t have a COIN CASE.$"
-
-CeladonCity_Interior12_Text_WorkerM_3::
-	.string "Which prize would you like?$"
-
-CeladonCity_Interior12_Text_WorkerM_4::
-	.string "So, you want the {STR_VAR_1}?$"
-
-CeladonCity_Interior12_Text_WorkerM_5::
-	.string "Sorry, you’ll need more COINS\n"
-	.string "than that.$"

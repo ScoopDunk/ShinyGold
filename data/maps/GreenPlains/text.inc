@@ -1,7 +1,3 @@
-GreenPlains_Text_Sign1::
-	.string "Beware of wild, BERRY-loving\n"
-	.string "POKéMON!$"
-
 GreenPlains_Text_Sign2::
 	.string "GREEN PLAINS$"
 

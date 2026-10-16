@@ -29,16 +29,6 @@ MahoganyTown_Interior3_EventScript_Lass::
 	msgbox MahoganyTown_Interior3_Text_Lass, MSGBOX_NPC
 	end
 
-MahoganyTown_Interior3_EventScript_Youngster::
-	msgbox MahoganyTown_Interior3_Text_Youngster, MSGBOX_NPC
-	end
-
-MahoganyTown_Interior3_EventScript_Clipboard::
-	lock
-	msgbox MahoganyTown_Interior3_Text_Clipboard
-	release
-	end
-
 MahoganyTown_Interior3_EventScript_Trigger1::
 	call_if_set 0x1372, MtSilver_Interior1_EventScript_Trigger1
 	clearflag FLAG_WORLD_MAP_ROUTE4_POKEMON_CENTER_1F

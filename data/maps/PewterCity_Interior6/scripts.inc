@@ -19,10 +19,6 @@ PewterCity_Interior6_EventScript_Jigglypuff::
 	release
 	end
 
-PewterCity_Interior6_EventScript_Gentleman::
-	msgbox PewterCity_Interior6_Text_Gentleman, MSGBOX_NPC
-	end
-
 PewterCity_Interior6_EventScript_Nurse::
 	lock
 	faceplayer
@@ -32,12 +28,6 @@ PewterCity_Interior6_EventScript_Nurse::
 
 PewterCity_Interior6_EventScript_LittleGirl::
 	msgbox PewterCity_Interior6_Text_LittleGirl, MSGBOX_NPC
-	end
-
-PewterCity_Interior6_EventScript_GbaKid::
-	lock
-	msgbox PewterCity_Interior6_Text_GbaKid
-	release
 	end
 
 PewterCity_Interior6_EventScript_Woman1::

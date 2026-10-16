@@ -1,15 +1,3 @@
 Unused_ThreeIsland_House5_MapScripts::
+	@ ShinyGold: unreachable map, emptied (the slot is kept so map ids stay the same)
 	.byte 0
-
-Unused_ThreeIsland_House5_EventScript_LittleGirl::
-	lock
-	faceplayer
-	goto_if_set 0x2A3, Unused_ThreeIsland_House5_EventScript_LittleGirl_1
-	msgbox Unused_ThreeIsland_House5_Text_LittleGirl_1
-	release
-	end
-
-Unused_ThreeIsland_House5_EventScript_LittleGirl_1::
-	msgbox Unused_ThreeIsland_House5_Text_LittleGirl_2
-	release
-	end

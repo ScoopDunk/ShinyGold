@@ -156,13 +156,6 @@
       "elevation": 0,
       "dest_map": "MAP_FUCHSIA_CITY_AREA1",
       "dest_warp_id": "5"
-    },
-    {
-      "x": 0,
-      "y": 0,
-      "elevation": 0,
-      "dest_map": "MAP_MAIDENS_PEAK_DIS_INTERIOR7",
-      "dest_warp_id": "1"
     }
   ],
   "coord_events": [],

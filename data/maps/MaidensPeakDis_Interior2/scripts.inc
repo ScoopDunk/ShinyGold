@@ -1,7 +1,3 @@
 MaidensPeakDis_Interior2_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, MaidensPeakDis_Interior2_OnTransition
+	@ ShinyGold: unreachable map, emptied (the slot is kept so map ids stay the same)
 	.byte 0
-
-MaidensPeakDis_Interior2_OnTransition::
-	setworldmapflag FLAG_WORLD_MAP_UNDERGROUND_PATH_EAST_WEST_TUNNEL
-	end

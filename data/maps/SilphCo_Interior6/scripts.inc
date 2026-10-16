@@ -10,39 +10,21 @@ SilphCo_Interior6_EventScript_TeamRocketGrunt29::
 SilphCo_Interior6_EventScript_WorkerM::
 	lock
 	faceplayer
-	goto_if_ge 0x4060, 1, SilphCo_Interior6_EventScript_WorkerM_1
 	msgbox SilphCo_Interior6_Text_WorkerM_1
-	release
-	end
-
-SilphCo_Interior6_EventScript_WorkerM_1::
-	msgbox SilphCo_Interior6_Text_WorkerM_2
 	release
 	end
 
 SilphCo_Interior6_EventScript_RocketM::
 	lock
 	faceplayer
-	goto_if_ge 0x4060, 1, SilphCo_Interior6_EventScript_RocketM_1
 	msgbox SilphCo_Interior6_Text_RocketM_1
-	release
-	end
-
-SilphCo_Interior6_EventScript_RocketM_1::
-	msgbox SilphCo_Interior6_Text_RocketM_2
 	release
 	end
 
 SilphCo_Interior6_EventScript_RocketF::
 	lock
 	faceplayer
-	goto_if_ge 0x4060, 1, SilphCo_Interior6_EventScript_RocketF_1
 	msgbox SilphCo_Interior6_Text_RocketF_1
-	release
-	end
-
-SilphCo_Interior6_EventScript_RocketF_1::
-	msgbox SilphCo_Interior6_Text_RocketF_2
 	release
 	end
 

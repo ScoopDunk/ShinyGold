@@ -25,10 +25,6 @@ BlackthornCity_Interior3_EventScript_Woman1::
 	msgbox BlackthornCity_Interior3_Text_Woman1, MSGBOX_NPC
 	end
 
-BlackthornCity_Interior3_EventScript_Youngster::
-	msgbox BlackthornCity_Interior3_Text_Youngster, MSGBOX_NPC
-	end
-
 BlackthornCity_Interior3_EventScript_CooltrainerM::
 	msgbox BlackthornCity_Interior3_Text_CooltrainerM, MSGBOX_NPC
 	end

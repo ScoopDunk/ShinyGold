@@ -107,20 +107,13 @@ IndigoPlateau_Interior4_EventScript_Lorelei::
 	setflag FLAG_TEMP_3
 	setflag FLAG_TEMP_5
 	setflag 0x115C
-	goto_if_set 0x115B, IndigoPlateau_Interior4_EventScript_Lorelei_2
-	goto_if_unset 0x115B, IndigoPlateau_Interior4_EventScript_Lorelei_3
+	@ ShinyGold: the stronger rematch behind flag 0x115B is removed; nothing ever set that flag
+	goto IndigoPlateau_Interior4_EventScript_Lorelei_3
 	end
 
 IndigoPlateau_Interior4_EventScript_Lorelei_1::
 	msgbox IndigoPlateau_Interior4_Text_Lorelei_2, MSGBOX_NPC
 	end
-
-IndigoPlateau_Interior4_EventScript_Lorelei_2::
-	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_RED, 0, IndigoPlateau_Interior4_Text_LoreleiDefeat, IndigoPlateau_Interior4_Text_LoreleiVictory
-	setflag 0x4BB
-	call PokemonLeague_EventScript_OpenDoor
-	msgbox IndigoPlateau_Interior4_Text_Lorelei_2, MSGBOX_NPC
-	return
 
 IndigoPlateau_Interior4_EventScript_Lorelei_3::
 	trainerbattle_earlyrival TRAINER_ELITETRAINER_KAREN, 0, IndigoPlateau_Interior4_Text_LoreleiDefeat, IndigoPlateau_Interior4_Text_LoreleiVictory

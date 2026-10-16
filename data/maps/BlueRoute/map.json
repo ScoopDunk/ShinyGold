@@ -99,20 +99,6 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 43,
-      "y": 23,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
       "x": 39,
       "y": 26,
       "elevation": 3,
@@ -122,7 +108,8 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "BlueRoute_EventScript_YoungsterFelix",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 7
     },
     {
       "type": "object",
@@ -136,7 +123,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 8
     },
     {
       "type": "object",
@@ -150,7 +138,8 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "BlueRoute_EventScript_Pokemaniac617",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 9
     },
     {
       "type": "object",
@@ -164,7 +153,8 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 10
     },
     {
       "type": "object",
@@ -178,7 +168,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "BlueRoute_EventScript_Picnicker",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 11
     },
     {
       "type": "object",
@@ -192,7 +183,8 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 12
     }
   ],
   "warp_events": [

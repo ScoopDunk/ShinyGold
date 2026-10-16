@@ -1,7 +1,3 @@
 Route33_Cave1_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, Route33_Cave1_OnTransition
+	@ ShinyGold: unreachable map, emptied (the slot is kept so map ids stay the same)
 	.byte 0
-
-Route33_Cave1_OnTransition::
-	call EventScript_TryDarkenRuins
-	end

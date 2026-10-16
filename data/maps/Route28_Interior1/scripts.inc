@@ -14,10 +14,6 @@ Route28_Interior1_EventScript_Pidgey::
 	release
 	end
 
-Route28_Interior1_EventScript_Channeler::
-	msgbox Route28_Interior1_Text_Channeler, MSGBOX_NPC
-	end
-
 Route28_Interior1_EventScript_Lass::
 	lock
 	faceplayer

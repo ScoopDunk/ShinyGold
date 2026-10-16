@@ -134,14 +134,6 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VioletCity_Interior2_EventScript_Sign2"
-    },
-    {
-      "type": "sign",
-      "x": 9,
-      "y": 0,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "ViridianCity_School_EventScript_PokemonJournal"
     }
   ]
 }

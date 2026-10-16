@@ -28,34 +28,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "FuchsiaCity_Interior2_EventScript_WorkerM",
       "flag": "0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_ROCKER",
-      "x": 13,
-      "y": 10,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "FuchsiaCity_Interior2_EventScript_Rocker",
-      "flag": "0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BALDING_MAN",
-      "x": 13,
-      "y": 10,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "FuchsiaCity_Interior2_EventScript_BaldingMan",
-      "flag": "0"
     }
   ],
   "warp_events": [

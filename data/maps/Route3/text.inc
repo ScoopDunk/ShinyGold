@@ -1,9 +1,3 @@
-Route3_Text_Youngster::
-	.string "Whew… I better take a rest…\n"
-	.string "Groan…\p"
-	.string "That tunnel from CERULEAN takes a\n"
-	.string "lot out of you!$"
-
 Route3_Text_FirebreatherBurtIntro::
 	.string "Step right up and take a look!$"
 

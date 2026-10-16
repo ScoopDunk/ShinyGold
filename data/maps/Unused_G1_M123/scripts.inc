@@ -1,5 +1,5 @@
 Unused_G1_M123_MapScripts::
-	@ ShinyGold: map script header pointer was NULL
+	@ ShinyGold: unreachable map, emptied (the slot is kept so map ids stay the same)
 	.byte 0
 
 Unused_G1_M123_EventScript_Nurse::

@@ -186,32 +186,26 @@ TrickHouse_Interior1_EventScript_Trigger_10::
 	.byte 0xFF @ invalid opcode (script stops)
 
 TrickHouse_Interior1_EventScript_Trigger_11::
-	call_if_set 0x1210, TrickHouse_Interior1_EventScript_Trigger_12
 	warp MAP_BATTLE_COLOSSEUM_2P, 0, 0x26C, 0xFFFF
 	.byte 0xFF @ invalid opcode (script stops)
 
 TrickHouse_Interior1_EventScript_Trigger_12::
-	call_if_set 0x1211, TrickHouse_Interior1_EventScript_Trigger_13
 	warp MAP_BATTLE_COLOSSEUM_2P, 0, 0x26C, 0xFFFF
 	.byte 0xFF @ invalid opcode (script stops)
 
 TrickHouse_Interior1_EventScript_Trigger_13::
-	call_if_set 0x1212, TrickHouse_Interior1_EventScript_Trigger_14
 	warp MAP_BATTLE_COLOSSEUM_2P, 0, 0x26C, 0xFFFF
 	.byte 0xFF @ invalid opcode (script stops)
 
 TrickHouse_Interior1_EventScript_Trigger_14::
-	call_if_set 0x1213, TrickHouse_Interior1_EventScript_Trigger_15
 	warp MAP_BATTLE_COLOSSEUM_2P, 0, 0x26C, 0xFFFF
 	.byte 0xFF @ invalid opcode (script stops)
 
 TrickHouse_Interior1_EventScript_Trigger_15::
-	call_if_set 0x1214, TrickHouse_Interior1_EventScript_Trigger_16
 	warp MAP_BATTLE_COLOSSEUM_2P, 0, 0x26C, 0xFFFF
 	.byte 0xFF @ invalid opcode (script stops)
 
 TrickHouse_Interior1_EventScript_Trigger_16::
-	call_if_set 0x1215, TrickHouse_Interior1_EventScript_Trigger_17
 	warp MAP_BATTLE_COLOSSEUM_2P, 0, 0x26C, 0xFFFF
 	.byte 0xFF @ invalid opcode (script stops)
 

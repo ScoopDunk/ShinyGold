@@ -10,42 +10,6 @@ CeladonCity_Interior11_EventScript_OldMan1::
 	msgbox CeladonCity_Interior11_Text_OldMan1, MSGBOX_NPC
 	end
 
-CeladonCity_Interior11_EventScript_Fisher::
-	lock
-	faceplayer
-	goto_if_set 0x26E, CeladonCity_Interior11_EventScript_Fisher_1
-	msgbox CeladonCity_Interior11_Text_Fisher_1
-	goto_if_unset 0x243, CeladonCity_Interior11_EventScript_Fisher_2
-	checkcoins VAR_TEMP_1
-	goto_if_ge VAR_TEMP_1, 0x2706, CeladonCity_Interior11_EventScript_Fisher_3
-	addcoins 10
-	textcolor NPC_TEXT_COLOR_NEUTRAL
-	msgbox CeladonCity_Interior11_Text_Fisher_2
-	playse SE_SHOP
-	waitse
-	setflag 0x26E
-	goto CeladonCity_Interior11_EventScript_Fisher_4
-
-CeladonCity_Interior11_EventScript_Fisher_1::
-	msgbox CeladonCity_Interior11_Text_Fisher_3
-	goto CeladonCity_Interior11_EventScript_Fisher_4
-
-CeladonCity_Interior11_EventScript_Fisher_2::
-	textcolor NPC_TEXT_COLOR_NEUTRAL
-	msgbox CeladonCity_Interior11_Text_Fisher_4
-	goto CeladonCity_Interior11_EventScript_Fisher_4
-
-CeladonCity_Interior11_EventScript_Fisher_3::
-	msgbox CeladonCity_Interior11_Text_Fisher_5
-	goto CeladonCity_Interior11_EventScript_Fisher_4
-
-CeladonCity_Interior11_EventScript_Fisher_4::
-	closemessage
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-	waitmovement 0
-	release
-	end
-
 CeladonCity_Interior11_EventScript_GymGuy::
 	msgbox CeladonCity_Interior11_Text_GymGuy, MSGBOX_NPC
 	end
@@ -170,8 +134,4 @@ CeladonCity_Interior11_EventScript_Sign15::
 
 CeladonCity_Interior11_EventScript_Sign23::
 	msgbox CeladonCity_Interior11_Text_Sign23, MSGBOX_AUTOCLOSE
-	end
-
-CeladonCity_Interior11_EventScript_Sign29::
-	msgbox CeladonCity_Interior11_Text_Sign29, MSGBOX_AUTOCLOSE
 	end

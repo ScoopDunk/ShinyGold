@@ -1,12 +1,3 @@
 Unused_RocketHideout_B3F_MapScripts::
+	@ ShinyGold: unreachable map, emptied (the slot is kept so map ids stay the same)
 	.byte 0
-
-Unused_RocketHideout_B3F_EventScript_TeamRocketGrunt15::
-	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_15, Unused_RocketHideout_B3F_Text_TeamRocketGrunt15Intro, Unused_RocketHideout_B3F_Text_TeamRocketGrunt15Defeat
-	msgbox Unused_RocketHideout_B3F_Text_TeamRocketGrunt15, MSGBOX_AUTOCLOSE
-	end
-
-Unused_RocketHideout_B3F_EventScript_TeamRocketGrunt14::
-	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_14, Unused_RocketHideout_B3F_Text_TeamRocketGrunt14Intro, Unused_RocketHideout_B3F_Text_TeamRocketGrunt14Defeat
-	msgbox Unused_RocketHideout_B3F_Text_TeamRocketGrunt14, MSGBOX_AUTOCLOSE
-	end

@@ -101,22 +101,5 @@
       "script": "SilphCo_Interior6_EventScript_Trigger2"
     }
   ],
-  "bg_events": [
-    {
-      "type": "sign",
-      "x": 0,
-      "y": 0,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0"
-    },
-    {
-      "type": "sign",
-      "x": 0,
-      "y": 0,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0"
-    }
-  ]
+  "bg_events": []
 }

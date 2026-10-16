@@ -4,7 +4,6 @@ SeaCavern_Interior4_MapScripts::
 
 SeaCavern_Interior4_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_SEVEN_ISLAND_SEVAULT_CANYON_TANOBY_KEY
-	call_if_set FLAG_SYS_UNLOCKED_TANOBY_RUINS, SeaCavern_Interior4_EventScript_OnTransition_1
 	setvar VAR_TEMP_1, 0
 	setvar VAR_TEMP_2, 0
 	setvar VAR_TEMP_3, 0
@@ -14,16 +13,6 @@ SeaCavern_Interior4_OnTransition::
 	setvar VAR_TEMP_7, 0
 	setvar VAR_TEMP_8, 0
 	end
-
-SeaCavern_Interior4_EventScript_OnTransition_1::
-	setobjectxyperm 1, 7, 2
-	setobjectxyperm 2, 4, 4
-	setobjectxyperm 3, 10, 4
-	setobjectxyperm 4, 5, 6
-	setobjectxyperm 5, 9, 6
-	setobjectxyperm 6, 5, 8
-	setobjectxyperm 7, 9, 8
-	return
 
 SeaCavern_Interior4_EventScript_ItemYellowFlute::
 	finditem ITEM_YELLOW_FLUTE

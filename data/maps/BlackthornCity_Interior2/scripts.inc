@@ -1,16 +1,6 @@
 BlackthornCity_Interior2_MapScripts::
 	.byte 0
 
-BlackthornCity_Interior2_EventScript_Pidgey::
-	lock
-	faceplayer
-	waitse
-	playmoncry SPECIES_PIDGEY, CRY_MODE_NORMAL
-	msgbox BlackthornCity_Interior2_Text_Pidgey
-	waitmoncry
-	release
-	end
-
 BlackthornCity_Interior2_EventScript_FatMan::
 	goto_if_questlog EventScript_ReleaseEnd
 	special QuestLog_CutRecording
@@ -113,10 +103,6 @@ BlackthornCity_Interior2_EventScript_FatMan_15::
 	msgbox BlackthornCity_Interior2_Text_FatMan_10
 	call EventScript_RestorePrevTextColor
 	goto BlackthornCity_Interior2_EventScript_FatMan_6
-
-BlackthornCity_Interior2_EventScript_Youngster::
-	msgbox BlackthornCity_Interior2_Text_Youngster, MSGBOX_NPC
-	end
 
 BlackthornCity_Interior2_EventScript_Sign::
 	msgbox BlackthornCity_Interior2_Text_Sign, MSGBOX_SIGN

@@ -1,9 +1,9 @@
 {
   "id": "MAP_LIGHTHOUSE_INTERIOR1",
   "name": "Lighthouse_Interior1",
-  "layout": "LAYOUT_LIGHTHOUSE_INTERIOR1",
+  "layout": "LAYOUT_EMPTY_STUB",
   "music": "MUS_TRAINER_TOWER",
-  "region_map_section": "MAPSEC_LIGHTHOUSE",
+  "region_map_section": "MAPSEC_NONE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
@@ -15,24 +15,7 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [],
-  "warp_events": [
-    {
-      "x": 2,
-      "y": 5,
-      "elevation": 3,
-      "dest_map": "MAP_DYNAMIC",
-      "dest_warp_id": "WARP_ID_DYNAMIC"
-    }
-  ],
+  "warp_events": [],
   "coord_events": [],
-  "bg_events": [
-    {
-      "type": "sign",
-      "x": 0,
-      "y": 2,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Lighthouse_Interior1_EventScript_Sign"
-    }
-  ]
+  "bg_events": []
 }

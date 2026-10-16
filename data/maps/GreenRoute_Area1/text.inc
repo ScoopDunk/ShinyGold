@@ -37,7 +37,3 @@ SixIsland_WaterPath_Text_EarlPostBattle::
 
 GreenRoute_Area1_Text_Sign1::
 	.string "GREEN ROUTE$"
-
-GreenRoute_Area1_Text_Sign3::
-	.string "WATER PATH\n"
-	.string "Leads to RUIN VALLEY$"

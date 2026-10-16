@@ -24,7 +24,3 @@ RedRoute_EventScript_CooltrainerFey::
 RedRoute_EventScript_Sign1::
 	msgbox RedRoute_Text_Sign1, MSGBOX_AUTOCLOSE
 	end
-
-RedRoute_EventScript_Sign2::
-	msgbox RedRoute_Text_Sign2, MSGBOX_SIGN
-	end

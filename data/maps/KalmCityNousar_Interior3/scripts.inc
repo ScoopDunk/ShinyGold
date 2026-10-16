@@ -1,5 +1,5 @@
 KalmCityNousar_Interior3_MapScripts::
-	@ ShinyGold: map script header pointer was NULL
+	@ ShinyGold: unreachable map, emptied (the slot is kept so map ids stay the same)
 	.byte 0
 
 KalmCityNousar_Interior3_EventScript_ItemXDefend::

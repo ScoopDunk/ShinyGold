@@ -73,20 +73,6 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_FISHER",
-      "x": 19,
-      "y": 13,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "CeladonCity_Interior11_EventScript_Fisher",
-      "flag": "0"
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_GYM_GUY",
       "x": 15,
       "y": 5,
@@ -97,7 +83,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CeladonCity_Interior11_EventScript_GymGuy",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 6
     },
     {
       "type": "object",
@@ -111,7 +98,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CeladonCity_Interior11_EventScript_FatMan",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 7
     },
     {
       "type": "object",
@@ -125,7 +113,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CeladonCity_Interior11_EventScript_Fisher2",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 8
     },
     {
       "type": "object",
@@ -139,7 +128,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CeladonCity_Interior11_EventScript_BaldingMan",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 9
     },
     {
       "type": "object",
@@ -153,7 +143,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CeladonCity_Interior11_EventScript_CooltrainerF",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 10
     },
     {
       "type": "object",
@@ -167,7 +158,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "0x11E7"
+      "flag": "0x11E7",
+      "explicit_local_id": 11
     }
   ],
   "warp_events": [
@@ -227,122 +219,12 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 0,
-      "y": -1,
-      "elevation": 3,
-      "item": "ITEM_NONE",
-      "flag": "0x41B",
-      "quantity": 8,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
       "x": 3,
       "y": 8,
       "elevation": 3,
       "item": "ITEM_NONE",
       "flag": "0x41C",
       "quantity": 10,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 0,
-      "y": -1,
-      "elevation": 3,
-      "item": "ITEM_NONE",
-      "flag": "0x41D",
-      "quantity": 8,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 0,
-      "y": -1,
-      "elevation": 3,
-      "item": "ITEM_NONE",
-      "flag": "0x41E",
-      "quantity": 8,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 0,
-      "y": -1,
-      "elevation": 3,
-      "item": "ITEM_NONE",
-      "flag": "0x41F",
-      "quantity": 8,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 0,
-      "y": -1,
-      "elevation": 3,
-      "item": "ITEM_NONE",
-      "flag": "0x420",
-      "quantity": 8,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 0,
-      "y": -1,
-      "elevation": 3,
-      "item": "ITEM_NONE",
-      "flag": "0x421",
-      "quantity": 8,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 0,
-      "y": -1,
-      "elevation": 3,
-      "item": "ITEM_NONE",
-      "flag": "0x422",
-      "quantity": 8,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 0,
-      "y": -1,
-      "elevation": 3,
-      "item": "ITEM_NONE",
-      "flag": "0x423",
-      "quantity": 8,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 0,
-      "y": -1,
-      "elevation": 3,
-      "item": "ITEM_NONE",
-      "flag": "0x424",
-      "quantity": 8,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 0,
-      "y": -1,
-      "elevation": 3,
-      "item": "ITEM_NONE",
-      "flag": "0x425",
-      "quantity": 8,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 0,
-      "y": -1,
-      "elevation": 3,
-      "item": "ITEM_NONE",
-      "flag": "0x426",
-      "quantity": 8,
       "underfoot": false
     },
     {
@@ -475,14 +357,6 @@
     },
     {
       "type": "sign",
-      "x": 16,
-      "y": 15,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_WEST",
-      "script": "GoldenrodCity_Interior1_EventScript_Sign17"
-    },
-    {
-      "type": "sign",
       "x": 12,
       "y": 10,
       "elevation": 0,
@@ -568,14 +442,6 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "GoldenrodCity_Interior1_EventScript_Sign10"
-    },
-    {
-      "type": "sign",
-      "x": 17,
-      "y": 15,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "CeladonCity_Interior11_EventScript_Sign29"
     }
   ]
 }

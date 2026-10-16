@@ -1,10 +1,3 @@
 PurityForest_Interior10_MapScripts::
+	@ ShinyGold: unreachable map, emptied (the slot is kept so map ids stay the same)
 	.byte 0
-
-PurityForest_Interior10_EventScript_Policeman::
-	msgbox PurityForest_Interior10_Text_Policeman, MSGBOX_NPC
-	end
-
-PurityForest_Interior10_EventScript_Policeman2::
-	msgbox PurityForest_Interior10_Text_Policeman2, MSGBOX_NPC
-	end

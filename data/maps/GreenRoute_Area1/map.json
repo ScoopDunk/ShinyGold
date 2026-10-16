@@ -103,20 +103,6 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
-      "x": 21,
-      "y": 59,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "SixIsland_WaterPath_EventScript_Mia",
-      "flag": "0"
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
       "x": 12,
       "y": 70,
@@ -127,7 +113,8 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "GreenRoute_Area1_EventScript_HikerHayden",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 7
     },
     {
       "type": "object",
@@ -141,7 +128,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "GreenRoute_Area1_EventScript_ItemSunStone",
-      "flag": "0x1402"
+      "flag": "0x1402",
+      "explicit_local_id": 8
     },
     {
       "type": "object",
@@ -155,7 +143,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "GreenRoute_Area1_EventScript_ItemSeaIncense",
-      "flag": "0x1400"
+      "flag": "0x1400",
+      "explicit_local_id": 9
     }
   ],
   "warp_events": [
@@ -211,14 +200,6 @@
       "flag": "0x49F",
       "quantity": 1,
       "underfoot": false
-    },
-    {
-      "type": "sign",
-      "x": 18,
-      "y": 20,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "GreenRoute_Area1_EventScript_Sign3"
     }
   ]
 }
