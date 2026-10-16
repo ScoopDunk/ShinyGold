@@ -62,7 +62,6 @@ IndigoPlateau_Interior1_EventScript_Celio_1::
 
 IndigoPlateau_Interior1_EventScript_Celio_3::
 	trainerbattle_no_intro TRAINER_ELITETRAINER_WILL, IndigoPlateau_Interior1_Text_CelioDefeat
-	bufferitemname 30, 0x880
 	setflag 0x4B8
 	call PokemonLeague_EventScript_OpenDoor
 	msgbox IndigoPlateau_Interior1_Text_Celio_2, MSGBOX_NPC

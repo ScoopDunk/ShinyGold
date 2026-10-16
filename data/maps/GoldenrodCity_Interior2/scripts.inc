@@ -19,7 +19,6 @@ GoldenrodCity_Interior2_EventScript_ItemBall::
 GoldenrodCity_Interior2_EventScript_OldWoman::
 	lock
 	faceplayer
-	setptr 98, 0x8E66081A
 	msgbox GoldenrodCity_Interior2_Text_OldWoman_1, MSGBOX_NPC
 	pokemart GoldenrodCity_Interior2_Items_OldWoman
 	msgbox GoldenrodCity_Interior2_Text_OldWoman_2, MSGBOX_NPC

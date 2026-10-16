@@ -87,8 +87,7 @@ IndigoPlateau_Interior5_EventScript_OldMan1_2::
 	@ ShinyGold: overlapping data duplicated from 0x08801BB0
 	msgbox IndigoPlateau_Interior5_Text_OldMan1_3, MSGBOX_NPC
 	warp MAP_NEW_BARK_TOWN, 4, 0xFF02, 0xFFFF
-	vgoto_if 220, 0xE3D300AB
-	.byte 0xE9 @ invalid opcode (script stops)
+	end
 
 IndigoPlateau_Interior5_EventScript_CooltrainerM::
 	msgbox IndigoPlateau_Interior5_Text_CooltrainerM, MSGBOX_NPC

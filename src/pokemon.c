@@ -1803,6 +1803,11 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     }
 
     SetBoxMonData(boxMon, MON_DATA_OT_ID, &value);
+    // ShinyGold: while gForceShinyMons is set (toggled by scripts), new Pokémon get personality = OT ID, which
+    // makes them shiny. Done here, before the data is encrypted; the hack did it whenever an OT ID was written,
+    // which would re-key an existing (encrypted) Pokémon and turn it into a Bad Egg.
+    if (gForceShinyMons == TRUE)
+        SetBoxMonData(boxMon, MON_DATA_PERSONALITY, &value);
 
     checksum = CalculateBoxMonChecksum(boxMon);
     SetBoxMonData(boxMon, MON_DATA_CHECKSUM, &checksum);
@@ -3439,10 +3444,6 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
         break;
     case MON_DATA_OT_ID:
         SET32(boxMon->otId);
-        // ShinyGold: while gForceShinyMons is set (toggled by scripts), new Pokémon get personality = OT ID,
-        // which makes them shiny.
-        if (gForceShinyMons == TRUE)
-            boxMon->personality = boxMon->otId;
         break;
     case MON_DATA_NICKNAME:
     {

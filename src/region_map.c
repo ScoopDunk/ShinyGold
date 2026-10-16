@@ -1099,7 +1099,8 @@ static void InitRegionMapType(void)
     else if (region == REGIONMAP_KANTO && gMapHeader.regionMapSectionId >= SEVII_MAPSEC_START)
     {
         // Mapsec is in Sevii Islands, determine which map to use
-        while (region == REGIONMAP_KANTO)
+        // ShinyGold: stop after the last list; a map section in none of them stays on Kanto (it looped forever)
+        while (region == REGIONMAP_KANTO && j < ARRAY_COUNT(sSeviiMapsecs))
         {
             for (i = 0; sSeviiMapsecs[j][i] != MAPSEC_NONE; i++)
             {

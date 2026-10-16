@@ -25,8 +25,7 @@ Route15_Interior1_EventScript_Trigger4::
 	applymovement 2, Route15_Interior1_Movement_Trigger1_3
 	delay 48
 	warp MAP_ROUTE15, 1, 0x26C, 0x1DFF
-	compare_ptr_to_ptr 0x201EFFFE, 0x2020FFFE
-	.byte 0xFE @ invalid opcode (script stops)
+	end
 
 Route15_Interior1_Movement_Trigger1_1::
 	walk_fast_down

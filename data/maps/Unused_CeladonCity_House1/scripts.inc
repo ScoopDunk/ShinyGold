@@ -5,7 +5,6 @@ Unused_CeladonCity_House1_MapScripts::
 Unused_CeladonCity_House1_EventScript_Beauty::
 	lock
 	faceplayer
-	setptr 98, 0x8E66081A
 	msgbox Unused_CeladonCity_House1_Text_Beauty_1, MSGBOX_NPC
 	pokemart Unused_CeladonCity_House1_Items_Beauty
 	msgbox Unused_CeladonCity_House1_Text_Beauty_2, MSGBOX_NPC
