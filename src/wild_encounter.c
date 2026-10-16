@@ -355,7 +355,6 @@ static bool8 DoGlobalWildEncounterDiceRoll(void)
 bool8 StandardWildEncounter(u32 currMetatileAttrs, u16 previousMetatileBehavior)
 {
     u16 headerId;
-    struct Roamer * roamer;
 
     if (sWildEncountersDisabled == TRUE)
         return FALSE;
@@ -377,8 +376,8 @@ bool8 StandardWildEncounter(u32 currMetatileAttrs, u16 previousMetatileBehavior)
 
             else if (TryStartRoamerEncounter() == TRUE)
             {
-                roamer = &gSaveBlock1Ptr->roamer;
-                if (!IsWildLevelAllowedByRepel(roamer->level))
+                // Pure Gold: pokegold CheckEncounterRoamMon, then CheckRepelEffect
+                if (!IsWildLevelAllowedByRepel(GetMonData(&gEnemyParty[0], MON_DATA_LEVEL)))
                 {
                     return FALSE;
                 }
@@ -414,28 +413,16 @@ bool8 StandardWildEncounter(u32 currMetatileAttrs, u16 previousMetatileBehavior)
                 return FALSE;
             }
 
-            if (TryStartRoamerEncounter() == TRUE)
+            // Pure Gold: the roaming beasts are not met on water (pokegold CheckEncounterRoamMon).
+            // try a regular surfing encounter
+            if (TryGenerateWildMon(gWildMonHeaders[headerId].waterMonsInfo, WILD_AREA_WATER, WILD_CHECK_REPEL) == TRUE)
             {
-                roamer = &gSaveBlock1Ptr->roamer;
-                if (!IsWildLevelAllowedByRepel(roamer->level))
-                {
-                    return FALSE;
-                }
-
-                StartRoamerBattle();
+                StartWildBattle();
                 return TRUE;
             }
-            else // try a regular surfing encounter
+            else
             {
-                if (TryGenerateWildMon(gWildMonHeaders[headerId].waterMonsInfo, WILD_AREA_WATER, WILD_CHECK_REPEL) == TRUE)
-                {
-                    StartWildBattle();
-                    return TRUE;
-                }
-                else
-                {
-                    AddToWildEncounterRateBuff(gWildMonHeaders[headerId].waterMonsInfo->encounterRate);
-                }
+                AddToWildEncounterRateBuff(gWildMonHeaders[headerId].waterMonsInfo->encounterRate);
             }
         }
     }
@@ -472,14 +459,15 @@ bool8 SweetScentWildEncounter(void)
     {
         if (MapGridGetMetatileAttributeAt(x, y, METATILE_ATTRIBUTE_ENCOUNTER_TYPE) == TILE_ENCOUNTER_LAND)
         {
+            if (gWildMonHeaders[headerId].landMonsInfo == NULL)
+                return FALSE;
+
+            // Pure Gold: as in pokegold, Sweet Scent can find a roaming beast (ChooseWildEncounter), on land only
             if (TryStartRoamerEncounter() == TRUE)
             {
                 StartRoamerBattle();
                 return TRUE;
             }
-
-            if (gWildMonHeaders[headerId].landMonsInfo == NULL)
-                return FALSE;
 
             TryGenerateWildMon(gWildMonHeaders[headerId].landMonsInfo, WILD_AREA_LAND, 0);
 
@@ -488,12 +476,6 @@ bool8 SweetScentWildEncounter(void)
         }
         else if (MapGridGetMetatileAttributeAt(x, y, METATILE_ATTRIBUTE_ENCOUNTER_TYPE) == TILE_ENCOUNTER_WATER)
         {
-            if (TryStartRoamerEncounter() == TRUE)
-            {
-                StartRoamerBattle();
-                return TRUE;
-            }
-
             if (gWildMonHeaders[headerId].waterMonsInfo == NULL)
                 return FALSE;
 
