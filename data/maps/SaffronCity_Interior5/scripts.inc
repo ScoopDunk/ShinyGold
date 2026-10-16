@@ -35,7 +35,7 @@ SaffronCity_Interior5_EventScript_LeaderSabrina::
 	setvar VAR_0x8004, 2
 	setvar VAR_0x8005, 2
 	special UpdatePickStateFromSpecialVar8005
-	call Unused_CeruleanCity_Gym_EventScript_LeaderMisty_1
+	call CeruleanCity_Gym_EventScript_LeaderMisty_1
 	trainerbattle_single TRAINER_LEADER_SABRINA, SaffronCity_Interior5_Text_LeaderSabrinaIntro, SaffronCity_Interior5_Text_LeaderSabrinaDefeat, SaffronCity_Interior5_EventScript_LeaderSabrinaContinue, NO_MUSIC
 	msgbox SaffronCity_Interior5_Text_LeaderSabrina_1, MSGBOX_NPC
 	end

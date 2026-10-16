@@ -203,5 +203,5 @@ MahoganyTown_Interior1_Movement_Trigger3::
 	step_end
 
 MahoganyTown_Interior1_EventScript_Trigger4::
-	warp MAP_UNUSED_NAVEL_ROCK_BASE_PATH_B10F, 0, 0xFF02, 0xFFFF
+	warp MAP_MAHOGANY_TOWN_ROCKET_BASE_B1F, 0, 0xFF02, 0xFFFF
 	.byte 0xFF @ invalid opcode (script stops)

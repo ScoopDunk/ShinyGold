@@ -49,7 +49,7 @@ VermilionCity_Interior16_EventScript_LeaderLtSurge::
 	setvar VAR_0x8004, 2
 	setvar VAR_0x8005, 2
 	special UpdatePickStateFromSpecialVar8005
-	call Unused_CeruleanCity_Gym_EventScript_LeaderMisty_1
+	call CeruleanCity_Gym_EventScript_LeaderMisty_1
 	trainerbattle_single TRAINER_LEADER_LT_SURGE, VermilionCity_Interior16_Text_LeaderLtSurgeIntro, VermilionCity_Interior16_Text_LeaderLtSurgeDefeat, VermilionCity_Interior16_EventScript_LeaderLtSurgeContinue, NO_MUSIC
 	msgbox VermilionCity_Interior16_Text_LeaderLtSurge_1, MSGBOX_NPC
 	end

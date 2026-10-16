@@ -17,6 +17,6 @@ EcruteakCity_Interior8_EventScript_OldMan1::
 	end
 
 EcruteakCity_Interior8_EventScript_Trigger::
-	warp MAP_UNUSED_G34_M52, 0, 0x3402, 0x3900
+	warp MAP_TIN_TOWER_UPPER_FLOORS, 0, 0x3402, 0x3900
 	compare_var_to_var 0x0126, 0xFF02
 	.byte 0xFF @ invalid opcode (script stops)

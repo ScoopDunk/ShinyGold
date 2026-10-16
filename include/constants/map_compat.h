@@ -49,7 +49,6 @@
 #define MAP_CERULEAN_CAVE_2F                             MAP_REMOVED // removed (pure Gold/Silver build): was MAP_ROCK_TUNNEL_CAVE1
 #define MAP_CERULEAN_CAVE_B1F                            MAP_REMOVED // removed (pure Gold/Silver build): was MAP_ROUTE4_CAVE1
 #define MAP_CERULEAN_CITY_BIKE_SHOP                      MAP_MT_MOON_INTERIOR1
-#define MAP_CERULEAN_CITY_GYM                            MAP_UNUSED_CERULEAN_CITY_GYM
 #define MAP_CERULEAN_CITY_MART                           MAP_CERULEAN_CITY_INTERIOR5
 #define MAP_CERULEAN_CITY_POKEMON_CENTER_1F              MAP_CERULEAN_CITY_INTERIOR3
 #define MAP_CERULEAN_CITY_POKEMON_CENTER_2F              MAP_CERULEAN_CITY_INTERIOR4
