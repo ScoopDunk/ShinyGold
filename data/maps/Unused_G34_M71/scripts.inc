@@ -122,8 +122,11 @@ Unused_G34_M71_EventScript_BaldingMan_11::
 	call Unused_G34_M71_EventScript_BaldingMan_13
 	end
 
+@ ShinyGold fix: once every prize here is taken, the hack calls the placeholder address 0x08888888, where the
+@ engine skips an out-of-range "gotostd" and runs into unrelated bytes (a bad decoration-shop call, then a
+@ trainer battle). The port fell through to the next block instead; that farewell is now explicit.
 Unused_G34_M71_EventScript_BaldingMan_12::
-	gotostd 64
+	goto Unused_G34_M71_EventScript_BaldingMan_13
 
 Unused_G34_M71_EventScript_BaldingMan_13::
 	msgbox Unused_G34_M71_Text_BaldingMan_14, MSGBOX_NPC

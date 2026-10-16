@@ -23,15 +23,36 @@ Unused_G34_M53_EventScript_Trigger4::
 	setflag 0x1129
 	applymovement 1, Unused_G34_M53_Movement_Trigger4
 	delay 128
-	waitse
-	playmoncry SPECIES_HO_OH, 0x5028
-	nop
-	nop
-	checkitemtype 0x1A64
-	gotostd 102
+	goto Unused_G34_M53_EventScript_HoOh
 
 Unused_G34_M53_EventScript_Trigger4_1::
 	release
+	end
+
+@ ShinyGold fix: Ho-Oh's battle. In the hack the bytes after Ho-Oh's cry are damaged (the "Gyaoo!" message
+@ became "checkitemtype" and an out-of-range "gotostd" that the engine skips), and the battle (Lv 45) ran from
+@ the bytes after that. The port stopped at the "gotostd", so the battle was lost; this restores it as the hack
+@ meant it: cry, "Gyaoo!", Ho-Oh Lv 45 holding SACRED ASH (the hack gave the item on one of its two trigger
+@ tiles only), and Ho-Oh is gone afterwards (flag 0x1129, set above, hides it; the hack re-entered the roof).
+Unused_G34_M53_EventScript_HoOh::
+	lockall
+	waitse
+	playmoncry SPECIES_HO_OH, CRY_MODE_ENCOUNTER
+	message Text_Gyaoo
+	waitmessage
+	waitmoncry
+	delay 10
+	waitbuttonpress
+	closemessage
+	setwildbattle SPECIES_HO_OH, 45, ITEM_SACRED_ASH
+	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	special StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	fadescreen FADE_TO_BLACK
+	removeobject 1
+	fadescreen FADE_FROM_BLACK
+	releaseall
 	end
 
 Unused_G34_M53_Movement_Trigger4::
@@ -46,12 +67,7 @@ Unused_G34_M53_EventScript_Trigger5::
 	setflag 0x1129
 	applymovement 1, Unused_G34_M53_Movement_Trigger5
 	delay 128
-	waitse
-	playmoncry SPECIES_HO_OH, 0x5028
-	nop
-	nop
-	checkitemtype 0x1A64
-	gotostd 102
+	goto Unused_G34_M53_EventScript_HoOh
 
 Unused_G34_M53_Movement_Trigger5::
 	walk_fast_right

@@ -119,9 +119,58 @@ OlivineCity_Area1_EventScript_Trigger1::
 	delay 16
 	end
 
+@ ShinyGold fix: the S.S. Aqua sailor's step trigger. The hack points this branch 3 bytes into its code (the first
+@ instruction was overwritten by the end of a text), so the engine reads "copylocal", skips an out-of-range
+@ "gotostd" and runs on into the rest of the block. The port stopped at the "gotostd" and fell into the next
+@ data, which ended the script, so the sailor let the player walk past to the ship at any time. This is the
+@ hack's block again (with its first instruction), plus the boarding code it calls when the ship is in.
 OlivineCity_Area1_EventScript_Trigger1_1::
-	copylocal 58, 128
-	gotostd 40
+	applymovement LOCALID_PLAYER, OlivineCity_Area1_Movement_Trigger1_1
+	delay 1
+	applymovement 2, OlivineCity_Area1_Movement_Trigger1_2
+	delay 1
+	special QuestLog_CutRecording
+	call_if_eq VAR_MASSAGE_COOLDOWN_STEP_COUNTER, 0x1F4, OlivineCity_Area1_EventScript_Trigger1_2
+	msgbox OlivineCity_Area1_Text_Sailor_3, MSGBOX_NPC
+	applymovement LOCALID_PLAYER, OlivineCity_Area1_Movement_Sailor_1
+	delay 16
+	end
+
+@ The hack's 0x08803880 (ticket check) and the code it reaches, which the port never decoded.
+OlivineCity_Area1_EventScript_Trigger1_2::
+	checkitem ITEM_SS_TICKET
+	call_if_eq VAR_RESULT, 1, OlivineCity_Area1_EventScript_Trigger1_3
+	msgbox OlivineCity_Area1_Text_Sailor_2, MSGBOX_NPC
+	applymovement LOCALID_PLAYER, OlivineCity_Area1_Movement_Sailor_1
+	delay 16
+	end
+
+OlivineCity_Area1_EventScript_Trigger1_3::
+	msgbox OlivineCity_Area1_Text_Sailor_4, MSGBOX_YESNO
+	call_if_eq VAR_RESULT, 1, OlivineCity_Area1_EventScript_Trigger1_4
+	msgbox OlivineCity_Area1_Text_Sailor_5, MSGBOX_NPC
+	applymovement LOCALID_PLAYER, OlivineCity_Area1_Movement_Sailor_1
+	delay 16
+	end
+
+OlivineCity_Area1_EventScript_Trigger1_4::
+	msgbox OlivineCity_Area1_Text_Sailor_6, MSGBOX_NPC
+	applymovement LOCALID_PLAYER, OlivineCity_Area1_Movement_Trigger1_3
+	delay 112
+	msgbox OlivineCity_Area1_Text_Sailor_7, MSGBOX_NPC
+	call OlivineCity_Area1_EventScript_Sailor_6
+	warp MAP_SS_AQUA_INTERIOR2, 2, 0x26C, 0x205
+	release
+	end
+
+OlivineCity_Area1_Movement_Trigger1_3::
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
 
 OlivineCity_Area1_Movement_Trigger1_1::
 	face_left
