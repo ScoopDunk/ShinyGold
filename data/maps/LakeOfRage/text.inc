@@ -113,54 +113,6 @@ LakeOfRage_Text_Boy_3::
 	.string "have met my brothers and sisters.\l"
 	.string "Or did you just get lucky?$"
 
-LakeOfRage_Text_Trigger1_1::
-	.string "RINA: LAKE OF RAGE is so pretty…$"
-
-LakeOfRage_Text_Trigger1_2::
-	.string "DANTE: Hah! I knew it!\n"
-	.string "This is the perfect spot!$"
-
-LakeOfRage_Text_Trigger1_3::
-	.string "RINA: Even though it’s raining, again…$"
-
-LakeOfRage_Text_Trigger1_4::
-	.string "DANTE: ...$"
-
-LakeOfRage_Text_Trigger1_5::
-	.string "RINA: Don’t look so down,\n"
-	.string "sweetie-pie…$"
-
-LakeOfRage_Text_Trigger1_6::
-	.string "RINA: Wha-What is that?$"
-
-LakeOfRage_Text_Trigger1_7::
-	.string "RINA: Kyaaaah! It’s a GYARADOS!!!$"
-
-LakeOfRage_Text_Trigger1_8::
-	.string "DANTE: Wow, it seems to be mad about\n"
-	.string "something…$"
-
-LakeOfRage_Text_Trigger1_9::
-	.string "RINA: Darling, I’m scared…!$"
-
-LakeOfRage_Text_Trigger1_10::
-	.string "DANTE: Oh, well…\n"
-	.string "Seems like I failed again…$"
-
-LakeOfRage_Text_Trigger1_11::
-	.string "DANTE: Oh, hello {PLAYER}!\n"
-	.string "Never thought to find you here!$"
-
-LakeOfRage_Text_Trigger1_12::
-	.string "RINA: Darling…$"
-
-LakeOfRage_Text_Trigger1_13::
-	.string "DANTE: Oh, yes. We are in a hurry\n"
-	.string "now. We’ll see you later!$"
-
-LakeOfRage_Text_Trigger1_14::
-	.string "RINA: See you… later…$"
-
 LakeOfRage_Text_Sign1::
 	.string "FISHING GURU’S HOUSE$"
 

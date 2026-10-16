@@ -113,12 +113,6 @@ GoldenrodCity_Interior16_Text_Sign1_1::
 	.string "LEADER: WHITNEY\p"
 	.string "WINNING TRAINERS:$"
 
-GoldenrodCity_Interior16_Text_Sign1_2::
-	.string "GOLDENROD CITY POKéMON GYM\n"
-	.string "LEADER: WHITNEY\p"
-	.string "WINNING TRAINERS:\n"
-	.string "{PLAYER} CARLOS$"
-
 GoldenrodCity_Interior16_Text_Sign1_3::
 	.string "GOLDENROD CITY POKéMON GYM\n"
 	.string "LEADER: WHITNEY\p"

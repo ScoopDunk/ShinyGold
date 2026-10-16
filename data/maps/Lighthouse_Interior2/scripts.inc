@@ -161,7 +161,6 @@ Lighthouse_Interior2_EventScript_Lass_3::
 	applymovement 18, Lighthouse_Interior2_Movement_Lass_4
 	delay 144
 	clearflag 0x10C8
-	clearflag 0x10D1
 	setflag 0x10CF
 	end
 
@@ -169,7 +168,6 @@ Lighthouse_Interior2_EventScript_Lass_4::
 	applymovement 18, Lighthouse_Interior2_Movement_Lass_5
 	delay 144
 	clearflag 0x10C8
-	clearflag 0x10D1
 	setflag 0x10CF
 	end
 

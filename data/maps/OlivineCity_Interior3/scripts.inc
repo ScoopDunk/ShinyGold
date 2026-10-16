@@ -31,71 +31,11 @@ OlivineCity_Interior3_EventScript_LeaderJasmine2Continue::
 	msgbox OlivineCity_Interior3_Text_LeaderJasmine2_3, MSGBOX_NPC
 	end
 
-OlivineCity_Interior3_EventScript_TeachyTvHost::
-	setflag 0x10D1
-	msgbox OlivineCity_Interior3_Text_TeachyTvHost, MSGBOX_NPC
-	applymovement LOCALID_PLAYER, OlivineCity_Interior3_Movement_TeachyTvHost_1
-	applymovement 3, OlivineCity_Interior3_Movement_TeachyTvHost_2
-	delay 48
-	end
-
-OlivineCity_Interior3_Movement_TeachyTvHost_1::
-	walk_left
-	face_right
-	step_end
-
-OlivineCity_Interior3_Movement_TeachyTvHost_2::
-	walk_down
-	set_invisible
-	walk_down
-	walk_down
-	step_end
-
-OlivineCity_Interior3_EventScript_HikerJitou::
-	trainerbattle_single TRAINER_HIKER_JITOU, OlivineCity_Interior3_Text_HikerJitouIntro, OlivineCity_Interior3_Text_HikerJitouDefeat
-	msgbox OlivineCity_Interior3_Text_HikerJitou, MSGBOX_AUTOCLOSE
-	end
-
-OlivineCity_Interior3_EventScript_Trigger1::
-	call_if_unset 0x10CF, OlivineCity_Interior3_EventScript_Trigger1_1
-	call_if_set 0x10D1, OlivineCity_Interior3_EventScript_Trigger1_1
-	applymovement LOCALID_PLAYER, OlivineCity_Interior3_Movement_Trigger1
-	delay 32
-	call OlivineCity_Interior3_EventScript_TeachyTvHost
-	end
-
-OlivineCity_Interior3_EventScript_Trigger1_1::
-	release
-	end
-
-OlivineCity_Interior3_Movement_Trigger1::
-	walk_right
-	face_up
-	step_end
-
-OlivineCity_Interior3_EventScript_Trigger2::
-	call_if_unset 0x10CF, OlivineCity_Interior3_EventScript_Trigger1_1
-	call_if_set 0x10D1, OlivineCity_Interior3_EventScript_Trigger1_1
-	applymovement LOCALID_PLAYER, OlivineCity_Interior3_Movement_Trigger2
-	delay 32
-	call OlivineCity_Interior3_EventScript_TeachyTvHost
-	end
-
-OlivineCity_Interior3_Movement_Trigger2::
-	walk_left
-	face_up
-	step_end
-
 OlivineCity_Interior3_EventScript_Sign1::
 	call_if_set FLAG_BADGE06_GET, OlivineCity_Interior3_EventScript_Sign1_1
-	call_if_set 0x10CF, OlivineCity_Interior3_EventScript_Sign1_2
 	msgbox OlivineCity_Interior3_Text_Sign1_1, MSGBOX_NPC
 	end
 
 OlivineCity_Interior3_EventScript_Sign1_1::
 	msgbox OlivineCity_Interior3_Text_Sign1_2, MSGBOX_NPC
-	end
-
-OlivineCity_Interior3_EventScript_Sign1_2::
-	msgbox OlivineCity_Interior3_Text_Sign1_3, MSGBOX_NPC
 	end

@@ -72,15 +72,6 @@ Unused_NavelRock_B1F_Text_Meteorite_2::
 	.string "The door’s closed...\n"
 	.string "It needs two passwords to open.$"
 
-Unused_NavelRock_B1F_Text_RocketM2::
-	.string "JAMIE: ...$"
-
-Unused_NavelRock_B1F_Text_RocketF::
-	.string "JESS: Perhaps we were defeated\n"
-	.string "this time...\p"
-	.string "But TEAM ROCKET’s powerful!\n"
-	.string "You’ll be begging us for mercy!$"
-
 Unused_NavelRock_B1F_Text_Pidgeot::
 	.string "MURKROW: The password is...\p"
 	.string "HAIL GIOVANNI.$"
@@ -110,52 +101,6 @@ Unused_NavelRock_B1F_Text_Trigger3::
 	.string "heart like him.\p"
 	.string "...Humph! I don’t have the time for\n"
 	.string "the likes of you!$"
-
-Unused_NavelRock_B1F_Text_Trigger4_1::
-	.string "WAIT THERE!$"
-
-Unused_NavelRock_B1F_Text_Trigger4_2::
-	.string "You are not allowed to make\n"
-	.string "another step!$"
-
-Unused_NavelRock_B1F_Text_Trigger4_3::
-	.string "Yes, that’s right!$"
-
-Unused_NavelRock_B1F_Text_Trigger4_4::
-	.string "We are not like any other ROCKET\n"
-	.string "GRUNTS you may have faced!$"
-
-Unused_NavelRock_B1F_Text_Trigger4_5::
-	.string "We are the most elite ROCKET\n"
-	.string "GRUNTS in TEAM ROCKET!$"
-
-Unused_NavelRock_B1F_Text_Trigger4_6::
-	.string "We are...\p"
-	.string "JESS...\p"
-	.string "And...\p"
-	.string "JAMIE!$"
-
-Unused_NavelRock_B1F_Text_Trigger4_7::
-	.string "We are sorry to say you this...\n"
-	.string "But this is the end of the road!$"
-
-Unused_NavelRock_B1F_Text_Trigger4Defeat::
-	.string "JESS: Oh, no!\n"
-	.string "JAMIE: ???$"
-
-Unused_NavelRock_B1F_Text_Trigger4Victory::
-	.string "JESS: Hahaha!\n"
-	.string "JAMIE: THAT’S RIGHT!!!$"
-
-Unused_NavelRock_B1F_Text_Trigger4_8::
-	.string "JESS: Oh, no, JAMIE!\n"
-	.string "We were defeated!$"
-
-Unused_NavelRock_B1F_Text_Trigger4_9::
-	.string "JAMIE: Yes, that’s right!$"
-
-Unused_NavelRock_B1F_Text_Trigger4_10::
-	.string "JESS: ...$"
 
 Unused_NavelRock_B1F_Text_Trigger5_1::
 	.string "What? Who are you?\n"

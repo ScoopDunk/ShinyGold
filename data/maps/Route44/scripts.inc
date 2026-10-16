@@ -152,50 +152,6 @@ Route44_EventScript_BirdKeeper99_5::
 	release
 	end
 
-Route44_EventScript_PkmnTrainerCarlos3::
-	setflag 0x112B
-	msgbox Route44_Text_PkmnTrainerCarlos3_1, MSGBOX_NPC
-	call Route44_EventScript_PkmnTrainerCarlos3_1
-	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_CARLOS_3, 0, Route44_Text_PkmnTrainerCarlos3Defeat, Route44_Text_PkmnTrainerCarlos3Victory
-	msgbox Route44_Text_PkmnTrainerCarlos3_2, MSGBOX_NPC
-	call Route44_EventScript_PkmnTrainerCarlos3_2
-	applymovement 9, Route44_Movement_PkmnTrainerCarlos3
-	delay 240
-	release
-	end
-
-Route44_EventScript_PkmnTrainerCarlos3_1::
-	setvar 0x7030, 0x129
-	setvar 0x7033, 0x158
-	release
-	return
-
-Route44_EventScript_PkmnTrainerCarlos3_2::
-	setvar 0x7030, 0x158
-	setvar 0x7033, 0x129
-	release
-	return
-
-Route44_Movement_PkmnTrainerCarlos3::
-	face_down_fast
-	jump_2_down
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	set_invisible
-	walk_fast_down
-	walk_fast_down
-	walk_fast_down
-	step_end
-
 Route44_EventScript_ItemMaxRevive::
 	finditem ITEM_MAX_REVIVE
 	end

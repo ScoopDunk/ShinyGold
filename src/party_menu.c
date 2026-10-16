@@ -36,6 +36,7 @@
 #include "metatile_behavior.h"
 #include "overworld.h"
 #include "party_menu.h"
+#include "gold_whirlpool.h"
 #include "player_pc.h"
 #include "pokedex.h"
 #include "pokemon.h"
@@ -1871,7 +1872,13 @@ static u8 CanMonLearnTMTutor(struct Pokemon *mon, u16 item, u8 tutor)
     if (GetMonData(mon, MON_DATA_IS_EGG))
         return CANNOT_LEARN_MOVE_IS_EGG;
 
-    if (item >= ITEM_TM01_FOCUS_PUNCH)
+    if (IsWhirlpoolHM(item)) // Gold: HM WHIRLPOOL
+    {
+        if (!CanSpeciesLearnWhirlpoolHM(GetMonData(mon, MON_DATA_SPECIES)))
+            return CANNOT_LEARN_MOVE;
+        move = MOVE_WHIRLPOOL;
+    }
+    else if (item >= ITEM_TM01_FOCUS_PUNCH)
     {
         if (!CanMonLearnTMHM(mon, item - ITEM_TM01_FOCUS_PUNCH))
             return CANNOT_LEARN_MOVE;
@@ -4281,11 +4288,11 @@ static void CB2_DoUseItemAnim(void)
 
 static void CB2_UseItem(void)
 {
-    if (ItemId_GetPocket(gSpecialVar_ItemId) == POCKET_TM_CASE && PSA_IsCancelDisabled() == TRUE)
+    if ((ItemId_GetPocket(gSpecialVar_ItemId) == POCKET_TM_CASE || IsWhirlpoolHM(gSpecialVar_ItemId)) && PSA_IsCancelDisabled() == TRUE)
     {
         GiveMoveToMon(&gPlayerParty[gPartyMenu.slotId], ItemIdToBattleMoveId(gSpecialVar_ItemId));
         AdjustFriendship(&gPlayerParty[gPartyMenu.slotId], FRIENDSHIP_EVENT_LEARN_TMHM);
-        if (gSpecialVar_ItemId < ITEM_HM01)
+        if (gSpecialVar_ItemId < ITEM_HM01 && !IsWhirlpoolHM(gSpecialVar_ItemId))
             RemoveBagItem(gSpecialVar_ItemId, 1);
         SetMainCallback2(gPartyMenu.exitCallback);
     }
@@ -4305,7 +4312,7 @@ static void CB2_UseTMHMAfterForgettingMove(void)
         SetMonMoveSlot(mon, ItemIdToBattleMoveId(gSpecialVar_ItemId), moveIdx);
         AdjustFriendship(mon, FRIENDSHIP_EVENT_LEARN_TMHM);
         ItemUse_SetQuestLogEvent(QL_EVENT_USED_ITEM, mon, gSpecialVar_ItemId, move);
-        if (gSpecialVar_ItemId < ITEM_HM01)
+        if (gSpecialVar_ItemId < ITEM_HM01 && !IsWhirlpoolHM(gSpecialVar_ItemId))
             RemoveBagItem(gSpecialVar_ItemId, 1);
         SetMainCallback2(gPartyMenu.exitCallback);
     }
@@ -4718,6 +4725,9 @@ u16 ItemIdToBattleMoveId(u16 item)
 {
     u16 tmNumber = item - ITEM_TM01_FOCUS_PUNCH;
 
+    if (IsWhirlpoolHM(item)) // Gold: HM WHIRLPOOL
+        return MOVE_WHIRLPOOL;
+
     return sTMHMMoves[tmNumber];
 }
 
@@ -4809,7 +4819,7 @@ static void Task_LearnedMove(u8 taskId)
     if (learnMoveMethod == LEARN_VIA_TMHM)
     {
         AdjustFriendship(mon, FRIENDSHIP_EVENT_LEARN_TMHM);
-        if (item < ITEM_HM01)
+        if (item < ITEM_HM01 && !IsWhirlpoolHM(item))
             RemoveBagItem(item, 1);
     }
     GetMonNickname(mon, gStringVar1);

@@ -23,20 +23,6 @@
   "object_events": [
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BOY",
-      "x": 12,
-      "y": 45,
-      "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "4",
-      "script": "0x0",
-      "flag": "0x10D5"
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
       "x": 14,
       "y": 45,
@@ -247,20 +233,6 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BOY",
-      "x": 30,
-      "y": 17,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0x10D5"
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
       "x": 9,
       "y": 105,
@@ -456,80 +428,9 @@
       "elevation": 3,
       "dest_map": "MAP_NATIONAL_PARK_INTERIOR2",
       "dest_warp_id": "1"
-    },
-    {
-      "x": 40,
-      "y": 11,
-      "elevation": 4,
-      "dest_map": "MAP_ROUTE27",
-      "dest_warp_id": "0"
     }
   ],
-  "coord_events": [
-    {
-      "type": "trigger",
-      "x": 12,
-      "y": 49,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "NationalPark_EventScript_Trigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 11,
-      "y": 49,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "NationalPark_EventScript_Trigger2"
-    },
-    {
-      "type": "trigger",
-      "x": 13,
-      "y": 49,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "NationalPark_EventScript_Trigger3"
-    },
-    {
-      "type": "trigger",
-      "x": 35,
-      "y": 16,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "NationalPark_EventScript_Trigger4"
-    },
-    {
-      "type": "trigger",
-      "x": 34,
-      "y": 17,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "NationalPark_EventScript_Trigger5"
-    },
-    {
-      "type": "trigger",
-      "x": 35,
-      "y": 18,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "NationalPark_EventScript_Trigger6"
-    },
-    {
-      "type": "trigger",
-      "x": 40,
-      "y": 11,
-      "elevation": 0,
-      "var": "0x0000",
-      "var_value": "0",
-      "script": "NationalPark_EventScript_Trigger7"
-    }
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

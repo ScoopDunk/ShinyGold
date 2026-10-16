@@ -28,19 +28,6 @@ Unused_G2_M68_Text_WorkerM::
 	.string "when they’ll pop out...$"
 
 @ ShinyGold: moved from data/maps/Unused_G2_M68/text.inc (map removed)
-Unused_G2_M68_Text_Trigger1_1::
-	.string "Hey you!!!$"
-
-@ ShinyGold: moved from data/maps/Unused_G2_M68/text.inc (map removed)
-Unused_G2_M68_Text_Trigger1Defeat::
-	.string "...$"
-
-@ ShinyGold: moved from data/maps/Unused_G2_M68/text.inc (map removed)
-Unused_G2_M68_Text_Trigger1_2::
-	.string "…\p"
-	.string "I’m CARLOS, we’ll soon battle again…$"
-
-@ ShinyGold: moved from data/maps/Unused_G2_M68/text.inc (map removed)
 Unused_G2_M68_Text_Trigger5_1::
 	.string "I’ve seen you a couple times. How\n"
 	.string "many POKéMON have you caught?$"

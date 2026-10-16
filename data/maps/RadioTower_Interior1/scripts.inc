@@ -2,250 +2,117 @@ RadioTower_Interior1_MapScripts::
 	@ ShinyGold: map script header pointer was NULL
 	.byte 0
 
+@ G/S RadioTower1FLuckyNumberManScript: the LUCKY NUMBER SHOW (src/gold_lucky_number.c).
+@ Prizes MASTER BALL, EXP. SHARE and PP UP, one per week (a week is 7 hours of play time here).
 RadioTower_Interior1_EventScript_Gentleman::
 	lock
-	random 4
-	copyvar VAR_0x8008, VAR_RESULT
-	call_if_eq VAR_0x8008, 0, RadioTower_Interior1_EventScript_Gentleman_1
-	call RadioTower_Interior1_EventScript_Gentleman_2
-	end
-
-RadioTower_Interior1_EventScript_Gentleman_1::
-	lock
-	random 4
-	copyvar VAR_0x8008, VAR_RESULT
-	call_if_eq VAR_0x8008, 0, RadioTower_Interior1_EventScript_Gentleman_3
-	call RadioTower_Interior1_EventScript_Gentleman_2
-	end
-
-RadioTower_Interior1_EventScript_Gentleman_2::
-	showmoneybox 0, 0
-	lock
 	faceplayer
-	msgbox RadioTower_Interior1_Text_Gentleman_1, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 1, RadioTower_Interior1_EventScript_Gentleman_4
-	msgbox RadioTower_Interior1_Text_Gentleman_2, MSGBOX_NPC
-	textcolor 104
-	.byte 0x94 @ hidemoneybox (FRLG consumes no argument bytes)
-	releaseall
+	msgbox RadioTower_Interior1_Text_LuckyNumberAskToPlay
+	callnative LuckyNumberShow_BufferNumber
+	goto_if_eq VAR_RESULT, TRUE, RadioTower_Interior1_EventScript_LuckyNumberComeAgain
+	msgbox RadioTower_Interior1_Text_LuckyNumberThisWeeksId
+	msgbox RadioTower_Interior1_Text_LuckyNumberCheckIfMatch
+	message RadioTower_Interior1_Text_LuckyNumberDotDotDot
+	waitmessage
+	playfanfare MUS_DEX_RATING
+	waitfanfare
+	waitbuttonpress
+	callnative LuckyNumberShow_CheckWinners
+	goto_if_eq VAR_RESULT, 0, RadioTower_Interior1_EventScript_LuckyNumberNoMatch
+	copyvar VAR_0x8006, VAR_RESULT
+	call_if_eq VAR_0x8005, FALSE, RadioTower_Interior1_EventScript_LuckyNumberMatchParty
+	call_if_eq VAR_0x8005, TRUE, RadioTower_Interior1_EventScript_LuckyNumberMatchPC
+	goto_if_eq VAR_0x8006, 1, RadioTower_Interior1_EventScript_LuckyNumberFirstPlace
+	goto_if_eq VAR_0x8006, 2, RadioTower_Interior1_EventScript_LuckyNumberSecondPlace
+	msgbox RadioTower_Interior1_Text_LuckyNumberWeakMatch
+	setvar VAR_0x8004, ITEM_PP_UP
+	goto RadioTower_Interior1_EventScript_LuckyNumberGivePrize
+
+RadioTower_Interior1_EventScript_LuckyNumberFirstPlace::
+	msgbox RadioTower_Interior1_Text_LuckyNumberPerfectMatch
+	setvar VAR_0x8004, ITEM_MASTER_BALL
+	goto RadioTower_Interior1_EventScript_LuckyNumberGivePrize
+
+RadioTower_Interior1_EventScript_LuckyNumberSecondPlace::
+	msgbox RadioTower_Interior1_Text_LuckyNumberOkayMatch
+	setvar VAR_0x8004, ITEM_EXP_SHARE
+RadioTower_Interior1_EventScript_LuckyNumberGivePrize::
+	checkitemspace VAR_0x8004, 1
+	goto_if_eq VAR_RESULT, FALSE, RadioTower_Interior1_EventScript_LuckyNumberNoRoom
+	giveitem VAR_0x8004
+	callnative LuckyNumberShow_SetPrizeWon
+RadioTower_Interior1_EventScript_LuckyNumberComeAgain::
+	msgbox RadioTower_Interior1_Text_LuckyNumberComeAgain
+	release
 	end
 
-RadioTower_Interior1_EventScript_Gentleman_3::
-	lock
-	random 4
-	copyvar VAR_0x8008, VAR_RESULT
-	call_if_eq VAR_0x8008, 0, RadioTower_Interior1_EventScript_Gentleman_5
-	call RadioTower_Interior1_EventScript_Gentleman_2
+RadioTower_Interior1_EventScript_LuckyNumberMatchParty::
+	msgbox RadioTower_Interior1_Text_LuckyNumberMatchParty
+	return
+
+RadioTower_Interior1_EventScript_LuckyNumberMatchPC::
+	msgbox RadioTower_Interior1_Text_LuckyNumberMatchPC
+	return
+
+RadioTower_Interior1_EventScript_LuckyNumberNoMatch::
+	msgbox RadioTower_Interior1_Text_LuckyNumberNoMatch
+	release
 	end
 
-RadioTower_Interior1_EventScript_Gentleman_4::
-	checkmoney 0x12C
-	call_if_eq VAR_RESULT, 0, RadioTower_Interior1_EventScript_Gentleman_6
-	removemoney 0x12C
-	msgbox RadioTower_Interior1_Text_Gentleman_3, MSGBOX_AUTOCLOSE
-	delay 48
-	call RadioTower_Interior1_EventScript_Gentleman_7
+RadioTower_Interior1_EventScript_LuckyNumberNoRoom::
+	msgbox RadioTower_Interior1_Text_LuckyNumberNoRoom
+	release
 	end
 
-RadioTower_Interior1_EventScript_Gentleman_5::
-	lock
-	random 4
-	copyvar VAR_0x8008, VAR_RESULT
-	call_if_eq VAR_0x8008, 0, RadioTower_Interior1_EventScript_Gentleman_8
-	call RadioTower_Interior1_EventScript_Gentleman_2
-	end
-
-RadioTower_Interior1_EventScript_Gentleman_6::
-	msgbox RadioTower_Interior1_Text_Gentleman_4, MSGBOX_NPC
-	textcolor 104
-	.byte 0x94 @ hidemoneybox (FRLG consumes no argument bytes)
-	releaseall
-	end
-
-RadioTower_Interior1_EventScript_Gentleman_7::
-	msgbox RadioTower_Interior1_Text_Gentleman_5, MSGBOX_AUTOCLOSE
-	msgbox RadioTower_Interior1_Text_Gentleman_6, MSGBOX_NPC
-	textcolor 104
-	.byte 0x94 @ hidemoneybox (FRLG consumes no argument bytes)
-	releaseall
-	end
-
-RadioTower_Interior1_EventScript_Gentleman_8::
-	lock
-	random 4
-	copyvar VAR_0x8008, VAR_RESULT
-	call_if_eq VAR_0x8008, 0, RadioTower_Interior1_EventScript_Gentleman_9
-	call_if_eq VAR_0x8008, 1, RadioTower_Interior1_EventScript_Gentleman_10
-	call_if_eq VAR_0x8008, 2, RadioTower_Interior1_EventScript_Gentleman_11
-	call_if_eq VAR_0x8008, 3, RadioTower_Interior1_EventScript_Gentleman_12
-	end
-
-RadioTower_Interior1_EventScript_Gentleman_9::
-	showmoneybox 0, 0
-	lock
-	faceplayer
-	msgbox RadioTower_Interior1_Text_Gentleman_1, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 1, RadioTower_Interior1_EventScript_Gentleman_13
-	msgbox RadioTower_Interior1_Text_Gentleman_2, MSGBOX_NPC
-	textcolor 104
-	.byte 0x94 @ hidemoneybox (FRLG consumes no argument bytes)
-	releaseall
-	end
-
-RadioTower_Interior1_EventScript_Gentleman_10::
-	showmoneybox 0, 0
-	lock
-	faceplayer
-	msgbox RadioTower_Interior1_Text_Gentleman_1, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 1, RadioTower_Interior1_EventScript_Gentleman_14
-	msgbox RadioTower_Interior1_Text_Gentleman_2, MSGBOX_NPC
-	textcolor 104
-	.byte 0x94 @ hidemoneybox (FRLG consumes no argument bytes)
-	releaseall
-	end
-
-RadioTower_Interior1_EventScript_Gentleman_11::
-	showmoneybox 0, 0
-	lock
-	faceplayer
-	msgbox RadioTower_Interior1_Text_Gentleman_1, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 1, RadioTower_Interior1_EventScript_Gentleman_15
-	msgbox RadioTower_Interior1_Text_Gentleman_2, MSGBOX_NPC
-	textcolor 104
-	.byte 0x94 @ hidemoneybox (FRLG consumes no argument bytes)
-	releaseall
-	end
-
-RadioTower_Interior1_EventScript_Gentleman_12::
-	showmoneybox 0, 0
-	lock
-	faceplayer
-	msgbox RadioTower_Interior1_Text_Gentleman_1, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 1, RadioTower_Interior1_EventScript_Gentleman_16
-	msgbox RadioTower_Interior1_Text_Gentleman_2, MSGBOX_NPC
-	textcolor 104
-	.byte 0x94 @ hidemoneybox (FRLG consumes no argument bytes)
-	releaseall
-	end
-
-RadioTower_Interior1_EventScript_Gentleman_13::
-	checkmoney 0x12C
-	call_if_eq VAR_RESULT, 0, RadioTower_Interior1_EventScript_Gentleman_6
-	removemoney 0x12C
-	msgbox RadioTower_Interior1_Text_Gentleman_3, MSGBOX_AUTOCLOSE
-	delay 48
-	call RadioTower_Interior1_EventScript_Gentleman_17
-	end
-
-RadioTower_Interior1_EventScript_Gentleman_14::
-	checkmoney 0x12C
-	call_if_eq VAR_RESULT, 0, RadioTower_Interior1_EventScript_Gentleman_6
-	removemoney 0x12C
-	msgbox RadioTower_Interior1_Text_Gentleman_3, MSGBOX_AUTOCLOSE
-	delay 48
-	call RadioTower_Interior1_EventScript_Gentleman_18
-	end
-
-RadioTower_Interior1_EventScript_Gentleman_15::
-	checkmoney 0x12C
-	call_if_eq VAR_RESULT, 0, RadioTower_Interior1_EventScript_Gentleman_6
-	removemoney 0x12C
-	msgbox RadioTower_Interior1_Text_Gentleman_3, MSGBOX_AUTOCLOSE
-	delay 48
-	call RadioTower_Interior1_EventScript_Gentleman_19
-	end
-
-RadioTower_Interior1_EventScript_Gentleman_16::
-	checkmoney 0x12C
-	call_if_eq VAR_RESULT, 0, RadioTower_Interior1_EventScript_Gentleman_6
-	removemoney 0x12C
-	msgbox RadioTower_Interior1_Text_Gentleman_3, MSGBOX_AUTOCLOSE
-	delay 48
-	call RadioTower_Interior1_EventScript_Gentleman_20
-	end
-
-RadioTower_Interior1_EventScript_Gentleman_17::
-	msgbox RadioTower_Interior1_Text_Gentleman_7, MSGBOX_AUTOCLOSE
-	msgbox RadioTower_Interior1_Text_Gentleman_8, MSGBOX_NPC
-	giveitem ITEM_FULL_RESTORE
-	textcolor 104
-	.byte 0x94 @ hidemoneybox (FRLG consumes no argument bytes)
-	releaseall
-	end
-
-RadioTower_Interior1_EventScript_Gentleman_18::
-	msgbox RadioTower_Interior1_Text_Gentleman_9, MSGBOX_AUTOCLOSE
-	msgbox RadioTower_Interior1_Text_Gentleman_10, MSGBOX_NPC
-	giveitem ITEM_PP_UP
-	textcolor 104
-	.byte 0x94 @ hidemoneybox (FRLG consumes no argument bytes)
-	releaseall
-	end
-
-RadioTower_Interior1_EventScript_Gentleman_19::
-	msgbox RadioTower_Interior1_Text_Gentleman_11, MSGBOX_AUTOCLOSE
-	msgbox RadioTower_Interior1_Text_Gentleman_12, MSGBOX_NPC
-	giveitem ITEM_HP_UP
-	textcolor 104
-	.byte 0x94 @ hidemoneybox (FRLG consumes no argument bytes)
-	releaseall
-	end
-
-RadioTower_Interior1_EventScript_Gentleman_20::
-	msgbox RadioTower_Interior1_Text_Gentleman_13, MSGBOX_AUTOCLOSE
-	msgbox RadioTower_Interior1_Text_Gentleman_14, MSGBOX_NPC
-	giveitem ITEM_MAX_REVIVE
-	textcolor 104
-	.byte 0x94 @ hidemoneybox (FRLG consumes no argument bytes)
-	releaseall
-	end
-
+@ G/S RadioTower1FRadioCardWomanScript: five yes/no questions (answers yes, yes, no, yes, no)
 RadioTower_Interior1_EventScript_WorkerF::
-	call_if_set 0x10C0, RadioTower_Interior1_EventScript_WorkerF_1
+	lock
+	faceplayer
+	goto_if_set 0x10C0, RadioTower_Interior1_EventScript_WorkerF_TuneIn
 	msgbox RadioTower_Interior1_Text_WorkerF_1, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 1, RadioTower_Interior1_EventScript_WorkerF_2
-	msgbox RadioTower_Interior1_Text_WorkerF_2, MSGBOX_NPC
-	end
-
-RadioTower_Interior1_EventScript_WorkerF_1::
-	msgbox RadioTower_Interior1_Text_WorkerF_3, MSGBOX_NPC
-	end
-
-RadioTower_Interior1_EventScript_WorkerF_2::
+	goto_if_eq VAR_RESULT, NO, RadioTower_Interior1_EventScript_WorkerF_NoQuiz
 	msgbox RadioTower_Interior1_Text_WorkerF_4, MSGBOX_YESNO
-	call_if_lt VAR_RESULT, 1, RadioTower_Interior1_EventScript_WorkerF_3
-	msgbox RadioTower_Interior1_Text_WorkerF_5, MSGBOX_NPC
-	end
-
-RadioTower_Interior1_EventScript_WorkerF_3::
+	goto_if_eq VAR_RESULT, NO, RadioTower_Interior1_EventScript_WorkerF_Wrong
+	playse SE_PIN
+	waitse
 	msgbox RadioTower_Interior1_Text_WorkerF_6, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 1, RadioTower_Interior1_EventScript_WorkerF_4
-	msgbox RadioTower_Interior1_Text_WorkerF_5, MSGBOX_NPC
-	end
-
-RadioTower_Interior1_EventScript_WorkerF_4::
+	goto_if_eq VAR_RESULT, NO, RadioTower_Interior1_EventScript_WorkerF_Wrong
+	playse SE_PIN
+	waitse
 	msgbox RadioTower_Interior1_Text_WorkerF_7, MSGBOX_YESNO
-	call_if_lt VAR_RESULT, 1, RadioTower_Interior1_EventScript_WorkerF_5
-	msgbox RadioTower_Interior1_Text_WorkerF_5, MSGBOX_NPC
-	end
-
-RadioTower_Interior1_EventScript_WorkerF_5::
+	goto_if_eq VAR_RESULT, YES, RadioTower_Interior1_EventScript_WorkerF_Wrong
+	playse SE_PIN
+	waitse
 	msgbox RadioTower_Interior1_Text_WorkerF_8, MSGBOX_YESNO
-	call_if_lt VAR_RESULT, 1, RadioTower_Interior1_EventScript_WorkerF_6
-	msgbox RadioTower_Interior1_Text_WorkerF_5, MSGBOX_NPC
-	end
-
-RadioTower_Interior1_EventScript_WorkerF_6::
+	goto_if_eq VAR_RESULT, NO, RadioTower_Interior1_EventScript_WorkerF_Wrong
+	playse SE_PIN
+	waitse
 	msgbox RadioTower_Interior1_Text_WorkerF_9, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 1, RadioTower_Interior1_EventScript_WorkerF_7
-	msgbox RadioTower_Interior1_Text_WorkerF_5, MSGBOX_NPC
+	goto_if_eq VAR_RESULT, YES, RadioTower_Interior1_EventScript_WorkerF_Wrong
+	playse SE_PIN
+	waitse
+	msgbox RadioTower_Interior1_Text_WorkerF_10
+	giveitem ITEM_TEACHY_TV
+	setflag 0x10C0
+	msgbox RadioTower_Interior1_Text_WorkerF_11
+	release
 	end
 
-RadioTower_Interior1_EventScript_WorkerF_7::
-	msgbox RadioTower_Interior1_Text_WorkerF_10, MSGBOX_NPC
-	giveitem ITEM_TEACHY_TV
-	msgbox RadioTower_Interior1_Text_WorkerF_11, MSGBOX_NPC
-	setflag 0x10C0
+RadioTower_Interior1_EventScript_WorkerF_TuneIn::
+	msgbox RadioTower_Interior1_Text_WorkerF_3
+	release
+	end
+
+RadioTower_Interior1_EventScript_WorkerF_NoQuiz::
+	msgbox RadioTower_Interior1_Text_WorkerF_2
+	release
+	end
+
+RadioTower_Interior1_EventScript_WorkerF_Wrong::
+	playse SE_FAILURE
+	waitse
+	msgbox RadioTower_Interior1_Text_WorkerF_5
+	release
 	end
 
 RadioTower_Interior1_EventScript_Man::

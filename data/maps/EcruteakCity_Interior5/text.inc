@@ -100,18 +100,12 @@ EcruteakCity_Interior5_Text_LeaderMorty2_3::
 	.string "Use it if it appeals to you.$"
 
 EcruteakCity_Interior5_Text_Sign1_1::
-	.string "ECRUTEAK CITY POKEMON GYM\n"
+	.string "ECRUTEAK CITY POKéMON GYM\n"
 	.string "LEADER: MORTY\p"
 	.string "WINNING TRAINERS:$"
 
-EcruteakCity_Interior5_Text_Sign1_2::
-	.string "ECRUTEAK CITY POKEMON GYM\n"
-	.string "LEADER: MORTY\p"
-	.string "WINNING TRAINERS:\n"
-	.string "{PLAYER} CARLOS$"
-
 EcruteakCity_Interior5_Text_Sign1_3::
-	.string "ECRUTEAK CITY POKEMON GYM\n"
+	.string "ECRUTEAK CITY POKéMON GYM\n"
 	.string "LEADER: MORTY\p"
 	.string "WINNING TRAINERS:\n"
 	.string "{PLAYER}$"

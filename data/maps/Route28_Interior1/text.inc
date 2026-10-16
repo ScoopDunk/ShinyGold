@@ -1,11 +1,6 @@
 Route28_Interior1_Text_Pidgey::
 	.string "FEAROW: Feero!$"
 
-Route28_Interior1_Text_Channeler::
-	.string "I am a CHANNELER.\p"
-	.string "There are spirits up to mischief.\n"
-	.string "I sense them high in the TOWER.$"
-
 Route28_Interior1_Text_Lass_1::
 	.string "Oh, dear.\n"
 	.string "You’ve found me.\p"

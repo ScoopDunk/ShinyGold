@@ -5,14 +5,7 @@ IndigoPlateau_Interior5_MapScripts::
 
 IndigoPlateau_Interior5_OnTransition::
 	setrespawn HEAL_LOCATION_INDIGO_PLATEAU
-	specialvar VAR_RESULT, IsNationalPokedexEnabled
-	call_if_eq VAR_RESULT, 1, IndigoPlateau_Interior5_EventScript_OnTransition_1
 	end
-
-IndigoPlateau_Interior5_EventScript_OnTransition_1::
-	goto_if_set FLAG_SYS_CAN_LINK_WITH_RS, EventScript_Return
-	setobjectxyperm 4, 4, 2
-	return
 
 IndigoPlateau_Interior5_EventScript_Clerk::
 	lock
@@ -48,26 +41,6 @@ IndigoPlateau_Interior5_EventScript_Pidgeot::
 	playmoncry SPECIES_PIDGEOT, 0xFF02
 	.byte 0xFF @ invalid opcode (script stops)
 
-IndigoPlateau_Interior5_EventScript_CooltrainerF::
-	lock
-	faceplayer
-	specialvar VAR_RESULT, IsNationalPokedexEnabled
-	goto_if_eq VAR_RESULT, 1, IndigoPlateau_Interior5_EventScript_CooltrainerF_1
-	msgbox IndigoPlateau_Interior5_Text_CooltrainerF_1
-	release
-	end
-
-IndigoPlateau_Interior5_EventScript_CooltrainerF_1::
-	goto_if_set FLAG_SYS_CAN_LINK_WITH_RS, IndigoPlateau_Interior5_EventScript_CooltrainerF_2
-	msgbox IndigoPlateau_Interior5_Text_CooltrainerF_2
-	release
-	end
-
-IndigoPlateau_Interior5_EventScript_CooltrainerF_2::
-	msgbox IndigoPlateau_Interior5_Text_CooltrainerF_1
-	release
-	end
-
 IndigoPlateau_Interior5_EventScript_OldMan1::
 	lock
 	faceplayer
@@ -102,8 +75,8 @@ IndigoPlateau_Interior5_EventScript_Trigger1::
 	goto_if_set FLAG_WONDER_CARD_UNUSED_5, IndigoPlateau_Interior5_EventScript_Trigger1_1
 	applymovement LOCALID_PLAYER, IndigoPlateau_Interior5_Movement_Trigger1_1
 	waitmovement 0
-	addobject 6
-	applymovement 6, IndigoPlateau_Interior5_Movement_Trigger1_2
+	addobject 5
+	applymovement 5, IndigoPlateau_Interior5_Movement_Trigger1_2
 	waitmovement 0
 	playbgm MUS_ENCOUNTER_RIVAL, 51
 	msgbox IndigoPlateau_Interior5_Text_Trigger1_1, MSGBOX_NPC
@@ -111,10 +84,10 @@ IndigoPlateau_Interior5_EventScript_Trigger1::
 	call_if_eq VAR_STARTER_MON, 1, IndigoPlateau_Interior5_EventScript_Trigger1_3
 	call_if_eq VAR_STARTER_MON, 2, IndigoPlateau_Interior5_EventScript_Trigger1_4
 	playbgm MUS_ENCOUNTER_RIVAL, 51
-	applymovement 6, IndigoPlateau_Interior5_Movement_Trigger1_3
+	applymovement 5, IndigoPlateau_Interior5_Movement_Trigger1_3
 	waitmovement 0
 	fadedefaultbgm
-	removeobject 6
+	removeobject 5
 	setflag FLAG_WONDER_CARD_UNUSED_5
 	release
 	end

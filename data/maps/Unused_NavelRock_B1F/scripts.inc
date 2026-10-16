@@ -55,14 +55,6 @@ Unused_NavelRock_B1F_EventScript_ItemIceHeal::
 	finditem ITEM_ICE_HEAL
 	end
 
-Unused_NavelRock_B1F_EventScript_RocketM2::
-	msgbox Unused_NavelRock_B1F_Text_RocketM2, MSGBOX_NPC
-	end
-
-Unused_NavelRock_B1F_EventScript_RocketF::
-	msgbox Unused_NavelRock_B1F_Text_RocketF, MSGBOX_NPC
-	end
-
 Unused_NavelRock_B1F_EventScript_Pidgeot::
 	setflag 0x10F9
 	msgbox Unused_NavelRock_B1F_Text_Pidgeot, MSGBOX_NPC
@@ -186,43 +178,6 @@ Unused_NavelRock_B1F_Movement_Trigger3_4::
 	walk_fast_left
 	step_end
 
-Unused_NavelRock_B1F_EventScript_Trigger4::
-	call_if_set 0x10FD, Unused_NavelRock_B1F_EventScript_Trigger4_1
-	setflag 0x10FD
-	applymovement 13, Unused_NavelRock_B1F_Movement_Trigger4_1
-	applymovement 14, Unused_NavelRock_B1F_Movement_Trigger4_2
-	delay 16
-	msgbox Unused_NavelRock_B1F_Text_Trigger4_1, MSGBOX_NPC
-	playbgm MUS_ENCOUNTER_BOY, 51
-	msgbox Unused_NavelRock_B1F_Text_Trigger4_2, MSGBOX_NPC
-	msgbox Unused_NavelRock_B1F_Text_Trigger4_3, MSGBOX_NPC
-	msgbox Unused_NavelRock_B1F_Text_Trigger4_4, MSGBOX_NPC
-	msgbox Unused_NavelRock_B1F_Text_Trigger4_3, MSGBOX_NPC
-	msgbox Unused_NavelRock_B1F_Text_Trigger4_5, MSGBOX_NPC
-	msgbox Unused_NavelRock_B1F_Text_Trigger4_6, MSGBOX_NPC
-	msgbox Unused_NavelRock_B1F_Text_Trigger4_7, MSGBOX_NPC
-	msgbox Unused_NavelRock_B1F_Text_Trigger4_3, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_ROCKET_DUO_JESS_AND_JAMIE_2, 0, Unused_NavelRock_B1F_Text_Trigger4Defeat, Unused_NavelRock_B1F_Text_Trigger4Victory
-	msgbox Unused_NavelRock_B1F_Text_Trigger4_8, MSGBOX_NPC
-	msgbox Unused_NavelRock_B1F_Text_Trigger4_9, MSGBOX_NPC
-	msgbox Unused_NavelRock_B1F_Text_Trigger4_10, MSGBOX_NPC
-	end
-
-Unused_NavelRock_B1F_EventScript_Trigger4_1::
-	release
-	end
-
-Unused_NavelRock_B1F_Movement_Trigger4_1::
-	walk_right
-	face_down_fast
-	step_end
-
-Unused_NavelRock_B1F_Movement_Trigger4_2::
-	walk_left
-	walk_left
-	face_down_fast
-	step_end
-
 Unused_NavelRock_B1F_EventScript_Trigger5::
 	call_if_set 0x10FE, Unused_NavelRock_B1F_EventScript_Trigger5_1
 	applymovement LOCALID_PLAYER, Unused_NavelRock_B1F_Movement_Trigger5_1
@@ -236,16 +191,16 @@ Unused_NavelRock_B1F_EventScript_Trigger5_1::
 
 Unused_NavelRock_B1F_EventScript_Trigger5_2::
 	setflag 0x10FE
-	applymovement 15, Unused_NavelRock_B1F_Movement_Trigger5_2
+	applymovement 13, Unused_NavelRock_B1F_Movement_Trigger5_2
 	delay 32
 	msgbox Unused_NavelRock_B1F_Text_Trigger5_1, MSGBOX_NPC
-	applymovement 15, Unused_NavelRock_B1F_Movement_Trigger5_3
+	applymovement 13, Unused_NavelRock_B1F_Movement_Trigger5_3
 	delay 16
 	trainerbattle_earlyrival TRAINER_TEAM_ROCKET_EXECUTIVE_2, 0, Unused_NavelRock_B1F_Text_Trigger5Defeat, Unused_NavelRock_B1F_Text_Trigger5Victory
 	msgbox Unused_NavelRock_B1F_Text_Trigger5_2, MSGBOX_NPC
-	applymovement 15, Unused_NavelRock_B1F_Movement_Trigger5_4
+	applymovement 13, Unused_NavelRock_B1F_Movement_Trigger5_4
 	delay 64
-	applymovement 15, Unused_NavelRock_B1F_Movement_Trigger5_5
+	applymovement 13, Unused_NavelRock_B1F_Movement_Trigger5_5
 	delay 0x110
 	end
 

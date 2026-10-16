@@ -90,43 +90,6 @@ AzaleaTown_Interior6_Text_GymGuy_2::
 	.string "With people like you, the future of\n"
 	.string "POKéMON is bright!$"
 
-AzaleaTown_Interior6_Text_TeachyTvHost_1::
-	.string "Hmmm, this GYM was too easy...\p"
-	.string "...You again...\p"
-	.string "Well, since my POKéMON still has\n"
-	.string "energy I could use a little\l"
-	.string "practice...\p"
-	.string "Why don’t we do a double battle this\n"
-	.string "time, what do you say?$"
-
-AzaleaTown_Interior6_Text_TeachyTvHost_2::
-	.string "...Yeah, I knew it.\p"
-	.string "Perhaps we’ll battle some other\n"
-	.string "time...$"
-
-AzaleaTown_Interior6_Text_TeachyTvHost_3::
-	.string "Whatever...\p"
-	.string "Even a weakling like you should win\n"
-	.string "in this pathetic GYM.$"
-
-AzaleaTown_Interior6_Text_TeachyTvHost_4::
-	.string "Aren’t you supposed to be battling\n"
-	.string "the GYM LEADER?$"
-
-AzaleaTown_Interior6_Text_TeachyTvHost_5::
-	.string "OK. But this time I’ll win!$"
-
-AzaleaTown_Interior6_Text_TeachyTvHostDefeat::
-	.string "Hmmm...$"
-
-AzaleaTown_Interior6_Text_TeachyTvHost_6::
-	.string "I know what I did wrong...\p"
-	.string "I need to catch a few more POKéMON.\p"
-	.string "All right, I’m going to stay here\n"
-	.string "to watch your battle.\p"
-	.string "So you better show me something\n"
-	.string "good!$"
-
 AzaleaTown_Interior6_Text_TwinsAmyAndMayIntro::
 	.string "AMY: Hi! Are you challenging the\n"
 	.string "LEADER? No way!$"
@@ -148,11 +111,10 @@ AzaleaTown_Interior6_Text_TwinsAmyAndMay2::
 AzaleaTown_Interior6_Text_Sign1_1::
 	.string "AZALEA TOWN POKéMON GYM\n"
 	.string "LEADER: BUGSY\p"
-	.string "WINNING TRAINERS:\n"
-	.string "CARLOS$"
+	.string "WINNING TRAINERS:$"
 
 AzaleaTown_Interior6_Text_Sign1_2::
 	.string "AZALEA TOWN POKéMON GYM\n"
 	.string "LEADER: BUGSY\p"
 	.string "WINNING TRAINERS:\n"
-	.string "CARLOS {PLAYER}$"
+	.string "{PLAYER}$"
