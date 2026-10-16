@@ -154,6 +154,34 @@ the shadowed duplicate header entries are removed; the real entries (e.g. Lance'
 - White-out after healing in Cherrygrove or New Bark Town left the player in the black outside the Pokémon Center
   (FireRed's One Island coordinates for that map slot); the player now respawns two tiles below the nurse.
 
+### Fixes from the full audit
+A static audit of scripts, maps, data and engine code plus an emulator sweep that talked to every NPC, sign and
+trigger (tools and reports outside the tree). Everything below was in the original hack unless noted.
+- Crashes and hangs: gold's Ruins of Alph inner chamber froze on about 1 Unown encounter in 5 (FireRed's Tanoby
+  letter table read out of bounds; gold edit). Unown outside the Tanoby slots now get a random letter. Unreachable
+  Ice Path immediate triggers that hang the game are removed.
+- Scripts that ran garbage during a warp fade now end at the warp (Slowpoke Well Kurt scene executed heap memory;
+  Union Cave Lapras reset the phone/rematch step timer; Goldenrod basement switch wrote RAM; stray text boxes).
+- Teleport/white-out: Mahogany and Blackthorn Pokémon Centers set each other's heal point and fly flag (Teleport
+  could strand the player inside a rock in Mahogany; Fly to Blackthorn opened before the Ice Path). Cherrygrove and
+  Olivine centers never set the heal point. Declining a heal at the Rock Tunnel/Lavender centers left the text box
+  open and the NPCs frozen.
+- Forced-shiny mode stayed on after losing to the Lake of Rage Gyarados (every later Pokémon shiny until reset); now
+  explicit on/off around the Gyarados's creation, and cleared on white-out.
+- Phone: contact 25's call stopped at a 0xFF; rematch top tiers used placeholder flag 0x8888 (read from palette RAM),
+  now the Earth Badge flag 0x030; Erin's top tier battled Pokémaniac Brent's party; five trainer held items were 0xFFFF.
+- Items: item balls sharing a flag with another item or a story event (e.g. the only LEFTOVERS vs the Route 17 Max
+  Ether; a Route 32 Great Ball vs the Coin Case) got their own flags (0x1D00+); Cianwood's two rock items had flag 0
+  and respawned forever; garbage hidden items that gave 8 "????????" are removed.
+- Data: the 13 species whose evolutions the hack edited had friendship 0 and wrong colour/rare item (editor
+  corruption), restored; RAGECANDYBAR had no use effect (now heals 20 HP); EXPN CARD still acted as the Poké Flute.
+- Engine via vanilla aliases: Cut at Mt. Silver (24,25) ran FireRed's Ruin Valley door code; FireRed map-preview
+  pictures showed on Johto places (only Diglett's Cave, Silph Co. and Victory Road keep theirs).
+- Cosmetic: `playbgm SE_*` sound effects silenced the map music; Route 10's music swap wrote var 0x7032 instead of
+  0x7033; the champion mugshot chose the rival by trainer id parity; two over-wide text lines.
+- Robustness: the extension var lookup clamps a corrupt var count.
+- Gold branch only: the Ruins of Alph inner chamber table is Unown-only, as in G/S.
+
 ### Hack bugs fixed during the port (all branches)
 - Save extension: link/trade saves skipped the extension (turning off after a trade lost it); the save-failed
   screen overwrote it; no bounds check on the var table; the load hook copied garbage from invalid sectors; the
