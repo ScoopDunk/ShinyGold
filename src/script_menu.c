@@ -175,10 +175,9 @@ static const struct MenuAction sMultichoiceList_GameCornerTMPrizes[] = {
 };
 
 static const struct MenuAction sMultichoiceList_GameCornerBattleItemPrizes[] = {
-    { gText_SmokeBall_800Coins },
+    // ShinyGold gold: G/S Celadon prizes only (MR.MIME, EEVEE, PORYGON); the hack's CASTFORM and BAGON are gone
     { gText_MiracleSeed_1000Coins },
     { gText_Charcoal_1000Coins },
-    { gText_MysticWater_1000Coins },
     { gText_YellowFlute_1600Coins },
     { gText_NoThanks_2 }
 };

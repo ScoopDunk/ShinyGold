@@ -1923,7 +1923,28 @@ void CreateMaleMon(struct Pokemon *mon, u16 species, u8 level)
 void CreateMonWithIVsPersonality(struct Pokemon *mon, u16 species, u8 level, u32 ivs, u32 personality)
 {
     CreateMon(mon, species, level, 0, TRUE, personality, OT_ID_PLAYER_ID, 0);
+#ifdef BUGFIX
     SetMonData(mon, MON_DATA_IVS, &ivs);
+#else
+    // ShinyGold gold: without BUGFIX, MON_DATA_IVS reads only one byte (the Gen 3 roamer IV bug). The roaming beasts
+    // (roamer.c is the only caller) keep all their IVs as in G/S, so they are set one by one.
+    {
+        u8 iv;
+
+        iv = ivs & MAX_IV_MASK;
+        SetMonData(mon, MON_DATA_HP_IV, &iv);
+        iv = (ivs >> 5) & MAX_IV_MASK;
+        SetMonData(mon, MON_DATA_ATK_IV, &iv);
+        iv = (ivs >> 10) & MAX_IV_MASK;
+        SetMonData(mon, MON_DATA_DEF_IV, &iv);
+        iv = (ivs >> 15) & MAX_IV_MASK;
+        SetMonData(mon, MON_DATA_SPEED_IV, &iv);
+        iv = (ivs >> 20) & MAX_IV_MASK;
+        SetMonData(mon, MON_DATA_SPATK_IV, &iv);
+        iv = (ivs >> 25) & MAX_IV_MASK;
+        SetMonData(mon, MON_DATA_SPDEF_IV, &iv);
+    }
+#endif
     CalculateMonStats(mon);
 }
 

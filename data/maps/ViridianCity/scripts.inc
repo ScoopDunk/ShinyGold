@@ -12,8 +12,24 @@ ViridianCity_EventScript_FrameScene::
 	call NewBarkTown_EventScript_FrameScene_1
 	end
 
+@ Pure Gold/Silver: the sleepy man gives the DREAM EATER TM as in G/S (pokegold ViridianCityDreamEaterFisher)
+@ instead of FireRed's one-time move tutor. Flag 0x039 was the tutor's "taught" flag.
 ViridianCity_EventScript_FatMan::
-	goto EventScript_DreamEaterTutor
+	lock
+	faceplayer
+	goto_if_set 0x039, ViridianCity_EventScript_FatMan_GotTM
+	msgbox ViridianCity_Text_FatMan_DreamEaterFisher
+	giveitem ITEM_TM43
+	goto_if_eq VAR_RESULT, FALSE, ViridianCity_EventScript_FatMan_NoRoom
+	setflag 0x039
+ViridianCity_EventScript_FatMan_GotTM::
+	msgbox ViridianCity_Text_FatMan_GotDreamEater
+	release
+	end
+
+ViridianCity_EventScript_FatMan_NoRoom::
+	release
+	end
 
 ViridianCity_EventScript_OldMan1::
 	lock

@@ -22,21 +22,6 @@ NewBarkTown_Text_Lass_3::
 	.string "Oh! Your POKéMON is adorable!\n"
 	.string "I wish I had one!$"
 
-NewBarkTown_Text_Pikachu_1::
-	.string "Pika...\p"
-	.string "Chu?\p"
-	.string "Pika... Pika?\n"
-	.string "Chu?$"
-
-NewBarkTown_Text_Pikachu_2::
-	.string "Chuuuu... :($"
-
-NewBarkTown_Text_Pikachu_3::
-	.string "Pikachu... :S$"
-
-NewBarkTown_Text_Pikachu_4::
-	.string "PIKA!!! :D$"
-
 NewBarkTown_Text_Trigger1_1::
 	.string "Wait, {PLAYER}!$"
 
