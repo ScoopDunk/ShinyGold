@@ -88,7 +88,8 @@ Route43_EventScript_Picnicker472_5::
 Route43_EventScript_Pokemaniac188::
 	trainerbattle_single TRAINER_POKEMANIAC_BRENT, Route43_Text_Pokemaniac188Intro, Route43_Text_Pokemaniac188Defeat
 	call_if_set 0x1320, Route43_EventScript_Pokemaniac188_1
-	setvar 0x700C, 16
+	@ ShinyGold fix: was 16 (Schoolboy Alan's id); Brent's own flags 0x1320/0x1350 belong to id 32
+	setvar 0x700C, 32
 	setvar 0x700D, 0
 	call_if_set 0x1350, Route35_EventScript_Juggler228_2
 	msgbox Route43_Text_Pokemaniac188, MSGBOX_NPC
