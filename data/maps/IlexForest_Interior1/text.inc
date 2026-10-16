@@ -61,8 +61,8 @@ IlexForest_Interior1_Text_CrushGirl_1::
 	.string "Here’s a POISON BARB for you!$"
 
 IlexForest_Interior1_Text_CrushGirl_2::
-	.string "FRIEDA: Give it to a POKéMON that has\n"
-	.string "poison-type moves.\p"
+	.string "FRIEDA: Give it to a POKéMON that\n"
+	.string "has poison-type moves.\p"
 	.string "Oh!\p"
 	.string "It’s wicked!\p"
 	.string "You’ll be shocked how good it makes\n"
@@ -73,7 +73,7 @@ IlexForest_Interior1_Text_CrushGirl_3::
 	.string "I love Friday. No doubt about it!\p"
 	.string "Don’t you think it’s great too?$"
 
-IlexForest_Interior1_Text_Trigger19::
+IlexForest_Interior1_Text_KurtCaughtCelebi::
 	.string "Whew, wasn’t that something!\p"
 	.string "{PLAYER}, that was fantastic.\n"
 	.string "Thanks!\p"
@@ -101,3 +101,6 @@ IlexForest_Interior1_Text_Sign2::
 	.string "trees that you can’t see the sky.\p"
 	.string "Please watch out for items that may\n"
 	.string "have been dropped.$"
+
+IlexForest_Interior1_Text_InsertGSBall::
+	.string "{PLAYER} put in the GS BALL.$"

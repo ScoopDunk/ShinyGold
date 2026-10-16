@@ -1,10 +1,53 @@
 AzaleaTown_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, AzaleaTown_OnFrame
+	map_script MAP_SCRIPT_ON_TRANSITION, AzaleaTown_OnTransition
 	.byte 0
 
 AzaleaTown_OnFrame::
 	map_script_2 0x7023, 0, AzaleaTown_EventScript_FrameScene
+	map_script_2 VAR_TEMP_1, 0, AzaleaTown_EventScript_GSBallCheck
 	.2byte 0
+
+@ Pure Gold: KURT waits outside his house while he has the GS BALL that started to shake, and until it is put in the
+@ ILEX FOREST shrine (pokecrystal EVENT_AZALEA_TOWN_KURT).
+AzaleaTown_OnTransition::
+	setflag FLAG_GOLD_HIDE_AZALEA_KURT
+	goto_if_eq VAR_GOLD_GS_BALL, GS_BALL_KURT_OUTSIDE, AzaleaTown_EventScript_ShowKurtOutside
+	goto_if_eq VAR_GOLD_GS_BALL, GS_BALL_RETURNED, AzaleaTown_EventScript_ShowKurtOutside
+	end
+
+AzaleaTown_EventScript_ShowKurtOutside::
+	clearflag FLAG_GOLD_HIDE_AZALEA_KURT
+	end
+
+@ Pure Gold: the player walks out of KURT's house after KURT ran out with the GS BALL (pokecrystal AzaleaTownCelebiScene,
+@ a scene on the tile in front of KURT's door; FireRed's door exit does not trigger coord events). Walking onto that
+@ tile from outside starts the scene too (AzaleaTown_EventScript_Trigger8).
+AzaleaTown_EventScript_GSBallCheck::
+	setvar VAR_TEMP_1, 1
+	goto_if_ne VAR_GOLD_GS_BALL, GS_BALL_KURT_OUTSIDE, AzaleaTown_EventScript_GSBallCheckEnd
+	getplayerxy VAR_0x8004, VAR_0x8005
+	goto_if_ne VAR_0x8004, 11, AzaleaTown_EventScript_GSBallCheckEnd
+	goto_if_ne VAR_0x8005, 6, AzaleaTown_EventScript_GSBallCheckEnd
+	goto AzaleaTown_EventScript_KurtReturnsGSBall
+
+AzaleaTown_EventScript_GSBallCheckEnd::
+	end
+
+AzaleaTown_EventScript_KurtReturnsGSBall::
+	lockall
+	applymovement LOCALID_PLAYER, AzaleaTown_Movement_PlayerWalksToKurt
+	waitmovement 0
+	msgbox AzaleaTown_Text_BaldingMan_1
+	turnobject 17, DIR_EAST
+	goto AzaleaTown_EventScript_KurtGivesGSBall
+
+AzaleaTown_Movement_PlayerWalksToKurt::
+	walk_left
+	walk_left
+	walk_up
+	face_left
+	step_end
 
 AzaleaTown_EventScript_FrameScene::
 	setflag 0x136D
@@ -71,24 +114,26 @@ AzaleaTown_EventScript_Slowpoke::
 	msgbox AzaleaTown_Text_Slowpoke, MSGBOX_NPC
 	end
 
+@ Pure Gold: KURT outside his house (object 17), as in Crystal (pokecrystal AzaleaTownCelebiScene, AzaleaTownKurtScript)
 AzaleaTown_EventScript_BaldingMan::
-	call_if_set 0x11B1, AzaleaTown_EventScript_BaldingMan_1
-	applymovement 17, AzaleaTown_Movement_BaldingMan
-	delay 1
-	msgbox AzaleaTown_Text_BaldingMan_1, MSGBOX_AUTOCLOSE
-	msgbox AzaleaTown_Text_BaldingMan_2, MSGBOX_NPC
-	setflag 0x11B1
+	lock
+	faceplayer
+	goto_if_ne VAR_GOLD_GS_BALL, GS_BALL_KURT_OUTSIDE, AzaleaTown_EventScript_BaldingMan_1
+	msgbox AzaleaTown_Text_BaldingMan_1
+AzaleaTown_EventScript_KurtGivesGSBall::
+	msgbox AzaleaTown_Text_BaldingMan_2
 	giveitem ITEM_RED_ORB
-	release
+	setvar VAR_GOLD_GS_BALL, GS_BALL_RETURNED
+	turnobject 17, DIR_WEST
+	releaseall
 	end
 
 AzaleaTown_EventScript_BaldingMan_1::
-	msgbox AzaleaTown_Text_BaldingMan_3, MSGBOX_NPC
+	msgbox AzaleaTown_Text_BaldingMan_3
+	closemessage
+	turnobject 17, DIR_WEST
+	releaseall
 	end
-
-AzaleaTown_Movement_BaldingMan::
-	face_left
-	step_end
 
 AzaleaTown_EventScript_Trigger1::
 	call_if_set 0x1061, AzaleaTown_EventScript_Trigger1_1
@@ -322,7 +367,9 @@ AzaleaTown_Movement_Trigger7_2::
 	step_end
 
 AzaleaTown_EventScript_Trigger8::
-	call_if_set 0x11B0, AzaleaTown_EventScript_Trigger8_1
+	goto_if_eq VAR_GOLD_GS_BALL, GS_BALL_KURT_OUTSIDE, AzaleaTown_EventScript_KurtReturnsGSBall
+	goto_if_eq VAR_GOLD_GS_BALL, GS_BALL_RETURNED, AzaleaTown_EventScript_Trigger8_KurtAway
+	goto_if_eq VAR_GOLD_GS_BALL, GS_BALL_KURT_CHECKING, AzaleaTown_EventScript_Trigger8_3
 	call_if_unset 0x1065, AzaleaTown_EventScript_Trigger8_2
 	special GetQuestLogState
 	call_if_eq VAR_RESULT, 2, EventScript_ReleaseEnd
@@ -333,13 +380,15 @@ AzaleaTown_EventScript_Trigger8::
 	call_if_set 0x113C, AzaleaTown_EventScript_Trigger8_3
 	call_if_set 0x113D, AzaleaTown_EventScript_Trigger8_3
 	call_if_set 0x113E, AzaleaTown_EventScript_Trigger8_3
-	call_if_set 0x11AF, AzaleaTown_EventScript_Trigger8_3
 	setflag 0x1137
 	clearflag 0x1058
 	release
 	end
 
-AzaleaTown_EventScript_Trigger8_1::
+@ Pure Gold: KURT is outside with the GS BALL (see AzaleaTown_EventScript_BaldingMan); nobody at the desk either.
+AzaleaTown_EventScript_Trigger8_KurtAway::
+	setflag 0x1058
+	setflag 0x1137
 	release
 	end
 
@@ -359,12 +408,6 @@ AzaleaTown_EventScript_Trigger8_3::
 AzaleaTown_EventScript_Trigger8_4::
 	setflag 0x1137
 	clearflag 0x1058
-	release
-	end
-
-AzaleaTown_EventScript_Trigger9::
-	call_if_set 0x11AE, AzaleaTown_EventScript_Trigger8_1
-	setflag 0x11AD
 	release
 	end
 

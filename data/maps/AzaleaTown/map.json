@@ -257,7 +257,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "AzaleaTown_EventScript_BaldingMan",
-      "flag": "0x11AD"
+      "flag": "FLAG_GOLD_HIDE_AZALEA_KURT"
     }
   ],
   "warp_events": [
@@ -383,33 +383,6 @@
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
       "script": "AzaleaTown_EventScript_Trigger8"
-    },
-    {
-      "type": "trigger",
-      "x": 37,
-      "y": 13,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "AzaleaTown_EventScript_Trigger9"
-    },
-    {
-      "type": "trigger",
-      "x": 37,
-      "y": 14,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "AzaleaTown_EventScript_Trigger9"
-    },
-    {
-      "type": "trigger",
-      "x": 37,
-      "y": 15,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "AzaleaTown_EventScript_Trigger9"
     }
   ],
   "bg_events": [

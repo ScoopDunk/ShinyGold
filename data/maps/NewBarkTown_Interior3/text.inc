@@ -104,27 +104,6 @@ NewBarkTown_Interior3_Text_Scientist2_1::
 	.string "ELM: {PLAYER}, I’ll call you if\n"
 	.string "anything comes up.$"
 
-NewBarkTown_Interior3_Text_Scientist2_2::
-	.string "ELM: Thanks for coming from so\n"
-	.string "far...\p"
-	.string "Allow me to see that mysterious\n"
-	.string "POKéBALL\p"
-	.string "Hmmm...\p"
-	.string "...\p"
-	.string "It looks as if this POKéBALL comes\n"
-	.string "from a distant past...\p"
-	.string "It is said that there was a POKéBALL\n"
-	.string "connected to a time-travel POKéMON\l"
-	.string "once, so I wonder if this is that\l"
-	.string "POKéBALL.\p"
-	.string "I know! Why don’t you ask KURT?\p"
-	.string "KURT is the master of POKéBALL\n"
-	.string "making that lives at AZALEA TOWN,\l"
-	.string "and I think he would know a little\l"
-	.string "more about it.\p"
-	.string "Well, good luck on your journey,\n"
-	.string "{PLAYER}.$"
-
 NewBarkTown_Interior3_Text_Scientist2_3::
 	.string "ELM: {PLAYER}!\n"
 	.string "There you are!\p"

@@ -805,9 +805,6 @@ Route35_EventScript_Sign4_3::
 Route35_EventScript_Sign4_4::
 	call Route35_EventScript_Sign4_7
 	msgbox Route35_Text_Sign4_3, MSGBOX_NPC
-	call_if_set 0x11AC, Route35_EventScript_Sign4_16
-	call_if_set 0x1195, Route35_EventScript_Sign4_17
-	call_if_set 0x117E, Route35_EventScript_Sign4_18
 	call_if_set 0x1151, Route35_EventScript_Sign4_16
 	call_if_set 0x1046, Route35_EventScript_Sign4_16
 	setvar VAR_RESORT_GORGEOUS_REQUESTED_MON, 175
@@ -903,15 +900,6 @@ Route35_EventScript_Sign4_16::
 	goto_if_lt VAR_0x8008, 2, Route35_EventScript_Sign4_34
 	goto_if_gt VAR_0x8008, 1, Route35_EventScript_Sign4_35
 	end
-
-Route35_EventScript_Sign4_17::
-	msgbox Route35_Text_Sign4_14, MSGBOX_NPC
-	call Route35_EventScript_Sign4_24
-	end
-
-Route35_EventScript_Sign4_18::
-	call_if_set 0x117F, Route35_EventScript_Sign4_36
-	return
 
 Route35_EventScript_Sign4_19::
 	msgbox Route35_Text_Sign4_15, MSGBOX_NPC
@@ -1121,13 +1109,6 @@ Route35_EventScript_Sign4_34::
 
 Route35_EventScript_Sign4_35::
 	msgbox Route35_Text_Sign4_27, MSGBOX_NPC
-	call Route35_EventScript_Sign4_24
-	end
-
-Route35_EventScript_Sign4_36::
-	msgbox Route35_Text_Sign4_28, MSGBOX_NPC
-	setflag 0x117D
-	setflag 0x1195
 	call Route35_EventScript_Sign4_24
 	end
 
