@@ -40,9 +40,6 @@ CinnabarIsland_Text_Sign1::
 	.string "CINNABAR ISLAND\n"
 	.string "The Fiery Town of Burning Desire$"
 
-CinnabarIsland_Text_Sign2::
-	.string "POKéMON LAB$"
-
 CinnabarIsland_Text_Sign3::
 	.string "There’s a notice here...\p"
 	.string "CINNABAR GYM has relocated to\n"

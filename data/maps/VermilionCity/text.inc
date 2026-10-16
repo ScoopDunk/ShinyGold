@@ -48,11 +48,6 @@ VermilionCity_Text_BaldingMan::
 	.string "GYM LEADERS are especially strong.\n"
 	.string "They won’t be easy to defeat.$"
 
-VermilionCity_Text_Sign1::
-	.string "VERMILLION BATTLE BUILDING\n"
-	.string "Big Opening Today!\l"
-	.string "Come and Win a Prize!$"
-
 VermilionCity_Text_Sign2::
 	.string "POKéMON FAN CLUB\n"
 	.string "All POKéMON Fans Welcome!$"
@@ -71,8 +66,3 @@ VermilionCity_Text_Sign5::
 VermilionCity_Text_Sign6::
 	.string "VERMILLION CITY\n"
 	.string "The Port of Exquisite Sunsets$"
-
-VermilionCity_Text_Sign7::
-	.string "MESSAGE FROM ZEL: This section is\n"
-	.string "not ready yet...\l"
-	.string "Do not insist...$"

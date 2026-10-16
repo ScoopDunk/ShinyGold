@@ -86,7 +86,3 @@ Route36_Text_Sign4::
 Route36_Text_Sign5::
 	.string "It’s a fruit-bearing tree.\p"
 	.string "Hey! It’s ASPEAR BERRY!$"
-
-Route36_Text_Sign7::
-	.string "Are you bored? Come on in now!\n"
-	.string "TRICK HOUSE.$"
