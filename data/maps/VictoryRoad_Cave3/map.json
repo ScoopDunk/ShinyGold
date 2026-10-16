@@ -251,7 +251,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VictoryRoad_Cave3_EventScript_ItemTm13",
-      "flag": "0x256"
+      "flag": "0x1D2F"
     },
     {
       "type": "object",

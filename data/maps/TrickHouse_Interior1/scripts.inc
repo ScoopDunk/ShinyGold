@@ -91,37 +91,37 @@ TrickHouse_Interior1_EventScript_BaldingMan_11::
 
 TrickHouse_Interior1_EventScript_BaldingMan_12::
 	call_if_unset 0x120F, TrickHouse_Interior1_EventScript_BaldingMan_1
-	call_if_set 0x8888, TrickHouse_Interior1_EventScript_BaldingMan_13
+	call_if_set 0x030, TrickHouse_Interior1_EventScript_BaldingMan_13
 	call TrickHouse_Interior1_EventScript_BaldingMan_3
 	end
 
 TrickHouse_Interior1_EventScript_BaldingMan_13::
 	call_if_unset 0x1210, TrickHouse_Interior1_EventScript_BaldingMan_1
-	call_if_set 0x8888, TrickHouse_Interior1_EventScript_BaldingMan_14
+	call_if_set 0x030, TrickHouse_Interior1_EventScript_BaldingMan_14
 	call TrickHouse_Interior1_EventScript_BaldingMan_3
 	end
 
 TrickHouse_Interior1_EventScript_BaldingMan_14::
 	call_if_unset 0x1211, TrickHouse_Interior1_EventScript_BaldingMan_1
-	call_if_set 0x8888, TrickHouse_Interior1_EventScript_BaldingMan_15
+	call_if_set 0x030, TrickHouse_Interior1_EventScript_BaldingMan_15
 	call TrickHouse_Interior1_EventScript_BaldingMan_3
 	end
 
 TrickHouse_Interior1_EventScript_BaldingMan_15::
 	call_if_unset 0x1212, TrickHouse_Interior1_EventScript_BaldingMan_1
-	call_if_set 0x8888, TrickHouse_Interior1_EventScript_BaldingMan_16
+	call_if_set 0x030, TrickHouse_Interior1_EventScript_BaldingMan_16
 	call TrickHouse_Interior1_EventScript_BaldingMan_3
 	end
 
 TrickHouse_Interior1_EventScript_BaldingMan_16::
 	call_if_unset 0x1213, TrickHouse_Interior1_EventScript_BaldingMan_1
-	call_if_set 0x8888, TrickHouse_Interior1_EventScript_BaldingMan_17
+	call_if_set 0x030, TrickHouse_Interior1_EventScript_BaldingMan_17
 	call TrickHouse_Interior1_EventScript_BaldingMan_3
 	end
 
 TrickHouse_Interior1_EventScript_BaldingMan_17::
 	call_if_unset 0x1214, TrickHouse_Interior1_EventScript_BaldingMan_1
-	call_if_set 0x8888, TrickHouse_Interior1_EventScript_BaldingMan_18
+	call_if_set 0x030, TrickHouse_Interior1_EventScript_BaldingMan_18
 	call TrickHouse_Interior1_EventScript_BaldingMan_3
 	end
 

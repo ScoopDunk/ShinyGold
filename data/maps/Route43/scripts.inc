@@ -58,8 +58,8 @@ Route43_EventScript_Picnicker472::
 Route43_EventScript_Picnicker472_1::
 	clearflag 0x1319
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route43_EventScript_Picnicker472_2
-	call_if_set 0x8888, Route43_EventScript_Picnicker472_3
+	call_if_set 0x030, Route43_EventScript_Picnicker472_2
+	call_if_set 0x030, Route43_EventScript_Picnicker472_3
 	call_if_set FLAG_BADGE07_GET, Route43_EventScript_Picnicker472_4
 	call_if_set 0x110A, Route43_EventScript_Picnicker472_5
 	trainerbattle_earlyrival TRAINER_PICNICKER_TIFFANY, 0, Route43_Text_Picnicker472Defeat, Route35_Text_Juggler228Victory
@@ -100,7 +100,7 @@ Route43_EventScript_Pokemaniac188::
 Route43_EventScript_Pokemaniac188_1::
 	clearflag 0x1320
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route43_EventScript_Pokemaniac188_2
+	call_if_set 0x030, Route43_EventScript_Pokemaniac188_2
 	call_if_set 0x115F, Route43_EventScript_Pokemaniac188_3
 	call_if_set FLAG_BADGE07_GET, Route43_EventScript_Pokemaniac188_4
 	call_if_set 0x110A, Route43_EventScript_Pokemaniac188_5
@@ -163,6 +163,28 @@ Route43_EventScript_Trigger3::
 Route43_EventScript_Trigger3_1::
 	release
 	end
+
+@ ShinyGold fix: the boy (Ard) ran FireRed's Sevault Canyon "Nya" double-battle script when talked to (a battle
+@ against SILVER's Lv 65-70 team), and the cutscene had no trigger on (10,51). Both now start Ard's scene.
+Route43_EventScript_ArdBoy::
+	lock
+	faceplayer
+	call Route43_EventScript_Trigger3_2
+	release
+	end
+
+Route43_EventScript_ArdTrigger::
+	call_if_set 0x10D8, Route43_EventScript_Trigger3_1
+	applymovement LOCALID_PLAYER, Route43_Movement_ArdTrigger
+	delay 48
+	call Route43_EventScript_Trigger3_2
+	end
+
+Route43_Movement_ArdTrigger::
+	walk_up
+	walk_left
+	walk_up
+	step_end
 
 Route43_EventScript_Trigger3_2::
 	applymovement 8, Route43_Movement_Trigger3_2

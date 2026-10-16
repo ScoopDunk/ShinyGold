@@ -27,7 +27,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PowerPlant_EventScript_ItemMaxPotion",
-      "flag": "0x11BE"
+      "flag": "0x1D11"
     },
     {
       "type": "object",

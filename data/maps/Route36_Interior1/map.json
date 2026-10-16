@@ -69,7 +69,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PokemonTower_6F_EventScript_ItemRareCandy",
-      "flag": "0x17C"
+      "flag": "0x1D1B"
     },
     {
       "type": "object",
@@ -83,7 +83,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PokemonTower_6F_EventScript_ItemXAccuracy",
-      "flag": "0x17D"
+      "flag": "0x1D1C"
     }
   ],
   "warp_events": [

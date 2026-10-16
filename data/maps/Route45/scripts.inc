@@ -67,7 +67,7 @@ Route45_EventScript_Hiker172::
 Route45_EventScript_Hiker172_1::
 	clearflag 0x1324
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route45_EventScript_Hiker172_2
+	call_if_set 0x030, Route45_EventScript_Hiker172_2
 	call_if_set 0x115F, Route45_EventScript_Hiker172_3
 	call_if_set FLAG_BADGE07_GET, Route45_EventScript_Hiker172_4
 	trainerbattle_earlyrival TRAINER_HIKER_PARRY_3, 0, Route45_Text_Hiker172Defeat, Route35_Text_Juggler228Victory
@@ -116,7 +116,7 @@ Route45_EventScript_BlackBelt316::
 Route45_EventScript_BlackBelt316_1::
 	clearflag 0x1323
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route45_EventScript_BlackBelt316_2
+	call_if_set 0x030, Route45_EventScript_BlackBelt316_2
 	call_if_set 0x115F, Route45_EventScript_BlackBelt316_3
 	call_if_set FLAG_BADGE07_GET, Route45_EventScript_BlackBelt316_4
 	call_if_set 0x110A, Route45_EventScript_BlackBelt316_5

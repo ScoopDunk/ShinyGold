@@ -88,7 +88,7 @@ Route30_EventScript_Youngster89::
 Route30_EventScript_Youngster89_1::
 	clearflag 0x1301
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route30_EventScript_Youngster89_2
+	call_if_set 0x030, Route30_EventScript_Youngster89_2
 	call_if_set FLAG_BADGE07_GET, Route30_EventScript_Youngster89_3
 	call_if_set FLAG_BADGE05_GET, Route30_EventScript_Youngster89_4
 	call_if_set FLAG_BADGE02_GET, Route30_EventScript_Youngster89_5
@@ -149,9 +149,9 @@ Route30_EventScript_Trigger3_1::
 	end
 
 Route30_EventScript_Trigger3_2::
-	playbgm SE_DEX_SEARCH, 51
+	playse SE_DEX_SEARCH @ ShinyGold fix: was playbgm (the sound effect replaced the map music until the next map)
 	delay 96
-	playbgm SE_SUCCESS, 51
+	playse SE_SUCCESS @ ShinyGold fix: was playbgm (the sound effect replaced the map music until the next map)
 	msgbox Route30_Text_Trigger3_2, MSGBOX_NPC
 	return
 
@@ -184,9 +184,9 @@ Route30_EventScript_Trigger3_6::
 Route30_EventScript_Trigger6::
 	call_if_set 0x1247, Route30_EventScript_Trigger6_1
 	call_if_set 0x1027, Route30_EventScript_Trigger6_1
-	playbgm SE_DEX_SEARCH, 51
+	playse SE_DEX_SEARCH @ ShinyGold fix: was playbgm (the sound effect replaced the map music until the next map)
 	delay 96
-	playbgm SE_SUCCESS, 51
+	playse SE_SUCCESS @ ShinyGold fix: was playbgm (the sound effect replaced the map music until the next map)
 	msgbox Route30_Text_Trigger6_1, MSGBOX_NPC
 	msgbox Route30_Text_Trigger6_2, MSGBOX_NPC
 	setflag 0x1247

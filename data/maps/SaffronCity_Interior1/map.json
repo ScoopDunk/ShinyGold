@@ -27,7 +27,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_Interior1_EventScript_ItemFullRestore",
-      "flag": "0x273"
+      "flag": "0x1D20"
     },
     {
       "type": "object",

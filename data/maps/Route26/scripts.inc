@@ -89,7 +89,7 @@ Route26_EventScript_Cooltrainer302::
 Route26_EventScript_Cooltrainer302_1::
 	clearflag 0x1327
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route26_EventScript_Cooltrainer302_2
+	call_if_set 0x030, Route26_EventScript_Cooltrainer302_2
 	call_if_set 0x1177, Route26_EventScript_Cooltrainer302_3
 	call_if_set 0x115F, Route26_EventScript_Cooltrainer302_4
 	call_if_set FLAG_BADGE07_GET, Route26_EventScript_Cooltrainer302_5

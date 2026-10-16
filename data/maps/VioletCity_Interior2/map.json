@@ -142,16 +142,6 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "ViridianCity_School_EventScript_PokemonJournal"
-    },
-    {
-      "type": "hidden_item",
-      "x": 9,
-      "y": 0,
-      "elevation": 0,
-      "item": "0xCD65",
-      "flag": "0x402",
-      "quantity": 8,
-      "underfoot": false
     }
   ]
 }

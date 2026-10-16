@@ -111,7 +111,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "DragonsDen_Cave4_EventScript_ItemMaxElixir",
-      "flag": "0x247"
+      "flag": "0x1D02"
     },
     {
       "type": "object",

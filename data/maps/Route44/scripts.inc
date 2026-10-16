@@ -67,7 +67,7 @@ Route44_EventScript_Fisherman244::
 Route44_EventScript_Fisherman244_1::
 	clearflag 0x1321
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route44_EventScript_Fisherman244_2
+	call_if_set 0x030, Route44_EventScript_Fisherman244_2
 	call_if_set 0x115F, Route44_EventScript_Fisherman244_3
 	call_if_set FLAG_BADGE07_GET, Route44_EventScript_Fisherman244_4
 	call_if_set 0x110A, Route44_EventScript_Fisherman244_5
@@ -124,7 +124,7 @@ Route44_EventScript_BirdKeeper99::
 Route44_EventScript_BirdKeeper99_1::
 	clearflag 0x1322
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route44_EventScript_BirdKeeper99_2
+	call_if_set 0x030, Route44_EventScript_BirdKeeper99_2
 	call_if_set 0x115F, Route44_EventScript_BirdKeeper99_3
 	call_if_set FLAG_BADGE07_GET, Route44_EventScript_BirdKeeper99_4
 	call_if_set 0x110A, Route44_EventScript_BirdKeeper99_5

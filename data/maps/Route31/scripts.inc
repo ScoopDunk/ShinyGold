@@ -84,7 +84,7 @@ Route31_EventScript_BugCatcher309::
 Route31_EventScript_BugCatcher309_1::
 	clearflag 0x1302
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route31_EventScript_BugCatcher309_2
+	call_if_set 0x030, Route31_EventScript_BugCatcher309_2
 	call_if_set 0x110A, Route31_EventScript_BugCatcher309_3
 	call_if_set FLAG_BADGE05_GET, Route31_EventScript_BugCatcher309_4
 	call_if_set FLAG_BADGE02_GET, Route31_EventScript_BugCatcher309_5

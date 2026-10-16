@@ -73,7 +73,7 @@ Route34_EventScript_Camper148::
 Route34_EventScript_Camper148_1::
 	clearflag 0x1306
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route34_EventScript_Camper148_2
+	call_if_set 0x030, Route34_EventScript_Camper148_2
 	call_if_set 0x115F, Route34_EventScript_Camper148_3
 	call_if_set 0x110A, Route34_EventScript_Camper148_4
 	call_if_set FLAG_BADGE05_GET, Route34_EventScript_Camper148_5
@@ -115,7 +115,7 @@ Route34_EventScript_Picnicker152::
 Route34_EventScript_Picnicker152_1::
 	clearflag 0x1307
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route34_EventScript_Picnicker152_2
+	call_if_set 0x030, Route34_EventScript_Picnicker152_2
 	call_if_set 0x115F, Route34_EventScript_Picnicker152_3
 	call_if_set 0x110A, Route34_EventScript_Picnicker152_4
 	call_if_set FLAG_BADGE05_GET, Route34_EventScript_Picnicker152_5

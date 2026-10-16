@@ -7,12 +7,14 @@ VermilionCity_Interior8_EventScript_Gentleman::
 	faceplayer
 	msgbox VermilionCity_Interior8_Text_Gentleman_1, MSGBOX_AUTOCLOSE
 	random 5
-	switch VAR_RESULT
-	call_if_eq VAR_0x8000, 0, VermilionCity_Interior8_EventScript_Gentleman_1
-	call_if_eq VAR_0x8000, 1, VermilionCity_Interior8_EventScript_Gentleman_2
-	call_if_eq VAR_0x8000, 2, VermilionCity_Interior8_EventScript_Gentleman_3
-	call_if_eq VAR_0x8000, 3, VermilionCity_Interior8_EventScript_Gentleman_4
-	call_if_eq VAR_0x8000, 4, VermilionCity_Interior8_EventScript_Gentleman_5
+	@ ShinyGold fix: keep the roll in its own var. The hack compared VAR_0x8000, which "giveitem" overwrites, so a
+	@ roll of 0 also paid out the next prize.
+	copyvar VAR_0x8008, VAR_RESULT
+	call_if_eq VAR_0x8008, 0, VermilionCity_Interior8_EventScript_Gentleman_1
+	call_if_eq VAR_0x8008, 1, VermilionCity_Interior8_EventScript_Gentleman_2
+	call_if_eq VAR_0x8008, 2, VermilionCity_Interior8_EventScript_Gentleman_3
+	call_if_eq VAR_0x8008, 3, VermilionCity_Interior8_EventScript_Gentleman_4
+	call_if_eq VAR_0x8008, 4, VermilionCity_Interior8_EventScript_Gentleman_5
 	msgbox VermilionCity_Interior8_Text_Gentleman_2, MSGBOX_AUTOCLOSE
 	cleartrainerflag TRAINER_YOUNGSTER_DESTIN_2
 	cleartrainerflag TRAINER_LASS_KIA

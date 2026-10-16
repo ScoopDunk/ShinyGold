@@ -24,7 +24,7 @@ Lighthouse_Interior2_EventScript_Sailor261::
 Lighthouse_Interior2_EventScript_Sailor261_1::
 	clearflag 0x1317
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Lighthouse_Interior2_EventScript_Sailor261_2
+	call_if_set 0x030, Lighthouse_Interior2_EventScript_Sailor261_2
 	call_if_set 0x115F, Lighthouse_Interior2_EventScript_Sailor261_3
 	call_if_set FLAG_BADGE07_GET, Lighthouse_Interior2_EventScript_Sailor261_4
 	call_if_set 0x110A, Lighthouse_Interior2_EventScript_Sailor261_5

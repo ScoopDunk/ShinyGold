@@ -39,6 +39,7 @@ UnionCave_Cave3_EventScript_Lapras::
 	special StartSouthernIslandBattle
 	delay 128
 	warp MAP_UNION_CAVE_CAVE3, 1, 0x9725, 0x201
-	nop1
-	special DaisyMassageServices
+	@ ShinyGold fix: the engine keeps running a script during the warp fade, so the hack's leftover bytes
+	@ that followed this warp executed (garbage calls, stray text, RAM writes). The script now ends here.
 	end
+

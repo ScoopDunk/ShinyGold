@@ -58,7 +58,7 @@ Route39_EventScript_Pokefan154::
 Route39_EventScript_Pokefan154_1::
 	clearflag 0x1315
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route39_EventScript_Pokefan154_2
+	call_if_set 0x030, Route39_EventScript_Pokefan154_2
 	call_if_set 0x115F, Route39_EventScript_Pokefan154_3
 	call_if_set FLAG_BADGE07_GET, Route39_EventScript_Pokefan154_4
 	call_if_set FLAG_BADGE05_GET, Route39_EventScript_Pokefan154_5

@@ -83,7 +83,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MtMortar_Cave3_EventScript_ItemTm32",
-      "flag": "0x263"
+      "flag": "0x1D09"
     },
     {
       "type": "object",
@@ -111,7 +111,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MtMortar_Cave3_EventScript_ItemFullRestore",
-      "flag": "0x25E"
+      "flag": "0x1D0A"
     },
     {
       "type": "object",

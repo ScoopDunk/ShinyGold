@@ -111,7 +111,7 @@ Route32_EventScript_Picnicker153::
 Route32_EventScript_Picnicker153_1::
 	clearflag 0x1304
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route32_EventScript_Picnicker153_2
+	call_if_set 0x030, Route32_EventScript_Picnicker153_2
 	call_if_set 0x110A, Route32_EventScript_Picnicker153_3
 	call_if_set FLAG_BADGE05_GET, Route32_EventScript_Picnicker153_4
 	call_if_set FLAG_BADGE04_GET, Route32_EventScript_Picnicker153_5
@@ -178,7 +178,7 @@ Route32_EventScript_Fisherman146::
 Route32_EventScript_Fisherman146_1::
 	clearflag 0x1303
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route32_EventScript_Fisherman146_2
+	call_if_set 0x030, Route32_EventScript_Fisherman146_2
 	call_if_set FLAG_BADGE07_GET, Route32_EventScript_Fisherman146_3
 	call_if_set FLAG_BADGE05_GET, Route32_EventScript_Fisherman146_4
 	call_if_set FLAG_BADGE04_GET, Route32_EventScript_Fisherman146_5

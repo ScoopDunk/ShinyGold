@@ -91,16 +91,8 @@ RadioTower_Interior5_EventScript_Trigger2::
 	clearflag 0x1132
 	setflag 0x1123
 	warp MAP_RADIO_TOWER_INTERIOR5, 2, 0x202, 0xFFFF
-	msgbox RadioTower_Interior5_Text_Gentleman2_1, MSGBOX_NPC
-	setorcopyvar VAR_0x8000, 0x173
-	setorcopyvar VAR_0x8001, 15
-	bufferitemname 163, 0x878
-	callstd MSGBOX_NPC
-	giveitem ITEM_AURORA_TICKET
-	msgbox RadioTower_Interior5_Text_Gentleman2_2, MSGBOX_NPC
-	setflag 0x1124
-	applymovement 4, RadioTower_Interior5_Movement_Gentleman2
-	delay 32
+	@ ShinyGold fix: the engine keeps running a script during the warp fade, so the hack's leftover bytes
+	@ that followed this warp executed (garbage calls, stray text, RAM writes). The script now ends here.
 	end
 
 RadioTower_Interior5_EventScript_Trigger2_1::
