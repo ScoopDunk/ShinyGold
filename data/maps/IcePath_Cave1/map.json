@@ -118,24 +118,6 @@
       "var": "0x0000",
       "var_value": "0",
       "script": "IcePath_Cave1_EventScript_Trigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 1,
-      "y": 0,
-      "elevation": 0,
-      "var": "0x0000",
-      "var_value": "0",
-      "script": "0x0"
-    },
-    {
-      "type": "trigger",
-      "x": 1,
-      "y": 0,
-      "elevation": 0,
-      "var": "0x0000",
-      "var_value": "0",
-      "script": "0x0"
     }
   ],
   "bg_events": []

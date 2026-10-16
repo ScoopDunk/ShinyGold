@@ -1,4 +1,6 @@
 PalletTown_MapScripts::
+	@ ShinyGold: unreachable map, emptied (the slot is kept so map ids stay the same)
+	.byte 0
 PalletTown_Area1_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, PalletTown_OnFrame
 	.byte 0

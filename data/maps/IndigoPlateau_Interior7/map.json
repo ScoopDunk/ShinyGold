@@ -157,15 +157,6 @@
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
       "script": "IndigoPlateau_Interior7_EventScript_Trigger3"
-    },
-    {
-      "type": "trigger",
-      "x": 0,
-      "y": 0,
-      "elevation": 0,
-      "var": "0x0000",
-      "var_value": "0",
-      "script": "0x0"
     }
   ],
   "bg_events": []

@@ -2,11 +2,6 @@ Route3_MapScripts::
 	@ ShinyGold: overlapping data duplicated from 0x08167F77
 	.byte 0
 
-Route3_EventScript_Youngster::
-	@ ShinyGold: overlapping data duplicated from 0x08167F78
-	msgbox Route3_Text_Youngster, MSGBOX_NPC
-	end
-
 Route3_EventScript_FirebreatherBurt::
 	trainerbattle_single TRAINER_FIREBREATHER_BURT, Route3_Text_FirebreatherBurtIntro, Route3_Text_FirebreatherBurtDefeat
 	msgbox Route3_Text_FirebreatherBurt, MSGBOX_AUTOCLOSE

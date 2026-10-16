@@ -33,32 +33,6 @@ SaffronCity_Interior5_Text_MediumDoris::
 	.string "Darn! I forgot that I predicted\n"
 	.string "I would lose to you.$"
 
-SaffronCity_Interior5_Text_MediumGraceIntro::
-	.string "SABRINA is far younger than I,\n"
-	.string "but she has earned my respect.$"
-
-SaffronCity_Interior5_Text_MediumGraceDefeat::
-	.string "Not good enough!$"
-
-SaffronCity_Interior5_Text_MediumGrace::
-	.string "In a battle of equals, the one\n"
-	.string "with the stronger will wins.\p"
-	.string "If you wish to beat SABRINA, focus\n"
-	.string "and will yourself to victory.$"
-
-SaffronCity_Interior5_Text_MediumStacyIntro::
-	.string "POKéMON take on the appearance of\n"
-	.string "their TRAINERS.\p"
-	.string "Your POKéMON must be tough, then!$"
-
-SaffronCity_Interior5_Text_MediumStacyDefeat::
-	.string "I knew it!$"
-
-SaffronCity_Interior5_Text_MediumStacy::
-	.string "I have much to learn still…\p"
-	.string "I must master PSYCHIC and teach it\n"
-	.string "to my POKéMON…$"
-
 SaffronCity_Interior5_Text_PsychicFranklinIntro::
 	.string "Psychic power is the power of your\n"
 	.string "soul.$"
@@ -112,18 +86,6 @@ SaffronCity_Interior5_Text_LeaderSabrina_3::
 	.string "You will soon face a terrible\n"
 	.string "danger.\p"
 	.string "Please, you must be careful...$"
-
-SaffronCity_Interior5_Text_PsychicNormanIntro::
-	.string "You understand, don’t you?\p"
-	.string "That power alone isn’t enough to\n"
-	.string "win in the world of POKéMON?$"
-
-SaffronCity_Interior5_Text_PsychicNormanDefeat::
-	.string "I don’t believe this!$"
-
-SaffronCity_Interior5_Text_PsychicNorman::
-	.string "SABRINA just wiped out the KARATE\n"
-	.string "MASTER next door.$"
 
 SaffronCity_Interior5_Text_GymGuy_1::
 	.string "Yo, CHAMP in making!\p"

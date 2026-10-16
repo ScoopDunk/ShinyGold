@@ -23,13 +23,6 @@ Route12_Interior1_EventScript_Fisher_2::
 
 Route12_Interior1_EventScript_Sign::
 	lockall
-	goto_if_set 0x29C, Route12_Interior1_EventScript_Sign_1
 	msgbox Route12_Interior1_Text_Sign_1
-	releaseall
-	end
-
-Route12_Interior1_EventScript_Sign_1::
-	special GetMagikarpSizeRecordInfo
-	msgbox Route12_Interior1_Text_Sign_2
 	releaseall
 	end

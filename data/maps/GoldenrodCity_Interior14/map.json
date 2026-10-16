@@ -33,15 +33,6 @@
       "var": "0x0000",
       "var_value": "0",
       "script": "GoldenrodCity_Interior14_EventScript_Trigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 3,
-      "y": 6,
-      "elevation": 0,
-      "var": "0x0000",
-      "var_value": "0",
-      "script": "0x0"
     }
   ],
   "bg_events": [

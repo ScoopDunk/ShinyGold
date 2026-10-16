@@ -16,16 +16,6 @@ SaffronCity_Interior5_EventScript_MediumDoris::
 	msgbox SaffronCity_Interior5_Text_MediumDoris, MSGBOX_AUTOCLOSE
 	end
 
-SaffronCity_Interior5_EventScript_MediumGrace::
-	trainerbattle_single TRAINER_MEDIUM_GRACE, SaffronCity_Interior5_Text_MediumGraceIntro, SaffronCity_Interior5_Text_MediumGraceDefeat
-	msgbox SaffronCity_Interior5_Text_MediumGrace, MSGBOX_AUTOCLOSE
-	end
-
-SaffronCity_Interior5_EventScript_MediumStacy::
-	trainerbattle_single TRAINER_MEDIUM_STACY, SaffronCity_Interior5_Text_MediumStacyIntro, SaffronCity_Interior5_Text_MediumStacyDefeat
-	msgbox SaffronCity_Interior5_Text_MediumStacy, MSGBOX_AUTOCLOSE
-	end
-
 SaffronCity_Interior5_EventScript_PsychicFranklin::
 	trainerbattle_single TRAINER_PSYCHIC_FRANKLIN, SaffronCity_Interior5_Text_PsychicFranklinIntro, SaffronCity_Interior5_Text_PsychicFranklinDefeat
 	msgbox SaffronCity_Interior5_Text_PsychicFranklin, MSGBOX_AUTOCLOSE
@@ -46,14 +36,6 @@ SaffronCity_Interior5_EventScript_LeaderSabrinaContinue::
 	msgbox SaffronCity_Interior5_Text_LeaderSabrina_2, MSGBOX_NPC
 	delay 16
 	msgbox SaffronCity_Interior5_Text_LeaderSabrina_3, MSGBOX_NPC
-	end
-
-SaffronCity_Interior5_EventScript_PsychicNorman::
-	trainerbattle_single TRAINER_PSYCHIC_NORMAN, SaffronCity_Interior5_Text_PsychicNormanIntro, SaffronCity_Interior5_Text_PsychicNormanDefeat
-	setvar VAR_0x8004, 7
-	setvar VAR_0x8005, 5
-	special SetFlavorTextFlagFromSpecialVars
-	msgbox SaffronCity_Interior5_Text_PsychicNorman, MSGBOX_AUTOCLOSE
 	end
 
 SaffronCity_Interior5_EventScript_GymGuy::

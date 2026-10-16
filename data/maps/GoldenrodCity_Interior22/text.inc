@@ -17,6 +17,3 @@ GoldenrodCity_Interior22_Text_WorkerM_4::
 	.string "Really? Great!\p"
 	.string "Give me your name and phone number,\n"
 	.string "and I’ll loan you a BICYCLE.$"
-
-GoldenrodCity_Interior22_Text_Wigglytuff::
-	.string "Stuffed POKéMON dolls galore!$"

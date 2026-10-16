@@ -56,13 +56,6 @@ LakeOfRage_Interior1_EventScript_Fisher_7::
 
 LakeOfRage_Interior1_EventScript_Sign::
 	lockall
-	goto_if_set 0x2D9, LakeOfRage_Interior1_EventScript_Sign_1
 	msgbox LakeOfRage_Interior1_Text_Sign_1
-	releaseall
-	end
-
-LakeOfRage_Interior1_EventScript_Sign_1::
-	special GetHeracrossSizeRecordInfo
-	msgbox LakeOfRage_Interior1_Text_Sign_2
 	releaseall
 	end

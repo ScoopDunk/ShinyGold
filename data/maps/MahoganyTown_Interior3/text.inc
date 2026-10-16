@@ -14,12 +14,3 @@ MahoganyTown_Interior3_Text_Lass::
 	.string "POKéMON do become stronger when they\n"
 	.string "evolve, but they also learn moves\l"
 	.string "more slowly.$"
-
-MahoganyTown_Interior3_Text_Youngster::
-	.string "Sometimes, you’ll have too many\n"
-	.string "POKéMON with you to add any more.\p"
-	.string "In that case, you should just\n"
-	.string "store some using any PC.$"
-
-MahoganyTown_Interior3_Text_Clipboard::
-	.string "It’s a newspaper.$"

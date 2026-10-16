@@ -26,13 +26,6 @@ LavenderTown_EventScript_Woman2::
 	msgbox LavenderTown_Text_Woman2, MSGBOX_NPC
 	end
 
-@ Shared with the KANTO GYM leaders' battle scripts (were part of the removed AMELIA battle)
-LavenderTown_EventScript_Trigger6_2::
-	setvar 0x7030, 0x129
-	setvar 0x7033, 0x12B
-	release
-	return
-
 LavenderTown_EventScript_Trigger6_3::
 	setvar 0x7030, 0x129
 	setvar 0x7033, 0x10A

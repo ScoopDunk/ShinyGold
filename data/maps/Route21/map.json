@@ -67,56 +67,9 @@
       "trainer_sight_or_berry_tree_id": "5",
       "script": "Route21_EventScript_SwimmerMSeth",
       "flag": "0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
-      "x": 29,
-      "y": 22,
-      "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route21_North_EventScript_Lil",
-      "flag": "0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_TUBER_M_WATER",
-      "x": 29,
-      "y": 21,
-      "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route21_North_EventScript_Ian",
-      "flag": "0"
-    },
-    {
-      "type": "clone",
-      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-      "x": 29,
-      "y": 21,
-      "target_local_id": 2,
-      "target_map": "MAP_BATTLE_COLOSSEUM_2P"
     }
   ],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": [
-    {
-      "type": "hidden_item",
-      "x": 29,
-      "y": 5,
-      "elevation": 3,
-      "item": "ITEM_PEARL",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE21_NORTH_PEARL",
-      "quantity": 1,
-      "underfoot": false
-    }
-  ]
+  "bg_events": []
 }

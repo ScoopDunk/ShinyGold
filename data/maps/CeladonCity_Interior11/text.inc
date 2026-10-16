@@ -8,24 +8,6 @@ CeladonCity_Interior11_Text_OldMan1::
 	.string "for PIKACHU’s line, but...\l"
 	.string "What to do?$"
 
-CeladonCity_Interior11_Text_Fisher_1::
-	.string "Kid, do you want to play?$"
-
-CeladonCity_Interior11_Text_Fisher_2::
-	.string "{PLAYER} received 10 COINS\n"
-	.string "from the man.$"
-
-CeladonCity_Interior11_Text_Fisher_3::
-	.string "Wins seem to come and go.\n"
-	.string "Nothing’s a sure thing.$"
-
-CeladonCity_Interior11_Text_Fisher_4::
-	.string "Oops!\n"
-	.string "Don’t have the COIN CASE!$"
-
-CeladonCity_Interior11_Text_Fisher_5::
-	.string "You don’t need my COINS!$"
-
 CeladonCity_Interior11_Text_GymGuy::
 	.string "Hey! CHAMP in making!\p"
 	.string "Are you playing the slots too?\p"
@@ -66,6 +48,3 @@ CeladonCity_Interior11_Text_Sign23::
 	.string "Hey!\p"
 	.string "Underneath this poster...\p"
 	.string "There’s nothing!$"
-
-CeladonCity_Interior11_Text_Sign29::
-	.string "This machine is out of service.$"

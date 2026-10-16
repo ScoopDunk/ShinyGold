@@ -52,21 +52,13 @@ IndigoPlateau_Interior1_EventScript_Celio::
 	msgbox IndigoPlateau_Interior1_Text_Celio_1, MSGBOX_NPC
 	setflag FLAG_TEMP_3
 	setflag FLAG_TEMP_5
-	goto_if_set 0x115B, IndigoPlateau_Interior1_EventScript_Celio_2
-	goto_if_unset 0x115B, IndigoPlateau_Interior1_EventScript_Celio_3
+	@ ShinyGold: the stronger rematch behind flag 0x115B is removed; nothing ever set that flag
+	goto IndigoPlateau_Interior1_EventScript_Celio_3
 	end
 
 IndigoPlateau_Interior1_EventScript_Celio_1::
 	msgbox IndigoPlateau_Interior1_Text_Celio_2, MSGBOX_NPC
 	end
-
-IndigoPlateau_Interior1_EventScript_Celio_2::
-	trainerbattle_no_intro TRAINER_LEADER_BROCK_2, IndigoPlateau_Interior1_Text_CelioDefeat
-	bufferitemname 30, 0x880
-	setflag 0x4B8
-	call PokemonLeague_EventScript_OpenDoor
-	msgbox IndigoPlateau_Interior1_Text_Celio_2, MSGBOX_NPC
-	return
 
 IndigoPlateau_Interior1_EventScript_Celio_3::
 	trainerbattle_no_intro TRAINER_ELITETRAINER_WILL, IndigoPlateau_Interior1_Text_CelioDefeat

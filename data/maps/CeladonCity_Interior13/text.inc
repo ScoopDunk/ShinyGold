@@ -1,28 +1,3 @@
-CeladonCity_Interior13_Text_CooltrainerJoyceIntro::
-	.string "I should tell you about this GYM.\p"
-	.string "Only real ladies are allowed in\n"
-	.string "here!$"
-
-CeladonCity_Interior13_Text_CooltrainerJoyceDefeat::
-	.string "You’re too rough!$"
-
-CeladonCity_Interior13_Text_CooltrainerJoyce::
-	.string "Bleaah!\n"
-	.string "I hope ERIKA wipes you out!$"
-
-CeladonCity_Interior13_Text_SwimmerMParkerIntro::
-	.string "Oh, welcome.\n"
-	.string "I was getting bored.$"
-
-CeladonCity_Interior13_Text_SwimmerMParkerDefeat::
-	.string "My makeup!$"
-
-CeladonCity_Interior13_Text_SwimmerMParker::
-	.string "GRASS-type POKéMON are tough\n"
-	.string "against the WATER type.\p"
-	.string "They also have an edge on ROCK-\n"
-	.string "and GROUND-type POKéMON.$"
-
 CeladonCity_Interior13_Text_TwinsJoAndZoeIntro::
 	.string "We’re going to protect ERIKA!$"
 

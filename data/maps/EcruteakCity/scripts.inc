@@ -83,42 +83,6 @@ EcruteakCity_EventScript_PokeManiac_1::
 	msgbox EcruteakCity_Text_PokeManiac_3, MSGBOX_NPC
 	end
 
-EcruteakCity_EventScript_Trigger1::
-	call_if_set 0x11B4, EcruteakCity_EventScript_Trigger1_1
-	checkitem ITEM_POKEBLOCK_CASE
-	call_if_eq VAR_RESULT, 1, EcruteakCity_EventScript_Trigger1_2
-	clearflag 0x11B5
-	release
-	end
-
-EcruteakCity_EventScript_Trigger1_1::
-	clearflag 0x11B5
-	release
-	end
-
-EcruteakCity_EventScript_Trigger1_2::
-	setflag 0x11B5
-	release
-	end
-
-EcruteakCity_EventScript_Trigger2::
-	call_if_set 0x11B4, EcruteakCity_EventScript_Trigger2_1
-	checkitem ITEM_POKEBLOCK_CASE
-	call_if_eq VAR_RESULT, 1, EcruteakCity_EventScript_Trigger2_2
-	setflag 0x11B6
-	release
-	end
-
-EcruteakCity_EventScript_Trigger2_1::
-	setflag 0x11B6
-	release
-	end
-
-EcruteakCity_EventScript_Trigger2_2::
-	clearflag 0x11B6
-	release
-	end
-
 EcruteakCity_EventScript_Sign1::
 	msgbox EcruteakCity_Text_Sign1, MSGBOX_AUTOCLOSE
 	end

@@ -47,20 +47,13 @@ IndigoPlateau_Interior3_EventScript_Bruno::
 	msgbox IndigoPlateau_Interior3_Text_Bruno_1, MSGBOX_NPC
 	setflag FLAG_TEMP_3
 	setflag FLAG_TEMP_5
-	goto_if_set 0x115B, IndigoPlateau_Interior3_EventScript_Bruno_2
-	goto_if_unset 0x115B, IndigoPlateau_Interior3_EventScript_Bruno_3
+	@ ShinyGold: the stronger rematch behind flag 0x115B is removed; nothing ever set that flag
+	goto IndigoPlateau_Interior3_EventScript_Bruno_3
 	end
 
 IndigoPlateau_Interior3_EventScript_Bruno_1::
 	msgbox IndigoPlateau_Interior3_Text_Bruno_2, MSGBOX_NPC
 	end
-
-IndigoPlateau_Interior3_EventScript_Bruno_2::
-	trainerbattle_earlyrival TRAINER_LEADER_BLAINE_2, 0, IndigoPlateau_Interior3_Text_BrunoDefeat, IndigoPlateau_Interior3_Text_BrunoVictory
-	setflag 0x4BA
-	call PokemonLeague_EventScript_OpenDoor
-	msgbox IndigoPlateau_Interior3_Text_Bruno_2, MSGBOX_NPC
-	return
 
 IndigoPlateau_Interior3_EventScript_Bruno_3::
 	trainerbattle_earlyrival TRAINER_ELITETRAINER_BRUNO, 0, IndigoPlateau_Interior3_Text_BrunoDefeat, IndigoPlateau_Interior3_Text_BrunoVictory

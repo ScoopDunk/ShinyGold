@@ -14,15 +14,6 @@ NewBarkTown_Interior1_Text_Mom_2::
 	.string "On a long journey, money’s important.\p"
 	.string "That’s why I’ll give you this!$"
 
-NewBarkTown_Interior1_Text_Mom_3::
-	.string "MOM: {PLAYER}!\n"
-	.string "You should take a quick rest.$"
-
-NewBarkTown_Interior1_Text_Mom_4::
-	.string "MOM: Oh, good! You and your\n"
-	.string "POKéMON are looking great.\l"
-	.string "Take care now!$"
-
 NewBarkTown_Interior1_Text_Mom_5::
 	.string "So, what was PROF.ELM’s errand?\p"
 	.string "...\p"
@@ -91,18 +82,3 @@ NewBarkTown_Interior1_Text_Trigger1_5::
 	.string "It’ll make a strong beep when you\l"
 	.string "get a message.\p"
 	.string "Aren’t these little artifacts useful?$"
-
-NewBarkTown_Interior1_Text_Sign_1::
-	.string "Oops, wrong side…$"
-
-NewBarkTown_Interior1_Text_Sign_2::
-	.string "There’s a movie on TV.\n"
-	.string "Four boys are walking on railroad\l"
-	.string "tracks.\p"
-	.string "…I better go, too.$"
-
-NewBarkTown_Interior1_Text_Sign_3::
-	.string "There’s a movie on TV.\n"
-	.string "A girl with her hair in pigtails is\l"
-	.string "walking up a brick road.\p"
-	.string "…I better go, too.$"

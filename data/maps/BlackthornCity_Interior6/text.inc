@@ -9,7 +9,3 @@ BlackthornCity_Interior6_Text_Camper::
 	.string "fully restores a fainted POKéMON.\p"
 	.string "Beware--it won’t restore PP, the\n"
 	.string "POWER POINTS needed for moves.$"
-
-BlackthornCity_Interior6_Text_Hiker::
-	.string "Okay, preparations are complete\n"
-	.string "for me to explore the RUINS.$"

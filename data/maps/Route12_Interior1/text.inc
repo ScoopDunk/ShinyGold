@@ -25,8 +25,3 @@ Route12_Interior1_Text_Sign_1::
 	.string "It’s a blank chart of some sort.\p"
 	.string "It has spaces for writing in\n"
 	.string "records of some kind.$"
-
-Route12_Interior1_Text_Sign_2::
-	.string "The most gigantic MAGIKARP\n"
-	.string "I have ever witnessed…\p"
-	.string "{STR_VAR_3} inches!$"

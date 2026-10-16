@@ -4,16 +4,11 @@ PalletTown_Interior1_MapScripts::
 
 PalletTown_Interior1_OnTransition::
 	call_if_lt 0x4058, 2, PalletTown_Interior1_EventScript_OnTransition_1
-	call_if_ge 0x4058, 2, PalletTown_Interior1_EventScript_OnTransition_2
 	end
 
 PalletTown_Interior1_EventScript_OnTransition_1::
 	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_RIGHT
 	setobjectxyperm 1, 5, 4
-	return
-
-PalletTown_Interior1_EventScript_OnTransition_2::
-	setvar VAR_TEMP_1, 1
 	return
 
 PalletTown_Interior1_EventScript_Daisy::

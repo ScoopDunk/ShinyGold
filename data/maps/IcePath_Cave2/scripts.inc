@@ -36,7 +36,3 @@ IcePath_Cave2_EventScript_Trigger1_3::
 IcePath_Cave2_EventScript_Trigger1_4::
 	release
 	end
-
-IcePath_Cave2_EventScript_Trigger17::
-	@ ShinyGold: overlapping data duplicated from 0x0878BB90
-	gotostd MSGBOX_NPC

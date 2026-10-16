@@ -12,10 +12,6 @@ FuchsiaCity_Interior11_EventScript_WorkerF_1::
 	msgbox FuchsiaCity_Interior11_Text_WorkerF_2, MSGBOX_NPC
 	end
 
-FuchsiaCity_Interior11_EventScript_Sign1::
-	msgbox FuchsiaCity_Interior11_Text_Sign1, MSGBOX_SIGN
-	end
-
 FuchsiaCity_Interior11_EventScript_Sign2::
 	msgbox FuchsiaCity_Interior11_Text_Sign2, MSGBOX_SIGN
 	end

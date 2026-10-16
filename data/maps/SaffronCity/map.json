@@ -87,20 +87,6 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-      "x": 4,
-      "y": 1,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "SaffronCity_EventScript_FatMan",
-      "flag": "0x1014"
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_WORKER_F",
       "x": 32,
       "y": 18,
@@ -111,7 +97,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_WorkerF",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 7
     },
     {
       "type": "object",
@@ -125,7 +112,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_BlackBelt",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 8
     },
     {
       "type": "object",
@@ -139,7 +127,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_LaprasDoll",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 9
     },
     {
       "type": "object",
@@ -153,7 +142,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_LaprasDoll",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 10
     },
     {
       "type": "object",
@@ -167,7 +157,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_FatMan",
-      "flag": "0"
+      "flag": "0",
+      "explicit_local_id": 11
     }
   ],
   "warp_events": [
