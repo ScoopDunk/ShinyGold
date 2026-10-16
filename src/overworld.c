@@ -1709,6 +1709,7 @@ void CB2_ContinueSavedGame(void)
     {
         ClearContinueGameWarpStatus();
         SetWarpDestinationToContinueGameWarp();
+        SetRoamMonsWarpMode(ROAMERS_WARP_NONE); // Pure Gold: continuing only jumps the roaming beasts (see Overworld_ResetStateOnContinue)
         WarpIntoMap();
         SetMainCallback2(CB2_LoadMap);
     }
@@ -2340,6 +2341,7 @@ void CB2_EnterFieldFromQuestLog(void)
     {
         ClearContinueGameWarpStatus();
         SetWarpDestinationToContinueGameWarp();
+        SetRoamMonsWarpMode(ROAMERS_WARP_NONE); // Pure Gold: continuing only jumps the roaming beasts (see Overworld_ResetStateOnContinue)
         WarpIntoMap();
         SetMainCallback2(CB2_LoadMap);
     }
