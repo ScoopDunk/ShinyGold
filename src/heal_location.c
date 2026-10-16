@@ -97,11 +97,9 @@ void SetWhiteoutRespawnWarpAndHealerNpc(struct WarpData * warp)
             warp->x = 13;
             warp->y = 12;
         }
-        else if (sWhiteoutRespawnHealCenterMapIdxs[healLocationIdx - 1][0] == MAP_GROUP(MAP_ONE_ISLAND_POKEMON_CENTER_1F) && sWhiteoutRespawnHealCenterMapIdxs[healLocationIdx - 1][1] == MAP_NUM(MAP_ONE_ISLAND_POKEMON_CENTER_1F))
-        {
-            warp->x = 5;
-            warp->y = 4;
-        }
+        // ShinyGold fix: FireRed's One Island Pokemon Center case (5,4) is gone. That map slot is the hack's
+        // Cherrygrove Pokemon Center (also New Bark Town's respawn point), whose nurse stands at (28,2), so a
+        // white-out there left the player in the black outside the room. The general case below handles it.
         else if (sWhiteoutRespawnHealCenterMapIdxs[healLocationIdx - 1][0] == MAP_GROUP(MAP_TRAINER_TOWER_LOBBY) && sWhiteoutRespawnHealCenterMapIdxs[healLocationIdx - 1][1] == MAP_NUM(MAP_TRAINER_TOWER_LOBBY))
         {
             warp->x = 4;
