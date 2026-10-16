@@ -54,19 +54,14 @@ Unused_NavelRock_BasePath_B11F_Text_Lance_1::
 	.string "You’re the hero!\n"
 	.string "Let me thank you on behalf of\l"
 	.string "all the POKéMON.\p"
-	.string "Oh, yes. You should take this\n"
-	.string "rare POKéMON.\p"
-	.string "I found it while I was training\n"
-	.string "when I was a bit younger.$"
-
-Unused_NavelRock_BasePath_B11F_Text_Lance_2::
-	.string "{PLAYER} received CLAMPERL!$"
+	.string "Oh, yes. You should take this.\p"
+	.string "I found it here, but I don’t have\n"
+	.string "any need for it.$"
 
 Unused_NavelRock_BasePath_B11F_Text_Lance_3::
-	.string "It knows a very interesting move\n"
-	.string "called WHIRLPOOL\p"
-	.string "You can use WHIRLPOOL to\n"
-	.string "get across wild water.\p"
+	.string "That’s WHIRLPOOL.\n"
+	.string "Teach it to a POKéMON to get\l"
+	.string "across wild water.\p"
 	.string "But keep this in mind.\p"
 	.string "You can use that out of battle only\n"
 	.string "with the BADGE from MAHOGANY GYM.$"

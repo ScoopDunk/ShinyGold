@@ -16,6 +16,7 @@
 #include "item.h"
 #include "item_menu.h"
 #include "item_use.h"
+#include "gold_whirlpool.h"
 #include "itemfinder.h"
 #include "mail.h"
 #include "event_object_lock.h"
@@ -203,7 +204,7 @@ static void Task_ItemUse_CloseMessageBoxAndReturnToField(u8 taskId)
 
 u8 CheckIfItemIsTMHMOrEvolutionStone(u16 itemId)
 {
-    if (ItemId_GetPocket(itemId) == POCKET_TM_CASE)
+    if (ItemId_GetPocket(itemId) == POCKET_TM_CASE || IsWhirlpoolHM(itemId)) // Gold: HM WHIRLPOOL works like a TM/HM
         return 1;
     else if (ItemId_GetFieldFunc(itemId) == FieldUseFunc_EvoItem)
         return 2;
@@ -434,6 +435,20 @@ void FieldUseFunc_EvoItem(u8 taskId)
 {
     gItemUseCB = ItemUseCB_EvolutionStone;
     DoSetUpItemUseCallback(taskId);
+}
+
+// Gold: HM WHIRLPOOL (a key item) teaches WHIRLPOOL like an HM. Only from the bag, not as a registered item.
+void FieldUseFunc_HmWhirlpool(u8 taskId)
+{
+    if (gTasks[taskId].data[3] == 0)
+    {
+        gItemUseCB = ItemUseCB_TMHM;
+        SetUpItemUseCallback(taskId);
+    }
+    else
+    {
+        FieldUseFunc_OakStopsYou(taskId);
+    }
 }
 
 void FieldUseFunc_SacredAsh(u8 taskId)

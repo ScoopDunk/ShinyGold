@@ -121,8 +121,7 @@ Unused_NavelRock_BasePath_B11F_EventScript_Lance::
 	call_if_unset 0x1106, Unused_NavelRock_BasePath_B11F_EventScript_Lance_1
 	call_if_unset 0x1107, Unused_NavelRock_BasePath_B11F_EventScript_Lance_1
 	msgbox Unused_NavelRock_BasePath_B11F_Text_Lance_1, MSGBOX_NPC
-	playfanfare MUS_SLOTS_WIN
-	msgbox Unused_NavelRock_BasePath_B11F_Text_Lance_2, MSGBOX_NPC
+	giveitem ITEM_DEVON_GOODS @ Gold: "HM WHIRLPOOL" (HM06), see include/gold_whirlpool.h
 	msgbox Unused_NavelRock_BasePath_B11F_Text_Lance_3, MSGBOX_NPC
 	applymovement 17, Unused_NavelRock_BasePath_B11F_Movement_Lance_1
 	msgbox Unused_NavelRock_BasePath_B11F_Text_Lance_4, MSGBOX_AUTOCLOSE
@@ -131,14 +130,8 @@ Unused_NavelRock_BasePath_B11F_EventScript_Lance::
 	setflag 0x1102
 	setflag 0x10EC
 	clearflag 0x10DB
-	.byte 0x79 @ givemon
-	.2byte SPECIES_CLAMPERL
-	.byte 25
-	.2byte ITEM_NONE
-	.4byte 0xFFFF026C
-	.4byte 0xFFFFFFFF
-	.byte 255
-	.byte 0xFF @ invalid opcode (script stops)
+	release
+	end
 
 Unused_NavelRock_BasePath_B11F_EventScript_Lance_1::
 	setflag 0x1104

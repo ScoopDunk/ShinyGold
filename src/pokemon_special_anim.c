@@ -1,4 +1,5 @@
 #include "global.h"
+#include "gold_whirlpool.h"
 #include "gflib.h"
 #include "data.h"
 #include "party_menu.h"
@@ -617,7 +618,7 @@ static u16 GetAnimTypeByItemId(u16 itemId)
             return sItemAnimMap[i].animType;
     }
 
-    if (itemId >= ITEM_TM01 && itemId <= ITEM_HM08)
+    if ((itemId >= ITEM_TM01 && itemId <= ITEM_HM08) || IsWhirlpoolHM(itemId)) // Gold: HM WHIRLPOOL
     {
         return PSA_ITEM_ANIM_TYPE_TMHM;
     }
