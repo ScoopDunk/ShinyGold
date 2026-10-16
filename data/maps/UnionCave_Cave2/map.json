@@ -46,20 +46,6 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_POKE_MANIAC",
-      "x": 21,
-      "y": 23,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "4",
-      "script": "UnionCave_Cave2_EventScript_PokemaniacSouda",
-      "flag": "0"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_POKE_MANIAC",
       "x": 5,
       "y": 44,
       "elevation": 0,

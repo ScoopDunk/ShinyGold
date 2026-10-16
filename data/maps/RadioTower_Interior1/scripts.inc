@@ -200,52 +200,55 @@ RadioTower_Interior1_EventScript_Gentleman_20::
 	releaseall
 	end
 
+@ G/S RadioTower1FRadioCardWomanScript: five yes/no questions (answers yes, yes, no, yes, no)
 RadioTower_Interior1_EventScript_WorkerF::
-	call_if_set 0x10C0, RadioTower_Interior1_EventScript_WorkerF_1
+	lock
+	faceplayer
+	goto_if_set 0x10C0, RadioTower_Interior1_EventScript_WorkerF_TuneIn
 	msgbox RadioTower_Interior1_Text_WorkerF_1, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 1, RadioTower_Interior1_EventScript_WorkerF_2
-	msgbox RadioTower_Interior1_Text_WorkerF_2, MSGBOX_NPC
-	end
-
-RadioTower_Interior1_EventScript_WorkerF_1::
-	msgbox RadioTower_Interior1_Text_WorkerF_3, MSGBOX_NPC
-	end
-
-RadioTower_Interior1_EventScript_WorkerF_2::
+	goto_if_eq VAR_RESULT, NO, RadioTower_Interior1_EventScript_WorkerF_NoQuiz
 	msgbox RadioTower_Interior1_Text_WorkerF_4, MSGBOX_YESNO
-	call_if_lt VAR_RESULT, 1, RadioTower_Interior1_EventScript_WorkerF_3
-	msgbox RadioTower_Interior1_Text_WorkerF_5, MSGBOX_NPC
-	end
-
-RadioTower_Interior1_EventScript_WorkerF_3::
+	goto_if_eq VAR_RESULT, NO, RadioTower_Interior1_EventScript_WorkerF_Wrong
+	playse SE_PIN
+	waitse
 	msgbox RadioTower_Interior1_Text_WorkerF_6, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 1, RadioTower_Interior1_EventScript_WorkerF_4
-	msgbox RadioTower_Interior1_Text_WorkerF_5, MSGBOX_NPC
-	end
-
-RadioTower_Interior1_EventScript_WorkerF_4::
+	goto_if_eq VAR_RESULT, NO, RadioTower_Interior1_EventScript_WorkerF_Wrong
+	playse SE_PIN
+	waitse
 	msgbox RadioTower_Interior1_Text_WorkerF_7, MSGBOX_YESNO
-	call_if_lt VAR_RESULT, 1, RadioTower_Interior1_EventScript_WorkerF_5
-	msgbox RadioTower_Interior1_Text_WorkerF_5, MSGBOX_NPC
-	end
-
-RadioTower_Interior1_EventScript_WorkerF_5::
+	goto_if_eq VAR_RESULT, YES, RadioTower_Interior1_EventScript_WorkerF_Wrong
+	playse SE_PIN
+	waitse
 	msgbox RadioTower_Interior1_Text_WorkerF_8, MSGBOX_YESNO
-	call_if_lt VAR_RESULT, 1, RadioTower_Interior1_EventScript_WorkerF_6
-	msgbox RadioTower_Interior1_Text_WorkerF_5, MSGBOX_NPC
-	end
-
-RadioTower_Interior1_EventScript_WorkerF_6::
+	goto_if_eq VAR_RESULT, NO, RadioTower_Interior1_EventScript_WorkerF_Wrong
+	playse SE_PIN
+	waitse
 	msgbox RadioTower_Interior1_Text_WorkerF_9, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 1, RadioTower_Interior1_EventScript_WorkerF_7
-	msgbox RadioTower_Interior1_Text_WorkerF_5, MSGBOX_NPC
+	goto_if_eq VAR_RESULT, YES, RadioTower_Interior1_EventScript_WorkerF_Wrong
+	playse SE_PIN
+	waitse
+	msgbox RadioTower_Interior1_Text_WorkerF_10
+	giveitem ITEM_TEACHY_TV
+	setflag 0x10C0
+	msgbox RadioTower_Interior1_Text_WorkerF_11
+	release
 	end
 
-RadioTower_Interior1_EventScript_WorkerF_7::
-	msgbox RadioTower_Interior1_Text_WorkerF_10, MSGBOX_NPC
-	giveitem ITEM_TEACHY_TV
-	msgbox RadioTower_Interior1_Text_WorkerF_11, MSGBOX_NPC
-	setflag 0x10C0
+RadioTower_Interior1_EventScript_WorkerF_TuneIn::
+	msgbox RadioTower_Interior1_Text_WorkerF_3
+	release
+	end
+
+RadioTower_Interior1_EventScript_WorkerF_NoQuiz::
+	msgbox RadioTower_Interior1_Text_WorkerF_2
+	release
+	end
+
+RadioTower_Interior1_EventScript_WorkerF_Wrong::
+	playse SE_FAILURE
+	waitse
+	msgbox RadioTower_Interior1_Text_WorkerF_5
+	release
 	end
 
 RadioTower_Interior1_EventScript_Man::

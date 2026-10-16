@@ -120,8 +120,3 @@ Route41_Text_SwimmerFWendy::
 	.string "The clusters of STARYU light up\n"
 	.string "at the same time.\p"
 	.string "It’s so beautiful, it’s scary.$"
-
-Route41_Text_LaprasDoll::
-	.string "This looks live a very heavy\n"
-	.string "rock. But, there’s something fishy\l"
-	.string "about it...$"

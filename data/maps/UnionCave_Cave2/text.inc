@@ -1,17 +1,3 @@
-UnionCave_Cave2_Text_PokemaniacSoudaIntro::
-	.string "What are you doing here?\p"
-	.string "Ah, so you came here to steal\n"
-	.string "my precious rare POKéMON, don’t you?\p"
-	.string "Well, I’ll never let you have it!$"
-
-UnionCave_Cave2_Text_PokemaniacSoudaDefeat::
-	.string "So you didn’t want it?$"
-
-UnionCave_Cave2_Text_PokemaniacSouda::
-	.string "You wanted to know where I got\n"
-	.string "my LOTAD?\p"
-	.string "Sorry but it’s a professional’s secret.$"
-
 UnionCave_Cave2_Text_PokemaniacAndrewIntro::
 	.string "Who’s there?\p"
 	.string "Leave me and my POKéMON alone!$"

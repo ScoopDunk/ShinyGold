@@ -77,35 +77,36 @@ RadioTower_Interior1_Text_WorkerF_3::
 
 RadioTower_Interior1_Text_WorkerF_4::
 	.string "Question 1:\p"
-	.string "You need to pay for a BICYCLE?$"
+	.string "Can the TOWN MAP be displayed on a\n"
+	.string "POKéGEAR?$"
 
 RadioTower_Interior1_Text_WorkerF_5::
-	.string "Oh, dear. Sorry, but you got\n"
-	.string "it wrong.\l"
+	.string "Oh, dear. Sorry, but you\n"
+	.string "got it wrong.\p"
 	.string "Please try again!$"
 
 RadioTower_Interior1_Text_WorkerF_6::
 	.string "Correct!\n"
 	.string "Question 2:\p"
-	.string "Can you receive CHARMANDER as a\n"
-	.string "prize in GAME CORNER?$"
+	.string "Can NIDORINA be female only?$"
 
 RadioTower_Interior1_Text_WorkerF_7::
 	.string "Bull’s-eye!\n"
 	.string "Question 3:\p"
-	.string "Do you need the BADGE from AZALEA\n"
-	.string "TOWN in order to use FLASH?$"
+	.string "Does KURT, the POKé BALL craftsman,\n"
+	.string "use APRIKORN?$"
 
 RadioTower_Interior1_Text_WorkerF_8::
 	.string "So far so good!\n"
 	.string "Question 4:\p"
-	.string "What do we say to Pirates?$"
+	.string "MAGIKARP won’t learn any TM move?$"
 
 RadioTower_Interior1_Text_WorkerF_9::
 	.string "Wow! Right again!\n"
 	.string "Here’s the final question:\p"
-	.string "You CAN catch a MUDKIP in UNION\n"
-	.string "CAVE. Is this statement correct?$"
+	.string "PROF.OAK’S POKéMON TALK is a very\n"
+	.string "popular program.\p"
+	.string "Is MARIE the co-host of the show?$"
 
 RadioTower_Interior1_Text_WorkerF_10::
 	.string "Bingo! You got it!\n"
