@@ -23,7 +23,7 @@ The ROM keeps FireRed's game code (`BPRE`), title and save format, so it trades 
 
 | Area | Files | Notes |
 |---|---|---|
-| Maps | `data/maps/*`, `data/layouts/*`, `data/tilesets/*` | 378 maps in 43 groups on `gold` (534 on `master`). Names come from `tools/shinygold/map_names.json`: the map section name plus `_Interior<n>` / `_Cave<n>` / `_Area<n>` for sub-maps, `Unused_*` for unreachable leftovers (none left on `gold`). The hack reuses FireRed map slots, so some names don't match their old FireRed meaning |
+| Maps | `data/maps/*`, `data/layouts/*`, `data/tilesets/*` | 378 maps in 43 groups on `gold` (534 on `master`). Names come from `tools/shinygold/map_names.json`: the map section name plus `_Interior<n>` / `_Cave<n>` / `_Area<n>` for sub-maps, `Unused_*` for unreachable leftovers (none left on `gold`; the hack's overgrown New Bark copy in the `PalletTown` slot is an emptied stub, the real Pallet Town is `PalletTown_Area1`). The hack reuses FireRed map slots, so some names don't match their old FireRed meaning |
 | Vanilla map names | `include/constants/map_compat.h` | Old `MAP_`/`LAYOUT_`/`HEAL_LOCATION_` names used by engine code, aliased to the map in the same slot |
 | Event scripts | `data/maps/*/scripts.inc`, `text.inc`, `data/scripts/*`, `data/event_scripts.s` | Generated from the ROM and checked byte-for-byte. `@ ShinyGold:` comments mark oddities (scripts that run into data, duplicated overlapping blocks, dead entries) |
 | Save expansion | `src/save_block_ext.c`, `src/event_data.c`, `src/save.c` | JPAN-style: flags 0x900–0x1FFF and vars 0x4100–0x7FFF stored in the unused tails of the save sectors, same on-flash layout as the hack, so ShinyGold saves load |
@@ -186,6 +186,19 @@ trigger (tools and reports outside the tree). Everything below was in the origin
 - Gold branch only: the Ruins of Alph inner chamber table is Unown-only, as in G/S; Kurt's GS Ball check has its
   own step counter (var 0x45C1) instead of sharing the Apricorn ball one; Route 2 adds Ledyba, Pidgeotto and
   Noctowl (G/S has 15 species there for 12 slots, so Beedrill, Ariados and Ledian are left out).
+
+### Flag sweep and unused content
+A sweep of every event flag and var (checked/never set, shared between unrelated uses, temp flags kept across maps,
+ranges), then removal of everything the player can never reach. Origin: original hack.
+- Brent (Route 43) registered under Schoolboy Alan's phone id 16, replacing or impersonating Alan, and his rematches
+  never unlocked; now id 32, which his flags 0x1320/0x1350 belong to.
+- 40 headbutt "sign" events stacked on single tiles (Ecruteak, Violet, Routes 33/34) ran the headbutt script on the
+  last NPC talked to, which then vanished; removed.
+- Route 26 ran FireRed's Birth Island (Deoxys) map scripts on every visit; removed.
+- Unused content removed (`tools/shinygold/cleanup`): the overgrown New Bark copy emptied to a stub (id kept), objects/signs sealed in walls, triggers on impassable tiles or with no script, objects hidden for good, map scripts and
+  branches gated on values nothing sets (including the Elite Four 0x115B rematch nothing unlocked), every script/text
+  block nothing reaches any more, and tilesets/layouts no map uses. Trainer, item and species tables are untouched
+  (save and link compatibility).
 
 ### Hack bugs fixed during the port (all branches)
 - Save extension: link/trade saves skipped the extension (turning off after a trade lost it); the save-failed
