@@ -369,6 +369,10 @@ void StartLegendaryBattle(void)
     case SPECIES_LUGIA:
         CreateBattleStartTask(B_TRANSITION_BLUR, MUS_VS_LEGEND);
         break;
+    case SPECIES_CELEBI:
+        // Pure Gold: the ILEX FOREST shrine's CELEBI is an ordinary wild battle in Crystal (wild battle music)
+        CreateBattleStartTask(GetWildBattleTransition(), 0);
+        break;
     default:
         CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RS_VS_TRAINER);
         break;

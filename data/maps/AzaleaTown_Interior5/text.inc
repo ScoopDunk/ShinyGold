@@ -38,10 +38,6 @@ AzaleaTown_Interior5_Text_BaldingMan_4::
 	.string "was checking it.\p"
 	.string "There must be something to this!$"
 
-AzaleaTown_Interior5_Text_BaldingMan_5::
-	.string "Hmmm...\n"
-	.string "Hmmm...$"
-
 AzaleaTown_Interior5_Text_BaldingMan_6::
 	.string "KURT: Ah, {PLAYER}!\n"
 	.string "I’ve just finished your BALL.\l"
@@ -50,25 +46,6 @@ AzaleaTown_Interior5_Text_BaldingMan_6::
 AzaleaTown_Interior5_Text_BaldingMan_7::
 	.string "KURT: That turned out great.\n"
 	.string "Try catching POKéMON with it.$"
-
-AzaleaTown_Interior5_Text_BaldingMan_8::
-	.string "Hi, {PLAYER}!\p"
-	.string "You seem a little more excited today,\n"
-	.string "why is that?\p"
-	.string "...\p"
-	.string "Huh?\n"
-	.string "You say you got a strange POKéBALL\l"
-	.string "to show me?\p"
-	.string "All right...\p"
-	.string "...\p"
-	.string "Wait a minute...\n"
-	.string "Isn’t this...?$"
-
-AzaleaTown_Interior5_Text_BaldingMan_9::
-	.string "{PLAYER}, may I ask you if I can\n"
-	.string "keep this POKéBALL for a while?\p"
-	.string "I promise I’ll give it back to you\n"
-	.string "after I investigate it a little...$"
 
 AzaleaTown_Interior5_Text_BaldingMan_10::
 	.string "You have a WHITE APRICORN, I could\n"
@@ -124,3 +101,21 @@ AzaleaTown_Interior5_Text_LittleGirl_3::
 AzaleaTown_Interior5_Text_BaldingMan2::
 	.string "KURT: I’m working!\n"
 	.string "Don’t bother me!$"
+
+AzaleaTown_Interior5_Text_KurtWhatIsThat::
+	.string "Wh-what is that?\p"
+	.string "I’ve never seen one before.\p"
+	.string "It looks a lot like a POKé BALL, but\n"
+	.string "it appears to be something else.\p"
+	.string "Let me check it for you.$"
+
+AzaleaTown_Interior5_Text_KurtImCheckingItNow::
+	.string "I’m checking it now.$"
+
+AzaleaTown_Interior5_Text_KurtAhHaISee::
+	.string "Ah-ha! I see!\n"
+	.string "So...$"
+
+AzaleaTown_Interior5_Text_LittleGirlGSBall::
+	.string "Grandpa’s checking a BALL right now.\p"
+	.string "So I’m waiting till he’s done.$"

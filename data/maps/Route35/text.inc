@@ -197,11 +197,6 @@ Route35_Text_Sign4_13::
 	.string "I wish you would have told me...\p"
 	.string "I have a gift for your journey.$"
 
-Route35_Text_Sign4_14::
-	.string "I am waiting to see that mysterious\n"
-	.string "POKéBALL.\p"
-	.string "Please, hurry up, {PLAYER}!$"
-
 Route35_Text_Sign4_15::
 	.string "How is the EGG?\p"
 	.string "What?\n"
@@ -263,25 +258,6 @@ Route35_Text_Sign4_27::
 	.string "It’s still a mystery what kinds\n"
 	.string "of moves hatched POKéMON have.\p"
 	.string "We’re investigating that now.$"
-
-Route35_Text_Sign4_28::
-	.string "You sound quite excited...\p"
-	.string "Wow... You already have some BADGES\n"
-	.string "from the KANTO REGION?\p"
-	.string "Congratulations, {PLAYER}!\p"
-	.string "...\p"
-	.string "...What?\p"
-	.string "You found a strange POKéBALL?\p"
-	.string "Hmmm... That sounds like a mystery\n"
-	.string "to be solved...\p"
-	.string "...\p"
-	.string "This may be hard for you, but\n"
-	.string "could you come back to the lab?\p"
-	.string "I’ve heard the SS.AQUA II has\n"
-	.string "arrived at VERMILION CITY.\p"
-	.string "Please, I need to see that strange\n"
-	.string "POKéBALL!\p"
-	.string "I’ll be waiting!$"
 
 Route35_Text_Sign4_29::
 	.string "Hello. This is JOEY...\p"

@@ -1,5 +1,19 @@
 IlexForest_Interior1_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, IlexForest_Interior1_OnTransition
 	.byte 0
+
+@ Pure Gold: the GS Ball event, as in Crystal (pokecrystal IlexForest). KURT (object 29) and CELEBI (object 30) only
+@ appear in the shrine scene; the lass (object 28) is here while the forest is restless (EVENT_ILEX_FOREST_LASS).
+IlexForest_Interior1_OnTransition::
+	setflag FLAG_GOLD_HIDE_ILEX_KURT
+	setflag FLAG_GOLD_HIDE_ILEX_CELEBI
+	setflag FLAG_GOLD_HIDE_ILEX_LASS
+	goto_if_eq VAR_GOLD_GS_BALL, GS_BALL_RETURNED, IlexForest_Interior1_EventScript_ShowLass
+	end
+
+IlexForest_Interior1_EventScript_ShowLass::
+	clearflag FLAG_GOLD_HIDE_ILEX_LASS
+	end
 
 IlexForest_Interior1_EventScript_Fearow::
 	msgbox IlexForest_Interior1_Text_Fearow, MSGBOX_NPC
@@ -291,10 +305,6 @@ IlexForest_Interior1_EventScript_Lass::
 	msgbox IlexForest_Interior1_Text_Lass, MSGBOX_NPC
 	end
 
-IlexForest_Interior1_EventScript_Celebi::
-	release
-	end
-
 IlexForest_Interior1_EventScript_CrushGirl::
 	call_if_set 0x1244, IlexForest_Interior1_EventScript_CrushGirl_1
 	msgbox IlexForest_Interior1_Text_CrushGirl_1, MSGBOX_NPC
@@ -344,11 +354,6 @@ IlexForest_Interior1_EventScript_Trigger4_1::
 
 IlexForest_Interior1_EventScript_Trigger5::
 	setvar VAR_RESULT, 11
-	release
-	end
-
-IlexForest_Interior1_EventScript_Trigger6::
-	setflag 0x11B2
 	release
 	end
 
@@ -402,140 +407,131 @@ IlexForest_Interior1_EventScript_Trigger18::
 	release
 	end
 
-IlexForest_Interior1_EventScript_Trigger19::
-	call_if_unset 0x11B2, IlexForest_Interior1_EventScript_Trigger19_1
-	release
-	end
-
-IlexForest_Interior1_EventScript_Trigger19_1::
-	applymovement LOCALID_PLAYER, IlexForest_Interior1_Movement_Trigger19_1
-	delay 16
-	applymovement 50, IlexForest_Interior1_Movement_Trigger19_2
-	delay 16
-	applymovement 29, IlexForest_Interior1_Movement_Trigger19_3
-	delay 192
-	msgbox IlexForest_Interior1_Text_Trigger19, MSGBOX_NPC
-	applymovement 29, IlexForest_Interior1_Movement_Trigger19_4
-	delay 208
-	setflag 0x11B2
-	release
-	end
-
-IlexForest_Interior1_Movement_Trigger19_1::
-	walk_down
-	step_end
-
-IlexForest_Interior1_Movement_Trigger19_2::
-	set_invisible
-	walk_fast_left
-	walk_fast_left
-	step_end
-
-IlexForest_Interior1_Movement_Trigger19_3::
-	walk_up
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_up
-	walk_up
-	step_end
-
-IlexForest_Interior1_Movement_Trigger19_4::
-	walk_down
-	walk_down
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	set_invisible
-	walk_left
-	walk_left
-	walk_left
-	step_end
-
+@ Pure Gold: the ILEX FOREST shrine, as in Crystal (pokecrystal IlexForestShrineScript): with the GS BALL that KURT
+@ gave back, CELEBI appears (Lv 30); if it is caught, KURT comes to thank the player.
 IlexForest_Interior1_EventScript_Sign1::
-	call_if_set 0x11B3, IlexForest_Interior1_EventScript_Sign1_1
-	call_if_set 0x11B1, IlexForest_Interior1_EventScript_Sign1_2
-	msgbox IlexForest_Interior1_Text_Sign1_1, MSGBOX_AUTOCLOSE
-	end
-
-IlexForest_Interior1_EventScript_Sign1_1::
-	msgbox IlexForest_Interior1_Text_Sign1_1, MSGBOX_AUTOCLOSE
-	end
-
-IlexForest_Interior1_EventScript_Sign1_2::
-	msgbox IlexForest_Interior1_Text_Sign1_1, MSGBOX_NPC
+	lockall
+	goto_if_ne VAR_GOLD_GS_BALL, GS_BALL_RETURNED, IlexForest_Interior1_EventScript_Shrine
+	checkitem ITEM_RED_ORB
+	goto_if_eq VAR_RESULT, FALSE, IlexForest_Interior1_EventScript_Shrine
+	msgbox IlexForest_Interior1_Text_Sign1_1
 	msgbox IlexForest_Interior1_Text_Sign1_2, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 1, IlexForest_Interior1_EventScript_Sign1_3
-	release
+	goto_if_eq VAR_RESULT, NO, IlexForest_Interior1_EventScript_ShrineEnd
+	removeitem ITEM_RED_ORB
+	setvar VAR_GOLD_GS_BALL, GS_BALL_USED
+	removeobject 28
+	msgbox IlexForest_Interior1_Text_InsertGSBall
+	closemessage
+	delay 20
+	playse SE_PIN
+	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
+	waitmovement 0
+	fadeoutbgm 0
+	delay 30
+	getplayerxy VAR_0x8004, VAR_0x8005
+	setobjectxyperm 30, VAR_0x8004, 34
+	clearflag FLAG_GOLD_HIDE_ILEX_CELEBI
+	addobject 30
+	applymovement 30, IlexForest_Interior1_Movement_CelebiAppears
+	waitmovement 0
+	waitse
+	playmoncry SPECIES_CELEBI, CRY_MODE_ENCOUNTER
+	waitmoncry
+	delay 20
+	removeobject 30
+	setwildbattle SPECIES_CELEBI, 30
+	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	special StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, IlexForest_Interior1_EventScript_ShrineEnd
+	delay 20
+	clearflag FLAG_GOLD_HIDE_ILEX_KURT
+	addobject 29
+	getplayerxy VAR_0x8004, VAR_0x8005
+	goto_if_eq VAR_0x8004, 20, IlexForest_Interior1_EventScript_KurtComesToRightSide
+	applymovement 29, IlexForest_Interior1_Movement_KurtComes
+	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	waitmovement 0
+	msgbox IlexForest_Interior1_Text_KurtCaughtCelebi
+	closemessage
+	applymovement 29, IlexForest_Interior1_Movement_KurtLeaves
+	goto IlexForest_Interior1_EventScript_KurtHasLeft
+
+IlexForest_Interior1_EventScript_KurtComesToRightSide::
+	applymovement 29, IlexForest_Interior1_Movement_KurtComesToRightSide
+	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	waitmovement 0
+	msgbox IlexForest_Interior1_Text_KurtCaughtCelebi
+	closemessage
+	applymovement 29, IlexForest_Interior1_Movement_KurtLeavesFromRightSide
+IlexForest_Interior1_EventScript_KurtHasLeft::
+	waitmovement 0
+	removeobject 29
+	releaseall
 	end
 
-IlexForest_Interior1_EventScript_Sign1_3::
-	release
-	playbgm MUS_NONE, 51
-	setobjectxy 30, 24, 34
-	delay 16
-	setobjectxy 30, 31, 21
-	delay 16
-	setobjectxy 30, 24, 34
-	delay 32
-	setobjectxy 30, 31, 21
-	delay 32
-	setobjectxy 30, 24, 34
-	delay 48
-	setobjectxy 30, 31, 21
-	delay 80
-	setobjectxy 30, 17, 36
-	delay 16
-	setobjectxy 30, 31, 21
-	delay 16
-	setobjectxy 30, 17, 36
-	delay 32
-	setobjectxy 30, 31, 21
-	delay 32
-	setobjectxy 30, 17, 36
-	delay 48
-	setobjectxy 30, 31, 21
-	delay 80
-	setobjectxy 30, 18, 39
-	delay 16
-	setobjectxy 30, 31, 21
-	delay 16
-	setobjectxy 30, 18, 39
-	delay 32
-	setobjectxy 30, 31, 21
-	delay 32
-	setobjectxy 30, 18, 39
-	delay 96
-	waitse
-	playmoncry SPECIES_CELEBI, 0x2800
-	waitse
-	nop
-	delay 48
-	removeitem ITEM_RED_ORB
-	setwildbattle SPECIES_CELEBI, 30
-	nop
-	special StartLegendaryBattle
-	delay 128
-	setflag 0x11AD
-	clearflag 0x11AE
-	clearflag 0x11B2
-	setflag 0x11B3
-	clearflag 0x11AF
-	clearflag 0x11B0
-	warp MAP_ILEX_FOREST_INTERIOR1, 3, 0xFF02, 0xFFFF
-	.byte 0xFF @ invalid opcode (script stops)
+IlexForest_Interior1_EventScript_Shrine::
+	msgbox IlexForest_Interior1_Text_Sign1_1
+IlexForest_Interior1_EventScript_ShrineEnd::
+	releaseall
+	end
+
+IlexForest_Interior1_Movement_CelebiAppears::
+	walk_slow_down
+	walk_slow_down
+	walk_slow_down
+	walk_slow_down
+	step_end
+
+IlexForest_Interior1_Movement_KurtComes::
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+IlexForest_Interior1_Movement_KurtComesToRightSide::
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+IlexForest_Interior1_Movement_KurtLeaves::
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+IlexForest_Interior1_Movement_KurtLeavesFromRightSide::
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
 
 IlexForest_Interior1_EventScript_Sign2::
 	msgbox IlexForest_Interior1_Text_Sign2, MSGBOX_AUTOCLOSE

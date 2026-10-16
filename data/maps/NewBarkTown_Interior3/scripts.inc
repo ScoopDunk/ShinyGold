@@ -348,8 +348,6 @@ NewBarkTown_Interior3_EventScript_Scientist_1::
 	end
 
 NewBarkTown_Interior3_EventScript_Scientist2::
-	call_if_set 0x11AC, NewBarkTown_Interior3_EventScript_Scientist2_1
-	call_if_set 0x1195, NewBarkTown_Interior3_EventScript_Scientist2_2
 	call_if_set 0x1161, NewBarkTown_Interior3_EventScript_Scientist2_1
 	call_if_set 0x115F, NewBarkTown_Interior3_EventScript_Scientist2_3
 	call_if_set 0x1151, NewBarkTown_Interior3_EventScript_Scientist2_1
@@ -365,12 +363,6 @@ NewBarkTown_Interior3_EventScript_Scientist2::
 
 NewBarkTown_Interior3_EventScript_Scientist2_1::
 	msgbox NewBarkTown_Interior3_Text_Scientist2_1, MSGBOX_NPC
-	end
-
-NewBarkTown_Interior3_EventScript_Scientist2_2::
-	setflag 0x11AC
-	setflag 0x11AF
-	msgbox NewBarkTown_Interior3_Text_Scientist2_2, MSGBOX_NPC
 	end
 
 NewBarkTown_Interior3_EventScript_Scientist2_3::

@@ -21,3 +21,13 @@ Unused_G2_M70_Text_Gentleman::
 	.string "disadvantage.\p"
 	.string "I don’t think there is a single\n"
 	.string "POKéMON that is the toughest.$"
+
+GoldenrodCity_Interior19_Text_PleaseAcceptGSBall::
+	.string "{PLAYER}, isn’t it?\p"
+	.string "Congratulations!\p"
+	.string "As a special deal, a GS BALL has\n"
+	.string "been sent just for you!\p"
+	.string "Please accept it!$"
+
+GoldenrodCity_Interior19_Text_PleaseDoComeAgain::
+	.string "Please do come again!$"
