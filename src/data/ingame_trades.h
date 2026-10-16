@@ -35,35 +35,21 @@ static const struct InGameTrade sInGameTrades[] = {
     }, 
     [INGAME_TRADE_NIDORAN] = 
     {
-#if defined(FIRERED)
-        .nickname = _("MS. NIDO"),
-        .species = SPECIES_NIDORAN_F,
-        .ivs = {22, 18, 25, 19, 15, 22},
+        // ShinyGold gold: Chris's trade in the Pewter Pokémon Center as in G/S (pokegold npc_trades.asm: GLOOM for
+        // RAPIDASH "RUNNY", OT CHRIS, ID 15616, Burnt Berry -> ASPEAR BERRY). This slot (FireRed's MS. NIDO) was unused.
+        .nickname = _("RUNNY"),
+        .species = SPECIES_RAPIDASH,
+        .ivs = {16, 18, 12, 12, 12, 12},
         .abilityNum = 0,
-        .otId = 63184,
-        .conditions = {5, 5, 5, 5, 30},
-        .personality = 0x4c970b89,
-        .heldItem = ITEM_TINY_MUSHROOM,
-        .mailNum = 255,
-        .otName = _("SAIGE"),
-        .otGender = FEMALE,
-        .sheen = 10,
-        .requestedSpecies = SPECIES_NIDORAN_M
-#elif defined(LEAFGREEN)
-        .nickname = _("MR. NIDO"),
-        .species = SPECIES_NIDORAN_M,
-        .ivs = {19, 25, 18, 22, 22, 15},
-        .abilityNum = 0,
-        .otId = 63184,
+        .otId = 15616,
         .conditions = {30, 5, 5, 5, 5},
-        .personality = 0x4c970b9e,
-        .heldItem = ITEM_TINY_MUSHROOM,
+        .personality = 0x00002f40,
+        .heldItem = ITEM_ASPEAR_BERRY,
         .mailNum = 255,
-        .otName = _("SAIGE"),
-        .otGender = FEMALE,
+        .otName = _("CHRIS"),
+        .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_NIDORAN_F
-#endif
+        .requestedSpecies = SPECIES_GLOOM
     }, 
     [INGAME_TRADE_FARFETCHD] = 
     {

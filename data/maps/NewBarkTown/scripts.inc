@@ -265,11 +265,11 @@ NewBarkTown_EventScript_FrameScene_40::
 	return
 
 NewBarkTown_EventScript_RsBrendan::
-	applymovement 6, NewBarkTown_Movement_RsBrendan_1
+	applymovement 4, NewBarkTown_Movement_RsBrendan_1
 	delay 1
 	msgbox NewBarkTown_Text_RsBrendan_1, MSGBOX_AUTOCLOSE
 	msgbox NewBarkTown_Text_RsBrendan_2, MSGBOX_NPC
-	applymovement 6, NewBarkTown_Movement_RsBrendan_2
+	applymovement 4, NewBarkTown_Movement_RsBrendan_2
 	applymovement LOCALID_PLAYER, NewBarkTown_Movement_RsBrendan_3
 	end
 
@@ -305,38 +305,6 @@ NewBarkTown_EventScript_Lass_2::
 	msgbox NewBarkTown_Text_Lass_3, MSGBOX_NPC
 	release
 	end
-
-NewBarkTown_EventScript_Pikachu::
-	msgbox NewBarkTown_Text_Pikachu_1, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 1, NewBarkTown_EventScript_Pikachu_1
-	msgbox NewBarkTown_Text_Pikachu_2, MSGBOX_NPC
-	end
-
-NewBarkTown_EventScript_Pikachu_1::
-	getpartysize
-	call_if_lt VAR_RESULT, 6, NewBarkTown_EventScript_Pikachu_2
-	msgbox NewBarkTown_Text_Pikachu_3, MSGBOX_NPC
-	end
-
-NewBarkTown_EventScript_Pikachu_2::
-	setflag 0x1134
-	playfanfare SE_M_NIGHTMARE
-	msgbox NewBarkTown_Text_Pikachu_4, MSGBOX_NPC
-	applymovement 5, NewBarkTown_Movement_Pikachu
-	delay 16
-	.byte 0x79 @ givemon
-	.2byte SPECIES_PIKACHU
-	.byte 10
-	.2byte ITEM_NONE
-	.4byte 0xFFFFFF02
-	.4byte 0xFFFFFFFF
-	.byte 255
-	.byte 0xFF @ invalid opcode (script stops)
-
-NewBarkTown_Movement_Pikachu::
-	walk_fast_right
-	walk_fast_down
-	step_end
 
 NewBarkTown_EventScript_Trigger1::
 	goto_if_eq 0x4055, 3, NewBarkTown_EventScript_Trigger1_1

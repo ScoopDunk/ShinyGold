@@ -113,3 +113,18 @@ ViridianCity_Text_Sign3::
 ViridianCity_Text_Sign4::
 	.string "VIRIDIAN CITY \n"
 	.string "The Eternally Green Paradise$"
+
+ViridianCity_Text_FatMan_DreamEaterFisher::
+	.string "Yawn!\n"
+	.string "I must have dozed off in the sun.\p"
+	.string "…I had this dream about a DROWZEE\n"
+	.string "eating my dream. Weird, huh?\p"
+	.string "Huh?\n"
+	.string "What’s this?\p"
+	.string "Where did this TM come from?\p"
+	.string "This is spooky!\n"
+	.string "Here, you can have this TM.$"
+
+ViridianCity_Text_FatMan_GotDreamEater::
+	.string "TM43 contains DREAM EATER…\p"
+	.string "…Zzzzz…$"
