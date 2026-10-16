@@ -151,9 +151,9 @@ FuchsiaCity_Interior7_Text_Lass3::
 FuchsiaCity_Interior7_Text_Sign1_1::
 	.string "FUCHSIA CITY POKéMON GYM\n"
 	.string "LEADER: JANINE\p"
-	.string "WINNING TRAINERS: CARLOS$"
+	.string "WINNING TRAINERS:$"
 
 FuchsiaCity_Interior7_Text_Sign1_2::
 	.string "FUCHSIA CITY POKéMON GYM\n"
 	.string "LEADER: JANINE\p"
-	.string "WINNING TRAINERS: CARLOS {PLAYER}$"
+	.string "WINNING TRAINERS: {PLAYER}$"

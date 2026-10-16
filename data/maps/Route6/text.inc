@@ -45,4 +45,4 @@ Route6_Text_RsMay_5::
 
 Route6_Text_Sign::
 	.string "UNDERGROUND PATH\n"
-	.string "CERULEAN CITY - VERMILLION CITY$"
+	.string "CERULEAN CITY - VERMILION CITY$"

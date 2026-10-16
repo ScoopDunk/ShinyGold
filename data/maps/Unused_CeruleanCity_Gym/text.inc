@@ -101,31 +101,15 @@ Unused_CeruleanCity_Gym_Text_Sign1_1::
 	.string "LEADER: MISTY\p"
 	.string "WINNING TRAINERS:$"
 
-Unused_CeruleanCity_Gym_Text_Sign1_2::
-	.string "CERULEAN CITY POKéMON GYM\n"
-	.string "LEADER: MISTY\p"
-	.string "WINNING TRAINERS: {PLAYER} CARLOS$"
-
 Unused_CeruleanCity_Gym_Text_Sign1_3::
 	.string "CERULEAN CITY POKéMON GYM\n"
 	.string "LEADER: MISTY\p"
 	.string "WINNING TRAINERS: {PLAYER}$"
 
-Unused_CeruleanCity_Gym_Text_Sign1_4::
-	.string "CERULEAN CITY POKéMON GYM\n"
-	.string "LEADER: MISTY\p"
-	.string "WINNING TRAINERS: CARLOS$"
-
 Unused_CeruleanCity_Gym_Text_Sign1_5::
-	.string "I have gone out, I won’t return\n"
-	.string "for a time.\l"
-	.string "MISTY.$"
-
-Unused_CeruleanCity_Gym_Text_Sign1_6::
-	.string "CERULEAN CITY POKéMON GYM\n"
-	.string "LEADER: MISTY\p"
-	.string "WINNING TRAINERS: CARLOS {PLAYER}$"
+	.string "Sorry, I’ll be out for a while.\n"
+	.string "MISTY, GYM LEADER$"
 
 Unused_CeruleanCity_Gym_Text_Sign2::
-	.string "As the leader has gone out, we too.\n"
-	.string "The trainers.$"
+	.string "Since MISTY’s out, we’ll be away too.\n"
+	.string "GYM TRAINERS$"

@@ -1,32 +1,13 @@
 VermilionCity_Text_Woman2::
-	.string "VERMILLION PORT is KANTO’s seaside\n"
+	.string "VERMILION PORT is KANTO’s seaside\n"
 	.string "gateway.\p"
 	.string "Luxury liners from around the world\n"
 	.string "dock here.$"
 
 VermilionCity_Text_Man::
-	.string "There are eigth GYMS in KANTO.\p"
-	.string "That big building is VERMILLION’s\n"
+	.string "There are eight GYMS in KANTO.\p"
+	.string "That big building is VERMILION’s\n"
 	.string "POKéMON GYM.$"
-
-VermilionCity_Text_Woman1::
-	.string "Hi!\n"
-	.string "Do you want to play again?$"
-
-VermilionCity_Text_Gentleman_1::
-	.string "Why, if it isn’t {PLAYER}!\p"
-	.string "My goodness, I thought we lost\n"
-	.string "you for good!\p"
-	.string "I’m happy to see you top fit, son.\p"
-	.string "Oh! That’s right!\n"
-	.string "I almost forgot!\p"
-	.string "Since last time I couldn’t give this\n"
-	.string "to you, I want you to have it now.$"
-
-VermilionCity_Text_Gentleman_2::
-	.string "Well, we are gonna stay at\n"
-	.string "VERMILLION for a short while.\p"
-	.string "Then we’ll visit SAFFRON CITY.$"
 
 VermilionCity_Text_Snorlax_1::
 	.string "SNORLAX is snoring peacefully...$"
@@ -58,18 +39,18 @@ VermilionCity_Text_Sign2::
 	.string "All POKéMON Fans Welcome!$"
 
 VermilionCity_Text_Sign3::
-	.string "VERMILLION CITY POKéMON GYM\n"
+	.string "VERMILION CITY POKéMON GYM\n"
 	.string "LEADER: LT.SURGE\l"
 	.string "The Lightning American$"
 
 VermilionCity_Text_Sign4::
-	.string "VERMILLION PORT ENTRANCE$"
+	.string "VERMILION PORT ENTRANCE$"
 
 VermilionCity_Text_Sign5::
-	.string "DIGGLET’S CAVE$"
+	.string "DIGLETT’S CAVE$"
 
 VermilionCity_Text_Sign6::
-	.string "VERMILLION CITY\n"
+	.string "VERMILION CITY\n"
 	.string "The Port of Exquisite Sunsets$"
 
 VermilionCity_Text_Sign7::

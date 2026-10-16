@@ -1,108 +1,21 @@
 Route25_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route25_OnTransition
 	.byte 0
+
+@ Pure Gold/Silver: MISTY is on her date only after the TEAM ROCKET grunt fled the CERULEAN GYM
+@ (pokegold: EVENT_ROUTE_25_MISTY_BOYFRIEND is cleared by the CERULEAN GYM grunt scene)
+Route25_OnTransition::
+	call_if_unset 0x11BB, Route25_EventScript_HideMisty
+	end
+
+Route25_EventScript_HideMisty::
+	setflag 0x11BC
+	return
 
 Route25_EventScript_SchoolboyDudley::
 	trainerbattle_single TRAINER_SCHOOLBOY_DUDLEY, Route25_Text_SchoolboyDudleyIntro, Route25_Text_SchoolboyDudleyDefeat
 	msgbox Route25_Text_SchoolboyDudley, MSGBOX_AUTOCLOSE
 	end
-
-Route25_EventScript_CooltrainerM::
-	msgbox Route25_Text_CooltrainerM_1, MSGBOX_AUTOCLOSE
-	msgbox Route25_Text_CooltrainerM_2, MSGBOX_AUTOCLOSE
-	applymovement 14, Route25_Movement_CooltrainerM_1
-	delay 1
-	msgbox Route25_Text_CooltrainerM_3, MSGBOX_AUTOCLOSE
-	applymovement 2, Route25_Movement_CooltrainerM_2
-	delay 16
-	msgbox Route25_Text_CooltrainerM_4, MSGBOX_AUTOCLOSE
-	msgbox Route25_Text_CooltrainerM_5, MSGBOX_AUTOCLOSE
-	applymovement 2, Route25_Movement_CooltrainerM_1
-	delay 1
-	msgbox Route25_Text_CooltrainerM_6, MSGBOX_NPC
-	msgbox Route25_Text_CooltrainerM_7, MSGBOX_NPC
-	msgbox Route25_Text_CooltrainerM_8, MSGBOX_NPC
-	msgbox Route25_Text_CooltrainerM_9, MSGBOX_NPC
-	msgbox Route25_Text_CooltrainerM_10, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_COOL_COUPLE_DANTE_AND_RINA_2, 0, Route25_Text_CooltrainerMDefeat, Route25_Text_CooltrainerMVictory
-	setflag 0x11BD
-	msgbox Route25_Text_CooltrainerM_11, MSGBOX_NPC
-	applymovement 14, Route25_Movement_CooltrainerM_3
-	delay 16
-	msgbox Route25_Text_CooltrainerM_12, MSGBOX_AUTOCLOSE
-	msgbox Route25_Text_CooltrainerM_13, MSGBOX_AUTOCLOSE
-	call_if_eq VAR_FACING, 4, Route25_EventScript_CooltrainerM_1
-	applymovement 2, Route25_Movement_CooltrainerM_4
-	delay 64
-	msgbox Route25_Text_CooltrainerM_14, MSGBOX_AUTOCLOSE
-	applymovement 14, Route25_Movement_CooltrainerM_4
-	delay 112
-	applymovement 2, Route25_Movement_CooltrainerM_5
-	delay 1
-	applymovement 14, Route25_Movement_CooltrainerM_5
-	delay 128
-	end
-
-Route25_EventScript_CooltrainerM_1::
-	applymovement 2, Route25_Movement_CooltrainerM_6
-	delay 64
-	msgbox Route25_Text_CooltrainerM_14, MSGBOX_AUTOCLOSE
-	applymovement 14, Route25_Movement_CooltrainerM_6
-	delay 128
-	applymovement 2, Route25_Movement_CooltrainerM_7
-	delay 1
-	applymovement 14, Route25_Movement_CooltrainerM_7
-	delay 128
-	end
-
-Route25_Movement_CooltrainerM_1::
-	face_player
-	step_end
-
-Route25_Movement_CooltrainerM_2::
-	face_right
-	step_end
-
-Route25_Movement_CooltrainerM_3::
-	face_left
-	step_end
-
-Route25_Movement_CooltrainerM_4::
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	step_end
-
-Route25_Movement_CooltrainerM_5::
-	walk_left
-	walk_left
-	walk_left
-	set_invisible
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	step_end
-
-Route25_Movement_CooltrainerM_6::
-	walk_up
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	step_end
-
-Route25_Movement_CooltrainerM_7::
-	walk_left
-	walk_left
-	walk_left
-	set_invisible
-	walk_fast_up
-	walk_fast_up
-	step_end
 
 Route25_EventScript_LassEllen::
 	trainerbattle_single TRAINER_LASS_ELLEN, Route25_Text_LassEllenIntro, Route25_Text_LassEllenDefeat
@@ -160,32 +73,22 @@ Route25_EventScript_ItemPotion::
 	finditem ITEM_POTION
 	end
 
-Route25_EventScript_Trigger1::
-	call_if_set 0x11BB, Route25_EventScript_Trigger1_1
-	setflag 0x11BC
-	release
-	end
-
-Route25_EventScript_Trigger1_1::
-	release
-	end
-
 Route25_EventScript_Trigger2::
 	call_if_set 0x11C3, Route25_EventScript_Trigger2_1
 	call_if_set 0x11BC, Route25_EventScript_Trigger2_1
-	applymovement 12, Route25_Movement_Trigger2_1
+	applymovement 11, Route25_Movement_Trigger2_1
 	delay 96
-	applymovement 13, Route25_Movement_Trigger2_2
+	applymovement 12, Route25_Movement_Trigger2_2
 	delay 64
-	applymovement 12, Route25_Movement_Trigger2_3
+	applymovement 11, Route25_Movement_Trigger2_3
 	delay 1
-	applymovement 13, Route25_Movement_Trigger2_4
+	applymovement 12, Route25_Movement_Trigger2_4
 	delay 160
 	playbgm MUS_ENCOUNTER_GIRL, 51
-	applymovement 12, Route25_Movement_Trigger2_5
+	applymovement 11, Route25_Movement_Trigger2_5
 	delay 112
 	msgbox Route25_Text_Trigger2, MSGBOX_NPC
-	applymovement 12, Route25_Movement_Trigger2_6
+	applymovement 11, Route25_Movement_Trigger2_6
 	delay 224
 	playbgm MUS_ROUTE24, 51
 	setflag 0x11BC
@@ -265,19 +168,19 @@ Route25_Movement_Trigger2_6::
 Route25_EventScript_Trigger3::
 	call_if_set 0x11C3, Route25_EventScript_Trigger2_1
 	call_if_set 0x11BC, Route25_EventScript_Trigger2_1
-	applymovement 12, Route25_Movement_Trigger2_1
+	applymovement 11, Route25_Movement_Trigger2_1
 	delay 96
-	applymovement 13, Route25_Movement_Trigger2_2
+	applymovement 12, Route25_Movement_Trigger2_2
 	delay 64
-	applymovement 12, Route25_Movement_Trigger2_3
+	applymovement 11, Route25_Movement_Trigger2_3
 	delay 1
-	applymovement 13, Route25_Movement_Trigger2_4
+	applymovement 12, Route25_Movement_Trigger2_4
 	delay 160
 	playbgm MUS_ENCOUNTER_GIRL, 51
-	applymovement 12, Route25_Movement_Trigger3_1
+	applymovement 11, Route25_Movement_Trigger3_1
 	delay 112
 	msgbox Route25_Text_Trigger2, MSGBOX_NPC
-	applymovement 12, Route25_Movement_Trigger3_2
+	applymovement 11, Route25_Movement_Trigger3_2
 	delay 224
 	playbgm MUS_ROUTE24, 51
 	setflag 0x11BC

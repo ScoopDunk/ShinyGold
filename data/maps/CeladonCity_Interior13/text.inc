@@ -111,10 +111,9 @@ CeladonCity_Interior13_Text_TwinsJoAndZoe2::
 CeladonCity_Interior13_Text_Sign1_1::
 	.string "CELADON CITY POKéMON GYM\n"
 	.string "LEADER: ERIKA\p"
-	.string "WINNING TRAINERS: CARLOS ARD$"
+	.string "WINNING TRAINERS:$"
 
 CeladonCity_Interior13_Text_Sign1_2::
 	.string "CELADON CITY POKéMON GYM\n"
 	.string "LEADER: ERIKA\p"
-	.string "WINNING TRAINERS: CARLOS ARD\n"
-	.string "{PLAYER}$"
+	.string "WINNING TRAINERS: {PLAYER}$"

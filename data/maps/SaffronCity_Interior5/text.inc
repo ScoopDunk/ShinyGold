@@ -139,9 +139,9 @@ SaffronCity_Interior5_Text_GymGuy_2::
 SaffronCity_Interior5_Text_Sign1_1::
 	.string "SAFFRON CITY POKéMON GYM\n"
 	.string "LEADER: SABRINA\p"
-	.string "WINNING TRAINERS: CARLOS$"
+	.string "WINNING TRAINERS:$"
 
 SaffronCity_Interior5_Text_Sign1_2::
 	.string "SAFFRON CITY POKéMON GYM\n"
 	.string "LEADER: SABRINA\p"
-	.string "WINNING TRAINERS: CARLOS {PLAYER}$"
+	.string "WINNING TRAINERS: {PLAYER}$"

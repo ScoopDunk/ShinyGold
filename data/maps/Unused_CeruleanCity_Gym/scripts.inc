@@ -91,6 +91,7 @@ Unused_CeruleanCity_Gym_EventScript_Trigger1_2::
 	clearflag 0x11B9
 	setflag 0x11BB
 	clearflag 0x11BC
+	setvar VAR_GOLD_POWER_PLANT_SCENE, 2
 	release
 	end
 
@@ -162,42 +163,28 @@ Unused_CeruleanCity_Gym_Movement_Trigger3::
 	walk_up
 	step_end
 
+@ Pure Gold/Silver: GYM statue as in G/S (WINNING TRAINERS: the player once the CASCADEBADGE is won);
+@ while MISTY and her trainers are out, notes are left instead (pokegold CeruleanGym.asm)
 Unused_CeruleanCity_Gym_EventScript_Sign1::
-	call_if_set 0x11C4, Unused_CeruleanCity_Gym_EventScript_Sign1_1
-	call_if_set 0x1180, Unused_CeruleanCity_Gym_EventScript_Sign1_2
-	call_if_set 0x1251, Unused_CeruleanCity_Gym_EventScript_Sign1_3
-	call_if_set 0x11C2, Unused_CeruleanCity_Gym_EventScript_Sign1_4
+	goto_if_set 0x11C2, Unused_CeruleanCity_Gym_EventScript_Sign1_4
+	goto Unused_CeruleanCity_Gym_EventScript_Statue
+
+Unused_CeruleanCity_Gym_EventScript_Statue::
+	goto_if_set 0x1180, Unused_CeruleanCity_Gym_EventScript_Sign1_2
 	msgbox Unused_CeruleanCity_Gym_Text_Sign1_1, MSGBOX_AUTOCLOSE
 	end
 
-Unused_CeruleanCity_Gym_EventScript_Sign1_1::
-	msgbox Unused_CeruleanCity_Gym_Text_Sign1_2, MSGBOX_AUTOCLOSE
-	end
-
 Unused_CeruleanCity_Gym_EventScript_Sign1_2::
-	call_if_set 0x1251, Unused_CeruleanCity_Gym_EventScript_Sign1_5
 	msgbox Unused_CeruleanCity_Gym_Text_Sign1_3, MSGBOX_AUTOCLOSE
-	end
-
-Unused_CeruleanCity_Gym_EventScript_Sign1_3::
-	msgbox Unused_CeruleanCity_Gym_Text_Sign1_4, MSGBOX_AUTOCLOSE
 	end
 
 Unused_CeruleanCity_Gym_EventScript_Sign1_4::
 	msgbox Unused_CeruleanCity_Gym_Text_Sign1_5, MSGBOX_AUTOCLOSE
 	end
 
-Unused_CeruleanCity_Gym_EventScript_Sign1_5::
-	msgbox Unused_CeruleanCity_Gym_Text_Sign1_6, MSGBOX_AUTOCLOSE
-	end
-
 Unused_CeruleanCity_Gym_EventScript_Sign2::
-	call_if_set 0x11C4, Unused_CeruleanCity_Gym_EventScript_Sign1_1
-	call_if_set 0x1180, Unused_CeruleanCity_Gym_EventScript_Sign1_2
-	call_if_set 0x1251, Unused_CeruleanCity_Gym_EventScript_Sign1_3
-	call_if_set 0x11C2, Unused_CeruleanCity_Gym_EventScript_Sign2_1
-	msgbox Unused_CeruleanCity_Gym_Text_Sign1_1, MSGBOX_AUTOCLOSE
-	end
+	goto_if_set 0x11C2, Unused_CeruleanCity_Gym_EventScript_Sign2_1
+	goto Unused_CeruleanCity_Gym_EventScript_Statue
 
 Unused_CeruleanCity_Gym_EventScript_Sign2_1::
 	msgbox Unused_CeruleanCity_Gym_Text_Sign2, MSGBOX_AUTOCLOSE
