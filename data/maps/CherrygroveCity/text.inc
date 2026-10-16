@@ -97,9 +97,6 @@ CherrygroveCity_Text_Trigger3_2::
 CherrygroveCity_Text_Trigger3Defeat::
 	.string "Humph. Are you happy you won?$"
 
-CherrygroveCity_Text_Trigger5::
-	.string "HOLA!$"
-
 CherrygroveCity_Text_Sign1::
 	.string "CHERRYGROVE CITY\n"
 	.string "The City of Cute, Fragant Flowers$"
