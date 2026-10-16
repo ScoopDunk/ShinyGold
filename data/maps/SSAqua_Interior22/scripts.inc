@@ -1,7 +1,0 @@
-SSAqua_Interior22_MapScripts::
-	.byte 0
-
-SSAqua_Interior22_EventScript_SailorKent::
-	trainerbattle_single TRAINER_SAILOR_KENT, SSAqua_Interior22_Text_SailorKentIntro, SSAqua_Interior22_Text_SailorKentDefeat
-	msgbox SSAqua_Interior22_Text_SailorKent, MSGBOX_AUTOCLOSE
-	end

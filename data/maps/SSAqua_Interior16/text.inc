@@ -1,14 +1,3 @@
-SSAqua_Interior16_Text_BurglarDuncanIntro::
-	.string "Check out what I fished up!$"
-
-SSAqua_Interior16_Text_BurglarDuncanDefeat::
-	.string "I’m all out!$"
-
-SSAqua_Interior16_Text_BurglarDuncan::
-	.string "Party?\p"
-	.string "The cruise ship’s party should be\n"
-	.string "over by now.$"
-
 SSAqua_Interior16_Text_Gentleman::
 	.string "Hello, son...\n"
 	.string "I can’t find my granddaughter.\p"
@@ -16,6 +5,24 @@ SSAqua_Interior16_Text_Gentleman::
 	.string "But what if she fell overboard?\p"
 	.string "She’s an energetic child, so she may\n"
 	.string "be bugging someone. I’m worried…$"
+
+SSAqua_Interior16_Text_Granddaughter_1::
+	.string "Grandpa, here I am! I was playing\n"
+	.string "with the CAPTAIN and this guy!$"
+
+SSAqua_Interior16_Text_Granddaughter_2::
+	.string "I had lots of fun playing!$"
+
+SSAqua_Interior16_Text_Grandpa_2::
+	.string "{PLAYER}, was it? I heard you\n"
+	.string "entertained my granddaughter.\p"
+	.string "I want to thank you for that.$"
+
+SSAqua_Interior16_Text_Grandpa_3::
+	.string "I know! I’d like you to have this!$"
+
+SSAqua_Interior16_Text_Grandpa_4::
+	.string "We’re traveling around the world.$"
 
 SSAqua_Interior16_Text_SuperNerdShawnIntro::
 	.string "What kinds of POKéBALLS do you have\n"
