@@ -9,7 +9,6 @@ Route46_OnFrame::
 Route46_EventScript_FrameScene::
 	setvar 0x701F, 1
 	call Route46_EventScript_FrameScene_1
-	call Route35_EventScript_FrameScene_2
 	end
 
 Route46_EventScript_FrameScene_1::

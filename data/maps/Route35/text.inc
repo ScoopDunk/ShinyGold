@@ -132,28 +132,6 @@ Route35_Text_BirdKeeperBryan::
 	.string "take it to KURT.\p"
 	.string "He turns it into a custom POKéBALL.$"
 
-Route35_Text_Entei_1::
-	.string "ENTEI: Roaaargh!$"
-
-Route35_Text_Entei_2::
-	.string "ENTEI fled!$"
-
-Route35_Text_Entei_3::
-	.string "Huh?\n"
-	.string "There’s something on the floor...$"
-
-Route35_Text_Suicune_1::
-	.string "SUICUNE: Kyuuuuu!$"
-
-Route35_Text_Suicune_2::
-	.string "SUICUNE fled!$"
-
-Route35_Text_Raikou_1::
-	.string "RAIKOU: Graaargh!$"
-
-Route35_Text_Raikou_2::
-	.string "RAIKOU fled!$"
-
 Route35_Text_Sign1::
 	.string "ROUTE 35$"
 

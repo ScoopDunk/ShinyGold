@@ -9,7 +9,6 @@ Route44_OnFrame::
 Route44_EventScript_FrameScene::
 	setvar 0x701D, 1
 	call Route44_EventScript_FrameScene_1
-	call Route35_EventScript_FrameScene_2
 	end
 
 Route44_EventScript_FrameScene_1::
