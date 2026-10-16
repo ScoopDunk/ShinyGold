@@ -17,10 +17,6 @@ Route27_Movement_FatMan::
 	emote_exclamation_mark
 	step_end
 
-Route27_EventScript_CrushGirl::
-	msgbox Route27_Text_CrushGirl, MSGBOX_NPC
-	end
-
 Route27_EventScript_CooltrainerMegan::
 	trainerbattle_single TRAINER_COOLTRAINER_MEGAN, Route27_Text_CooltrainerMeganIntro, Route27_Text_CooltrainerMeganDefeat
 	msgbox Route27_Text_CooltrainerMegan, MSGBOX_AUTOCLOSE
@@ -144,75 +140,6 @@ Route27_Movement_Trigger1::
 	emote_exclamation_mark
 	step_end
 
-Route27_EventScript_Trigger3::
-	call_if_set 0x1154, Route27_EventScript_Trigger3_1
-	call_if_unset FLAG_BADGE07_GET, Route27_EventScript_Trigger3_1
-	applymovement LOCALID_PLAYER, Route27_Movement_Trigger3_1
-	delay 48
-	clearflag 0x1152
-	applymovement LOCALID_PLAYER, Route27_Movement_Trigger3_2
-	delay 1
-	applymovement 2, Route27_Movement_Trigger3_3
-	delay 48
-	msgbox Route27_Text_Trigger3_1, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 1, Route27_EventScript_Trigger3_2
-	msgbox Route27_Text_Trigger3_2, MSGBOX_NPC
-	applymovement 2, Route27_Movement_Trigger3_4
-	delay 240
-	setflag 0x1152
-	setflag 0x1154
-	release
-	end
-
-Route27_EventScript_Trigger3_1::
-	release
-	end
-
-Route27_EventScript_Trigger3_2::
-	msgbox Route27_Text_Trigger3_3, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_AMELIA, 0, Route27_Text_Trigger3Defeat, Route27_Text_Trigger3Victory
-	msgbox Route27_Text_Trigger3_4, MSGBOX_NPC
-	applymovement 2, Route27_Movement_Trigger3_4
-	delay 240
-	setflag 0x1152
-	setflag 0x1154
-	release
-	end
-
-Route27_Movement_Trigger3_1::
-	emote_exclamation_mark
-	step_end
-
-Route27_Movement_Trigger3_2::
-	walk_down
-	face_up
-	step_end
-
-Route27_Movement_Trigger3_3::
-	walk_down
-	step_end
-
-Route27_Movement_Trigger3_4::
-	walk_left
-	walk_left
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	set_invisible
-	walk_fast_down
-	walk_fast_down
-	walk_fast_down
-	walk_fast_down
-	step_end
-
 Route27_EventScript_Trigger4::
 	call_if_set 0x1153, Route27_EventScript_Trigger4_1
 	setflag 0x1153
@@ -252,11 +179,6 @@ Route27_Movement_Trigger5::
 	walk_down
 	face_left
 	step_end
-
-Route27_EventScript_Trigger6::
-	setflag 0x1152
-	release
-	end
 
 Route27_EventScript_Sign::
 	msgbox Route27_Text_Sign, MSGBOX_AUTOCLOSE

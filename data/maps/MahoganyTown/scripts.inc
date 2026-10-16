@@ -88,61 +88,6 @@ MahoganyTown_Movement_BaldingMan::
 	face_down_fast
 	step_end
 
-MahoganyTown_EventScript_CrushGirl::
-	msgbox MahoganyTown_Text_CrushGirl_1, MSGBOX_NPC
-	msgbox MahoganyTown_Text_CrushGirl_2, MSGBOX_NPC
-	giveitem ITEM_SUPER_POTION, 5
-	giveitem ITEM_HYPER_POTION, 2
-	giveitem ITEM_ETHER, 2
-	giveitem ITEM_REVIVE
-	msgbox MahoganyTown_Text_CrushGirl_3, MSGBOX_NPC
-	call_if_eq VAR_TEMP_1, 1, MahoganyTown_EventScript_CrushGirl_1
-	call_if_eq VAR_TEMP_1, 2, MahoganyTown_EventScript_CrushGirl_2
-	end
-
-MahoganyTown_EventScript_CrushGirl_1::
-	setflag 0x10E3
-	applymovement 4, MahoganyTown_Movement_CrushGirl_1
-	delay 144
-	end
-
-MahoganyTown_EventScript_CrushGirl_2::
-	setflag 0x10E3
-	applymovement 4, MahoganyTown_Movement_CrushGirl_2
-	delay 160
-	end
-
-MahoganyTown_Movement_CrushGirl_1::
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_down
-	walk_right
-	walk_right
-	set_invisible
-	walk_fast_up
-	walk_fast_up
-	step_end
-
-MahoganyTown_Movement_CrushGirl_2::
-	walk_down
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	set_invisible
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	step_end
-
 MahoganyTown_EventScript_Lass::
 	msgbox MahoganyTown_Text_Lass, MSGBOX_NPC
 	end
@@ -183,16 +128,6 @@ MahoganyTown_Movement_Trigger1_4::
 	walk_left
 	face_right
 	step_end
-
-MahoganyTown_EventScript_Trigger2::
-	setvar VAR_TEMP_1, 1
-	release
-	end
-
-MahoganyTown_EventScript_Trigger4::
-	setvar VAR_TEMP_1, 2
-	release
-	end
 
 MahoganyTown_EventScript_Sign1::
 	msgbox MahoganyTown_Text_Sign1, MSGBOX_AUTOCLOSE

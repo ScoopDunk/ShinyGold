@@ -113,9 +113,10 @@ MahoganyTown_Interior5_Text_LeaderPryce_3::
 MahoganyTown_Interior5_Text_Sign1_1::
 	.string "MAHOGANY TOWN POKéMON GYM\n"
 	.string "LEADER: PRYCE\p"
-	.string "WINNING TRAINERS: CARLOS$"
+	.string "WINNING TRAINERS:$"
 
 MahoganyTown_Interior5_Text_Sign1_2::
 	.string "MAHOGANY TOWN POKéMON GYM\n"
 	.string "LEADER: PRYCE\p"
-	.string "WINNING TRAINERS: CARLOS {PLAYER}$"
+	.string "WINNING TRAINERS:\n"
+	.string "{PLAYER}$"

@@ -49,64 +49,8 @@ IndigoPlateau_Interior7_Text_Trigger1_4::
 	.string "trainer, they persevered.\p"
 	.string "Congratulations, {PLAYER}!$"
 
-IndigoPlateau_Interior7_Text_Trigger1_5::
-	.string "???: WHAT!?$"
-
-IndigoPlateau_Interior7_Text_Trigger1_6::
-	.string "CARLOS: I cannot believe it...\p"
-	.string "You actually defeated the ELITE\n"
-	.string "FOUR?\p"
-	.string "How could you!?\p"
-	.string "How could you do this to my\n"
-	.string "dream...!\p"
-	.string "Have you enjoyed doing this to me?\p"
-	.string "I’m so... SO upset!$"
-
-IndigoPlateau_Interior7_Text_Trigger1_7::
-	.string "CARLOS: ...\p"
-	.string "It’s time...\p"
-	.string "It’s time to settle this...\p"
-	.string "Since you are the new CHAMPION,\n"
-	.string "all I have to do is defeat you,\l"
-	.string "right?\p"
-	.string "Then...\p"
-	.string "Let’s end this, CHAMPION!$"
-
-IndigoPlateau_Interior7_Text_Trigger1Defeat2::
-	.string "Nooooo....!!!$"
-
-IndigoPlateau_Interior7_Text_Trigger1Victory2::
-	.string "$"
-
-IndigoPlateau_Interior7_Text_Trigger1_8::
-	.string "CARLOS: Hmmm...\p"
-	.string "I don’t understand...\p"
-	.string "Why are you so strong?\p"
-	.string "Is it because my captured POKéMON\n"
-	.string "here in JOHTO are weak?\p"
-	.string "Does it mean I should go and get my\n"
-	.string "other POKéMON?\p"
-	.string "I thought I had a chance with them,\n"
-	.string "but I was wrong...$"
-
-IndigoPlateau_Interior7_Text_Trigger1_9::
-	.string "CARLOS: Listen you!\p"
-	.string "You better be careful, because\n"
-	.string "next time I won’t be as friendly as\l"
-	.string "before...\p"
-	.string "Next time, I’ll present you my real\n"
-	.string "strength!\p"
-	.string "So keep on training, because I\n"
-	.string "wouldn’t like to battle you being\l"
-	.string "so weak!\p"
-	.string "Hehehe...\p"
-	.string "Till then, {PLAYER}.\p"
-	.string "Hahahahaha!!!$"
-
 IndigoPlateau_Interior7_Text_Trigger1_10::
-	.string "MARY: Wow... You even defeated\n"
-	.string "that mean guy!\p"
-	.string "Alright, let’s interview the brand\n"
+	.string "MARY: Let’s interview the brand\n"
 	.string "new CHAMPION!$"
 
 IndigoPlateau_Interior7_Text_Trigger1_11::

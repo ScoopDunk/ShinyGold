@@ -54,7 +54,3 @@ Route41_EventScript_SwimmerFWendy::
 Route41_EventScript_ItemNugget::
 	finditem ITEM_NUGGET
 	end
-
-Route41_EventScript_LaprasDoll::
-	msgbox Route41_Text_LaprasDoll, MSGBOX_NPC
-	end

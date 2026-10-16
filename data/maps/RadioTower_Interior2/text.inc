@@ -58,18 +58,6 @@ RadioTower_Interior2_Text_TeamRocketGrunt33::
 	.string "We won’t let you ruin our plans\n"
 	.string "for our comeback!$"
 
-RadioTower_Interior2_Text_TeamRocketGrunt2Intro::
-	.string "Perhaps I’m new in TEAM ROCKET, but\n"
-	.string "I’ll do my best to defeat you!$"
-
-RadioTower_Interior2_Text_TeamRocketGrunt2Defeat::
-	.string "Am I not worthy of being in TEAM\n"
-	.string "ROCKET?$"
-
-RadioTower_Interior2_Text_TeamRocketGrunt2::
-	.string "Perhaps I should quit. What do you\n"
-	.string "think?$"
-
 RadioTower_Interior2_Text_TeamRocketGrunt21Intro::
 	.string "Hey, hey! Keep out of our way!$"
 

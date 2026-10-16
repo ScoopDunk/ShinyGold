@@ -19,29 +19,20 @@ IndigoPlateau_OnFrame::
 IndigoPlateau_EventScript_FrameScene::
 	lockall
 	delay 105
-	opendoor 11, 6
-	waitdooranim
 	special SpawnCameraObject
-	addobject 1
-	applymovement 1, IndigoPlateau_Movement_FrameScene_1
 	applymovement LOCALID_PLAYER, IndigoPlateau_Movement_FrameScene_2
-	waitmovement 0
-	closedoor 11, 6
-	waitdooranim
-	applymovement LOCALID_PLAYER, IndigoPlateau_Movement_FrameScene_3
-	applymovement 1, IndigoPlateau_Movement_FrameScene_4
 	waitmovement 0
 	delay 100
 	opendoor 11, 6
 	waitdooranim
-	addobject 2
-	applymovement 2, IndigoPlateau_Movement_FrameScene_5
+	addobject 1
+	applymovement 1, IndigoPlateau_Movement_FrameScene_5
 	waitmovement 0
 	closedoor 11, 6
 	waitdooranim
 	delay 160
 	applymovement LOCALID_PLAYER, IndigoPlateau_Movement_FrameScene_6
-	applymovement 2, IndigoPlateau_Movement_FrameScene_7
+	applymovement 1, IndigoPlateau_Movement_FrameScene_7
 	waitmovement 0
 	delay 100
 	applymovement LOCALID_PLAYER, IndigoPlateau_Movement_FrameScene_8
@@ -57,37 +48,16 @@ IndigoPlateau_EventScript_FrameScene::
 	special RemoveCameraObject
 	setvar VAR_MAP_SCENE_INDIGO_PLATEAU_EXTERIOR, 0
 	removeobject 1
-	removeobject 2
 	special DoCredits
 	waitstate
 	releaseall
 	end
-
-IndigoPlateau_Movement_FrameScene_1::
-	walk_fast_down
-	step_end
 
 IndigoPlateau_Movement_FrameScene_2::
 	face_right
 	lock_facing_direction
 	walk_left
 	unlock_facing_direction
-	step_end
-
-IndigoPlateau_Movement_FrameScene_3::
-	delay_16
-	delay_4
-	walk_in_place_faster_down
-	step_end
-
-IndigoPlateau_Movement_FrameScene_4::
-	walk_fast_down
-	walk_fast_down
-	walk_fast_down
-	walk_fast_down
-	walk_fast_down
-	walk_fast_down
-	walk_fast_down
 	step_end
 
 IndigoPlateau_Movement_FrameScene_5::

@@ -44,18 +44,12 @@ EcruteakCity_Interior5_EventScript_LeaderMorty2Continue::
 	msgbox EcruteakCity_Interior5_Text_LeaderMorty2_2, MSGBOX_NPC
 	giveitem ITEM_TM30
 	msgbox EcruteakCity_Interior5_Text_LeaderMorty2_3, MSGBOX_NPC
-	clearflag 0x10AD
 	release
 	end
 
 EcruteakCity_Interior5_EventScript_Sign1::
-	call_if_set 0x10B0, EcruteakCity_Interior5_EventScript_Sign1_1
 	call_if_set FLAG_BADGE05_GET, EcruteakCity_Interior5_EventScript_Sign1_2
 	msgbox EcruteakCity_Interior5_Text_Sign1_1, MSGBOX_NPC
-	end
-
-EcruteakCity_Interior5_EventScript_Sign1_1::
-	msgbox EcruteakCity_Interior5_Text_Sign1_2, MSGBOX_AUTOCLOSE
 	end
 
 EcruteakCity_Interior5_EventScript_Sign1_2::

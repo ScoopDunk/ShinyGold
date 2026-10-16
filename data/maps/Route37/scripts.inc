@@ -58,16 +58,6 @@ Route37_EventScript_ItemEther::
 	finditem ITEM_ETHER
 	end
 
-Route37_EventScript_Trigger1::
-	call_if_set 0x10AE, Route37_EventScript_Trigger1_1
-	setflag 0x10AD
-	release
-	end
-
-Route37_EventScript_Trigger1_1::
-	release
-	end
-
 Route37_EventScript_Sign1::
 	msgbox Route37_Text_Sign1, MSGBOX_AUTOCLOSE
 	end

@@ -52,24 +52,6 @@ CianwoodCity_EventScript_ItemMaxEther::
 	finditem ITEM_MAX_ETHER
 	end
 
-CianwoodCity_EventScript_PkmnTrainer205::
-	msgbox CianwoodCity_Text_PkmnTrainer205_1, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_205, 0, CianwoodCity_Text_PkmnTrainer205Defeat, CianwoodCity_Text_PkmnTrainer205Victory
-	delay 32
-	setflag 0x10CA
-	msgbox CianwoodCity_Text_PkmnTrainer205_2, MSGBOX_NPC
-	applymovement 13, CianwoodCity_Movement_PkmnTrainer205
-	delay 48
-	release
-	end
-
-CianwoodCity_Movement_PkmnTrainer205::
-	walk_up
-	set_invisible
-	walk_up
-	walk_up
-	step_end
-
 CianwoodCity_EventScript_Trigger1::
 	call_if_unset FLAG_BADGE08_GET, CianwoodCity_EventScript_Trigger1_1
 	call_if_unset FLAG_BADGE03_GET, CianwoodCity_EventScript_Trigger1_1

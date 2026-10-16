@@ -41,10 +41,6 @@ OlivineCity_EventScript_FrameScene_1::
 	setvar 0x7028, 0
 	return
 
-OlivineCity_EventScript_RsBrendan::
-	msgbox OlivineCity_Text_RsBrendan, MSGBOX_NPC
-	end
-
 OlivineCity_EventScript_Youngster::
 	msgbox OlivineCity_Text_Youngster, MSGBOX_NPC
 	end
@@ -89,7 +85,6 @@ OlivineCity_Movement_Trigger1_2::
 	step_end
 
 OlivineCity_Movement_Trigger1_3::
-	@ ShinyGold: overlapping data duplicated from 0x0877974F
 	walk_down
 	walk_right
 	walk_right
@@ -107,54 +102,7 @@ OlivineCity_Movement_Trigger1_3::
 	set_invisible
 	walk_fast_left
 	walk_fast_left
-	.byte 0xAD
-	.byte 0xAD
-	.byte 0xAD
-	.byte 0xFB
-	.byte 0xD3
-	.byte 0xE3
-	.byte 0xE9
-	face_down
-	.byte 0xD5
-	.byte 0xDB
-	.byte 0xD5
-	.byte 0xDD
-	.byte 0xE2
-	.byte 0xAC
-	.byte 0xFB
-	.byte 0xCE
-	.byte 0xDC
-	.byte 0xD9
-	.byte 0xE6
-	.byte 0xD9
-	.byte 0xB4
-	.byte 0xE7
-	face_down
-	.byte 0xE2
-	.byte 0xE3
-	face_down
-	.byte 0xE2
-	.byte 0xD9
-	.byte 0xD9
-	.byte 0xD8
-	face_down
-	.byte 0xE8
-	.byte 0xE3
-	face_down
-	.byte 0xE4
-	.byte 0xD5
-	.byte 0xE2
-	.byte 0xDD
-	.byte 0xD7
-	.byte 0xAD
-	face_down
-	.byte 0xC3
-	face_down
-	.byte 0xD8
-	.byte 0xE3
-	.byte 0xE2
-	.byte 0xB4
-	.byte 0xE8
+	walk_fast_left
 	step_end
 
 OlivineCity_EventScript_Trigger2::
@@ -209,16 +157,6 @@ OlivineCity_EventScript_Trigger3::
 	end
 
 OlivineCity_EventScript_Trigger3_1::
-	release
-	end
-
-OlivineCity_EventScript_Trigger4::
-	call_if_set 0x10CF, OlivineCity_EventScript_Trigger4_1
-	setflag 0x10D1
-	release
-	end
-
-OlivineCity_EventScript_Trigger4_1::
 	release
 	end
 

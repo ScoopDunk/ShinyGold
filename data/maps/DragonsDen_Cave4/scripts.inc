@@ -2,75 +2,6 @@ DragonsDen_Cave4_MapScripts::
 	@ ShinyGold: map script header pointer was NULL
 	.byte 0
 
-DragonsDen_Cave4_EventScript_DragonTamerAirat::
-	call_if_set 0x114C, DragonsDen_Cave4_EventScript_DragonTamerAirat_1
-	call_if_unset 0x114D, DragonsDen_Cave4_EventScript_DragonTamerAirat_2
-	call_if_unset 0x114E, DragonsDen_Cave4_EventScript_DragonTamerAirat_2
-	msgbox DragonsDen_Cave4_Text_DragonTamerAirat_1, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_DRAGON_TAMER_AIRAT, 0, DragonsDen_Cave4_Text_DragonTamerAiratDefeat, DragonsDen_Cave4_Text_DragonTamerAiratVictory
-	setflag 0x114C
-	msgbox DragonsDen_Cave4_Text_DragonTamerAirat_2, MSGBOX_NPC
-	giveitem ITEM_FIRE_STONE
-	msgbox DragonsDen_Cave4_Text_DragonTamerAirat_3, MSGBOX_NPC
-	end
-
-DragonsDen_Cave4_EventScript_DragonTamerAirat_1::
-	msgbox DragonsDen_Cave4_Text_DragonTamerAirat_4, MSGBOX_NPC
-	end
-
-DragonsDen_Cave4_EventScript_DragonTamerAirat_2::
-	msgbox DragonsDen_Cave4_Text_DragonTamerAirat_1, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_DRAGON_TAMER_AIRAT, 0, DragonsDen_Cave4_Text_DragonTamerAiratDefeat, DragonsDen_Cave4_Text_DragonTamerAiratVictory
-	setflag 0x114C
-	release
-	end
-
-DragonsDen_Cave4_EventScript_DragonTamerGon::
-	call_if_set 0x114D, DragonsDen_Cave4_EventScript_DragonTamerGon_1
-	call_if_unset 0x114C, DragonsDen_Cave4_EventScript_DragonTamerGon_2
-	call_if_unset 0x114E, DragonsDen_Cave4_EventScript_DragonTamerGon_2
-	msgbox DragonsDen_Cave4_Text_DragonTamerAirat_1, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_DRAGON_TAMER_GON, 0, DragonsDen_Cave4_Text_DragonTamerAiratDefeat, DragonsDen_Cave4_Text_DragonTamerAiratVictory
-	setflag 0x114D
-	msgbox DragonsDen_Cave4_Text_DragonTamerAirat_2, MSGBOX_NPC
-	giveitem ITEM_THUNDER_STONE
-	msgbox DragonsDen_Cave4_Text_DragonTamerAirat_3, MSGBOX_NPC
-	end
-
-DragonsDen_Cave4_EventScript_DragonTamerGon_1::
-	msgbox DragonsDen_Cave4_Text_DragonTamerGon, MSGBOX_NPC
-	end
-
-DragonsDen_Cave4_EventScript_DragonTamerGon_2::
-	msgbox DragonsDen_Cave4_Text_DragonTamerAirat_1, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_DRAGON_TAMER_GON, 0, DragonsDen_Cave4_Text_DragonTamerAiratDefeat, DragonsDen_Cave4_Text_DragonTamerAiratVictory
-	setflag 0x114D
-	release
-	end
-
-DragonsDen_Cave4_EventScript_DragonTamerBravo::
-	call_if_set 0x114E, DragonsDen_Cave4_EventScript_DragonTamerBravo_1
-	call_if_unset 0x114C, DragonsDen_Cave4_EventScript_DragonTamerBravo_2
-	call_if_unset 0x114D, DragonsDen_Cave4_EventScript_DragonTamerBravo_2
-	msgbox DragonsDen_Cave4_Text_DragonTamerAirat_1, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_DRAGON_TAMER_BRAVO, 0, DragonsDen_Cave4_Text_DragonTamerAiratDefeat, DragonsDen_Cave4_Text_DragonTamerAiratVictory
-	setflag 0x114E
-	msgbox DragonsDen_Cave4_Text_DragonTamerAirat_2, MSGBOX_NPC
-	giveitem ITEM_WATER_STONE
-	msgbox DragonsDen_Cave4_Text_DragonTamerAirat_3, MSGBOX_NPC
-	end
-
-DragonsDen_Cave4_EventScript_DragonTamerBravo_1::
-	msgbox DragonsDen_Cave4_Text_DragonTamerBravo, MSGBOX_NPC
-	end
-
-DragonsDen_Cave4_EventScript_DragonTamerBravo_2::
-	msgbox DragonsDen_Cave4_Text_DragonTamerAirat_1, MSGBOX_NPC
-	trainerbattle_earlyrival TRAINER_DRAGON_TAMER_BRAVO, 0, DragonsDen_Cave4_Text_DragonTamerAiratDefeat, DragonsDen_Cave4_Text_DragonTamerAiratVictory
-	setflag 0x114E
-	release
-	end
-
 DragonsDen_Cave4_EventScript_ItemRevive::
 	finditem ITEM_REVIVE
 	end
@@ -89,7 +20,7 @@ DragonsDen_Cave4_EventScript_ItemDragonFang::
 DragonsDen_Cave4_EventScript_ItemDragonFang_1::
 	applymovement LOCALID_PLAYER, DragonsDen_Cave4_Movement_ItemDragonFang_1
 	delay 16
-	applymovement 8, DragonsDen_Cave4_Movement_ItemDragonFang_2
+	applymovement 5, DragonsDen_Cave4_Movement_ItemDragonFang_2
 	delay 80
 	call DragonsDen_Cave4_EventScript_ItemDragonFang_3
 	end
@@ -97,7 +28,7 @@ DragonsDen_Cave4_EventScript_ItemDragonFang_1::
 DragonsDen_Cave4_EventScript_ItemDragonFang_2::
 	applymovement LOCALID_PLAYER, DragonsDen_Cave4_Movement_ItemDragonFang_1
 	delay 16
-	applymovement 8, DragonsDen_Cave4_Movement_ItemDragonFang_3
+	applymovement 5, DragonsDen_Cave4_Movement_ItemDragonFang_3
 	delay 96
 	call DragonsDen_Cave4_EventScript_ItemDragonFang_3
 	end
@@ -109,7 +40,7 @@ DragonsDen_Cave4_EventScript_ItemDragonFang_3::
 	giveitem ITEM_TM24
 	msgbox DragonsDen_Cave4_Text_ItemDragonFang_3, MSGBOX_NPC
 	msgbox DragonsDen_Cave4_Text_ItemDragonFang_4, MSGBOX_NPC
-	applymovement 8, DragonsDen_Cave4_Movement_ItemDragonFang_4
+	applymovement 5, DragonsDen_Cave4_Movement_ItemDragonFang_4
 	delay 112
 	setflag 0x114B
 	release
@@ -148,10 +79,6 @@ DragonsDen_Cave4_Movement_ItemDragonFang_4::
 
 DragonsDen_Cave4_EventScript_ItemMaxElixir::
 	finditem ITEM_MAX_ELIXIR
-	end
-
-DragonsDen_Cave4_EventScript_LaprasDoll::
-	msgbox DragonsDen_Cave4_Text_LaprasDoll, MSGBOX_AUTOCLOSE
 	end
 
 DragonsDen_Cave4_EventScript_RsBrendan::

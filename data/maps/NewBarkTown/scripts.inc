@@ -485,14 +485,12 @@ NewBarkTown_EventScript_Trigger3_4::
 
 NewBarkTown_EventScript_Trigger6::
 	goto_if_unset 0x11EC, NewBarkTown_EventScript_Trigger6_1
-	setflag 0x1152
 	release
 	end
 
 NewBarkTown_EventScript_Trigger6_1::
 	clearflag FLAG_WORLD_MAP_PALLET_TOWN
 	clearflag 0x1360
-	setflag 0x1152
 	release
 	end
 

@@ -73,40 +73,6 @@ Route43_Text_FishermanMarvin::
 	.string "It’s much more effective than a\n"
 	.string "ULTRA BALL.$"
 
-Route43_Text_Trigger3_1::
-	.string "I wonder where could that rare BUG\n"
-	.string "POKéMON be hiding?\p"
-	.string "My guide clearly says that a rare\n"
-	.string "BUG POKéMON shows up sometimes\l"
-	.string "on this route...$"
-
-Route43_Text_Trigger3_2::
-	.string "What?...\n"
-	.string "YOU???\p"
-	.string "What, have you to come to steal\n"
-	.string "my precious rare BUG POKéMON?\l"
-	.string "I won’t let you!\p"
-	.string "Perhaps last time you cheated but\n"
-	.string "this time there won’t be a cheat\l"
-	.string "that saves you!\p"
-	.string "Prepare to lose against my ultra\n"
-	.string "tough BUG POKéMON!$"
-
-Route43_Text_Trigger3Defeat::
-	.string "Why? Why is this happening?$"
-
-Route43_Text_Trigger3Victory::
-	.string "YEAH! Finally you’ll understand!$"
-
-Route43_Text_Trigger3_3::
-	.string "Argh! When will you learn to stop\n"
-	.string "cheating?\p"
-	.string "There’s no way a BUG POKéMON\n"
-	.string "could lose!\p"
-	.string "That’s why I’m gonna find that\n"
-	.string "rare BUG POKéMON and then I’ll\l"
-	.string "defeat you for sure!$"
-
 Route43_Text_Sign1::
 	.string "ROUTE 43\n"
 	.string "LAKE OF RAGE - MAHOGANY TOWN$"

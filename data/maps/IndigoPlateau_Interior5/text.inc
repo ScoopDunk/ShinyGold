@@ -1,20 +1,6 @@
 IndigoPlateau_Interior5_Text_Pidgeot::
 	.string "PIDGEOT: Pijooot...!$"
 
-IndigoPlateau_Interior5_Text_CooltrainerF_1::
-	.string "From here on, you face the\n"
-	.string "ELITE FOUR one by one.\p"
-	.string "If you win, a door opens to the\n"
-	.string "next TRAINER. Good luck!$"
-
-IndigoPlateau_Interior5_Text_CooltrainerF_2::
-	.string "I am so sorry, but you’ve wasted\n"
-	.string "your time coming here.\p"
-	.string "LORELEI of the ELITE FOUR is\n"
-	.string "absent, you see.\p"
-	.string "As a result, the POKéMON LEAGUE is\n"
-	.string "closed for the time being.$"
-
 IndigoPlateau_Interior5_Text_OldMan1_1::
 	.string "Ah! You’re challenging the ELITE\n"
 	.string "FOUR? Are you sure you’re ready?\p"
