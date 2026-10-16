@@ -150,20 +150,6 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_TEACHY_TV_HOST",
-      "x": 31,
-      "y": 22,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "CeruleanCity_EventScript_PkmnTrainerCarlos6",
-      "flag": "0x1194"
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_RED_NORMAL",
       "x": 4,
       "y": 9,
@@ -282,15 +268,6 @@
     },
     {
       "type": "trigger",
-      "x": 37,
-      "y": 39,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "CeruleanCity_EventScript_Trigger2"
-    },
-    {
-      "type": "trigger",
       "x": 46,
       "y": 10,
       "elevation": 3,
@@ -315,42 +292,6 @@
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
       "script": "CeruleanCity_EventScript_Trigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 43,
-      "y": 18,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "CeruleanCity_EventScript_Trigger6"
-    },
-    {
-      "type": "trigger",
-      "x": 43,
-      "y": 19,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "CeruleanCity_EventScript_Trigger6"
-    },
-    {
-      "type": "trigger",
-      "x": 5,
-      "y": 20,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "CeruleanCity_EventScript_Trigger8"
-    },
-    {
-      "type": "trigger",
-      "x": 5,
-      "y": 21,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "CeruleanCity_EventScript_Trigger8"
     },
     {
       "type": "trigger",
@@ -410,6 +351,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route35_EventScript_Sign4"
+    },
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 28,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "CeruleanCity_EventScript_LockedDoor"
     }
   ]
 }

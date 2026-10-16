@@ -141,9 +141,9 @@ ViridianCity_Interior2_Text_GymGuy_2::
 ViridianCity_Interior2_Text_Sign1_1::
 	.string "VIRIDIAN POKéMON GYM\n"
 	.string "LEADER: BLUE\p"
-	.string "WINNING TRAINERS: CARLOS$"
+	.string "WINNING TRAINERS:$"
 
 ViridianCity_Interior2_Text_Sign1_2::
 	.string "VIRIDIAN POKéMON GYM\n"
 	.string "LEADER: BLUE\p"
-	.string "WINNING TRAINERS: CARLOS {PLAYER}$"
+	.string "WINNING TRAINERS: {PLAYER}$"
