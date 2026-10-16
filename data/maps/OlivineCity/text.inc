@@ -1,7 +1,3 @@
-OlivineCity_Text_RsBrendan::
-	.string "When you’re this far away from the\n"
-	.string "city, the sky at night is fantastic.$"
-
 OlivineCity_Text_Youngster::
 	.string "Wow, you have a POKéDEX!\n"
 	.string "That is just so awesome.$"

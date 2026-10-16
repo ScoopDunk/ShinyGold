@@ -9,11 +9,6 @@ UnionCave_Cave2_EventScript_ItemTm39::
 	finditem ITEM_TM39
 	end
 
-UnionCave_Cave2_EventScript_PokemaniacSouda::
-	trainerbattle_single TRAINER_POKEMANIAC_SOUDA, UnionCave_Cave2_Text_PokemaniacSoudaIntro, UnionCave_Cave2_Text_PokemaniacSoudaDefeat
-	msgbox UnionCave_Cave2_Text_PokemaniacSouda, MSGBOX_AUTOCLOSE
-	end
-
 UnionCave_Cave2_EventScript_PokemaniacAndrew::
 	trainerbattle_single TRAINER_POKEMANIAC_ANDREW, UnionCave_Cave2_Text_PokemaniacAndrewIntro, UnionCave_Cave2_Text_PokemaniacAndrewDefeat
 	msgbox UnionCave_Cave2_Text_PokemaniacAndrew, MSGBOX_AUTOCLOSE

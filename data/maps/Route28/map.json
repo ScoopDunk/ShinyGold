@@ -69,16 +69,6 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route28_EventScript_Sign2"
-    },
-    {
-      "type": "hidden_item",
-      "x": 33,
-      "y": 2,
-      "elevation": 3,
-      "item": "ITEM_ULTRA_BALL",
-      "flag": "FLAG_HIDDEN_ITEM_SIX_ISLAND_GREEN_PATH_ULTRA_BALL",
-      "quantity": 1,
-      "underfoot": false
     }
   ]
 }
