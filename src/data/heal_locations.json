@@ -93,15 +93,15 @@
       "map": "MAP_BLACKTHORN_CITY",
       "x": 21,
       "y": 30,
-      "respawn_map": "MAP_MAHOGANY_TOWN_INTERIOR3",
+      "respawn_map": "MAP_BLACKTHORN_CITY_INTERIOR3",
       "respawn_npc": 1
     },
     {
       "id": "HEAL_LOCATION_MAHOGANY_TOWN",
       "map": "MAP_MAHOGANY_TOWN",
-      "x": 18,
-      "y": 21,
-      "respawn_map": "MAP_BLACKTHORN_CITY_INTERIOR3",
+      "x": 15,
+      "y": 18,
+      "respawn_map": "MAP_MAHOGANY_TOWN_INTERIOR3",
       "respawn_npc": 1
     },
     {

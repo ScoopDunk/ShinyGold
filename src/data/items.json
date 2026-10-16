@@ -5669,9 +5669,9 @@
       "registrability": 0,
       "pocket": "POCKET_KEY_ITEMS",
       "type": "ITEM_TYPE_BAG_MENU",
-      "fieldUseFunc": "FieldUseFunc_PokeFlute",
-      "battleUsage": 2,
-      "battleUseFunc": "BattleUseFunc_PokeFlute",
+      "fieldUseFunc": "FieldUseFunc_OakStopsYou",
+      "battleUsage": 0,
+      "battleUseFunc": "NULL",
       "secondaryId": 0
     },
     {
