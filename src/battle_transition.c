@@ -1,4 +1,5 @@
 #include "global.h"
+#include "data.h"
 #include "sprite.h"
 #include "task.h"
 #include "overworld.h"
@@ -2155,6 +2156,11 @@ static u8 GetMugshotTrainerPicId(s16 mugshotId)
     {
         if (gTrainerBattleOpponent_A == TRAINER_ELITETRAINER_LANCE)
             return TRAINER_PIC_CUE_BALL;
+        // ShinyGold fix: use the trainer's own rival picture; the hack chose it by trainer id parity, which showed the
+        // other rival for nine battles.
+        else if (gTrainers[gTrainerBattleOpponent_A].trainerPic == TRAINER_PIC_MAGMA_GRUNT_F
+              || gTrainers[gTrainerBattleOpponent_A].trainerPic == TRAINER_PIC_COLLECTOR)
+            return gTrainers[gTrainerBattleOpponent_A].trainerPic;
         else if (gTrainerBattleOpponent_A & 1)
             return TRAINER_PIC_MAGMA_GRUNT_F;
         else

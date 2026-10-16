@@ -46,6 +46,9 @@ u16 *GetSaveBlockExtVarPointer(u16 varId)
     if (varId < EXT_VARS_START || varId > EXT_VARS_END)
         return NULL;
 
+    // ShinyGold fix: a corrupt or foreign save could hold numVars > capacity and run this loop off the table.
+    if (gSaveBlockExt.numVars > EXT_VARS_CAPACITY)
+        gSaveBlockExt.numVars = EXT_VARS_CAPACITY;
     for (i = 0; i != gSaveBlockExt.numVars; i++)
     {
         if (gSaveBlockExt.vars[i].id == varId)

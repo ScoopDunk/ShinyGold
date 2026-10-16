@@ -7,5 +7,7 @@ extern u32 gForceShinyMons;
 
 // Script native (hack routine at 0x087FFF70)
 void ToggleForceShinyMons(void);
+void SetForceShinyMons(void);
+void ClearForceShinyMons(void);
 
 #endif // GUARD_FORCE_SHINY_H

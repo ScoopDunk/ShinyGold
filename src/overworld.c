@@ -1,4 +1,5 @@
 #include "global.h"
+#include "force_shiny.h"
 #include "gflib.h"
 #include "bg_regs.h"
 #include "cable_club.h"
@@ -251,6 +252,7 @@ static void DoWhiteOut(void)
 {
     SetRoamMonsWarpMode(ROAMERS_WARP_NONE); // Pure Gold: whiting out does not move the roaming beasts (G/S)
     RunScriptImmediately(EventScript_ResetEliteFourEnd);
+    gForceShinyMons = FALSE; // ShinyGold fix: never carry forced-shiny mode past a white-out
     RemoveMoney(&gSaveBlock1Ptr->money, ComputeWhiteOutMoneyLoss());
     HealPlayerParty();
     Overworld_ResetStateAfterWhitingOut();
