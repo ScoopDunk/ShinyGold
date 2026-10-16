@@ -47,8 +47,7 @@ VermilionCity_EventScript_Snorlax_2::
 	special StartLegendaryBattle
 	delay 128
 	warp MAP_VERMILION_CITY, 1, 0x26C, 0xC6CC
-	vgoto_if 210, 0xE7DD00
-	.byte 0xE7 @ invalid opcode (script stops)
+	end
 
 VermilionCity_EventScript_BaldingMan::
 	msgbox VermilionCity_Text_BaldingMan, MSGBOX_NPC

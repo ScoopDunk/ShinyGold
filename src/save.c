@@ -799,6 +799,11 @@ bool8 WriteSaveBlock1Sector(void)
     else
     {
         WriteSectorSignatureByte(sectorId, gRamSaveSectorLocations);
+        // ShinyGold: the last PC storage sector also holds the save block extension's var table, which this
+        // in-place link-battle save would otherwise leave at the previous full save. The game is fully saved
+        // before any link, so the PC data written along with it is unchanged.
+        HandleReplaceSectorAndVerify(SECTOR_ID_PKMN_STORAGE_END + 1, gRamSaveSectorLocations);
+        WriteSectorSignatureByte(SECTOR_ID_PKMN_STORAGE_END + 1, gRamSaveSectorLocations); // 1-based, like the calls above
         finished = TRUE;
     }
     if (gDamagedSaveSectors)

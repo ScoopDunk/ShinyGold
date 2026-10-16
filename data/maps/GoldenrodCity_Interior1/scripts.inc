@@ -146,8 +146,9 @@ GoldenrodCity_Interior1_EventScript_CableClubReceptionist_8::
 	call_if_ge VAR_TEMP_1, 0x2BC, GoldenrodCity_Interior1_EventScript_CableClubReceptionist_13
 	msgbox GoldenrodCity_Interior1_Text_CableClubReceptionist_7, MSGBOX_NPC
 	hidecoinsbox 2, 255
-	vcall_if 204, 0xFFFFFFBB
-	.byte 0xFF @ invalid opcode (script stops)
+	@ ShinyGold fix: ended in a condition-table read out of range and an invalid opcode, leaving the NPC locked
+	release
+	end
 
 GoldenrodCity_Interior1_EventScript_CableClubReceptionist_9::
 	checkcoins VAR_TEMP_1

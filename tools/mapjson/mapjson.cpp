@@ -465,6 +465,12 @@ string generate_groups_text(Json groups_data) {
         text << "\t.4byte " << json_to_string(group) << "\n";
     text << "\n";
 
+    // ShinyGold: number of maps per group, so a saved location can be range-checked
+    text << "gMapGroupSizes::\n";
+    for (auto &group : groups_data["group_order"].array_items())
+        text << "\t.byte " << groups_data[json_to_string(group)].array_items().size() << "\n";
+    text << "\t.align 2\n\n";
+
     return text.str();
 }
 

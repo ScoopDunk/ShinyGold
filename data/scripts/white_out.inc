@@ -16,13 +16,12 @@ EventScript_AfterWhiteOutHealMsgPreBrock::
 	return
 
 @ ShinyGold: modified in place by the hack
+@ ShinyGold fix: the hack's version began with a loadword into a nonexistent slot and a call to 0x00C76903, and
+@ ended the whole script; only reached if FLAG_DEFEATED_BROCK is set, which nothing does.
 EventScript_AfterWhiteOutHealMsg::
-	loadword 155, 0x9081A5F
-	call 0x00C76903
 	call_if_set 0x1023, SG_EventScript_AfterWhiteOutHealMsg_1
 	call_if_set 0x1015, SG_EventScript_AfterWhiteOutHealMsg_2
-	call SG_EventScript_AfterWhiteOutHealMsg_1
-	end
+	return
 
 @ ShinyGold: modified in place by the hack
 EventScript_AfterWhiteOutMomHeal::
