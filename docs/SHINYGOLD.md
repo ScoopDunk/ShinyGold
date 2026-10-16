@@ -1,15 +1,21 @@
 # ShinyGold decompilation
 
-This tree is ShinyGold (Faithfully Fixed, Beta 5) ported onto pret/pokefirered. `make` builds
-`pokefirered.gba`: ShinyGold with its broken trainer names fixed and wild Pokémon rebuilt from Gold/Silver.
+This tree is ShinyGold (Faithfully Fixed, Beta 5) ported onto pret/pokefirered. On this branch (`fixed`) `make`
+builds `pokefirered.gba` as **ShinyGold Fixed**: the hack with all of its content and its own wild Pokémon, with
+its bugs fixed (broken trainer names, crashes, broken scenes; see "Fixes" below).
 
 ## Branches
 
 | Branch | Contents |
 |---|---|
-| `master` | The game to work from: the faithful port plus the fixes below |
+| `fixed` | ShinyGold Fixed: all of the hack's content and wild Pokémon, with the fixes below |
+| `gold` | Pure Gold/Silver: custom content removed, Gold/Silver content restored, wild Pokémon from Gold/Silver |
+| `master` | The faithful port with the trainer-name fix and Gold/Silver wild Pokémon (the base of `gold`) |
 | `faithful` | The hack ported as-is (only crash-level hack bugs fixed). Use it to see what the hack itself did |
 | first commit | Unmodified pret/pokefirered, so `git diff <first commit>` shows everything ShinyGold changes |
+
+Saves: `fixed` and `master` keep the hack's map numbering and save format, so ShinyGold saves continue on them.
+`gold` renumbered the maps; start a new game there.
 
 ## Building
 
@@ -26,7 +32,7 @@ The ROM keeps FireRed's game code (`BPRE`), title and save format, so it trades 
 | Event scripts | `data/maps/*/scripts.inc`, `text.inc`, `data/scripts/*`, `data/event_scripts.s` | Generated from the ROM and checked byte-for-byte. `@ ShinyGold:` comments mark oddities (scripts that run into data, duplicated overlapping blocks, dead entries) |
 | Save expansion | `src/save_block_ext.c`, `src/event_data.c`, `src/save.c` | JPAN-style: flags 0x900–0x1FFF and vars 0x4100–0x7FFF stored in the unused tails of the save sectors, same on-flash layout as the hack, so ShinyGold saves load |
 | Trainers | `src/data/trainers.h`, `src/data/trainer_parties.h`, `include/constants/opponents.h` | Constants named after class + name; old FireRed names kept as aliases at the bottom of `opponents.h` |
-| Wild Pokémon | `src/data/wild_encounters.json` | See below and `docs/wild_encounters_gs.md` |
+| Wild Pokémon | `src/data/wild_encounters.json` | The hack's own 179 tables, byte-equal to ShinyGold (Hoenn species included) |
 | Species / items / TMs | `src/data/pokemon/*`, `src/data/items.json`, `src/data/party_menu.h` (TM moves) | 386 species unchanged in number and order; the hack edits 13 base stats entries, evolutions (trade evolutions replaced), 20 TMs, items |
 | Region map | `src/region_map.c`, `src/data/region_map/*`, `graphics/region_map/*` | Johto + Kanto map, section names, fly destinations |
 | Music | `sound/songs/*.s`, `include/constants/songs.h` | 13 songs replaced by Gold/Silver tracks; song IDs unchanged, `songs.h` notes what each one now plays. Scripts can swap songs through vars 0x7030–0x7035 (`m4aSongNumStart`) |
@@ -48,7 +54,7 @@ The ROM keeps FireRed's game code (`BPRE`), title and save format, so it trades 
 Not ported on purpose: the hack zeroed 7 bytes inside `Task_RunUnionRoom` (over a literal pool and an instruction).
 It looks like accidental corruption and could break Union Room trading, so vanilla code is kept.
 
-## Fixes on `master`
+## Fixes
 
 ### Trainer names (517 trainers)
 - `NNTRAINER/K` placeholders (136) are the hack's Gold/Silver phone-rematch trainers: contact NN, rematch tier K.
@@ -63,25 +69,8 @@ It looks like accidental corruption and could break Union Room trading, so vanil
 - Constants and party symbols renamed to match (165). Every change, with the old name and the reason, is in
   `tools/shinygold/trainer_name_fixes.json`.
 
-### Wild Pokémon: pure Gold/Silver
-- Every map that corresponds to a Gold/Silver location (115 tables) uses that location's data from pret/pokegold.
-  Gold and Silver are merged (Gold as the base, Silver exclusives added, so both versions' Pokémon are catchable in
-  one game). ShinyGold has no clock, so morning/day/night tables are blended by hours (6/8/10).
-  The G/S encounter rates are used, converted to FireRed's scale.
-- Headbutt: the hack uses rock-smash tables on Johto routes as headbutt stand-ins; they now hold the G/S headbutt
-  distribution of that route. Real G/S Rock Smash data is used where it exists; other rock-smash tables are removed.
-- Areas with no G/S counterpart (61 tables: Safari Zone areas, extra caves, unused maps) keep their tables, but
-  every species not found in the wild in Gold or Silver is replaced by a similar one that is, at the same levels.
-- Mahogany Town, Route 23 and the S.S. Aqua have no wild Pokémon in G/S, so all their tables are removed.
-- Where the hack added water that the G/S location doesn't have (Route 29, Route 11, Ice Path 1F, Victory Road,
-  Whirl Islands B1F, ...), there are no surf/fishing encounters, as in G/S. (pokegold assigns placeholder fishing
-  groups to such maps, e.g. the Dratini group to Ice Path; they are never used in G/S and are not used here.)
-- Scyther and Pinsir stay in two hack-only areas (Fuchsia City area 3 and Red Route); in G/S they
-  are caught in the wild only in the Bug-Catching Contest.
-- Pokédex, species data and IDs stay at 386, so trades and Pokédex completion are unaffected.
-
-Per-map before/after: `docs/wild_encounters_gs.md`. To change the policy, edit `tools/shinygold/lib/gs_wild_apply.py`
-(mapping table and substitutions) and rerun it, or edit `src/data/wild_encounters.json` directly.
+### Wild Pokémon
+The hack's own tables, unchanged (the `master` and `gold` branches rebuild them from Gold/Silver instead).
 
 ### Damaged map-script headers
 The hack's map tools wrote several map-script headers over older tables. In Cherrygrove/Olivine Pokémon Centers,
@@ -89,7 +78,31 @@ New Bark Town's game corner building, Lance's room and two unused maps this left
 entries compare out-of-range variables (undefined behaviour that could jump into data). Those garbage entries and
 the shadowed duplicate header entries are removed; the real entries (e.g. Lance's room door scene) are kept.
 
-### Hack bugs fixed during the port (both branches)
+### Scripts the port had lost
+The engine skips `gotostd N` when N is past the end of the std script table and keeps running the next bytes;
+the scripts generator treated every `gotostd` as the end of a script, so three scripts ran differently from the hack:
+- Tin Tower roof: Ho-Oh's battle (Lv 45) never started. Restored as the hack meant it (its "Gyaoo!" message was
+  damaged): cry, "Gyaoo!", Ho-Oh Lv 45 holding SACRED ASH.
+- Olivine port: the sailor's step trigger ended at once, so the player could walk past him to the S.S. Aqua at
+  any time. The hack's block is back, with the ticket check and the boarding offer it calls when the ship is in.
+- Trick House prize room: after the last prize the hack runs into a placeholder address; the farewell is explicit.
+
+### Other hack bugs fixed
+- Phone contact 35 crashed the game once the player had the seventh badge (a pointer outside the ROM).
+- White-out after healing in Cherrygrove or New Bark Town left the player in the black outside the Pokémon Center
+  (FireRed's One Island coordinates for that map slot). The player now respawns two tiles below the nurse in every
+  Pokémon Center layout, and Lavender Town uses its own Pokémon Center instead of an unreachable FireRed one.
+- Route 19: six invisible FireRed swimmers stacked on one water tile could start battles when surfing past.
+- FireRed leftovers: the Viridian old-man catching tutorial (with a Radio-Visio gift) fired in the dead-end niche
+  at the north edge of Viridian; "HOLA!" test triggers in Cherrygrove; a duplicate Guide Gent outside his house's
+  walls; a Goldenrod boy's Lorelei/Icefall Cave line; the Olivine rival's "sky at night" talk text.
+- The Olivine rival's exit movement ran into text bytes; the Slowpoke Well Rocket's loss text started in the
+  middle of another line.
+- Names: Ecruteak Gym's Sage PING is JEFFREY, Hiker RUSELL is RUSSELL; the male Rocket in the Goldenrod warehouse
+  no longer uses the female sprite and pic.
+- The S.S. Aqua no longer shows the Rocket Hideout map preview. Typos: VERMILION, DIGLETT'S, SEAFOAM ISLANDS.
+
+### Hack bugs fixed during the port (all branches)
 - Save extension: link/trade saves skipped the extension (turning off after a trade lost it); the save-failed
   screen overwrote it; no bounds check on the var table; the load hook copied garbage from invalid sectors; the
   forced-shiny flag lived inside `gStringVar4`.

@@ -1,7 +1,8 @@
 # ShinyGold (decompiled)
 
-A decompilation of the ShinyGold ROM hack (Faithfully Fixed, Beta 5) built on pret/pokefirered, with broken
-trainer names fixed and wild Pokémon rebuilt from Gold/Silver. `make` builds `pokefirered.gba`.
+A decompilation of the ShinyGold ROM hack (Faithfully Fixed, Beta 5) built on pret/pokefirered. This branch
+(`fixed`) is ShinyGold Fixed: all of the hack's content and wild Pokémon, with its bugs fixed. The `gold` branch is
+the pure Gold/Silver version. `make` builds `pokefirered.gba`.
 See [docs/SHINYGOLD.md](docs/SHINYGOLD.md) for the layout, the changes from the hack and how it was verified.
 
 The original pokefirered README follows.
