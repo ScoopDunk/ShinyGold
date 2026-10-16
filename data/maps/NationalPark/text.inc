@@ -116,42 +116,6 @@ NationalPark_Text_LittleBoy_3::
 	.string "ARTHUR, FRIEDA and SANTOS.\p"
 	.string "They’re all older than me!$"
 
-NationalPark_Text_Trigger1_1::
-	.string "Who are you?\p"
-	.string "Who am I?\n"
-	.string "Glad you asked!\p"
-	.string "My name is ARD, I’m a POKéMON\n"
-	.string "TRAINER!\p"
-	.string "However, I’m not like any other\n"
-	.string "TRAINER out there!\p"
-	.string "I’m a BUG POKéMON TRAINER!\p"
-	.string "Bugs are awesome!\n"
-	.string "They are the best!\p"
-	.string "Why?\n"
-	.string "Let me show you the strength of\l"
-	.string "BUG POKéMON!$"
-
-NationalPark_Text_Trigger1Defeat::
-	.string "But... My bugs!$"
-
-NationalPark_Text_Trigger1Victory::
-	.string "Another victory for BUG POKéMON!$"
-
-NationalPark_Text_Trigger1_2::
-	.string "You are joking!\n"
-	.string "My bug POKéMON lost to some\l"
-	.string "rookie trainer...\p"
-	.string "I know! You just cheated!\p"
-	.string "I can’t believe you cheated!\n"
-	.string "You’re a loser!$"
-
-NationalPark_Text_Trigger1_3::
-	.string "Listen, you just hurt my pride!\n"
-	.string "So I’ll get my revenge!\p"
-	.string "I’ll follow you to death if necessary\n"
-	.string "only to show you the magnificence\l"
-	.string "of bug POKéMON!$"
-
 NationalPark_Text_Sign1::
 	.string "RELAXATION SQUARE\n"
 	.string "NATIONAL PARK$"

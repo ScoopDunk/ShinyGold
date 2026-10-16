@@ -148,7 +148,6 @@ LakeOfRage_EventScript_Lance_2::
 	msgbox LakeOfRage_Text_Lance_5, MSGBOX_NPC
 	setflag 0x10E2
 	setflag 0x10E0
-	clearflag 0x10E3
 	clearflag 0x10E5
 	warp MAP_LAKE_OF_RAGE, 3, 0xFF02, 0xFFFF
 	.byte 0xFF @ invalid opcode (script stops)

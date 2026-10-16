@@ -43,28 +43,6 @@ CianwoodCity_Text_FatMan::
 	.string "Your POKéMON could use ROCK SMASH\n"
 	.string "to break them.$"
 
-CianwoodCity_Text_PkmnTrainer205_1::
-	.string "You are a TRAINER, right?\p"
-	.string "You know what, CIANWOOD CITY’s GYM\n"
-	.string "LEADER is not accepting battles...\p"
-	.string "...\p"
-	.string "What do you say?\p"
-	.string "A GYM LEADER has the responsability\n"
-	.string "to accept any battle?\p"
-	.string "But... But you are just a rookie\n"
-	.string "trainer, I can tell!\p"
-	.string "...\p"
-	.string "I’ll prove it to you!$"
-
-CianwoodCity_Text_PkmnTrainer205Defeat::
-	.string "How could I lose?$"
-
-CianwoodCity_Text_PkmnTrainer205Victory::
-	.string "I said it, rookie trainer!$"
-
-CianwoodCity_Text_PkmnTrainer205_2::
-	.string "WAHHHHH!!! UNCLE!!!$"
-
 CianwoodCity_Text_Trigger1::
 	.string "PROF.ELM: {PLAYER}, how are things\n"
 	.string "going?\p"

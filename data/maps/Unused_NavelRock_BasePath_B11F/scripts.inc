@@ -130,7 +130,6 @@ Unused_NavelRock_BasePath_B11F_EventScript_Lance::
 	delay 160
 	setflag 0x1102
 	setflag 0x10EC
-	setflag 0x10E3
 	clearflag 0x10DB
 	.byte 0x79 @ givemon
 	.2byte SPECIES_CLAMPERL
