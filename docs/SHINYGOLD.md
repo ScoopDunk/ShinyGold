@@ -7,7 +7,8 @@ This tree is ShinyGold (Faithfully Fixed, Beta 5) ported onto pret/pokefirered. 
 
 | Branch | Contents |
 |---|---|
-| `master` | The game to work from: the faithful port plus the fixes below |
+| `gold` | Pure Gold/Silver: `master` with ShinyGold's custom content removed and the Gold/Silver content it replaced restored (see "Pure Gold/Silver" below) |
+| `master` | The faithful port plus the fixes below (all of ShinyGold's custom content still in) |
 | `faithful` | The hack ported as-is (only crash-level hack bugs fixed). Use it to see what the hack itself did |
 | first commit | Unmodified pret/pokefirered, so `git diff <first commit>` shows everything ShinyGold changes |
 
@@ -47,6 +48,56 @@ The ROM keeps FireRed's game code (`BPRE`), title and save format, so it trades 
 
 Not ported on purpose: the hack zeroed 7 bytes inside `Task_RunUnionRoom` (over a literal pool and an instruction).
 It looks like accidental corruption and could break Union Room trading, so vanilla code is kept.
+
+## Pure Gold/Silver (`gold` branch)
+
+Everything ShinyGold added that isn't in Pokémon Gold/Silver is removed, and the Gold/Silver content it replaced
+is back, using pret/pokegold (and pret/pokecrystal for the GS Ball) as the reference. Wild Pokémon stay Gold +
+Silver merged. Species, items, moves, save format and link code are unchanged, so trading still works.
+
+Removed:
+- Areas (156 maps): the southern region (Kalm City, Battle Tower, egg market, Blue/Red/Green Route, Green Plains,
+  Mt. Steel, Seirun Tomb, the volcano), Sea Cavern, Trick House, Trainer Tower, the Mewtwo/Regirock/Rayquaza and
+  egg caves, Lily's Berry Shop, the Move Relearner, the Safari Zone (closed as in G/S), Silph Co. upper floors, gate
+  upper floors, the sunken S.S. Aqua and every leftover map that could not be reached. Their doors and cave mouths
+  are painted over, signs pointing at them are gone, and the region map no longer shows them.
+- Characters: Carlos, Amelia, Ashlee the Pokémon Thief, Ard, Jess & Jamie, Zel, Koga's Fuchsia rematch and its
+  "stolen Pokémon" story, the Rock Tunnel Mr. Fuji/Kangaskhan event, and a dozen extra trainers.
+- Gifts and legendaries not in G/S: Mew, Mewtwo, the Regis, Kyogre, Rayquaza, Deoxys, Jirachi, Aggron, the
+  starter eggs, Lance's Clamperl, the Ghostbuster ghost encounters, a hidden Master Ball/Gyarados event.
+
+Restored from Gold/Silver:
+- Kanto: the Power Plant / Machine Part chain (Cerulean Gym grunt, Route 24 battle, Misty on Route 25), the
+  S.S. Aqua (first trip with the lost granddaughter, Metal Coat, ports, later trips), Silph Co. 1F, the Safari
+  Zone Warden's home, Route 10 / Cerulean signs.
+- Johto: Lance's room, Chuck's gym, the Rocket base B3F, the Radio Card quiz, Game Corner prizes, the Bug-Catching
+  Contest (G/S bugs, scoring and prizes), the Lucky Number Show, Lance giving HM06 WHIRLPOOL (a key item, below).
+- Legendaries: after the Burned Tower scene Raikou, Entei and Suicune roam Johto at Lv 40 as in G/S (three
+  roamers; movement, encounter rate, fleeing and HP as in pokegold). Celebi comes from the Crystal GS Ball event:
+  after the Hall of Fame the Goldenrod Pokémon Center gives the GS Ball, Kurt examines it, then the Ilex Forest
+  shrine (Lv 30). Ho-Oh's battle on the Tin Tower roof works again (Lv 40, Sacred Ash). Lugia is unchanged (Lv 70).
+
+Engine additions: `src/roamer.c` (three roamers; Raikou in SaveBlock1's roamer, Entei, Suicune and their locations
+in the unused part of the save block extension), `src/gold_whirlpool.c` (HM06 as the key item that was DEVON GOODS,
+named HM WHIRLPOOL by the hack; teaches Whirlpool from the bag, G/S HM06 learnset), `src/gold_lucky_number.c`.
+New flags/vars are in `include/constants/gold_*.h`.
+
+Where G/S needs a clock (ShinyGold has none): the S.S. Aqua sails whenever you have the ticket, the Bug-Catching
+Contest keeps the hack's availability, Kurt's "come back tomorrow" is 500 steps, and a Lucky Number "week" is 7
+hours of play time.
+
+Kept on purpose: Kurt's Apricorn balls are Gen 3 balls (Gen 2's don't exist in Gen 3); Mom hands out an Amulet
+Coin in place of G/S money saving; the Silph Co. officer has no Up-Grade (the hack has none); the Pokédex area
+screen only covers Kanto, so Johto locations (roaming beasts included) show as unknown.
+
+Map names: the in-use `Unused_*` maps are renamed (`CeruleanCity_Gym`, `RuinsOfAlph_InnerChamber`,
+`NationalPark_BugContest`, `TinTower_UpperFloors`, `TinTower_Roof`, `MahoganyTown_RocketBase_B1F`..`B3F`,
+`IndigoPlateau_HallOfFame`). Other names still come from the region map section (`<Section>_Interior<n>` etc.);
+`tools/shinygold/gold/gs_identity.tsv` lists the Gold/Silver map each one corresponds to. Note that
+`PalletTown` is an unused copy of New Bark Town; Kanto's Pallet Town is `PalletTown_Area1`.
+
+Tools used for this branch are in `tools/shinygold/gold/` (map deletion, script reference/object removal, map
+rename, test save maker, emulator wrapper, reachability, warp and text-width checks).
 
 ## Fixes on `master`
 
