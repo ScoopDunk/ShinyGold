@@ -5,8 +5,10 @@ LakeOfRage_EventScript_OldMan1::
 	msgbox LakeOfRage_Text_OldMan1, MSGBOX_NPC
 	end
 
+@ ShinyGold fix: forced-shiny is switched on only while the red GYARADOS is created (setwildbattle makes it), then off
+@ again before the battle, so losing the battle can't leave every later Pokémon shiny.
 LakeOfRage_EventScript_Psyduck::
-	callnative ToggleForceShinyMons
+	callnative SetForceShinyMons
 	setflag 0x11E9
 	faceplayer
 	waitse
@@ -15,12 +17,13 @@ LakeOfRage_EventScript_Psyduck::
 	nop
 	delay 48
 	setwildbattle SPECIES_GYARADOS, 30
+	callnative ClearForceShinyMons
 	special StartSouthernIslandBattle
 	delay 160
 	setflag 0x11EA
 	clearflag 0x10E0
 	clearflag 0x11E9
-	callnative ToggleForceShinyMons
+	callnative ClearForceShinyMons
 	delay 32
 	removeobject 2
 	call_if_eq VAR_FACING, 1, LakeOfRage_EventScript_Psyduck_1

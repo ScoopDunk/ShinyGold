@@ -125,7 +125,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MtMoon_B2F_EventScript_ItemStarPiece",
-      "flag": "0x15F"
+      "flag": "0x1D05"
     },
     {
       "type": "object",
@@ -153,7 +153,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MtSilver_Cave1_EventScript_ItemFullRestore",
-      "flag": "0x0AD"
+      "flag": "0x1D06"
     },
     {
       "type": "object",

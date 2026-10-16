@@ -103,7 +103,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route26_EventScript_ItemMaxElixir",
-      "flag": "0x24F"
+      "flag": "0x1D0B"
     },
     {
       "type": "object",

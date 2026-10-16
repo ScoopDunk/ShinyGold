@@ -4,8 +4,10 @@ MahoganyTown_Interior3_MapScripts::
 	.byte 0
 
 MahoganyTown_Interior3_OnTransition::
-	setworldmapflag FLAG_WORLD_MAP_ROUTE4_POKEMON_CENTER_1F
-	setrespawn HEAL_LOCATION_BLACKTHORN_CITY
+	@ ShinyGold fix: the hack had this Pokémon Center set the other town's fly flag and heal point (Teleport
+	@ went to the other town, Fly to Blackthorn opened before the Ice Path).
+	setworldmapflag FLAG_WORLD_MAP_ROUTE10_POKEMON_CENTER_1F
+	setrespawn HEAL_LOCATION_MAHOGANY_TOWN_2
 	end
 
 MahoganyTown_Interior3_EventScript_Nurse::

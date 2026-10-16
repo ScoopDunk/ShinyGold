@@ -1,7 +1,14 @@
 CherrygroveCity_Interior1_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, CherrygroveCity_Interior1_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
 	map_script MAP_SCRIPT_ON_LOAD, CherrygroveCity_Interior1_OnLoad
 	.byte 0
+
+@ ShinyGold fix: the hack turned this Pokémon Center's FireRed transition script into a dead table, which
+@ also dropped its setrespawn, so healing here never updated the white-out/Teleport point.
+CherrygroveCity_Interior1_OnTransition::
+	setrespawn HEAL_LOCATION_CHERRYGROVE_CITY
+	end
 
 CherrygroveCity_Interior1_OnLoad::
 	call_if_ge 0x4076, 5, CherrygroveCity_Interior1_EventScript_OnLoad_1

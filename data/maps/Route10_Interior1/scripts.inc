@@ -10,8 +10,15 @@ Route10_Interior1_EventScript_Nurse::
 	multichoice 19, 8, MULTICHOICE_YES_NO, 2
 	switch VAR_RESULT
 	case 0, Route10_Interior1_EventScript_Nurse_1
-	case 1, EventScript_PkmnCenterNurse_Goodbye
-	case 127, EventScript_PkmnCenterNurse_Goodbye
+	case 1, Route10_Interior1_EventScript_Nurse_Goodbye
+	case 127, Route10_Interior1_EventScript_Nurse_Goodbye
+	release
+	end
+
+@ ShinyGold fix: the "no" answer jumped to the shared goodbye block, which ends in "return", so the script stopped
+@ with the text box still open and the other NPCs frozen.
+Route10_Interior1_EventScript_Nurse_Goodbye::
+	msgbox Text_WeHopeToSeeYouAgain
 	release
 	end
 

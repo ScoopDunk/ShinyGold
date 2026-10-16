@@ -99,7 +99,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "FuchsiaCity_EventScript_ItemFullRestore",
-      "flag": "FLAG_GOT_VS_SEEKER"
+      "flag": "0x1D03"
     },
     {
       "type": "object",

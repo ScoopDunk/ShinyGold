@@ -82,7 +82,7 @@ Route35_EventScript_Juggler228::
 Route35_EventScript_Juggler228_1::
 	clearflag 0x1308
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route35_EventScript_Juggler228_4
+	call_if_set 0x030, Route35_EventScript_Juggler228_4
 	call_if_set 0x115F, Route35_EventScript_Juggler228_5
 	call_if_set 0x110A, Route35_EventScript_Juggler228_6
 	call_if_set FLAG_BADGE05_GET, Route35_EventScript_Juggler228_7
@@ -712,7 +712,7 @@ Route35_EventScript_BugCatcher95::
 Route35_EventScript_BugCatcher95_1::
 	clearflag 0x1309
 	msgbox Route35_Text_Juggler228_2, MSGBOX_NPC
-	call_if_set 0x8888, Route35_EventScript_BugCatcher95_2
+	call_if_set 0x030, Route35_EventScript_BugCatcher95_2
 	call_if_set 0x115F, Route35_EventScript_BugCatcher95_3
 	call_if_set FLAG_BADGE07_GET, Route35_EventScript_BugCatcher95_4
 	call_if_set FLAG_BADGE05_GET, Route35_EventScript_BugCatcher95_5
@@ -838,7 +838,7 @@ Route35_EventScript_Sign4_6::
 	end
 
 Route35_EventScript_Sign4_7::
-	playbgm SE_POKENAV_ON, 51
+	playse SE_POKENAV_ON @ ShinyGold fix: was playbgm (the sound effect replaced the map music until the next map)
 	msgbox Route35_Text_Sign4_5, MSGBOX_NPC
 	return
 
@@ -928,7 +928,7 @@ Route35_EventScript_Sign4_23::
 
 Route35_EventScript_Sign4_24::
 	setvar VAR_0x8000, 127
-	playbgm SE_POKENAV_OFF, 51
+	playse SE_POKENAV_OFF @ ShinyGold fix: was playbgm (the sound effect replaced the map music until the next map)
 	msgbox Route35_Text_Sign4_20, MSGBOX_NPC
 	release
 	end
@@ -2165,8 +2165,8 @@ Route35_EventScript_Sign4_154::
 	return
 
 Route35_EventScript_Sign4_155::
-	goto_if_unset 0x8888, Route35_EventScript_Sign4_250
-	goto_if_set 0x8888, Route35_EventScript_Sign4_251
+	goto_if_unset 0x030, Route35_EventScript_Sign4_250
+	goto_if_set 0x030, Route35_EventScript_Sign4_251
 	return
 
 Route35_EventScript_Sign4_156::
@@ -2229,8 +2229,29 @@ Route35_EventScript_Sign4_163::
 	goto_if_set 0x115F, Route35_EventScript_Sign4_271
 	return
 
+@ ShinyGold fix: contact 25's "wild POKéMON I saw" topic block was a lone 0xFF in the hack, so the call stopped
+@ before the greeting and hang-up and left the nearby objects frozen. It now picks a Route 43 POKéMON like the others.
 Route35_EventScript_Sign4_164::
-	.byte 0xFF @ invalid opcode (script stops)
+	lock
+	random 4
+	copyvar VAR_0x8008, VAR_RESULT
+	goto_if_eq VAR_0x8008, 0, Route35_EventScript_Sign4_164_1
+	goto_if_eq VAR_0x8008, 1, Route35_EventScript_Sign4_164_2
+	goto_if_eq VAR_0x8008, 2, Route35_EventScript_Sign4_164_3
+	setvar 0x700A, SPECIES_NOCTOWL
+	return
+
+Route35_EventScript_Sign4_164_1::
+	setvar 0x700A, SPECIES_GIRAFARIG
+	return
+
+Route35_EventScript_Sign4_164_2::
+	setvar 0x700A, SPECIES_PIDGEOTTO
+	return
+
+Route35_EventScript_Sign4_164_3::
+	setvar 0x700A, SPECIES_VENONAT
+	return
 
 Route35_EventScript_Sign4_165::
 	setvar 0x7009, 108
@@ -2292,8 +2313,8 @@ Route35_EventScript_Sign4_171::
 	return
 
 Route35_EventScript_Sign4_172::
-	goto_if_unset 0x8888, Route35_EventScript_Sign4_289
-	goto_if_set 0x8888, Route35_EventScript_Sign4_290
+	goto_if_unset 0x030, Route35_EventScript_Sign4_289
+	goto_if_set 0x030, Route35_EventScript_Sign4_290
 	return
 
 Route35_EventScript_Sign4_173::
