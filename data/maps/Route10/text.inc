@@ -19,13 +19,9 @@ Route10_Text_PokefanRobert::
 	.string "Look what you did to my POKéMON...\p"
 	.string "I won’t forget this...$"
 
-Route10_Text_Rocker::
-	.string "Road block, kid.\p"
-	.string "What? You need to go somewhere?\n"
-	.string "I don’t care!$"
-
 Route10_Text_Sign1::
 	.string "KANTO POWER PLANT$"
 
 Route10_Text_Sign2::
-	.string "Cambio$"
+	.string "ROUTE 10\p"
+	.string "CERULEAN CITY - LAVENDER TOWN$"

@@ -215,10 +215,6 @@
           }
         },
         {
-          "map": "MAP_SS_AQUA_INTERIOR1",
-          "base_label": "sSSAqua_Interior1"
-        },
-        {
           "map": "MAP_DIGLETTS_CAVE_CAVE2",
           "base_label": "sDiglettsCave_Cave2",
           "land_mons": {

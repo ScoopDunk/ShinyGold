@@ -87,14 +87,14 @@ VermilionCity_Interior16_Text_GentlemanGregory::
 	.string "SURGE saved my life.$"
 
 VermilionCity_Interior16_Text_Sign1_1::
-	.string "VERMILLION CITY POKéMON GYM\n"
+	.string "VERMILION CITY POKéMON GYM\n"
 	.string "LEADER: LT.SURGE\p"
-	.string "WINNING TRAINERS: CARLOS$"
+	.string "WINNING TRAINERS:$"
 
 VermilionCity_Interior16_Text_Sign1_2::
-	.string "VERMILLION CITY POKéMON GYM\n"
+	.string "VERMILION CITY POKéMON GYM\n"
 	.string "LEADER: LT.SURGE\p"
-	.string "WINNING TRAINERS: CARLOS {PLAYER}$"
+	.string "WINNING TRAINERS: {PLAYER}$"
 
 VermilionCity_Interior16_Text_Sign3::
 	.string "Nope! Nothing here.$"

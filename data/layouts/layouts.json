@@ -1152,18 +1152,7 @@
       "blockdata_filepath": "data/layouts/MtSilver_Cave1/map.bin"
     },
     {},
-    {
-      "id": "LAYOUT_SS_AQUA_INTERIOR1",
-      "name": "SSAqua_Interior1_Layout",
-      "width": 9,
-      "height": 10,
-      "border_width": 2,
-      "border_height": 2,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_SSAnne",
-      "border_filepath": "data/layouts/SSAqua_Interior1/border.bin",
-      "blockdata_filepath": "data/layouts/SSAqua_Interior1/map.bin"
-    },
+    {},
     {
       "id": "LAYOUT_SS_AQUA_INTERIOR2",
       "name": "SSAqua_Interior2_Layout",
@@ -1200,30 +1189,8 @@
       "border_filepath": "data/layouts/SSAqua_Interior4/border.bin",
       "blockdata_filepath": "data/layouts/SSAqua_Interior4/map.bin"
     },
-    {
-      "id": "LAYOUT_SS_AQUA_INTERIOR5",
-      "name": "SSAqua_Interior5_Layout",
-      "width": 31,
-      "height": 21,
-      "border_width": 2,
-      "border_height": 2,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_SSAnne",
-      "border_filepath": "data/layouts/SSAqua_Interior5/border.bin",
-      "blockdata_filepath": "data/layouts/SSAqua_Interior5/map.bin"
-    },
-    {
-      "id": "LAYOUT_SS_AQUA_INTERIOR6",
-      "name": "SSAqua_Interior6_Layout",
-      "width": 34,
-      "height": 16,
-      "border_width": 2,
-      "border_height": 2,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_SSAnne",
-      "border_filepath": "data/layouts/SSAqua_Interior6/border.bin",
-      "blockdata_filepath": "data/layouts/SSAqua_Interior6/map.bin"
-    },
+    {},
+    {},
     {
       "id": "LAYOUT_DIGLETTS_CAVE_CAVE2",
       "name": "DiglettsCave_Cave2_Layout",
@@ -1402,18 +1369,7 @@
       "border_filepath": "data/layouts/Route25_Interior1/border.bin",
       "blockdata_filepath": "data/layouts/Route25_Interior1/map.bin"
     },
-    {
-      "id": "LAYOUT_SS_AQUA_INTERIOR7",
-      "name": "SSAqua_Interior7_Layout",
-      "width": 9,
-      "height": 10,
-      "border_width": 2,
-      "border_height": 2,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_SSAnne",
-      "border_filepath": "data/layouts/SSAqua_Interior7/border.bin",
-      "blockdata_filepath": "data/layouts/SSAqua_Interior7/map.bin"
-    },
+    {},
     {
       "id": "LAYOUT_SS_AQUA_INTERIOR8",
       "name": "SSAqua_Interior8_Layout",

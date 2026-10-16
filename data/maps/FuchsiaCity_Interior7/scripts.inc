@@ -4,9 +4,9 @@ FuchsiaCity_Interior7_MapScripts::
 FuchsiaCity_Interior7_EventScript_CamperBarry::
 	applymovement 1, FuchsiaCity_Interior7_Movement_CamperBarry_1
 	delay 32
-	setobjectxy 13, 14, 8
+	setobjectxy 12, 14, 8
 	setobjectxy 1, 5, 23
-	applymovement 13, FuchsiaCity_Interior7_Movement_CamperBarry_2
+	applymovement 12, FuchsiaCity_Interior7_Movement_CamperBarry_2
 	delay 1
 	msgbox FuchsiaCity_Interior7_Text_CamperBarry, MSGBOX_NPC
 	trainerbattle_earlyrival TRAINER_CAMPER_BARRY, 0, FuchsiaCity_Interior7_Text_CamperBarryDefeat, FuchsiaCity_Interior7_Text_CamperBarryVictory
@@ -41,9 +41,9 @@ FuchsiaCity_Interior7_Movement_CamperBarry_2::
 FuchsiaCity_Interior7_EventScript_PicnickerCindy::
 	applymovement 2, FuchsiaCity_Interior7_Movement_CamperBarry_1
 	delay 32
-	setobjectxy 9, 8, 4
+	setobjectxy 8, 8, 4
 	setobjectxy 2, 5, 23
-	applymovement 9, FuchsiaCity_Interior7_Movement_CamperBarry_2
+	applymovement 8, FuchsiaCity_Interior7_Movement_CamperBarry_2
 	delay 1
 	msgbox FuchsiaCity_Interior7_Text_PicnickerCindy, MSGBOX_NPC
 	trainerbattle_earlyrival TRAINER_PICNICKER_CINDY, 0, FuchsiaCity_Interior7_Text_PicnickerCindyDefeat, FuchsiaCity_Interior7_Text_CamperBarryVictory
@@ -51,43 +51,16 @@ FuchsiaCity_Interior7_EventScript_PicnickerCindy::
 	release
 	end
 
-FuchsiaCity_Interior7_EventScript_Koga::
-	call_if_set 0x1200, FuchsiaCity_Interior7_EventScript_Koga_1
-	call_if_set 0x11F7, FuchsiaCity_Interior7_EventScript_Koga_2
-	msgbox FuchsiaCity_Interior7_Text_Koga_1, MSGBOX_NPC
-	end
-
-FuchsiaCity_Interior7_EventScript_Koga_1::
-	msgbox FuchsiaCity_Interior7_Text_Koga_2, MSGBOX_NPC
-	end
-
-FuchsiaCity_Interior7_EventScript_Koga_2::
-	msgbox FuchsiaCity_Interior7_Text_Koga_3, MSGBOX_YESNO
-	call_if_eq VAR_RESULT, 1, FuchsiaCity_Interior7_EventScript_Koga_3
-	msgbox FuchsiaCity_Interior7_Text_Koga_4, MSGBOX_NPC
-	end
-
-FuchsiaCity_Interior7_EventScript_Koga_3::
-	msgbox FuchsiaCity_Interior7_Text_Koga_5, MSGBOX_NPC
-	call LavenderTown_EventScript_Trigger6_2
-	trainerbattle_earlyrival TRAINER_PKMN_TRAINER_KOGA, 0, FuchsiaCity_Interior7_Text_KogaDefeat, FuchsiaCity_Interior7_Text_KogaVictory
-	setflag 0x1200
-	call LavenderTown_EventScript_Trigger6_3
-	msgbox FuchsiaCity_Interior7_Text_Koga_6, MSGBOX_NPC
-	giveitem ITEM_CHOICE_BAND
-	msgbox FuchsiaCity_Interior7_Text_Koga_7, MSGBOX_NPC
-	end
-
 FuchsiaCity_Interior7_EventScript_Lass::
 	msgbox FuchsiaCity_Interior7_Text_Lass, MSGBOX_NPC
 	end
 
 FuchsiaCity_Interior7_EventScript_LassAlice::
-	applymovement 5, FuchsiaCity_Interior7_Movement_CamperBarry_1
+	applymovement 4, FuchsiaCity_Interior7_Movement_CamperBarry_1
 	delay 32
-	setobjectxy 15, 12, 2
-	setobjectxy 5, 5, 23
-	applymovement 15, FuchsiaCity_Interior7_Movement_CamperBarry_2
+	setobjectxy 14, 12, 2
+	setobjectxy 4, 5, 23
+	applymovement 14, FuchsiaCity_Interior7_Movement_CamperBarry_2
 	delay 1
 	msgbox FuchsiaCity_Interior7_Text_LassAlice, MSGBOX_NPC
 	trainerbattle_earlyrival TRAINER_LASS_ALICE, 0, FuchsiaCity_Interior7_Text_LassAliceDefeat, FuchsiaCity_Interior7_Text_CamperBarryVictory
@@ -96,11 +69,11 @@ FuchsiaCity_Interior7_EventScript_LassAlice::
 	end
 
 FuchsiaCity_Interior7_EventScript_LassLinda::
-	applymovement 6, FuchsiaCity_Interior7_Movement_CamperBarry_1
+	applymovement 5, FuchsiaCity_Interior7_Movement_CamperBarry_1
 	delay 32
-	setobjectxy 4, 8, 12
-	setobjectxy 6, 5, 23
-	applymovement 4, FuchsiaCity_Interior7_Movement_CamperBarry_2
+	setobjectxy 3, 8, 12
+	setobjectxy 5, 5, 23
+	applymovement 3, FuchsiaCity_Interior7_Movement_CamperBarry_2
 	delay 1
 	msgbox FuchsiaCity_Interior7_Text_LassLinda, MSGBOX_NPC
 	trainerbattle_earlyrival TRAINER_LASS_LINDA, 0, FuchsiaCity_Interior7_Text_LassLindaDefeat, FuchsiaCity_Interior7_Text_CamperBarryVictory
@@ -109,9 +82,9 @@ FuchsiaCity_Interior7_EventScript_LassLinda::
 	end
 
 FuchsiaCity_Interior7_EventScript_LeaderJanine2::
-	applymovement 7, FuchsiaCity_Interior7_Movement_CamperBarry_1
+	applymovement 6, FuchsiaCity_Interior7_Movement_CamperBarry_1
 	delay 32
-	applymovement 6, FuchsiaCity_Interior7_Movement_CamperBarry_2
+	applymovement 5, FuchsiaCity_Interior7_Movement_CamperBarry_2
 	delay 1
 	setvar VAR_0x8004, 2
 	setvar VAR_0x8005, 2

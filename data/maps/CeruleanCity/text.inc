@@ -74,61 +74,6 @@ CeruleanCity_Text_WorkerM_2::
 	.string "Ayuh?\p"
 	.string "My ITEMFINDER is responding...$"
 
-CeruleanCity_Text_PkmnTrainerCarlos6_1::
-	.string "Grrr... What kind of GYM LEADER\n"
-	.string "leaves its GYM to have a date at\l"
-	.string "the CAPE in the north?\p"
-	.string "It had to be a female GYM LEADER,\n"
-	.string "obviously...\p"
-	.string "Oh well...\p"
-	.string "At least I’ll have this chance to\n"
-	.string "crush your happy dreams!\p"
-	.string "...$"
-
-CeruleanCity_Text_PkmnTrainerCarlos6Defeat::
-	.string "...All right...\n"
-	.string "You won again...$"
-
-CeruleanCity_Text_PkmnTrainerCarlos6Victory::
-	.string "Hahaha...\n"
-	.string "I knew you were no match for me...!$"
-
-CeruleanCity_Text_PkmnTrainerCarlos6_2::
-	.string "...\p"
-	.string "...\p"
-	.string "You know what?\n"
-	.string "I really don’t care about losing to\l"
-	.string "you.\p"
-	.string "In fact, I’m happy that you won...\p"
-	.string "Because you really deserve the next\n"
-	.string "battle against me.\p"
-	.string "Keep training {PLAYER}!\n"
-	.string "You will need it...\p"
-	.string "HAHAHAhahaha...!!!$"
-
-CeruleanCity_Text_Trigger2::
-	.string "CALL FROM PROF.ELM\p"
-	.string "PROF.ELM: Hello, {PLAYER}!\p"
-	.string "You sound quite excited...\p"
-	.string "Wow... You have two BADGES from\n"
-	.string "the KANTO REGION, and you are\l"
-	.string "already at CERULEAN?\p"
-	.string "Congratulations, {PLAYER}!\p"
-	.string "...\p"
-	.string "...What?\n"
-	.string "You found a strange POKéBALL?\p"
-	.string "Hmmm... That sounds like a mystery\n"
-	.string "to be solved...\p"
-	.string "...\p"
-	.string "This may be hard for you, but\n"
-	.string "could you come back to the lab?\p"
-	.string "I’ve heard the SS.AQUA II has\n"
-	.string "arrived at VERMILLION CITY.\p"
-	.string "Please, I need to see that strange\n"
-	.string "POKéBALL!\p"
-	.string "I’ll be waiting!\p"
-	.string "Click... ... ...$"
-
 CeruleanCity_Text_Trigger3_1::
 	.string "{RIVAL}: Yo! {PLAYER}!\p"
 	.string "You’re still struggling along back\n"
@@ -173,11 +118,6 @@ CeruleanCity_Text_Trigger3Defeat::
 	.string "Take it easy!\l"
 	.string "You won already!$"
 
-CeruleanCity_Text_Trigger6::
-	.string "The GHOSTBUSTER reveals the GHOST’s\n"
-	.string "identity.\p"
-	.string "The wild POKéMON attacks!$"
-
 CeruleanCity_Text_Sign1::
 	.string "CERULEAN CITY\n"
 	.string "A Mysterious Blue Aura Surrounds It$"
@@ -200,3 +140,6 @@ CeruleanCity_Text_Sign4::
 
 CeruleanCity_Text_Sign5::
 	.string "CERULEAN CAPE Ahead$"
+
+CeruleanCity_Text_LockedDoor::
+	.string "It’s locked…$"

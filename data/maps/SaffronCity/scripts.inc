@@ -54,28 +54,8 @@ SaffronCity_EventScript_BlackBelt::
 	msgbox SaffronCity_Text_BlackBelt, MSGBOX_NPC
 	end
 
+@ Invisible blockers out of reach on Saffron City and Route 9 (their custom "MESSAGE FROM ZEL" is gone)
 SaffronCity_EventScript_LaprasDoll::
-	msgbox SaffronCity_Text_LaprasDoll, MSGBOX_AUTOCLOSE
-	end
-
-SaffronCity_EventScript_Trigger1::
-	call_if_set 0x118E, SaffronCity_EventScript_Trigger1_1
-	call_if_set 0x118D, SaffronCity_EventScript_Trigger1_2
-	setflag 0x118B
-	setflag 0x118C
-	release
-	end
-
-SaffronCity_EventScript_Trigger1_1::
-	setflag 0x118B
-	clearflag 0x118C
-	release
-	end
-
-SaffronCity_EventScript_Trigger1_2::
-	setflag 0x118A
-	clearflag 0x118B
-	release
 	end
 
 SaffronCity_EventScript_Trigger2::

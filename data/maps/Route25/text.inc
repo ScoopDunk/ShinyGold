@@ -10,69 +10,6 @@ Route25_Text_SchoolboyDudley::
 	.string "I did my best.\n"
 	.string "I have no regrets.$"
 
-Route25_Text_CooltrainerM_1::
-	.string "DANTE: Oh, RINA, we finally found it.\n"
-	.string "This is the perfect place!$"
-
-Route25_Text_CooltrainerM_2::
-	.string "RINA: Yes, darling!\n"
-	.string "This is so beautiful!$"
-
-Route25_Text_CooltrainerM_3::
-	.string "DANTE: RINA, I wanted to ask you\n"
-	.string "something...$"
-
-Route25_Text_CooltrainerM_4::
-	.string "DANTE: Huh? What?$"
-
-Route25_Text_CooltrainerM_5::
-	.string "RINA: Hey! It’s {PLAYER}!$"
-
-Route25_Text_CooltrainerM_6::
-	.string "DANTE: Why, if it isn’t {PLAYER}!\n"
-	.string "Long time no see!\p"
-	.string "Well, I’m kinda busy right now,\n"
-	.string "you know...$"
-
-Route25_Text_CooltrainerM_7::
-	.string "RINA: But it’s been a while since we\n"
-	.string "battled {PLAYER}.\l"
-	.string "Why don’t we have a rematch?$"
-
-Route25_Text_CooltrainerM_8::
-	.string "DANTE: But I...$"
-
-Route25_Text_CooltrainerM_9::
-	.string "RINA: Oh, come on...\n"
-	.string "Just a quick battle...$"
-
-Route25_Text_CooltrainerM_10::
-	.string "DANTE: All right...\p"
-	.string "That thing will have to wait till we\n"
-	.string "defeat you!$"
-
-Route25_Text_CooltrainerMDefeat::
-	.string "DANTE: Oh. Now I feel less confident…$"
-
-Route25_Text_CooltrainerMVictory::
-	.string "RINA: Finally... The power of LOVE has\n"
-	.string "prevaile"
-Route25_Text_CooltrainerM_11::
-	.string "DANTE: ...$"
-
-Route25_Text_CooltrainerM_12::
-	.string "RINA: Why do you look so down,\n"
-	.string "honey?$"
-
-Route25_Text_CooltrainerM_13::
-	.string "DANTE: Oh... Just forget it...\p"
-	.string "But I know someday I will have\n"
-	.string "another chance.\p"
-	.string "Well, see ya soon, {PLAYER}.$"
-
-Route25_Text_CooltrainerM_14::
-	.string "RINA: I wonder what’s wrong with him?$"
-
 Route25_Text_LassEllenIntro::
 	.string "I’m second.\n"
 	.string "Now it’s serious!$"
