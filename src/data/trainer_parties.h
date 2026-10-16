@@ -9692,7 +9692,7 @@ static const struct TrainerMonItemCustomMoves sParty_BlackBeltKenji3[] = {
         .iv = 65535,
         .lvl = 73,
         .species = SPECIES_STEELIX,
-        .heldItem = 0xFFFF,
+        .heldItem = ITEM_NONE,  // ShinyGold fix: was 0xFFFF (a junk item Thief could steal)
         .moves = {MOVE_UNAVAILABLE, MOVE_POISON_POWDER, MOVE_COUNTER, MOVE_UNAVAILABLE},
     },
 };
@@ -10779,7 +10779,7 @@ static const struct TrainerMonItemDefaultMoves sParty_CamperTodd2[] = {
         .iv = 65535,
         .lvl = 75,
         .species = SPECIES_GOLDUCK,
-        .heldItem = 0xFFFF,
+        .heldItem = ITEM_NONE,  // ShinyGold fix: was 0xFFFF (a junk item Thief could steal)
     },
 };
 
@@ -10800,7 +10800,7 @@ static const struct TrainerMonItemDefaultMoves sParty_CamperTodd3[] = {
         .iv = 65535,
         .lvl = 37,
         .species = SPECIES_GOLDUCK,
-        .heldItem = 0xFFFF,
+        .heldItem = ITEM_NONE,  // ShinyGold fix: was 0xFFFF (a junk item Thief could steal)
     },
 };
 
@@ -10821,7 +10821,7 @@ static const struct TrainerMonItemDefaultMoves sParty_CamperTodd4[] = {
         .iv = 65535,
         .lvl = 26,
         .species = SPECIES_PSYDUCK,
-        .heldItem = 0xFFFF,
+        .heldItem = ITEM_NONE,  // ShinyGold fix: was 0xFFFF (a junk item Thief could steal)
     },
 };
 
@@ -11149,7 +11149,7 @@ static const struct TrainerMonItemDefaultMoves sParty_YoungsterJoey6[] = {
         .iv = 65535,
         .lvl = 75,
         .species = SPECIES_DUSTOX,
-        .heldItem = 0xFFFF,
+        .heldItem = ITEM_NONE,  // ShinyGold fix: was 0xFFFF (a junk item Thief could steal)
     },
 };
 

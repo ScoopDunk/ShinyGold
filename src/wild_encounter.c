@@ -207,6 +207,9 @@ static u16 GetCurrentMapWildMonHeaderId(void)
 
 static bool8 UnlockedTanobyOrAreNotInTanoby(void)
 {
+    // ShinyGold fix: FireRed's Tanoby chamber map slots hold the hack's own caves (the Unown caves among them), and
+    // nothing sets FLAG_SYS_UNLOCKED_TANOBY_RUINS, so their wild tables were never used. They are always open.
+    return TRUE;
     if (FlagGet(FLAG_SYS_UNLOCKED_TANOBY_RUINS))
         return TRUE;
     if (gSaveBlock1Ptr->location.mapGroup != MAP_GROUP(MAP_SEVEN_ISLAND_TANOBY_RUINS_DILFORD_CHAMBER))
@@ -234,8 +237,15 @@ static void GenerateWildMon(u16 species, u8 level, u8 slot)
     }
     else
     {
-        chamber = gSaveBlock1Ptr->location.mapNum - MAP_NUM(MAP_SEVEN_ISLAND_TANOBY_RUINS_MONEAN_CHAMBER);
-        personality = GenerateUnownPersonalityByLetter(sUnownLetterSlots[chamber][slot]);
+        // ShinyGold fix: FireRed only expects wild Unown in the seven Tanoby chamber slots and reads the letter table
+        // with the map offset. Elsewhere (the Ruins of Alph inner chamber) that read went outside the table, and an
+        // impossible letter made the personality loop below spin forever. Outside the chambers the letter is random.
+        chamber = gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_SEVEN_ISLAND_TANOBY_RUINS_MONEAN_CHAMBER)
+                ? gSaveBlock1Ptr->location.mapNum - MAP_NUM(MAP_SEVEN_ISLAND_TANOBY_RUINS_MONEAN_CHAMBER) : -1;
+        if (chamber >= 0 && chamber < (s8)ARRAY_COUNT(sUnownLetterSlots))
+            personality = GenerateUnownPersonalityByLetter(sUnownLetterSlots[chamber][slot]);
+        else
+            personality = GenerateUnownPersonalityByLetter(Random() % 26);
         CreateMon(&gEnemyParty[0], species, level, USE_RANDOM_IVS, TRUE, personality, FALSE, 0);
     }
 }
