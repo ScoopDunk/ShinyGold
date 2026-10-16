@@ -41,18 +41,7 @@ CianwoodCity_Interior7_Text_BlackBeltLung::
 	.string "My POKéMON lost...\n"
 	.string "My pride is shattered...$"
 
-CianwoodCity_Interior7_Text_CrushGirl::
-	.string "snif...\p"
-	.string "I was scolded by my UNCLE...\p"
-	.string "You are the responsible for this...\n"
-	.string "snif...$"
-
 CianwoodCity_Interior7_Text_BaldingMan_1::
-	.string "Sorry about my NIECE.\p"
-	.string "She just moved to the island\n"
-	.string "and is not used to making friends.\p"
-	.string "But you’re here for a gym battle,\n"
-	.string "right?\p"
 	.string "WAHAHAH!\p"
 	.string "So you’ve come this far!\p"
 	.string "Let me tell you, I’m tough!\p"
@@ -100,34 +89,6 @@ CianwoodCity_Interior7_Text_BaldingMan_5::
 
 CianwoodCity_Interior7_Text_PushableBoulder4::
 	.string "Boulders may now be moved!$"
-
-CianwoodCity_Interior7_Text_Trigger1_1::
-	@ ShinyGold: overlapping data duplicated from 0x0877D750
-	.string "Uhmmm... uhmmm...\p"
-	.string "I wanted to say...\n"
-	.string "I’m sorry...\l"
-	.string "for being so rude...\p"
-	.string "It’s just that I didn’t want to\n"
-	.string "see my UNCLE lose...\p"
-	.string "But I have learned that there are\n"
-	.string "always better trainers!\p"
-	.string "And we must keep on training\n"
-	.string "to be the best!$"
-
-CianwoodCity_Interior7_Text_Trigger1_2::
-	.string "You know what?\n"
-	.string "I like your style!\p"
-	.string "That’s why I decided to keep\n"
-	.string "an eye on you!\p"
-	.string "You may call me whenever you need\n"
-	.string "me!\p"
-	.string "I will go to heal my POKéMON\n"
-	.string "and start my journey\p"
-	.string "Good luck to you {PLAYER}!$"
-
-CianwoodCity_Interior7_Text_Trigger1_3::
-	.string "By the way, my name is AMELIA\n"
-	.string "Nice to meet you!$"
 
 CianwoodCity_Interior7_Text_Sign1_1::
 	.string "CIANWOOD CITY POKéMON GYM\n"

@@ -105,7 +105,6 @@ Route42_EventScript_HikerBenjamin::
 
 Route42_EventScript_Trigger1::
 	call_if_set 0x11EA, Route42_EventScript_Trigger1_1
-	setflag 0x10E3
 	setflag 0x10E4
 	setflag 0x10E5
 	setflag 0x112A

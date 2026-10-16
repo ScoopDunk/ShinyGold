@@ -22,28 +22,6 @@ MahoganyTown_Text_BaldingMan_2::
 MahoganyTown_Text_BaldingMan_3::
 	.string "You don’t have enough money.$"
 
-MahoganyTown_Text_CrushGirl_1::
-	.string "AMELIA: Hi {PLAYER}. Nice to see you\n"
-	.string "again!\p"
-	.string "Listen, I was training and I…\p"
-	.string "Oh? What did you say?\n"
-	.string "You are on a mission right now?\p"
-	.string "That sounds tough...\p"
-	.string "Hey! Can I help?\n"
-	.string "Perhaps I’m too young, but I’m sure\l"
-	.string "I’ll be able to help...$"
-
-MahoganyTown_Text_CrushGirl_2::
-	.string "AMELIA: Oh... Too bad...\p"
-	.string "But, I know!\p"
-	.string "Here, take a few of my items,\n"
-	.string "I’m sure they’ll come in handy!$"
-
-MahoganyTown_Text_CrushGirl_3::
-	.string "AMELIA: {PLAYER}, just be careful...\n"
-	.string "…Blushes…\p"
-	.string "I... have to go...$"
-
 MahoganyTown_Text_Lass::
 	.string "Visit Grandma’s shop. She sells\n"
 	.string "stuff that nobody else has.$"
@@ -57,6 +35,6 @@ MahoganyTown_Text_Sign2::
 	.string "a RAGECANDYBAR!$"
 
 MahoganyTown_Text_Sign3::
-	.string "MAHOGANY TOWN POKEMON GYM\n"
+	.string "MAHOGANY TOWN POKéMON GYM\n"
 	.string "LEADER: PRYCE\l"
 	.string "The Teacher of Winter’s Harshness$"

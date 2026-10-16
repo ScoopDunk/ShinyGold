@@ -70,20 +70,6 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_CRUSH_GIRL",
-      "x": 12,
-      "y": 11,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "MahoganyTown_EventScript_CrushGirl",
-      "flag": "0x10E3"
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_LASS",
       "x": 12,
       "y": 11,
@@ -143,33 +129,6 @@
       "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
       "var_value": "0",
       "script": "MahoganyTown_EventScript_Trigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 11,
-      "y": 11,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "MahoganyTown_EventScript_Trigger2"
-    },
-    {
-      "type": "trigger",
-      "x": 12,
-      "y": 12,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "MahoganyTown_EventScript_Trigger2"
-    },
-    {
-      "type": "trigger",
-      "x": 13,
-      "y": 11,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
-      "var_value": "0",
-      "script": "MahoganyTown_EventScript_Trigger4"
     },
     {
       "type": "trigger",
