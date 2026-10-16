@@ -1,42 +1,6 @@
 Route26_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, Route26_OnTransition
-	map_script MAP_SCRIPT_ON_RESUME, Route26_OnResume
-	map_script MAP_SCRIPT_ON_RETURN_TO_FIELD, Route26_OnReturnToField
+	@ ShinyGold fix: FireRed's Birth Island (Deoxys) map scripts removed; they uncovered part of the region map
 	.byte 0
-
-Route26_OnTransition::
-	setworldmapflag FLAG_WORLD_MAP_BIRTH_ISLAND_EXTERIOR
-	setvar VAR_OBJ_GFX_ID_0, 150
-	setvar VAR_DEOXYS_INTERACTION_STEP_COUNTER, 0
-	setvar VAR_DEOXYS_INTERACTION_NUM, 0
-	call_if_set 0x2E4, Route26_EventScript_OnTransition_1
-	call_if_unset 0x2E4, Route26_EventScript_OnTransition_2
-	end
-
-Route26_OnResume::
-	call_if_set FLAG_SYS_SPECIAL_WILD_BATTLE, Route26_EventScript_OnResume_1
-	end
-
-Route26_OnReturnToField::
-	special SetDeoxysTrianglePalette
-	end
-
-Route26_EventScript_OnTransition_1::
-	setflag 0x099
-	setflag 0x09A
-	return
-
-Route26_EventScript_OnTransition_2::
-	goto_if_set 0x2F7, EventScript_Return
-	clearflag 0x09A
-	clearflag FLAG_SYS_DEOXYS_AWAKENED
-	return
-
-Route26_EventScript_OnResume_1::
-	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_ne VAR_RESULT, 7, EventScript_Return
-	removeobject 2
-	return
 
 Route26_EventScript_Fisher::
 	faceplayer

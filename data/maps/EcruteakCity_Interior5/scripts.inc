@@ -45,6 +45,8 @@ EcruteakCity_Interior5_EventScript_LeaderMorty2Continue::
 	giveitem ITEM_TM30
 	msgbox EcruteakCity_Interior5_Text_LeaderMorty2_3, MSGBOX_NPC
 	clearflag 0x10AD
+	@ ShinyGold fix: the Route 37 trigger re-hid Carlos unless 0x10AE was set, and nothing set it
+	setflag 0x10AE
 	release
 	end
 
