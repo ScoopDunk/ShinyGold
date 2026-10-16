@@ -1,4 +1,5 @@
 #include "global.h"
+#include "constants/gold_legendaries.h"
 #include "event_data.h"
 #include "pokemon_storage_system.h"
 #include "save.h"
@@ -111,8 +112,29 @@ void SaveBlockExt_ReadFromSector(u16 sectorId, const u8 *sectorData)
 // StartSaveBlockExtStepCounter set it to 1, and stops at SAVE_BLOCK_EXT_STEP_COUNTER_MAX.
 void SaveBlockExt_UpdateStepCounter(void)
 {
+    u16 steps;
+
     if (gSaveBlockExt.stepCounter != 0 && gSaveBlockExt.stepCounter < SAVE_BLOCK_EXT_STEP_COUNTER_MAX)
         gSaveBlockExt.stepCounter++;
+
+    // Pure Gold: Kurt's GS Ball check has its own counter (it used to share the Apricorn ball one).
+    if (VarGet(VAR_GOLD_GS_BALL) == GS_BALL_KURT_CHECKING)
+    {
+        steps = VarGet(VAR_GOLD_GS_BALL_STEPS);
+        if (steps < SAVE_BLOCK_EXT_STEP_COUNTER_MAX)
+            VarSet(VAR_GOLD_GS_BALL_STEPS, steps + 1);
+    }
+}
+
+// Script natives: start / check Kurt's GS Ball counter (VAR_RESULT = TRUE once it ran out).
+void StartGsBallStepCounter(void)
+{
+    VarSet(VAR_GOLD_GS_BALL_STEPS, 0);
+}
+
+void CheckGsBallStepCounter(void)
+{
+    gSpecialVar_Result = VarGet(VAR_GOLD_GS_BALL_STEPS) >= SAVE_BLOCK_EXT_STEP_COUNTER_MAX;
 }
 
 // Script native (hack routine at 0x0882883C): starts the step counter.

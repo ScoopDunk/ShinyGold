@@ -57,5 +57,7 @@ void SaveBlockExt_UpdateStepCounter(void);
 // Script natives (callnative)
 void StartSaveBlockExtStepCounter(void);
 void CheckSaveBlockExtStepCounter(void);
+void StartGsBallStepCounter(void);
+void CheckGsBallStepCounter(void);
 
 #endif // GUARD_SAVE_BLOCK_EXT_H

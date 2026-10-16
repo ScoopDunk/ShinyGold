@@ -49,4 +49,5 @@ Route35_Interior1_Text_MgDeliveryman_7::
 	.string "You can’t carry another POKéMON...$"
 
 Route35_Interior1_Text_MgDeliveryman_8::
-	.string "{PLAYER} received a POKéMON with MAIL.$"
+	.string "{PLAYER} received a POKéMON\n"
+	.string "with MAIL.$"

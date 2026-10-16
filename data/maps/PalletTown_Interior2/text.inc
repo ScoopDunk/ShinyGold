@@ -69,8 +69,8 @@ PalletTown_Interior2_Text_Scientist::
 	.string "POKéMON TALK isn’t a live broadcast.$"
 
 PalletTown_Interior2_Text_Scientist2::
-	.string "The PROF’s POKéMON TALK radio program\n"
-	.string "isn’t aired here in KANTO.\p"
+	.string "The PROF’s POKéMON TALK radio\n"
+	.string "program isn’t aired here in KANTO.\p"
 	.string "It’s a shame--I’d like to hear it.$"
 
 PalletTown_Interior2_Text_Scientist3::

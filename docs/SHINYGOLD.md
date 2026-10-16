@@ -44,7 +44,7 @@ The ROM keeps FireRed's game code (`BPRE`), title and save format, so it trades 
 - 16 badges counted on the main menu and save menu (new trainer card badge graphics); start menu hides BAG while flag 0x856 is set.
 - Map preview screens suppressed at certain arrival points; champion mugshot depends on the opponent.
 - Multichoice lists `MULTICHOICE_SG_65`..`69`, edited menu strings.
-- Hall of Fame continues at heal location 14; help system disabled; flash chip detection always reports the Macronix chip (as the hack: saves may fail on Sanyo-chip carts).
+- Hall of Fame continues at heal location 14; help system disabled.
 - Title screen, intro, Oak speech (Marill instead of Nidoran♀, new rival names), naming screen and region map as in the hack.
 
 Not ported on purpose: the hack zeroed 7 bytes inside `Task_RunUnionRoom` (over a literal pool and an instruction).
@@ -178,9 +178,14 @@ trigger (tools and reports outside the tree). Everything below was in the origin
 - Engine via vanilla aliases: Cut at Mt. Silver (24,25) ran FireRed's Ruin Valley door code; FireRed map-preview
   pictures showed on Johto places (only Diglett's Cave, Silph Co. and Victory Road keep theirs).
 - Cosmetic: `playbgm SE_*` sound effects silenced the map music; Route 10's music swap wrote var 0x7032 instead of
-  0x7033; the champion mugshot chose the rival by trainer id parity; two over-wide text lines.
+  0x7033; the champion mugshot chose the rival by trainer id parity; lines too wide for the text box were rewrapped.
 - Robustness: the extension var lookup clamps a corrupt var count.
-- Gold branch only: the Ruins of Alph inner chamber table is Unown-only, as in G/S.
+- Flash: the hack forced the Macronix chip id, so saving could fail on Sanyo-chip flash carts; detection is
+  FireRed's again. The build is locked to FireRed (`config.mk` refuses other `GAME_VERSION`s), so the ROM always
+  identifies as POKEMON FIRE / BPRE and as FireRed to link partners and other games.
+- Gold branch only: the Ruins of Alph inner chamber table is Unown-only, as in G/S; Kurt's GS Ball check has its
+  own step counter (var 0x45C1) instead of sharing the Apricorn ball one; Route 2 adds Ledyba, Pidgeotto and
+  Noctowl (G/S has 15 species there for 12 slots, so Beedrill, Ariados and Ledian are left out).
 
 ### Hack bugs fixed during the port (all branches)
 - Save extension: link/trade saves skipped the extension (turning off after a trade lost it); the save-failed
