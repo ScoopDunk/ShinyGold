@@ -158,6 +158,27 @@ ranges), then removal of everything the player can never reach. Origin: original
   block nothing reaches any more, and tilesets/layouts no map uses. Trainer, item and species tables are untouched
   (save and link compatibility).
 
+### Save, memory and build sweep
+- Continue: saved object templates are paired with the map header by position (`LoadSaveblockObjEventScripts`). A
+  save made before a map's object list changed could give NPCs the wrong script, or no template at all, whose
+  `script` was read from the BIOS and run (seen warping the player into an empty stub map). `CB2_ContinueSavedGame`
+  now reloads the map at the player's position when the saved templates/objects don't match the header, and a
+  saved location outside the map list (`gMapGroupSizes`, emitted by mapjson) continues at New Bark Town.
+  `GetObjectEventScriptPointerByLocalIdAndMap` / `...FlagId...` return nothing for a missing template, and trainer
+  sight skips such objects.
+- Link-battle save (`WriteSaveBlock1Sector`) also rewrites the last PC storage sector, which holds the save block
+  extension's var table.
+- Forced shiny is applied in `CreateBoxMon` before encryption; the hack did it on every OT ID write, which would
+  re-key an existing Pokémon into a Bad Egg.
+- Script leftovers removed: `vgoto_if`/`vcall_if`/`call_if` with condition ids past `sScriptConditionTable`,
+  `setptr`/`compare_ptr_to_ptr` on raw addresses, `bufferitemname 30`, and the white-out `loadword 155` / `call
+  0x00C76903`. The Game Corner receptionist branch that ended on one now releases.
+- `InitRegionMapType`'s Sevii search is bounded (it looped forever for a map section in none of the lists).
+- Off-map objects/triggers on Routes 4 and 9 and 46 removed; the Route 4 clone pointed past Viridian's object list.
+- Checked clean: flag/var ids vs. storage, the extension's sector layout and every save path, RAM section
+  overlaps and totals, script pointer targets, map headers/events, and a fresh clone builds (also `make modern`)
+  with no new warnings beyond vanilla.
+
 ### Hack bugs fixed during the port (all branches)
 - Save extension: link/trade saves skipped the extension (turning off after a trade lost it); the save-failed
   screen overwrote it; no bounds check on the var table; the load hook copied garbage from invalid sectors; the
