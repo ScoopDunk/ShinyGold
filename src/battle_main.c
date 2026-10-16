@@ -3928,15 +3928,19 @@ static void ReturnFromBattleToOverworld(void)
         gSpecialVar_Result = gBattleOutcome;
         gMain.inBattle = FALSE;
         gMain.callback1 = gPreBattleCallback1;
+        // Pure Gold: pokegold BattleEnd_HandleRoamMons. A roaming beast that was caught or knocked out is gone
+        // for good; otherwise it keeps its HP and all beasts move on. Any other battle has a 1/16 chance of
+        // making the beasts move. (FireRed's version also ended the roamer when it used Roar.)
         if (gBattleTypeFlags & BATTLE_TYPE_ROAMER)
         {
-            UpdateRoamerHPStatus(&gEnemyParty[0]);
-#if defined(BUGFIX) || REVISION >= 0xA
-            if ((gBattleOutcome == B_OUTCOME_WON) || gBattleOutcome == B_OUTCOME_CAUGHT || gBattleOutcome == B_OUTCOME_DREW)
-#else
-            if ((gBattleOutcome & B_OUTCOME_WON) || gBattleOutcome == B_OUTCOME_CAUGHT) // Bug: When Roar is used by roamer, gBattleOutcome is B_OUTCOME_PLAYER_TELEPORTED (5).
-#endif                                                                                  // & with B_OUTCOME_WON (1) will return TRUE and deactivates the roamer.
-                SetRoamerInactive();
+            if (gBattleOutcome == B_OUTCOME_WON || gBattleOutcome == B_OUTCOME_CAUGHT || gBattleOutcome == B_OUTCOME_DREW)
+                SetRoamerInactive(&gEnemyParty[0]);
+            else
+                UpdateRoamerHPStatus(&gEnemyParty[0]);
+        }
+        else if (!(gBattleTypeFlags & BATTLE_TYPE_LINK))
+        {
+            TryUpdateRoamMonsAfterBattle();
         }
         m4aSongNumStop(SE_LOW_HEALTH);
         SetMainCallback2(gMain.savedCallback);
@@ -4320,7 +4324,9 @@ static void HandleAction_Run(void)
         }
         else
         {
-            if (gBattleMons[gBattlerAttacker].status2 & (STATUS2_WRAPPED | STATUS2_ESCAPE_PREVENTION))
+            // Pure Gold: a roaming beast cannot flee while asleep or frozen (pokegold TryEnemyFlee)
+            if ((gBattleMons[gBattlerAttacker].status2 & (STATUS2_WRAPPED | STATUS2_ESCAPE_PREVENTION))
+             || ((gBattleTypeFlags & BATTLE_TYPE_ROAMER) && (gBattleMons[gBattlerAttacker].status1 & (STATUS1_SLEEP | STATUS1_FREEZE))))
             {
                 gBattleCommunication[MULTISTRING_CHOOSER] = 4;
                 gBattlescriptCurrInstr = BattleScript_PrintFailedToRunString;
