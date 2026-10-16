@@ -2605,11 +2605,15 @@ Route35_EventScript_Sign4_169::
 
 Route35_EventScript_Sign4_170::
 	goto_if_unset FLAG_BADGE07_GET, Route35_EventScript_Sign4_284
-	goto_if_set FLAG_BADGE07_GET, 0x09163337
-	multichoicedefault 67, 0, MULTICHOICE_HOF_QUIT, 255, 22
-	callstd 112
-	additem 0x300, 0xFFFF
-	.byte 0xFF @ invalid opcode (script stops)
+	@ ShinyGold fix: the hack's pointer here is 0x09163337 (outside the ROM): the block for "badge 7 set" was
+	@ assembled over the last two bytes of this pointer. It was meant to be 0x08883337, the "setvar 0x7009, 68"
+	@ right after Sign4_284, so phone contact 35 crashed the game once the player had the seventh badge.
+	goto_if_set FLAG_BADGE07_GET, Route35_EventScript_Sign4_170_1
+	return
+
+Route35_EventScript_Sign4_170_1::
+	setvar 0x7009, 68
+	return
 
 Route35_EventScript_Sign4_171::
 	lock
