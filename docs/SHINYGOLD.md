@@ -27,7 +27,7 @@ The ROM keeps FireRed's game code (`BPRE`), title and save format, so it trades 
 
 | Area | Files | Notes |
 |---|---|---|
-| Maps | `data/maps/*`, `data/layouts/*`, `data/tilesets/*` | 534 maps in 43 groups (473 reachable). Names come from `tools/shinygold/map_names.json`: the map section name plus `_Interior<n>` / `_Cave<n>` / `_Area<n>` for sub-maps, `Unused_*` for unreachable leftovers. The hack reuses FireRed map slots, so some names don't match their old FireRed meaning |
+| Maps | `data/maps/*`, `data/layouts/*`, `data/tilesets/*` | 534 maps in 43 groups: 455 reachable, the link rooms, and 78 unreachable leftovers emptied to stubs (slot and id kept so saves stay valid). Names come from `tools/shinygold/map_names.json`: the map section name plus `_Interior<n>` / `_Cave<n>` / `_Area<n>` for sub-maps, `Unused_*` for FireRed slots the hack reused (some of these are reachable). The hack reuses FireRed map slots, so some names don't match their old FireRed meaning |
 | Vanilla map names | `include/constants/map_compat.h` | Old `MAP_`/`LAYOUT_`/`HEAL_LOCATION_` names used by engine code, aliased to the map in the same slot |
 | Event scripts | `data/maps/*/scripts.inc`, `text.inc`, `data/scripts/*`, `data/event_scripts.s` | Generated from the ROM and checked byte-for-byte. `@ ShinyGold:` comments mark oddities (scripts that run into data, duplicated overlapping blocks, dead entries) |
 | Save expansion | `src/save_block_ext.c`, `src/event_data.c`, `src/save.c` | JPAN-style: flags 0x900–0x1FFF and vars 0x4100–0x7FFF stored in the unused tails of the save sectors, same on-flash layout as the hack, so ShinyGold saves load |
@@ -138,6 +138,23 @@ trigger (tools and reports outside the tree). Everything below was in the origin
   two prizes on a roll of 0; an S.S. Aqua ladder pointed at a missing warp; Burglars Eddie and Duncan and a Rocket grunt shared
   their trainer flag with a Goldenrod underground trainer (beating one skipped the other), now separate trainers
   743-745; Rina's Route 25 victory line ran into the next text.
+
+### Flag sweep and unused content
+A sweep of every event flag and var (checked/never set, shared between unrelated uses, temp flags kept across maps,
+ranges), then removal of everything the player can never reach. Origin: original hack.
+- Brent (Route 43) registered under Schoolboy Alan's phone id 16, replacing or impersonating Alan, and his rematches
+  never unlocked; now id 32, which his flags 0x1320/0x1350 belong to.
+- 40 headbutt "sign" events stacked on single tiles (Ecruteak, Violet, Routes 33/34) ran the headbutt script on the
+  last NPC talked to, which then vanished; removed.
+- Route 26 ran FireRed's Birth Island (Deoxys) map scripts on every visit; removed.
+- Carlos's post-Morty battle could be lost: the Route 37 trigger re-hid him unless 0x10AE was set, and nothing
+  set it. Morty's win now sets it.
+- The Sea Cavern hidden Ultra Ball used FLAG_PENDING_DAYCARE_EGG (came back after every egg) and the TwistedSpoon
+  used the Magikarp record flag; they have 0x1D30/0x1D31 now.
+- Unused content removed (`tools/shinygold/cleanup`): 78 unreachable maps emptied to stubs (ids kept), objects/signs sealed in walls, triggers on impassable tiles or with no script, objects hidden for good, map scripts and
+  branches gated on values nothing sets (including the Elite Four 0x115B rematch nothing unlocked), every script/text
+  block nothing reaches any more, and tilesets/layouts no map uses. Trainer, item and species tables are untouched
+  (save and link compatibility).
 
 ### Hack bugs fixed during the port (all branches)
 - Save extension: link/trade saves skipped the extension (turning off after a trade lost it); the save-failed
