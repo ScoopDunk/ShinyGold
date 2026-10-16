@@ -48,7 +48,7 @@ The ROM keeps FireRed's game code (`BPRE`), title and save format, so it trades 
 - 16 badges counted on the main menu and save menu (new trainer card badge graphics); start menu hides BAG while flag 0x856 is set.
 - Map preview screens suppressed at certain arrival points; champion mugshot depends on the opponent.
 - Multichoice lists `MULTICHOICE_SG_65`..`69`, edited menu strings.
-- Hall of Fame continues at heal location 14; help system disabled; flash chip detection always reports the Macronix chip (as the hack: saves may fail on Sanyo-chip carts).
+- Hall of Fame continues at heal location 14; help system disabled.
 - Title screen, intro, Oak speech (Marill instead of Nidoran♀, new rival names), naming screen and region map as in the hack.
 
 Not ported on purpose: the hack zeroed 7 bytes inside `Task_RunUnionRoom` (over a literal pool and an instruction).
@@ -126,13 +126,18 @@ trigger (tools and reports outside the tree). Everything below was in the origin
 - Engine via vanilla aliases: Cut at Mt. Silver (24,25) ran FireRed's Ruin Valley door code; FireRed map-preview
   pictures showed on Johto places (only Diglett's Cave, Silph Co. and Victory Road keep theirs).
 - Cosmetic: `playbgm SE_*` sound effects silenced the map music; Route 10's music swap wrote var 0x7032 instead of
-  0x7033; the champion mugshot chose the rival by trainer id parity; two over-wide text lines.
+  0x7033; the champion mugshot chose the rival by trainer id parity; lines too wide for the text box were rewrapped.
 - Robustness: the extension var lookup clamps a corrupt var count.
+- Flash: the hack forced the Macronix chip id, so saving could fail on Sanyo-chip flash carts; detection is
+  FireRed's again. The build is locked to FireRed (`config.mk` refuses other `GAME_VERSION`s), so the ROM always
+  identifies as POKEMON FIRE / BPRE and as FireRed to link partners and other games.
 - Fixed branch only: the Tanoby-slot Unown caves were locked by FLAG_SYS_UNLOCKED_TANOBY_RUINS (never set), so
   wild Unown never appeared; Super Rod slots in the Cerulean Gym pool and Pallet water were species 0 ("??????????"
   Lv1) and Sweet Scent in Ice Path room 6 did the same; the Route 43 boy ran FireRed's Nya double battle against
   SILVER's Lv 65-70 team (now Ard's scene, with the missing trigger tile added); the Vermilion lucky gentleman paid
-  two prizes on a roll of 0; an S.S. Aqua ladder pointed at a missing warp.
+  two prizes on a roll of 0; an S.S. Aqua ladder pointed at a missing warp; Burglars Eddie and Duncan and a Rocket grunt shared
+  their trainer flag with a Goldenrod underground trainer (beating one skipped the other), now separate trainers
+  743-745; Rina's Route 25 victory line ran into the next text.
 
 ### Hack bugs fixed during the port (all branches)
 - Save extension: link/trade saves skipped the extension (turning off after a trade lost it); the save-failed

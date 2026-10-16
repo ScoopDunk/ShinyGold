@@ -32,9 +32,9 @@ EcruteakCity_Interior1_Text_FirebreatherNedDefeat::
 	.string "Still not hot enough...$"
 
 EcruteakCity_Interior1_Text_FirebreatherNed::
-	.string "In the past, there were these POKéMON\n"
-	.string "that ran through grass at super-\l"
-	.string "high speed.\p"
+	.string "In the past, there were these\n"
+	.string "POKéMON that ran through grass at\l"
+	.string "super-high speed.\p"
 	.string "They say that they run like the wind.\p"
 	.string "If you run into one in grass, it\n"
 	.string "will likely bolt.$"

@@ -14,7 +14,8 @@ Route8_Text_SuperNerdSamIntro::
 	.string "How does the MAGNET TRAIN work?$"
 
 Route8_Text_SuperNerdSamDefeat::
-	.string "I just want to see the MAGNET TRAIN...$"
+	.string "I just want to see the\n"
+	.string "MAGNET TRAIN...$"
 
 Route8_Text_SuperNerdSam::
 	.string "The power of magnets is awesome!$"

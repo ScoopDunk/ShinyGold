@@ -748,12 +748,15 @@
 #define TRAINER_RIVAL_TERRY_16                     740
 #define TRAINER_RIVAL_TERRY_17                     741
 #define TRAINER_CUE_BALL_PAXTON                    742
+#define TRAINER_BURGLAR_EDDIE_2                    743 // ShinyGold fix: copy of TRAINER_BURGLAR_EDDIE, which another reachable NPC also used
+#define TRAINER_BURGLAR_DUNCAN_2                   744 // ShinyGold fix: copy of TRAINER_BURGLAR_DUNCAN, which another reachable NPC also used
+#define TRAINER_TEAM_ROCKET_GRUNT_29_2             745 // ShinyGold fix: copy of TRAINER_TEAM_ROCKET_GRUNT_29, which another reachable NPC also used
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is 
-//       only space for 25 additional trainers before trainer flag space overflows.
+//       only space for 22 additional trainers before trainer flag space overflows.
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define NUM_TRAINERS                             743
+#define NUM_TRAINERS                             746
 #define MAX_TRAINERS_COUNT                       768
 
 // Vanilla FireRed trainer names (same IDs) so unported vanilla code/scripts keep compiling.

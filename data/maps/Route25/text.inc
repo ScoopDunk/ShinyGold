@@ -54,9 +54,11 @@ Route25_Text_CooltrainerM_10::
 Route25_Text_CooltrainerMDefeat::
 	.string "DANTE: Oh. Now I feel less confident…$"
 
+@ ShinyGold fix: the hack overwrote the end of this line with the next text, so it read "...has prevaileDANTE: ...".
 Route25_Text_CooltrainerMVictory::
-	.string "RINA: Finally... The power of LOVE has\n"
-	.string "prevaile"
+	.string "RINA: Finally... The power of\n"
+	.string "LOVE has prevailed!$"
+
 Route25_Text_CooltrainerM_11::
 	.string "DANTE: ...$"
 

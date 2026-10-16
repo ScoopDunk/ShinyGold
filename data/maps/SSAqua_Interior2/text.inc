@@ -100,7 +100,8 @@ SSAqua_Interior2_Text_Trigger3_12::
 	.string "the sea...\p"
 	.string "Seems like everyone got out of the\n"
 	.string "ship safely... but...\l"
-	.string "What about {PLAYER}, JESS & JAMIE?...$"
+	.string "What about {PLAYER},\l"
+	.string "JESS & JAMIE?...$"
 
 SSAqua_Interior2_Text_Trigger4_1::
 	.string "Whoa!\p"
