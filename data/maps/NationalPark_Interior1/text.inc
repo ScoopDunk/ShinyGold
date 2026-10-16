@@ -53,7 +53,7 @@ Unused_PokemonTower_4F_Text_MgDeliveryman2_4::
 
 @ ShinyGold: moved from data/maps/Unused_PokemonTower_4F/text.inc (map removed)
 Unused_PokemonTower_4F_Text_MgDeliveryman2_5::
-	.string "Here are a few PARK BALLS for\n"
+	.string "Here are the PARK BALLS for\n"
 	.string "the Contest.\p"
 	.string "However, you’re allowed to use\n"
 	.string "your own POKéBALLS if you\l"
