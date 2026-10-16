@@ -167,11 +167,10 @@ static const struct MenuAction sMultichoiceList_CeladonVendingMachine[] = {
 };
 
 static const struct MenuAction sMultichoiceList_GameCornerTMPrizes[] = {
+    // ShinyGold gold: G/S Goldenrod TM prizes only (TM25, TM14, TM38)
     { gText_Tm13_4000Coins },
     { gText_Tm23_3500Coins },
     { gText_Tm24_4000Coins },
-    { gText_Tm30_4500Coins },
-    { gText_Tm35_4000Coins },
     { gText_NoThanks_2 }
 };
 
@@ -316,11 +315,10 @@ static const struct MenuAction sMultichoiceList_BikeShop[] = {
 
 static const struct MenuAction sMultichoiceList_GameCornerPokemonPrizes[] = {
 #if defined(FIRERED)
+    // ShinyGold gold: G/S Goldenrod prizes only (ABRA, EKANS, DRATINI)
     { gText_Abra_180Coins },
     { gText_Clefairy_500Coins },
     { gText_Dratini_2800Coins },
-    { gText_Scyther_5500Coins },
-    { gText_Porygon_9999Coins },
 #elif defined(LEAFGREEN)
     { gText_Abra_120Coins },
     { gText_Clefairy_750Coins },

@@ -22,7 +22,7 @@ LakeOfRage_EventScript_Psyduck::
 	clearflag 0x11E9
 	callnative ToggleForceShinyMons
 	delay 32
-	removeobject 4
+	removeobject 2
 	call_if_eq VAR_FACING, 1, LakeOfRage_EventScript_Psyduck_1
 	call_if_eq VAR_FACING, 2, LakeOfRage_EventScript_Psyduck_2
 	call_if_eq VAR_FACING, 3, LakeOfRage_EventScript_Psyduck_3
@@ -127,9 +127,9 @@ LakeOfRage_EventScript_ItemMaxPotion::
 LakeOfRage_EventScript_Lance::
 	call_if_set 0x10E1, LakeOfRage_EventScript_Lance_1
 	setflag 0x10E1
-	applymovement 21, LakeOfRage_Movement_Lance_1
+	applymovement 19, LakeOfRage_Movement_Lance_1
 	msgbox LakeOfRage_Text_Lance_1, MSGBOX_AUTOCLOSE
-	applymovement 21, LakeOfRage_Movement_Lance_2
+	applymovement 19, LakeOfRage_Movement_Lance_2
 	lock
 	faceplayer
 	msgbox LakeOfRage_Text_Lance_2, MSGBOX_YESNO
@@ -173,161 +173,6 @@ LakeOfRage_EventScript_Boy::
 LakeOfRage_EventScript_Boy_1::
 	msgbox LakeOfRage_Text_Boy_3, MSGBOX_NPC
 	end
-
-LakeOfRage_EventScript_Trigger1::
-	call_if_set 0x10D9, LakeOfRage_EventScript_Trigger1_1
-	applymovement LOCALID_PLAYER, LakeOfRage_Movement_Trigger1_1
-	delay 80
-	call LakeOfRage_EventScript_Trigger1_2
-	end
-
-LakeOfRage_EventScript_Trigger1_1::
-	release
-	end
-
-LakeOfRage_EventScript_Trigger1_2::
-	msgbox LakeOfRage_Text_Trigger1_1, MSGBOX_NPC
-	msgbox LakeOfRage_Text_Trigger1_2, MSGBOX_NPC
-	msgbox LakeOfRage_Text_Trigger1_3, MSGBOX_NPC
-	msgbox LakeOfRage_Text_Trigger1_4, MSGBOX_NPC
-	applymovement 1, LakeOfRage_Movement_Trigger1_2
-	applymovement 2, LakeOfRage_Movement_Trigger1_3
-	msgbox LakeOfRage_Text_Trigger1_5, MSGBOX_NPC
-	applymovement 1, LakeOfRage_Movement_Trigger1_4
-	applymovement 2, LakeOfRage_Movement_Trigger1_4
-	msgbox LakeOfRage_Text_Trigger1_6, MSGBOX_NPC
-	applymovement 1, LakeOfRage_Movement_Trigger1_5
-	msgbox LakeOfRage_Text_Trigger1_7, MSGBOX_NPC
-	msgbox LakeOfRage_Text_Trigger1_8, MSGBOX_NPC
-	applymovement 1, LakeOfRage_Movement_Trigger1_2
-	applymovement 2, LakeOfRage_Movement_Trigger1_3
-	msgbox LakeOfRage_Text_Trigger1_9, MSGBOX_NPC
-	applymovement 2, LakeOfRage_Movement_Trigger1_6
-	msgbox LakeOfRage_Text_Trigger1_10, MSGBOX_NPC
-	delay 32
-	applymovement 1, LakeOfRage_Movement_Trigger1_7
-	applymovement 2, LakeOfRage_Movement_Trigger1_7
-	msgbox LakeOfRage_Text_Trigger1_11, MSGBOX_NPC
-	applymovement 1, LakeOfRage_Movement_Trigger1_2
-	msgbox LakeOfRage_Text_Trigger1_12, MSGBOX_NPC
-	msgbox LakeOfRage_Text_Trigger1_13, MSGBOX_NPC
-	applymovement 1, LakeOfRage_Movement_Trigger1_7
-	msgbox LakeOfRage_Text_Trigger1_14, MSGBOX_NPC
-	applymovement 1, LakeOfRage_Movement_Trigger1_8
-	applymovement 2, LakeOfRage_Movement_Trigger1_9
-	delay 128
-	setflag 0x10D9
-	end
-
-LakeOfRage_Movement_Trigger1_1::
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_right
-	walk_up
-	step_end
-
-LakeOfRage_Movement_Trigger1_2::
-	face_right
-	step_end
-
-LakeOfRage_Movement_Trigger1_3::
-	face_left
-	step_end
-
-LakeOfRage_Movement_Trigger1_4::
-	face_up
-	step_end
-
-LakeOfRage_Movement_Trigger1_5::
-	emote_double_exclamation_mark
-	step_end
-
-LakeOfRage_Movement_Trigger1_6::
-	face_right
-	step_end
-
-LakeOfRage_Movement_Trigger1_7::
-	face_down_fast
-	step_end
-
-LakeOfRage_Movement_Trigger1_8::
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	set_invisible
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	step_end
-
-LakeOfRage_Movement_Trigger1_9::
-	walk_left
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	set_invisible
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	step_end
-
-LakeOfRage_EventScript_Trigger2::
-	call_if_set 0x10D9, LakeOfRage_EventScript_Trigger1_1
-	applymovement LOCALID_PLAYER, LakeOfRage_Movement_Trigger2
-	delay 80
-	call LakeOfRage_EventScript_Trigger1_2
-	end
-
-LakeOfRage_Movement_Trigger2::
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
-LakeOfRage_EventScript_Trigger3::
-	call_if_set 0x10D9, LakeOfRage_EventScript_Trigger1_1
-	applymovement LOCALID_PLAYER, LakeOfRage_Movement_Trigger3
-	delay 80
-	call LakeOfRage_EventScript_Trigger1_2
-	end
-
-LakeOfRage_Movement_Trigger3::
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_left
-	walk_up
-	step_end
-
-LakeOfRage_EventScript_Trigger4::
-	call_if_set 0x10D9, LakeOfRage_EventScript_Trigger1_1
-	applymovement LOCALID_PLAYER, LakeOfRage_Movement_Trigger4
-	delay 96
-	call LakeOfRage_EventScript_Trigger1_2
-	end
-
-LakeOfRage_Movement_Trigger4::
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_left
-	walk_left
-	walk_up
-	step_end
 
 LakeOfRage_EventScript_Sign1::
 	msgbox LakeOfRage_Text_Sign1, MSGBOX_AUTOCLOSE
