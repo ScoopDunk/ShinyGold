@@ -64,16 +64,20 @@ Removed:
 - Characters: Carlos, Amelia, Ashlee the Pokémon Thief, Ard, Jess & Jamie, Zel, Koga's Fuchsia rematch and its
   "stolen Pokémon" story, the Rock Tunnel Mr. Fuji/Kangaskhan event, and a dozen extra trainers.
 - Gifts and legendaries not in G/S: Mew, Mewtwo, the Regis, Kyogre, Rayquaza, Deoxys, Jirachi, Aggron, the
-  starter eggs, Lance's Clamperl, the Ghostbuster ghost encounters, a hidden Master Ball/Gyarados event.
+  starter eggs, Lance's Clamperl, New Bark's Pikachu, Castform/Bagon prizes, the Ghostbuster ghost encounters,
+  a hidden Master Ball/Gyarados event.
 
 Restored from Gold/Silver:
 - Kanto: the Power Plant / Machine Part chain (Cerulean Gym grunt, Route 24 battle, Misty on Route 25), the
   S.S. Aqua (first trip with the lost granddaughter, Metal Coat, ports, later trips), Silph Co. 1F, the Safari
   Zone Warden's home, Route 10 / Cerulean signs.
-- Johto: Lance's room, Chuck's gym, the Rocket base B3F, the Radio Card quiz, Game Corner prizes, the Bug-Catching
-  Contest (G/S bugs, scoring and prizes), the Lucky Number Show, Lance giving HM06 WHIRLPOOL (a key item, below).
+- Johto: Lance's room, Chuck's gym, the Rocket base B3F, the Radio Card quiz, Goldenrod and Celadon Game Corner
+  prizes, the Bug-Catching Contest (G/S bugs, scoring and prizes), the Lucky Number Show, Lance giving HM06
+  WHIRLPOOL (a key item, below).
+- Also: Bill's grandpa stops after Pichu, the Viridian sleepy man gives the DREAM EATER TM, Chris's Gloom/Rapidash
+  trade in the Pewter Pokémon Center.
 - Legendaries: after the Burned Tower scene Raikou, Entei and Suicune roam Johto at Lv 40 as in G/S (three
-  roamers; movement, encounter rate, fleeing and HP as in pokegold). Celebi comes from the Crystal GS Ball event:
+  roamers; movement, encounter rate, fleeing, HP and full IVs as in pokegold). Celebi comes from the Crystal GS Ball event:
   after the Hall of Fame the Goldenrod Pokémon Center gives the GS Ball, Kurt examines it, then the Ilex Forest
   shrine (Lv 30). Ho-Oh's battle on the Tin Tower roof works again (Lv 40, Sacred Ash). Lugia is unchanged (Lv 70).
 
@@ -95,6 +99,9 @@ Map names: the in-use `Unused_*` maps are renamed (`CeruleanCity_Gym`, `RuinsOfA
 `IndigoPlateau_HallOfFame`). Other names still come from the region map section (`<Section>_Interior<n>` etc.);
 `tools/shinygold/gold/gs_identity.tsv` lists the Gold/Silver map each one corresponds to. Note that
 `PalletTown` is an unused copy of New Bark Town; Kanto's Pallet Town is `PalletTown_Area1`.
+
+Saves: the save format is unchanged, but removing maps renumbered most of the remaining ones, so a save made with
+ShinyGold or `master` continues on the wrong map. Start a new game on this branch.
 
 Tools used for this branch are in `tools/shinygold/gold/` (map deletion, script reference/object removal, map
 rename, test save maker, emulator wrapper, reachability, warp and text-width checks).
