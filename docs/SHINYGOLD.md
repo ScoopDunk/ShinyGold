@@ -1,16 +1,16 @@
 # ShinyGold decompilation
 
-This tree is ShinyGold (Faithfully Fixed, Beta 5) ported onto pret/pokefirered. `make` builds
-`pokefirered.gba`: ShinyGold with its broken trainer names fixed and wild Pokémon rebuilt from Gold/Silver.
+This tree is ShinyGold (Faithfully Fixed, Beta 5) ported onto pret/pokefirered. On this branch (`PureGold`) `make`
+builds `pokefirered.gba` as **ShinyGold: Pure Gold Edition**: ShinyGold's custom content removed, the Gold/Silver
+content it replaced restored, wild Pokémon from Gold/Silver, and the same bug fixes as ShinyGold Fixed.
 
 ## Branches
 
 | Branch | Contents |
 |---|---|
-| `gold` | Pure Gold/Silver: `master` with ShinyGold's custom content removed and the Gold/Silver content it replaced restored (see "Pure Gold/Silver" below) |
-| `fixed` | ShinyGold Fixed: all of ShinyGold's content and its own wild Pokémon, with its bugs fixed |
-| `master` | The faithful port plus the fixes below (all of ShinyGold's custom content still in) |
-| `faithful` | The hack ported as-is (only crash-level hack bugs fixed). Use it to see what the hack itself did |
+| `PureGold` | ShinyGold: Pure Gold Edition: ShinyGold's custom content removed and the Gold/Silver content it replaced restored (see "Pure Gold/Silver" below), plus every fix below |
+| `Fixed` | ShinyGold Fixed: all of ShinyGold's content and its own wild Pokémon, with its bugs fixed |
+| `Original` | The hack ported as-is (only the port bugs listed under "Hack bugs fixed during the port" fixed). Use it to see what the hack itself did |
 | first commit | Unmodified pret/pokefirered, so `git diff <first commit>` shows everything ShinyGold changes |
 
 ## Building
@@ -23,7 +23,7 @@ The ROM keeps FireRed's game code (`BPRE`), title and save format, so it trades 
 
 | Area | Files | Notes |
 |---|---|---|
-| Maps | `data/maps/*`, `data/layouts/*`, `data/tilesets/*` | 378 maps in 43 groups on `gold` (534 on `master`). Names come from `tools/shinygold/map_names.json`: the map section name plus `_Interior<n>` / `_Cave<n>` / `_Area<n>` for sub-maps, `Unused_*` for unreachable leftovers (none left on `gold`; the hack's overgrown New Bark copy in the `PalletTown` slot is an emptied stub, the real Pallet Town is `PalletTown_Area1`). The hack reuses FireRed map slots, so some names don't match their old FireRed meaning |
+| Maps | `data/maps/*`, `data/layouts/*`, `data/tilesets/*` | 378 maps in 43 groups (534 on `Fixed` and `Original`). Names come from `tools/shinygold/map_names.json`: the map section name plus `_Interior<n>` / `_Cave<n>` / `_Area<n>` for sub-maps, `Unused_*` for unreachable leftovers (none left on this branch; the hack's overgrown New Bark copy in the `PalletTown` slot is an emptied stub, the real Pallet Town is `PalletTown_Area1`). The hack reuses FireRed map slots, so some names don't match their old FireRed meaning |
 | Vanilla map names | `include/constants/map_compat.h` | Old `MAP_`/`LAYOUT_`/`HEAL_LOCATION_` names used by engine code, aliased to the map in the same slot |
 | Event scripts | `data/maps/*/scripts.inc`, `text.inc`, `data/scripts/*`, `data/event_scripts.s` | Generated from the ROM and checked byte-for-byte. `@ ShinyGold:` comments mark oddities (scripts that run into data, duplicated overlapping blocks, dead entries) |
 | Save expansion | `src/save_block_ext.c`, `src/event_data.c`, `src/save.c` | JPAN-style: flags 0x900–0x1FFF and vars 0x4100–0x7FFF stored in the unused tails of the save sectors, same on-flash layout as the hack, so ShinyGold saves load |
@@ -50,7 +50,7 @@ The ROM keeps FireRed's game code (`BPRE`), title and save format, so it trades 
 Not ported on purpose: the hack zeroed 7 bytes inside `Task_RunUnionRoom` (over a literal pool and an instruction).
 It looks like accidental corruption and could break Union Room trading, so vanilla code is kept.
 
-## Pure Gold/Silver (`gold` branch)
+## Pure Gold/Silver (`PureGold` branch)
 
 Everything ShinyGold added that isn't in Pokémon Gold/Silver is removed, and the Gold/Silver content it replaced
 is back, using pret/pokegold (and pret/pokecrystal for the GS Ball) as the reference. Wild Pokémon stay Gold +
@@ -102,12 +102,12 @@ Map names: the in-use `Unused_*` maps are renamed (`CeruleanCity_Gym`, `RuinsOfA
 `PalletTown` is an unused copy of New Bark Town; Kanto's Pallet Town is `PalletTown_Area1`.
 
 Saves: the save format is unchanged, but removing maps renumbered most of the remaining ones, so a save made with
-ShinyGold or `master` continues on the wrong map. Start a new game on this branch.
+ShinyGold, `Fixed` or `Original` continues on the wrong map (or in New Bark Town if its map no longer exists). Start a new game on this branch.
 
 Tools used for this branch are in `tools/shinygold/gold/` (map deletion, script reference/object removal, map
 rename, test save maker, emulator wrapper, reachability, warp and text-width checks).
 
-## Fixes on `master`
+## Fixes
 
 ### Trainer names (517 trainers)
 - `NNTRAINER/K` placeholders (136) are the hack's Gold/Silver phone-rematch trainers: contact NN, rematch tier K.
@@ -148,7 +148,7 @@ New Bark Town's game corner building, Lance's room and two unused maps this left
 entries compare out-of-range variables (undefined behaviour that could jump into data). Those garbage entries and
 the shadowed duplicate header entries are removed; the real entries (e.g. Lance's room door scene) are kept.
 
-### Hack bugs fixed later (`gold` and `fixed`)
+### Hack bugs fixed later (`PureGold` and `Fixed`)
 - Phone contact 35 crashed the game once the player had the seventh badge (a pointer outside the ROM, Route 35
   phone script).
 - White-out after healing in Cherrygrove or New Bark Town left the player in the black outside the Pokémon Center
@@ -183,7 +183,7 @@ trigger (tools and reports outside the tree). Everything below was in the origin
 - Flash: the hack forced the Macronix chip id, so saving could fail on Sanyo-chip flash carts; detection is
   FireRed's again. The build is locked to FireRed (`config.mk` refuses other `GAME_VERSION`s), so the ROM always
   identifies as POKEMON FIRE / BPRE and as FireRed to link partners and other games.
-- Gold branch only: the Ruins of Alph inner chamber table is Unown-only, as in G/S; Kurt's GS Ball check has its
+- PureGold only: the Ruins of Alph inner chamber table is Unown-only, as in G/S; Kurt's GS Ball check has its
   own step counter (var 0x45C1) instead of sharing the Apricorn ball one; Route 2 adds Ledyba, Pidgeotto and
   Noctowl (G/S has 15 species there for 12 slots, so Beedrill, Ariados and Ledian are left out).
 
@@ -249,7 +249,7 @@ Custom content stays within vanilla limits (no new species, moves or items).
 
 - Event scripts: every generated block reassembled and compared byte-for-byte with the hack at its original
   address (0 mismatches, 11,693 labels at their original addresses).
-- Maps, tilesets, trainers, parties, items, species, TMs, graphics, music, wild tables (on `faithful`):
+- Maps, tilesets, trainers, parties, items, species, TMs, graphics, music, wild tables (on `Original`):
   compared with the hack's data, 0 differences.
 - Emulator: every map (534) loaded in the hack and in the rebuilt ROM from the same save, screenshots compared.
 - Tools for all of this: `tools/shinygold/` (see its README).
