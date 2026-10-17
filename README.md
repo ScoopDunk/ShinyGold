@@ -4,7 +4,7 @@ ShinyGold (Faithfully Fixed, Beta 5) by Zel and hacksrepairman, decompiled onto 
 
 - **Original**: the hack as released, rebuilt from source with its bugs left in. For reference and modding.
 - **Fixed**: all of ShinyGold's content, story and wild Pokémon, with its bugs fixed.
-- **PureGold**: ShinyGold's custom content removed and the Gold/Silver content it replaced and restored. This is a 1:1 remake of Gold Version.
+- **PureGold**: ShinyGold's custom content removed and the Gold/Silver content is restored. This is a 1:1 remake of Gold Version.
 
 Ready-made patches are on the [Releases](https://github.com/ScoopDunk/ShinyGold/releases) page. Apply them to Pokémon FireRed (USA) v1.0 (CRC32 DD88761C).
 
