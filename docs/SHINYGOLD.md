@@ -1,6 +1,6 @@
 # ShinyGold decompilation
 
-This tree is ShinyGold (Faithfully Fixed, Beta 5) ported onto pret/pokefirered. On this branch (`fixed`) `make`
+This tree is ShinyGold (Faithfully Fixed, Beta 5) ported onto pret/pokefirered. On this branch (`Fixed`) `make`
 builds `pokefirered.gba` as **ShinyGold Fixed**: the hack with all of its content and its own wild Pokémon, with
 its bugs fixed (broken trainer names, crashes, broken scenes; see "Fixes" below).
 
@@ -8,14 +8,13 @@ its bugs fixed (broken trainer names, crashes, broken scenes; see "Fixes" below)
 
 | Branch | Contents |
 |---|---|
-| `fixed` | ShinyGold Fixed: all of the hack's content and wild Pokémon, with the fixes below |
-| `gold` | Pure Gold/Silver: custom content removed, Gold/Silver content restored, wild Pokémon from Gold/Silver |
-| `master` | The faithful port with the trainer-name fix and Gold/Silver wild Pokémon (the base of `gold`) |
-| `faithful` | The hack ported as-is (only crash-level hack bugs fixed). Use it to see what the hack itself did |
+| `Fixed` | ShinyGold Fixed: all of the hack's content and wild Pokémon, with the fixes below |
+| `PureGold` | ShinyGold: Pure Gold Edition: custom content removed, Gold/Silver content restored, wild Pokémon from Gold/Silver, plus every fix below |
+| `Original` | The hack ported as-is (only the port bugs listed under "Hack bugs fixed during the port" fixed). Use it to see what the hack itself did |
 | first commit | Unmodified pret/pokefirered, so `git diff <first commit>` shows everything ShinyGold changes |
 
-Saves: `fixed` and `master` keep the hack's map numbering and save format, so ShinyGold saves continue on them.
-`gold` renumbered the maps; start a new game there.
+Saves: `Fixed` and `Original` keep the hack's map numbering and save format, so ShinyGold saves continue on them.
+`PureGold` renumbered the maps; start a new game there.
 
 ## Building
 
@@ -70,7 +69,7 @@ It looks like accidental corruption and could break Union Room trading, so vanil
   `tools/shinygold/trainer_name_fixes.json`.
 
 ### Wild Pokémon
-The hack's own tables, unchanged (the `master` and `gold` branches rebuild them from Gold/Silver instead).
+The hack's own tables, unchanged (the `PureGold` branch rebuilds them from Gold/Silver instead).
 
 ### Damaged map-script headers
 The hack's map tools wrote several map-script headers over older tables. In Cherrygrove/Olivine Pokémon Centers,
@@ -205,7 +204,7 @@ Custom content stays within vanilla limits (no new species, moves or items).
 
 - Event scripts: every generated block reassembled and compared byte-for-byte with the hack at its original
   address (0 mismatches, 11,693 labels at their original addresses).
-- Maps, tilesets, trainers, parties, items, species, TMs, graphics, music, wild tables (on `faithful`):
+- Maps, tilesets, trainers, parties, items, species, TMs, graphics, music, wild tables (on `Original`):
   compared with the hack's data, 0 differences.
 - Emulator: every map (534) loaded in the hack and in the rebuilt ROM from the same save, screenshots compared.
 - Tools for all of this: `tools/shinygold/` (see its README).
