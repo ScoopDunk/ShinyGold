@@ -1,6 +1,6 @@
 # ShinyGold (decompiled)
 
-ShinyGold (Faithfully Fixed, Beta 5) by Zel, decompiled onto [pret/pokefirered](https://github.com/pret/pokefirered). The repository has three branches:
+ShinyGold (Faithfully Fixed, Beta 5) by Zel and hacksrepairman, decompiled onto [pret/pokefirered](https://github.com/pret/pokefirered). The repository has three branches:
 
 - **Original**: the hack as released, rebuilt from source with its bugs left in. For reference and modding.
 - **Fixed**: all of ShinyGold's content, story and wild Pokémon, with its bugs fixed.
